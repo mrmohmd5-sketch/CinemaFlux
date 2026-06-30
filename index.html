@@ -92,7 +92,7 @@
             background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
         }
 
-        /* تنسيقات الشريط المنزلق التلقائي */
+        /* تنسيقات الشريط المنزلق التلقائي الدائري المستمر */
         .marquee-container {
             width: 100%; overflow: hidden; background-color: #06090c; 
             border: 1px solid #1c252d; border-radius: 12px; padding: 15px 0; margin-bottom: 15px;
@@ -201,28 +201,28 @@
 
         window.addEventListener('DOMContentLoaded', () => {
             if (typeof globalMoviesData !== 'undefined') {
-                filteredMoviesData = globalMoviesData.filter(item => item.hdUrl && item.hdUrl.trim() !== "");
+                // الاعتماد على مصفوفة البيانات الأصلية بالكامل بدون أي فلترة مسبقة قد تعطل العرض
+                filteredMoviesData = globalMoviesData;
                 renderData(filteredMoviesData);
                 renderMarquee();
             }
             updateHistoryUI();
         });
 
-        // دالة عرض الشريط المنزلق المستقر لـ 10 أفلام فقط وثابتة بدون تعليق الكود
+        // دالة إنشاء الشريط المنزلق المستقر لـ 10 أفلام مضافة حديثاً فقط
         function renderMarquee() {
             const marqueeContainer = document.getElementById('featuredMarqueeBlock');
             const marqueeContent = document.getElementById('marqueeContent');
             marqueeContent.innerHTML = '';
 
-            // تصفية المصفوفة لجلب الأفلام فقط (باستثناء المسلسلات)
             const onlyMovies = [];
             filteredMoviesData.forEach((item, index) => {
-                if (item.type !== 'series') {
+                if (item && item.type !== 'series') {
                     onlyMovies.push({ item: item, originalIndex: index });
                 }
             });
 
-            // اقتطاع أول 10 أفلام فقط مضافة حديثاً
+            // اقتطاع أول 10 أفلام فقط مضافة حديثاً من القائمة
             const finalMovies = onlyMovies.slice(0, 10);
 
             if (finalMovies.length === 0) {
@@ -232,7 +232,7 @@
 
             marqueeContainer.style.display = 'block';
 
-            // مضاعفة العناصر لإنشاء دورة حركة انسيابية لا تنتهي
+            // مضاعفة المصفوفة مرتين لخلق حركة انتقال وهمية لا نهائية (Loop)
             const loops = [...finalMovies, ...finalMovies];
 
             loops.forEach((obj) => {
@@ -246,9 +246,9 @@
                         <p class="movie-name">${obj.item.title}</p>
                         <div class="movie-meta">
                             <div class="movie-meta-row">
-                                <span class="imdb-badge">${obj.item.rating}</span>
+                                <span class="imdb-badge">${obj.item.rating || '-'}</span>
                             </div>
-                            <span class="genre-text" title="${obj.item.genre}">${obj.item.genre}</span>
+                            <span class="genre-text" title="${obj.item.genre || ''}">${obj.item.genre || ''}</span>
                         </div>
                     </div>
                 `;
@@ -268,6 +268,7 @@
             let hasSeries = false;
 
             dataList.forEach((item, index) => {
+                if (!item) return;
                 const card = document.createElement('div');
                 card.className = 'movie-card';
                 card.innerHTML = `
@@ -278,9 +279,9 @@
                         <p class="movie-name">${item.title}</p>
                         <div class="movie-meta">
                             <div class="movie-meta-row">
-                                <span class="imdb-badge">${item.rating}</span>
+                                <span class="imdb-badge">${item.rating || '-'}</span>
                             </div>
-                            <span class="genre-text" title="${item.genre}">${item.genre}</span>
+                            <span class="genre-text" title="${item.genre || ''}">${item.genre || ''}</span>
                         </div>
                     </div>
                 `;
@@ -302,11 +303,11 @@
         function openMediaPage(index) {
             const item = filteredMoviesData[index];
             if (!item) return;
-            currentHD = item.hdUrl;
-            currentSD = item.sdUrl;
+            currentHD = item.hdUrl || "";
+            currentSD = item.sdUrl || "";
 
-            document.getElementById('currentTitle').innerText = item.title;
-            document.getElementById('currentDesc').innerText = item.desc;
+            document.getElementById('currentTitle').innerText = item.title || "";
+            document.getElementById('currentDesc').innerText = item.desc || "";
             
             changeServer('HD');
 
@@ -349,9 +350,11 @@
             }
 
             const searchResults = filteredMoviesData.filter(item => 
-                item.title.toLowerCase().includes(query) || 
-                item.desc.toLowerCase().includes(query) ||
-                item.genre.toLowerCase().includes(query)
+                item && (
+                    (item.title && item.title.toLowerCase().includes(query)) || 
+                    (item.desc && item.desc.toLowerCase().includes(query)) ||
+                    (item.genre && item.genre.toLowerCase().includes(query))
+                )
             );
 
             renderData(searchResults);
@@ -381,6 +384,4 @@
             document.getElementById('txtHomeBtn').innerText = langData[lang].homeBtn;
             document.getElementById('searchInput').placeholder = langData[lang].searchPlaceholder;
             document.getElementById('btnSearchSubmit').innerText = langData[lang].searchBtn;
-            document.getElementById('txtHistoryTitle').innerText = langData[lang].historyTitle;
-            document.getElementById('txtClearHistory').innerText = langData[lang].clearHistory;
-            document.getElementById('btnHD').innerText = langD
+            document.getElementById('txtH
