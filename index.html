@@ -180,6 +180,10 @@
                 renderData(filteredMoviesData);
             }
             updateHistoryUI();
+
+            // الاستماع لحدث ملء الشاشة للتحكم بالدوران تلقائياً
+            document.addEventListener('fullscreenchange', handleScreenOrientation);
+            document.addEventListener('webkitfullscreenchange', handleScreenOrientation);
         });
 
         function renderData(dataList) {
@@ -247,7 +251,6 @@
 
             let targetUrl = (type === 'HD') ? currentHD : currentSD;
 
-            // كود إضافي ذكي لتمرير أمر تشغيل الترجمة تلقائياً بناءً على نوع الرابط المستخدم
             if (targetUrl && !targetUrl.includes('sub=')) {
                 let separator = targetUrl.includes('?') ? '&' : '?';
                 targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
@@ -261,6 +264,20 @@
                 iframe.src = targetUrl;
                 btnSD.classList.add('active');
                 btnHD.classList.remove('active');
+            }
+        }
+
+        // دالة التحكم في تدوير الشاشة أفقياً عند التكبير
+        function handleScreenOrientation() {
+            const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement;
+            if (isFullscreen) {
+                if (screen.orientation && screen.orientation.lock) {
+                    screen.orientation.lock('landscape').catch(() => {});
+                }
+            } else {
+                if (screen.orientation && screen.orientation.unlock) {
+                    screen.orientation.unlock();
+                }
             }
         }
 
@@ -299,64 +316,4 @@
             document.getElementById('btnAr').classList.toggle('active', lang === 'ar');
             document.getElementById('btnEn').classList.toggle('active', lang === 'en');
 
-            document.getElementById('txtLogo').innerText = langData[lang].logo;
-            document.getElementById('txtHomeBtn').innerText = langData[lang].homeBtn;
-            document.getElementById('searchInput').placeholder = langData[lang].searchPlaceholder;
-            document.getElementById('btnSearchSubmit').innerText = langData[lang].searchBtn;
-            document.getElementById('txtHistoryTitle').innerText = langData[lang].historyTitle;
-            document.getElementById('txtClearHistory').innerText = langData[lang].clearHistory;
-            document.getElementById('btnHD').innerText = langData[lang].hdServer;
-            document.getElementById('btnSD').innerText = langData[lang].sdServer;
-            document.getElementById('btnCast').innerText = langData[lang].castBtn;
-            document.getElementById('txtMoviesSection').innerText = langData[lang].moviesSection;
-            document.getElementById('txtSeriesSection').innerText = langData[lang].seriesSection;
-            document.getElementById('noResultsMessage').innerText = langData[lang].noResults;
-        }
-
-        function addToHistory(title, index) {
-            watchHistory = watchHistory.filter(h => h.title !== title);
-            watchHistory.unshift({ title, index });
-            if (watchHistory.length > 10) watchHistory.pop();
-            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
-            updateHistoryUI();
-        }
-
-        function updateHistoryUI() {
-            const section = document.getElementById('historySection');
-            const list = document.getElementById('historyList');
-            if (watchHistory.length === 0) {
-                section.style.display = 'none';
-                return;
-            }
-            section.style.display = 'block';
-            list.innerHTML = '';
-            watchHistory.forEach((item, idx) => {
-                const div = document.createElement('div');
-                div.className = 'history-item';
-                div.innerHTML = `
-                    <span onclick="openMediaPage(${item.index})">${item.title}</span>
-                    <span class="delete-item-btn" onclick="deleteHistoryItem(event, ${idx})">×</span>
-                `;
-                list.appendChild(div);
-            });
-        }
-
-        function deleteHistoryItem(e, idx) {
-            e.stopPropagation();
-            watchHistory.splice(idx, 1);
-            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
-            updateHistoryUI();
-        }
-
-        function clearFullHistory() {
-            watchHistory = [];
-            localStorage.removeItem('cinemaFluxHistory');
-            updateHistoryUI();
-        }
-
-        function castToTV() {
-            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
-        }
-    </script>
-</body>
-</html>
+            document.getElementById('txtLogo').innerText = langData
