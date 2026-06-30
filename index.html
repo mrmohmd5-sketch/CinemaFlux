@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="mainHtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>سينما فلوكس | CinemaFlux</title>
+    <style>
+        html, body {
+            max-width: 100%; overflow-x: hidden; margin: 0; padding: 0;
+            background-color: #0b1116; color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body { padding-bottom: 40px; box-sizing: border-box; }
+        header {
+            background-color: #06090c; padding: 15px; border-bottom: 1px solid #1c252d;
+            display: flex; flex-direction: column; gap: 12px;
+        }
+        .header-top { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .logo-text { font-size: 22px; font-weight: bold; color: #e50914; }
+        .home-btn {
+            background-color: #121b22; color: #fff; border: 1px solid #1c252d;
+            padding: 6px 16px; font-size: 13px; font-weight: bold; border-radius: 20px; cursor: pointer;
+        }
+        .home-btn:hover { background-color: #e50914; border-color: #e50914; }
+        .lang-switcher {
+            display: inline-flex; background-color: #121b22; border: 1px solid #1c252d;
+            border-radius: 15px; padding: 2px; font-size: 11px; cursor: pointer;
+        }
+        html[dir="rtl"] .lang-switcher { align-self: flex-start; }
+        html[dir="ltr"] .lang-switcher { align-self: flex-end; }
+        .lang-btn { padding: 4px 12px; border-radius: 12px; color: #9aa6b1; font-weight: bold; }
+        .lang-btn.active { background-color: #e50914; color: #fff; }
+        .container { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 12px; box-sizing: border-box; }
+        .search-box { margin: 20px auto; display: flex; justify-content: center; gap: 8px; width: 100%; }
+        .search-box input {
+            flex: 1; padding: 12px 15px; font-size: 14px; border: 1px solid #1c252d;
+            border-radius: 25px; background-color: #121b22; color: #fff; outline: none;
+        }
+        html[dir="rtl"] .search-box input { text-align: right; }
+        html[dir="ltr"] .search-box input { text-align: left; }
+        .search-box input:focus { border-color: #e50914; }
+        .search-btn {
+            background-color: #e50914; color: white; border: none; padding: 0 20px;
+            font-size: 14px; font-weight: bold; border-radius: 25px; cursor: pointer; white-space: nowrap;
+        }
+        .main-player {
+            background-color: #000; border-radius: 12px; overflow: hidden;
+            margin-bottom: 25px; border: 1px solid #1c252d; display: none; width: 100%;
+        }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; width: 100%; background-color: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .player-controls { display: flex; gap: 8px; padding: 10px; background-color: #06090c; justify-content: center; flex-wrap: wrap; }
+        .server-btn, .cast-btn {
+            background-color: #121b22; color: #fff; border: 1px solid #1c252d; padding: 8px 14px;
+            font-size: 12px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
+        }
+        .server-btn.active { background-color: #e50914; border-color: #e50914; }
+        .cast-btn { background-color: #28a745; border-color: #28a745; }
+        .video-details { padding: 15px; background-color: #06090c; border-top: 1px solid #1c252d; }
+        .video-title { font-size: 18px; margin: 0 0 8px 0; font-weight: bold; }
+        .video-desc { font-size: 13px; color: #9aa6b1; margin: 0; line-height: 1.6; }
+        .history-section {
+            background-color: #06090c; padding: 12px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #1c252d; display: none;
+        }
+        .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .clear-all-btn { background-color: #dc3545; color: #fff; border: none; padding: 4px 10px; font-size: 11px; border-radius: 4px; cursor: pointer; }
+        .history-list { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; }
+        .history-item { position: relative; background-color: #121b22; border-radius: 5px; font-size: 12px; white-space: nowrap; border: 1px solid #1c252d; cursor: pointer; }
+        html[dir="rtl"] .history-item { padding: 8px 32px 8px 12px; }
+        html[dir="ltr"] .history-item { padding: 8px 12px 8px 32px; }
+        .delete-item-btn { position: absolute; top: 50%; transform: translateY(-50%); color: #dc3545; cursor: pointer; font-weight: bold; }
+        html[dir="rtl"] .delete-item-btn { right: 10px; }
+        html[dir="ltr"] .delete-item-btn { left: 10px; }
+        .row-header { display: flex; justify-content: space-between; align-items: center; margin: 25px 0 12px 0; }
+        .row-title { font-size: 17px; font-weight: bold; color: #fff; padding: 0 8px; }
+        html[dir="rtl"] .row-title { border-right: 4px solid #e50914; }
+        html[dir="ltr"] .row-title { border-left: 4px solid #e50914; }
+        .movies-slider { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; width: 100%; }
+        .movies-slider::-webkit-scrollbar { height: 4px; }
+        .movies-slider::-webkit-scrollbar-thumb { background-color: #1c252d; border-radius: 10px; }
+        .movie-card { min-width: 120px; max-width: 120px; cursor: pointer; }
+        .poster-wrapper { position: relative; width: 100%; height: 170px; border-radius: 8px; overflow: hidden; border: 1px solid #1c252d; }
+        .movie-poster { width: 100%; height: 100%; object-fit: cover; }
+        .movie-info { padding: 6px 0; }
+        .movie-name { font-size: 12px; font-weight: bold; margin: 0 0 4px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .movie-meta { display: flex; flex-direction: column; gap: 2px; font-size: 11px; color: #9aa6b1; }
+        .movie-meta-row { display: flex; align-items: center; gap: 5px; }
+        .genre-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 110px; }
+        .imdb-badge { background-color: #1c252d; color: #fff; padding: 1px 4px; border-radius: 3px; font-weight: bold; font-size: 10px; display: inline-block; }
+        .no-results {
+            display: none; text-align: center; padding: 25px 15px; color: #9aa6b1; font-size: 13px;
+            background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo-text" id="txtLogo">🎬 سينما فلوكس | CinemaFlux</div>
+            <button class="home-btn" id="txtHomeBtn" onclick="goHome()">الرئيسية | HOME</button>
+        </div>
+        <div class="lang-switcher">
+            <span class="lang-btn active" id="btnAr" onclick="setLanguage('ar')">العربية</span>
+            <span class="lang-btn" id="btnEn" onclick="setLanguage('en')">English</span>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث عن اسم الفيلم أو المسلسل...">
+            <button class="search-btn" id="btnSearchSubmit" onclick="searchItems()">بحث</button>
+        </div>
+
+        <div class="history-section" id="historySection">
+            <div class="history-header">
+                <div class="row-title" style="border-color: #28a745;" id="txtHistoryTitle">سجل المشاهدة مؤخراً</div>
+                <button class="clear-all-btn" id="txtClearHistory" onclick="clearFullHistory()">حذف السجل بالكامل 🗑️</button>
+            </div>
+            <div class="history-list" id="historyList"></div>
+        </div>
+
+        <div class="main-player" id="videoPlayerSection">
+            <div class="video-container" id="mediaContainer">
+                <iframe id="mainIframe" src="" allowfullscreen="true" scrolling="no"></iframe>
+            </div>
+            <div class="player-controls">
+                <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر عالي الجودة</button>
+                <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر إنترنت ضعيف</button>
+                <button class="cast-btn" id="btnCast" onclick="castToTV()">📺 بث للشاشة</button>
+            </div>
+            
+            <div class="video-details">
+                <h1 id="currentTitle" class="video-title">-</h1>
+                <p id="currentDesc" class="video-desc">-</p>
+            </div>
+        </div>
+
+        <div id="noResultsMessage" class="no-results">عذراً لا توجد نتائج ، قم بأدخل كلمات مختلفة او ربما انت قمت بكتابة الاسم بشكل غير صحيح 🔍</div>
+
+        <div id="moviesBlock" style="display:none;">
+            <div class="row-header"><div class="row-title" id="txtMoviesSection">قسم الأفلام</div></div>
+            <div class="movies-slider" id="moviesSlider"></div>
+        </div>
+
+        <div id="seriesBlock" style="display:none;">
+            <div class="row-header"><div class="row-title" id="txtSeriesSection">قسم المسلسلات</div></div>
+            <div class="movies-slider" id="seriesSlider"></div>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+
+    <script>
+        let filteredMoviesData = [];
+        let currentLang = 'ar';
+        let currentHD = "", currentSD = "";
+        let watchHistory = JSON.parse(localStorage.getItem('cinemaFluxHistory')) || [];
+
+        const langData = {
+            ar: {
+                logo: "🎬 سينما فلوكس | CinemaFlux", homeBtn: "الرئيسية | HOME", searchPlaceholder: "ابحث عن اسم الفيلم أو المسلسل...", searchBtn: "بحث",
+                historyTitle: "سجل المشاهدة مؤخراً", clearHistory: "حذف السجل بالكامل 🗑️", hdServer: "سيرفر عالي الجودة",
+                sdServer: "سيرفر إنترنت ضعيف", castBtn: "📺 بث للشاشة", moviesSection: "قسم الأفلام", seriesSection: "قسم المسلسلات",
+                noResults: "عذراً لا توجد نتائج ، قم بأدخل كلمات مختلفة او ربما انت قمت بكتابة الاسم بشكل غير صحيح 🔍"
+            },
+            en: {
+                logo: "🎬 CinemaFlux", homeBtn: "HOME", searchPlaceholder: "Search for movie or series name...", searchBtn: "Search",
+                historyTitle: "Recently Watched", clearHistory: "Clear Full History 🗑️", hdServer: "High Quality Server",
+                sdServer: "Low Internet Server", castBtn: "📺 Cast to TV", moviesSection: "Movies Section", seriesSection: "Series Section",
+                noResults: "Sorry, no results found. Please enter different words or check your spelling! 🔍"
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof globalMoviesData !== 'undefined') {
+                filteredMoviesData = globalMoviesData.filter(item => item.hdUrl && item.hdUrl.trim() !== "");
+                renderData(filteredMoviesData);
+            }
+            updateHistoryUI();
+        });
+
+        function renderData(dataList) {
+            const moviesSlider = document.getElementById('moviesSlider');
+            const seriesSlider = document.getElementById('seriesSlider');
+            
+            moviesSlider.innerHTML = '';
+            seriesSlider.innerHTML = '';
+
+            let hasMovies = false;
+            let hasSeries = false;
+
+            dataList.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.innerHTML = `
+                    <div class="poster-wrapper">
+                        <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                    </div>
+                    <div class="movie-info">
+                        <p class="movie-name">${item.title}</p>
+                        <div class="movie-meta">
+                            <div class="movie-meta-row">
+                                <span class="imdb-badge">${item.rating}</span>
+                            </div>
+                            <span class="genre-text" title="${item.genre}">${item.genre}</span>
+                        </div>
+                    </div>
+                `;
+                card.onclick = () => openMediaPage(index);
+
+                if (item.type === 'series') {
+                    seriesSlider.appendChild(card);
+                    hasSeries = true;
+                } else {
+                    moviesSlider.appendChild(card);
+                    hasMovies = true;
+                }
+            });
+
+            document.getElementById('moviesBlock').style.display = hasMovies ? 'block' : 'none';
+            document.getElementById('seriesBlock').style.display = hasSeries ? 'block' : 'none';
+        }
+
+        function openMediaPage(index) {
+            const item = filteredMoviesData[index];
+            currentHD = item.hdUrl;
+            currentSD = item.sdUrl;
+
+            document.getElementById('currentTitle').innerText = item.title;
+            document.getElementById('currentDesc').innerText = item.desc;
+            
+            changeServer('HD');
+
+            document.getElementById('videoPlayerSection').style.display = 'block';
+            window.scrollTo({ top: document.getElementById('videoPlayerSection').offsetTop - 20, behavior: 'smooth' });
+
+            addToHistory(item.title, index);
+        }
+
+        function changeServer(type) {
+            const iframe = document.getElementById('mainIframe');
+            const btnHD = document.getElementById('btnHD');
+            const btnSD = document.getElementById('btnSD');
+
+            if (type === 'HD') {
+                iframe.src = currentHD;
+                btnHD.classList.add('active');
+                btnSD.classList.remove('active');
+            } else {
+                iframe.src = currentSD;
+                btnSD.classList.add('active');
+                btnHD.classList.remove('active');
+            }
+        }
+
+        function searchItems() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (!query) {
+                renderData(filteredMoviesData);
+                document.getElementById('noResultsMessage').style.display = 'none';
+                return;
+            }
+
+            const searchResults = filteredMoviesData.filter(item => 
+                item.title.toLowerCase().includes(query) || 
+                item.desc.toLowerCase().includes(query) ||
+                item.genre.toLowerCase().includes(query)
+            );
+
+            renderData(searchResults);
+            document.getElementById('noResultsMessage').style.display = searchResults.length === 0 ? 'block' : 'none';
+        }
+
+        function goHome() {
+            document.getElementById('videoPlayerSection').style.display = 'none';
+            document.getElementById('mainIframe').src = '';
+            document.getElementById('searchInput').value = '';
+            renderData(filteredMoviesData);
+            document.getElementById('noResultsMessage').style.display = 'none';
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const html = document.getElementById('mainHtml');
+            html.setAttribute('lang', lang);
+            html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            document.getElementById('btnAr').classList.toggle('active', lang === 'ar');
+            document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+
+            document.getElementById('txtLogo').innerText = langData[lang].logo;
+            document.getElementById('txtHomeBtn').innerText = langData[lang].homeBtn;
+            document.getElementById('searchInput').placeholder = langData[lang].searchPlaceholder;
+            document.getElementById('btnSearchSubmit').innerText = langData[lang].searchBtn;
+            document.getElementById('txtHistoryTitle').innerText = langData[lang].historyTitle;
+            document.getElementById('txtClearHistory').innerText = langData[lang].clearHistory;
+            document.getElementById('btnHD').innerText = langData[lang].hdServer;
+            document.getElementById('btnSD').innerText = langData[lang].sdServer;
+            document.getElementById('btnCast').innerText = langData[lang].castBtn;
+            document.getElementById('txtMoviesSection').innerText = langData[lang].moviesSection;
+            document.getElementById('txtSeriesSection').innerText = langData[lang].seriesSection;
+            document.getElementById('noResultsMessage').innerText = langData[lang].noResults;
+        }
+
+        function addToHistory(title, index) {
+            watchHistory = watchHistory.filter(h => h.title !== title);
+            watchHistory.unshift({ title, index });
+            if (watchHistory.length > 10) watchHistory.pop();
+            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
+            updateHistoryUI();
+        }
+
+        function updateHistoryUI() {
+            const section = document.getElementById('historySection');
+            const list = document.getElementById('historyList');
+            if (watchHistory.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+            section.style.display = 'block';
+            list.innerHTML = '';
+            watchHistory.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'history-item';
+                div.innerHTML = `
+                    <span onclick="openMediaPage(${item.index})">${item.title}</span>
+                    <span class="delete-item-btn" onclick="deleteHistoryItem(event, ${idx})">×</span>
+                `;
+                list.appendChild(div);
+            });
+        }
+
+        function deleteHistoryItem(e, idx) {
+            e.stopPropagation();
+            watchHistory.splice(idx, 1);
+            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
+            updateHistoryUI();
+        }
+
+        function clearFullHistory() {
+            watchHistory = [];
+            localStorage.removeItem('cinemaFluxHistory');
+            updateHistoryUI();
+        }
+
+        function castToTV() {
+            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
+        }
+    </script>
+</body>
+</html>
