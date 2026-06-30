@@ -245,12 +245,20 @@
             const btnHD = document.getElementById('btnHD');
             const btnSD = document.getElementById('btnSD');
 
+            let targetUrl = (type === 'HD') ? currentHD : currentSD;
+
+            // كود إضافي ذكي لتمرير أمر تشغيل الترجمة تلقائياً بناءً على نوع الرابط المستخدم
+            if (targetUrl && !targetUrl.includes('sub=')) {
+                let separator = targetUrl.includes('?') ? '&' : '?';
+                targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
+            }
+
             if (type === 'HD') {
-                iframe.src = currentHD;
+                iframe.src = targetUrl;
                 btnHD.classList.add('active');
                 btnSD.classList.remove('active');
             } else {
-                iframe.src = currentSD;
+                iframe.src = targetUrl;
                 btnSD.classList.add('active');
                 btnHD.classList.remove('active');
             }
