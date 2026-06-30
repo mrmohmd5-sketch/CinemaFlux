@@ -92,26 +92,25 @@
             background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
         }
 
-        /* تنسيقات الشريط المتحرك التلقائي الجديد */
+        /* تنسيقات الشريط المنزلق التلقائي */
         .marquee-container {
             width: 100%; overflow: hidden; background-color: #06090c; 
             border: 1px solid #1c252d; border-radius: 12px; padding: 15px 0; margin-bottom: 15px;
         }
         .marquee-content {
             display: flex; gap: 20px; width: max-content;
-            animation: marqueeTrack 30s linear infinite;
+            animation: marqueeTrack 35s linear infinite;
         }
-        /* إيقاف التحرك مؤقتاً عند تمرير الماوس للتسهيل على المستخدم */
         .marquee-container:hover .marquee-content {
             animation-play-state: paused;
         }
         @keyframes marqueeTrack {
             0% { transform: translateX(0); }
-            100% { transform: translateX(50%); }
+            100% { transform: translateX(-50%); }
         }
         html[dir="rtl"] @keyframes marqueeTrack {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(50%); }
         }
     </style>
 </head>
@@ -204,51 +203,56 @@
             if (typeof globalMoviesData !== 'undefined') {
                 filteredMoviesData = globalMoviesData.filter(item => item.hdUrl && item.hdUrl.trim() !== "");
                 renderData(filteredMoviesData);
-                renderMarquee(filteredMoviesData);
+                renderMarquee();
             }
             updateHistoryUI();
         });
 
-        // دالة لبناء الشريط التلقائي المتحرك لآخر 10 أفلام فقط ومضاعفتها لضمان انسيابية الحركة الدائرية
-        function renderMarquee(dataList) {
+        // دالة عرض الشريط المنزلق المستقر لـ 10 أفلام فقط وثابتة بدون تعليق الكود
+        function renderMarquee() {
             const marqueeContainer = document.getElementById('featuredMarqueeBlock');
             const marqueeContent = document.getElementById('marqueeContent');
             marqueeContent.innerHTML = '';
 
-            // تصفية العناصر لجلب الأفلام فقط، وترتيبها من الأحدث للأقدم (بافتراض الترتيب التلقائي للمصفوفة) ثم أخذ أول 10 فقط
-            const choiceMovies = dataList.filter(item => item.type !== 'series').slice(0, 10);
+            // تصفية المصفوفة لجلب الأفلام فقط (باستثناء المسلسلات)
+            const onlyMovies = [];
+            filteredMoviesData.forEach((item, index) => {
+                if (item.type !== 'series') {
+                    onlyMovies.push({ item: item, originalIndex: index });
+                }
+            });
 
-            if (choiceMovies.length === 0) {
+            // اقتطاع أول 10 أفلام فقط مضافة حديثاً
+            const finalMovies = onlyMovies.slice(0, 10);
+
+            if (finalMovies.length === 0) {
                 marqueeContainer.style.display = 'none';
                 return;
             }
 
             marqueeContainer.style.display = 'block';
 
-            // نقوم بتكرار المخرجات مرتين لإنشاء تأثير التمرير اللانهائي المستمر (Infinite Loop Effect)
-            const doubleList = [...choiceMovies, ...choiceMovies];
+            // مضاعفة العناصر لإنشاء دورة حركة انسيابية لا تنتهي
+            const loops = [...finalMovies, ...finalMovies];
 
-            doubleList.forEach((item) => {
-                // البحث عن الـ index الأصلي للفيلم في المصفوفة الكلية لفتحه بشكل صحيح عند الضغط عليه
-                const originalIndex = dataList.findIndex(f => f.title === item.title && f.hdUrl === item.hdUrl);
-                
+            loops.forEach((obj) => {
                 const card = document.createElement('div');
                 card.className = 'movie-card';
                 card.innerHTML = `
                     <div class="poster-wrapper">
-                        <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                        <img class="movie-poster" src="${obj.item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
                     </div>
                     <div class="movie-info">
-                        <p class="movie-name">${item.title}</p>
+                        <p class="movie-name">${obj.item.title}</p>
                         <div class="movie-meta">
                             <div class="movie-meta-row">
-                                <span class="imdb-badge">${item.rating}</span>
+                                <span class="imdb-badge">${obj.item.rating}</span>
                             </div>
-                            <span class="genre-text" title="${item.genre}">${item.genre}</span>
+                            <span class="genre-text" title="${obj.item.genre}">${obj.item.genre}</span>
                         </div>
                     </div>
                 `;
-                card.onclick = () => openMediaPage(originalIndex);
+                card.onclick = () => openMediaPage(obj.originalIndex);
                 marqueeContent.appendChild(card);
             });
         }
@@ -296,8 +300,8 @@
         }
 
         function openMediaPage(index) {
-            if (index === -1) return;
             const item = filteredMoviesData[index];
+            if (!item) return;
             currentHD = item.hdUrl;
             currentSD = item.sdUrl;
 
@@ -352,7 +356,6 @@
 
             renderData(searchResults);
             document.getElementById('noResultsMessage').style.display = searchResults.length === 0 ? 'block' : 'none';
-            // إخفاء الشريط العلوي أثناء البحث لعدم تشتيت النتائج
             document.getElementById('featuredMarqueeBlock').style.display = 'none';
         }
 
@@ -361,7 +364,7 @@
             document.getElementById('mainIframe').src = '';
             document.getElementById('searchInput').value = '';
             renderData(filteredMoviesData);
-            renderMarquee(filteredMoviesData);
+            renderMarquee();
             document.getElementById('noResultsMessage').style.display = 'none';
         }
 
@@ -377,4 +380,7 @@
             document.getElementById('txtLogo').innerText = langData[lang].logo;
             document.getElementById('txtHomeBtn').innerText = langData[lang].homeBtn;
             document.getElementById('searchInput').placeholder = langData[lang].searchPlaceholder;
-            document.getElementById('btnSearchSubmit').innerText = langD
+            document.getElementById('btnSearchSubmit').innerText = langData[lang].searchBtn;
+            document.getElementById('txtHistoryTitle').innerText = langData[lang].historyTitle;
+            document.getElementById('txtClearHistory').innerText = langData[lang].clearHistory;
+            document.getElementById('btnHD').innerText = langD
