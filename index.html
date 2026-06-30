@@ -176,17 +176,10 @@
 
         window.addEventListener('DOMContentLoaded', () => {
             if (typeof globalMoviesData !== 'undefined') {
-                // الكود عاد لأصله تماماً بدون أي فلترة لحماية عدد أفلامك كاملة
-                filteredMoviesData = globalMoviesData;
+                filteredMoviesData = globalMoviesData.filter(item => item.hdUrl && item.hdUrl.trim() !== "");
                 renderData(filteredMoviesData);
             }
             updateHistoryUI();
-
-            // الاستماع الذكي لحدث ملء الشاشة لتشغيل ميزة الدوران التلقائي
-            document.addEventListener('fullscreenchange', handleScreenOrientation);
-            document.addEventListener('webkitfullscreenchange', handleScreenOrientation);
-            document.addEventListener('mozfullscreenchange', handleScreenOrientation);
-            document.addEventListener('MSFullscreenChange', handleScreenOrientation);
         });
 
         function renderData(dataList) {
@@ -268,20 +261,6 @@
                 iframe.src = targetUrl;
                 btnSD.classList.add('active');
                 btnHD.classList.remove('active');
-            }
-        }
-
-        // دالة تدوير الشاشة لوضع Landscape عند تفعيل الـ Fullscreen
-        function handleScreenOrientation() {
-            const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
-            if (isFullscreen) {
-                if (screen.orientation && screen.orientation.lock) {
-                    screen.orientation.lock('landscape').catch(() => {});
-                }
-            } else {
-                if (screen.orientation && screen.orientation.unlock) {
-                    screen.orientation.unlock();
-                }
             }
         }
 
@@ -376,4 +355,8 @@
         }
 
         function castToTV() {
-            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أ
+            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
+        }
+    </script>
+</body>
+</html>
