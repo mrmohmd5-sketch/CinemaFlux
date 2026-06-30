@@ -91,6 +91,28 @@
             display: none; text-align: center; padding: 25px 15px; color: #9aa6b1; font-size: 13px;
             background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
         }
+
+        /* تنسيقات الشريط المتحرك التلقائي الجديد */
+        .marquee-container {
+            width: 100%; overflow: hidden; background-color: #06090c; 
+            border: 1px solid #1c252d; border-radius: 12px; padding: 15px 0; margin-bottom: 15px;
+        }
+        .marquee-content {
+            display: flex; gap: 20px; width: max-content;
+            animation: marqueeTrack 30s linear infinite;
+        }
+        /* إيقاف التحرك مؤقتاً عند تمرير الماوس للتسهيل على المستخدم */
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+        @keyframes marqueeTrack {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50%); }
+        }
+        html[dir="rtl"] @keyframes marqueeTrack {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
     </style>
 </head>
 <body>
@@ -111,6 +133,10 @@
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="ابحث عن اسم الفيلم أو المسلسل...">
             <button class="search-btn" id="btnSearchSubmit" onclick="searchItems()">بحث</button>
+        </div>
+
+        <div class="marquee-container" id="featuredMarqueeBlock" style="display: none;">
+            <div class="marquee-content" id="marqueeContent"></div>
         </div>
 
         <div class="history-section" id="historySection">
@@ -178,9 +204,54 @@
             if (typeof globalMoviesData !== 'undefined') {
                 filteredMoviesData = globalMoviesData.filter(item => item.hdUrl && item.hdUrl.trim() !== "");
                 renderData(filteredMoviesData);
+                renderMarquee(filteredMoviesData);
             }
             updateHistoryUI();
         });
+
+        // دالة لبناء الشريط التلقائي المتحرك لآخر 10 أفلام فقط ومضاعفتها لضمان انسيابية الحركة الدائرية
+        function renderMarquee(dataList) {
+            const marqueeContainer = document.getElementById('featuredMarqueeBlock');
+            const marqueeContent = document.getElementById('marqueeContent');
+            marqueeContent.innerHTML = '';
+
+            // تصفية العناصر لجلب الأفلام فقط، وترتيبها من الأحدث للأقدم (بافتراض الترتيب التلقائي للمصفوفة) ثم أخذ أول 10 فقط
+            const choiceMovies = dataList.filter(item => item.type !== 'series').slice(0, 10);
+
+            if (choiceMovies.length === 0) {
+                marqueeContainer.style.display = 'none';
+                return;
+            }
+
+            marqueeContainer.style.display = 'block';
+
+            // نقوم بتكرار المخرجات مرتين لإنشاء تأثير التمرير اللانهائي المستمر (Infinite Loop Effect)
+            const doubleList = [...choiceMovies, ...choiceMovies];
+
+            doubleList.forEach((item) => {
+                // البحث عن الـ index الأصلي للفيلم في المصفوفة الكلية لفتحه بشكل صحيح عند الضغط عليه
+                const originalIndex = dataList.findIndex(f => f.title === item.title && f.hdUrl === item.hdUrl);
+                
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.innerHTML = `
+                    <div class="poster-wrapper">
+                        <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                    </div>
+                    <div class="movie-info">
+                        <p class="movie-name">${item.title}</p>
+                        <div class="movie-meta">
+                            <div class="movie-meta-row">
+                                <span class="imdb-badge">${item.rating}</span>
+                            </div>
+                            <span class="genre-text" title="${item.genre}">${item.genre}</span>
+                        </div>
+                    </div>
+                `;
+                card.onclick = () => openMediaPage(originalIndex);
+                marqueeContent.appendChild(card);
+            });
+        }
 
         function renderData(dataList) {
             const moviesSlider = document.getElementById('moviesSlider');
@@ -225,6 +296,7 @@
         }
 
         function openMediaPage(index) {
+            if (index === -1) return;
             const item = filteredMoviesData[index];
             currentHD = item.hdUrl;
             currentSD = item.sdUrl;
@@ -247,7 +319,6 @@
 
             let targetUrl = (type === 'HD') ? currentHD : currentSD;
 
-            // كود إضافي ذكي لتمرير أمر تشغيل الترجمة تلقائياً بناءً على نوع الرابط المستخدم
             if (targetUrl && !targetUrl.includes('sub=')) {
                 let separator = targetUrl.includes('?') ? '&' : '?';
                 targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
@@ -269,6 +340,7 @@
             if (!query) {
                 renderData(filteredMoviesData);
                 document.getElementById('noResultsMessage').style.display = 'none';
+                document.getElementById('featuredMarqueeBlock').style.display = 'block';
                 return;
             }
 
@@ -280,6 +352,8 @@
 
             renderData(searchResults);
             document.getElementById('noResultsMessage').style.display = searchResults.length === 0 ? 'block' : 'none';
+            // إخفاء الشريط العلوي أثناء البحث لعدم تشتيت النتائج
+            document.getElementById('featuredMarqueeBlock').style.display = 'none';
         }
 
         function goHome() {
@@ -287,6 +361,7 @@
             document.getElementById('mainIframe').src = '';
             document.getElementById('searchInput').value = '';
             renderData(filteredMoviesData);
+            renderMarquee(filteredMoviesData);
             document.getElementById('noResultsMessage').style.display = 'none';
         }
 
@@ -302,61 +377,4 @@
             document.getElementById('txtLogo').innerText = langData[lang].logo;
             document.getElementById('txtHomeBtn').innerText = langData[lang].homeBtn;
             document.getElementById('searchInput').placeholder = langData[lang].searchPlaceholder;
-            document.getElementById('btnSearchSubmit').innerText = langData[lang].searchBtn;
-            document.getElementById('txtHistoryTitle').innerText = langData[lang].historyTitle;
-            document.getElementById('txtClearHistory').innerText = langData[lang].clearHistory;
-            document.getElementById('btnHD').innerText = langData[lang].hdServer;
-            document.getElementById('btnSD').innerText = langData[lang].sdServer;
-            document.getElementById('btnCast').innerText = langData[lang].castBtn;
-            document.getElementById('txtMoviesSection').innerText = langData[lang].moviesSection;
-            document.getElementById('txtSeriesSection').innerText = langData[lang].seriesSection;
-            document.getElementById('noResultsMessage').innerText = langData[lang].noResults;
-        }
-
-        function addToHistory(title, index) {
-            watchHistory = watchHistory.filter(h => h.title !== title);
-            watchHistory.unshift({ title, index });
-            if (watchHistory.length > 10) watchHistory.pop();
-            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
-            updateHistoryUI();
-        }
-
-        function updateHistoryUI() {
-            const section = document.getElementById('historySection');
-            const list = document.getElementById('historyList');
-            if (watchHistory.length === 0) {
-                section.style.display = 'none';
-                return;
-            }
-            section.style.display = 'block';
-            list.innerHTML = '';
-            watchHistory.forEach((item, idx) => {
-                const div = document.createElement('div');
-                div.className = 'history-item';
-                div.innerHTML = `
-                    <span onclick="openMediaPage(${item.index})">${item.title}</span>
-                    <span class="delete-item-btn" onclick="deleteHistoryItem(event, ${idx})">×</span>
-                `;
-                list.appendChild(div);
-            });
-        }
-
-        function deleteHistoryItem(e, idx) {
-            e.stopPropagation();
-            watchHistory.splice(idx, 1);
-            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
-            updateHistoryUI();
-        }
-
-        function clearFullHistory() {
-            watchHistory = [];
-            localStorage.removeItem('cinemaFluxHistory');
-            updateHistoryUI();
-        }
-
-        function castToTV() {
-            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
-        }
-    </script>
-</body>
-</html>
+            document.getElementById('btnSearchSubmit').innerText = langD
