@@ -12,7 +12,7 @@ const globalMoviesData = [
     {
         title: "Elemental",
         desc: "في مدينة صاخبة يعيش فيها سكان النار، الماء، الأرض، والنوايا بأن سجام، تلتقي إمبير (الفتاة النارية الحادة والذكية) بـ وايد (الشاب المائي المرح والرقاق). هذا اللقاء غير المتوقع يتحدى معتقداتهما عن العالم ويقودهما في رحلة لاكتشاف القواسم المشتركة بينهما، في إطار بصري مذهل وقصة تلمس القلوب وتثبت أن الأضداد تتجاذب فعلاً.",
-        poster: "https://b.top4top.io/p_383301gmu0.jpg",
+        poster: "https://l.top4top.io/p_38336lly20.jpg",
         hdUrl: "https://playmogo.com/e/v4mp3htzt0em", 
         sdUrl: "https://playmogo.com/e/v4mp3htzt0em",
         rating: "7.0",
