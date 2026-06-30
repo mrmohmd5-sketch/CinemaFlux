@@ -1,8 +1,18 @@
 const globalMoviesData = [
     {
+        title: "Arco",
+        desc: "أركو دوريل فتى يبلغ من العمر عشر سنوات في عام ٢٩٣٢، في مستقبل مثالي حيث يعيش البشر في السحاب ويسافرون عبر الزمن باستخدام بدلات طيران بألوان قوس قزح. أركو، لصغر سنه وعدم قدرته على الطيران، يسرق عباءة أخته للسفر عبر الزمن وحجرها الكريم ليلاً، ويحاول السفر إلى الماضي البعيد لرؤية الديناصورات.",
+        poster: "https://h.top4top.io/p_3833mun3l0.jpg",
+        hdUrl: "https://playmogo.com/e/36f2eu5xp35t", 
+        sdUrl: "https://playmogo.com/e/36f2eu5xp35t",
+        rating: "8.6",
+        genre: "أكشن خيال علمي عائلي",
+        type: "movie"
+    },
+    {
         title: "Elemental",
         desc: "في مدينة صاخبة يعيش فيها سكان النار، الماء، الأرض، والنوايا بأن سجام، تلتقي إمبير (الفتاة النارية الحادة والذكية) بـ وايد (الشاب المائي المرح والرقاق). هذا اللقاء غير المتوقع يتحدى معتقداتهما عن العالم ويقودهما في رحلة لاكتشاف القواسم المشتركة بينهما، في إطار بصري مذهل وقصة تلمس القلوب وتثبت أن الأضداد تتجاذب فعلاً.",
-        poster: "https://g.top4top.io/p_3833n0maz0.jpg",
+        poster: "https://images.themoviedb.org/t/p/original/4YDCw9789Y68g668g2as6FFgA1u.jpg",
         hdUrl: "https://playmogo.com/e/v4mp3htzt0em", 
         sdUrl: "https://playmogo.com/e/v4mp3htzt0em",
         rating: "7.0",
