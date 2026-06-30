@@ -4,7 +4,7 @@ const globalMoviesData = [
         desc: "أركو دوريل فتى يبلغ من العمر عشر سنوات في عام ٢٩٣٢، في مستقبل مثالي حيث يعيش البشر في السحاب ويسافرون عبر الزمن باستخدام بدلات طيران بألوان قوس قزح. أركو، لصغر سنه وعدم قدرته على الطيران، يسرق عباءة أخته للسفر عبر الزمن وحجرها الكريم ليلاً، ويحاول السفر إلى الماضي البعيد لرؤية الديناصورات.",
         poster: "https://h.top4top.io/p_3833mun3l0.jpg",
         hdUrl: "https://playmogo.com/e/36f2eu5xp35t", 
-        sdUrl: "https://playmogo.com/e/36f2eu5xp35t", 
+        sdUrl: "https://playmogo.com/e/36f2eu5xp35t",
         rating: "8.6",
         genre: "أكشن خيال علمي عائلي",
         type: "movie"
