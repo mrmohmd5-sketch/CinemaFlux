@@ -18,5 +18,5 @@ const globalMoviesData = [
         rating: "7.0",
         genre: "كوميدي عائلي خيالي ",
         type: "movie"
-    }
-];
+    }‚
+    
