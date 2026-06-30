@@ -1,5 +1,15 @@
 const globalMoviesData = [
     {
+        title: "Onward",
+        desc: "في عالم خيالي من الضواحي، يشرع شقيقان من الإلف (العزف) في رحلة استكشافية غير عادية لمعرفة ما إذا كان لا يزال هناك القليل من السحر المتبقي في العالم، لقضاء يوم أخير مع والدهما الراحل.",
+        poster: "https://j.top4top.io/p_38337nmuf0.jpg",
+        hdUrl: "https://playmogo.com/e/r9ciooszj0ip", 
+        sdUrl: "https://playmogo.com/e/r9ciooszj0ip",
+        rating: "7.4",
+        genre: "أكشن مغامرة خيالي عائلي",
+        type: "movie"
+    },
+    {
         title: "Arco",
         desc: "أركو دوريل فتى يبلغ من العمر عشر سنوات في عام ٢٩٣٢، في مستقبل مثالي حيث يعيش البشر في السحاب ويسافرون عبر الزمن باستخدام بدلات طيران بألوان قوس قزح. أركو، لصغر سنه وعدم قدرته على الطيران، يسرق عباءة أخته للسفر عبر الزمن وحجرها الكريم ليلاً، ويحاول السفر إلى الماضي البعيد لرؤية الديناصورات.",
         poster: "https://h.top4top.io/p_3833mun3l0.jpg",
@@ -26,7 +36,7 @@ const globalMoviesData = [
         hdUrl: "https://playmogo.com/e/gjeby3orhit6", 
         sdUrl: "https://playmogo.com/e/gjeby3orhit6",
         rating: "7/10",
-        genre: "أكشن مغامرة خيالي",
+        genre: "أكشن مغامرة خيالي عائلي",
         type: "movie"
     }
 ];
