@@ -91,19 +91,6 @@
             display: none; text-align: center; padding: 25px 15px; color: #9aa6b1; font-size: 13px;
             background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
         }
-
-        .admin-panel {
-            margin-top: 40px; background-color: #06090c; border: 1px dashed #e50914;
-            padding: 20px; border-radius: 10px; display: none; width: 100%; box-sizing: border-box;
-        }
-        .admin-panel h3 { margin-top: 0; color: #e50914; font-size: 16px; }
-        .admin-grid { display: flex; flex-direction: column; gap: 12px; margin-bottom: 15px; width: 100%; }
-        .admin-grid input {
-            padding: 12px; border-radius: 6px; background-color: #121b22; border: 1px solid #1c252d; color: white; outline: none; font-size: 13px; width: 100%; box-sizing: border-box;
-        }
-        .admin-btn { background-color: #28a745; color: white; border: none; padding: 12px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; font-size: 14px; }
-        .admin-output { width: 100%; height: 130px; margin-top: 15px; background: #000; color: #00ff00; border: 1px solid #1c252d; border-radius: 6px; font-family: monospace; padding: 10px; box-sizing: border-box; font-size: 11px; resize: none; }
-        .dev-trigger { text-align: center; margin: 40px auto 20px auto; font-size: 13px; color: #4b5864; cursor: pointer; user-select: none; width: max-content; }
     </style>
 </head>
 <body>
@@ -164,19 +151,6 @@
             <div class="movies-slider" id="seriesSlider"></div>
         </div>
 
-        <div class="admin-panel" id="adminPanel">
-            <h3>لوحة الإضافة الذكية عبر الروابط المباشرة 🤖</h3>
-            <div class="admin-grid">
-                <input type="text" id="tmdbUrlInput" placeholder="ضع رابط الفيلم الكامل من TMDB (مثال: https://www.themoviedb.org/movie/51497-fast-five)">
-                <input type="text" id="mogoUrlInput" placeholder="ضع رابط تشغيل الفيلم من Playmogo / Doodstream">
-                <input type="password" id="tmdbApiKey" placeholder="ضع هنا TMDB API Key الخاص بك">
-            </div>
-            <button class="admin-btn" onclick="fetchFromTMDB()">جلب البيانات وتوليد كود المصفوفة ✨</button>
-            <textarea class="admin-output" id="adminOutput" readonly placeholder="الكود البرمجي الجاهز سيظهر هنا... انسخه وضعه في ملف data.js"></textarea>
-        </div>
-
-        <div class="dev-trigger" onclick="toggleAdminPanel()">⚙️ لوحة المطور</div>
-
     </div>
 
     <script>
@@ -206,10 +180,6 @@
                 renderData(filteredMoviesData);
             }
             updateHistoryUI();
-            
-            if(localStorage.getItem('savedTmdbKey')) {
-                document.getElementById('tmdbApiKey').value = localStorage.getItem('savedTmdbKey');
-            }
         });
 
         function renderData(dataList) {
@@ -385,83 +355,6 @@
 
         function castToTV() {
             alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
-        }
-
-        function toggleAdminPanel() {
-            const panel = document.getElementById('adminPanel');
-            panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
-        }
-
-        async function fetchFromTMDB() {
-            const rawInput = document.getElementById('tmdbUrlInput').value.trim();
-            const mogoUrl = document.getElementById('mogoUrlInput').value.trim();
-            const apiKey = document.getElementById('tmdbApiKey').value.trim();
-            const output = document.getElementById('adminOutput');
-
-            if(!rawInput || !mogoUrl || !apiKey) {
-                alert("برجاء ملء جميع الحقول المطلوبة ومفتاح الـ API!");
-                return;
-            }
-
-            localStorage.setItem('savedTmdbKey', apiKey);
-            output.value = "جاري استخراج المعرف وجلب البيانات وترجمتها...";
-
-            let id = rawInput;
-            let type = "movie";
-
-            if (rawInput.includes("themoviedb.org")) {
-                try {
-                    if (rawInput.includes("/tv/")) {
-                        type = "tv";
-                    } else {
-                        type = "movie";
-                    }
-                    const match = rawInput.match(/\/(movie|tv)\/(\d+)/);
-                    if (match && match[2]) {
-                        id = match[2];
-                    } else {
-                        throw new Error("لم نتمكن من استخراج المعرّف الرقمي من الرابط المرفق.");
-                    }
-                } catch (e) {
-                    alert("الرابط المدخل غير صحيح أو غير مدعوم، يرجى التأكد منه.");
-                    output.value = "";
-                    return;
-                }
-            }
-
-            try {
-                const response = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}&language=ar`);
-                if(!response.ok) throw new Error("لم يتم العثور على العنصر، تأكد من صحة الرابط أو الـ API Key");
-                
-                const data = await response.json();
-                const genresArray = data.genres ? data.genres.map(g => g.name).join(' ') : "غير مصنف";
-                
-                const titleText = data.title || data.name || "بدون عنوان";
-                const overviewText = data.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
-                const posterUrl = data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400";
-                const ratingValue = data.vote_average ? data.vote_average.toFixed(1) : "0.0";
-
-                const finalType = (type === "tv") ? "series" : "movie";
-
-                const generatedObject = `    {
-        title: "${titleText}",
-        desc: "${overviewText.replace(/"/g, "'").replace(/\n/g, " ")}",
-        poster: "${posterUrl}",
-        hdUrl: "${mogoUrl}", 
-        sdUrl: "${mogoUrl}",
-        rating: "${ratingValue}",
-        genre: "${genresArray}",
-        type: "${finalType}"
-    },`;
-
-                output.value = generatedObject;
-                output.select();
-                alert("تم توليد الكود ونسخه تلقائياً للـ Clipboard! اذهب لملف data.js وألصقه بالداخل.");
-                navigator.clipboard.writeText(generatedObject);
-
-            } catch (error) {
-                output.value = "خطأ: " + error.message;
-            }
         }
     </script>
 </body>
