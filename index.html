@@ -92,7 +92,6 @@
             background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
         }
 
-        /* تحسين وعزل لوحة المطور تماماً لضمان عدم تداخل التنسيقات */
         .admin-panel {
             margin-top: 40px; background-color: #06090c; border: 1px dashed #e50914;
             padding: 20px; border-radius: 10px; display: none; width: 100%; box-sizing: border-box;
@@ -354,4 +353,5 @@
         function updateHistoryUI() {
             const section = document.getElementById('historySection');
             const list = document.getElementById('historyList');
-            if (
+            if (watchHistory.length === 0) {
+                section.style.display = '
