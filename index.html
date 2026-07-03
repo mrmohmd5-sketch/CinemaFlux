@@ -159,9 +159,6 @@
         let currentHD = "", currentSD = "";
         let watchHistory = JSON.parse(localStorage.getItem('cinemaFluxHistory')) || [];
 
-        // متغير ذكي لمنع فتح أكثر من إعلان منبثق واحد
-        let adOpened = false;
-
         const langData = {
             ar: {
                 logo: "🎬 سينما فلوكس | CinemaFlux", homeBtn: "الرئيسية | HOME", searchPlaceholder: "ابحث عن اسم الفيلم أو المسلسل...", searchBtn: "بحث",
@@ -183,18 +180,6 @@
                 renderData(filteredMoviesData);
             }
             updateHistoryUI();
-
-            // حظر النوافذ المنبثقة الإضافية بعد الضغط الأول داخل الصفحة لحماية الزائر
-            window.addEventListener('click', function(e) {
-                if(adOpened) {
-                    // إذا تم فتح إعلان بالفعل، نمنع الأكواد الخارجية من فتح نوافذ جديدة
-                    let originalWindowOpen = window.open;
-                    window.open = function() { return null; };
-                    setTimeout(() => { window.open = originalWindowOpen; }, 100);
-                } else {
-                    adOpened = true; // احتساب الضغطة الأولى لضمان أرباح السيرفر
-                }
-            }, { capture: true });
         });
 
         function renderData(dataList) {
@@ -267,7 +252,6 @@
                 targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
             }
 
-            // تم إزالة الـ sandbox بالكامل ليعود المشغل للعمل بنسبة 100% في كلا السيرفرين
             if (type === 'HD') {
                 iframe.src = targetUrl;
                 btnHD.classList.add('active');
@@ -303,7 +287,6 @@
             document.getElementById('searchInput').value = '';
             renderData(filteredMoviesData);
             document.getElementById('noResultsMessage').style.display = 'none';
-            adOpened = false; // إعادة تعيين الإعلانات عند العودة للرئيسية
         }
 
         function setLanguage(lang) {
