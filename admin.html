@@ -49,7 +49,7 @@
             <div class="grid">
                 <div class="input-group">
                     <label>اسم المستخدم في GitHub (Username)</label>
-                    <input type="text" id="ghUser" placeholder="مثال: mohammed_ezzat">
+                    <input type="text" id="ghUser" placeholder="مثال: mrmohmd5-sketch">
                 </div>
                 <div class="input-group">
                     <label>اسم المستودع (Repository Name)</label>
@@ -96,8 +96,8 @@
 
         function checkAccess() {
             const pass = document.getElementById('passInput').value;
-            // الرمز الافتراضي الحالي للدخول هو 1234
-            if (simpleHash(pass) === 1509118) {
+            // الرمز المحدث والخاص بك: mrmrmrmr4
+            if (simpleHash(pass) === -1400305886) {
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
                 loadSettings();
@@ -180,7 +180,7 @@
 
                 logStatus("⏳ تم جلب الفيلم بنجاح. جاري الاتصال بـ GitHub لجلب ملف data.js الحاضر...");
 
-                // 2. الاتصال بـ GitHub API لجلب ملف data.js الحالي ومحتوياته وشفرة الـ SHA الخاصة به
+                // 2. الاتصال بـ GitHub API لجلب ملف data.js الحالي
                 const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
                 const ghGetRes = await fetch(fileUrl, {
                     headers: { "Authorization": `token ${ghToken}` }
@@ -190,7 +190,7 @@
                 const fileData = await ghGetRes.json();
                 const fileSha = fileData.sha;
                 
-                // فك تشفير محتوى الملف الحالي من Base64 وتحويله لنص مقروء يدعم اللغة العربية
+                // فك تشفير محتوى الملف الحالي من Base64
                 let currentContentText = decodeURIComponent(atob(fileData.content).split('').map(function(c) {
                     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
                 }).join(''));
@@ -205,11 +205,10 @@
                     
                     updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n" + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
                 } else {
-                    // إذا كان الملف فارغاً أو منسقاً بشكل مغاير
                     updatedContentText = `const globalMoviesData = [\n${JSON.stringify(newMediaObject, null, 4)},\n];`;
                 }
 
-                // تحويل النص الجديد إلى Base64 يدعم اللغة العربية بشكل سليم لرفعه لـ GitHub
+                // تحويل النص الجديد إلى Base64 يدعم العربية
                 const base64Content = btoa(unescape(encodeURIComponent(updatedContentText)));
 
                 // 3. رفع التحديث النهائي إلى GitHub بطلب PUT
