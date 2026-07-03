@@ -91,6 +91,20 @@
             display: none; text-align: center; padding: 25px 15px; color: #9aa6b1; font-size: 13px;
             background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
         }
+
+        /* تنسيقات لوحة المطور المتقدمة */
+        .admin-panel {
+            margin-top: 50px; background-color: #06090c; border: 1px dashed #e50914;
+            padding: 20px; border-radius: 10px; display: none;
+        }
+        .admin-panel h3 { margin-top: 0; color: #e50914; }
+        .admin-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 15px; }
+        .admin-grid input {
+            padding: 12px; border-radius: 6px; background-color: #121b22; border: 1px solid #1c252d; color: white; outline: none; font-size: 13px;
+        }
+        .admin-btn { background-color: #28a745; color: white; border: none; padding: 12px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; font-size: 14px; }
+        .admin-output { width: 100%; height: 130px; margin-top: 15px; background: #000; color: #00ff00; border: 1px solid #1c252d; border-radius: 6px; font-family: monospace; padding: 10px; box-sizing: border-box; font-size: 11px; resize: none; }
+        .dev-trigger { text-align: center; margin-top: 40px; font-size: 11px; color: #1c252d; cursor: pointer; user-select: none; }
     </style>
 </head>
 <body>
@@ -149,6 +163,19 @@
             <div class="movies-slider" id="seriesSlider"></div>
         </div>
 
+        <div class="admin-panel" id="adminPanel">
+            <h3>لوحة الإضافة الذكية عبر الروابط المباشرة 🤖</h3>
+            <div class="admin-grid">
+                <input type="text" id="tmdbUrlInput" placeholder="ضع رابط الفيلم الكامل من TMDB (مثال: https://www.themoviedb.org/movie/51497-fast-five)">
+                <input type="text" id="mogoUrlInput" placeholder="ضع رابط تشغيل الفيلم من Playmogo / Doodstream">
+                <input type="password" id="tmdbApiKey" placeholder="ضع هنا TMDB API Key الخاص بك">
+            </div>
+            <button class="admin-btn" onclick="fetchFromTMDB()">جلب البيانات وتوليد كود المصفوفة ✨</button>
+            <textarea class="admin-output" id="adminOutput" readonly placeholder="الكود البرمجي الجاهز سيظهر هنا... انسخه وضعه في ملف data.js"></textarea>
+        </div>
+
+        <div class="dev-trigger" onclick="toggleAdminPanel()">⚙️ لوحة المطور</div>
+
     </div>
 
     <script src="data.js"></script>
@@ -180,6 +207,10 @@
                 renderData(filteredMoviesData);
             }
             updateHistoryUI();
+            
+            if(localStorage.getItem('savedTmdbKey')) {
+                document.getElementById('tmdbApiKey').value = localStorage.getItem('savedTmdbKey');
+            }
         });
 
         function renderData(dataList) {
@@ -247,7 +278,6 @@
 
             let targetUrl = (type === 'HD') ? currentHD : currentSD;
 
-            // كود إضافي ذكي لتمرير أمر تشغيل الترجمة تلقائياً بناءً على نوع الرابط المستخدم
             if (targetUrl && !targetUrl.includes('sub=')) {
                 let separator = targetUrl.includes('?') ? '&' : '?';
                 targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
@@ -328,35 +358,4 @@
                 section.style.display = 'none';
                 return;
             }
-            section.style.display = 'block';
-            list.innerHTML = '';
-            watchHistory.forEach((item, idx) => {
-                const div = document.createElement('div');
-                div.className = 'history-item';
-                div.innerHTML = `
-                    <span onclick="openMediaPage(${item.index})">${item.title}</span>
-                    <span class="delete-item-btn" onclick="deleteHistoryItem(event, ${idx})">×</span>
-                `;
-                list.appendChild(div);
-            });
-        }
-
-        function deleteHistoryItem(e, idx) {
-            e.stopPropagation();
-            watchHistory.splice(idx, 1);
-            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
-            updateHistoryUI();
-        }
-
-        function clearFullHistory() {
-            watchHistory = [];
-            localStorage.removeItem('cinemaFluxHistory');
-            updateHistoryUI();
-        }
-
-        function castToTV() {
-            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
-        }
-    </script>
-</body>
-</html>
+            section.style.display = 'block'
