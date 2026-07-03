@@ -126,8 +126,8 @@
                 <iframe id="mainIframe" src="" allowfullscreen="true" scrolling="no"></iframe>
             </div>
             <div class="player-controls">
-                <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر عالي الجودة</button>
-                <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر إنترنت ضعيف</button>
+                <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر أساسي (يدعم الموقع)</button>
+                <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر احتياطي (بدون إعلانات 🚫)</button>
                 <button class="cast-btn" id="btnCast" onclick="castToTV()">📺 بث للشاشة</button>
             </div>
             
@@ -162,14 +162,14 @@
         const langData = {
             ar: {
                 logo: "🎬 سينما فلوكس | CinemaFlux", homeBtn: "الرئيسية | HOME", searchPlaceholder: "ابحث عن اسم الفيلم أو المسلسل...", searchBtn: "بحث",
-                historyTitle: "سجل المشاهدة مؤخراً", clearHistory: "حذف السجل بالكامل 🗑️", hdServer: "سيرفر عالي الجودة",
-                sdServer: "سيرفر إنترنت ضعيف", castBtn: "📺 بث للشاشة", moviesSection: "قسم الأفلام", seriesSection: "قسم المسلسلات",
+                historyTitle: "سجل المشاهدة مؤخراً", clearHistory: "حذف السجل بالكامل 🗑️", hdServer: "سيرفر أساسي (يدعم الموقع)",
+                sdServer: "سيرفر احتياطي (بدون إعلانات 🚫)", castBtn: "📺 بث للشاشة", moviesSection: "قسم الأفلام", seriesSection: "قسم المسلسلات",
                 noResults: "عذراً لا توجد نتائج ، قم بأدخل كلمات مختلفة او ربما انت قمت بكتابة الاسم بشكل غير صحيح 🔍"
             },
             en: {
                 logo: "🎬 CinemaFlux", homeBtn: "HOME", searchPlaceholder: "Search for movie or series name...", searchBtn: "Search",
-                historyTitle: "Recently Watched", clearHistory: "Clear Full History 🗑️", hdServer: "High Quality Server",
-                sdServer: "Low Internet Server", castBtn: "📺 Cast to TV", moviesSection: "Movies Section", seriesSection: "Series Section",
+                historyTitle: "Recently Watched", clearHistory: "Clear Full History 🗑️", hdServer: "Main Server (Supports Us)",
+                sdServer: "Backup Server (No Ads 🚫)", castBtn: "📺 Cast to TV", moviesSection: "Movies Section", seriesSection: "Series Section",
                 noResults: "Sorry, no results found. Please enter different words or check your spelling! 🔍"
             }
         };
@@ -247,17 +247,20 @@
 
             let targetUrl = (type === 'HD') ? currentHD : currentSD;
 
-            // كود إضافي ذكي لتمرير أمر تشغيل الترجمة تلقائياً بناءً على نوع الرابط المستخدم
             if (targetUrl && !targetUrl.includes('sub=')) {
                 let separator = targetUrl.includes('?') ? '&' : '?';
                 targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
             }
 
             if (type === 'HD') {
+                // سيرفر الأرباح: تظهر الإعلانات طبيعي لتضمن أرباحك
+                iframe.removeAttribute('sandbox');
                 iframe.src = targetUrl;
                 btnHD.classList.add('active');
                 btnSD.classList.remove('active');
             } else {
+                // السيرفر النظيف: يحظر الإعلانات تماماً لراحة المشاهد ومنع هروبه
+                iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms');
                 iframe.src = targetUrl;
                 btnSD.classList.add('active');
                 btnHD.classList.remove('active');
@@ -359,4 +362,4 @@
         }
     </script>
 </body>
-</html> 
+</html>
