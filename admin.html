@@ -84,15 +84,12 @@
     </div>
 
     <script>
-        // دالة حماية نصية مشفرة ومضمونة لا تخطئ مع الرموز المختلطة
         function checkAccess() {
             const pass = document.getElementById('passInput').value;
-            
-            // تحويل مدخلات المستخدم إلى شفرة نصية لمقارنتها آمنياً بدون كشف الرمز في الـ Inspect
             const secureCheck = btoa(pass); 
 
-            // الشفرة أدناه مطابقة تماماً لرمزك الخاص mrmrmrmr4
-            if (secureCheck === "bXJtcm1ybXIz") { 
+            // تم التعديل إلى الشفرة الصحيحة تماماً لـ mrmrmrmr4
+            if (secureCheck === "bXJtcm1ybXI0") { 
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
                 loadSettings();
