@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم الذكية والرفع التلقائي | CinemaFlux</title>
+    <style>
+        body {
+            background-color: #0b1116; color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 30px 15px; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box;
+        }
+        .admin-box {
+            background-color: #06090c; border: 1px solid #1c252d;
+            padding: 30px; border-radius: 12px; width: 100%; max-width: 650px; box-sizing: border-box;
+        }
+        h2 { color: #e50914; margin-top: 0; font-size: 20px; text-align: center; margin-bottom: 25px; }
+        h3 { color: #28a745; font-size: 15px; margin-top: 0; margin-bottom: 15px; border-bottom: 1px dashed #1c252d; padding-bottom: 8px; }
+        .grid { display: flex; flex-direction: column; gap: 15px; margin-bottom: 20px; }
+        .input-group { display: flex; flex-direction: column; gap: 5px; }
+        label { font-size: 12px; color: #9aa6b1; }
+        input {
+            padding: 14px; border-radius: 8px; background-color: #121b22; border: 1px solid #1c252d; color: white; outline: none; font-size: 14px; width: 100%; box-sizing: border-box;
+        }
+        input:focus { border-color: #e50914; }
+        button { background-color: #e50914; color: white; border: none; padding: 14px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; font-size: 15px; transition: 0.2s; }
+        button:hover { background-color: #b80710; }
+        button.btn-save { background-color: #28a745; }
+        button.btn-save:hover { background-color: #218838; }
+        #statusOutput { margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #000; font-family: monospace; font-size: 12px; color: #00ff00; border: 1px solid #1c252d; min-height: 40px; white-space: pre-wrap; }
+        #authBlock { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="admin-box">
+        <div id="authBlock">
+            <h2>🔐 دخول الإدارة الآمن</h2>
+            <div class="grid">
+                <input type="password" id="passInput" placeholder="أدخل كلمة مرور المسؤول...">
+            </div>
+            <button onclick="checkAccess()">تحقق ودخول 🚀</button>
+        </div>
+
+        <div id="controlPanel" style="display: none;">
+            <h2>🤖 لوحة التحكم والرفع التلقائي إلى الـ GitHub</h2>
+            
+            <h3>1️⃣ إعدادات الربط (تُملأ مرة واحدة فقط)</h3>
+            <div class="grid">
+                <div class="input-group">
+                    <label>اسم المستخدم في GitHub (Username)</label>
+                    <input type="text" id="ghUser" placeholder="مثال: mohammed_ezzat">
+                </div>
+                <div class="input-group">
+                    <label>اسم المستودع (Repository Name)</label>
+                    <input type="text" id="ghRepo" placeholder="مثال: CinemaFlux">
+                </div>
+                <div class="input-group">
+                    <label>مفتاح الوصول الشخصي من GitHub (GitHub Token)</label>
+                    <input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxxxx">
+                </div>
+                <div class="input-group">
+                    <label>مفتاح الـ API الخاص بـ TMDB</label>
+                    <input type="password" id="tmdbApiKey" placeholder="ضع هنا TMDB API Key">
+                </div>
+            </div>
+
+            <h3>2️⃣ إضافة محتوى جديد (فيلم أو مسلسل)</h3>
+            <div class="grid">
+                <div class="input-group">
+                    <label>رابط الفيلم أو المسلسل من موقع TMDB</label>
+                    <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx">
+                </div>
+                <div class="input-group">
+                    <label>رابط تشغيل الفيديو من Doodstream أو Playmogo</label>
+                    <input type="text" id="mogoUrlInput" placeholder="https://dood.to/e/xxxxx">
+                </div>
+            </div>
+
+            <button class="btn-save" onclick="autoFetchAndUpload()">جلب البيانات ونشرها تلقائياً بالموقع ✨</button>
+            
+            <div id="statusOutput">شاشة التقارير: بانتظار الأوامر...</div>
+        </div>
+    </div>
+
+    <script>
+        // دالة التشفير لحماية الدخول للصفحة
+        const simpleHash = str => {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                hash = (hash << 5) - hash + str.charCodeAt(i);
+                hash |= 0;
+            }
+            return hash;
+        };
+
+        function checkAccess() {
+            const pass = document.getElementById('passInput').value;
+            // الرمز الافتراضي الحالي للدخول هو 1234
+            if (simpleHash(pass) === 1509118) {
+                document.getElementById('authBlock').style.display = 'none';
+                document.getElementById('controlPanel').style.display = 'block';
+                loadSettings();
+            } else {
+                alert("رمز الدخول خاطئ!");
+            }
+        }
+
+        // حفظ الإعدادات في المتصفح تلقائياً لكي لا تعيد كتابتها كل مرة
+        function loadSettings() {
+            if(localStorage.getItem('gh_user')) document.getElementById('ghUser').value = localStorage.getItem('gh_user');
+            if(localStorage.getItem('gh_repo')) document.getElementById('ghRepo').value = localStorage.getItem('gh_repo');
+            if(localStorage.getItem('gh_token')) document.getElementById('ghToken').value = localStorage.getItem('gh_token');
+            if(localStorage.getItem('tmdb_key')) document.getElementById('tmdbApiKey').value = localStorage.getItem('tmdb_key');
+        }
+
+        function saveSettings(user, repo, token, tmdb) {
+            localStorage.setItem('gh_user', user);
+            localStorage.setItem('gh_repo', repo);
+            localStorage.setItem('gh_token', token);
+            localStorage.setItem('tmdb_key', tmdb);
+        }
+
+        function logStatus(msg, isError = false) {
+            const out = document.getElementById('statusOutput');
+            out.innerText = msg;
+            out.style.color = isError ? "#ff3333" : "#00ff00";
+        }
+
+        async function autoFetchAndUpload() {
+            const ghUser = document.getElementById('ghUser').value.trim();
+            const ghRepo = document.getElementById('ghRepo').value.trim();
+            const ghToken = document.getElementById('ghToken').value.trim();
+            const tmdbKey = document.getElementById('tmdbApiKey').value.trim();
+            const tmdbUrl = document.getElementById('tmdbUrlInput').value.trim();
+            const mediaUrl = document.getElementById('mogoUrlInput').value.trim();
+
+            if(!ghUser || !ghRepo || !ghToken || !tmdbKey || !tmdbUrl || !mediaUrl) {
+                alert("برجاء ملء جميع الحقول المطلوبة!");
+                return;
+            }
+
+            saveSettings(ghUser, ghRepo, ghToken, tmdbKey);
+            logStatus("⏳ جاري جلب البيانات من TMDB وترجمتها للعربية...");
+
+            let id = tmdbUrl;
+            let type = "movie";
+
+            if (tmdbUrl.includes("themoviedb.org")) {
+                type = tmdbUrl.includes("/tv/") ? "tv" : "movie";
+                const match = tmdbUrl.match(/\/(movie|tv)\/(\d+)/);
+                if (match && match[2]) id = match[2];
+                else { logStatus("❌ رابط TMDB غير صحيح!", true); return; }
+            }
+
+            try {
+                // 1. جلب البيانات من موقع TMDB
+                const tmdbRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
+                if(!tmdbRes.ok) throw new Error("فشل جلب البيانات من TMDB. تأكد من الـ API Key أو المعرّف.");
+                const data = await tmdbRes.json();
+
+                const genresArray = data.genres ? data.genres.map(g => g.name).join(' ') : "غير مصنف";
+                const titleText = data.title || data.name || "بدون عنوان";
+                const overviewText = data.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
+                const posterUrl = data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : "";
+                const ratingValue = data.vote_average ? data.vote_average.toFixed(1) : "0.0";
+                const finalType = (type === "tv") ? "series" : "movie";
+
+                // تنسيق كائن الفيلم الجديد
+                const newMediaObject = {
+                    title: titleText,
+                    desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
+                    poster: posterUrl,
+                    hdUrl: mediaUrl,
+                    sdUrl: mediaUrl,
+                    rating: ratingValue,
+                    genre: genresArray,
+                    type: finalType
+                };
+
+                logStatus("⏳ تم جلب الفيلم بنجاح. جاري الاتصال بـ GitHub لجلب ملف data.js الحاضر...");
+
+                // 2. الاتصال بـ GitHub API لجلب ملف data.js الحالي ومحتوياته وشفرة الـ SHA الخاصة به
+                const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
+                const ghGetRes = await fetch(fileUrl, {
+                    headers: { "Authorization": `token ${ghToken}` }
+                });
+
+                if(!ghGetRes.ok) throw new Error("فشل الاتصال بـ GitHub. تأكد من الروابط والـ Token.");
+                const fileData = await ghGetRes.json();
+                const fileSha = fileData.sha;
+                
+                // فك تشفير محتوى الملف الحالي من Base64 وتحويله لنص مقروء يدعم اللغة العربية
+                let currentContentText = decodeURIComponent(atob(fileData.content).split('').map(function(c) {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                }).join(''));
+
+                logStatus("⏳ جاري دمج الفيلم الجديد داخل المصفوفة وتحديث الملف...");
+
+                // دمج الكائن الجديد داخل المصفوفة برمجياً في أول القائمة
+                let updatedContentText = "";
+                if (currentContentText.includes("const globalMoviesData = [") || currentContentText.includes("let globalMoviesData = [") || currentContentText.includes("var globalMoviesData = [")) {
+                    const bracketIndex = currentContentText.indexOf("[");
+                    const stringToObject = JSON.stringify(newMediaObject, null, 4);
+                    
+                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n" + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
+                } else {
+                    // إذا كان الملف فارغاً أو منسقاً بشكل مغاير
+                    updatedContentText = `const globalMoviesData = [\n${JSON.stringify(newMediaObject, null, 4)},\n];`;
+                }
+
+                // تحويل النص الجديد إلى Base64 يدعم اللغة العربية بشكل سليم لرفعه لـ GitHub
+                const base64Content = btoa(unescape(encodeURIComponent(updatedContentText)));
+
+                // 3. رفع التحديث النهائي إلى GitHub بطلب PUT
+                const ghPutRes = await fetch(fileUrl, {
+                    method: "PUT",
+                    headers: {
+                        "Authorization": `token ${ghToken}`,
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        message: `إضافة تلقائية للفيلم: ${titleText}`,
+                        content: base64Content,
+                        sha: fileSha
+                    })
+                });
+
+                if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
+
+                logStatus(`🎉 مبروك! تم جلب بيانات "${titleText}" ورفعها وتحديث الموقع تلقائياً بنجاح! ستظهر على الموقع خلال دقيقة.`);
+                document.getElementById('tmdbUrlInput').value = "";
+                document.getElementById('mogoUrlInput').value = "";
+
+            } catch (err) {
+                logStatus("❌ خطأ: " + err.message, true);
+            }
+        }
+    </script>
+</body>
+</html>
