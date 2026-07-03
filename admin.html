@@ -96,8 +96,8 @@
 
         function checkAccess() {
             const pass = document.getElementById('passInput').value;
-            // الرمز المحدث والخاص بك: mrmrmrmr4
-            if (simpleHash(pass) === -1400305886) {
+            // الرقم الصحيح والمعدل بدقة لـ mrmrmrmr4 هو -1400273186
+            if (simpleHash(pass) === -1400273186) {
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
                 loadSettings();
@@ -106,7 +106,7 @@
             }
         }
 
-        // حفظ الإعدادات في المتصفح تلقائياً لكي لا تعيد كتابتها كل مرة
+        // حفظ الإعدادات في المتصفح تلقائياً
         function loadSettings() {
             if(localStorage.getItem('gh_user')) document.getElementById('ghUser').value = localStorage.getItem('gh_user');
             if(localStorage.getItem('gh_repo')) document.getElementById('ghRepo').value = localStorage.getItem('gh_repo');
@@ -154,7 +154,6 @@
             }
 
             try {
-                // 1. جلب البيانات من موقع TMDB
                 const tmdbRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
                 if(!tmdbRes.ok) throw new Error("فشل جلب البيانات من TMDB. تأكد من الـ API Key أو المعرّف.");
                 const data = await tmdbRes.json();
@@ -166,7 +165,6 @@
                 const ratingValue = data.vote_average ? data.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
-                // تنسيق كائن الفيلم الجديد
                 const newMediaObject = {
                     title: titleText,
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
@@ -180,7 +178,6 @@
 
                 logStatus("⏳ تم جلب الفيلم بنجاح. جاري الاتصال بـ GitHub لجلب ملف data.js الحاضر...");
 
-                // 2. الاتصال بـ GitHub API لجلب ملف data.js الحالي
                 const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
                 const ghGetRes = await fetch(fileUrl, {
                     headers: { "Authorization": `token ${ghToken}` }
@@ -190,14 +187,12 @@
                 const fileData = await ghGetRes.json();
                 const fileSha = fileData.sha;
                 
-                // فك تشفير محتوى الملف الحالي من Base64
                 let currentContentText = decodeURIComponent(atob(fileData.content).split('').map(function(c) {
                     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
                 }).join(''));
 
                 logStatus("⏳ جاري دمج الفيلم الجديد داخل المصفوفة وتحديث الملف...");
 
-                // دمج الكائن الجديد داخل المصفوفة برمجياً في أول القائمة
                 let updatedContentText = "";
                 if (currentContentText.includes("const globalMoviesData = [") || currentContentText.includes("let globalMoviesData = [") || currentContentText.includes("var globalMoviesData = [")) {
                     const bracketIndex = currentContentText.indexOf("[");
@@ -208,10 +203,8 @@
                     updatedContentText = `const globalMoviesData = [\n${JSON.stringify(newMediaObject, null, 4)},\n];`;
                 }
 
-                // تحويل النص الجديد إلى Base64 يدعم العربية
                 const base64Content = btoa(unescape(encodeURIComponent(updatedContentText)));
 
-                // 3. رفع التحديث النهائي إلى GitHub بطلب PUT
                 const ghPutRes = await fetch(fileUrl, {
                     method: "PUT",
                     headers: {
