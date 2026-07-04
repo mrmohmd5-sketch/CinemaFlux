@@ -3,114 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة التحكم الذكية والرفع التلقائي | CinemaFlux</title>
+    <title>لوحة التحكم الاحترافية الشاملة | CinemaFlux</title>
     <style>
         body {
             background-color: #0b1116; color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 30px 15px; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box;
+            padding: 30px 15px; margin: 0; box-sizing: border-box;
         }
+        .container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
         .admin-box {
             background-color: #06090c; border: 1px solid #1c252d;
-            padding: 30px; border-radius: 12px; width: 100%; max-width: 650px; box-sizing: border-box;
+            padding: 30px; border-radius: 12px; width: 100%; max-width: 850px; box-sizing: border-box; margin-bottom: 25px;
         }
         h2 { color: #e50914; margin-top: 0; font-size: 20px; text-align: center; margin-bottom: 25px; }
-        h3 { color: #28a745; font-size: 15px; margin-top: 0; margin-bottom: 15px; border-bottom: 1px dashed #1c252d; padding-bottom: 8px; }
-        .grid { display: flex; flex-direction: column; gap: 15px; margin-bottom: 20px; }
+        h3 { color: #28a745; font-size: 15px; margin-top: 20px; margin-bottom: 15px; border-bottom: 1px dashed #1c252d; padding-bottom: 8px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
         .input-group { display: flex; flex-direction: column; gap: 5px; }
+        .full-width { grid-column: span 2; }
+        @media (max-width: 600px) { .full-width { grid-column: span 1; } }
         label { font-size: 12px; color: #9aa6b1; }
-        input {
+        input, textarea, select {
             padding: 14px; border-radius: 8px; background-color: #121b22; border: 1px solid #1c252d; color: white; outline: none; font-size: 14px; width: 100%; box-sizing: border-box;
         }
-        input:focus { border-color: #e50914; }
+        input:focus, textarea:focus, select:focus { border-color: #e50914; }
         button { background-color: #e50914; color: white; border: none; padding: 14px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; font-size: 15px; transition: 0.2s; }
         button:hover { background-color: #b80710; }
         button.btn-save { background-color: #28a745; }
         button.btn-save:hover { background-color: #218838; }
-        #statusOutput { margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #000; font-family: monospace; font-size: 12px; color: #00ff00; border: 1px solid #1c252d; min-height: 40px; white-space: pre-wrap; }
-        #authBlock { text-align: center; }
+        button.btn-blue { background-color: #007bff; }
+        button.btn-blue:hover { background-color: #0056b3; }
+        #statusOutput, #uploadStatus { margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #000; font-family: monospace; font-size: 12px; color: #00ff00; border: 1px solid #1c252d; min-height: 40px; white-space: pre-wrap; }
+        #authBlock { text-align: center; max-width: 450px; margin: 0 auto; }
+        
+        /* جدول إدارة الأفلام */
+        .table-responsive { overflow-x: auto; margin-top: 15px; }
+        table { width: 100%; border-collapse: collapse; text-align: right; font-size: 13px; }
+        th, td { padding: 12px; border: 1px solid #1c252d; }
+        th { background-color: #121b22; color: #9aa6b1; }
+        tr:hover { background-color: #0b1116; }
+        .actions-btns { display: flex; gap: 5px; }
+        .btn-edit { background-color: #ffc107; color: black; padding: 5px 10px; font-size: 12px; }
+        .btn-delete { background-color: #dc3545; color: white; padding: 5px 10px; font-size: 12px; }
     </style>
 </head>
 <body>
 
-    <div class="admin-box">
-        <div id="authBlock">
+    <div class="container">
+        <div id="authBlock" class="admin-box">
             <h2>🔐 دخول الإدارة الآمن</h2>
-            <div class="grid">
+            <div style="margin-bottom: 20px;">
                 <input type="password" id="passInput" placeholder="أدخل كلمة مرور المسؤول...">
             </div>
             <button onclick="checkAccess()">تحقق ودخول 🚀</button>
         </div>
 
-        <div id="controlPanel" style="display: none;">
-            <h2>🤖 لوحة التحكم والرفع التلقائي إلى الـ GitHub</h2>
+        <div id="controlPanel" style="display: none; width: 100%; max-width: 850px;">
             
-            <h3>1️⃣ إعدادات الربط (تُملأ مرة واحدة فقط)</h3>
-            <div class="grid">
-                <div class="input-group">
-                    <label>اسم المستخدم في GitHub (Username)</label>
-                    <input type="text" id="ghUser" placeholder="مثال: mrmohmd5-sketch">
-                </div>
-                <div class="input-group">
-                    <label>اسم المستودع (Repository Name)</label>
-                    <input type="text" id="ghRepo" placeholder="مثال: CinemaFlux">
-                </div>
-                <div class="input-group">
-                    <label>مفتاح الوصول الشخصي من GitHub (GitHub Token)</label>
-                    <input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxxxx">
-                </div>
-                <div class="input-group">
-                    <label>مفتاح الـ API الخاص بـ TMDB</label>
-                    <input type="password" id="tmdbApiKey" placeholder="ضع هنا TMDB API Key">
+            <div class="admin-box">
+                <h2>🤖 لوحة التحكم الذكية والرفع التلقائي الشامل | CinemaFlux</h2>
+                <h3>1️⃣ إعدادات الربط وحسابات الـ API (تُملأ مرة واحدة)</h3>
+                <div class="grid">
+                    <div class="input-group">
+                        <label>اسم المستخدم في GitHub</label>
+                        <input type="text" id="ghUser" placeholder="mrmohmd5-sketch">
+                    </div>
+                    <div class="input-group">
+                        <label>اسم المستودع (Repository)</label>
+                        <input type="text" id="ghRepo" placeholder="CinemaFlux">
+                    </div>
+                    <div class="input-group">
+                        <label>GitHub Personal Token</label>
+                        <input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxxxx">
+                    </div>
+                    <div class="input-group">
+                        <label>مفتاح TMDB API Key</label>
+                        <input type="password" id="tmdbApiKey" placeholder="ضع مفتاح TMDB هنا">
+                    </div>
+                    <div class="input-group">
+                        <label>Doodstream API Key (للرفع المباشر)</label>
+                        <input type="password" id="doodKey" placeholder="أدخل Doodstream API Key">
+                    </div>
                 </div>
             </div>
 
-            <h3>2️⃣ إضافة محتوى جديد (فيلم أو مسلسل)</h3>
-            <div class="grid">
-                <div class="input-group">
-                    <label>رابط الفيلم أو المسلسل من موقع TMDB</label>
-                    <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx">
+            <div class="admin-box">
+                <h3>2️⃣ مركز رفع الفيديو المباشر إلى Doodstream 📤</h3>
+                <div class="grid">
+                    <div class="input-group full-width">
+                        <label>اختر ملف الفيديو من جهازك لإرساله إلى Doodstream</label>
+                        <input type="file" id="videoFile" accept="video/*">
+                    </div>
                 </div>
-                <div class="input-group">
-                    <label>رابط تشغيل الفيديو من Doodstream أو Playmogo</label>
-                    <input type="text" id="mogoUrlInput" placeholder="https://dood.to/e/xxxxx">
+                <button class="btn-blue" onclick="uploadToDoodstream()">بدء رفع الفيديو مباشرة 🚀</button>
+                <div id="uploadStatus">شاشة الرفع: بانتظار اختيار الملف...</div>
+            </div>
+
+            <div class="admin-box">
+                <h3 id="formTitle">3️⃣ إضافة محتوى جديد أو تعديل الحاضر 🎬</h3>
+                <input type="hidden" id="editIndex" value="-1">
+                <div class="grid">
+                    <div class="input-group">
+                        <label>رابط المحتوى من موقع TMDB (للإضافة التلقائية)</label>
+                        <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx">
+                    </div>
+                    <div class="input-group">
+                        <label>رابط التشغيل/الدمج (Embed Link من Doodstream)</label>
+                        <input type="text" id="mogoUrlInput" placeholder="https://dood.to/e/xxxxx">
+                    </div>
+                    <div class="input-group full-width">
+                        <label>عنوان المحتوى (يُجلب تلقائياً أو اكتبه للتعديل)</label>
+                        <input type="text" id="mediaTitle" placeholder="اسم الفيلم بالإنجليزية">
+                    </div>
+                    <div class="input-group full-width">
+                        <label>قصة المحتوى (الوصف العربي)</label>
+                        <textarea id="mediaDesc" rows="3" placeholder="وصف الفيلم باللغة العربية..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>رابط البوستر (Image Poster URL)</label>
+                        <input type="text" id="mediaPoster" placeholder="https://image.tmdb.org/...">
+                    </div>
+                    <div class="input-group">
+                        <label>التقييم (Rating)</label>
+                        <input type="text" id="mediaRating" placeholder="8.5">
+                    </div>
+                    <div class="input-group">
+                        <label>التصنيف (Genre)</label>
+                        <input type="text" id="mediaGenre" placeholder="أكشن إثارة">
+                    </div>
+                    <div class="input-group">
+                        <label>النوع (Type)</label>
+                        <select id="mediaType">
+                            <option value="movie">فيلم (Movie)</option>
+                            <option value="series">مسلسل (Series)</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn-save" id="actionBtn" onclick="autoFetchAndUpload()">جلب البيانات ونشرها تلقائياً بالموقع ✨</button>
+                <button class="btn-delete" id="cancelEditBtn" style="display:none; margin-top:10px;" onclick="resetForm()">إلغاء وضع التعديل ❌</button>
+                
+                <div id="statusOutput">شاشة التقارير: بانتظار الأوامر...</div>
+            </div>
+
+            <div class="admin-box">
+                <h3>4️⃣ إدارة وتعديل وحذف الأفلام المنشورة حالياً 📋</h3>
+                <button class="btn-blue" onclick="fetchCurrentMoviesList()">تحديث واستعراض قائمة الأفلام الحالية 🔄</button>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>اسم الفيلم (EN)</th>
+                                <th>النوع</th>
+                                <th>التقييم</th>
+                                <th>العمليات الإدارية</th>
+                            </tr>
+                        </thead>
+                        <tbody id="moviesTableBody">
+                            <tr>
+                                <td colspan="4" style="text-align:center; color:#9aa6b1;">اضغط على الزر بالأعلى لاستعراض المحتويات.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
-            <button class="btn-save" onclick="autoFetchAndUpload()">جلب البيانات ونشرها تلقائياً بالموقع ✨</button>
-            
-            <div id="statusOutput">شاشة التقارير: بانتظار الأوامر...</div>
         </div>
     </div>
 
     <script>
+        let localMoviesArray = [];
+        let globalFileSha = "";
+
         function checkAccess() {
             const pass = document.getElementById('passInput').value;
             const secureCheck = btoa(pass); 
-
-            // الرمز مشفر ومحمي تماماً لـ mrmrmrmr4
             if (secureCheck === "bXJtcm1ybXI0") { 
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
                 loadSettings();
+                fetchCurrentMoviesList();
             } else {
                 alert("رمز الدخول خاطئ!");
             }
         }
 
-        // حفظ الإعدادات في المتصفح تلقائياً
         function loadSettings() {
             if(localStorage.getItem('gh_user')) document.getElementById('ghUser').value = localStorage.getItem('gh_user');
             if(localStorage.getItem('gh_repo')) document.getElementById('ghRepo').value = localStorage.getItem('gh_repo');
             if(localStorage.getItem('gh_token')) document.getElementById('ghToken').value = localStorage.getItem('gh_token');
             if(localStorage.getItem('tmdb_key')) document.getElementById('tmdbApiKey').value = localStorage.getItem('tmdb_key');
+            if(localStorage.getItem('dood_key')) document.getElementById('doodKey').value = localStorage.getItem('dood_key');
         }
 
-        function saveSettings(user, repo, token, tmdb) {
+        function saveSettings(user, repo, token, tmdb, dood) {
             localStorage.setItem('gh_user', user);
             localStorage.setItem('gh_repo', repo);
             localStorage.setItem('gh_token', token);
             localStorage.setItem('tmdb_key', tmdb);
+            localStorage.setItem('dood_key', dood);
         }
 
         function logStatus(msg, isError = false) {
@@ -119,22 +209,215 @@
             out.style.color = isError ? "#ff3333" : "#00ff00";
         }
 
+        // ================= [ ميزة الرفع المباشر لـ DOODSTREAM ] =================
+        async function uploadToDoodstream() {
+            const doodKey = document.getElementById('doodKey').value.trim();
+            const fileInput = document.getElementById('videoFile');
+            const status = document.getElementById('uploadStatus');
+
+            if (!doodKey) { alert("الرجاء إضافة Doodstream API Key أولاً!"); return; }
+            if (fileInput.files.length === 0) { alert("الرجاء اختيار ملف فيديو لرفعه!"); return; }
+
+            const file = fileInput.files[0];
+            status.innerText = "⏳ جاري الاتصال بخوادم Doodstream وحجز السيرفر للتمرير...";
+            status.style.color = "#ffc107";
+
+            try {
+                // الخطوة 1: طلب رابط الرفع المؤقت من Doodstream API
+                const serverRes = await fetch(`https://doodapi.com/api/upload/server?key=${doodKey}`);
+                const serverData = await serverRes.json();
+                if(!serverData.status || serverData.status !== 200) throw new Error("فشل الحصول على سيرفر الرفع من Doodstream.");
+
+                const uploadUrl = serverData.result;
+
+                // الخطوة 2: إرسال الملف الفعلي عبر كائن FormData
+                let formData = new FormData();
+                formData.append("api_key", doodKey);
+                formData.append("file", file);
+
+                status.innerText = "🚀 جاري نقل ورفع الملف الآن... يرجى الانتظار ولا تغلق الصفحة (قد يستغرق بعض الوقت بناءً على حجم الفيديو وسرعة النت)...";
+
+                const uploadRes = await fetch(uploadUrl, { method: "POST", body: formData });
+                const uploadResult = await uploadRes.json();
+
+                if (uploadResult.status === "success" || uploadResult.result) {
+                    const videoDetails = uploadResult.result[0];
+                    const embedLink = `https://dood.to/e/${videoDetails.filecode}`;
+                    status.innerHTML = `🎉 تم الرفع بنجاح واكتملت العملية!<br><strong>رابط المشاهدة (Embed Link):</strong><br><span style="color:#00ff00;">${embedLink}</span><br>قم بنسخه ووضعه في حقول الإضافة بالأسفل.`;
+                    status.style.color = "#00ff00";
+                    document.getElementById('mogoUrlInput').value = embedLink;
+                } else {
+                    throw new Error("فشل الرفع. تحقق من حجم الملف أو صيغته.");
+                }
+            } catch (err) {
+                status.innerText = "❌ خطأ أثناء الرفع: " + err.message;
+                status.style.color = "#ff3333";
+            }
+        }
+
+        // ================= [ إدارة وتحديث وجلب المصفوفة من GITHUB ] =================
+        async function fetchCurrentMoviesList(silent = false) {
+            const ghUser = document.getElementById('ghUser').value.trim();
+            const ghRepo = document.getElementById('ghRepo').value.trim();
+            const ghToken = document.getElementById('ghToken').value.trim();
+
+            if(!ghUser || !ghRepo || !ghToken) return;
+
+            try {
+                const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
+                const res = await fetch(fileUrl, { headers: { "Authorization": `token ${ghToken}` } });
+                if(!res.ok) throw new Error("فشل جلب ملف data.js");
+                
+                const fileData = await res.json();
+                globalFileSha = fileData.sha;
+
+                let contentText = decodeURIComponent(atob(fileData.content).split('').map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+                
+                // استخراج المصفوفة برمجياً لتعديلها
+                const startIndex = contentText.indexOf("[");
+                const endIndex = contentText.lastIndexOf("]");
+                
+                if(startIndex !== -1 && endIndex !== -1) {
+                    let arrayJson = contentText.slice(startIndex, endIndex + 1);
+                    // تنظيف النص لضمان التحويل لـ JSON
+                    arrayJson = arrayJson.replace(/,(\s*\])/, ']'); 
+                    localMoviesArray = JSON.parse(arrayJson);
+                    renderTable();
+                    if(!silent) logStatus("🔄 تم تحديث وجلب قائمة المحتويات الحالية من GitHub بنجاح.");
+                }
+            } catch (err) {
+                if(!silent) logStatus("❌ خطأ أثناء جلب القائمة الحالية: " + err.message, true);
+            }
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('moviesTableBody');
+            if(localMoviesArray.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="4" style="text-align:center;">لا توجد أفلام حالية في الملف.</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = "";
+            localMoviesArray.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><strong>${item.title}</strong></td>
+                    <td>${item.type === 'series' ? '📺 مسلسل' : '🎬 فيلم'}</td>
+                    <td>⭐ ${item.rating}</td>
+                    <td class="actions-btns">
+                        <button class="btn-edit" onclick="startEditMode(${index})">تعديل</button>
+                        <button class="btn-delete" onclick="deleteMovieItem(${index})">حذف</button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // وضع التعديل المباشر
+        function startEditMode(index) {
+            const item = localMoviesArray[index];
+            document.getElementById('editIndex').value = index;
+            document.getElementById('mediaTitle').value = item.title;
+            document.getElementById('mediaDesc').value = item.desc;
+            document.getElementById('mediaPoster').value = item.poster;
+            document.getElementById('mogoUrlInput').value = item.hdUrl;
+            document.getElementById('mediaRating').value = item.rating;
+            document.getElementById('mediaGenre').value = item.genre;
+            document.getElementById('mediaType').value = item.type;
+
+            document.getElementById('formTitle').innerText = `📝 تعديل المحتوى الحاضر: ${item.title}`;
+            document.getElementById('actionBtn').innerText = "حفظ التعديلات الحالية ونشرها 💾";
+            document.getElementById('actionBtn').className = "btn-blue";
+            document.getElementById('cancelEditBtn').style.display = "inline-block";
+            window.scrollTo({ top: document.getElementById('formTitle').offsetTop, behavior: 'smooth' });
+        }
+
+        function resetForm() {
+            document.getElementById('editIndex').value = "-1";
+            document.getElementById('tmdbUrlInput').value = "";
+            document.getElementById('mogoUrlInput').value = "";
+            document.getElementById('mediaTitle').value = "";
+            document.getElementById('mediaDesc').value = "";
+            document.getElementById('mediaPoster').value = "";
+            document.getElementById('mediaRating').value = "";
+            document.getElementById('mediaGenre').value = "";
+            document.getElementById('formTitle').innerText = "3️⃣ إضافة محتوى جديد أو تعديل الحاضر 🎬";
+            document.getElementById('actionBtn').innerText = "جلب البيانات ونشرها تلقائياً بالموقع ✨";
+            document.getElementById('actionBtn').className = "btn-save";
+            document.getElementById('cancelEditBtn').style.display = "none";
+        }
+
+        // حذف عنصر فيلم
+        async function deleteMovieItem(index) {
+            if(!confirm(`هل أنت متأكد تماماً من حذف فيلم "${localMoviesArray[index].title}" نهائياً من موقعك؟ (لن يتأثر فيديو Doodstream)`)) return;
+            
+            logStatus("⏳ جاري معالجة عملية الحذف وتحديث السيرفر...");
+            localMoviesArray.splice(index, 1);
+            await pushArrayToGitHub("حذف فيلم من قاعدة البيانات برمجياً");
+        }
+
+        // إرسال المصفوفة النهائية المحدثة بعد الحذف أو التعديل أو الإضافة إلى GitHub
+        async function pushArrayToGitHub(commitMessage) {
+            const ghUser = document.getElementById('ghUser').value.trim();
+            const ghRepo = document.getElementById('ghRepo').value.trim();
+            const ghToken = document.getElementById('ghToken').value.trim();
+
+            const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
+            const finalCodeString = `const globalMoviesData = ${JSON.stringify(localMoviesArray, null, 4)};`;
+            const base64Content = btoa(unescape(encodeURIComponent(finalCodeString)));
+
+            try {
+                const res = await fetch(fileUrl, {
+                    method: "PUT",
+                    headers: { "Authorization": `token ${ghToken}`, "Content-Type": "application/json" },
+                    body: JSON.stringify({ message: commitMessage, content: base64Content, sha: globalFileSha })
+                });
+
+                if(!res.ok) throw new Error("فشل إرسال الملف المحدث لـ GitHub.");
+                
+                logStatus(`🎉 تم التحديث والرفع بنجاح وبشكل مباشر! التعديلات ستظهر على منصة البث خلال دقيقة.`);
+                resetForm();
+                await fetchCurrentMoviesList(true);
+            } catch (err) {
+                logStatus("❌ خطأ أثناء رفع التحديث: " + err.message, true);
+            }
+        }
+
+        // دالة الإضافة التلقائية أو حفظ التعديل المباشر
         async function autoFetchAndUpload() {
             const ghUser = document.getElementById('ghUser').value.trim();
             const ghRepo = document.getElementById('ghRepo').value.trim();
             const ghToken = document.getElementById('ghToken').value.trim();
             const tmdbKey = document.getElementById('tmdbApiKey').value.trim();
+            const doodKey = document.getElementById('doodKey').value.trim();
+            
             const tmdbUrl = document.getElementById('tmdbUrlInput').value.trim();
             const mediaUrl = document.getElementById('mogoUrlInput').value.trim();
+            const editIndex = parseInt(document.getElementById('editIndex').value);
 
-            if(!ghUser || !ghRepo || !ghToken || !tmdbKey || !tmdbUrl || !mediaUrl) {
-                alert("برجاء ملء جميع الحقول المطلوبة!");
+            if(!ghUser || !ghRepo || !ghToken) { alert("الرجاء إدخال إعدادات الـ GitHub كاملة أولاً!"); return; }
+            saveSettings(ghUser, ghRepo, ghToken, tmdbKey, doodKey);
+
+            // وضع التعديل المباشر اليدوي للمصفوفة
+            if (editIndex !== -1) {
+                logStatus("⏳ جاري حفظ وتعديل المحتوى الحالي...");
+                localMoviesArray[editIndex] = {
+                    title: document.getElementById('mediaTitle').value.trim(),
+                    desc: document.getElementById('mediaDesc').value.trim(),
+                    poster: document.getElementById('mediaPoster').value.trim(),
+                    hdUrl: mediaUrl,
+                    sdUrl: mediaUrl,
+                    rating: document.getElementById('mediaRating').value.trim(),
+                    genre: document.getElementById('mediaGenre').value.trim(),
+                    type: document.getElementById('mediaType').value
+                };
+                await pushArrayToGitHub(`تعديل مباشر للمحتوى: ${localMoviesArray[editIndex].title}`);
                 return;
             }
 
-            saveSettings(ghUser, ghRepo, ghToken, tmdbKey);
-            logStatus("⏳ جاري جلب البيانات وترجمة القصة للعربية مع حفظ الاسم الإنجليزي...");
+            // وضع الإضافة التلقائية المعتادة عبر رابط TMDB
+            if(!tmdbUrl || !mediaUrl || !tmdbKey) { alert("في وضع الإضافة التلقائية، يرجى ملء حقول TMDB ورابط الفيديو ومفتاح TMDB!"); return; }
 
+            logStatus("⏳ جاري الاتصال بـ TMDB لجلب البيانات بالعربية والإنجليزية التلقائية...");
             let id = tmdbUrl;
             let type = "movie";
 
@@ -146,17 +429,11 @@
             }
 
             try {
-                // 1. جلب البيانات العربية (للقصة والتصنيف والبوستر)
                 const tmdbArRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
-                if(!tmdbArRes.ok) throw new Error("فشل جلب البيانات العربية من TMDB.");
                 const dataAr = await tmdbArRes.json();
-
-                // 2. جلب البيانات الإنجليزية (لأخذ العنوان الأصلي بالإنجليزية حصراً)
                 const tmdbEnRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=en-US`);
-                if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
 
-                // دمج الخصائص: الاسم من البيانات الإنجليزية، والباقي من العربية
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
                 const overviewText = dataAr.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
@@ -175,56 +452,15 @@
                     type: finalType
                 };
 
-                logStatus(`⏳ تم جلب "${titleText}". جاري الاتصال بـ GitHub لتحديث الحزمة...`);
-
-                const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
-                const ghGetRes = await fetch(fileUrl, {
-                    headers: { "Authorization": `token ${ghToken}` }
-                });
-
-                if(!ghGetRes.ok) throw new Error("فشل الاتصال بـ GitHub. تأكد من الروابط والـ Token.");
-                const fileData = await ghGetRes.json();
-                const fileSha = fileData.sha;
+                // جلب أحدث SHA والملف لضمان عدم حدوث تضارب
+                await fetchCurrentMoviesList(true);
                 
-                let currentContentText = decodeURIComponent(atob(fileData.content).split('').map(function(c) {
-                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-                }).join(''));
-
-                logStatus("⏳ جاري إدراج المحتوى الجديد في قاعدة البيانات...");
-
-                let updatedContentText = "";
-                if (currentContentText.includes("const globalMoviesData = [") || currentContentText.includes("let globalMoviesData = [") || currentContentText.includes("var globalMoviesData = [")) {
-                    const bracketIndex = currentContentText.indexOf("[");
-                    const stringToObject = JSON.stringify(newMediaObject, null, 4);
-                    
-                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n" + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
-                } else {
-                    updatedContentText = `const globalMoviesData = [\n${JSON.stringify(newMediaObject, null, 4)},\n];`;
-                }
-
-                const base64Content = btoa(unescape(encodeURIComponent(updatedContentText)));
-
-                const ghPutRes = await fetch(fileUrl, {
-                    method: "PUT",
-                    headers: {
-                        "Authorization": `token ${ghToken}`,
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        message: `إضافة تلقائية بالاسم الإنجليزي: ${titleText}`,
-                        content: base64Content,
-                        sha: fileSha
-                    })
-                });
-
-                if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
-
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بالاسم الإنجليزي والقصة العربية بنجاح!`);
-                document.getElementById('tmdbUrlInput').value = "";
-                document.getElementById('mogoUrlInput').value = "";
+                // إدراج الفيلم الجديد في أول المصفوفة
+                localMoviesArray.unshift(newMediaObject);
+                await pushArrayToGitHub(`إضافة تلقائية بالاسم الإنجليزي: ${titleText}`);
 
             } catch (err) {
-                logStatus("❌ خطأ: " + err.message, true);
+                logStatus("❌ خطأ أثناء الإضافة التلقائية: " + err.message, true);
             }
         }
     </script>
