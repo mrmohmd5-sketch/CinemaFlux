@@ -13,7 +13,7 @@ const globalMoviesData = [
         title: "Fast 5",
         desc: "يجمع 'دومينيك توريتو' (فين ديزل) وفريقه للتخطيط لعملية سرقة كبرى بقيمة 100 مليون دولار من رجل أعمال فاسد في ريو دي جانيرو، بينما يطاردهم عميل فيدرالي لا هوادة فيه [لوك هوبز].",
         poster: "https://h.top4top.io/p_3836p1ayi0.jpg",
-        hdUrl: "https://pymogo.com/e/qg4nptgyoj9u", 
+        hdUrl: "https://playmogo.com/e/qg4nptgyoj9u", 
         sdUrl: "https://playmogo.com/e/qg4nptgyoj9u",
         rating: "7.3",
         genre: "أكشن جريمة",
