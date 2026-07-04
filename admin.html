@@ -88,7 +88,7 @@
             const pass = document.getElementById('passInput').value;
             const secureCheck = btoa(pass); 
 
-            // تم التعديل إلى الشفرة الصحيحة تماماً لـ mrmrmrmr4
+            // الرمز مشفر ومحمي تماماً لـ mrmrmrmr4
             if (secureCheck === "bXJtcm1ybXI0") { 
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
@@ -133,7 +133,7 @@
             }
 
             saveSettings(ghUser, ghRepo, ghToken, tmdbKey);
-            logStatus("⏳ جاري جلب البيانات من TMDB وترجمتها للعربية...");
+            logStatus("⏳ جاري جلب البيانات وترجمة القصة للعربية مع حفظ الاسم الإنجليزي...");
 
             let id = tmdbUrl;
             let type = "movie";
@@ -146,15 +146,22 @@
             }
 
             try {
-                const tmdbRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
-                if(!tmdbRes.ok) throw new Error("فشل جلب البيانات من TMDB. تأكد من الـ API Key أو المعرّف.");
-                const data = await tmdbRes.json();
+                // 1. جلب البيانات العربية (للقصة والتصنيف والبوستر)
+                const tmdbArRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
+                if(!tmdbArRes.ok) throw new Error("فشل جلب البيانات العربية من TMDB.");
+                const dataAr = await tmdbArRes.json();
 
-                const genresArray = data.genres ? data.genres.map(g => g.name).join(' ') : "غير مصنف";
-                const titleText = data.title || data.name || "بدون عنوان";
-                const overviewText = data.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
-                const posterUrl = data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : "";
-                const ratingValue = data.vote_average ? data.vote_average.toFixed(1) : "0.0";
+                // 2. جلب البيانات الإنجليزية (لأخذ العنوان الأصلي بالإنجليزية حصراً)
+                const tmdbEnRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=en-US`);
+                if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
+                const dataEn = await tmdbEnRes.json();
+
+                // دمج الخصائص: الاسم من البيانات الإنجليزية، والباقي من العربية
+                const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
+                const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
+                const overviewText = dataAr.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
+                const posterUrl = dataAr.poster_path ? `https://image.tmdb.org/t/p/w500${dataAr.poster_path}` : "";
+                const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
                 const newMediaObject = {
@@ -168,7 +175,7 @@
                     type: finalType
                 };
 
-                logStatus("⏳ تم جلب الفيلم بنجاح. جاري الاتصال بـ GitHub لجلب ملف data.js الحاضر...");
+                logStatus(`⏳ تم جلب "${titleText}". جاري الاتصال بـ GitHub لتحديث الحزمة...`);
 
                 const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
                 const ghGetRes = await fetch(fileUrl, {
@@ -183,7 +190,7 @@
                     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
                 }).join(''));
 
-                logStatus("⏳ جاري دمج الفيلم الجديد داخل المصفوفة وتحديث الملف...");
+                logStatus("⏳ جاري إدراج المحتوى الجديد في قاعدة البيانات...");
 
                 let updatedContentText = "";
                 if (currentContentText.includes("const globalMoviesData = [") || currentContentText.includes("let globalMoviesData = [") || currentContentText.includes("var globalMoviesData = [")) {
@@ -204,7 +211,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية للفيلم: ${titleText}`,
+                        message: `إضافة تلقائية بالاسم الإنجليزي: ${titleText}`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -212,7 +219,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 مبروك! تم جلب بيانات "${titleText}" ورفعها وتحديث الموقع تلقائياً بنجاح! ستظهر على الموقع خلال دقيقة.`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بالاسم الإنجليزي والقصة العربية بنجاح!`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
 
