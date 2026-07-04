@@ -5,152 +5,382 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>سينما فلوكس | CinemaFlux</title>
     <style>
+        :root {
+            --bg-color: #0b1116;
+            --panel-bg: #06090c;
+            --card-bg: #121b22;
+            --border-color: #1c252d;
+            --text-color: #ffffff;
+            --text-muted: #9aa6b1;
+            --primary-color: #e50914;
+            --accent-gradient: linear-gradient(90deg, #9c27b0, #e91e63, #ff9800);
+        }
+
+        /* الوضع الفاتح */
+        .light-theme {
+            --bg-color: #f4f6f8;
+            --panel-bg: #ffffff;
+            --card-bg: #eef1f4;
+            --border-color: #d2d9e0;
+            --text-color: #1a202c;
+            --text-muted: #64748b;
+            --primary-color: #dc2626;
+        }
+
         html, body {
             max-width: 100%; overflow-x: hidden; margin: 0; padding: 0;
-            background-color: #0b1116; color: #ffffff;
+            background-color: var(--bg-color); color: var(--text-color);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            -webkit-tap-highlight-color: transparent;
         }
-        body { padding-bottom: 60px; box-sizing: border-box; }
+        body { padding-bottom: 75px; box-sizing: border-box; }
+
+        /* الهيدر العلوي المتناسق */
         header {
-            background-color: #06090c; padding: 15px; border-bottom: 1px solid #1c252d;
-            display: flex; flex-direction: column; gap: 12px;
+            background-color: var(--panel-bg); padding: 15px; 
+            border-bottom: 1px solid var(--border-color);
+            display: flex; justify-content: space-between; align-items: center;
+            position: sticky; top: 0; z-index: 100;
         }
-        .header-top { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-        .logo-text { font-size: 22px; font-weight: bold; color: #e50914; }
-        .home-btn {
-            background-color: #121b22; color: #fff; border: 1px solid #1c252d;
-            padding: 6px 16px; font-size: 13px; font-weight: bold; border-radius: 20px; cursor: pointer;
-        }
-        .home-btn:hover { background-color: #e50914; border-color: #e50914; }
-        .lang-switcher {
-            display: inline-flex; background-color: #121b22; border: 1px solid #1c252d;
-            border-radius: 15px; padding: 2px; font-size: 11px; cursor: pointer;
-        }
-        html[dir="rtl"] .lang-switcher { align-self: flex-start; }
-        html[dir="ltr"] .lang-switcher { align-self: flex-end; }
-        .lang-btn { padding: 4px 12px; border-radius: 12px; color: #9aa6b1; font-weight: bold; }
-        .lang-btn.active { background-color: #e50914; color: #fff; }
+        .logo-area { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: bold; color: var(--text-color); }
+        .logo-dot { width: 24px; height: 24px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; }
+        
         .container { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 12px; box-sizing: border-box; }
-        .search-box { margin: 20px auto; display: flex; justify-content: center; gap: 8px; width: 100%; }
-        .search-box input {
-            flex: 1; padding: 12px 15px; font-size: 14px; border: 1px solid #1c252d;
-            border-radius: 25px; background-color: #121b22; color: #fff; outline: none;
+
+        /* شريط التنقل السفلي الثابت كمظهر التطبيقات */
+        .bottom-nav {
+            position: fixed; bottom: 0; left: 0; right: 0; height: 65px;
+            background-color: var(--panel-bg); border-top: 1px solid var(--border-color);
+            display: flex; justify-content: space-around; align-items: center; z-index: 1000;
         }
-        html[dir="rtl"] .search-box input { text-align: right; }
-        html[dir="ltr"] .search-box input { text-align: left; }
-        .search-box input:focus { border-color: #e50914; }
-        .search-btn {
-            background-color: #e50914; color: white; border: none; padding: 0 20px;
-            font-size: 14px; font-weight: bold; border-radius: 25px; cursor: pointer; white-space: nowrap;
+        .nav-item {
+            display: flex; flex-direction: column; align-items: center; gap: 4px;
+            color: var(--text-muted); font-size: 12px; cursor: pointer; flex: 1; text-align: center;
+            padding: 8px 0; transition: color 0.2s;
         }
+        .nav-item.active { color: var(--text-color); font-weight: bold; }
+        .nav-icon { font-size: 20px; }
+
+        /* تقسيم الشاشات الذكي Tabs */
+        .app-page { display: none; }
+        .app-page.active { display: block; }
+
+        /* البانر السلايدر المتطور تلقائياً */
+        .hero-slider {
+            position: relative; width: 100%; height: 210px; border-radius: 12px;
+            overflow: hidden; margin: 15px 0; border: 1px solid var(--border-color);
+        }
+        .slide-item {
+            position: absolute; width: 100%; height: 100%; opacity: 0;
+            transition: opacity 0.6s ease-in-out; display: flex; align-items: flex-end;
+        }
+        .slide-item.active { opacity: 1; z-index: 2; }
+        .slide-img { width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0; }
+        .slide-overlay {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to top, rgba(11,17,22,1) 15%, rgba(11,17,22,0.4) 60%, rgba(0,0,0,0) 100%);
+            z-index: 1;
+        }
+        .slide-content {
+            position: relative; z-index: 3; padding: 20px; width: 100%;
+            display: flex; flex-direction: column; gap: 8px; box-sizing: border-box;
+        }
+        .slide-tagline { font-size: 11px; color: #ff9800; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+        .slide-title { font-size: 22px; font-weight: bold; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.6); }
+        .slide-btn {
+            background-color: var(--primary-color); color: white; border: none;
+            padding: 8px 20px; font-size: 13px; font-weight: bold; border-radius: 20px;
+            cursor: pointer; display: inline-flex; align-items: center; gap: 6px; width: fit-content;
+            box-shadow: 0 4px 10px rgba(229, 9, 20, 0.4);
+        }
+        .slider-dots {
+            position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
+            display: flex; gap: 6px; z-index: 4;
+        }
+        .dot { width: 7px; height: 7px; background-color: rgba(255,255,255,0.3); border-radius: 50%; cursor: pointer; transition: all 0.2s; }
+        .dot.active { background-color: var(--primary-color); width: 16px; border-radius: 4px; }
+
+        /* صفوف عرض المجموعات الأفقية القابلة للتمرير */
+        .row-header { display: flex; justify-content: space-between; align-items: center; margin: 20px 0 10px 0; }
+        .row-title { font-size: 16px; font-weight: bold; color: var(--text-color); border-right: 4px solid var(--primary-color); padding-right: 8px; }
+        html[dir="ltr"] .row-title { border-right: none; border-left: 4px solid var(--primary-color); padding-right: 0; padding-left: 8px; }
+        .row-more { font-size: 13px; color: var(--text-muted); cursor: pointer; }
+        
+        .movies-slider { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; width: 100%; scroll-behavior: smooth; }
+        .movies-slider::-webkit-scrollbar { height: 0px; }
+        
+        .movie-card { min-width: 115px; max-width: 115px; cursor: pointer; position: relative; }
+        .poster-wrapper { position: relative; width: 100%; height: 165px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border-color); }
+        .movie-poster { width: 100%; height: 100%; object-fit: cover; }
+        .card-imdb {
+            position: absolute; bottom: 6px; right: 6px; background-color: rgba(0,0,0,0.75);
+            color: #ffc107; padding: 2px 5px; border-radius: 4px; font-weight: bold; font-size: 10px;
+            display: flex; align-items: center; gap: 2px; border: 1px solid rgba(255,255,255,0.1);
+        }
+        html[dir="ltr"] .card-imdb { right: auto; left: 6px; }
+        .movie-info { padding: 6px 2px; }
+        .movie-name { font-size: 13px; font-weight: 500; margin: 0 0 3px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .movie-meta-desc { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+        /* مشغل الفيديو والتحكم المتطور */
         .main-player {
             background-color: #000; border-radius: 12px; overflow: hidden;
-            margin-bottom: 25px; border: 1px solid #1c252d; display: none; width: 100%;
+            margin: 15px 0; border: 1px solid var(--border-color); display: none; width: 100%;
         }
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; width: 100%; background-color: #000; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-        .player-controls { display: flex; gap: 8px; padding: 10px; background-color: #06090c; justify-content: center; flex-wrap: wrap; }
+        .player-controls { display: flex; gap: 8px; padding: 10px; background-color: var(--panel-bg); justify-content: center; flex-wrap: wrap; border-bottom: 1px solid var(--border-color); }
         .server-btn, .cast-btn {
-            background-color: #121b22; color: #fff; border: 1px solid #1c252d; padding: 8px 14px;
-            font-size: 12px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
+            background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); padding: 8px 14px;
+            font-size: 12px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; font-weight: 500;
         }
-        .server-btn.active { background-color: #e50914; border-color: #e50914; }
-        .cast-btn { background-color: #28a745; border-color: #28a745; }
-        .video-details { padding: 15px; background-color: #06090c; border-top: 1px solid #1c252d; }
+        .server-btn.active { background-color: var(--primary-color); border-color: var(--primary-color); color: #fff; }
+        .cast-btn { background-color: #28a745; border-color: #28a745; color: white; }
+        .video-details { padding: 15px; background-color: var(--panel-bg); }
         .video-title { font-size: 18px; margin: 0 0 8px 0; font-weight: bold; }
-        .video-desc { font-size: 13px; color: #9aa6b1; margin: 0; line-height: 1.6; }
-        .history-section {
-            background-color: #06090c; padding: 12px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #1c252d; display: none;
+        .video-desc { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+
+        /* شاشة البحث الاحترافية البيضاوية */
+        .search-wrapper { padding: 15px 0 5px 0; display: flex; gap: 10px; align-items: center; }
+        .search-bar-container {
+            flex: 1; background-color: var(--card-bg); border: 1px solid var(--border-color);
+            border-radius: 30px; padding: 4px 15px; display: flex; align-items: center; gap: 10px;
         }
-        .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        .clear-all-btn { background-color: #dc3545; color: #fff; border: none; padding: 4px 10px; font-size: 11px; border-radius: 4px; cursor: pointer; }
-        .history-list { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; }
-        .history-item { position: relative; background-color: #121b22; border-radius: 5px; font-size: 12px; white-space: nowrap; border: 1px solid #1c252d; cursor: pointer; }
-        html[dir="rtl"] .history-item { padding: 8px 32px 8px 12px; }
-        html[dir="ltr"] .history-item { padding: 8px 12px 8px 32px; }
-        .delete-item-btn { position: absolute; top: 50%; transform: translateY(-50%); color: #dc3545; cursor: pointer; font-weight: bold; }
-        html[dir="rtl"] .delete-item-btn { right: 10px; }
-        html[dir="ltr"] .delete-item-btn { left: 10px; }
-        .row-header { display: flex; justify-content: space-between; align-items: center; margin: 25px 0 12px 0; }
-        .row-title { font-size: 17px; font-weight: bold; color: #fff; padding: 0 8px; }
-        html[dir="rtl"] .row-title { border-right: 4px solid #e50914; }
-        html[dir="ltr"] .row-title { border-left: 4px solid #e50914; }
-        .movies-slider { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; width: 100%; }
-        .movies-slider::-webkit-scrollbar { height: 4px; }
-        .movies-slider::-webkit-scrollbar-thumb { background-color: #1c252d; border-radius: 10px; }
-        .movie-card { min-width: 120px; max-width: 120px; cursor: pointer; }
-        .poster-wrapper { position: relative; width: 100%; height: 170px; border-radius: 8px; overflow: hidden; border: 1px solid #1c252d; }
-        .movie-poster { width: 100%; height: 100%; object-fit: cover; }
-        .movie-info { padding: 6px 0; }
-        .movie-name { font-size: 12px; font-weight: bold; margin: 0 0 4px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .movie-meta { display: flex; flex-direction: column; gap: 2px; font-size: 11px; color: #9aa6b1; }
-        .movie-meta-row { display: flex; align-items: center; gap: 5px; }
-        .genre-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 110px; }
-        .imdb-badge { background-color: #1c252d; color: #fff; padding: 1px 4px; border-radius: 3px; font-weight: bold; font-size: 10px; display: inline-block; }
-        .no-results {
-            display: none; text-align: center; padding: 25px 15px; color: #9aa6b1; font-size: 13px;
-            background-color: #06090c; border-radius: 8px; border: 1px solid #1c252d; margin-top: 20px;
+        .search-bar-container input {
+            flex: 1; border: none; background: transparent; padding: 10px 0;
+            font-size: 14px; color: var(--text-color); outline: none;
         }
+        .search-bar-container input::placeholder { color: var(--text-muted); }
+        .search-icon, .mic-icon { color: var(--text-muted); font-size: 16px; cursor: pointer; }
+        .filter-btn {
+            width: 45px; height: 45px; background-color: var(--card-bg); border: 1px solid var(--border-color);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-color); cursor: pointer;
+        }
+
+        /* قائمة البحث العمودية الاحترافية */
+        .search-results-list { display: flex; flex-direction: column; gap: 12px; margin-top: 15px; }
+        .search-list-item {
+            display: flex; gap: 15px; background-color: var(--panel-bg); padding: 10px;
+            border-radius: 12px; border: 1px solid var(--border-color); cursor: pointer;
+        }
+        .search-item-poster { width: 70px; height: 100px; border-radius: 8px; object-fit: cover; border: 1px solid var(--border-color); }
+        .search-item-info { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 6px; }
+        .search-item-title { font-size: 15px; font-weight: bold; margin: 0; }
+        .search-item-meta { font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 10px; }
+        .search-imdb-tag { background-color: #1c252d; color: #ffc107; padding: 1px 5px; border-radius: 4px; font-weight: bold; }
+
+        /* السجل المكتوب مؤخراً داخل البحث كقائمة */
+        .recent-box { margin-top: 20px; }
+        .recent-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .recent-title { font-size: 14px; color: var(--text-muted); font-weight: bold; }
+        .clear-btn-text { color: var(--text-muted); font-size: 13px; cursor: pointer; background: none; border: none; padding: 0; }
+
+        /* شاشة الحساب وتجربة المستخدم */
+        .account-card {
+            background-color: var(--panel-bg); border: 1px solid var(--border-color);
+            border-radius: 14px; padding: 20px; text-align: center; margin: 15px 0 25px 0;
+        }
+        .account-msg { font-size: 15px; font-weight: bold; margin-bottom: 4px; }
+        .account-submsg { font-size: 12px; color: var(--text-muted); margin-bottom: 15px; }
+        .login-btn {
+            background-color: #ffffff; color: #000000; border: none; padding: 10px 30px;
+            font-size: 14px; font-weight: bold; border-radius: 25px; cursor: pointer; width: 80%; max-width: 250px;
+        }
+        
+        /* القائمة الإدارية السلسة */
+        .menu-list { display: flex; flex-direction: column; background-color: var(--panel-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; margin-bottom: 20px; }
+        .menu-item {
+            display: flex; justify-content: space-between; align-items: center; padding: 16px;
+            border-bottom: 1px solid var(--border-color); cursor: pointer; color: var(--text-color); text-decoration: none;
+        }
+        .menu-item:last-child { border-bottom: none; }
+        .menu-item-label { font-size: 14px; font-weight: 500; }
+        .menu-arrow { color: var(--text-muted); font-size: 14px; transform: scaleX(-1); }
+        html[dir="ltr"] .menu-arrow { transform: scaleX(1); }
+
+        .share-section { text-align: center; background-color: var(--panel-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 15px; }
+        .gradient-divider { height: 5px; background: var(--accent-gradient); border-radius: 10px; margin-top: 25px; }
+
+        /* شاشة الإعدادات العامة الفرعية المطابقة للصورة تماماً */
+        .settings-header { display: flex; align-items: center; gap: 15px; padding: 15px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 20px; }
+        .back-icon { font-size: 22px; cursor: pointer; }
+        .settings-view-title { font-size: 18px; font-weight: bold; margin: 0; }
+
+        .set-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+        .set-label { display: flex; flex-direction: column; gap: 4px; }
+        .set-title { font-size: 15px; font-weight: 500; }
+        .set-desc { font-size: 12px; color: var(--text-muted); }
+
+        /* ستايل الأزرار التفاعلية المزدوجة المتطابقة */
+        .toggle-switch-grp { display: flex; background-color: var(--card-bg); padding: 3px; border-radius: 8px; border: 1px solid var(--border-color); }
+        .toggle-opt { padding: 6px 14px; font-size: 12px; font-weight: bold; border-radius: 6px; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 4px; }
+        .toggle-opt.active { background-color: #ffffff; color: #000000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .dark-theme .toggle-opt.active { background-color: #ffffff; color: #000000; }
+        
+        .outline-btn { background: transparent; border: 1px solid var(--text-color); color: var(--text-color); padding: 6px 14px; font-size: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        .no-results { display: none; text-align: center; padding: 25px 15px; color: var(--text-muted); font-size: 13px; background-color: var(--panel-bg); border-radius: 12px; border: 1px solid var(--border-color); margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <script src="data.js"></script>
 
-    <header>
-        <div class="header-top">
-            <div class="logo-text" id="txtLogo">🎬 سينما فلوكس | CinemaFlux</div>
-            <button class="home-btn" id="txtHomeBtn" onclick="goHome()">الرئيسية | HOME</button>
-        </div>
-        <div class="lang-switcher">
-            <span class="lang-btn active" id="btnAr" onclick="setLanguage('ar')">العربية</span>
-            <span class="lang-btn" id="btnEn" onclick="setLanguage('en')">English</span>
+    <header id="mainHeader">
+        <div class="logo-area">
+            <div class="logo-dot" id="logoBadge">C</div>
+            <span id="txtLogo">سينمانا</span>
         </div>
     </header>
 
     <div class="container">
-        
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="ابحث عن اسم الفيلم أو المسلسل...">
-            <button class="search-btn" id="btnSearchSubmit" onclick="searchItems()">بحث</button>
-        </div>
 
-        <div class="history-section" id="historySection">
-            <div class="history-header">
-                <div class="row-title" style="border-color: #28a745;" id="txtHistoryTitle">سجل المشاهدة مؤخراً</div>
-                <button class="clear-all-btn" id="txtClearHistory" onclick="clearFullHistory()">حذف السجل بالكامل 🗑️</button>
+        <div id="pageHome" class="app-page active">
+            <div class="hero-slider" id="heroSlider">
+                </div>
+
+            <div class="main-player" id="videoPlayerSection">
+                <div class="video-container" id="mediaContainer">
+                    <iframe id="mainIframe" src="" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
+                <div class="player-controls">
+                    <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر عالي الجودة</button>
+                    <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر إنترنت ضعيف</button>
+                    <button class="cast-btn" id="btnCast" onclick="castToTV()">📺 بث للشاشة</button>
+                </div>
+                <div class="video-details">
+                    <h1 id="currentTitle" class="video-title">-</h1>
+                    <p id="currentDesc" class="video-desc">-</p>
+                </div>
             </div>
-            <div class="history-list" id="historyList"></div>
-        </div>
 
-        <div class="main-player" id="videoPlayerSection">
-            <div class="video-container" id="mediaContainer">
-                <iframe id="mainIframe" src="" allowfullscreen="true" scrolling="no"></iframe>
+            <div id="moviesBlock" style="display:none;">
+                <div class="row-header">
+                    <div class="row-title" id="txtMoviesSection">الأفلام المضافة حديثاً</div>
+                    <div class="row-more" onclick="switchTab('search')">المزيد</div>
+                </div>
+                <div class="movies-slider" id="moviesSlider"></div>
             </div>
-            <div class="player-controls">
-                <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر عالي الجودة</button>
-                <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر إنترنت ضعيف</button>
-                <button class="cast-btn" id="btnCast" onclick="castToTV()">📺 بث للشاشة</button>
-            </div>
-            
-            <div class="video-details">
-                <h1 id="currentTitle" class="video-title">-</h1>
-                <p id="currentDesc" class="video-desc">-</p>
+
+            <div id="seriesBlock" style="display:none;">
+                <div class="row-header">
+                    <div class="row-title" id="txtSeriesSection">المسلسلات المضافة حديثاً</div>
+                    <div class="row-more" onclick="switchTab('search')">المزيد</div>
+                </div>
+                <div class="movies-slider" id="seriesSlider"></div>
             </div>
         </div>
 
-        <div id="noResultsMessage" class="no-results">عذراً لا توجد نتائج ، قم بأدخل كلمات مختلفة او ربما انت قمت بكتابة الاسم بشكل غير صحيح 🔍</div>
+        <div id="pageSearch" class="app-page">
+            <div class="search-wrapper">
+                <div class="search-bar-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" oninput="searchItems()" placeholder="ابحث عن أفلام، مسلسلات...">
+                    <span class="mic-icon">🎙️</span>
+                </div>
+                <div class="filter-btn">🎛️</div>
+            </div>
 
-        <div id="moviesBlock" style="display:none;">
-            <div class="row-header"><div class="row-title" id="txtMoviesSection">قسم الأفلام</div></div>
-            <div class="movies-slider" id="moviesSlider"></div>
+            <div id="noResultsMessage" class="no-results">عذراً لا توجد نتائج ، تحقق من الكلمات المكتوبة 🔍</div>
+
+            <div class="recent-box" id="recentSearchBox">
+                <div class="recent-header">
+                    <span class="recent-title" id="txtRecentSearch">عمليات البحث الأخيرة</span>
+                    <button class="clear-btn-text" id="txtClearAll" onclick="clearFullHistory()">مسح الكل</button>
+                </div>
+                <div class="search-results-list" id="historySearchList"></div>
+            </div>
+
+            <div class="search-results-list" id="activeSearchResults" style="margin-top: 15px;"></div>
         </div>
 
-        <div id="seriesBlock" style="display:none;">
-            <div class="row-header"><div class="row-title" id="txtSeriesSection">قسم المسلسلات</div></div>
-            <div class="movies-slider" id="seriesSlider"></div>
+        <div id="pageAccount" class="app-page">
+            <div class="account-card">
+                <div class="account-msg" id="txtAccountMsg">هل لديك حساب؟</div>
+                <div class="account-submsg" id="txtAccountSubMsg">سجل الدخول واكتشف المزيد من الميزات اللامحدودة</div>
+                <button class="login-btn" id="txtLoginBtn" onclick="triggerLogin()">تسجيل الدخول</button>
+            </div>
+
+            <div class="menu-list">
+                <div class="menu-item" onclick="openSubSettings()">
+                    <span class="menu-item-label" id="menuSettings">الإعدادات</span>
+                    <span class="menu-arrow">&lt;</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-label" id="menuDownloads">التحميلات</span>
+                    <span class="menu-arrow">&lt;</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-label" id="menuHelp">المساعدة و الدعم</span>
+                    <span class="menu-arrow">&lt;</span>
+                </div>
+            </div>
+
+            <div class="share-section">
+                <div class="account-msg" style="font-size:14px; margin-bottom:10px;" id="txtShareMsg">هل اعجبك التطبيق؟</div>
+                <button class="login-btn" style="background-color:var(--card-bg); color:var(--text-color); border:1px solid var(--border-color);" id="btnShareApp" onclick="sharePlatform()">شارك التطبيق</button>
+            </div>
+
+            <div class="gradient-divider"></div>
         </div>
 
+        <div id="pageSubSettings" class="app-page">
+            <div class="settings-header">
+                <span class="back-icon" onclick="switchTab('account')">➔</span>
+                <span class="settings-view-title" id="txtGeneralTitle">عام</span>
+            </div>
+
+            <div class="set-row">
+                <div class="set-label">
+                    <span class="set-title" id="lblClearSearch">مسح سجل البحث</span>
+                </div>
+                <button class="outline-btn" id="btnClearSearchBtn" onclick="clearFullHistory()">مسح الكل</button>
+            </div>
+
+            <div class="set-row">
+                <div class="set-label">
+                    <span class="set-title" id="lblLang">اللغة</span>
+                </div>
+                <div class="toggle-switch-grp">
+                    <div class="toggle-opt" id="optAr" onclick="setLanguage('ar')">عربي</div>
+                    <div class="toggle-opt" id="optEn" onclick="setLanguage('en')">انكليزي</div>
+                </div>
+            </div>
+
+            <div class="set-row">
+                <div class="set-label">
+                    <span class="set-title" id="lblTheme">الوضع</span>
+                </div>
+                <div class="toggle-switch-grp">
+                    <div class="toggle-opt" id="themeDark" onclick="toggleTheme('dark')">🌙 غامق</div>
+                    <div class="toggle-opt" id="themeLight" onclick="toggleTheme('light')">☀️ فاتح</div>
+                </div>
+            </div>
+
+            <div class="set-row" style="align-items: flex-start; flex-direction: column; gap: 8px;">
+                <div class="set-label">
+                    <span class="set-title" id="lblPlayerSet">إعدادات مشغل الفيديو</span>
+                    <span class="set-desc" id="lblPlayerDesc">فترة تمرير الفيديو</span>
+                </div>
+                <span style="font-size: 13px; color: var(--primary-color); font-weight: bold; padding: 4px 0;" id="txtInterval">10 ثواني</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-nav" id="bottomNav">
+        <div class="nav-item active" id="tabHome" onclick="switchTab('home')">
+            <span class="nav-icon">🏠</span>
+            <span id="navHomeText">الرئيسية</span>
+        </div>
+        <div class="nav-item" id="tabSearch" onclick="switchTab('search')">
+            <span class="nav-icon">🔍</span>
+            <span id="navSearchText">بحث</span>
+        </div>
+        <div class="nav-item" id="tabAccount" onclick="switchTab('account')">
+            <span class="nav-icon">👤</span>
+            <span id="navAccountText">الحساب</span>
+        </div>
     </div>
 
     <script>
@@ -159,29 +389,98 @@
         let currentHD = "", currentSD = "";
         let watchHistory = JSON.parse(localStorage.getItem('cinemaFluxHistory')) || [];
 
+        // نصوص اللغات المتكاملة والترجمات المدمجة للجهتين
         const langData = {
             ar: {
-                logo: "🎬 سينما فلوكس | CinemaFlux", homeBtn: "الرئيسية | HOME", searchPlaceholder: "ابحث عن اسم الفيلم أو المسلسل...", searchBtn: "بحث",
-                historyTitle: "سجل المشاهدة مؤخراً", clearHistory: "حذف السجل بالكامل 🗑️", hdServer: "سيرفر عالي الجودة",
-                sdServer: "سيرفر إنترنت ضعيف", castBtn: "📺 بث للشاشة", moviesSection: "قسم الأفلام", seriesSection: "قسم المسلسلات",
-                noResults: "عذراً لا توجد نتائج ، قم بأدخل كلمات مختلفة او ربما انت قمت بكتابة الاسم بشكل غير صحيح 🔍"
+                logo: "سينمانا", navHome: "الرئيسية", navSearch: "بحث", navAccount: "الحساب",
+                moviesSection: "الأفلام المضافة حديثاً", seriesSection: "المسلسلات المضافة حديثاً",
+                more: "المزيد", recentSearch: "عمليات البحث الأخيرة", clearAll: "مسح الكل",
+                noResults: "عذراً لا توجد نتائج ، تحقق من الكلمات المكتوبة 🔍", accMsg: "هل لديك حساب؟",
+                accSubMsg: "سجل الدخول واكتشف المزيد من الميزات اللامحدودة", loginBtn: "تسجيل الدخول",
+                menuSet: "الإعدادات", menuDown: "التحميلات", menuHelp: "المساعدة و الدعم",
+                shareMsg: "هل اعجبك التطبيق؟", shareBtn: "شارك التطبيق", genTitle: "عام",
+                lblClear: "مسح سجل البحث", lblLang: "اللغة", lblTheme: "الوضع",
+                lblPlayer: "إعدادات مشغل الفيديو", lblPlayerDesc: "فترة تمرير الفيديو",
+                txtSec: "10 ثواني", hdServer: "سيرفر عالي الجودة", sdServer: "سيرفر إنترنت ضعيف", castBtn: "📺 بث للشاشة"
             },
             en: {
-                logo: "🎬 CinemaFlux", homeBtn: "HOME", searchPlaceholder: "Search for movie or series name...", searchBtn: "Search",
-                historyTitle: "Recently Watched", clearHistory: "Clear Full History 🗑️", hdServer: "High Quality Server",
-                sdServer: "Low Internet Server", castBtn: "📺 Cast to TV", moviesSection: "Movies Section", seriesSection: "Series Section",
-                noResults: "Sorry, no results found. Please enter different words or check your spelling! 🔍"
+                logo: "CinemaFlux", navHome: "Home", navSearch: "Search", navAccount: "Account",
+                moviesSection: "Recently Added Movies", seriesSection: "Recently Added Series",
+                more: "More", recentSearch: "Recent Searches", clearAll: "Clear All",
+                noResults: "Sorry, no results found. Please check spelling! 🔍", accMsg: "Have an account?",
+                accSubMsg: "Log in and discover infinite capabilities", loginBtn: "Login",
+                menuSet: "Settings", menuDown: "Downloads", menuHelp: "Help & Support",
+                shareMsg: "Did you like the app?", shareBtn: "Share Application", genTitle: "General",
+                lblClear: "Clear Search History", lblLang: "Language", lblTheme: "Theme",
+                lblPlayer: "Video Player Settings", lblPlayerDesc: "Video scrubbing interval",
+                txtSec: "10 seconds", hdServer: "High Quality Server", sdServer: "Low Internet Server", castBtn: "📺 Cast to TV"
             }
         };
 
         window.addEventListener('DOMContentLoaded', () => {
             if (typeof globalMoviesData !== 'undefined') {
                 filteredMoviesData = globalMoviesData.filter(item => item.hdUrl && item.hdUrl.trim() !== "");
+                buildSlider(filteredMoviesData.slice(0, 5)); // عرض أول 5 أفلام في السلايدر العلوي تلقائياً
                 renderData(filteredMoviesData);
             }
             updateHistoryUI();
+            toggleTheme('dark'); // تعيين الوضع الغامق كإعداد افتراضي فخم للموقع
         });
 
+        // بناء السلايدر العلوي الاحترافي تلقائياً
+        function buildSlider(items) {
+            const slider = document.getElementById('heroSlider');
+            if(items.length === 0) { slider.style.display = 'none'; return; }
+            slider.innerHTML = '';
+            
+            let slidesHtml = '';
+            let dotsHtml = '<div class="slider-dots">';
+            
+            items.forEach((item, idx) => {
+                const activeClass = idx === 0 ? 'active' : '';
+                slidesHtml += `
+                    <div class="slide-item ${activeClass}" data-index="${idx}">
+                        <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800'">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <span class="slide-tagline">🔥 مضاف حديثاً</span>
+                            <h2 class="slide-title">${item.title}</h2>
+                            <button class="slide-btn" onclick="openMediaPage(${idx})">▶ شاهد الآن</button>
+                        </div>
+                    </div>
+                `;
+                dotsHtml += `<span class="dot ${activeClass}" onclick="setSlide(${idx})"></span>`;
+            });
+            
+            dotsHtml += '</div>';
+            slider.innerHTML = slidesHtml + dotsHtml;
+            startSliderAutoCycle();
+        }
+
+        let sliderInterval;
+        function startSliderAutoCycle() {
+            clearInterval(sliderInterval);
+            sliderInterval = setInterval(() => {
+                const slides = document.querySelectorAll('.slide-item');
+                const dots = document.querySelectorAll('.dot');
+                if(!slides.length) return;
+                let currentIdx = 0;
+                slides.forEach((s, i) => { if(s.classList.contains('active')) currentIdx = i; });
+                let nextIdx = (currentIdx + 1) % slides.length;
+                setSlide(nextIdx);
+            }, 5000); // الانتقال التلقائي كل 5 ثوانٍ لراحة بصرية ممتازة
+        }
+
+        function setSlide(idx) {
+            const slides = document.querySelectorAll('.slide-item');
+            const dots = document.querySelectorAll('.dot');
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            if(slides[idx]) slides[idx].classList.add('active');
+            if(dots[idx]) dots[idx].classList.add('active');
+        }
+
+        // توزيع الأفلام والمسلسلات في الصفوف الأفقية بالرئيسية
         function renderData(dataList) {
             const moviesSlider = document.getElementById('moviesSlider');
             const seriesSlider = document.getElementById('seriesSlider');
@@ -198,18 +497,14 @@
                 card.innerHTML = `
                     <div class="poster-wrapper">
                         <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                        <div class="card-imdb">⭐ ${item.rating}</div>
                     </div>
                     <div class="movie-info">
                         <p class="movie-name">${item.title}</p>
-                        <div class="movie-meta">
-                            <div class="movie-meta-row">
-                                <span class="imdb-badge">${item.rating}</span>
-                            </div>
-                            <span class="genre-text" title="${item.genre}">${item.genre}</span>
-                        </div>
+                        <div class="movie-meta-desc">${item.genre} | ${item.type === 'series' ? 'مسلسل' : 'فيلم'}</div>
                     </div>
                 `;
-                card.onclick = () => openMediaPage(index);
+                card.onclick = () => { openMediaPage(index); switchTab('home'); };
 
                 if (item.type === 'series') {
                     seriesSlider.appendChild(card);
@@ -224,6 +519,32 @@
             document.getElementById('seriesBlock').style.display = hasSeries ? 'block' : 'none';
         }
 
+        // التنقل بين شاشات التطبيق المتعددة Tabs
+        function switchTab(tabId) {
+            document.querySelectorAll('.app-page').forEach(page => page.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            document.getElementById('mainHeader').style.display = 'flex';
+
+            if (tabId === 'home') {
+                document.getElementById('pageHome').classList.add('active');
+                document.getElementById('tabHome').classList.add('active');
+            } else if (tabId === 'search') {
+                document.getElementById('pageSearch').classList.add('active');
+                document.getElementById('tabSearch').classList.add('active');
+            } else if (tabId === 'account') {
+                document.getElementById('pageAccount').classList.add('active');
+                document.getElementById('tabAccount').classList.add('active');
+            }
+            window.scrollTo(0,0);
+        }
+
+        function openSubSettings() {
+            document.querySelectorAll('.app-page').forEach(page => page.classList.remove('active'));
+            document.getElementById('pageSubSettings').classList.add('active');
+            document.getElementById('mainHeader').style.display = 'none';
+        }
+
+        // تشغيل الفيديو المطور وضخ الترجمة برمجياً بشكل مباشر دون تعقيد
         function openMediaPage(index) {
             const item = filteredMoviesData[index];
             currentHD = item.hdUrl;
@@ -235,9 +556,9 @@
             changeServer('HD');
 
             document.getElementById('videoPlayerSection').style.display = 'block';
-            window.scrollTo({ top: document.getElementById('videoPlayerSection').offsetTop - 20, behavior: 'smooth' });
+            window.scrollTo({ top: document.getElementById('videoPlayerSection').offsetTop - 70, behavior: 'smooth' });
 
-            addToHistory(item.title, index);
+            addToHistory(item, index);
         }
 
         function changeServer(type) {
@@ -247,114 +568,198 @@
 
             let targetUrl = (type === 'HD') ? currentHD : currentSD;
 
+            // حقن باراميترات الترجمة الشاملة تلقائياً للتخطي المباشر
             if (targetUrl && !targetUrl.includes('sub=')) {
                 let separator = targetUrl.includes('?') ? '&' : '?';
-                targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
+                targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1&autoplay=1";
             }
 
+            iframe.src = targetUrl;
             if (type === 'HD') {
-                iframe.src = targetUrl;
                 btnHD.classList.add('active');
                 btnSD.classList.remove('active');
             } else {
-                iframe.src = targetUrl;
                 btnSD.classList.add('active');
                 btnHD.classList.remove('active');
             }
         }
 
+        // محرك البحث النشط وبناء القائمة الذكية المطابقة لطلبك
         function searchItems() {
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const activeContainer = document.getElementById('activeSearchResults');
+            const recentBox = document.getElementById('recentSearchBox');
+            const noResults = document.getElementById('noResultsMessage');
+
             if (!query) {
-                renderData(filteredMoviesData);
-                document.getElementById('noResultsMessage').style.display = 'none';
+                activeContainer.innerHTML = '';
+                recentBox.style.display = 'block';
+                noResults.style.display = 'none';
                 return;
             }
 
+            recentBox.style.display = 'none';
             const searchResults = filteredMoviesData.filter(item => 
                 item.title.toLowerCase().includes(query) || 
                 item.desc.toLowerCase().includes(query) ||
                 item.genre.toLowerCase().includes(query)
             );
 
-            renderData(searchResults);
-            document.getElementById('noResultsMessage').style.display = searchResults.length === 0 ? 'block' : 'none';
-        }
-
-        function goHome() {
-            document.getElementById('videoPlayerSection').style.display = 'none';
-            document.getElementById('mainIframe').src = '';
-            document.getElementById('searchInput').value = '';
-            renderData(filteredMoviesData);
-            document.getElementById('noResultsMessage').style.display = 'none';
-        }
-
-        function setLanguage(lang) {
-            currentLang = lang;
-            const html = document.getElementById('mainHtml');
-            html.setAttribute('lang', lang);
-            html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-
-            document.getElementById('btnAr').classList.toggle('active', lang === 'ar');
-            document.getElementById('btnEn').classList.toggle('active', lang === 'en');
-
-            document.getElementById('txtLogo').innerText = langData[lang].logo;
-            document.getElementById('txtHomeBtn').innerText = langData[lang].homeBtn;
-            document.getElementById('searchInput').placeholder = langData[lang].searchPlaceholder;
-            document.getElementById('btnSearchSubmit').innerText = langData[lang].searchBtn;
-            document.getElementById('txtHistoryTitle').innerText = langData[lang].historyTitle;
-            document.getElementById('txtClearHistory').innerText = langData[lang].clearHistory;
-            document.getElementById('btnHD').innerText = langData[lang].hdServer;
-            document.getElementById('btnSD').innerText = langData[lang].sdServer;
-            document.getElementById('btnCast').innerText = langData[lang].castBtn;
-            document.getElementById('txtMoviesSection').innerText = langData[lang].moviesSection;
-            document.getElementById('txtSeriesSection').innerText = langData[lang].seriesSection;
-            document.getElementById('noResultsMessage').innerText = langData[lang].noResults;
-        }
-
-        function addToHistory(title, index) {
-            watchHistory = watchHistory.filter(h => h.title !== title);
-            watchHistory.unshift({ title, index });
-            if (watchHistory.length > 10) watchHistory.pop();
-            localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
-            updateHistoryUI();
-        }
-
-        function updateHistoryUI() {
-            const section = document.getElementById('historySection');
-            const list = document.getElementById('historyList');
-            if (watchHistory.length === 0) {
-                section.style.display = 'none';
+            activeContainer.innerHTML = '';
+            if (searchResults.length === 0) {
+                noResults.style.display = 'block';
                 return;
             }
-            section.style.display = 'block';
-            list.innerHTML = '';
-            watchHistory.forEach((item, idx) => {
+            noResults.style.display = 'none';
+
+            searchResults.forEach((item) => {
+                // إيجاد الاندكس الأصلي في المصفوفة
+                const originalIndex = filteredMoviesData.findIndex(f => f.title === item.title);
                 const div = document.createElement('div');
-                div.className = 'history-item';
+                div.className = 'search-list-item';
                 div.innerHTML = `
-                    <span onclick="openMediaPage(${item.index})">${item.title}</span>
-                    <span class="delete-item-btn" onclick="deleteHistoryItem(event, ${idx})">×</span>
+                    <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=200'">
+                    <div class="search-item-info">
+                        <p class="search-item-title">${item.title}</p>
+                        <div class="search-item-meta">
+                            <span class="search-imdb-tag">⭐ ${item.rating}</span>
+                            <span>${item.genre}</span>
+                        </div>
+                    </div>
                 `;
-                list.appendChild(div);
+                div.onclick = () => { openMediaPage(originalIndex); switchTab('home'); };
+                activeContainer.appendChild(div);
             });
         }
 
-        function deleteHistoryItem(e, idx) {
-            e.stopPropagation();
-            watchHistory.splice(idx, 1);
+        // الحفظ التلقائي في سجل البحث والمشاهدات
+        function addToHistory(item, index) {
+            watchHistory = watchHistory.filter(h => h.title !== item.title);
+            watchHistory.unshift({ title: item.title, poster: item.poster, rating: item.rating, genre: item.genre, index: index });
+            if (watchHistory.length > 8) watchHistory.pop();
             localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
             updateHistoryUI();
+        }
+
+        // تحديث وعرض سجل العمليات الأخيرة المطابقة تماماً لتطبيق سينمانا
+        function updateHistoryUI() {
+            const recentBox = document.getElementById('recentSearchBox');
+            const list = document.getElementById('historySearchList');
+            if (watchHistory.length === 0) {
+                recentBox.style.display = 'none';
+                return;
+            }
+            recentBox.style.display = 'block';
+            list.innerHTML = '';
+            
+            watchHistory.forEach((item) => {
+                const div = document.createElement('div');
+                div.className = 'search-list-item';
+                div.innerHTML = `
+                    <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=200'">
+                    <div class="search-item-info">
+                        <p class="search-item-title">${item.title}</p>
+                        <div class="search-item-meta">
+                            <span class="search-imdb-tag">⭐ ${item.rating}</span>
+                            <span>${item.genre}</span>
+                        </div>
+                    </div>
+                `;
+                div.onclick = () => { openMediaPage(item.index); switchTab('home'); };
+                list.appendChild(div);
+            });
         }
 
         function clearFullHistory() {
             watchHistory = [];
             localStorage.removeItem('cinemaFluxHistory');
             updateHistoryUI();
+            document.getElementById('activeSearchResults').innerHTML = '';
+            document.getElementById('searchInput').value = '';
+            document.getElementById('recentSearchBox').style.display = 'none';
+        }
+
+        // محاكي تبديل الثيمات (فاتح / غامق) وتفعيل الأزرار البيضاء التفاعلية
+        function toggleTheme(theme) {
+            const body = document.body;
+            const darkBtn = document.getElementById('themeDark');
+            const lightBtn = document.getElementById('themeLight');
+            
+            if (theme === 'light') {
+                body.classList.add('light-theme');
+                lightBtn.classList.add('active');
+                darkBtn.classList.remove('active');
+            } else {
+                body.classList.remove('light-theme');
+                darkBtn.classList.add('active');
+                lightBtn.classList.remove('active');
+            }
+        }
+
+        // إعدادات اللغات وعكس الاتجاه بالكامل
+        function setLanguage(lang) {
+            currentLang = lang;
+            const html = document.getElementById('mainHtml');
+            html.setAttribute('lang', lang);
+            html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            document.getElementById('optAr').classList.toggle('active', lang === 'ar');
+            document.getElementById('optEn').classList.toggle('active', lang === 'en');
+
+            // تبديل النصوص بناءً على مصفوفة الترجمة
+            document.getElementById('txtLogo').innerText = langData[lang].logo;
+            document.getElementById('navHomeText').innerText = langData[lang].navHome;
+            document.getElementById('navSearchText').innerText = langData[lang].navSearch;
+            document.getElementById('navAccountText').innerText = langData[lang].navAccount;
+            document.getElementById('txtMoviesSection').innerText = langData[lang].moviesSection;
+            document.getElementById('txtSeriesSection').innerText = langData[lang].seriesSection;
+            document.getElementById('searchInput').placeholder = langData[lang].navSearch + '...';
+            document.getElementById('txtRecentSearch').innerText = langData[lang].recentSearch;
+            document.getElementById('txtClearAll').innerText = langData[lang].clearAll;
+            document.getElementById('noResultsMessage').innerText = langData[lang].noResults;
+            document.getElementById('txtAccountMsg').innerText = langData[lang].accMsg;
+            document.getElementById('txtAccountSubMsg').innerText = langData[lang].accSubMsg;
+            document.getElementById('txtLoginBtn').innerText = langData[lang].loginBtn;
+            document.getElementById('menuSettings').innerText = langData[lang].menuSet;
+            document.getElementById('menuDownloads').innerText = langData[lang].menuDown;
+            document.getElementById('menuHelp').innerText = langData[lang].menuHelp;
+            document.getElementById('txtShareMsg').innerText = langData[lang].shareMsg;
+            document.getElementById('btnShareApp').innerText = langData[lang].shareBtn;
+            document.getElementById('txtGeneralTitle').innerText = langData[lang].genTitle;
+            document.getElementById('lblClearSearch').innerText = langData[lang].lblClear;
+            document.getElementById('btnClearSearchBtn').innerText = langData[lang].clearAll;
+            document.getElementById('lblLang').innerText = langData[lang].lblLang;
+            document.getElementById('lblTheme').innerText = langData[lang].lblTheme;
+            document.getElementById('lblPlayerSet').innerText = langData[lang].lblPlayer;
+            document.getElementById('lblPlayerDesc').innerText = langData[lang].lblPlayerDesc;
+            document.getElementById('txtInterval').innerText = langData[lang].txtSec;
+            document.getElementById('btnHD').innerText = langData[lang].hdServer;
+            document.getElementById('btnSD').innerText = langData[lang].sdServer;
+            document.getElementById('btnCast').innerText = langData[lang].castBtn;
+            
+            document.querySelectorAll('.row-more').forEach(el => el.innerText = langData[lang].more);
+        }
+
+        // محاكي تسجيل دخول ذكي لحفظ تفضيلات المستخدم محلياً بدون تعقيد
+        function triggerLogin() {
+            const username = prompt(currentLang === 'ar' ? "أدخل اسم المستخدم لتفعيل السجل السحابي الذاتي:" : "Enter username to activate self cloud history:");
+            if(username) {
+                document.getElementById('txtAccountMsg').innerText = (currentLang === 'ar' ? "مرحباً بك، " : "Welcome, ") + username;
+                document.getElementById('txtAccountSubMsg').innerText = currentLang === 'ar' ? "تم ربط السجل وتفضيلات المشاهدة بحسابك بنجاح ✨" : "History and configurations synchronized successfully ✨";
+                document.getElementById('txtLoginBtn').style.display = 'none';
+            }
+        }
+
+        function sharePlatform() {
+            if (navigator.share) {
+                navigator.share({ title: 'CinemaFlux', text: 'شاهد أحدث الأفلام والمسلسلات مجاناً وبأعلى جودة!', url: window.location.href });
+            } else {
+                alert(currentLang === 'ar' ? "انسخ رابط الموقع وشاركه مع أصدقائك!" : "Copy URL to share with your friends!");
+            }
         }
 
         function castToTV() {
-            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
+            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay المتوفرة في لوحة تحكم هاتفك لربط البث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast fully.");
         }
     </script>
 </body>
