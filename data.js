@@ -1,5 +1,15 @@
 const globalMoviesData = [
 {
+    "title": "السريع 10",
+    "desc": "تدور احداث الفيلم حيث ينطلق (دانتي) - ابن زعيم الجريمة (هيرنان رييس) - الذي قُتل قبل عشر سنوات للانتقام من البطل (دوم توريتو) وعائلته وشركائه بعد التسبب في مقتل والده وسرقة أمواله.",
+    "poster": "https://image.tmdb.org/t/p/w500/mgBcSHJt8fcRfXn8LcWusrCt0Kw.jpg",
+    "hdUrl": "https://playmogo.com/e/cmboot3qvaeq",
+    "sdUrl": "https://playmogo.com/e/cmboot3qvaeq",
+    "rating": "7.0",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie"
+},
+{
     "title": "Last Christmas",
     "desc": "كايت سيدة شابة، حياتها سلسلة متعاقبة لا تنتهي من القرارات السيئة، وتضطر ﻷن تقبل العمل جنية لبابا نويل من أجل موسم الكريسماس في أحد المحال، وإذا بها تقابل توم هناك، وتتخذ حياتها منحى جديد كلية.",
     "poster": "https://image.tmdb.org/t/p/w500/kDEjffiKgjuGo2DRzsqfjvW0CQh.jpg",
