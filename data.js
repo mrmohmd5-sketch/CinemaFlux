@@ -1,6 +1,6 @@
 const globalMoviesData = [
 {
-    "title": "خمسة سريعة",
+    "title": "Fast Five",
     "desc": "يخطط دومينيك توريتو وطاقمه من المتسابقين في الشوارع لسرقة هائلة لشراء حريتهم بينما هم في طليعة سيد مخدرات برازيلي قوي ووكيل اتحادي خطير.",
     "poster": "https://image.tmdb.org/t/p/w500/gEfQjjQwY7fh5bI4GlG0RrBu7Pz.jpg",
     "hdUrl": "https://playmogo.com/e/qg4nptgyoj9u",
