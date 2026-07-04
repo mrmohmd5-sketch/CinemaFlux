@@ -1,5 +1,15 @@
 const globalMoviesData = [
 {
+    "title": "Last Christmas",
+    "desc": "كايت سيدة شابة، حياتها سلسلة متعاقبة لا تنتهي من القرارات السيئة، وتضطر ﻷن تقبل العمل جنية لبابا نويل من أجل موسم الكريسماس في أحد المحال، وإذا بها تقابل توم هناك، وتتخذ حياتها منحى جديد كلية.",
+    "poster": "https://image.tmdb.org/t/p/w500/kDEjffiKgjuGo2DRzsqfjvW0CQh.jpg",
+    "hdUrl": "https://playmogo.com/e/9abbkhfyhgmf",
+    "sdUrl": "https://playmogo.com/e/9abbkhfyhgmf",
+    "rating": "7.2",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie"
+},
+{
     "title": "Fast Five",
     "desc": "يخطط دومينيك توريتو وطاقمه من المتسابقين في الشوارع لسرقة هائلة لشراء حريتهم بينما هم في طليعة سيد مخدرات برازيلي قوي ووكيل اتحادي خطير.",
     "poster": "https://image.tmdb.org/t/p/w500/gEfQjjQwY7fh5bI4GlG0RrBu7Pz.jpg",
