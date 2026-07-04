@@ -1,6 +1,6 @@
 const globalMoviesData = [
 {
-    "title": "السريع 10",
+    "title": "Fast X",
     "desc": "تدور احداث الفيلم حيث ينطلق (دانتي) - ابن زعيم الجريمة (هيرنان رييس) - الذي قُتل قبل عشر سنوات للانتقام من البطل (دوم توريتو) وعائلته وشركائه بعد التسبب في مقتل والده وسرقة أمواله.",
     "poster": "https://image.tmdb.org/t/p/w500/mgBcSHJt8fcRfXn8LcWusrCt0Kw.jpg",
     "hdUrl": "https://playmogo.com/e/cmboot3qvaeq",
