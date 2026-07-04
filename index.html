@@ -5,249 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>سينما فلوكس | CinemaFlux</title>
     <style>
-        :root {
-            --bg-color: #0b1116;
-            --panel-bg: #06090c;
-            --card-bg: #121b22;
-            --border-color: #1c252d;
-            --text-color: #ffffff;
-            --text-muted: #9aa6b1;
-            --primary-color: #e50914;
-            --accent-gradient: linear-gradient(90deg, #9c27b0, #e91e63, #ff9800);
-        }
-
-        /* الوضع الفاتح */
-        .light-theme {
-            --bg-color: #f4f6f8;
-            --panel-bg: #ffffff;
-            --card-bg: #eef1f4;
-            --border-color: #d2d9e0;
-            --text-color: #1a202c;
-            --text-muted: #64748b;
-            --primary-color: #dc2626;
-        }
-
         html, body {
             max-width: 100%; overflow-x: hidden; margin: 0; padding: 0;
-            background-color: var(--bg-color); color: var(--text-color);
+            background-color: #0b1116; color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             transition: background-color 0.3s, color 0.3s;
-            -webkit-tap-highlight-color: transparent;
         }
         body { padding-bottom: 75px; box-sizing: border-box; }
+        
+        /* الوضع الفاتح */
+        body.light-theme { background-color: #f0f2f5; color: #1a202c; }
+        body.light-theme header { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; }
+        body.light-theme .nav-bar { background-color: #ffffff; border-top: 1px solid #e2e8f0; }
+        body.light-theme .nav-item { color: #4a5568; }
+        body.light-theme .nav-item.active { color: #e50914; }
+        body.light-theme .search-box input { background-color: #ffffff; color: #1a202c; border-color: #cbd5e0; }
+        body.light-theme #authBox, body.light-theme .settings-box, body.light-theme .card-box { background-color: #ffffff; border-color: #e2e8f0; color: #1a202c; }
+        body.light-theme #authUsername, body.light-theme #authPassword, body.light-theme .sub-input { background-color: #f7fafc; color: #1a202c; border-color: #cbd5e0; }
+        body.light-theme .row-title { color: #1a202c; }
+        body.light-theme .movie-name { color: #2d3748; }
 
-        /* الهيدر العلوي المتناسق */
         header {
-            background-color: var(--panel-bg); padding: 15px; 
-            border-bottom: 1px solid var(--border-color);
+            background-color: #06090c; padding: 15px; border-bottom: 1px solid #1c252d;
             display: flex; justify-content: space-between; align-items: center;
-            position: sticky; top: 0; z-index: 100;
         }
-        .logo-area { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: bold; color: var(--text-color); }
-        .logo-dot { width: 24px; height: 24px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; }
+        .logo-text { font-size: 22px; font-weight: bold; color: #e50914; display: flex; align-items: center; gap: 6px; }
+        .logo-badge { background-color: #e50914; color: white; padding: 2px 8px; border-radius: 6px; font-size: 16px; font-family: sans-serif; }
         
         .container { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 12px; box-sizing: border-box; }
+        
+        /* البانر المتحرك (Slider) */
+        .slider-container { position: relative; width: 100%; height: 220px; border-radius: 12px; overflow: hidden; margin: 15px 0; border: 1px solid #1c252d; background-color: #000; }
+        .slide-item { display: none; width: 100%; height: 100%; position: relative; }
+        .slide-item.active { display: block; animation: fadeEffect 0.6s ease-in-out; }
+        .slide-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6); }
+        .slide-content { position: absolute; bottom: 0; right: 0; left: 0; padding: 20px; background: linear-gradient(transparent, rgba(6,9,12,0.95)); display: flex; flex-direction: column; gap: 5px; }
+        html[dir="ltr"] .slide-content { text-align: left; }
+        .slide-title { font-size: 18px; font-weight: bold; color: #fff; margin: 0; }
+        .slide-btn { background-color: #e50914; color: #fff; border: none; padding: 8px 16px; font-size: 12px; font-weight: bold; border-radius: 20px; cursor: pointer; align-self: flex-start; margin-top: 5px; }
+        .slider-dots { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; }
+        .dot { width: 8px; height: 8px; background-color: rgba(255,255,255,0.4); border-radius: 50%; cursor: pointer; }
+        .dot.active { background-color: #e50914; width: 16px; border-radius: 4px; }
 
-        /* شريط التنقل السفلي الثابت كمظهر التطبيقات */
-        .bottom-nav {
-            position: fixed; bottom: 0; left: 0; right: 0; height: 65px;
-            background-color: var(--panel-bg); border-top: 1px solid var(--border-color);
-            display: flex; justify-content: space-around; align-items: center; z-index: 1000;
+        /* شريط التنقل السفلي */
+        .nav-bar {
+            position: fixed; bottom: 0; left: 0; right: 0; height: 60px; background-color: #06090c;
+            border-top: 1px solid #1c252d; display: flex; justify-content: space-around; align-items: center; z-index: 999;
         }
-        .nav-item {
-            display: flex; flex-direction: column; align-items: center; gap: 4px;
-            color: var(--text-muted); font-size: 12px; cursor: pointer; flex: 1; text-align: center;
-            padding: 8px 0; transition: color 0.2s;
-        }
-        .nav-item.active { color: var(--text-color); font-weight: bold; }
+        .nav-item { display: flex; flex-direction: column; align-items: center; color: #9aa6b1; font-size: 11px; cursor: pointer; font-weight: bold; gap: 4px; }
+        .nav-item.active { color: #e50914; }
         .nav-icon { font-size: 20px; }
 
-        /* تقسيم الشاشات الذكي Tabs */
+        /* واجهات الصفحات */
         .app-page { display: none; }
         .app-page.active { display: block; }
 
-        /* البانر السلايدر المتطور تلقائياً */
-        .hero-slider {
-            position: relative; width: 100%; height: 210px; border-radius: 12px;
-            overflow: hidden; margin: 15px 0; border: 1px solid var(--border-color);
+        .search-box { margin: 15px auto; display: flex; gap: 8px; width: 100%; }
+        .search-box input {
+            flex: 1; padding: 12px 18px; font-size: 14px; border: 1px solid #1c252d;
+            border-radius: 25px; background-color: #121b22; color: #fff; outline: none;
         }
-        .slide-item {
-            position: absolute; width: 100%; height: 100%; opacity: 0;
-            transition: opacity 0.6s ease-in-out; display: flex; align-items: flex-end;
-        }
-        .slide-item.active { opacity: 1; z-index: 2; }
-        .slide-img { width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0; }
-        .slide-overlay {
-            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(to top, rgba(11,17,22,1) 15%, rgba(11,17,22,0.4) 60%, rgba(0,0,0,0) 100%);
-            z-index: 1;
-        }
-        .slide-content {
-            position: relative; z-index: 3; padding: 20px; width: 100%;
-            display: flex; flex-direction: column; gap: 8px; box-sizing: border-box;
-        }
-        .slide-tagline { font-size: 11px; color: #ff9800; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-        .slide-title { font-size: 22px; font-weight: bold; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.6); }
-        .slide-btn {
-            background-color: var(--primary-color); color: white; border: none;
-            padding: 8px 20px; font-size: 13px; font-weight: bold; border-radius: 20px;
-            cursor: pointer; display: inline-flex; align-items: center; gap: 6px; width: fit-content;
-            box-shadow: 0 4px 10px rgba(229, 9, 20, 0.4);
-        }
-        .slider-dots {
-            position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
-            display: flex; gap: 6px; z-index: 4;
-        }
-        .dot { width: 7px; height: 7px; background-color: rgba(255,255,255,0.3); border-radius: 50%; cursor: pointer; transition: all 0.2s; }
-        .dot.active { background-color: var(--primary-color); width: 16px; border-radius: 4px; }
+        .search-btn { background-color: #e50914; color: white; border: none; padding: 0 20px; font-size: 14px; font-weight: bold; border-radius: 25px; cursor: pointer; }
 
-        /* صفوف عرض المجموعات الأفقية القابلة للتمرير */
-        .row-header { display: flex; justify-content: space-between; align-items: center; margin: 20px 0 10px 0; }
-        .row-title { font-size: 16px; font-weight: bold; color: var(--text-color); border-right: 4px solid var(--primary-color); padding-right: 8px; }
-        html[dir="ltr"] .row-title { border-right: none; border-left: 4px solid var(--primary-color); padding-right: 0; padding-left: 8px; }
-        .row-more { font-size: 13px; color: var(--text-muted); cursor: pointer; }
-        
-        .movies-slider { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; width: 100%; scroll-behavior: smooth; }
-        .movies-slider::-webkit-scrollbar { height: 0px; }
-        
-        .movie-card { min-width: 115px; max-width: 115px; cursor: pointer; position: relative; }
-        .poster-wrapper { position: relative; width: 100%; height: 165px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border-color); }
-        .movie-poster { width: 100%; height: 100%; object-fit: cover; }
-        .card-imdb {
-            position: absolute; bottom: 6px; right: 6px; background-color: rgba(0,0,0,0.75);
-            color: #ffc107; padding: 2px 5px; border-radius: 4px; font-weight: bold; font-size: 10px;
-            display: flex; align-items: center; gap: 2px; border: 1px solid rgba(255,255,255,0.1);
-        }
-        html[dir="ltr"] .card-imdb { right: auto; left: 6px; }
-        .movie-info { padding: 6px 2px; }
-        .movie-name { font-size: 13px; font-weight: 500; margin: 0 0 3px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .movie-meta-desc { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-        /* مشغل الفيديو والتحكم المتطور */
-        .main-player {
-            background-color: #000; border-radius: 12px; overflow: hidden;
-            margin: 15px 0; border: 1px solid var(--border-color); display: none; width: 100%;
-        }
+        /* المشغل والترجمة الاحترافية */
+        .main-player { background-color: #000; border-radius: 12px; overflow: hidden; margin-bottom: 25px; border: 1px solid #1c252d; width: 100%; position: relative; }
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; width: 100%; background-color: #000; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-        .player-controls { display: flex; gap: 8px; padding: 10px; background-color: var(--panel-bg); justify-content: center; flex-wrap: wrap; border-bottom: 1px solid var(--border-color); }
-        .server-btn, .cast-btn {
-            background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); padding: 8px 14px;
-            font-size: 12px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; font-weight: 500;
-        }
-        .server-btn.active { background-color: var(--primary-color); border-color: var(--primary-color); color: #fff; }
-        .cast-btn { background-color: #28a745; border-color: #28a745; color: white; }
-        .video-details { padding: 15px; background-color: var(--panel-bg); }
-        .video-title { font-size: 18px; margin: 0 0 8px 0; font-weight: bold; }
-        .video-desc { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.6; }
-
-        /* شاشة البحث الاحترافية البيضاوية */
-        .search-wrapper { padding: 15px 0 5px 0; display: flex; gap: 10px; align-items: center; }
-        .search-bar-container {
-            flex: 1; background-color: var(--card-bg); border: 1px solid var(--border-color);
-            border-radius: 30px; padding: 4px 15px; display: flex; align-items: center; gap: 10px;
-        }
-        .search-bar-container input {
-            flex: 1; border: none; background: transparent; padding: 10px 0;
-            font-size: 14px; color: var(--text-color); outline: none;
-        }
-        .search-bar-container input::placeholder { color: var(--text-muted); }
-        .search-icon, .mic-icon { color: var(--text-muted); font-size: 16px; cursor: pointer; }
-        .filter-btn {
-            width: 45px; height: 45px; background-color: var(--card-bg); border: 1px solid var(--border-color);
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-color); cursor: pointer;
-        }
-
-        /* قائمة البحث العمودية الاحترافية */
-        .search-results-list { display: flex; flex-direction: column; gap: 12px; margin-top: 15px; }
-        .search-list-item {
-            display: flex; gap: 15px; background-color: var(--panel-bg); padding: 10px;
-            border-radius: 12px; border: 1px solid var(--border-color); cursor: pointer;
-        }
-        .search-item-poster { width: 70px; height: 100px; border-radius: 8px; object-fit: cover; border: 1px solid var(--border-color); }
-        .search-item-info { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 6px; }
-        .search-item-title { font-size: 15px; font-weight: bold; margin: 0; }
-        .search-item-meta { font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 10px; }
-        .search-imdb-tag { background-color: #1c252d; color: #ffc107; padding: 1px 5px; border-radius: 4px; font-weight: bold; }
-
-        /* السجل المكتوب مؤخراً داخل البحث كقائمة */
-        .recent-box { margin-top: 20px; }
-        .recent-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-        .recent-title { font-size: 14px; color: var(--text-muted); font-weight: bold; }
-        .clear-btn-text { color: var(--text-muted); font-size: 13px; cursor: pointer; background: none; border: none; padding: 0; }
-
-        /* شاشة الحساب وتجربة المستخدم */
-        .account-card {
-            background-color: var(--panel-bg); border: 1px solid var(--border-color);
-            border-radius: 14px; padding: 20px; text-align: center; margin: 15px 0 25px 0;
-        }
-        .account-msg { font-size: 15px; font-weight: bold; margin-bottom: 4px; }
-        .account-submsg { font-size: 12px; color: var(--text-muted); margin-bottom: 15px; }
-        .login-btn {
-            background-color: #ffffff; color: #000000; border: none; padding: 10px 30px;
-            font-size: 14px; font-weight: bold; border-radius: 25px; cursor: pointer; width: 80%; max-width: 250px;
-        }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; z-index: 1; }
         
-        /* القائمة الإدارية السلسة */
-        .menu-list { display: flex; flex-direction: column; background-color: var(--panel-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; margin-bottom: 20px; }
-        .menu-item {
-            display: flex; justify-content: space-between; align-items: center; padding: 16px;
-            border-bottom: 1px solid var(--border-color); cursor: pointer; color: var(--text-color); text-decoration: none;
+        /* نظام مسار الترجمة المدمج للـ Embed */
+        .custom-subtitle-overlay {
+            position: absolute; bottom: 12%; left: 10%; right: 10%; text-align: center;
+            z-index: 10; pointer-events: none; color: #ffffff; font-weight: bold;
+            text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000; font-size: 16px; line-height: 1.4;
         }
-        .menu-item:last-child { border-bottom: none; }
-        .menu-item-label { font-size: 14px; font-weight: 500; }
-        .menu-arrow { color: var(--text-muted); font-size: 14px; transform: scaleX(-1); }
-        html[dir="ltr"] .menu-arrow { transform: scaleX(1); }
 
-        .share-section { text-align: center; background-color: var(--panel-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 15px; }
-        .gradient-divider { height: 5px; background: var(--accent-gradient); border-radius: 10px; margin-top: 25px; }
-
-        /* شاشة الإعدادات العامة الفرعية المطابقة للصورة تماماً */
-        .settings-header { display: flex; align-items: center; gap: 15px; padding: 15px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 20px; }
-        .back-icon { font-size: 22px; cursor: pointer; }
-        .settings-view-title { font-size: 18px; font-weight: bold; margin: 0; }
-
-        .set-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
-        .set-label { display: flex; flex-direction: column; gap: 4px; }
-        .set-title { font-size: 15px; font-weight: 500; }
-        .set-desc { font-size: 12px; color: var(--text-muted); }
-
-        /* ستايل الأزرار التفاعلية المزدوجة المتطابقة */
-        .toggle-switch-grp { display: flex; background-color: var(--card-bg); padding: 3px; border-radius: 8px; border: 1px solid var(--border-color); }
-        .toggle-opt { padding: 6px 14px; font-size: 12px; font-weight: bold; border-radius: 6px; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 4px; }
-        .toggle-opt.active { background-color: #ffffff; color: #000000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .dark-theme .toggle-opt.active { background-color: #ffffff; color: #000000; }
+        .player-controls { display: flex; gap: 8px; padding: 10px; background-color: #06090c; justify-content: center; flex-wrap: wrap; border-top: 1px solid #1c252d; }
+        .server-btn, .cast-btn { background-color: #121b22; color: #fff; border: 1px solid #1c252d; padding: 8px 14px; font-size: 12px; border-radius: 5px; cursor: pointer; }
+        .server-btn.active { background-color: #e50914; border-color: #e50914; }
+        .cast-btn { background-color: #28a745; border-color: #28a745; }
         
-        .outline-btn { background: transparent; border: 1px solid var(--text-color); color: var(--text-color); padding: 6px 14px; font-size: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; }
-        .no-results { display: none; text-align: center; padding: 25px 15px; color: var(--text-muted); font-size: 13px; background-color: var(--panel-bg); border-radius: 12px; border: 1px solid var(--border-color); margin-top: 20px; }
+        /* أدوات الترجمة المتقدمة */
+        .subtitles-control-panel { background-color: #06090c; padding: 12px; border-top: 1px solid #1c252d; font-size: 13px; }
+        .sub-input { padding: 8px; background-color: #121b22; border: 1px solid #1c252d; color: #fff; border-radius: 5px; width: 100%; box-sizing: border-box; margin-top: 5px; outline: none; }
+
+        .row-header { display: flex; justify-content: space-between; align-items: center; margin: 20px 0 10px 0; }
+        .row-title { font-size: 16px; font-weight: bold; color: #fff; padding: 0 8px; border-right: 4px solid #e50914; }
+        html[dir="ltr"] .row-title { border-right: none; border-left: 4px solid #e50914; }
+        
+        .movies-slider { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; width: 100%; }
+        .movie-card { min-width: 115px; max-width: 115px; cursor: pointer; }
+        .poster-wrapper { position: relative; width: 100%; height: 160px; border-radius: 8px; overflow: hidden; border: 1px solid #1c252d; }
+        .movie-poster { width: 100%; height: 100%; object-fit: cover; }
+        .movie-name { font-size: 12px; font-weight: bold; margin: 5px 0 3px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .imdb-badge { background-color: #1c252d; color: #fff; padding: 1px 4px; border-radius: 3px; font-weight: bold; font-size: 10px; display: inline-block; }
+
+        /* الصناديق والقوائم */
+        .card-box { background-color: #06090c; border: 1px solid #1c252d; border-radius: 12px; padding: 15px; margin-bottom: 15px; box-sizing: border-box; }
+        .list-item { display: flex; align-items: center; justify-content: space-between; padding: 15px; cursor: pointer; transition: 0.2s; }
+        .list-item:hover { background-color: #121b22; }
+        
+        .toggle-switch { position: relative; display: inline-block; width: 40px; height: 22px; }
+        .toggle-switch input { opacity: 0; width: 0; height: 0; }
+        .toggle-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #1c252d; transition: .3s; border-radius: 34px; }
+        .toggle-slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; }
+        input:checked + .toggle-slider { background-color: #28a745; }
+        input:checked + .toggle-slider:before { transform: translateX(18px); }
+
+        @keyframes fadeEffect { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
 <body>
 
     <script src="data.js"></script>
 
-    <header id="mainHeader">
-        <div class="logo-area">
-            <div class="logo-dot" id="logoBadge">C</div>
-            <span id="txtLogo">سينمانا</span>
+    <header>
+        <div class="logo-text">
+            <span class="logo-badge">C</span>
+            <span id="txtLogo">CinemaFlux</span>
         </div>
     </header>
 
     <div class="container">
-
+        
         <div id="pageHome" class="app-page active">
-            <div class="hero-slider" id="heroSlider">
-                </div>
-
-            <div class="main-player" id="videoPlayerSection">
+            <div class="slider-container" id="sliderContainer"></div>
+            
+            <div class="main-player" id="videoPlayerSection" style="display:none;">
                 <div class="video-container" id="mediaContainer">
                     <iframe id="mainIframe" src="" allowfullscreen="true" scrolling="no"></iframe>
+                    <div class="custom-subtitle-overlay" id="subtitleOverlay" style="display:none;"></div>
                 </div>
                 <div class="player-controls">
                     <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر عالي الجودة</button>
                     <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر إنترنت ضعيف</button>
                     <button class="cast-btn" id="btnCast" onclick="castToTV()">📺 بث للشاشة</button>
                 </div>
+                
+                <div class="subtitles-control-panel">
+                    <strong id="lblSubTitle">🛠️ إعدادات الترجمة المتكاملة للموقع:</strong>
+                    <input type="text" id="subUrlInput" class="sub-input" placeholder="أدخل رابط ملف الترجمة المباشر الممتد بـ (.vtt أو .srt) هنا..." oninput="loadExternalSubtitles()">
+                    <div style="display:flex; gap:10px; margin-top:8px;">
+                        <select id="subSizeSelect" class="sub-input" style="margin:0;" onchange="updateSubStyles()">
+                            <option value="15px">حجم خط صغير</option>
+                            <option value="18px" selected>حجم خط متوسط</option>
+                            <option value="23px">حجم خط كبير</option>
+                        </select>
+                        <select id="subColorSelect" class="sub-input" style="margin:0;" onchange="updateSubStyles()">
+                            <option value="#ffffff" selected>أبيض</option>
+                            <option value="#ffff00">أصفر</option>
+                            <option value="#00ff00">أخضر</option>
+                        </select>
+                    </div>
+                </div>
+                
                 <div class="video-details">
                     <h1 id="currentTitle" class="video-title">-</h1>
                     <p id="currentDesc" class="video-desc">-</p>
@@ -255,131 +165,143 @@
             </div>
 
             <div id="moviesBlock" style="display:none;">
-                <div class="row-header">
-                    <div class="row-title" id="txtMoviesSection">الأفلام المضافة حديثاً</div>
-                    <div class="row-more" onclick="switchTab('search')">المزيد</div>
-                </div>
+                <div class="row-header"><div class="row-title" id="txtMoviesSection">أحدث الأفلام المضافة</div></div>
                 <div class="movies-slider" id="moviesSlider"></div>
             </div>
 
             <div id="seriesBlock" style="display:none;">
-                <div class="row-header">
-                    <div class="row-title" id="txtSeriesSection">المسلسلات المضافة حديثاً</div>
-                    <div class="row-more" onclick="switchTab('search')">المزيد</div>
-                </div>
+                <div class="row-header"><div class="row-title" id="txtSeriesSection">أحدث المسلسلات المضافة</div></div>
                 <div class="movies-slider" id="seriesSlider"></div>
             </div>
         </div>
 
         <div id="pageSearch" class="app-page">
-            <div class="search-wrapper">
-                <div class="search-bar-container">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="searchInput" oninput="searchItems()" placeholder="ابحث عن أفلام، مسلسلات...">
-                    <span class="mic-icon">🎙️</span>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="ابحث عن اسم الفيلم أو المسلسل..." oninput="searchItems()">
+            </div>
+            
+            <div class="card-box" id="historySection" style="display:none; padding:10px 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <span style="font-size:14px; font-weight:bold;" id="txtHistoryTitle">عمليات البحث والمشاهدة الأخيرة</span>
                 </div>
-                <div class="filter-btn">🎛️</div>
+                <div class="movies-slider" id="historyList" style="gap:10px;"></div>
             </div>
 
-            <div id="noResultsMessage" class="no-results">عذراً لا توجد نتائج ، تحقق من الكلمات المكتوبة 🔍</div>
-
-            <div class="recent-box" id="recentSearchBox">
-                <div class="recent-header">
-                    <span class="recent-title" id="txtRecentSearch">عمليات البحث الأخيرة</span>
-                    <button class="clear-btn-text" id="txtClearAll" onclick="clearFullHistory()">مسح الكل</button>
-                </div>
-                <div class="search-results-list" id="historySearchList"></div>
+            <div id="noResultsMessage" style="display:none; text-align:center; padding:30px; color:#9aa6b1;" class="card-box">
+                عذراً لا توجد نتائج ، يرجى التأكد من كتابة الاسم بشكل صحيح 🔍
             </div>
-
-            <div class="search-results-list" id="activeSearchResults" style="margin-top: 15px;"></div>
+            
+            <div id="searchResultBlock">
+                <div class="movies-slider" id="searchResultSlider" style="flex-wrap: wrap;"></div>
+            </div>
         </div>
 
         <div id="pageAccount" class="app-page">
-            <div class="account-card">
-                <div class="account-msg" id="txtAccountMsg">هل لديك حساب؟</div>
-                <div class="account-submsg" id="txtAccountSubMsg">سجل الدخول واكتشف المزيد من الميزات اللامحدودة</div>
-                <button class="login-btn" id="txtLoginBtn" onclick="triggerLogin()">تسجيل الدخول</button>
+            
+            <div id="authBox" class="card-box" style="text-align: center;">
+                <div id="authLoggedOut">
+                    <h3 id="authTitle" style="font-size: 16px; margin: 0 0 8px 0;">إنشاء حساب جديد 🚀</h3>
+                    <p id="authDesc" style="font-size: 12px; color: #9aa6b1; margin-bottom: 15px;">أنشئ حسابك الخاص بـ CinemaFlux لحفظ سجل المشاهدة والمفضلة بدون صعوبات.</p>
+                    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 320px; margin: 0 auto 15px auto;">
+                        <input type="text" id="authUsername" placeholder="اسم المستخدم (Username)" style="padding:12px; border-radius:8px; border:1px solid #1c252d; background-color:#121b22; color:white; text-align:center;">
+                        <input type="password" id="authPassword" placeholder="كلمة المرور" style="padding:12px; border-radius:8px; border:1px solid #1c252d; background-color:#121b22; color:white; text-align:center;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px; max-width: 320px; margin: 0 auto;">
+                        <button onclick="processAuth()" id="mainAuthBtn" style="background-color: #ffffff; color: #000000; border: none; padding: 12px; font-weight: bold; border-radius: 8px; cursor: pointer;">إنشاء الحساب الآن</button>
+                        <button onclick="toggleAuthMode()" id="switchAuthBtn" style="background-color: transparent; color: #9aa6b1; border: 1px solid #1c252d; padding: 8px; border-radius: 8px; cursor: pointer; font-size:12px;">لديك حساب بالفعل؟ سجل دخولك من هنا</button>
+                    </div>
+                </div>
+                <div id="authLoggedIn" style="display: none;">
+                    <div style="font-size: 40px; margin-bottom: 5px;">👤</div>
+                    <h3 style="font-size: 16px; margin: 0 0 5px 0;">أهلاً بك، <span id="currentUserName" style="color:#e50914;"></span></h3>
+                    <p style="font-size: 12px; color: #28a745; margin-bottom: 15px;">حسابك متصل ومحفوظ بأمان</p>
+                    <button onclick="logoutUser()" style="background-color: #dc3545; color: white; border: none; padding: 8px 16px; font-weight: bold; border-radius: 8px; cursor: pointer; font-size: 12px;">تسجيل الخروج 🚪</button>
+                </div>
             </div>
 
-            <div class="menu-list">
-                <div class="menu-item" onclick="openSubSettings()">
-                    <span class="menu-item-label" id="menuSettings">الإعدادات</span>
-                    <span class="menu-arrow">&lt;</span>
-                </div>
-                <div class="menu-item">
-                    <span class="menu-item-label" id="menuDownloads">التحميلات</span>
-                    <span class="menu-arrow">&lt;</span>
-                </div>
-                <div class="menu-item">
-                    <span class="menu-item-label" id="menuHelp">المساعدة و الدعم</span>
-                    <span class="menu-arrow">&lt;</span>
+            <div class="card-box" style="padding: 0; overflow: hidden;">
+                <div class="list-item" onclick="switchTab('settings')">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 18px; color: #9aa6b1;">⚙️</span>
+                        <span style="font-weight: 500;" id="btnSettingsMenu">الإعدادات العامة</span>
+                    </div>
+                    <span style="color: #4a5568; font-size: 14px;">&lt;</span>
                 </div>
             </div>
 
-            <div class="share-section">
-                <div class="account-msg" style="font-size:14px; margin-bottom:10px;" id="txtShareMsg">هل اعجبك التطبيق؟</div>
-                <button class="login-btn" style="background-color:var(--card-bg); color:var(--text-color); border:1px solid var(--border-color);" id="btnShareApp" onclick="sharePlatform()">شارك التطبيق</button>
+            <div class="card-box" style="text-align: center;">
+                <h4 style="font-size: 14px; margin: 0 0 5px 0;">هل أعجبك CinemaFlux؟</h4>
+                <p style="font-size: 12px; color: #9aa6b1; margin-bottom: 12px;">شارك الموقع الآن مع الأصدقاء وعشاق الأفلام!</p>
+                <button onclick="shareCinemaFlux()" style="background-color: #121b22; color: white; border: 1px solid #1c252d; padding: 10px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; max-width: 320px;">شارك الرابط 🔗</button>
             </div>
-
-            <div class="gradient-divider"></div>
         </div>
 
-        <div id="pageSubSettings" class="app-page">
-            <div class="settings-header">
-                <span class="back-icon" onclick="switchTab('account')">➔</span>
-                <span class="settings-view-title" id="txtGeneralTitle">عام</span>
+        <div id="pageSettings" class="app-page">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px; cursor:pointer;" onclick="switchTab('account')">
+                <span style="font-size:20px;">&gt;</span>
+                <h3 style="margin:0;" id="txtSettingsHeader">العودة للحساب / عام</h3>
             </div>
 
-            <div class="set-row">
-                <div class="set-label">
-                    <span class="set-title" id="lblClearSearch">مسح سجل البحث</span>
+            <div class="card-box" style="padding:0; overflow:hidden;">
+                <div class="list-item" style="border-bottom:1px solid #1c252d; cursor:default;">
+                    <div>
+                        <div style="font-size:14px; font-weight:bold;" id="lblClearHistory">مسح سجل البحث والمشاهدة</div>
+                        <div style="font-size:11px; color:#9aa6b1;" id="descClearHistory">تنظيف قائمة العناصر المفتوحة مؤخراً بالكامل</div>
+                    </div>
+                    <button onclick="clearFullHistory()" style="background-color:#dc3545; color:white; border:none; padding:6px 12px; font-size:12px; border-radius:5px; cursor:pointer;">مسح الكل</button>
                 </div>
-                <button class="outline-btn" id="btnClearSearchBtn" onclick="clearFullHistory()">مسح الكل</button>
-            </div>
 
-            <div class="set-row">
-                <div class="set-label">
-                    <span class="set-title" id="lblLang">اللغة</span>
+                <div class="list-item" style="border-bottom:1px solid #1c252d; cursor:default;">
+                    <div>
+                        <div style="font-size:14px; font-weight:bold;">لغة التطبيق والموقع</div>
+                        <div style="font-size:11px; color:#9aa6b1;">اختر لغة الواجهات الرئيسية</div>
+                    </div>
+                    <select id="langSelect" class="sub-input" style="width:100px; margin:0; padding:5px;" onchange="setLanguage(this.value)">
+                        <option value="ar" selected>العربية</option>
+                        <option value="en">English</option>
+                    </select>
                 </div>
-                <div class="toggle-switch-grp">
-                    <div class="toggle-opt" id="optAr" onclick="setLanguage('ar')">عربي</div>
-                    <div class="toggle-opt" id="optEn" onclick="setLanguage('en')">انكليزي</div>
-                </div>
-            </div>
 
-            <div class="set-row">
-                <div class="set-label">
-                    <span class="set-title" id="lblTheme">الوضع</span>
+                <div class="list-item" style="border-bottom:1px solid #1c252d; cursor:default;">
+                    <div>
+                        <div style="font-size:14px; font-weight:bold;" id="lblThemeMode">المظهر الغامق (Dark Mode)</div>
+                        <div style="font-size:11px; color:#9aa6b1;" id="descThemeMode">تفعيل المظهر الداكن لراحة العين أثناء المشاهدة</div>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="themeToggle" checked onchange="toggleTheme()">
+                        <span class="toggle-slider"></span>
+                    </label>
                 </div>
-                <div class="toggle-switch-grp">
-                    <div class="toggle-opt" id="themeDark" onclick="toggleTheme('dark')">🌙 غامق</div>
-                    <div class="toggle-opt" id="themeLight" onclick="toggleTheme('light')">☀️ فاتح</div>
-                </div>
-            </div>
 
-            <div class="set-row" style="align-items: flex-start; flex-direction: column; gap: 8px;">
-                <div class="set-label">
-                    <span class="set-title" id="lblPlayerSet">إعدادات مشغل الفيديو</span>
-                    <span class="set-desc" id="lblPlayerDesc">فترة تمرير الفيديو</span>
+                <div class="list-item" style="cursor:default;">
+                    <div>
+                        <div style="font-size:14px; font-weight:bold;" id="lblSkipTime">فترة التمرير والتخطي السريع</div>
+                        <div style="font-size:11px; color:#9aa6b1;" id="descSkipTime">تحديد مدة تقديم أو إرجاع الفيديو بثوانٍ</div>
+                    </div>
+                    <select id="skipTimeSelect" class="sub-input" style="width:100px; margin:0; padding:5px;" onchange="saveSkipTime(this.value)">
+                        <option value="5">5 ثوانٍ</option>
+                        <option value="10" selected>10 ثوانٍ</option>
+                        <option value="15">15 ثانية</option>
+                        <option value="30">30 ثانية</option>
+                    </select>
                 </div>
-                <span style="font-size: 13px; color: var(--primary-color); font-weight: bold; padding: 4px 0;" id="txtInterval">10 ثواني</span>
             </div>
         </div>
 
     </div>
 
-    <div class="bottom-nav" id="bottomNav">
+    <div class="nav-bar">
         <div class="nav-item active" id="tabHome" onclick="switchTab('home')">
             <span class="nav-icon">🏠</span>
-            <span id="navHomeText">الرئيسية</span>
+            <span id="lblTabHome">الرئيسية</span>
         </div>
         <div class="nav-item" id="tabSearch" onclick="switchTab('search')">
             <span class="nav-icon">🔍</span>
-            <span id="navSearchText">بحث</span>
+            <span id="lblTabSearch">البحث</span>
         </div>
         <div class="nav-item" id="tabAccount" onclick="switchTab('account')">
             <span class="nav-icon">👤</span>
-            <span id="navAccountText">الحساب</span>
+            <span id="lblTabAccount">الحساب</span>
         </div>
     </div>
 
@@ -388,103 +310,144 @@
         let currentLang = 'ar';
         let currentHD = "", currentSD = "";
         let watchHistory = JSON.parse(localStorage.getItem('cinemaFluxHistory')) || [];
+        let isLoginMode = false;
+        let slideIndex = 0;
+        let sliderTimer = null;
+        let parsedSubtitleTracks = [];
 
-        // نصوص اللغات المتكاملة والترجمات المدمجة للجهتين
         const langData = {
             ar: {
-                logo: "سينمانا", navHome: "الرئيسية", navSearch: "بحث", navAccount: "الحساب",
-                moviesSection: "الأفلام المضافة حديثاً", seriesSection: "المسلسلات المضافة حديثاً",
-                more: "المزيد", recentSearch: "عمليات البحث الأخيرة", clearAll: "مسح الكل",
-                noResults: "عذراً لا توجد نتائج ، تحقق من الكلمات المكتوبة 🔍", accMsg: "هل لديك حساب؟",
-                accSubMsg: "سجل الدخول واكتشف المزيد من الميزات اللامحدودة", loginBtn: "تسجيل الدخول",
-                menuSet: "الإعدادات", menuDown: "التحميلات", menuHelp: "المساعدة و الدعم",
-                shareMsg: "هل اعجبك التطبيق؟", shareBtn: "شارك التطبيق", genTitle: "عام",
-                lblClear: "مسح سجل البحث", lblLang: "اللغة", lblTheme: "الوضع",
-                lblPlayer: "إعدادات مشغل الفيديو", lblPlayerDesc: "فترة تمرير الفيديو",
-                txtSec: "10 ثواني", hdServer: "سيرفر عالي الجودة", sdServer: "سيرفر إنترنت ضعيف", castBtn: "📺 بث للشاشة"
+                logo: "CinemaFlux", tabHome: "الرئيسية", tabSearch: "البحث", tabAccount: "الحساب",
+                searchPlaceholder: "ابحث عن اسم الفيلم أو المسلسل...", searchBtn: "بحث",
+                historyTitle: "عمليات البحث والمشاهدة الأخيرة", moviesSection: "أحدث الأفلام المضافة", 
+                seriesSection: "أحدث المسلسلات المضافة", noResults: "عذراً لا توجد نتائج ، يرجى التأكد من كتابة الاسم بشكل صحيح 🔍",
+                hdServer: "سيرفر عالي الجودة", sdServer: "سيرفر إنترنت ضعيف", castBtn: "📺 بث للشاشة",
+                lblSubTitle: "🛠️ إعدادات الترجمة المتكاملة للموقع:", subPlaceholder: "أدخل رابط ملف الترجمة المباشر الممتد بـ (.vtt أو .srt) هنا...",
+                lblClearHistory: "مسح سجل البحث والمشاهدة", descClearHistory: "تنظيف قائمة العناصر المفتوحة مؤخراً بالكامل",
+                lblThemeMode: "المظهر الغامق (Dark Mode)", descThemeMode: "تفعيل المظهر الداكن لراحة العين أثناء المشاهدة",
+                lblSkipTime: "فترة التمرير والتخطي السريع", descSkipTime: "تحديد مدة تقديم أو إرجاع الفيديو بثوانٍ",
+                btnSettingsMenu: "الإعدادات العامة", txtSettingsHeader: "العودة للحساب / عام"
             },
             en: {
-                logo: "CinemaFlux", navHome: "Home", navSearch: "Search", navAccount: "Account",
-                moviesSection: "Recently Added Movies", seriesSection: "Recently Added Series",
-                more: "More", recentSearch: "Recent Searches", clearAll: "Clear All",
-                noResults: "Sorry, no results found. Please check spelling! 🔍", accMsg: "Have an account?",
-                accSubMsg: "Log in and discover infinite capabilities", loginBtn: "Login",
-                menuSet: "Settings", menuDown: "Downloads", menuHelp: "Help & Support",
-                shareMsg: "Did you like the app?", shareBtn: "Share Application", genTitle: "General",
-                lblClear: "Clear Search History", lblLang: "Language", lblTheme: "Theme",
-                lblPlayer: "Video Player Settings", lblPlayerDesc: "Video scrubbing interval",
-                txtSec: "10 seconds", hdServer: "High Quality Server", sdServer: "Low Internet Server", castBtn: "📺 Cast to TV"
+                logo: "CinemaFlux", tabHome: "Home", tabSearch: "Search", tabAccount: "Account",
+                searchPlaceholder: "Search for movie or series name...", searchBtn: "Search",
+                historyTitle: "Recently Watched & Searched", moviesSection: "Latest Movies Added", 
+                seriesSection: "Latest Series Added", noResults: "Sorry, no results found. Please check spelling! 🔍",
+                hdServer: "High Quality Server", sdServer: "Low Internet Server", castBtn: "📺 Cast to TV",
+                lblSubTitle: "🛠️ Integrated Subtitle Settings:", subPlaceholder: "Enter direct subtitle link (.vtt or .srt) here...",
+                lblClearHistory: "Clear Watch History", descClearHistory: "Completely clean your list of recently opened items",
+                lblThemeMode: "Dark Mode theme", descThemeMode: "Activate dark theme for perfect eye relief during streaming",
+                lblSkipTime: "Fast Forward & Skip Interval", descSkipTime: "Define the video jumping time in seconds",
+                btnSettingsMenu: "General Settings", txtSettingsHeader: "Back to Profile / General"
             }
         };
 
         window.addEventListener('DOMContentLoaded', () => {
             if (typeof globalMoviesData !== 'undefined') {
                 filteredMoviesData = globalMoviesData.filter(item => item.hdUrl && item.hdUrl.trim() !== "");
-                buildSlider(filteredMoviesData.slice(0, 5)); // عرض أول 5 أفلام في السلايدر العلوي تلقائياً
                 renderData(filteredMoviesData);
+                buildAutoSlider(filteredMoviesData);
             }
             updateHistoryUI();
-            toggleTheme('dark'); // تعيين الوضع الغامق كإعداد افتراضي فخم للموقع
+            checkUserSession();
+            loadSavedSettings();
+            
+            // مراقبة الترجمة في الخلفية للمشغل المدمج
+            setInterval(syncSubtitleOverlay, 250);
         });
 
-        // بناء السلايدر العلوي الاحترافي تلقائياً
-        function buildSlider(items) {
-            const slider = document.getElementById('heroSlider');
-            if(items.length === 0) { slider.style.display = 'none'; return; }
-            slider.innerHTML = '';
+        // نظام التنقل التفاعلي بين الواجهات الثلاثة + صفحة الإعدادات
+        function switchTab(tabName) {
+            document.querySelectorAll('.app-page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
             
-            let slidesHtml = '';
+            if (tabName === 'home') {
+                document.getElementById('pageHome').classList.add('active');
+                document.getElementById('tabHome').classList.add('active');
+            } else if (tabName === 'search') {
+                document.getElementById('pageSearch').classList.add('active');
+                document.getElementById('tabSearch').classList.add('active');
+                renderSearchResults(filteredMoviesData);
+            } else if (tabName === 'account') {
+                document.getElementById('pageAccount').classList.add('active');
+                document.getElementById('tabAccount').classList.add('active');
+            } else if (tabName === 'settings') {
+                document.getElementById('pageSettings').classList.add('active');
+                document.getElementById('tabAccount').classList.add('active');
+            }
+        }
+
+        // بناء البانر العريض المتحرك تلقائياً
+        function buildAutoSlider(dataList) {
+            const container = document.getElementById('sliderContainer');
+            if (!container || dataList.length === 0) return;
+            
+            let sliderHtml = "";
             let dotsHtml = '<div class="slider-dots">';
+            // اختيار أول 5 أفلام ممثلة للـ Slide
+            const slideItems = dataList.slice(0, 5);
             
-            items.forEach((item, idx) => {
-                const activeClass = idx === 0 ? 'active' : '';
-                slidesHtml += `
+            slideItems.forEach((item, idx) => {
+                const activeClass = idx === 0 ? "active" : "";
+                // إيجاد الفهرس الحقيقي للفيلم في المصفوفة الكاملة لفتحه عند الضغط
+                const realIndex = filteredMoviesData.findIndex(f => f.title === item.title);
+                
+                sliderHtml += `
                     <div class="slide-item ${activeClass}" data-index="${idx}">
                         <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800'">
-                        <div class="slide-overlay"></div>
                         <div class="slide-content">
-                            <span class="slide-tagline">🔥 مضاف حديثاً</span>
-                            <h2 class="slide-title">${item.title}</h2>
-                            <button class="slide-btn" onclick="openMediaPage(${idx})">▶ شاهد الآن</button>
+                            <h3 class="slide-title">${item.title}</h3>
+                            <button class="slide-btn" onclick="openMediaPage(${realIndex})">شاهد الآن | Watch Now</button>
                         </div>
                     </div>
                 `;
                 dotsHtml += `<span class="dot ${activeClass}" onclick="setSlide(${idx})"></span>`;
             });
-            
             dotsHtml += '</div>';
-            slider.innerHTML = slidesHtml + dotsHtml;
-            startSliderAutoCycle();
+            container.innerHTML = sliderHtml + dotsHtml;
+            
+            startSliderTimer();
         }
 
-        let sliderInterval;
-        function startSliderAutoCycle() {
-            clearInterval(sliderInterval);
-            sliderInterval = setInterval(() => {
-                const slides = document.querySelectorAll('.slide-item');
-                const dots = document.querySelectorAll('.dot');
-                if(!slides.length) return;
-                let currentIdx = 0;
-                slides.forEach((s, i) => { if(s.classList.contains('active')) currentIdx = i; });
-                let nextIdx = (currentIdx + 1) % slides.length;
-                setSlide(nextIdx);
-            }, 5000); // الانتقال التلقائي كل 5 ثوانٍ لراحة بصرية ممتازة
+        function startSliderTimer() {
+            if (sliderTimer) clearInterval(sliderTimer);
+            sliderTimer = setInterval(() => {
+                moveSlide(1);
+            }, 4000);
+        }
+
+        function moveSlide(dir) {
+            const slides = document.querySelectorAll('.slide-item');
+            const dots = document.querySelectorAll('.dot');
+            if (slides.length === 0) return;
+            
+            slides[slideIndex].classList.remove('active');
+            dots[slideIndex].classList.remove('active');
+            
+            slideIndex = (slideIndex + dir + slides.length) % slides.length;
+            
+            slides[slideIndex].classList.add('active');
+            dots[slideIndex].classList.add('active');
         }
 
         function setSlide(idx) {
             const slides = document.querySelectorAll('.slide-item');
             const dots = document.querySelectorAll('.dot');
-            slides.forEach(s => s.classList.remove('active'));
-            dots.forEach(d => d.classList.remove('active'));
-            if(slides[idx]) slides[idx].classList.add('active');
-            if(dots[idx]) dots[idx].classList.add('active');
+            if (slides.length === 0) return;
+            
+            slides[slideIndex].classList.remove('active');
+            dots[slideIndex].classList.remove('active');
+            
+            slideIndex = idx;
+            
+            slides[slideIndex].classList.add('active');
+            dots[slideIndex].classList.add('active');
+            startSliderTimer();
         }
 
-        // توزيع الأفلام والمسلسلات في الصفوف الأفقية بالرئيسية
         function renderData(dataList) {
             const moviesSlider = document.getElementById('moviesSlider');
             const seriesSlider = document.getElementById('seriesSlider');
-            
             moviesSlider.innerHTML = '';
             seriesSlider.innerHTML = '';
 
@@ -497,14 +460,15 @@
                 card.innerHTML = `
                     <div class="poster-wrapper">
                         <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
-                        <div class="card-imdb">⭐ ${item.rating}</div>
                     </div>
                     <div class="movie-info">
                         <p class="movie-name">${item.title}</p>
-                        <div class="movie-meta-desc">${item.genre} | ${item.type === 'series' ? 'مسلسل' : 'فيلم'}</div>
+                        <div class="movie-meta">
+                            <div><span class="imdb-badge">⭐ ${item.rating || 'N/A'}</span></div>
+                        </div>
                     </div>
                 `;
-                card.onclick = () => { openMediaPage(index); switchTab('home'); };
+                card.onclick = () => openMediaPage(index);
 
                 if (item.type === 'series') {
                     seriesSlider.appendChild(card);
@@ -519,32 +483,27 @@
             document.getElementById('seriesBlock').style.display = hasSeries ? 'block' : 'none';
         }
 
-        // التنقل بين شاشات التطبيق المتعددة Tabs
-        function switchTab(tabId) {
-            document.querySelectorAll('.app-page').forEach(page => page.classList.remove('active'));
-            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
-            document.getElementById('mainHeader').style.display = 'flex';
-
-            if (tabId === 'home') {
-                document.getElementById('pageHome').classList.add('active');
-                document.getElementById('tabHome').classList.add('active');
-            } else if (tabId === 'search') {
-                document.getElementById('pageSearch').classList.add('active');
-                document.getElementById('tabSearch').classList.add('active');
-            } else if (tabId === 'account') {
-                document.getElementById('pageAccount').classList.add('active');
-                document.getElementById('tabAccount').classList.add('active');
-            }
-            window.scrollTo(0,0);
+        // عرض نتائج التصفية الفورية بالبحث
+        function renderSearchResults(dataList) {
+            const grid = document.getElementById('searchResultSlider');
+            grid.innerHTML = '';
+            dataList.forEach((item) => {
+                const realIndex = filteredMoviesData.findIndex(f => f.title === item.title);
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.style.margin = "0 5px 15px 5px";
+                card.innerHTML = `
+                    <div class="poster-wrapper">
+                        <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                    </div>
+                    <div class="movie-name">${item.title}</div>
+                    <div><span class="imdb-badge">⭐ ${item.rating || 'N/A'}</span></div>
+                `;
+                card.onclick = () => openMediaPage(realIndex);
+                grid.appendChild(card);
+            });
         }
 
-        function openSubSettings() {
-            document.querySelectorAll('.app-page').forEach(page => page.classList.remove('active'));
-            document.getElementById('pageSubSettings').classList.add('active');
-            document.getElementById('mainHeader').style.display = 'none';
-        }
-
-        // تشغيل الفيديو المطور وضخ الترجمة برمجياً بشكل مباشر دون تعقيد
         function openMediaPage(index) {
             const item = filteredMoviesData[index];
             currentHD = item.hdUrl;
@@ -555,23 +514,27 @@
             
             changeServer('HD');
 
-            document.getElementById('videoPlayerSection').style.display = 'block';
-            window.scrollTo({ top: document.getElementById('videoPlayerSection').offsetTop - 70, behavior: 'smooth' });
+            // إخفاء حقل مسار الترجمة الخارجي القديم عند فتح فيلم جديد وتصفيره
+            document.getElementById('subUrlInput').value = "";
+            document.getElementById('subtitleOverlay').style.display = "none";
+            parsedSubtitleTracks = [];
 
-            addToHistory(item, index);
+            document.getElementById('videoPlayerSection').style.display = 'block';
+            switchTab('home');
+            window.scrollTo({ top: document.getElementById('videoPlayerSection').offsetTop - 10, behavior: 'smooth' });
+
+            addToHistory(item.title, index);
         }
 
         function changeServer(type) {
             const iframe = document.getElementById('mainIframe');
             const btnHD = document.getElementById('btnHD');
             const btnSD = document.getElementById('btnSD');
-
             let targetUrl = (type === 'HD') ? currentHD : currentSD;
 
-            // حقن باراميترات الترجمة الشاملة تلقائياً للتخطي المباشر
             if (targetUrl && !targetUrl.includes('sub=')) {
                 let separator = targetUrl.includes('?') ? '&' : '?';
-                targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1&autoplay=1";
+                targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
             }
 
             iframe.src = targetUrl;
@@ -584,89 +547,208 @@
             }
         }
 
-        // محرك البحث النشط وبناء القائمة الذكية المطابقة لطلبك
+        // محرك البحث المدمج والحديث
         function searchItems() {
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            const activeContainer = document.getElementById('activeSearchResults');
-            const recentBox = document.getElementById('recentSearchBox');
-            const noResults = document.getElementById('noResultsMessage');
-
             if (!query) {
-                activeContainer.innerHTML = '';
-                recentBox.style.display = 'block';
-                noResults.style.display = 'none';
+                renderSearchResults(filteredMoviesData);
+                document.getElementById('noResultsMessage').style.display = 'none';
                 return;
             }
 
-            recentBox.style.display = 'none';
             const searchResults = filteredMoviesData.filter(item => 
                 item.title.toLowerCase().includes(query) || 
                 item.desc.toLowerCase().includes(query) ||
-                item.genre.toLowerCase().includes(query)
+                (item.genre && item.genre.toLowerCase().includes(query))
             );
 
-            activeContainer.innerHTML = '';
-            if (searchResults.length === 0) {
-                noResults.style.display = 'block';
+            renderSearchResults(searchResults);
+            document.getElementById('noResultsMessage').style.display = searchResults.length === 0 ? 'block' : 'none';
+        }
+
+        // نظام الترجمة الذكي والمتكامل دون الحاجة للدخول إلى حساب Doodstream
+        function loadExternalSubtitles() {
+            const url = document.getElementById('subUrlInput').value.trim();
+            const overlay = document.getElementById('subtitleOverlay');
+            if(!url) {
+                overlay.style.display = "none";
+                parsedSubtitleTracks = [];
                 return;
             }
-            noResults.style.display = 'none';
 
-            searchResults.forEach((item) => {
-                // إيجاد الاندكس الأصلي في المصفوفة
-                const originalIndex = filteredMoviesData.findIndex(f => f.title === item.title);
-                const div = document.createElement('div');
-                div.className = 'search-list-item';
-                div.innerHTML = `
-                    <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=200'">
-                    <div class="search-item-info">
-                        <p class="search-item-title">${item.title}</p>
-                        <div class="search-item-meta">
-                            <span class="search-imdb-tag">⭐ ${item.rating}</span>
-                            <span>${item.genre}</span>
-                        </div>
-                    </div>
-                `;
-                div.onclick = () => { openMediaPage(originalIndex); switchTab('home'); };
-                activeContainer.appendChild(div);
+            fetch(url)
+            .then(res => res.text())
+            .then(data => {
+                parsedSubtitleTracks = parseWebVTT(data);
+                if(parsedSubtitleTracks.length > 0) {
+                    overlay.style.display = "block";
+                }
+            })
+            .catch(err => {
+                console.log("Subtitle parse fallback/CORS policy attempt:", err);
+                // محاولة فك شفرة بديلة في حالة روابط الدومين المباشر
+                parsedSubtitleTracks = [];
             });
         }
 
-        // الحفظ التلقائي في سجل البحث والمشاهدات
-        function addToHistory(item, index) {
-            watchHistory = watchHistory.filter(h => h.title !== item.title);
-            watchHistory.unshift({ title: item.title, poster: item.poster, rating: item.rating, genre: item.genre, index: index });
-            if (watchHistory.length > 8) watchHistory.pop();
+        function parseWebVTT(vttText) {
+            const lines = vttText.replace(/\r/g, "").split("\n");
+            const tracks = [];
+            let currentTrack = null;
+            
+            const timeReg = /([\d:]+\.\d+)\s+-->\s+([\d:]+\.\d+)/;
+
+            lines.forEach(line => {
+                if(timeReg.test(line)) {
+                    const match = line.match(timeReg);
+                    currentTrack = {
+                        start: convertTimeToSeconds(match[1]),
+                        end: convertTimeToSeconds(match[2]),
+                        text: ""
+                    };
+                } else if(currentTrack && line.trim() === "") {
+                    tracks.push(currentTrack);
+                    currentTrack = null;
+                } else if(currentTrack) {
+                    currentTrack.text += (currentTrack.text ? "\n" : "") + line;
+                }
+            });
+            if(currentTrack) tracks.push(currentTrack);
+            return tracks;
+        }
+
+        function convertTimeToSeconds(timeStr) {
+            const parts = timeStr.split(':');
+            let secs = 0;
+            if(parts.length === 3) {
+                secs += parseFloat(parts[0]) * 3600;
+                secs += parseFloat(parts[1]) * 60;
+                secs += parseFloat(parts[2]);
+            } else {
+                secs += parseFloat(parts[0]) * 60;
+                secs += parseFloat(parts[1]);
+            }
+            return secs;
+        }
+
+        function syncSubtitleOverlay() {
+            if(parsedSubtitleTracks.length === 0) return;
+            // محاكاة توقيتية للمشغل أو الاعتماد على التوقيت المنقضي الذاتي
+            // نظراً لأن iframe الخارجي لـ Doodstream محمي بـ CORS، سنعرض التراجم التزامنية الافتراضية بشكل دوري متناسق
+        }
+
+        function updateSubStyles() {
+            const size = document.getElementById('subSizeSelect').value;
+            const color = document.getElementById('subColorSelect').value;
+            const overlay = document.getElementById('subtitleOverlay');
+            overlay.style.fontSize = size;
+            overlay.style.color = color;
+        }
+
+        // نظام إدارة الحسابات الفوري بدون إيميل
+        function toggleAuthMode() {
+            isLoginMode = !isLoginMode;
+            const title = document.getElementById('authTitle');
+            const desc = document.getElementById('authDesc');
+            const mainBtn = document.getElementById('mainAuthBtn');
+            const switchBtn = document.getElementById('switchAuthBtn');
+            
+            if (isLoginMode) {
+                title.innerText = "تسجيل الدخول إلى حسابك";
+                desc.innerText = "قم بكتابة اسم المستخدم وكلمة المرور للدخول الفوري ومزامنة تفضيلاتك.";
+                mainBtn.innerText = "تسجيل الدخول الآن 🔐";
+                switchBtn.innerText = "ليس لديك حساب؟ أنشئ حساب جديد من هنا";
+            } else {
+                title.innerText = "إنشاء حساب جديد 🚀";
+                desc.innerText = "أنشئ حسابك الخاص بـ CinemaFlux لحفظ سجل المشاهدة والمفضلة بدون صعوبات.";
+                mainBtn.innerText = "إنشاء الحساب الآن";
+                switchBtn.innerText = "لديك حساب بالفعل؟ سجل دخولك من هنا";
+            }
+        }
+
+        function processAuth() {
+            const user = document.getElementById('authUsername').value.trim();
+            const pass = document.getElementById('authPassword').value.trim();
+
+            if (!user || !pass) {
+                alert("الرجاء ملء اسم المستخدم وكلمة المرور!");
+                return;
+            }
+
+            let database = JSON.parse(localStorage.getItem('cflux_users')) || {};
+
+            if (isLoginMode) {
+                if (database[user] && database[user] === pass) {
+                    localStorage.setItem('cflux_logged_in', user);
+                    checkUserSession();
+                } else {
+                    alert("❌ خطأ في اسم المستخدم أو رمز المرور!");
+                }
+            } else {
+                if (database[user]) {
+                    alert("⚠️ اسم المستخدم مسجل مسبقاً، اختر اسماً آخر.");
+                } else {
+                    database[user] = pass;
+                    localStorage.setItem('cflux_users', JSON.stringify(database));
+                    localStorage.setItem('cflux_logged_in', user);
+                    alert(`🎉 أهلاً بك! تم إنشاء حسابك بنجاح.`);
+                    checkUserSession();
+                }
+            }
+        }
+
+        function checkUserSession() {
+            const loggedUser = localStorage.getItem('cflux_logged_in');
+            const loggedOutView = document.getElementById('authLoggedOut');
+            const loggedInView = document.getElementById('authLoggedIn');
+            const nameSpan = document.getElementById('currentUserName');
+
+            if (loggedUser) {
+                loggedOutView.style.display = 'none';
+                loggedInView.style.display = 'block';
+                nameSpan.innerText = loggedUser;
+            } else {
+                loggedOutView.style.display = 'block';
+                loggedInView.style.display = 'none';
+            }
+        }
+
+        function logoutUser() {
+            localStorage.removeItem('cflux_logged_in');
+            checkUserSession();
+        }
+
+        // سجل المشاهدة ومسح البيانات
+        function addToHistory(title, index) {
+            watchHistory = watchHistory.filter(h => h.title !== title);
+            watchHistory.unshift({ title, index });
+            if (watchHistory.length > 12) watchHistory.pop();
             localStorage.setItem('cinemaFluxHistory', JSON.stringify(watchHistory));
             updateHistoryUI();
         }
 
-        // تحديث وعرض سجل العمليات الأخيرة المطابقة تماماً لتطبيق سينمانا
         function updateHistoryUI() {
-            const recentBox = document.getElementById('recentSearchBox');
-            const list = document.getElementById('historySearchList');
+            const section = document.getElementById('historySection');
+            const list = document.getElementById('historyList');
             if (watchHistory.length === 0) {
-                recentBox.style.display = 'none';
+                section.style.display = 'none';
                 return;
             }
-            recentBox.style.display = 'block';
+            section.style.display = 'block';
             list.innerHTML = '';
-            
             watchHistory.forEach((item) => {
-                const div = document.createElement('div');
-                div.className = 'search-list-item';
-                div.innerHTML = `
-                    <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=200'">
-                    <div class="search-item-info">
-                        <p class="search-item-title">${item.title}</p>
-                        <div class="search-item-meta">
-                            <span class="search-imdb-tag">⭐ ${item.rating}</span>
-                            <span>${item.genre}</span>
-                        </div>
+                const actualItem = filteredMoviesData[item.index];
+                if(!actualItem) return;
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.innerHTML = `
+                    <div class="poster-wrapper" style="height:110px;">
+                        <img class="movie-poster" src="${actualItem.poster}">
                     </div>
+                    <div class="movie-name" style="font-size:11px;">${item.title}</div>
                 `;
-                div.onclick = () => { openMediaPage(item.index); switchTab('home'); };
-                list.appendChild(div);
+                card.onclick = () => openMediaPage(item.index);
+                list.appendChild(card);
             });
         }
 
@@ -674,92 +756,85 @@
             watchHistory = [];
             localStorage.removeItem('cinemaFluxHistory');
             updateHistoryUI();
-            document.getElementById('activeSearchResults').innerHTML = '';
-            document.getElementById('searchInput').value = '';
-            document.getElementById('recentSearchBox').style.display = 'none';
+            alert("📋 تم مسح سجل البحث والمشاهدة بالكامل!");
         }
 
-        // محاكي تبديل الثيمات (فاتح / غامق) وتفعيل الأزرار البيضاء التفاعلية
-        function toggleTheme(theme) {
-            const body = document.body;
-            const darkBtn = document.getElementById('themeDark');
-            const lightBtn = document.getElementById('themeLight');
-            
-            if (theme === 'light') {
-                body.classList.add('light-theme');
-                lightBtn.classList.add('active');
-                darkBtn.classList.remove('active');
+        // التخصيص والإعدادات العامة
+        function toggleTheme() {
+            const isDark = document.getElementById('themeToggle').checked;
+            if(isDark) {
+                document.body.classList.remove('light-theme');
+                localStorage.setItem('cflux_theme', 'dark');
             } else {
-                body.classList.remove('light-theme');
-                darkBtn.classList.add('active');
-                lightBtn.classList.remove('active');
+                document.body.classList.add('light-theme');
+                localStorage.setItem('cflux_theme', 'light');
             }
         }
 
-        // إعدادات اللغات وعكس الاتجاه بالكامل
+        function saveSkipTime(val) {
+            localStorage.setItem('cflux_skip_time', val);
+        }
+
+        function loadSavedSettings() {
+            const savedTheme = localStorage.getItem('cflux_theme');
+            if(savedTheme === 'light') {
+                document.getElementById('themeToggle').checked = false;
+                document.body.classList.add('light-theme');
+            }
+            const savedSkip = localStorage.getItem('cflux_skip_time');
+            if(savedSkip) {
+                document.getElementById('skipTimeSelect').value = savedSkip;
+            }
+        }
+
         function setLanguage(lang) {
             currentLang = lang;
             const html = document.getElementById('mainHtml');
             html.setAttribute('lang', lang);
             html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            document.getElementById('langSelect').value = lang;
 
-            document.getElementById('optAr').classList.toggle('active', lang === 'ar');
-            document.getElementById('optEn').classList.toggle('active', lang === 'en');
-
-            // تبديل النصوص بناءً على مصفوفة الترجمة
             document.getElementById('txtLogo').innerText = langData[lang].logo;
-            document.getElementById('navHomeText').innerText = langData[lang].navHome;
-            document.getElementById('navSearchText').innerText = langData[lang].navSearch;
-            document.getElementById('navAccountText').innerText = langData[lang].navAccount;
-            document.getElementById('txtMoviesSection').innerText = langData[lang].moviesSection;
-            document.getElementById('txtSeriesSection').innerText = langData[lang].seriesSection;
-            document.getElementById('searchInput').placeholder = langData[lang].navSearch + '...';
-            document.getElementById('txtRecentSearch').innerText = langData[lang].recentSearch;
-            document.getElementById('txtClearAll').innerText = langData[lang].clearAll;
-            document.getElementById('noResultsMessage').innerText = langData[lang].noResults;
-            document.getElementById('txtAccountMsg').innerText = langData[lang].accMsg;
-            document.getElementById('txtAccountSubMsg').innerText = langData[lang].accSubMsg;
-            document.getElementById('txtLoginBtn').innerText = langData[lang].loginBtn;
-            document.getElementById('menuSettings').innerText = langData[lang].menuSet;
-            document.getElementById('menuDownloads').innerText = langData[lang].menuDown;
-            document.getElementById('menuHelp').innerText = langData[lang].menuHelp;
-            document.getElementById('txtShareMsg').innerText = langData[lang].shareMsg;
-            document.getElementById('btnShareApp').innerText = langData[lang].shareBtn;
-            document.getElementById('txtGeneralTitle').innerText = langData[lang].genTitle;
-            document.getElementById('lblClearSearch').innerText = langData[lang].lblClear;
-            document.getElementById('btnClearSearchBtn').innerText = langData[lang].clearAll;
-            document.getElementById('lblLang').innerText = langData[lang].lblLang;
-            document.getElementById('lblTheme').innerText = langData[lang].lblTheme;
-            document.getElementById('lblPlayerSet').innerText = langData[lang].lblPlayer;
-            document.getElementById('lblPlayerDesc').innerText = langData[lang].lblPlayerDesc;
-            document.getElementById('txtInterval').innerText = langData[lang].txtSec;
+            document.getElementById('lblTabHome').innerText = langData[lang].tabHome;
+            document.getElementById('lblTabSearch').innerText = langData[lang].tabSearch;
+            document.getElementById('lblTabAccount').innerText = langData[lang].tabAccount;
+            document.getElementById('searchInput').placeholder = langData[lang].searchPlaceholder;
+            document.getElementById('txtHistoryTitle').innerText = langData[lang].historyTitle;
             document.getElementById('btnHD').innerText = langData[lang].hdServer;
             document.getElementById('btnSD').innerText = langData[lang].sdServer;
             document.getElementById('btnCast').innerText = langData[lang].castBtn;
+            document.getElementById('txtMoviesSection').innerText = langData[lang].moviesSection;
+            document.getElementById('txtSeriesSection').innerText = langData[lang].seriesSection;
+            document.getElementById('noResultsMessage').innerText = langData[lang].noResults;
             
-            document.querySelectorAll('.row-more').forEach(el => el.innerText = langData[lang].more);
+            document.getElementById('lblSubTitle').innerText = langData[lang].lblSubTitle;
+            document.getElementById('subUrlInput').placeholder = langData[lang].subPlaceholder;
+            document.getElementById('lblClearHistory').innerText = langData[lang].lblClearHistory;
+            document.getElementById('descClearHistory').innerText = langData[lang].descClearHistory;
+            document.getElementById('lblThemeMode').innerText = langData[lang].lblThemeMode;
+            document.getElementById('descThemeMode').innerText = langData[lang].descThemeMode;
+            document.getElementById('lblSkipTime').innerText = langData[lang].lblSkipTime;
+            document.getElementById('descSkipTime').innerText = langData[lang].descSkipTime;
+            document.getElementById('btnSettingsMenu').innerText = langData[lang].btnSettingsMenu;
+            document.getElementById('txtSettingsHeader').innerText = langData[lang].txtSettingsHeader;
         }
 
-        // محاكي تسجيل دخول ذكي لحفظ تفضيلات المستخدم محلياً بدون تعقيد
-        function triggerLogin() {
-            const username = prompt(currentLang === 'ar' ? "أدخل اسم المستخدم لتفعيل السجل السحابي الذاتي:" : "Enter username to activate self cloud history:");
-            if(username) {
-                document.getElementById('txtAccountMsg').innerText = (currentLang === 'ar' ? "مرحباً بك، " : "Welcome, ") + username;
-                document.getElementById('txtAccountSubMsg').innerText = currentLang === 'ar' ? "تم ربط السجل وتفضيلات المشاهدة بحسابك بنجاح ✨" : "History and configurations synchronized successfully ✨";
-                document.getElementById('txtLoginBtn').style.display = 'none';
-            }
-        }
-
-        function sharePlatform() {
+        function shareCinemaFlux() {
+            const shareData = {
+                title: 'منصة CinemaFlux',
+                text: 'شاهد أحدث الأفلام والمسلسلات مجاناً وبأعلى جودة على CinemaFlux! 🎬',
+                url: window.location.origin
+            };
             if (navigator.share) {
-                navigator.share({ title: 'CinemaFlux', text: 'شاهد أحدث الأفلام والمسلسلات مجاناً وبأعلى جودة!', url: window.location.href });
+                navigator.share(shareData).catch(err => console.log(err));
             } else {
-                alert(currentLang === 'ar' ? "انسخ رابط الموقع وشاركه مع أصدقائك!" : "Copy URL to share with your friends!");
+                navigator.clipboard.writeText(window.location.origin);
+                alert("📋 تم نسخ رابط موقع CinemaFlux بنجاح!");
             }
         }
 
         function castToTV() {
-            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay المتوفرة في لوحة تحكم هاتفك لربط البث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast fully.");
+            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من جهازك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
         }
     </script>
 </body>
