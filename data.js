@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fast Five",
+    "desc": "يخطط دومينيك توريتو وطاقمه من المتسابقين في الشوارع لسرقة هائلة لشراء حريتهم بينما هم في طليعة سيد مخدرات برازيلي قوي ووكيل اتحادي خطير.",
+    "poster": "https://image.tmdb.org/t/p/w500/gEfQjjQwY7fh5bI4GlG0RrBu7Pz.jpg",
+    "hdUrl": "https://playmogo.com/e/qg4nptgyoj9u",
+    "sdUrl": "https://playmogo.com/e/qg4nptgyoj9u",
+    "rating": "7.2",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Paul Walker",
+            "image": "https://image.tmdb.org/t/p/w185/q2PLqKHYCs35HR7QybaNPH3JT96.jpg"
+        },
+        {
+            "name": "Jordana Brewster",
+            "image": "https://image.tmdb.org/t/p/w185/ceL0zxeVbWfCfhoIDZIE1NYqBWb.jpg"
+        },
+        {
+            "name": "Tyrese Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg"
+        },
+        {
+            "name": "Ludacris",
+            "image": "https://image.tmdb.org/t/p/w185/erkJijujhe48vhJ8iCEtVpNEeVn.jpg"
+        }
+    ]
+},
+    {
     "title": "Last Christmas",
     "desc": "كايت سيدة شابة، حياتها سلسلة متعاقبة لا تنتهي من القرارات السيئة، وتضطر ﻷن تقبل العمل جنية لبابا نويل من أجل موسم الكريسماس في أحد المحال، وإذا بها تقابل توم هناك، وتتخذ حياتها منحى جديد كلية.",
     "poster": "https://image.tmdb.org/t/p/w500/kDEjffiKgjuGo2DRzsqfjvW0CQh.jpg",
