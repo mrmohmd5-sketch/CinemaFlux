@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Last Christmas",
+    "desc": "كايت سيدة شابة، حياتها سلسلة متعاقبة لا تنتهي من القرارات السيئة، وتضطر ﻷن تقبل العمل جنية لبابا نويل من أجل موسم الكريسماس في أحد المحال، وإذا بها تقابل توم هناك، وتتخذ حياتها منحى جديد كلية.",
+    "poster": "https://image.tmdb.org/t/p/w500/kDEjffiKgjuGo2DRzsqfjvW0CQh.jpg",
+    "hdUrl": "https://playmogo.com/e/9abbkhfyhgmf",
+    "sdUrl": "https://playmogo.com/e/9abbkhfyhgmf",
+    "rating": "7.2",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Emilia Clarke",
+            "image": "https://image.tmdb.org/t/p/w185/u59kTmNHXzaGZqokivxLPiBVIML.jpg"
+        },
+        {
+            "name": "Henry Golding",
+            "image": "https://image.tmdb.org/t/p/w185/zWZDvqMInsficgm4o3W2cRJ6tmn.jpg"
+        },
+        {
+            "name": "Michelle Yeoh",
+            "image": "https://image.tmdb.org/t/p/w185/i6fHvGt7Rb8oVyjjdQVV6vEHB94.jpg"
+        },
+        {
+            "name": "Emma Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/zQ0hWHh3tzaOOziPbABQI8s9WCu.jpg"
+        },
+        {
+            "name": "Lydia Leonard",
+            "image": "https://image.tmdb.org/t/p/w185/hZyocFIvGrZxJD3sDxAtWvMjDyJ.jpg"
+        }
+    ]
+},
+    {
     "title": "Elemental",
     "desc": "الأضداد تتفاعل.  في مدينة يعيش فيها سكان النار والماء والأرض والهواء معا ، ستكتشف شابة نارية ورجل يسير مع التدفق شيئا أساسيا: مقدار القواسم المشتركة بينهما.",
     "poster": "https://image.tmdb.org/t/p/w500/nq8HN4VUNYMvOhsNC6rpBOBoj4D.jpg",
