@@ -1,4 +1,14 @@
 const globalMoviesData = [
+{
+    "title": "The Amazing Spider-Man 2",
+    "desc": "عندما تُحاصر شركة أوسكورب مدينة نيويورك، يقع على عاتق سبايدرمان إنقاذ المدينة التي أقسم على حمايتها، بالإضافة إلى إنقاذ أحبائه.",
+    "poster": "https://image.tmdb.org/t/p/w500/hjsg70TQIreXTOpQYqgd78gMmit.jpg",
+    "hdUrl": "https://playmogo.com/e/pv1ds6ll1gtr",
+    "sdUrl": "https://playmogo.com/e/pv1ds6ll1gtr",
+    "rating": "6.5",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie"
+},
     {
         "title": "The Amazing Spider-Man",
         "desc": "يجد بيتر باركر دليلًا قد يساعده في فهم سبب اختفاء والديه عندما كان صغيرًا. ويأخذه طريقه إلى التصادم مع الدكتور كيرت كونرز، شريك والده السابق.",
