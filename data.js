@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Onward",
+    "title": "Onward مدبلج",
     "desc": "يبدأ سعيهم.  في عالم خيالي في الضواحي ، يشرع شقيقان مراهقان من الأقزام في مهمة غير عادية لاكتشاف ما إذا كان لا يزال هناك القليل من السحر المتبقي هناك.",
     "poster": "https://image.tmdb.org/t/p/w500/6lEII9r4WX0Xy9Yq6ZnPPiEEFOi.jpg",
     "hdUrl": "https://playmogo.com/e/yuj41p7m9e3e",
