@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Arco",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/rWvbMnqLTpyTHmNii4TrnmgzpcS.jpg",
+    "hdUrl": "https://playmogo.com/e/36f2eu5xp35t",
+    "sdUrl": "https://playmogo.com/e/36f2eu5xp35t",
+    "rating": "7.6",
+    "genre": "مغامرة رسوم متحركة عائلي خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Margot Ringard Oldra",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Oscar Tresanini",
+            "image": "https://image.tmdb.org/t/p/w185/jqjdgri0SA5OdAHay4ZTJqEOhcD.jpg"
+        },
+        {
+            "name": "Nathanaël Perrot",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Alma Jodorowsky",
+            "image": "https://image.tmdb.org/t/p/w185/1Uh2MYZmly1nsKHXoveYQlfAANC.jpg"
+        },
+        {
+            "name": "Swann Arlaud",
+            "image": "https://image.tmdb.org/t/p/w185/38iX2NHO7pMdQH1ygoGEJ8E82WV.jpg"
+        }
+    ]
+},
+    {
     "title": "Onward",
     "desc": "يبدأ سعيهم.  في عالم خيالي في الضواحي ، يشرع شقيقان مراهقان من الأقزام في مهمة غير عادية لاكتشاف ما إذا كان لا يزال هناك القليل من السحر المتبقي هناك.",
     "poster": "https://image.tmdb.org/t/p/w500/6lEII9r4WX0Xy9Yq6ZnPPiEEFOi.jpg",
