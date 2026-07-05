@@ -269,7 +269,7 @@
 
         <div id="viewProfile" class="app-view">
             <div class="profile-card">
-                <div class="profile-title" id="userDisplayTitle">هل لديك حساب?</div>
+                <div class="profile-title" id="userDisplayTitle">هل لديك حساب؟</div>
                 <div class="profile-subtitle" id="userDisplaySubtitle">سجل الدخول واكتشف المزيد</div>
                 <button class="profile-btn" id="authBtnAction" onclick="openAuthModal()">تسجيل الدخول</button>
             </div>
@@ -554,9 +554,9 @@
                 item.cast.forEach(person => {
                     const castCard = document.createElement('div');
                     castCard.className = 'cast-card';
-                    // تم التعديل هنا لضمان وجود صورة افتراضية للممثل في حال فشل الرابط
+                    // تم الإصلاح هنا: استخدام person.image بدلاً من person.img ليطابق ملف data.js
                     castCard.innerHTML = `
-                        <img class="cast-avatar" src="${person.img || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+                        <img class="cast-avatar" src="${person.image || person.img}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
                         <div class="cast-name">${person.name}</div>
                     `;
                     sliderCast.appendChild(castCard);
