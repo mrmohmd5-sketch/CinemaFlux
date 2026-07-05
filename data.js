@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "desc": "جويل باريش ، حزين القلب لأن صديقته خضعت لإجراء لمحوه من ذاكرتها ، يقرر أن يفعل الشيء نفسه. ومع ذلك ، وبينما كان يشاهد ذكرياتها تتلاشى ، يدرك أنه لا يزال يحبها ، وربما يكون قد فات الأوان لتصحيح خطأه.",
+    "poster": "https://image.tmdb.org/t/p/w500/oCLYCxt6zpK3WosAdZ4zBdw05cY.jpg",
+    "hdUrl": "https://playmogo.com/e/5v6o6t4jm7g3",
+    "sdUrl": "https://playmogo.com/e/5v6o6t4jm7g3",
+    "rating": "8.1",
+    "genre": "خيال علمي دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jim Carrey",
+            "image": "https://image.tmdb.org/t/p/w185/y3U9QfPN6sJaGl6l68xjwWj28ig.jpg"
+        },
+        {
+            "name": "Kate Winslet",
+            "image": "https://image.tmdb.org/t/p/w185/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg"
+        },
+        {
+            "name": "Kirsten Dunst",
+            "image": "https://image.tmdb.org/t/p/w185/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Elijah Wood",
+            "image": "https://image.tmdb.org/t/p/w185/ayARmqAe9Aab1zg6FjJG0u9MEBo.jpg"
+        }
+    ]
+},
+    {
     "title": "Turning Red",
     "desc": "تعاني مي البالغة من العمر ثلاثة عشر عامًا من الإحراج لكونها مراهقة مع تطور - عندما تكون متحمسة للغاية ، تتحول إلى باندا حمراء عملاقة.",
     "poster": "https://image.tmdb.org/t/p/w500/wlGfNuU7czx4KL1l5ipQ7K52rXe.jpg",
