@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Turning Red",
+    "desc": "تعاني مي البالغة من العمر ثلاثة عشر عامًا من الإحراج لكونها مراهقة مع تطور - عندما تكون متحمسة للغاية ، تتحول إلى باندا حمراء عملاقة.",
+    "poster": "https://image.tmdb.org/t/p/w500/wlGfNuU7czx4KL1l5ipQ7K52rXe.jpg",
+    "hdUrl": "https://playmogo.com/e/mu1m4h1dkmn1",
+    "sdUrl": "https://playmogo.com/e/mu1m4h1dkmn1",
+    "rating": "7.3",
+    "genre": "رسوم متحركة عائلي كوميديا فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Rosalie Chiang",
+            "image": "https://image.tmdb.org/t/p/w185/iVj6L5Mu5Esok2M3NIeTCdFBiW3.jpg"
+        },
+        {
+            "name": "Sandra Oh",
+            "image": "https://image.tmdb.org/t/p/w185/zU8vjebHxcP60ESEL5Ok68KWZvj.jpg"
+        },
+        {
+            "name": "Ava Morse",
+            "image": "https://image.tmdb.org/t/p/w185/9Yv7Prxfs1SUNuyOyrSzlUsJ5lI.jpg"
+        },
+        {
+            "name": "Hyein Park",
+            "image": "https://image.tmdb.org/t/p/w185/dDGYpMSGoo18k2xj0ydaN1JHIMR.jpg"
+        },
+        {
+            "name": "Maitreyi Ramakrishnan",
+            "image": "https://image.tmdb.org/t/p/w185/dkhYjeCU5ByYKxAr2wtXz20vb60.jpg"
+        }
+    ]
+},
+    {
     "title": "The Super Mario Bros. Movie",
     "desc": "يسافر سباك يدعى ماريو عبر متاهة تحت الأرض مع شقيقه لويجي ، في محاولة لإنقاذ أميرة تم أسرها.",
     "poster": "https://image.tmdb.org/t/p/w500/hpYfdZfL5Ht34X7Mk93N9ME5xxo.jpg",
