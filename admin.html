@@ -144,13 +144,28 @@
             }
 
             try {
+                // 1. جلب البيانات العربية الأساسية
                 const tmdbArRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
                 if(!tmdbArRes.ok) throw new Error("فشل جلب البيانات العربية من TMDB.");
                 const dataAr = await tmdbArRes.json();
 
+                // 2. جلب الاسم الإنجليزي
                 const tmdbEnRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=en-US`);
                 if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
+
+                // 3. التعديل الجديد: جلب طاقم التمثيل (الممثلين)
+                logStatus("⏳ جاري جلب أسماء وصور الممثلين من TMDB...");
+                const creditsRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits?api_key=${tmdbKey}`);
+                let castData = [];
+                if(creditsRes.ok) {
+                    const creditsData = await creditsRes.json();
+                    // نأخذ أول 5 ممثلين فقط كمثال، يمكنك زيادة الرقم إذا أردت
+                    castData = creditsData.cast.slice(0, 5).map(actor => ({
+                        name: actor.name,
+                        image: actor.profile_path ? `https://image.tmdb.org/t/p/w185${actor.profile_path}` : "https://via.placeholder.com/185x278?text=No+Image"
+                    }));
+                }
 
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
@@ -159,6 +174,7 @@
                 const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
+                // إضافة مصفوفة الممثلين للهيكل الأساسي للفيلم
                 const newMediaObject = {
                     title: titleText,
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
@@ -167,10 +183,11 @@
                     sdUrl: mediaUrl,
                     rating: ratingValue,
                     genre: genresArray,
-                    type: finalType
+                    type: finalType,
+                    cast: castData // الخاصية الجديدة
                 };
 
-                logStatus(`⏳ تم جلب "${titleText}". جاري الاتصال بـ GitHub لتحديث الحزمة الآمنة...`);
+                logStatus(`⏳ تم جلب "${titleText}" وطاقم العمل. جاري الاتصال بـ GitHub لتحديث الحزمة الآمنة...`);
 
                 const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
                 const ghGetRes = await fetch(fileUrl, {
@@ -189,14 +206,12 @@
 
                 let updatedContentText = "";
                 
-                // آلية معالجة ذكية وقوية: تبحث عن بداية المصفوفة الحقيقية [ ودمج العنصر في أولها مباشرة
                 if (currentContentText.indexOf("[") !== -1) {
                     const bracketIndex = currentContentText.indexOf("[");
                     const stringToObject = JSON.stringify(newMediaObject, null, 4);
                     
                     updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
                 } else {
-                    // حماية في حال كان الملف فارغاً تماماً
                     updatedContentText = `const globalMoviesData = [\n    ${JSON.stringify(newMediaObject, null, 4)}\n];`;
                 }
 
@@ -209,7 +224,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية آمنة للفيلم: ${titleText}`,
+                        message: `إضافة تلقائية آمنة للفيلم: ${titleText} مع طاقم التمثيل`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -217,7 +232,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وحفظ الأفلام السابقة في أمان!`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح مع الممثلين وحفظ الأفلام السابقة في أمان!`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
 
