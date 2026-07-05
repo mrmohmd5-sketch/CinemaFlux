@@ -88,7 +88,6 @@
             const pass = document.getElementById('passInput').value;
             const secureCheck = btoa(pass); 
 
-            // الرمز مشفر ومحمي تماماً لـ mrmrmrmr4
             if (secureCheck === "bXJtcm1ybXI0") { 
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
@@ -98,7 +97,6 @@
             }
         }
 
-        // حفظ الإعدادات في المتصفح تلقائياً
         function loadSettings() {
             if(localStorage.getItem('gh_user')) document.getElementById('ghUser').value = localStorage.getItem('gh_user');
             if(localStorage.getItem('gh_repo')) document.getElementById('ghRepo').value = localStorage.getItem('gh_repo');
@@ -146,17 +144,14 @@
             }
 
             try {
-                // 1. جلب البيانات العربية (للقصة والتصنيف والبوستر)
                 const tmdbArRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
                 if(!tmdbArRes.ok) throw new Error("فشل جلب البيانات العربية من TMDB.");
                 const dataAr = await tmdbArRes.json();
 
-                // 2. جلب البيانات الإنجليزية (لأخذ العنوان الأصلي بالإنجليزية حصراً)
                 const tmdbEnRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=en-US`);
                 if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
 
-                // دمج الخصائص: الاسم من البيانات الإنجليزية، والباقي من العربية
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
                 const overviewText = dataAr.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
@@ -175,7 +170,7 @@
                     type: finalType
                 };
 
-                logStatus(`⏳ تم جلب "${titleText}". جاري الاتصال بـ GitHub لتحديث الحزمة...`);
+                logStatus(`⏳ تم جلب "${titleText}". جاري الاتصال بـ GitHub لتحديث الحزمة الآمنة...`);
 
                 const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
                 const ghGetRes = await fetch(fileUrl, {
@@ -190,16 +185,19 @@
                     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
                 }).join(''));
 
-                logStatus("⏳ جاري إدراج المحتوى الجديد في قاعدة البيانات...");
+                logStatus("⏳ جاري دمج وتحديث قاعدة البيانات بأمان دون حذف الأفلام السابقة...");
 
                 let updatedContentText = "";
-                if (currentContentText.includes("const globalMoviesData = [") || currentContentText.includes("let globalMoviesData = [") || currentContentText.includes("var globalMoviesData = [")) {
+                
+                // آلية معالجة ذكية وقوية: تبحث عن بداية المصفوفة الحقيقية [ ودمج العنصر في أولها مباشرة
+                if (currentContentText.indexOf("[") !== -1) {
                     const bracketIndex = currentContentText.indexOf("[");
                     const stringToObject = JSON.stringify(newMediaObject, null, 4);
                     
-                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n" + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
+                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
                 } else {
-                    updatedContentText = `const globalMoviesData = [\n${JSON.stringify(newMediaObject, null, 4)},\n];`;
+                    // حماية في حال كان الملف فارغاً تماماً
+                    updatedContentText = `const globalMoviesData = [\n    ${JSON.stringify(newMediaObject, null, 4)}\n];`;
                 }
 
                 const base64Content = btoa(unescape(encodeURIComponent(updatedContentText)));
@@ -211,7 +209,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية بالاسم الإنجليزي: ${titleText}`,
+                        message: `إضافة تلقائية آمنة للفيلم: ${titleText}`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -219,7 +217,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بالاسم الإنجليزي والقصة العربية بنجاح!`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وحفظ الأفلام السابقة في أمان!`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
 
