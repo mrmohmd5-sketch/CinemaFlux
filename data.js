@@ -127,6 +127,38 @@ const globalMoviesData = [
         }
     ]
 },
+    {
+    "title": "The Amazing Spider-Man 2",
+    "desc": "عندما تُحاصر شركة أوسكورب مدينة نيويورك، يقع على عاتق سبايدرمان إنقاذ المدينة التي أقسم على حمايتها، بالإضافة إلى إنقاذ أحبائه.",
+    "poster": "https://image.tmdb.org/t/p/w500/hjsg70TQIreXTOpQYqgd78gMmit.jpg",
+    "hdUrl": "https://playmogo.com/e/pv1ds6ll1gtr",
+    "sdUrl": "https://playmogo.com/e/pv1ds6ll1gtr",
+    "rating": "6.5",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Andrew Garfield",
+            "image": "https://image.tmdb.org/t/p/w185/beO5YvbTjrr5yy8hW26KVDMSr35.jpg"
+        },
+        {
+            "name": "Emma Stone",
+            "image": "https://image.tmdb.org/t/p/w185/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg"
+        },
+        {
+            "name": "Jamie Foxx",
+            "image": "https://image.tmdb.org/t/p/w185/zD8Nsy4Xrghp7WunwpCj5JKBPeU.jpg"
+        },
+        {
+            "name": "Dane DeHaan",
+            "image": "https://image.tmdb.org/t/p/w185/8asHTI9I2Xz0ki018r7b0LuLWf4.jpg"
+        },
+        {
+            "name": "Colm Feore",
+            "image": "https://image.tmdb.org/t/p/w185/oOxcf1qB1IvVZrBEE1PdrfMiyBK.jpg"
+        }
+    ]
+},
 {
     "title": "The Amazing Spider-Man 2",
     "desc": "عندما تُحاصر شركة أوسكورب مدينة نيويورك، يقع على عاتق سبايدرمان إنقاذ المدينة التي أقسم على حمايتها، بالإضافة إلى إنقاذ أحبائه.",
