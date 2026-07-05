@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Elemental",
+    "desc": "الأضداد تتفاعل.  في مدينة يعيش فيها سكان النار والماء والأرض والهواء معا ، ستكتشف شابة نارية ورجل يسير مع التدفق شيئا أساسيا: مقدار القواسم المشتركة بينهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/nq8HN4VUNYMvOhsNC6rpBOBoj4D.jpg",
+    "hdUrl": "https://playmogo.com/e/v4mp3htzt0em",
+    "sdUrl": "https://playmogo.com/e/v4mp3htzt0em",
+    "rating": "7.6",
+    "genre": "رسوم متحركة كوميديا عائلي رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Leah Lewis",
+            "image": "https://image.tmdb.org/t/p/w185/4TTwg4Wrpe6qa1NrGKP508v2j3A.jpg"
+        },
+        {
+            "name": "Mamoudou Athie",
+            "image": "https://image.tmdb.org/t/p/w185/ycUbhfZRKC8MtNK9oMwscRsl3uM.jpg"
+        },
+        {
+            "name": "Ronnie del Carmen",
+            "image": "https://image.tmdb.org/t/p/w185/lPCmkQK76DOgkmcRjg9394QPyAu.jpg"
+        },
+        {
+            "name": "Shila Ommi",
+            "image": "https://image.tmdb.org/t/p/w185/i9m2RGrANNxidj0bVKlSs0zHPNX.jpg"
+        },
+        {
+            "name": "Wendi McLendon-Covey",
+            "image": "https://image.tmdb.org/t/p/w185/d8VKC8Ms3u9XiW4e4jsy2grP02d.jpg"
+        }
+    ]
+},
+    {
     "title": "Arco",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/rWvbMnqLTpyTHmNii4TrnmgzpcS.jpg",
