@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Fate of the Furious",
+    "desc": "بعد قضاء (دوم) و(ليتي) فترة شهر العسل وتقاعد (برايان) و(ميا) من ألعابهما، تحاول سيدة غامضة أن تغري (دوم) لدخول عالم الجريمة، مما يعني خيانة أقرب أصدقائه إليه من فريقه، وهو ما يضع الفريق في اختبار عصيب عليهم غير كل ما شهدوه من قبل، وتأخذهم في رحلة من شواطيء كوبا وحتى شوارع نيويورك.",
+    "poster": "https://image.tmdb.org/t/p/w500/dImWM7GJqryWJO9LHa3XQ8DD5NH.jpg",
+    "hdUrl": "https://playmogo.com/e/sjrydhx1xtrl",
+    "sdUrl": "https://playmogo.com/e/sjrydhx1xtrl",
+    "rating": "6.9",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Jason Statham",
+            "image": "https://image.tmdb.org/t/p/w185/pXGSq2UpcDE2NMF8LR56QZf5U1q.jpg"
+        },
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Tyrese Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg"
+        }
+    ]
+},
+    {
     "title": "The Amazing Spider-Man 2",
     "desc": "عندما تُحاصر شركة أوسكورب مدينة نيويورك، يقع على عاتق سبايدرمان إنقاذ المدينة التي أقسم على حمايتها، بالإضافة إلى إنقاذ أحبائه.",
     "poster": "https://image.tmdb.org/t/p/w500/hjsg70TQIreXTOpQYqgd78gMmit.jpg",
