@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man: Far From Home",
+    "desc": "يواجه بيتر باركر، البطل الخارق المحبوب سبايدرمان، أربعة وحوش عنصرية مدمرة أثناء عطلته في أوروبا. وسرعان ما يتلقى المساعدة من ميستيريو، بطل آخر ذو أصول غامضة.",
+    "poster": "https://image.tmdb.org/t/p/w500/mlpnjjtdQpOouPOkvO6TBsBwlCO.jpg",
+    "hdUrl": "https://playmogo.com/e/gxd89ezu46ci",
+    "sdUrl": "https://playmogo.com/e/gxd89ezu46ci",
+    "rating": "7.4",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Holland",
+            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+            "name": "Jake Gyllenhaal",
+            "image": "https://image.tmdb.org/t/p/w185/j2Yahha9C0zN5DRaTDzYA7WtdOT.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/AiAYAqwpM5xmiFrAIeQvUXDCVvo.jpg"
+        },
+        {
+            "name": "Marisa Tomei",
+            "image": "https://image.tmdb.org/t/p/w185/5w6qM8FWsl5SutKSpx6Va64eCTE.jpg"
+        },
+        {
+            "name": "Jon Favreau",
+            "image": "https://image.tmdb.org/t/p/w185/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
+        }
+    ]
+},
+    {
     "title": "Spider Man: Into the Spider-Verse",
     "desc": "مايلز موراليس يحاول موازنة حياته بين كونه طالب في المدرسة الثانوية وكونه سبايدرمان. ومع ذلك، فعندما يستخدم ويلسون فيسك مصادما مغناطيسيا ضخم، يأتي سبايدرمان من بُعد آخر، بيتر باركر، ويصطدم في بعد مايلز.",
     "poster": "https://image.tmdb.org/t/p/w500/lN14sq6Yd4nCcr4OliN7OX8QsiI.jpg",
