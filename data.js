@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Spider-Man: Into the Spider-Verse",
+    "title": "Spider Man: Into the Spider-Verse",
     "desc": "مايلز موراليس يحاول موازنة حياته بين كونه طالب في المدرسة الثانوية وكونه سبايدرمان. ومع ذلك، فعندما يستخدم ويلسون فيسك مصادما مغناطيسيا ضخم، يأتي سبايدرمان من بُعد آخر، بيتر باركر، ويصطدم في بعد مايلز.",
     "poster": "https://image.tmdb.org/t/p/w500/lN14sq6Yd4nCcr4OliN7OX8QsiI.jpg",
     "hdUrl": "https://playmogo.com/e/sl7u621dj5es",
@@ -32,7 +32,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Spider-Man: Across the Spider-Verse",
+    "title": "Spider Man: Across the Spider-Verse",
     "desc": "بعد مرور فترة طويلة، يتلقى مايلز موراليس زيارة جديدة من جوين ستيسي، ومعًا ينطلق الثنائي في مغامرة جديدة مليئة بالمخاطر والأعداء عبر عالم العنكبوت.",
     "poster": "https://image.tmdb.org/t/p/w500/xmZSu0hdbuwb4mJIrocpKfnVjbZ.jpg",
     "hdUrl": "https://playmogo.com/e/4wkpcwqs89a2",
