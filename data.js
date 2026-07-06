@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Enola Holmes",
+    "desc": "أثناء بحثها عن والدتها المفقودة، تستغل المراهقة الجريئة 'إينولا هولمز' مهارتها في التحري للتفوق على أخيها الأكبر 'شيرلوك' ومساعدة لورد هارب.",
+    "poster": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
+    "hdUrl": "https://playmogo.com/e/1b6hl27ih9x1",
+    "sdUrl": "https://playmogo.com/e/1b6hl27ih9x1",
+    "rating": "7.2",
+    "genre": "مغامرة غموض جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Millie Bobby Brown",
+            "image": "https://image.tmdb.org/t/p/w185/kHO7hdNEVuTnQ0OjjrxP1RcAa0e.jpg"
+        },
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "Sam Claflin",
+            "image": "https://image.tmdb.org/t/p/w185/e5CU4tjCNZFfm7ITmZfzjZse2Bb.jpg"
+        },
+        {
+            "name": "Helena Bonham Carter",
+            "image": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        },
+        {
+            "name": "Louis Partridge",
+            "image": "https://image.tmdb.org/t/p/w185/s6AW7VreXxAjhaHgjg9HV3tRM2T.jpg"
+        }
+    ]
+},
+    {
     "title": "Enola Holmes 2",
     "desc": "تتولّى 'إينولا' أوّل قضية رسمية لها كمحققة، ولكن لحلّ اللغز الكامن وراء اختفاء فتاة، ستحتاج إلى مساعدة من أصدقائها... ومن أخيها 'شيرلوك'، بالطبع.",
     "poster": "https://image.tmdb.org/t/p/w500/dYFIJSGCpZ88Ic7zC14txbQnGX0.jpg",
