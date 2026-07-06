@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Amazing Spider-Man",
+    "desc": "يجد بيتر باركر دليلًا قد يساعده في فهم سبب اختفاء والديه عندما كان صغيرًا. ويأخذه طريقه إلى التصادم مع الدكتور كيرت كونرز، شريك والده السابق.",
+    "poster": "https://image.tmdb.org/t/p/w500/as7Ls1ngpJDu3XB3X5vCkWH6iAn.jpg",
+    "hdUrl": "https://playmogo.com/e/ek1sw3i6tmkm",
+    "sdUrl": "https://playmogo.com/e/ek1sw3i6tmkm",
+    "rating": "6.7",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Andrew Garfield",
+            "image": "https://image.tmdb.org/t/p/w185/beO5YvbTjrr5yy8hW26KVDMSr35.jpg"
+        },
+        {
+            "name": "Emma Stone",
+            "image": "https://image.tmdb.org/t/p/w185/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg"
+        },
+        {
+            "name": "Rhys Ifans",
+            "image": "https://image.tmdb.org/t/p/w185/5X8XcIqCDxsQYyHdx7mBwPVkSTs.jpg"
+        },
+        {
+            "name": "Denis Leary",
+            "image": "https://image.tmdb.org/t/p/w185/tAOziVWQBnrW9eR442M6g9SQkmA.jpg"
+        },
+        {
+            "name": "Martin Sheen",
+            "image": "https://image.tmdb.org/t/p/w185/m2Y3Q0uyuW6htrn2W9UWCWMkpZu.jpg"
+        }
+    ]
+},
+    {
     "title": "Spider-Man: No Way Home",
     "desc": "بعد أن كُشِفَت هوية سبايدرمان، يطلب بيتر المساعدة من دكتور سترينج. وعندما تسوء الأمور بسبب تعويذة، يبدأ أعداء خطرون من عوالم أخرى بالظهور.",
     "poster": "https://image.tmdb.org/t/p/w500/hizG9eBfufJ2D9wNLIrhjIBsII5.jpg",
