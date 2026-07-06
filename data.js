@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "desc": "مايلز موراليس يحاول موازنة حياته بين كونه طالب في المدرسة الثانوية وكونه سبايدرمان. ومع ذلك، فعندما يستخدم ويلسون فيسك مصادما مغناطيسيا ضخم، يأتي سبايدرمان من بُعد آخر، بيتر باركر، ويصطدم في بعد مايلز.",
+    "poster": "https://image.tmdb.org/t/p/w500/lN14sq6Yd4nCcr4OliN7OX8QsiI.jpg",
+    "hdUrl": "https://playmogo.com/e/sl7u621dj5es",
+    "sdUrl": "https://playmogo.com/e/sl7u621dj5es",
+    "rating": "8.4",
+    "genre": "رسوم متحركة حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Shameik Moore",
+            "image": "https://image.tmdb.org/t/p/w185/ovUKfVOwJ7CadEHaG3NDsfA5xRq.jpg"
+        },
+        {
+            "name": "Jake Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/3UNfW2qZgRkW81neNVfQvaRC92K.jpg"
+        },
+        {
+            "name": "Hailee Steinfeld",
+            "image": "https://image.tmdb.org/t/p/w185/4K2dzM3odGiVZOQOD6RjVxNq2ZQ.jpg"
+        },
+        {
+            "name": "Mahershala Ali",
+            "image": "https://image.tmdb.org/t/p/w185/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg"
+        },
+        {
+            "name": "Brian Tyree Henry",
+            "image": "https://image.tmdb.org/t/p/w185/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg"
+        }
+    ]
+},
+    {
     "title": "Spider-Man: Across the Spider-Verse",
     "desc": "بعد مرور فترة طويلة، يتلقى مايلز موراليس زيارة جديدة من جوين ستيسي، ومعًا ينطلق الثنائي في مغامرة جديدة مليئة بالمخاطر والأعداء عبر عالم العنكبوت.",
     "poster": "https://image.tmdb.org/t/p/w500/xmZSu0hdbuwb4mJIrocpKfnVjbZ.jpg",
