@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Enola Holmes 2",
+    "desc": "تتولّى 'إينولا' أوّل قضية رسمية لها كمحققة، ولكن لحلّ اللغز الكامن وراء اختفاء فتاة، ستحتاج إلى مساعدة من أصدقائها... ومن أخيها 'شيرلوك'، بالطبع.",
+    "poster": "https://image.tmdb.org/t/p/w500/dYFIJSGCpZ88Ic7zC14txbQnGX0.jpg",
+    "hdUrl": "https://playmogo.com/e/wy86w94j1fgf",
+    "sdUrl": "https://playmogo.com/e/wy86w94j1fgf",
+    "rating": "7.4",
+    "genre": "مغامرة غموض جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Millie Bobby Brown",
+            "image": "https://image.tmdb.org/t/p/w185/kHO7hdNEVuTnQ0OjjrxP1RcAa0e.jpg"
+        },
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "David Thewlis",
+            "image": "https://image.tmdb.org/t/p/w185/gJqz8h5AKaVvOLS0hm5Vdvel6JB.jpg"
+        },
+        {
+            "name": "Louis Partridge",
+            "image": "https://image.tmdb.org/t/p/w185/s6AW7VreXxAjhaHgjg9HV3tRM2T.jpg"
+        },
+        {
+            "name": "Susan Wokoma",
+            "image": "https://image.tmdb.org/t/p/w185/puEiaNQZyG2gGfIZCyexbtrcv1F.jpg"
+        }
+    ]
+},
+    {
     "title": "Enola Holmes 3",
     "desc": "تتوجه المحققة 'إينولا هولمز' إلى 'مالطا' استعدادًا لبدء فصل جديد من حياتها، لكن اختفاء 'شيرلوك' يقلب خططها للزواج رأسًا على عقب ويجرّها إلى مغامرة غامضة محفوفة بالمخاطر.",
     "poster": "https://image.tmdb.org/t/p/w500/xUzszXAQOcFhVmVfR1GMqfJg2L4.jpg",
