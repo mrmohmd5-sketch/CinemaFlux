@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man: Across the Spider-Verse",
+    "desc": "بعد مرور فترة طويلة، يتلقى مايلز موراليس زيارة جديدة من جوين ستيسي، ومعًا ينطلق الثنائي في مغامرة جديدة مليئة بالمخاطر والأعداء عبر عالم العنكبوت.",
+    "poster": "https://image.tmdb.org/t/p/w500/xmZSu0hdbuwb4mJIrocpKfnVjbZ.jpg",
+    "hdUrl": "https://playmogo.com/e/4wkpcwqs89a2",
+    "sdUrl": "https://playmogo.com/e/4wkpcwqs89a2",
+    "rating": "8.3",
+    "genre": "رسوم متحركة حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Shameik Moore",
+            "image": "https://image.tmdb.org/t/p/w185/ovUKfVOwJ7CadEHaG3NDsfA5xRq.jpg"
+        },
+        {
+            "name": "Hailee Steinfeld",
+            "image": "https://image.tmdb.org/t/p/w185/4K2dzM3odGiVZOQOD6RjVxNq2ZQ.jpg"
+        },
+        {
+            "name": "Brian Tyree Henry",
+            "image": "https://image.tmdb.org/t/p/w185/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg"
+        },
+        {
+            "name": "Luna Lauren Vélez",
+            "image": "https://image.tmdb.org/t/p/w185/98BvmTJCZHx0jPv0oNcv04Jkmfb.jpg"
+        },
+        {
+            "name": "Jake Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/3UNfW2qZgRkW81neNVfQvaRC92K.jpg"
+        }
+    ]
+},
+    {
     "title": "Enola Holmes",
     "desc": "أثناء بحثها عن والدتها المفقودة، تستغل المراهقة الجريئة 'إينولا هولمز' مهارتها في التحري للتفوق على أخيها الأكبر 'شيرلوك' ومساعدة لورد هارب.",
     "poster": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
