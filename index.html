@@ -554,6 +554,7 @@
                 item.cast.forEach(person => {
                     const castCard = document.createElement('div');
                     castCard.className = 'cast-card';
+                    // تم الإصلاح هنا: استخدام person.image بدلاً من person.img ليطابق ملف data.js
                     castCard.innerHTML = `
                         <img class="cast-avatar" src="${person.image || person.img}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
                         <div class="cast-name">${person.name}</div>
@@ -654,7 +655,6 @@
             localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
         }
 
-        // ================= عرض سجل البحث الاحترافي =================
         function renderSearchHistoryUI() {
             const listContainer = document.getElementById('searchHistoryList');
             listContainer.innerHTML = '';
@@ -666,6 +666,7 @@
             document.getElementById('searchHistoryBlock').style.display = 'block';
 
             searchHistory.forEach((term, index) => {
+                // محاولة مطابقة اللفظ مع الداتا لعرض بوستر ومعلومات كاملة طردياً مع الصورة
                 const matchedItem = allMoviesData.find(x => x.title.toLowerCase() === term.toLowerCase());
                 
                 const row = document.createElement('div');
@@ -713,6 +714,7 @@
 
         // ================= نظام سجل المشاهدة (تحت البروفايل) =================
         function addToWatchHistory(item) {
+            // الحفظ مرتبط بالمستند ومسجل لكل الحالات
             watchHistory = watchHistory.filter(x => x.title !== item.title);
             watchHistory.unshift({ title: item.title, time: new Date().toLocaleDateString() });
             if(watchHistory.length > 20) watchHistory.pop();
@@ -893,6 +895,7 @@
             document.getElementById('btnCast').innerText = dict.castBtn;
             document.getElementById('txtCastTitle').innerText = dict.castTitle;
 
+            // تغيير نصوص السلايدر
             document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = dict.watchNow);
         }
 
