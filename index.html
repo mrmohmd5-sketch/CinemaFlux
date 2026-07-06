@@ -269,7 +269,7 @@
 
         <div id="viewProfile" class="app-view">
             <div class="profile-card">
-                <div class="profile-title" id="userDisplayTitle">هل لديك حساب؟</div>
+                <div class="profile-title" id="userDisplayTitle">هل لديك حساب?</div>
                 <div class="profile-subtitle" id="userDisplaySubtitle">سجل الدخول واكتشف المزيد</div>
                 <button class="profile-btn" id="authBtnAction" onclick="openAuthModal()">تسجيل الدخول</button>
             </div>
@@ -487,8 +487,8 @@
             moviesSlider.innerHTML = '';
             seriesSlider.innerHTML = '';
 
-            // 1. التعديل الاحترافي: عرض آخر 10 عناصر مضافة من الأحدث تماماً في المقدمة
-            const newestItems = [...allMoviesData].slice(-10).reverse();
+            // 1. عرض كامل مصفوفة البيانات في السلايدر العلوي لتبدأ من الأحدث بشكل تنازلي مطلق
+            const newestItems = [...allMoviesData].reverse();
             newestItems.forEach(item => {
                 const slide = document.createElement('div');
                 slide.className = 'slide-item';
@@ -503,7 +503,7 @@
                 featuredSlider.appendChild(slide);
             });
 
-            // 2. توزيع الباقي على تصنيفات الأفلام والمسلسلات مع بقاء العناصر مضافة دون حذف
+            // 2. توزيع الباقي على تصنيفات الأفلام والمسلسلات
             let hasMovies = false, hasSeries = false;
             allMoviesData.forEach(item => {
                 const card = document.createElement('div');
@@ -555,7 +555,7 @@
                     const castCard = document.createElement('div');
                     castCard.className = 'cast-card';
                     castCard.innerHTML = `
-                        <img class="cast-avatar" src="${person.image || person.img || ''}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+                        <img class="cast-avatar" src="${person.img || person.image || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
                         <div class="cast-name">${person.name}</div>
                     `;
                     sliderCast.appendChild(castCard);
@@ -564,14 +564,10 @@
                 document.getElementById('castContainerBlock').style.display = 'none';
             }
 
-            // إضافة لسجل المشاهدة
-            watchHistory = watchHistory.filter(x => x.title !== item.title);
-            watchHistory.unshift(item);
-            if(watchHistory.length > 30) watchHistory.pop();
-            localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
-
             switchView('viewMovieDetail');
-            document.getElementById('mainIframe').src = currentHD;
+            
+            // تحديث السجل
+            addToWatchHistory(item);
         }
 
         function closeMoviePage() {
@@ -580,7 +576,7 @@
         }
 
         function changeServer(type) {
-            document.querySelectorAll('.server-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.server-btn').forEach(el => el.classList.remove('active'));
             if(type === 'HD') {
                 document.getElementById('btnHD').classList.add('active');
                 document.getElementById('mainIframe').src = currentHD;
@@ -591,119 +587,32 @@
         }
 
         function castToTV() {
-            alert(currentLang === 'ar' ? "جاري البحث عن شاشات ذكية قريبة..." : "Searching for smart TVs nearby...");
+            alert("جاري البحث عن أجهزة البث الذكية القريبة...");
         }
 
-        // ================= محرك البحث الذكي =================
-        function handleSearchSearch() {
-            const query = document.getElementById('searchInput').value.trim().toLowerCase();
-            const historyBlock = document.getElementById('searchHistoryBlock');
-            const resultsBlock = document.getElementById('searchResultsBlock');
-            const noResultsMsg = document.getElementById('noResultsMessage');
-            const resultsList = document.getElementById('searchResultsList');
-
-            if (!query) {
-                resultsBlock.style.display = 'none';
-                noResultsMsg.style.display = 'none';
-                historyBlock.style.display = 'block';
-                return;
-            }
-
-            historyBlock.style.display = 'none';
-            resultsList.innerHTML = '';
-
-            const filtered = allMoviesData.filter(m => m.title.toLowerCase().includes(query));
-
-            if (filtered.length === 0) {
-                resultsBlock.style.display = 'none';
-                noResultsMsg.style.display = 'block';
-            } else {
-                noResultsMsg.style.display = 'none';
-                resultsBlock.style.display = 'block';
-
-                filtered.forEach(item => {
-                    const row = document.createElement('div');
-                    row.className = 'search-item-row';
-                    row.innerHTML = `
-                        <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
-                        <div class="search-item-details">
-                            <p class="search-item-title">${item.title}</p>
-                            <span class="search-item-meta">${item.year || ''} • ⭐️ ${item.rating || '0.0'}</span>
-                        </div>
-                    `;
-                    row.onclick = () => {
-                        saveSearchQuery(item.title);
-                        openMoviePage(item);
-                    };
-                    resultsList.appendChild(row);
-                });
-            }
+        // ================= نظام السجلات المفصل =================
+        function addToWatchHistory(item) {
+            watchHistory = watchHistory.filter(x => x.title !== item.title);
+            watchHistory.unshift(item);
+            if(watchHistory.length > 40) watchHistory.pop();
+            localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
         }
 
-        function saveSearchQuery(title) {
-            searchHistory = searchHistory.filter(q => q !== title);
-            searchHistory.unshift(title);
-            if(searchHistory.length > 10) searchHistory.pop();
-            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
-        }
-
-        function renderSearchHistoryUI() {
-            const list = document.getElementById('searchHistoryList');
-            list.innerHTML = '';
-            if (searchHistory.length === 0) {
-                document.getElementById('searchHistoryBlock').style.display = 'none';
-                return;
-            }
-            document.getElementById('searchHistoryBlock').style.display = 'block';
-
-            searchHistory.forEach(q => {
-                const row = document.createElement('div');
-                row.className = 'search-item-row';
-                row.style.padding = '12px 15px';
-                row.innerHTML = `
-                    <div class="search-item-details"><p class="search-item-title">🔍 ${q}</p></div>
-                    <span class="remove-search-btn" onclick="removeHistoryItem(event, '${q}')">×</span>
-                `;
-                row.onclick = () => {
-                    document.getElementById('searchInput').value = q;
-                    handleSearchSearch();
-                };
-                list.appendChild(row);
-            });
-        }
-
-        function removeHistoryItem(e, q) {
-            e.stopPropagation();
-            searchHistory = searchHistory.filter(item => item !== q);
-            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
-            renderSearchHistoryUI();
-        }
-
-        function clearSearchHistoryAction() {
-            if(confirm(currentLang === 'ar' ? "هل تريد بالتأكيد مسح سجل البحث؟" : "Clear all search history?")) {
-                searchHistory = [];
-                localStorage.removeItem('cf_search_history');
-                renderSearchHistoryUI();
-            }
-        }
-
-        // ================= سجل المشاهدة =================
         function renderWatchHistoryUI() {
             const list = document.getElementById('fullWatchHistoryList');
             list.innerHTML = '';
             if(watchHistory.length === 0) {
-                list.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-sub); font-size:13px;">${currentLang==='ar'?'السجل فارغ حالياً':'History is empty'}</div>`;
+                list.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-sub); font-size:13px;">سجل المشاهدة فارغ حالياً</div>';
                 return;
             }
-
             watchHistory.forEach(item => {
                 const row = document.createElement('div');
                 row.className = 'search-item-row';
                 row.innerHTML = `
-                    <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                    <img class="search-item-poster" src="${item.poster}">
                     <div class="search-item-details">
                         <p class="search-item-title">${item.title}</p>
-                        <span class="search-item-meta">${item.year || ''} • ${item.type==='series'?(currentLang==='ar'?'مسلسل':'Series'):(currentLang==='ar'?'فيلم':'Movie')}</span>
+                        <span class="search-item-meta">${item.year || ''} • IMDb: ${item.rating || 'N/A'}</span>
                     </div>
                 `;
                 row.onclick = () => openMoviePage(item);
@@ -712,14 +621,182 @@
         }
 
         function clearWatchHistoryAction() {
-            if(confirm(currentLang === 'ar' ? "تأكيد مسح سجل المشاهدة بالكامل؟" : "Clear all watch history?")) {
+            if(confirm("هل أنت متأكد من مسح سجل المشاهدة بالكامل؟")) {
                 watchHistory = [];
-                localStorage.removeItem('cf_watch_history');
+                localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
                 renderWatchHistoryUI();
             }
         }
 
-        // ================= نظام الحسابات المطور (يوزر ونظام الرمز بدون إيميل) =================
+        // ================= نظام البحث والتحكم بالسجلات =================
+        function handleSearchSearch() {
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
+            const historyBlock = document.getElementById('searchHistoryBlock');
+            const resultsBlock = document.getElementById('searchResultsBlock');
+            const noResults = document.getElementById('noResultsMessage');
+            const listResults = document.getElementById('searchResultsList');
+
+            if(!query) {
+                resultsBlock.style.display = 'none';
+                noResults.style.display = 'none';
+                historyBlock.style.display = 'block';
+                renderSearchHistoryUI();
+                return;
+            }
+
+            historyBlock.style.display = 'none';
+            listResults.innerHTML = '';
+
+            const filtered = allMoviesData.filter(item => item.title.toLowerCase().includes(query));
+
+            if(filtered.length === 0) {
+                resultsBlock.style.display = 'none';
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+                resultsBlock.style.display = 'block';
+                filtered.forEach(item => {
+                    const row = document.createElement('div');
+                    row.className = 'search-item-row';
+                    row.innerHTML = `
+                        <img class="search-item-poster" src="${item.poster}">
+                        <div class="search-item-details">
+                            <p class="search-item-title">${item.title}</p>
+                            <span class="search-item-meta">${item.type === 'series' ? 'مسلسل' : 'فيلم'} • ${item.year || ''}</span>
+                        </div>
+                    `;
+                    row.onclick = () => {
+                        saveSearchQuery(item.title);
+                        openMoviePage(item);
+                    };
+                    listResults.appendChild(row);
+                });
+            }
+        }
+
+        function saveSearchQuery(title) {
+            searchHistory = searchHistory.filter(x => x !== title);
+            searchHistory.unshift(title);
+            if(searchHistory.length > 10) searchHistory.pop();
+            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+        }
+
+        function renderSearchHistoryUI() {
+            const list = document.getElementById('searchHistoryList');
+            list.innerHTML = '';
+            if(searchHistory.length === 0) {
+                list.innerHTML = '<div style="padding:10px; font-size:12px; color:var(--text-sub);">لا توجد عمليات بحث سابقة</div>';
+                return;
+            }
+            searchHistory.forEach(title => {
+                const row = document.createElement('div');
+                row.className = 'search-item-row';
+                row.style.padding = '8px 12px';
+                row.innerHTML = `
+                    <div class="search-item-details"><p class="search-item-title" style="font-size:13px;">🕒 ${title}</p></div>
+                    <span class="remove-search-btn" onclick="removeHistoryItem(event, '${title}')">×</span>
+                `;
+                row.onclick = () => {
+                    document.getElementById('searchInput').value = title;
+                    handleSearchSearch();
+                };
+                list.appendChild(row);
+            });
+        }
+
+        function removeHistoryItem(event, title) {
+            event.stopPropagation();
+            searchHistory = searchHistory.filter(x => x !== title);
+            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+            renderSearchHistoryUI();
+        }
+
+        function clearSearchHistoryAction() {
+            searchHistory = [];
+            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+            alert("تم مسح سجل البحث بنجاح");
+            renderSearchHistoryUI();
+        }
+
+        // ================= إدارة الإعدادات اللغوية والمظهر =================
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.getElementById('settingLangAr').classList.toggle('active', lang === 'ar');
+            document.getElementById('settingLangEn').classList.toggle('active', lang === 'en');
+            
+            const htmlNode = document.getElementById('mainHtml');
+            if(lang === 'ar') {
+                htmlNode.setAttribute('dir', 'rtl');
+                htmlNode.setAttribute('lang', 'ar');
+            } else {
+                htmlNode.setAttribute('dir', 'ltr');
+                htmlNode.setAttribute('lang', 'en');
+            }
+            applyLocalization();
+            renderHomeDOM();
+        }
+
+        function applyLocalization() {
+            const pack = langPack[currentLang];
+            document.getElementById('txtLogo').innerText = pack.logo;
+            document.getElementById('txtNavHome').innerText = pack.navHome;
+            document.getElementById('txtNavSearch').innerText = pack.navSearch;
+            document.getElementById('txtNavProfile').innerText = pack.navProfile;
+            document.getElementById('searchInput').placeholder = pack.searchPlaceholder;
+            document.getElementById('txtRecentSearches').innerText = pack.recentSearches;
+            document.getElementById('txtSearchResultsTitle').innerText = pack.searchResultsTitle;
+            document.getElementById('noResultsMessage').innerText = pack.noResults;
+            document.getElementById('txtMoviesSection').innerText = pack.moviesSection;
+            document.getElementById('txtSeriesSection').innerText = pack.seriesSection;
+            document.getElementById('txtMenuHistory').innerText = pack.watchHistoryTitle;
+            document.getElementById('txtMenuSettings').innerText = pack.settingsTitle;
+            document.getElementById('txtShareApp').innerText = pack.shareApp;
+            document.getElementById('txtShareDesc').innerText = pack.shareDesc;
+            document.getElementById('btnShareSubmit').innerText = pack.btnShare;
+            document.getElementById('txtBackToProfile').innerText = pack.backToProfile;
+            document.getElementById('txtSettingsTitlePage').innerText = pack.settingsTitlePage;
+            document.getElementById('txtSettingClearSearch').innerText = pack.clearSearch;
+            document.getElementById('txtBtnClearAllSearch').innerText = pack.clearAllBtn;
+            document.getElementById('txtSettingLang').innerText = pack.settingLang;
+            document.getElementById('txtSettingTheme').innerText = pack.settingTheme;
+            document.getElementById('themeDarkBtn').innerText = pack.themeDark;
+            document.getElementById('themeLightBtn').innerText = pack.themeLight;
+            document.getElementById('txtBackFromHistory').innerText = pack.backToProfile;
+            document.getElementById('txtWatchHistoryTitlePage').innerText = pack.watchHistoryPageTitle;
+            document.getElementById('txtClearWatchHistoryBtn').innerText = pack.clearAllBtn;
+            
+            // تحديث نصوص تفاصيل الفيلم الثابتة
+            const backToMainNode = document.getElementById('txtBackToMain');
+            if(backToMainNode) backToMainNode.innerText = pack.backToMain;
+            const btnHDNode = document.getElementById('btnHD');
+            if(btnHDNode) btnHDNode.innerText = pack.hdServer;
+            const btnSDNode = document.getElementById('btnSD');
+            if(btnSDNode) btnSDNode.innerText = pack.sdServer;
+            const btnCastNode = document.getElementById('btnCast');
+            if(btnCastNode) btnCastNode.innerText = pack.castBtn;
+            const castTitleNode = document.getElementById('txtCastTitle');
+            if(castTitleNode) castTitleNode.innerText = pack.castTitle;
+
+            document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = pack.watchNow);
+            updateUserUI();
+        }
+
+        function setTheme(theme) {
+            currentTheme = theme;
+            document.body.setAttribute('data-theme', theme);
+            document.getElementById('themeDarkBtn').classList.toggle('active', theme === 'dark');
+            document.getElementById('themeLightBtn').classList.toggle('active', theme === 'light');
+        }
+
+        function shareAppAction() {
+            if (navigator.share) {
+                navigator.share({ title: 'CinemaFlux', text: 'شاهد أحدث الأفلام والمسلسلات مجاناً وبدون إعلانات', url: window.location.href });
+            } else {
+                alert("تم نسخ رابط الموقع ، شاركه الآن مع أصدقائك 🔗");
+            }
+        }
+
+        // ================= نظام المستخدم وتوثيق الحساب المبسط =================
         function openAuthModal() {
             document.getElementById('authModal').style.display = 'flex';
         }
@@ -729,142 +806,67 @@
         }
 
         function toggleAuthMode() {
+            authMode = (authMode === 'login') ? 'register' : 'login';
             const title = document.getElementById('authModalTitle');
             const btn = document.getElementById('authPrimaryBtn');
-            const toggleText = document.getElementById('authToggleText');
+            const link = document.getElementById('authToggleText');
 
-            if (authMode === 'login') {
-                authMode = 'register';
-                title.innerText = "إنشاء حساب جديد";
-                btn.innerText = "إنشاء حساب";
-                toggleText.innerText = "لديك حساب بالفعل؟ تسجيل الدخول";
-            } else {
-                authMode = 'login';
+            if(authMode === 'login') {
                 title.innerText = "تسجيل الدخول";
                 btn.innerText = "تسجيل الدخول";
-                toggleText.innerText = "ليس لديك حساب؟ إنشاء حساب جديد";
+                link.innerText = "ليس لديك حساب؟ إنشاء حساب جديد";
+            } else {
+                title.innerText = "إنشاء حساب جديد";
+                btn.innerText = "إنشاء الحساب";
+                link.innerText = "لديك حساب بالفعل؟ تسجيل الدخول";
             }
         }
 
         function handleAuthSubmit() {
-            const user = document.getElementById('authUsername').value.trim();
-            const pass = document.getElementById('authPassword').value.trim();
+            const u = document.getElementById('authUsername').value.trim();
+            const p = document.getElementById('authPassword').value.trim();
 
-            if (!user || !pass) {
-                alert(currentLang === 'ar' ? "يرجى ملء جميع الحقول المطلوبة!" : "Please fill in all fields!");
+            if(!u || !p) {
+                alert("الرجاء إدخال الحقول المطلوبة كاملة");
                 return;
             }
 
-            if (authMode === 'register') {
-                // حفظ بيانات الحساب الجديد محلياً بالاسم والرمز فقط
-                localStorage.setItem(`account_${user}`, pass);
-                currentUser = { username: user };
+            if(authMode === 'login') {
+                currentUser = { username: u };
                 localStorage.setItem('cf_user', JSON.stringify(currentUser));
-                alert(currentLang === 'ar' ? "تم إنشاء حسابك بنجاح!" : "Account created successfully!");
+                alert(`مرحباً بك مجدداً ${u} في CinemaFlux`);
             } else {
-                // التحقق من الحساب عند تسجيل الدخول
-                const savedPassword = localStorage.getItem(`account_${user}`);
-                if (savedPassword && savedPassword === pass) {
-                    currentUser = { username: user };
-                    localStorage.setItem('cf_user', JSON.stringify(currentUser));
-                } else {
-                    alert(currentLang === 'ar' ? "اسم المستخدم أو كلمة المرور غير صحيحة!" : "Invalid username or password!");
-                    return;
-                }
+                currentUser = { username: u };
+                localStorage.setItem('cf_user', JSON.stringify(currentUser));
+                alert("تم إنشاء حسابك المخصص للموقع بنجاح");
             }
-
-            updateUserUI();
+            
             closeAuthModal();
-        }
-
-        function logoutAction() {
-            if (confirm(currentLang === 'ar' ? "هل تريد تسجيل الخروج؟" : "Do you want to log out?")) {
-                currentUser = null;
-                localStorage.removeItem('cf_user');
-                updateUserUI();
-            }
+            updateUserUI();
         }
 
         function updateUserUI() {
-            const title = document.getElementById('userDisplayTitle');
-            const subtitle = document.getElementById('userDisplaySubtitle');
-            const btn = document.getElementById('authBtnAction');
+            const titleNode = document.getElementById('userDisplayTitle');
+            const subNode = document.getElementById('userDisplaySubtitle');
+            const btnNode = document.getElementById('authBtnAction');
+            const pack = langPack[currentLang];
 
-            if (currentUser) {
-                title.innerText = `${currentLang === 'ar' ? 'مرحباً، ' : 'Welcome, '} ${currentUser.username} ✨`;
-                subtitle.innerText = currentLang === 'ar' ? 'مشاهدة ممتعة في موقعك المفضل' : 'Enjoy watching your favorite movies';
-                btn.innerText = langPack[currentLang].btnLogout;
-                btn.onclick = logoutAction;
+            if(currentUser) {
+                titleNode.innerText = currentUser.username;
+                subNode.innerText = "عضو مميز في سينما فلوكس";
+                btnNode.innerText = pack.btnLogout;
+                btnNode.onclick = () => {
+                    if(confirm("هل تود تسجيل الخروج؟")) {
+                        currentUser = null;
+                        localStorage.removeItem('cf_user');
+                        updateUserUI();
+                    }
+                };
             } else {
-                title.innerText = langPack[currentLang].userDefaultTitle;
-                subtitle.innerText = langPack[currentLang].userDefaultSub;
-                btn.innerText = langPack[currentLang].btnLogin;
-                btn.onclick = openAuthModal;
-            }
-        }
-
-        // ================= الإعدادات، التخصيص واللغات =================
-        function setLanguage(lang) {
-            currentLang = lang;
-            document.getElementById('settingLangAr').classList.toggle('active', lang === 'ar');
-            document.getElementById('settingLangEn').classList.toggle('active', lang === 'en');
-            
-            const htmlNode = document.getElementById('mainHtml');
-            htmlNode.setAttribute('lang', lang);
-            htmlNode.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-
-            applyLocalization();
-            updateUserUI();
-            renderWatchHistoryUI();
-        }
-
-        function setTheme(theme) {
-            currentTheme = theme;
-            document.getElementById('themeDarkBtn').classList.toggle('active', theme === 'dark');
-            document.getElementById('themeLightBtn').classList.toggle('active', theme === 'light');
-            document.getElementById('mainHtml').setAttribute('data-theme', theme);
-        }
-
-        function applyLocalization() {
-            const p = langPack[currentLang];
-            document.getElementById('txtLogo').innerText = p.logo;
-            document.getElementById('txtNavHome').innerText = p.navHome;
-            document.getElementById('txtNavSearch').innerText = p.navSearch;
-            document.getElementById('txtNavProfile').innerText = p.navProfile;
-            document.getElementById('searchInput').placeholder = p.searchPlaceholder;
-            document.getElementById('txtRecentSearches').innerText = p.recentSearches;
-            document.getElementById('txtSearchResultsTitle').innerText = p.searchResultsTitle;
-            document.getElementById('noResultsMessage').innerText = p.noResults;
-            document.getElementById('txtMoviesSection').innerText = p.moviesSection;
-            document.getElementById('txtSeriesSection').innerText = p.seriesSection;
-            document.getElementById('txtMenuHistory').innerText = p.watchHistoryTitle;
-            document.getElementById('txtMenuSettings').innerText = p.settingsTitle;
-            document.getElementById('txtShareApp').innerText = p.shareApp;
-            document.getElementById('txtShareDesc').innerText = p.shareDesc;
-            document.getElementById('btnShareSubmit').innerText = p.btnShare;
-            document.getElementById('txtBackToProfile').innerText = p.backToProfile;
-            document.getElementById('txtSettingsTitlePage').innerText = p.settingsTitlePage;
-            document.getElementById('txtSettingClearSearch').innerText = p.clearSearch;
-            document.getElementById('txtBtnClearAllSearch').innerText = p.clearAllBtn;
-            document.getElementById('txtSettingLang').innerText = p.settingLang;
-            document.getElementById('txtSettingTheme').innerText = p.settingTheme;
-            document.getElementById('txtBackFromHistory').innerText = p.backToProfile;
-            document.getElementById('txtWatchHistoryTitlePage').innerText = p.watchHistoryPageTitle;
-            document.getElementById('txtClearWatchHistoryBtn').innerText = p.clearAllBtn;
-            document.getElementById('txtBackToMain').innerText = p.backToMain;
-            document.getElementById('btnHD').innerText = p.hdServer;
-            document.getElementById('btnSD').innerText = p.sdServer;
-            document.getElementById('btnCast').innerText = p.castBtn;
-            document.getElementById('txtCastTitle').innerText = p.castTitle;
-
-            document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = p.watchNow);
-        }
-
-        function shareAppAction() {
-            if (navigator.share) {
-                navigator.share({ title: 'CinemaFlux', text: 'شاهد أحدث الأفلام والمسلسلات مجاناً!', url: window.location.href });
-            } else {
-                alert(currentLang === 'ar' ? "تم نسخ رابط الموقع، شاركه مع أصدقائك!" : "Link copied to clipboard, share it!");
+                titleNode.innerText = pack.userDefaultTitle;
+                subNode.innerText = pack.userDefaultSub;
+                btnNode.innerText = pack.btnLogin;
+                btnNode.onclick = () => openAuthModal();
             }
         }
     </script>
