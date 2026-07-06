@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fast & Furious Presents: Hobbs & Shaw",
+    "desc": "منذ أن تواجه وكيل خدمة الأمن الدبلوماسي الأمريكي - هوبز- و المنبوذ - شاو - ، قاما فقط بتبادل الضربات والكلمات السيئة.",
+    "poster": "https://image.tmdb.org/t/p/w500/2196YzqbaWDGaXyBjsC67ZFcZT0.jpg",
+    "hdUrl": "https://playmogo.com/e/nmhcfn8ltdyr",
+    "sdUrl": "https://playmogo.com/e/nmhcfn8ltdyr",
+    "rating": "6.8",
+    "genre": "حركة مغامرة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Jason Statham",
+            "image": "https://image.tmdb.org/t/p/w185/pXGSq2UpcDE2NMF8LR56QZf5U1q.jpg"
+        },
+        {
+            "name": "Idris Elba",
+            "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        },
+        {
+            "name": "Vanessa Kirby",
+            "image": "https://image.tmdb.org/t/p/w185/tViEEsjvbhrJxWsOipUqIYjdHEb.jpg"
+        },
+        {
+            "name": "Helen Mirren",
+            "image": "https://image.tmdb.org/t/p/w185/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg"
+        }
+    ]
+},
+    {
     "title": "Spider-Man",
     "desc": "يتعرض مراهق خجول للدغة عنكبوت معدل وراثيًا، فيستغل قدراته الجديدة الشبيهة بالعنكبوت لمحاربة الظلم كبطل خارق مقنع.",
     "poster": "https://image.tmdb.org/t/p/w500/hmOhNnyV0F1e3lhVO2jDS8tJfc6.jpg",
