@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man: No Way Home",
+    "desc": "بعد أن كُشِفَت هوية سبايدرمان، يطلب بيتر المساعدة من دكتور سترينج. وعندما تسوء الأمور بسبب تعويذة، يبدأ أعداء خطرون من عوالم أخرى بالظهور.",
+    "poster": "https://image.tmdb.org/t/p/w500/hizG9eBfufJ2D9wNLIrhjIBsII5.jpg",
+    "hdUrl": "https://playmogo.com/e/d15ixdaukolh",
+    "sdUrl": "https://playmogo.com/e/d15ixdaukolh",
+    "rating": "7.9",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Holland",
+            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+            "name": "Zendaya",
+            "image": "https://image.tmdb.org/t/p/w185/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+        },
+        {
+            "name": "Benedict Cumberbatch",
+            "image": "https://image.tmdb.org/t/p/w185/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+        },
+        {
+            "name": "Jacob Batalon",
+            "image": "https://image.tmdb.org/t/p/w185/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
+        },
+        {
+            "name": "Jon Favreau",
+            "image": "https://image.tmdb.org/t/p/w185/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
+        }
+    ]
+},
+    {
     "title": "Spider-Man: Homecoming",
     "desc": "يحاول بيتر باركر منع أدريان 'النسر' تومز من بيع أسلحة مصنوعة بتقنية تشيتوري المتطورة، بينما يسعى في الوقت نفسه إلى تحقيق التوازن بين حياته كطالب ثانوي عادي.",
     "poster": "https://image.tmdb.org/t/p/w500/6sTSMOw6n5AZc18RNm1s4wOkVIP.jpg",
