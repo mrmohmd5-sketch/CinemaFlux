@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Fast and the Furious: Tokyo Drift",
+    "desc": "من أجل تجنب عقوبة السجن ، يتوجه شون بوسويل إلى طوكيو للعيش مع والده العسكري.  في منطقة منخفضة الإيجار من المدينة ، تنشغل شون في عالم سباقات الانجراف تحت الأرض",
+    "poster": "https://image.tmdb.org/t/p/w500/46xqGOwHbh2TH2avWSw3SMXph4E.jpg",
+    "hdUrl": "https://playmogo.com/e/mwsziz51mqyl",
+    "sdUrl": "https://playmogo.com/e/mwsziz51mqyl",
+    "rating": "6.5",
+    "genre": "حركة جريمة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lucas Black",
+            "image": "https://image.tmdb.org/t/p/w185/w2oImwC4Y0RDtyvaKGTCFCKsvwh.jpg"
+        },
+        {
+            "name": "Nathalie Kelley",
+            "image": "https://image.tmdb.org/t/p/w185/wawAz251CPJelmOVwTeNvjrYnqO.jpg"
+        },
+        {
+            "name": "Sung Kang",
+            "image": "https://image.tmdb.org/t/p/w185/ox4ti0WmpJoN19n3iYJ2T2vHP5f.jpg"
+        },
+        {
+            "name": "Shad Moss",
+            "image": "https://image.tmdb.org/t/p/w185/xsvJmcOQiocYcKtRmfiQbjzVrVw.jpg"
+        },
+        {
+            "name": "Brian Tee",
+            "image": "https://image.tmdb.org/t/p/w185/ieqbktfBwcHkeikMfNDW94Yffzp.jpg"
+        }
+    ]
+},
+    {
     "title": "Fast & Furious",
     "desc": "عندما تعيدهم جريمة ما إلى لوس أنجلوس ، يشعل المحتال السابق الهارب دوم توريتو عداءه مع العميل بريان أوكونر.  لكن بما أنهم مجبرون على مواجهة عدو مشترك ، يجب على دوم وبريان الاستسلام لثقة جديدة غير مؤكدة إذا كانا يأملان في التغلب عليه.  وسيجد الرجلان أفضل طريقة للانتقام: دفع حدود ما هو ممكن خلف عجلة القيادة.",
     "poster": "https://image.tmdb.org/t/p/w500/lUtVoRukW7WNtUySwd8hWlByBds.jpg",
