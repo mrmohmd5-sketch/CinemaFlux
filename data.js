@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fast & Furious 6",
+    "desc": "دعا هوبز دومينيك وبريان إلى إعادة تجميع طاقمهما لإنزال فريق من المرتزقة: يواجه دومينيك بشكل غير متوقع أيضًا صديقته المتوفاة المفترضة ، ليتي.",
+    "poster": "https://image.tmdb.org/t/p/w500/thSmnRdrzPBBospIOJjLZBReqzo.jpg",
+    "hdUrl": "https://playmogo.com/e/a9ek3ugt0zk7",
+    "sdUrl": "https://playmogo.com/e/a9ek3ugt0zk7",
+    "rating": "6.8",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Paul Walker",
+            "image": "https://image.tmdb.org/t/p/w185/q2PLqKHYCs35HR7QybaNPH3JT96.jpg"
+        },
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Jordana Brewster",
+            "image": "https://image.tmdb.org/t/p/w185/ceL0zxeVbWfCfhoIDZIE1NYqBWb.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        }
+    ]
+},
+    {
     "title": "Mission: Impossible",
     "desc": "بعد التخطيط لتنفيذ إحدى المهام، يرسل (جيم فيليبس) مع زوجته (كلير) وشريكه (إيثان هانت) إلى مدينة (براغ)، وتفشل المهمة ولا ينجو سوى (إيثان هانت)، ويبدأ مدير الوكالة بالشك في (إيثان) بأنه السبب الرئيسي لفشل هذه المهمة، فيحاول إثبات براءته بمختلف الطرق والأساليب الممكنة واكتشاف المتورط الحقيقي.",
     "poster": "https://image.tmdb.org/t/p/w500/tVa2tSUvEM1THKwFjbVaVkBJErb.jpg",
