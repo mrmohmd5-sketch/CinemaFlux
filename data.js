@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Mission: Impossible",
+    "desc": "بعد التخطيط لتنفيذ إحدى المهام، يرسل (جيم فيليبس) مع زوجته (كلير) وشريكه (إيثان هانت) إلى مدينة (براغ)، وتفشل المهمة ولا ينجو سوى (إيثان هانت)، ويبدأ مدير الوكالة بالشك في (إيثان) بأنه السبب الرئيسي لفشل هذه المهمة، فيحاول إثبات براءته بمختلف الطرق والأساليب الممكنة واكتشاف المتورط الحقيقي.",
+    "poster": "https://image.tmdb.org/t/p/w500/tVa2tSUvEM1THKwFjbVaVkBJErb.jpg",
+    "hdUrl": "https://playmogo.com/e/2efljl8fqh9t",
+    "sdUrl": "https://playmogo.com/e/2efljl8fqh9t",
+    "rating": "7.0",
+    "genre": "مغامرة حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Cruise",
+            "image": "https://image.tmdb.org/t/p/w185/p17SLq4wabXwIYyjXF1Wf5cNnAm.jpg"
+        },
+        {
+            "name": "Jon Voight",
+            "image": "https://image.tmdb.org/t/p/w185/oxLsItDwLddXu8YYJCfkddYNejL.jpg"
+        },
+        {
+            "name": "Emmanuelle Béart",
+            "image": "https://image.tmdb.org/t/p/w185/9zMPQS68UDDahxJQH9ZRiNuWmjU.jpg"
+        },
+        {
+            "name": "Henry Czerny",
+            "image": "https://image.tmdb.org/t/p/w185/zOWZzRmliKf9032IOOq0a3jXhVv.jpg"
+        },
+        {
+            "name": "Jean Reno",
+            "image": "https://image.tmdb.org/t/p/w185/mw0EZJYz3kiFq9fNxsML773gotF.jpg"
+        }
+    ]
+},
+    {
     "title": "Fast & Furious 7",
     "desc": "استكمالًا لأحداث الأجزاء السابقة، بعد مقتل (أوين شو) وفريقه أصبح بإستطاعة دومينيك (فان ديزيل) وبرايان (بول ووكر) وفريقهما العودة إلي الولايات المتحدة وعيش حياةٍ طبيعيةٍ مُجددًا، ولكن (إيان) الأخ الأكبر لـ(أوين) يسعي للإنتقام لمقتل أخيه من دومينيك، وبالتالي تصمم العصابة بأكملها علي الانتقام من الرجل الذي قام بقتل صديقهم.",
     "poster": "https://image.tmdb.org/t/p/w500/ktofZ9Htrjiy0P6LEowsDaxd3Ri.jpg",
