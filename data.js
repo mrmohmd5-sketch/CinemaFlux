@@ -192,7 +192,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Spider-Man",
+    "title": "Spider Man",
     "desc": "يتعرض مراهق خجول للدغة عنكبوت معدل وراثيًا، فيستغل قدراته الجديدة الشبيهة بالعنكبوت لمحاربة الظلم كبطل خارق مقنع.",
     "poster": "https://image.tmdb.org/t/p/w500/hmOhNnyV0F1e3lhVO2jDS8tJfc6.jpg",
     "hdUrl": "https://playmogo.com/e/cytz5x9y9axn",
@@ -224,7 +224,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Spider-Man 3",
+    "title": "Spider Man 3",
     "desc": "كيانٌ أسود غريب من عالمٍ آخر يرتبط ببيتر باركر، مُسبباً له اضطراباً داخلياً بينما يُواجه أشراراً جدداً، وإغراءات، ورغبةً في الانتقام.",
     "poster": "https://image.tmdb.org/t/p/w500/6nlLQ5IzxsRgOJsdSfgfh9N6Ccl.jpg",
     "hdUrl": "https://playmogo.com/e/0o6alxhf4aaw",
@@ -256,7 +256,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Spider-Man 2",
+    "title": "Spider Man 2",
     "desc": "يُعاني بيتر باركر من مشاكل في حياته الشخصية المتداعية، بينما يُواجه عالماً لامعاً سابقاً يُدعى أوتو أوكتافيوس.",
     "poster": "https://image.tmdb.org/t/p/w500/oUolSpUruuojKcL5E6blI2TTf9b.jpg",
     "hdUrl": "https://playmogo.com/e/508e13w16wsc",
