@@ -204,16 +204,6 @@
         .cast-avatar { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); margin-bottom: 5px; }
         .cast-name { font-size: 11px; font-weight: 500; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 75px; }
 
-        /* تخصيصات قسم التعليقات الجديد والمدمج بشكل متناسق */
-        .comments-section { margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px; }
-        .comments-list { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
-        .comment-item { background-color: var(--bg-surface); border: 1px solid var(--border-color); padding: 12px; border-radius: 8px; }
-        .comment-user { font-size: 12px; font-weight: bold; color: var(--accent); margin-bottom: 4px; display: flex; align-items: center; gap: 5px; }
-        .comment-text { font-size: 13px; color: var(--text-main); line-height: 1.5; margin: 0; word-break: break-word; }
-        .comment-input-box { display: flex; gap: 10px; margin-top: 15px; }
-        .comment-input-box input { flex: 1; background-color: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-main); border-radius: 20px; padding: 10px 15px; font-size: 13px; outline: none; }
-        .comment-submit-btn { background-color: var(--accent); color: #fff; border: none; border-radius: 20px; padding: 0 20px; font-size: 13px; font-weight: bold; cursor: pointer; }
-
         /* نافذة تسجيل الدخول المنبثقة المبسطة */
         .auth-overlay {
             position: fixed;
@@ -383,15 +373,6 @@
                     <div class="row-title" style="font-size: 14px; margin-bottom: 10px; padding: 0;" id="txtCastTitle">الكادر والطاقم</div>
                     <div class="cast-slider" id="castListSlider"></div>
                 </div>
-
-                <div class="comments-section">
-                    <div class="row-title" style="font-size: 14px; padding: 0;" id="txtCommentsTitle">آراء وتعليقات المشاهدين</div>
-                    <div class="comments-list" id="commentsListContainer"></div>
-                    <div class="comment-input-box">
-                        <input type="text" id="commentTextInput" placeholder="اكتب تعليقك هنا بكل حرية...">
-                        <button class="comment-submit-btn" onclick="addCommentAction()">إرسال</button>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -525,7 +506,7 @@
             moviesSlider.innerHTML = '';
             seriesSlider.innerHTML = '';
 
-            // 1. عرض أحدث 10 عناصر في السلايدر العلوي
+            // 1. عرض أحدث 10 عناصر مضافة فقط وتلاشي القديم منه تلقائياً
             const newestItems = [...allMoviesData].slice(-10).reverse();
             newestItems.forEach(item => {
                 const slide = document.createElement('div');
@@ -541,7 +522,7 @@
                 featuredSlider.appendChild(slide);
             });
 
-            // 2. توزيع الباقي على تصنيفات الأفلام والمسلسلات
+            // 2. توزيع جميع العناصر على تصنيفات الأفلام والمسلسلات دون حذف أو تأثير
             let hasMovies = false, hasSeries = false;
             allMoviesData.forEach(item => {
                 const card = document.createElement('div');
@@ -607,9 +588,6 @@
 
             // إضافة الفيلم إلى سجل المشاهدة للمستخدم
             addToWatchHistory(item);
-
-            // توليد التعليقات الخاصة بهذا الفيلم
-            renderComments();
         }
 
         function closeMoviePage() {
@@ -639,57 +617,6 @@
                 btnSD.classList.add('active');
                 btnHD.classList.remove('active');
             }
-        }
-
-        // ================= نظام التعليقات المطور لكل فيلم بشكل مستقل =================
-        function renderComments() {
-            const container = document.getElementById('commentsListContainer');
-            container.innerHTML = '';
-            
-            if(!activeMovieItem) return;
-
-            // جلب التعليقات باستخدام عنوان العمل لفرزها
-            let allStorageComments = JSON.parse(localStorage.getItem('cf_media_comments')) || {};
-            let currentMediaComments = allStorageComments[activeMovieItem.title] || [];
-
-            if (currentMediaComments.length === 0) {
-                container.innerHTML = `<div style="text-align:center; padding:15px; color:var(--text-sub); font-size:12px;">لا توجد تعليقات بعد، كن أول من يعلق! 💬</div>`;
-                return;
-            }
-
-            currentMediaComments.forEach(comment => {
-                const item = document.createElement('div');
-                item.className = 'comment-item';
-                item.innerHTML = `
-                    <div class="comment-user">👤 ${comment.user}</div>
-                    <p class="comment-text">${comment.text}</p>
-                `;
-                container.appendChild(item);
-            });
-        }
-
-        function addCommentAction() {
-            const input = document.getElementById('commentTextInput');
-            const text = input.value.trim();
-            if(!text || !activeMovieItem) return;
-
-            // تحديد اسم المعلق (اسم المستخدم المسجل أو معلق مجهول)
-            let commenterName = currentUser ? currentUser.username : (currentLang === 'ar' ? 'مشاهد مجهول' : 'Anonymous Guest');
-
-            let allStorageComments = JSON.parse(localStorage.getItem('cf_media_comments')) || {};
-            if(!allStorageComments[activeMovieItem.title]) {
-                allStorageComments[activeMovieItem.title] = [];
-            }
-
-            allStorageComments[activeMovieItem.title].push({
-                user: commenterName,
-                text: text,
-                timestamp: Date.now()
-            });
-
-            localStorage.setItem('cf_media_comments', JSON.stringify(allStorageComments));
-            input.value = '';
-            renderComments();
         }
 
         // ================= نظام البحث المباشر الاحترافي وسجل البحث =================
