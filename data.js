@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fast & Furious",
+    "desc": "عندما تعيدهم جريمة ما إلى لوس أنجلوس ، يشعل المحتال السابق الهارب دوم توريتو عداءه مع العميل بريان أوكونر.  لكن بما أنهم مجبرون على مواجهة عدو مشترك ، يجب على دوم وبريان الاستسلام لثقة جديدة غير مؤكدة إذا كانا يأملان في التغلب عليه.  وسيجد الرجلان أفضل طريقة للانتقام: دفع حدود ما هو ممكن خلف عجلة القيادة.",
+    "poster": "https://image.tmdb.org/t/p/w500/lUtVoRukW7WNtUySwd8hWlByBds.jpg",
+    "hdUrl": "https://playmogo.com/e/sap6doxuledz",
+    "sdUrl": "https://playmogo.com/e/sap6doxuledz",
+    "rating": "6.7",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Paul Walker",
+            "image": "https://image.tmdb.org/t/p/w185/q2PLqKHYCs35HR7QybaNPH3JT96.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Jordana Brewster",
+            "image": "https://image.tmdb.org/t/p/w185/ceL0zxeVbWfCfhoIDZIE1NYqBWb.jpg"
+        },
+        {
+            "name": "John Ortiz",
+            "image": "https://image.tmdb.org/t/p/w185/o2SOFI53N6Gv5S3fDEBNbeimbzY.jpg"
+        }
+    ]
+},
+    {
     "title": "2 Fast 2 Furious",
     "desc": "إنه تقاطع مزدوج كبير عندما يتعاون ضابط الشرطة السابق بريان أوكونر مع صديقه السابق رومان بيرس لنقل شحنة من الأموال 'القذرة' لتاجر الاستيراد والتصدير المشبوه في ميامي كارتر فيرون.  لكن الرجال يعملون بالفعل مع العميلة السرية مونيكا فوينتيس لإسقاط فيرون.",
     "poster": "https://image.tmdb.org/t/p/w500/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg",
