@@ -736,11 +736,11 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "The Fast and the Furious",
+    "title": "",
     "desc": "دومينيك توريتو هو متسابق شوارع لوس أنجلوس يشتبه في أنه العقل المدبر لسلسلة من عمليات اختطاف منصات الحفر الكبيرة.  عندما يتسلل الشرطي السري Brian O'Conner إلى طاقم Toretto الأيقوني ، يقع في حب أخت Toretto ويجب عليه اختيار جانب: العصابة أو شرطة LAPD.",
     "poster": "https://image.tmdb.org/t/p/w500/gqY0ITBgT7A82poL9jv851qdnIb.jpg",
-    "hdUrl": "https://playmogo.com/e/mbqtxruwq4ck",
-    "sdUrl": "https://playmogo.com/e/mbqtxruwq4ck",
+    "hdUrl": "",
+    "sdUrl": "",
     "rating": "7.0",
     "genre": "حركة جريمة إثارة",
     "type": "movie",
