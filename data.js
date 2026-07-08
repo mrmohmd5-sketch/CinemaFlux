@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Turning Red",
+    "desc": "تعاني مي البالغة من العمر ثلاثة عشر عامًا من الإحراج لكونها مراهقة مع تطور - عندما تكون متحمسة للغاية ، تتحول إلى باندا حمراء عملاقة.",
+    "poster": "https://image.tmdb.org/t/p/w500/6dYlPfAD8kjnSZtjaZiVTZebyeu.jpg",
+    "hdUrl": "https://streamtape.com/e/1OoOqQOol8UypV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1OoOqQOol8UypV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "رسوم متحركة عائلي كوميديا فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Rosalie Chiang",
+            "image": "https://image.tmdb.org/t/p/w185/iVj6L5Mu5Esok2M3NIeTCdFBiW3.jpg"
+        },
+        {
+            "name": "Sandra Oh",
+            "image": "https://image.tmdb.org/t/p/w185/zU8vjebHxcP60ESEL5Ok68KWZvj.jpg"
+        },
+        {
+            "name": "Ava Morse",
+            "image": "https://image.tmdb.org/t/p/w185/9Yv7Prxfs1SUNuyOyrSzlUsJ5lI.jpg"
+        },
+        {
+            "name": "Hyein Park",
+            "image": "https://image.tmdb.org/t/p/w185/dDGYpMSGoo18k2xj0ydaN1JHIMR.jpg"
+        },
+        {
+            "name": "Maitreyi Ramakrishnan",
+            "image": "https://image.tmdb.org/t/p/w185/dkhYjeCU5ByYKxAr2wtXz20vb60.jpg"
+        }
+    ]
+},
+    {
     "title": "Elemental",
     "desc": "الأضداد تتفاعل.  في مدينة يعيش فيها سكان النار والماء والأرض والهواء معا ، ستكتشف شابة نارية ورجل يسير مع التدفق شيئا أساسيا: مقدار القواسم المشتركة بينهما.",
     "poster": "https://image.tmdb.org/t/p/w500/nq8HN4VUNYMvOhsNC6rpBOBoj4D.jpg",
