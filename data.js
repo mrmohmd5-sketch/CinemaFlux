@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man 3",
+    "desc": "كيانٌ أسود غريب من عالمٍ آخر يرتبط ببيتر باركر، مُسبباً له اضطراباً داخلياً بينما يُواجه أشراراً جدداً، وإغراءات، ورغبةً في الانتقام.",
+    "poster": "https://image.tmdb.org/t/p/w500/6nlLQ5IzxsRgOJsdSfgfh9N6Ccl.jpg",
+    "hdUrl": "https://streamtape.com/e/LvlP0yvB3rhRzaL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LvlP0yvB3rhRzaL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tobey Maguire",
+            "image": "https://image.tmdb.org/t/p/w185/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg"
+        },
+        {
+            "name": "Kirsten Dunst",
+            "image": "https://image.tmdb.org/t/p/w185/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg"
+        },
+        {
+            "name": "James Franco",
+            "image": "https://image.tmdb.org/t/p/w185/bjmAntHGiibLZixH8nTNVBzaFQn.jpg"
+        },
+        {
+            "name": "Thomas Haden Church",
+            "image": "https://image.tmdb.org/t/p/w185/74NK9HCYvNafMggSp1PAK5Nwkpe.jpg"
+        },
+        {
+            "name": "Topher Grace",
+            "image": "https://image.tmdb.org/t/p/w185/oJQxl4DG0KSCtOGrpWNhYz9gUZA.jpg"
+        }
+    ]
+},
+    {
     "title": "Spider-Man 2",
     "desc": "يُعاني بيتر باركر من مشاكل في حياته الشخصية المتداعية، بينما يُواجه عالماً لامعاً سابقاً يُدعى أوتو أوكتافيوس.",
     "poster": "https://image.tmdb.org/t/p/w500/oUolSpUruuojKcL5E6blI2TTf9b.jpg",
