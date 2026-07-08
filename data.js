@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Raya and the Last Dragon",
+    "desc": "السعي لإنقاذ عالمها.\r منذ فترة طويلة ، في عالم كوماندرا الخيالي ، عاش البشر والتنانين معا في وئام. ولكن عندما هددت قوة شريرة الأرض ، ضحت التنانين بنفسها لإنقاذ البشرية. الآن ، بعد 500 عام ، عاد هذا الشر نفسه والأمر متروك لمحارب وحيد ، رايا ، لتعقب التنين الأخير الأسطوري لاستعادة الأرض الممزقة وشعبها المنقسم.",
+    "poster": "https://image.tmdb.org/t/p/w500/xXdFRWa9StuMy34hqf3E33cMMvx.jpg",
+    "hdUrl": "https://streamtape.com/e/X17GWZrGrDcA9P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/X17GWZrGrDcA9P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة حركة مغامرة فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kelly Marie Tran",
+            "image": "https://image.tmdb.org/t/p/w185/wmJTR2vxcCWKNMF7XPdNqhmo2rj.jpg"
+        },
+        {
+            "name": "Awkwafina",
+            "image": "https://image.tmdb.org/t/p/w185/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+        },
+        {
+            "name": "Gemma Chan",
+            "image": "https://image.tmdb.org/t/p/w185/stTKj4iNauhqlVmZ6XAsFsvcMCY.jpg"
+        },
+        {
+            "name": "Alan Tudyk",
+            "image": "https://image.tmdb.org/t/p/w185/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg"
+        },
+        {
+            "name": "Izaac Wang",
+            "image": "https://image.tmdb.org/t/p/w185/4vYS9NuDUFhzT9B9pFyjDTeNZiY.jpg"
+        }
+    ]
+},
+    {
     "title": "The Fast and the Furious: Tokyo Drift",
     "desc": "من أجل تجنب عقوبة السجن ، يتوجه شون بوسويل إلى طوكيو للعيش مع والده العسكري.  في منطقة منخفضة الإيجار من المدينة ، تنشغل شون في عالم سباقات الانجراف تحت الأرض",
     "poster": "https://image.tmdb.org/t/p/w500/46xqGOwHbh2TH2avWSw3SMXph4E.jpg",
