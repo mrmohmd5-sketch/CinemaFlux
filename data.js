@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man 2",
+    "desc": "يُعاني بيتر باركر من مشاكل في حياته الشخصية المتداعية، بينما يُواجه عالماً لامعاً سابقاً يُدعى أوتو أوكتافيوس.",
+    "poster": "https://image.tmdb.org/t/p/w500/oUolSpUruuojKcL5E6blI2TTf9b.jpg",
+    "hdUrl": "https://streamtape.com/e/41p9xrqW1XuykW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/41p9xrqW1XuykW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tobey Maguire",
+            "image": "https://image.tmdb.org/t/p/w185/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg"
+        },
+        {
+            "name": "Kirsten Dunst",
+            "image": "https://image.tmdb.org/t/p/w185/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg"
+        },
+        {
+            "name": "James Franco",
+            "image": "https://image.tmdb.org/t/p/w185/bjmAntHGiibLZixH8nTNVBzaFQn.jpg"
+        },
+        {
+            "name": "Alfred Molina",
+            "image": "https://image.tmdb.org/t/p/w185/nJo91Czesn6z0d0pkfbDoVZY3sg.jpg"
+        },
+        {
+            "name": "Rosemary Harris",
+            "image": "https://image.tmdb.org/t/p/w185/3Mu02enwaF8dFuT195f7esILXns.jpg"
+        }
+    ]
+},
+    {
     "title": "Spider-Man",
     "desc": "يتعرض مراهق خجول للدغة عنكبوت معدل وراثيًا، فيستغل قدراته الجديدة الشبيهة بالعنكبوت لمحاربة الظلم كبطل خارق مقنع.",
     "poster": "https://image.tmdb.org/t/p/w500/hmOhNnyV0F1e3lhVO2jDS8tJfc6.jpg",
