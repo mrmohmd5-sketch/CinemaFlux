@@ -33,7 +33,7 @@ const globalMoviesData = [
 },
     {
     "title": "Arco",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "أركو فتى يبلغ من العمر عشر سنوات في عام ٢٩٣٢، في مستقبل مثالي حيث يعيش البشر في السحاب ويسافرون عبر الزمن باستخدام بدلات طيران بألوان قوس قزح أركو ، لصغر سنه وعدم قدرته على الطيران، يسرق عباءة أخته للسفر عبر الزمن وحجرها الكريم ليلاً، ويحاول السفر إلى الماضي البعيد لرؤية الديناصورات.",
     "poster": "https://image.tmdb.org/t/p/w500/rWvbMnqLTpyTHmNii4TrnmgzpcS.jpg",
     "hdUrl": "https://streamtape.com/e/qyYAKJw3BeuzB1m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/qyYAKJw3BeuzB1m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
