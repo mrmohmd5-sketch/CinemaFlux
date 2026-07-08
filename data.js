@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Arco",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/rWvbMnqLTpyTHmNii4TrnmgzpcS.jpg",
+    "hdUrl": "https://streamtape.com/e/qyYAKJw3BeuzB1m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/qyYAKJw3BeuzB1m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "مغامرة رسوم متحركة عائلي خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Margot Ringard Oldra",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Oscar Tresanini",
+            "image": "https://image.tmdb.org/t/p/w185/jqjdgri0SA5OdAHay4ZTJqEOhcD.jpg"
+        },
+        {
+            "name": "Nathanaël Perrot",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Alma Jodorowsky",
+            "image": "https://image.tmdb.org/t/p/w185/1Uh2MYZmly1nsKHXoveYQlfAANC.jpg"
+        },
+        {
+            "name": "Swann Arlaud",
+            "image": "https://image.tmdb.org/t/p/w185/38iX2NHO7pMdQH1ygoGEJ8E82WV.jpg"
+        }
+    ]
+},
+    {
     "title": "Fast Five",
     "desc": "يخطط دومينيك توريتو وطاقمه من المتسابقين في الشوارع لسرقة هائلة لشراء حريتهم بينما هم في طليعة سيد مخدرات برازيلي قوي ووكيل اتحادي خطير.",
     "poster": "https://image.tmdb.org/t/p/w500/gEfQjjQwY7fh5bI4GlG0RrBu7Pz.jpg",
