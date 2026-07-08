@@ -96,9 +96,12 @@
 
         /* تصنيفات وأسلاك الأفلام العادية */
         .row-header { display: flex; justify-content: space-between; align-items: center; margin: 20px 0 10px 0; }
-        .row-title { font-size: 16px; font-weight: bold; padding: 0 8px; }
+        .row-title { font-size: 16px; font-weight: bold; padding: 0 8px; cursor: pointer; display: flex; align-items: center; gap: 5px; }
+        .row-title:hover { color: var(--accent); }
+        .row-title::after { content: " ❯"; font-size: 12px; opacity: 0.7; }
         html[dir="rtl"] .row-title { border-right: 4px solid var(--accent); }
         html[dir="ltr"] .row-title { border-left: 4px solid var(--accent); }
+        html[dir="rtl"] .row-title::after { content: " ❮"; }
         
         .movies-slider { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; width: 100%; }
         .movies-slider::-webkit-scrollbar { height: 4px; }
@@ -110,6 +113,13 @@
         .movie-name { font-size: 12px; font-weight: bold; margin: 0 0 4px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .movie-meta { display: flex; flex-direction: column; gap: 2px; font-size: 11px; color: var(--text-sub); }
         .imdb-badge { background-color: var(--border-color); color: var(--text-main); padding: 1px 4px; border-radius: 3px; font-weight: bold; font-size: 10px; display: inline-block; width: fit-content; }
+
+        /* تصميم شبكة الأفلام المخصصة لصفحة التصنيف الكاملة */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 15px; margin-top: 15px;
+        }
 
         /* صفحة البحث */
         .search-container { padding: 15px 0; }
@@ -266,6 +276,14 @@
             </div>
 
             <div id="dynamicCategoriesBlock"></div>
+        </div>
+
+        <div id="viewCategoryDetail" class="app-view">
+            <button class="back-nav-btn" onclick="closeCategoryPage()">➔ <span id="txtBackToMainFromCat">الرئيسية</span></button>
+            <div class="row-header">
+                <div class="row-title" id="currentCategoryTitle" style="cursor: default;">التصنيف</div>
+            </div>
+            <div class="category-grid" id="categoryGridItems"></div>
         </div>
 
         <div id="viewSearch" class="app-view">
@@ -508,14 +526,13 @@
             }
         }
 
-        // ================= بناء محتويات الصفحة الرئيسية =================
+        // ================= بناء محتويات الصفحة الرئيسية بالتصنيفات الديناميكية =================
         function renderHomeDOM() {
             const featuredSlider = document.getElementById('featuredSlider');
-            const moviesSlider = document.getElementById('moviesSlider');
-            const seriesSlider = document.getElementById('seriesSlider');
+            const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
+            
             featuredSlider.innerHTML = '';
-            moviesSlider.innerHTML = '';
-            seriesSlider.innerHTML = '';
+            if (categoriesBlock) categoriesBlock.innerHTML = '';
 
             // 1. عرض أول 10 عناصر مباشرة (الأحدث على الإطلاق) في السلايدر العلوي
             const newestItems = [...allMoviesData].slice(0, 10);
@@ -526,18 +543,85 @@
                     <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
                     <div class="slide-details">
                         <div class="slide-title">${item.title}</div>
-                        <button class="slide-btn">▶ <span class="lbl-watch-now">شاهد الآن</span></button>
+                        <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
                     </div>
                 `;
                 slide.onclick = () => openMoviePage(item);
                 featuredSlider.appendChild(slide);
             });
 
-            // 2. توزيع الباقي على تصنيفات الأفلام والمسلسلات
-            let hasMovies = false, hasSeries = false;
+            // 2. نظام التصنيفات الديناميكي الذكي
+            const genresMap = {};
+
             allMoviesData.forEach(item => {
+                if (item.genre) {
+                    const genresList = item.genre.split(',').map(g => g.trim());
+                    genresList.forEach(genre => {
+                        if (!genresMap[genre]) genresMap[genre] = [];
+                        genresMap[genre].push(item);
+                    });
+                } else {
+                    const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
+                    if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
+                    genresMap[defaultGenre].push(item);
+                }
+            });
+
+            // 3. بناء وتوليد القوائم والسلايدرز لكل تصنيف في واجهة الموقع
+            for (const genre in genresMap) {
+                if (genresMap[genre].length === 0) continue;
+
+                const categorySection = document.createElement('div');
+                categorySection.style.marginBottom = '25px';
+
+                const rowHeader = document.createElement('div');
+                rowHeader.className = 'row-header';
+                rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
+                
+                // جعل العنوان يفتح الصفحة الكاملة للتصنيف عند الضغط عليه
+                rowHeader.querySelector('.row-title').onclick = () => openCategoryPage(genre, genresMap[genre]);
+                categorySection.appendChild(rowHeader);
+
+                const moviesSlider = document.createElement('div');
+                moviesSlider.className = 'movies-slider';
+
+                genresMap[genre].forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'movie-card';
+                    card.innerHTML = `
+                        <div class="poster-wrapper">
+                            <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                        </div>
+                        <div class="movie-info">
+                            <p class="movie-name">${item.title}</p>
+                            <div class="movie-meta">
+                                <span class="imdb-badge">${item.rating || 'N/A'}</span>
+                                <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
+                            </div>
+                        </div>
+                    `;
+                    card.onclick = () => openMoviePage(item);
+                    moviesSlider.appendChild(card);
+                });
+
+                categorySection.appendChild(moviesSlider);
+                if (categoriesBlock) categoriesBlock.appendChild(categorySection);
+            }
+        }
+
+        // ================= فتح وإغلاق الصفحة الكاملة لتصنيف معين =================
+        function openCategoryPage(genreName, items) {
+            document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
+            document.getElementById('viewCategoryDetail').classList.add('active');
+            document.getElementById('currentCategoryTitle').innerText = genreName;
+            
+            const gridContainer = document.getElementById('categoryGridItems');
+            gridContainer.innerHTML = '';
+            
+            items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'movie-card';
+                card.style.maxWidth = '100%';
                 card.innerHTML = `
                     <div class="poster-wrapper">
                         <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
@@ -551,109 +635,100 @@
                     </div>
                 `;
                 card.onclick = () => openMoviePage(item);
-
-                if (item.type === 'series') {
-                    seriesSlider.appendChild(card);
-                    hasSeries = true;
-                } else {
-                    moviesSlider.appendChild(card);
-                    hasMovies = true;
-                }
+                gridContainer.appendChild(card);
             });
-
-            document.getElementById('moviesBlock').style.display = hasMovies ? 'block' : 'none';
-            document.getElementById('seriesBlock').style.display = hasSeries ? 'block' : 'none';
         }
 
-        // ================= صفحة تفاصيل الفيلم المنفصلة الكاملة =================
-function renderHomeDOM() {
-    const featuredSlider = document.getElementById('featuredSlider');
-    const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
-    
-    featuredSlider.innerHTML = '';
-    if (categoriesBlock) categoriesBlock.innerHTML = '';
+        function closeCategoryPage() {
+            switchNav('home');
+        }
 
-    // 1. عرض أول 10 عناصر مباشرة (الأحدث على الإطلاق) في السلايدر العلوي
-    const newestItems = [...allMoviesData].slice(0, 10);
-    newestItems.forEach(item => {
-        const slide = document.createElement('div');
-        slide.className = 'slide-item';
-        slide.innerHTML = `
-            <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
-            <div class="slide-details">
-                <div class="slide-title">${item.title}</div>
-                <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
-            </div>
-        `;
-        slide.onclick = () => openMoviePage(item);
-        featuredSlider.appendChild(slide);
-    });
-
-    // 2. نظام التصنيفات الديناميكي الذكي
-    // كائن (Object) لتجميع الأفلام حسب تصنيفاتها
-    const genresMap = {};
-
-    allMoviesData.forEach(item => {
-        if (item.genre) {
-            // تقسيم التصنيفات إذا كان الفيلم يحتوي على أكثر من تصنيف (مثل: رعب, رومانسي)
-            const genresList = item.genre.split(',').map(g => g.trim());
+        // ================= دالة فتح صفحة الفيلم التفصيلية وإصلاح الخطأ القديم =================
+        function openMoviePage(item) {
+            activeMovieItem = item;
+            document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
+            document.getElementById('viewMovieDetail').classList.add('active');
             
-            genresList.forEach(genre => {
-                if (!genresMap[genre]) {
-                    genresMap[genre] = [];
-                }
-                genresMap[genre].push(item);
-            });
-        } else {
-            // تصنيف افتراضي للأعمال التي لا تملك تصنيفاً مكتوباً
-            const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
-            if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
-            genresMap[defaultGenre].push(item);
-        }
-    });
-
-    // 3. بناء وتوليد القوائم والسلايدرز لكل تصنيف في واجهة الموقع
-    for (const genre in genresMap) {
-        if (genresMap[genre].length === 0) continue;
-
-        // إنشاء حاوية التصنيف (البلوك الكامل)
-        const categorySection = document.createElement('div');
-        categorySection.style.marginBottom = '25px';
-
-        // إنشاء عنوان التصنيف (مثال: أكشن، كوميدي...)
-        const rowHeader = document.createElement('div');
-        rowHeader.className = 'row-header';
-        rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
-        categorySection.appendChild(rowHeader);
-
-        // إنشاء السلايدر الأفقي الخاص بهذا التصنيف
-        const moviesSlider = document.createElement('div');
-        moviesSlider.className = 'movies-slider';
-
-        // إضافة الأفلام التابعة لهذا التصنيف داخل السلايدر الخاص به
-        genresMap[genre].forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'movie-card';
-            card.innerHTML = `
-                <div class="poster-wrapper">
-                    <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
-                </div>
-                <div class="movie-info">
-                    <p class="movie-name">${item.title}</p>
-                    <div class="movie-meta">
-                        <span class="imdb-badge">${item.rating || 'N/A'}</span>
-                        <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
-                    </div>
+            currentHD = item.hdUrl || "";
+            currentSD = item.sdUrl || item.hdUrl || "";
+            
+            const iframe = document.getElementById('mainIframe');
+            iframe.src = currentHD;
+            
+            document.getElementById('currentTitle').innerText = item.title;
+            document.getElementById('currentRating').innerText = item.rating || "0.0";
+            document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
+            document.getElementById('currentDesc').innerText = item.desc || "";
+            
+            // تبديل السيرفر الافتراضي للـ HD
+            document.getElementById('btnHD').classList.add('active');
+            document.getElementById('btnSD').classList.remove('active');
+            
+            // بناء طاقم العمل
+            const castSlider = document.getElementById('castListSlider');
+            castSlider.innerHTML = '';
+            if (item.cast && item.cast.length > 0) {
+                document.getElementById('castContainerBlock').style.display = 'block';
+                item.cast.forEach(c => {
+                    const castCard = document.createElement('div');
+                    castCard.className = 'cast-card';
+                    castCard.innerHTML = `
+                        <img class="cast-avatar" src="${c.img}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+                        <div class="cast-name">${c.name}</div>
+                    `;
+                    castSlider.appendChild(castCard);
+                });
+            } else {
+                document.getElementById('castContainerBlock').style.display = 'none';
+            }
+            
+            // جلب التعليقات الافتراضية
+            const commentsContainer = document.getElementById('commentsListContainer');
+            commentsContainer.innerHTML = `
+                <div class="comment-item">
+                    <div class="comment-user">👤 أحمد علي</div>
+                    <p class="comment-text">فيلم رائع جداً وممتع، أنصح بالكل بمشاهدته! الكواليتي خرافية وسرعة السيرفر ممتازة.</p>
                 </div>
             `;
-            card.onclick = () => openMoviePage(item);
-            moviesSlider.appendChild(card);
-        });
+            
+            addToWatchHistory(item);
+        }
 
-        categorySection.appendChild(moviesSlider);
-        if (categoriesBlock) categoriesBlock.appendChild(categorySection);
-    }
-}
+        function closeMoviePage() {
+            document.getElementById('mainIframe').src = "";
+            switchNav('home');
+        }
+
+        function changeServer(type) {
+            const iframe = document.getElementById('mainIframe');
+            if (type === 'HD') {
+                iframe.src = currentHD;
+                document.getElementById('btnHD').classList.add('active');
+                document.getElementById('btnSD').classList.remove('active');
+            } else {
+                iframe.src = currentSD;
+                document.getElementById('btnSD').classList.add('active');
+                document.getElementById('btnHD').classList.remove('active');
+            }
+        }
+
+        function addCommentAction() {
+            const input = document.getElementById('commentTextInput');
+            const text = input.value.trim();
+            if (!text) return;
+            
+            const commentsContainer = document.getElementById('commentsListContainer');
+            const item = document.createElement('div');
+            item.className = 'comment-item';
+            
+            const name = currentUser ? currentUser.username : (currentLang === 'ar' ? "مشاهد مجهول" : "Anonymous User");
+            item.innerHTML = `
+                <div class="comment-user">👤 ${name}</div>
+                <p class="comment-text">${text}</p>
+            `;
+            commentsContainer.appendChild(item);
+            input.value = "";
+        }
 
         // ================= نظام البحث المباشر الاحترافي وسجل البحث =================
         function handleSearchSearch() {
@@ -784,7 +859,7 @@ function renderHomeDOM() {
             listContainer.innerHTML = '';
 
             if(watchHistory.length === 0) {
-                listContainer.innerHTML = `<div style="text-align:center; padding:40px var(--text-sub); color:var(--text-sub); font-size:13px;">${currentLang === 'ar' ? 'سجل المشاهدة فارغ حالياً 🎬' : 'Your watch history is currently empty 🎬'}</div>`;
+                listContainer.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-sub); font-size:13px;">${currentLang === 'ar' ? 'سجل المشاهدة فارغ حالياً 🎬' : 'Your watch history is currently empty 🎬'}</div>`;
                 return;
             }
 
@@ -847,9 +922,6 @@ function renderHomeDOM() {
             document.getElementById('txtSearchResultsTitle').innerText = dict.searchResultsTitle;
             document.getElementById('noResultsMessage').innerText = dict.noResults;
 
-            document.getElementById('txtMoviesSection').innerText = dict.moviesSection;
-            document.getElementById('txtSeriesSection').innerText = dict.seriesSection;
-
             document.getElementById('txtMenuHistory').innerText = dict.watchHistoryTitle;
             document.getElementById('txtMenuSettings').innerText = dict.settingsTitle;
 
@@ -873,6 +945,7 @@ function renderHomeDOM() {
             document.getElementById('txtClearWatchHistoryBtn').innerText = dict.clearAllBtn;
 
             document.getElementById('txtBackToMain').innerText = dict.backToMain;
+            document.getElementById('txtBackToMainFromCat').innerText = dict.backToMain;
             document.getElementById('btnHD').innerText = dict.hdServer;
             document.getElementById('btnSD').innerText = dict.sdServer;
             document.getElementById('btnCast').innerText = dict.castBtn;
@@ -898,7 +971,6 @@ function renderHomeDOM() {
         // ================= نظام العضوية وتسجيل الدخول المحاكي الآمن =================
         function openAuthModal() {
             if (currentUser) {
-                // تسجيل خروج مباشر
                 if(confirm(currentLang === 'ar' ? "هل تريد تسجيل الخروج؟" : "Do you want to log out?")) {
                     currentUser = null;
                     localStorage.removeItem('cf_user');
@@ -945,7 +1017,6 @@ function renderHomeDOM() {
             }
 
             if(authMode === 'login') {
-                // تسجيل دخول افتراضي لأي يوزر للحفاظ على بساطة وتكامل الكود المطلب
                 currentUser = { username: user };
                 localStorage.setItem('cf_user', JSON.stringify(currentUser));
                 alert(isAr ? `مرحباً بك مجدداً، ${user} ✨` : `Welcome back, ${user} ✨`);
@@ -991,7 +1062,6 @@ function renderHomeDOM() {
                     url: window.location.href,
                 }).catch(console.error);
             } else {
-                // Fallback copy link
                 navigator.clipboard.writeText(`${shareText} \n ${window.location.href}`);
                 alert(currentLang === 'ar' ? "تم نسخ رابط الموقع بنجاح، يمكنك مشاركته الآن مع أصدقائك!" : "Website link copied successfully, you can share it now with your friends!");
             }
