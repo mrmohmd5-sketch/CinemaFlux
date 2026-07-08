@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Enola Holmes 2",
+    "desc": "تتولّى 'إينولا' أوّل قضية رسمية لها كمحققة، ولكن لحلّ اللغز الكامن وراء اختفاء فتاة، ستحتاج إلى مساعدة من أصدقائها... ومن أخيها 'شيرلوك'، بالطبع.",
+    "poster": "https://image.tmdb.org/t/p/w500/dYFIJSGCpZ88Ic7zC14txbQnGX0.jpg",
+    "hdUrl": "https://streamtape.com/e/kkaZO1VMWpFOMye/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/kkaZO1VMWpFOMye/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "مغامرة غموض جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Millie Bobby Brown",
+            "image": "https://image.tmdb.org/t/p/w185/k9KGzGDVhXKfOGpoN62MNuXL28q.jpg"
+        },
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "David Thewlis",
+            "image": "https://image.tmdb.org/t/p/w185/gJqz8h5AKaVvOLS0hm5Vdvel6JB.jpg"
+        },
+        {
+            "name": "Louis Partridge",
+            "image": "https://image.tmdb.org/t/p/w185/s6AW7VreXxAjhaHgjg9HV3tRM2T.jpg"
+        },
+        {
+            "name": "Susan Wokoma",
+            "image": "https://image.tmdb.org/t/p/w185/puEiaNQZyG2gGfIZCyexbtrcv1F.jpg"
+        }
+    ]
+},
+    {
     "title": "Enola Holmes",
     "desc": "أثناء بحثها عن والدتها المفقودة، تستغل المراهقة الجريئة 'إينولا هولمز' مهارتها في التحري للتفوق على أخيها الأكبر 'شيرلوك' ومساعدة لورد هارب.",
     "poster": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
