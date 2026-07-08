@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Onward",
+    "desc": "يبدأ سعيهم.  في عالم خيالي في الضواحي ، يشرع شقيقان مراهقان من الأقزام في مهمة غير عادية لاكتشاف ما إذا كان لا يزال هناك القليل من السحر المتبقي هناك.",
+    "poster": "https://image.tmdb.org/t/p/w500/6lEII9r4WX0Xy9Yq6ZnPPiEEFOi.jpg",
+    "hdUrl": "https://streamtape.com/e/Zj26vJ6m3RSqW99/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Zj26vJ6m3RSqW99/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "مغامرة رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Holland",
+            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+            "name": "Chris Pratt",
+            "image": "https://image.tmdb.org/t/p/w185/872Hzdq95gsbMRabsColTW3TLrD.jpg"
+        },
+        {
+            "name": "Julia Louis-Dreyfus",
+            "image": "https://image.tmdb.org/t/p/w185/iEfHQNrVbVFesDPjdySom9nqsFg.jpg"
+        },
+        {
+            "name": "Octavia Spencer",
+            "image": "https://image.tmdb.org/t/p/w185/zDGydyM1fmvNWzQlTAns9IZjNxT.jpg"
+        },
+        {
+            "name": "Mel Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wwvthcEDo6WHOHumcoh1tT1IaoB.jpg"
+        }
+    ]
+},
+    {
     "title": "Raya and the Last Dragon",
     "desc": "السعي لإنقاذ عالمها.\r منذ فترة طويلة ، في عالم كوماندرا الخيالي ، عاش البشر والتنانين معا في وئام. ولكن عندما هددت قوة شريرة الأرض ، ضحت التنانين بنفسها لإنقاذ البشرية. الآن ، بعد 500 عام ، عاد هذا الشر نفسه والأمر متروك لمحارب وحيد ، رايا ، لتعقب التنين الأخير الأسطوري لاستعادة الأرض الممزقة وشعبها المنقسم.",
     "poster": "https://image.tmdb.org/t/p/w500/xXdFRWa9StuMy34hqf3E33cMMvx.jpg",
