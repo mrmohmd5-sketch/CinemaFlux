@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fast X",
+    "desc": "تدور احداث الفيلم حيث ينطلق (دانتي) - ابن زعيم الجريمة (هيرنان رييس) - الذي قُتل قبل عشر سنوات للانتقام من البطل (دوم توريتو) وعائلته وشركائه بعد التسبب في مقتل والده وسرقة أمواله.",
+    "poster": "https://image.tmdb.org/t/p/w500/mgBcSHJt8fcRfXn8LcWusrCt0Kw.jpg",
+    "hdUrl": "https://streamtape.com/e/YK3PJ9xAO9TOM0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YK3PJ9xAO9TOM0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Tyrese Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg"
+        },
+        {
+            "name": "Ludacris",
+            "image": "https://image.tmdb.org/t/p/w185/erkJijujhe48vhJ8iCEtVpNEeVn.jpg"
+        },
+        {
+            "name": "John Cena",
+            "image": "https://image.tmdb.org/t/p/w185/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg"
+        }
+    ]
+},
+    {
     "title": "Ant-Man and the Wasp",
     "desc": "بينما يوازن سكوت لانغ بين كونه بطلاً خارقاً وأباً، تُقدّم هوب فان داين والدكتور هانك بيم مهمةً جديدةً عاجلةً يجد فيها الرجل النملة نفسه يقاتل جنباً إلى جنب مع الدبور لكشف أسرار من ماضيهما.",
     "poster": "https://image.tmdb.org/t/p/w500/yFcXy5i8tFU8kxia69WaLL93k0Z.jpg",
