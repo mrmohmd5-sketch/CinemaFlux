@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "desc": "مايلز موراليس يحاول موازنة حياته بين كونه طالب في المدرسة الثانوية وكونه سبايدرمان. ومع ذلك، فعندما يستخدم ويلسون فيسك مصادما مغناطيسيا ضخم، يأتي سبايدرمان من بُعد آخر، بيتر باركر، ويصطدم في بعد مايلز.",
+    "poster": "https://image.tmdb.org/t/p/w500/lN14sq6Yd4nCcr4OliN7OX8QsiI.jpg",
+    "hdUrl": "https://streamtape.com/e/YK3PJ9xAO9TOM0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YK3PJ9xAO9TOM0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "رسوم متحركة حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Shameik Moore",
+            "image": "https://image.tmdb.org/t/p/w185/ovUKfVOwJ7CadEHaG3NDsfA5xRq.jpg"
+        },
+        {
+            "name": "Jake Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/3UNfW2qZgRkW81neNVfQvaRC92K.jpg"
+        },
+        {
+            "name": "Hailee Steinfeld",
+            "image": "https://image.tmdb.org/t/p/w185/4K2dzM3odGiVZOQOD6RjVxNq2ZQ.jpg"
+        },
+        {
+            "name": "Mahershala Ali",
+            "image": "https://image.tmdb.org/t/p/w185/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg"
+        },
+        {
+            "name": "Brian Tyree Henry",
+            "image": "https://image.tmdb.org/t/p/w185/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg"
+        }
+    ]
+},
+    {
     "title": "Fast X",
     "desc": "تدور احداث الفيلم حيث ينطلق (دانتي) - ابن زعيم الجريمة (هيرنان رييس) - الذي قُتل قبل عشر سنوات للانتقام من البطل (دوم توريتو) وعائلته وشركائه بعد التسبب في مقتل والده وسرقة أمواله.",
     "poster": "https://image.tmdb.org/t/p/w500/mgBcSHJt8fcRfXn8LcWusrCt0Kw.jpg",
