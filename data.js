@@ -800,38 +800,6 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Fast X",
-    "desc": "تدور احداث الفيلم حيث ينطلق (دانتي) - ابن زعيم الجريمة (هيرنان رييس) - الذي قُتل قبل عشر سنوات للانتقام من البطل (دوم توريتو) وعائلته وشركائه بعد التسبب في مقتل والده وسرقة أمواله.",
-    "poster": "https://image.tmdb.org/t/p/w500/mgBcSHJt8fcRfXn8LcWusrCt0Kw.jpg",
-    "hdUrl": "https://playmogo.com/d/cmboot3qvaeq",
-    "sdUrl": "https://playmogo.com/d/cmboot3qvaeq",
-    "rating": "7.0",
-    "genre": "حركة جريمة إثارة",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Vin Diesel",
-            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
-        },
-        {
-            "name": "Michelle Rodriguez",
-            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
-        },
-        {
-            "name": "Tyrese Gibson",
-            "image": "https://image.tmdb.org/t/p/w185/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg"
-        },
-        {
-            "name": "Ludacris",
-            "image": "https://image.tmdb.org/t/p/w185/erkJijujhe48vhJ8iCEtVpNEeVn.jpg"
-        },
-        {
-            "name": "John Cena",
-            "image": "https://image.tmdb.org/t/p/w185/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg"
-        }
-    ]
-},
-    {
     "title": "Fast Five",
     "desc": "يخطط دومينيك توريتو وطاقمه من المتسابقين في الشوارع لسرقة هائلة لشراء حريتهم بينما هم في طليعة سيد مخدرات برازيلي قوي ووكيل اتحادي خطير.",
     "poster": "https://image.tmdb.org/t/p/w500/gEfQjjQwY7fh5bI4GlG0RrBu7Pz.jpg",
