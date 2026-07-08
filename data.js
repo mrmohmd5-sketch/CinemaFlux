@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Onward",
+    "title": "مدبلجOnward",
     "desc": "يبدأ سعيهم.  في عالم خيالي في الضواحي ، يشرع شقيقان مراهقان من الأقزام في مهمة غير عادية لاكتشاف ما إذا كان لا يزال هناك القليل من السحر المتبقي هناك.",
     "poster": "https://image.tmdb.org/t/p/w500/6lEII9r4WX0Xy9Yq6ZnPPiEEFOi.jpg",
     "hdUrl": "https://streamtape.com/e/Zj26vJ6m3RSqW99/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -32,7 +32,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Raya and the Last Dragon",
+    "title": "مدبلجRaya and the Last Dragon",
     "desc": "السعي لإنقاذ عالمها.\r منذ فترة طويلة ، في عالم كوماندرا الخيالي ، عاش البشر والتنانين معا في وئام. ولكن عندما هددت قوة شريرة الأرض ، ضحت التنانين بنفسها لإنقاذ البشرية. الآن ، بعد 500 عام ، عاد هذا الشر نفسه والأمر متروك لمحارب وحيد ، رايا ، لتعقب التنين الأخير الأسطوري لاستعادة الأرض الممزقة وشعبها المنقسم.",
     "poster": "https://image.tmdb.org/t/p/w500/xXdFRWa9StuMy34hqf3E33cMMvx.jpg",
     "hdUrl": "https://streamtape.com/e/X17GWZrGrDcA9P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
