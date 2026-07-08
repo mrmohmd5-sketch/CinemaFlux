@@ -192,38 +192,6 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Spider-Man: Homecoming",
-    "desc": "يحاول بيتر باركر منع أدريان 'النسر' تومز من بيع أسلحة مصنوعة بتقنية تشيتوري المتطورة، بينما يسعى في الوقت نفسه إلى تحقيق التوازن بين حياته كطالب ثانوي عادي.",
-    "poster": "https://image.tmdb.org/t/p/w500/6sTSMOw6n5AZc18RNm1s4wOkVIP.jpg",
-    "hdUrl": "https://playmogo.com/e/pv1ds6ll1gtr",
-    "sdUrl": "https://playmogo.com/e/pv1ds6ll1gtr",
-    "rating": "7.3",
-    "genre": "حركة مغامرة خيال علمي",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Tom Holland",
-            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
-        },
-        {
-            "name": "Michael Keaton",
-            "image": "https://image.tmdb.org/t/p/w185/tYSja1KByFnZ4Hkp3stPqkKHnNL.jpg"
-        },
-        {
-            "name": "Robert Downey Jr.",
-            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
-        },
-        {
-            "name": "Marisa Tomei",
-            "image": "https://image.tmdb.org/t/p/w185/5w6qM8FWsl5SutKSpx6Va64eCTE.jpg"
-        },
-        {
-            "name": "Jon Favreau",
-            "image": "https://image.tmdb.org/t/p/w185/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
-        }
-    ]
-},
-    {
     "title": "Spider-Man: Far From Home",
     "desc": "يواجه بيتر باركر، البطل الخارق المحبوب سبايدرمان، أربعة وحوش عنصرية مدمرة أثناء عطلته في أوروبا. وسرعان ما يتلقى المساعدة من ميستيريو، بطل آخر ذو أصول غامضة.",
     "poster": "https://image.tmdb.org/t/p/w500/mlpnjjtdQpOouPOkvO6TBsBwlCO.jpg",
