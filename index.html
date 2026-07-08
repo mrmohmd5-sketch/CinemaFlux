@@ -207,12 +207,12 @@
 
         /* قسم الممثلين الاحترافي */
         .cast-container { margin-top: 20px; }
-        .cast-slider { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px; }
+        .cast-slider { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px; width: 100%; }
         .cast-slider::-webkit-scrollbar { height: 4px; }
         .cast-slider::-webkit-scrollbar-thumb { background-color: var(--border-color); border-radius: 4px; }
         .cast-card { min-width: 70px; text-align: center; }
-        .cast-avatar { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); margin-bottom: 5px; }
-        .cast-name { font-size: 11px; font-weight: 500; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 75px; }
+        .cast-avatar { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); margin-bottom: 5px; display: block; margin-left: auto; margin-right: auto; }
+        .cast-name { font-size: 11px; font-weight: 500; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 75px; margin: 0 auto; }
 
         /* تخصيصات قسم التعليقات الجديد والمدمج بشكل متناسق */
         .comments-section { margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px; }
@@ -309,7 +309,7 @@
 
         <div id="viewProfile" class="app-view">
             <div class="profile-card">
-                <div class="profile-title" id="userDisplayTitle">هل لديك حساب؟</div>
+                <div class="profile-title" id="userDisplayTitle">هل لديك حساب?</div>
                 <div class="profile-subtitle" id="userDisplaySubtitle">سجل الدخول واكتشف المزيد</div>
                 <button class="profile-btn" id="authBtnAction" onclick="openAuthModal()">تسجيل الدخول</button>
             </div>
@@ -485,7 +485,7 @@
             if (typeof globalMoviesData !== 'undefined') {
                 allMoviesData = globalMoviesData;
             } else {
-                // بيانات تجريبية احترافية في حال غياب data.js للحفاظ على استقرار العمل
+                // بيانات تجريبية في حال غياب ملف data.js
                 allMoviesData = [
                     { title: "هوس", type: "movie", rating: "8.2", genre: "رعب, رومانسي", year: "2025", poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400", desc: "في إطار من الرعب، يتمنى شاب حالم أمنية بهدف الفوز بقلب الفتاة التي يحبها...", hdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", sdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", cast: [{name: "Andy", img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100"}, {name: "Cooper", img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100"}] },
                     { title: "الشيطان يرتدي برادا 2", type: "movie", rating: "6.6", genre: "كوميدي", year: "2026", poster: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400", hdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", sdUrl: "", cast: [] },
@@ -643,7 +643,7 @@
             switchNav('home');
         }
 
-        // ================= دالة فتح صفحة الفيلم التفصيلية وإصلاح الخطأ القديم =================
+        // ================= دالة فتح صفحة الفيلم التفصيلية وإظهار الممثلين =================
         function openMoviePage(item) {
             activeMovieItem = item;
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
@@ -664,22 +664,21 @@
             document.getElementById('btnHD').classList.add('active');
             document.getElementById('btnSD').classList.remove('active');
             
-            // بناء طاقم العمل
+            // بناء وإظهار طاقم العمل والممثلين بشكل صحيح وثابت
             const castSlider = document.getElementById('castListSlider');
             castSlider.innerHTML = '';
-            if (item.cast.forEach(c => {
+            
+            if (item.cast && item.cast.length > 0) {
+                document.getElementById('castContainerBlock').style.display = 'block';
+                item.cast.forEach(c => {
                     const castCard = document.createElement('div');
                     castCard.className = 'cast-card';
-    
-                    // سطر ذكي للتحقق من المفتاح الصحيح للصورة في قاعدة بياناتك (سواء كان img أو image أو avatar)
-                    const actorImage = c.img || c.image || c.avatar || c.picture || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100';
-    
                     castCard.innerHTML = `
-                    <img class="cast-avatar" src="${actorImage}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
-                    <div class="cast-name">${c.name}</div>
+                        <img class="cast-avatar" src="${c.img}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+                        <div class="cast-name">${c.name}</div>
                     `;
                     castSlider.appendChild(castCard);
-                });    
+                });
             } else {
                 document.getElementById('castContainerBlock').style.display = 'none';
             }
