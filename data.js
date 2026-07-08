@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Super Mario Bros. Movie",
+    "desc": "يسافر سباك يدعى ماريو عبر متاهة تحت الأرض مع شقيقه لويجي ، في محاولة لإنقاذ أميرة تم أسرها.",
+    "poster": "https://image.tmdb.org/t/p/w500/hpYfdZfL5Ht34X7Mk93N9ME5xxo.jpg",
+    "hdUrl": "https://streamtape.com/e/vPJd2axKqjF4g4K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vPJd2axKqjF4g4K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "عائلي كوميديا مغامرة فانتازيا رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Pratt",
+            "image": "https://image.tmdb.org/t/p/w185/872Hzdq95gsbMRabsColTW3TLrD.jpg"
+        },
+        {
+            "name": "Anya Taylor-Joy",
+            "image": "https://image.tmdb.org/t/p/w185/jxAbDJWvz4p1hoFpJYG5vY2dQmq.jpg"
+        },
+        {
+            "name": "Charlie Day",
+            "image": "https://image.tmdb.org/t/p/w185/c0HNhjChGybnHa4eoLyqO4dDu1j.jpg"
+        },
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Keegan-Michael Key",
+            "image": "https://image.tmdb.org/t/p/w185/vAR5gVXRG2Cl6WskXT99wgkAoH8.jpg"
+        }
+    ]
+},
+    {
     "title": "Turning Red",
     "desc": "تعاني مي البالغة من العمر ثلاثة عشر عامًا من الإحراج لكونها مراهقة مع تطور - عندما تكون متحمسة للغاية ، تتحول إلى باندا حمراء عملاقة.",
     "poster": "https://image.tmdb.org/t/p/w500/6dYlPfAD8kjnSZtjaZiVTZebyeu.jpg",
