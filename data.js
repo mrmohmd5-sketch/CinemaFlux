@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Enola Holmes 3",
+    "desc": "تتوجه المحققة 'إينولا هولمز' إلى 'مالطا' استعدادًا لبدء فصل جديد من حياتها، لكن اختفاء 'شيرلوك' يقلب خططها للزواج رأسًا على عقب ويجرّها إلى مغامرة غامضة محفوفة بالمخاطر.",
+    "poster": "https://image.tmdb.org/t/p/w500/xUzszXAQOcFhVmVfR1GMqfJg2L4.jpg",
+    "hdUrl": "https://streamtape.com/e/6Rdla10yzeC9mzj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/6Rdla10yzeC9mzj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "مغامرة جريمة غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Millie Bobby Brown",
+            "image": "https://image.tmdb.org/t/p/w185/k9KGzGDVhXKfOGpoN62MNuXL28q.jpg"
+        },
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "Helena Bonham Carter",
+            "image": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        },
+        {
+            "name": "Louis Partridge",
+            "image": "https://image.tmdb.org/t/p/w185/s6AW7VreXxAjhaHgjg9HV3tRM2T.jpg"
+        },
+        {
+            "name": "Himesh Patel",
+            "image": "https://image.tmdb.org/t/p/w185/qCjfMjUxiAHdVpIMI9YN5MUdn24.jpg"
+        }
+    ]
+},
+    {
     "title": "Enola Holmes 2",
     "desc": "تتولّى 'إينولا' أوّل قضية رسمية لها كمحققة، ولكن لحلّ اللغز الكامن وراء اختفاء فتاة، ستحتاج إلى مساعدة من أصدقائها... ومن أخيها 'شيرلوك'، بالطبع.",
     "poster": "https://image.tmdb.org/t/p/w500/dYFIJSGCpZ88Ic7zC14txbQnGX0.jpg",
