@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Last Christmas",
+    "desc": "كايت سيدة شابة، حياتها سلسلة متعاقبة لا تنتهي من القرارات السيئة، وتضطر ﻷن تقبل العمل جنية لبابا نويل من أجل موسم الكريسماس في أحد المحال، وإذا بها تقابل توم هناك، وتتخذ حياتها منحى جديد كلية.",
+    "poster": "https://image.tmdb.org/t/p/w500/kDEjffiKgjuGo2DRzsqfjvW0CQh.jpg",
+    "hdUrl": "https://streamtape.com/e/MaqBMJ2ebKiejK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/MaqBMJ2ebKiejK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Emilia Clarke",
+            "image": "https://image.tmdb.org/t/p/w185/u59kTmNHXzaGZqokivxLPiBVIML.jpg"
+        },
+        {
+            "name": "Henry Golding",
+            "image": "https://image.tmdb.org/t/p/w185/zWZDvqMInsficgm4o3W2cRJ6tmn.jpg"
+        },
+        {
+            "name": "Michelle Yeoh",
+            "image": "https://image.tmdb.org/t/p/w185/i6fHvGt7Rb8oVyjjdQVV6vEHB94.jpg"
+        },
+        {
+            "name": "Emma Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/zQ0hWHh3tzaOOziPbABQI8s9WCu.jpg"
+        },
+        {
+            "name": "Lydia Leonard",
+            "image": "https://image.tmdb.org/t/p/w185/hZyocFIvGrZxJD3sDxAtWvMjDyJ.jpg"
+        }
+    ]
+},
+    {
     "title": "مدبلجOnward",
     "desc": "يبدأ سعيهم.  في عالم خيالي في الضواحي ، يشرع شقيقان مراهقان من الأقزام في مهمة غير عادية لاكتشاف ما إذا كان لا يزال هناك القليل من السحر المتبقي هناك.",
     "poster": "https://image.tmdb.org/t/p/w500/6lEII9r4WX0Xy9Yq6ZnPPiEEFOi.jpg",
