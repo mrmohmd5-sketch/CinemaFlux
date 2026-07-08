@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ant-Man and the Wasp",
+    "desc": "بينما يوازن سكوت لانغ بين كونه بطلاً خارقاً وأباً، تُقدّم هوب فان داين والدكتور هانك بيم مهمةً جديدةً عاجلةً يجد فيها الرجل النملة نفسه يقاتل جنباً إلى جنب مع الدبور لكشف أسرار من ماضيهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/yFcXy5i8tFU8kxia69WaLL93k0Z.jpg",
+    "hdUrl": "https://streamtape.com/e/3rkkyBzmWaSdO38/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3rkkyBzmWaSdO38/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Paul Rudd",
+            "image": "https://image.tmdb.org/t/p/w185/6jtwNOLKy0LdsRAKwZqgYMAfd5n.jpg"
+        },
+        {
+            "name": "Evangeline Lilly",
+            "image": "https://image.tmdb.org/t/p/w185/zgztLIWTJZm3vjGU7ezhF8GXESJ.jpg"
+        },
+        {
+            "name": "Michael Douglas",
+            "image": "https://image.tmdb.org/t/p/w185/kVYGPIZowzXLEQfAGUNOqKjAbBb.jpg"
+        },
+        {
+            "name": "Hannah John-Kamen",
+            "image": "https://image.tmdb.org/t/p/w185/V8P9EVelewGVXbuyEylqrzF6iG.jpg"
+        },
+        {
+            "name": "Randall Park",
+            "image": "https://image.tmdb.org/t/p/w185/u1QpbjVIKegk79DJG9HFmg9Ljv4.jpg"
+        }
+    ]
+},
+    {
     "title": "The Amazing Spider-Man",
     "desc": "يجد بيتر باركر دليلًا قد يساعده في فهم سبب اختفاء والديه عندما كان صغيرًا. ويأخذه طريقه إلى التصادم مع الدكتور كيرت كونرز، شريك والده السابق.",
     "poster": "https://image.tmdb.org/t/p/w500/as7Ls1ngpJDu3XB3X5vCkWH6iAn.jpg",
