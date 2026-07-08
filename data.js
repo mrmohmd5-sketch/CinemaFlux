@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Enola Holmes",
+    "desc": "أثناء بحثها عن والدتها المفقودة، تستغل المراهقة الجريئة 'إينولا هولمز' مهارتها في التحري للتفوق على أخيها الأكبر 'شيرلوك' ومساعدة لورد هارب.",
+    "poster": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
+    "hdUrl": "https://streamtape.com/e/xZkpM7oXP9tkdl3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/xZkpM7oXP9tkdl3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "مغامرة غموض جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Millie Bobby Brown",
+            "image": "https://image.tmdb.org/t/p/w185/k9KGzGDVhXKfOGpoN62MNuXL28q.jpg"
+        },
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "Sam Claflin",
+            "image": "https://image.tmdb.org/t/p/w185/e5CU4tjCNZFfm7ITmZfzjZse2Bb.jpg"
+        },
+        {
+            "name": "Helena Bonham Carter",
+            "image": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        },
+        {
+            "name": "Louis Partridge",
+            "image": "https://image.tmdb.org/t/p/w185/s6AW7VreXxAjhaHgjg9HV3tRM2T.jpg"
+        }
+    ]
+},
+    {
     "title": "The Super Mario Bros. Movie",
     "desc": "يسافر سباك يدعى ماريو عبر متاهة تحت الأرض مع شقيقه لويجي ، في محاولة لإنقاذ أميرة تم أسرها.",
     "poster": "https://image.tmdb.org/t/p/w500/hpYfdZfL5Ht34X7Mk93N9ME5xxo.jpg",
