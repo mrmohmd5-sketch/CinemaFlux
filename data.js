@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Fast and the Furious: Tokyo Drift",
+    "desc": "من أجل تجنب عقوبة السجن ، يتوجه شون بوسويل إلى طوكيو للعيش مع والده العسكري.  في منطقة منخفضة الإيجار من المدينة ، تنشغل شون في عالم سباقات الانجراف تحت الأرض",
+    "poster": "https://image.tmdb.org/t/p/w500/46xqGOwHbh2TH2avWSw3SMXph4E.jpg",
+    "hdUrl": "https://streamtape.com/e/kbeRX8Qwr1cPwQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/kbeRX8Qwr1cPwQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة جريمة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lucas Black",
+            "image": "https://image.tmdb.org/t/p/w185/w2oImwC4Y0RDtyvaKGTCFCKsvwh.jpg"
+        },
+        {
+            "name": "Nathalie Kelley",
+            "image": "https://image.tmdb.org/t/p/w185/wawAz251CPJelmOVwTeNvjrYnqO.jpg"
+        },
+        {
+            "name": "Sung Kang",
+            "image": "https://image.tmdb.org/t/p/w185/ox4ti0WmpJoN19n3iYJ2T2vHP5f.jpg"
+        },
+        {
+            "name": "Shad Moss",
+            "image": "https://image.tmdb.org/t/p/w185/xsvJmcOQiocYcKtRmfiQbjzVrVw.jpg"
+        },
+        {
+            "name": "Brian Tee",
+            "image": "https://image.tmdb.org/t/p/w185/ieqbktfBwcHkeikMfNDW94Yffzp.jpg"
+        }
+    ]
+},
+    {
     "title": "Fast & Furious Presents: Hobbs & Shaw",
     "desc": "منذ أن تواجه وكيل خدمة الأمن الدبلوماسي الأمريكي - هوبز- و المنبوذ - شاو - ، قاما فقط بتبادل الضربات والكلمات السيئة.",
     "poster": "https://image.tmdb.org/t/p/w500/2196YzqbaWDGaXyBjsC67ZFcZT0.jpg",
