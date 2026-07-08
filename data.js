@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "desc": "جويل باريش ، حزين القلب لأن صديقته خضعت لإجراء لمحوه من ذاكرتها ، يقرر أن يفعل الشيء نفسه. ومع ذلك ، وبينما كان يشاهد ذكرياتها تتلاشى ، يدرك أنه لا يزال يحبها ، وربما يكون قد فات الأوان لتصحيح خطأه.",
+    "poster": "https://image.tmdb.org/t/p/w500/oCLYCxt6zpK3WosAdZ4zBdw05cY.jpg",
+    "hdUrl": "https://streamtape.com/e/QDymlDX1rOs03J3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QDymlDX1rOs03J3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.1",
+    "genre": "خيال علمي دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jim Carrey",
+            "image": "https://image.tmdb.org/t/p/w185/y3U9QfPN6sJaGl6l68xjwWj28ig.jpg"
+        },
+        {
+            "name": "Kate Winslet",
+            "image": "https://image.tmdb.org/t/p/w185/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg"
+        },
+        {
+            "name": "Kirsten Dunst",
+            "image": "https://image.tmdb.org/t/p/w185/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Elijah Wood",
+            "image": "https://image.tmdb.org/t/p/w185/ayARmqAe9Aab1zg6FjJG0u9MEBo.jpg"
+        }
+    ]
+},
+    {
     "title": "Enola Holmes 3",
     "desc": "تتوجه المحققة 'إينولا هولمز' إلى 'مالطا' استعدادًا لبدء فصل جديد من حياتها، لكن اختفاء 'شيرلوك' يقلب خططها للزواج رأسًا على عقب ويجرّها إلى مغامرة غامضة محفوفة بالمخاطر.",
     "poster": "https://image.tmdb.org/t/p/w500/xUzszXAQOcFhVmVfR1GMqfJg2L4.jpg",
