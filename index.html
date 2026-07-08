@@ -668,19 +668,18 @@
             const castSlider = document.getElementById('castListSlider');
             castSlider.innerHTML = '';
             if (item.cast.forEach(c => {
-    const castCard = document.createElement('div');
-    castCard.className = 'cast-card';
+                    const castCard = document.createElement('div');
+                    castCard.className = 'cast-card';
     
-    // سطر ذكي للتحقق من المفتاح الصحيح للصورة في قاعدة بياناتك (سواء كان img أو image أو avatar)
-    const actorImage = c.img || c.image || c.avatar || c.picture || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100';
+                    // سطر ذكي للتحقق من المفتاح الصحيح للصورة في قاعدة بياناتك (سواء كان img أو image أو avatar)
+                    const actorImage = c.img || c.image || c.avatar || c.picture || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100';
     
-    castCard.innerHTML = `
-        <img class="cast-avatar" src="${actorImage}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
-        <div class="cast-name">${c.name}</div>
-    `;
-    castSlider.appendChild(castCard);
-});
-                
+                    castCard.innerHTML = `
+                    <img class="cast-avatar" src="${actorImage}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+                    <div class="cast-name">${c.name}</div>
+                    `;
+                    castSlider.appendChild(castCard);
+                });    
             } else {
                 document.getElementById('castContainerBlock').style.display = 'none';
             }
