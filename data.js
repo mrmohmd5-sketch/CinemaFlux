@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man",
+    "desc": "يتعرض مراهق خجول للدغة عنكبوت معدل وراثيًا، فيستغل قدراته الجديدة الشبيهة بالعنكبوت لمحاربة الظلم كبطل خارق مقنع.",
+    "poster": "https://image.tmdb.org/t/p/w500/hmOhNnyV0F1e3lhVO2jDS8tJfc6.jpg",
+    "hdUrl": "https://streamtape.com/e/ga2Kw8Lay0iG9G/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ga2Kw8Lay0iG9G/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tobey Maguire",
+            "image": "https://image.tmdb.org/t/p/w185/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg"
+        },
+        {
+            "name": "Willem Dafoe",
+            "image": "https://image.tmdb.org/t/p/w185/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg"
+        },
+        {
+            "name": "Kirsten Dunst",
+            "image": "https://image.tmdb.org/t/p/w185/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg"
+        },
+        {
+            "name": "James Franco",
+            "image": "https://image.tmdb.org/t/p/w185/bjmAntHGiibLZixH8nTNVBzaFQn.jpg"
+        },
+        {
+            "name": "Cliff Robertson",
+            "image": "https://image.tmdb.org/t/p/w185/8pH2RWCPtXKzT9P33MbzgnzPlF0.jpg"
+        }
+    ]
+},
+    {
     "title": "Last Christmas",
     "desc": "كايت سيدة شابة، حياتها سلسلة متعاقبة لا تنتهي من القرارات السيئة، وتضطر ﻷن تقبل العمل جنية لبابا نويل من أجل موسم الكريسماس في أحد المحال، وإذا بها تقابل توم هناك، وتتخذ حياتها منحى جديد كلية.",
     "poster": "https://image.tmdb.org/t/p/w500/kDEjffiKgjuGo2DRzsqfjvW0CQh.jpg",
