@@ -265,15 +265,7 @@
                 <div class="featured-slider" id="featuredSlider"></div>
             </div>
 
-            <div id="moviesBlock" style="display:none;">
-                <div class="row-header"><div class="row-title" id="txtMoviesSection">قسم الأفلام</div></div>
-                <div class="movies-slider" id="moviesSlider"></div>
-            </div>
-
-            <div id="seriesBlock" style="display:none;">
-                <div class="row-header"><div class="row-title" id="txtSeriesSection">قسم المسلسلات</div></div>
-                <div class="movies-slider" id="seriesSlider"></div>
-            </div>
+            <div id="dynamicCategoriesBlock"></div>
         </div>
 
         <div id="viewSearch" class="app-view">
@@ -574,123 +566,94 @@
         }
 
         // ================= صفحة تفاصيل الفيلم المنفصلة الكاملة =================
-        function openMoviePage(item) {
-            activeMovieItem = item;
-            currentHD = item.hdUrl || "";
-            currentSD = item.sdUrl || "";
+function renderHomeDOM() {
+    const featuredSlider = document.getElementById('featuredSlider');
+    const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
+    
+    featuredSlider.innerHTML = '';
+    if (categoriesBlock) categoriesBlock.innerHTML = '';
 
-            document.getElementById('currentTitle').innerText = item.title;
-            document.getElementById('currentRating').innerText = item.rating || '0.0';
-            document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
-            document.getElementById('currentDesc').innerText = item.desc || '';
+    // 1. عرض أول 10 عناصر مباشرة (الأحدث على الإطلاق) في السلايدر العلوي
+    const newestItems = [...allMoviesData].slice(0, 10);
+    newestItems.forEach(item => {
+        const slide = document.createElement('div');
+        slide.className = 'slide-item';
+        slide.innerHTML = `
+            <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+            <div class="slide-details">
+                <div class="slide-title">${item.title}</div>
+                <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
+            </div>
+        `;
+        slide.onclick = () => openMoviePage(item);
+        featuredSlider.appendChild(slide);
+    });
 
-            // بناء الكادر والطاقم
-            const sliderCast = document.getElementById('castListSlider');
-            sliderCast.innerHTML = '';
-            if (item.cast && item.cast.length > 0) {
-                document.getElementById('castContainerBlock').style.display = 'block';
-                item.cast.forEach(person => {
-                    const castCard = document.createElement('div');
-                    castCard.className = 'cast-card';
-                    castCard.innerHTML = `
-                        <img class="cast-avatar" src="${person.image || person.img}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
-                        <div class="cast-name">${person.name}</div>
-                    `;
-                    sliderCast.appendChild(castCard);
-                });
-            } else {
-                document.getElementById('castContainerBlock').style.display = 'none';
-            }
+    // 2. نظام التصنيفات الديناميكي الذكي
+    // كائن (Object) لتجميع الأفلام حسب تصنيفاتها
+    const genresMap = {};
 
-            changeServer('HD');
-            switchView('viewMovieDetail');
-
-            // إضافة الفيلم إلى سجل المشاهدة للمستخدم
-            addToWatchHistory(item);
-
-            // توليد التعليقات الخاصة بهذا الفيلم
-            renderComments();
-        }
-
-        function closeMoviePage() {
-            document.getElementById('mainIframe').src = "";
-            switchNav('home');
-        }
-
-        function changeServer(type) {
-            const iframe = document.getElementById('mainIframe');
-            const btnHD = document.getElementById('btnHD');
-            const btnSD = document.getElementById('btnSD');
-
-            let targetUrl = (type === 'HD') ? currentHD : currentSD;
-            if(!targetUrl) targetUrl = currentHD; // fallback
-
-            if (targetUrl && !targetUrl.includes('sub=')) {
-                let separator = targetUrl.includes('?') ? '&' : '?';
-                targetUrl = targetUrl + separator + "sub=1&subtitle=1&cc_load_policy=1";
-            }
-
-            iframe.src = targetUrl;
-
-            if (type === 'HD') {
-                btnHD.classList.add('active');
-                btnSD.classList.remove('active');
-            } else {
-                btnSD.classList.add('active');
-                btnHD.classList.remove('active');
-            }
-        }
-
-        // ================= نظام التعليقات المطور لكل فيلم بشكل مستقل =================
-        function renderComments() {
-            const container = document.getElementById('commentsListContainer');
-            container.innerHTML = '';
+    allMoviesData.forEach(item => {
+        if (item.genre) {
+            // تقسيم التصنيفات إذا كان الفيلم يحتوي على أكثر من تصنيف (مثل: رعب, رومانسي)
+            const genresList = item.genre.split(',').map(g => g.trim());
             
-            if(!activeMovieItem) return;
-
-            // جلب التعليقات باستخدام عنوان العمل لفرزها
-            let allStorageComments = JSON.parse(localStorage.getItem('cf_media_comments')) || {};
-            let currentMediaComments = allStorageComments[activeMovieItem.title] || [];
-
-            if (currentMediaComments.length === 0) {
-                container.innerHTML = `<div style="text-align:center; padding:15px; color:var(--text-sub); font-size:12px;">لا توجد تعليقات بعد، كن أول من يعلق! 💬</div>`;
-                return;
-            }
-
-            currentMediaComments.forEach(comment => {
-                const item = document.createElement('div');
-                item.className = 'comment-item';
-                item.innerHTML = `
-                    <div class="comment-user">👤 ${comment.user}</div>
-                    <p class="comment-text">${comment.text}</p>
-                `;
-                container.appendChild(item);
+            genresList.forEach(genre => {
+                if (!genresMap[genre]) {
+                    genresMap[genre] = [];
+                }
+                genresMap[genre].push(item);
             });
+        } else {
+            // تصنيف افتراضي للأعمال التي لا تملك تصنيفاً مكتوباً
+            const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
+            if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
+            genresMap[defaultGenre].push(item);
         }
+    });
 
-        function addCommentAction() {
-            const input = document.getElementById('commentTextInput');
-            const text = input.value.trim();
-            if(!text || !activeMovieItem) return;
+    // 3. بناء وتوليد القوائم والسلايدرز لكل تصنيف في واجهة الموقع
+    for (const genre in genresMap) {
+        if (genresMap[genre].length === 0) continue;
 
-            // تحديد اسم المعلق (اسم المستخدم المسجل أو معلق مجهول)
-            let commenterName = currentUser ? currentUser.username : (currentLang === 'ar' ? 'مشاهد مجهول' : 'Anonymous Guest');
+        // إنشاء حاوية التصنيف (البلوك الكامل)
+        const categorySection = document.createElement('div');
+        categorySection.style.marginBottom = '25px';
 
-            let allStorageComments = JSON.parse(localStorage.getItem('cf_media_comments')) || {};
-            if(!allStorageComments[activeMovieItem.title]) {
-                allStorageComments[activeMovieItem.title] = [];
-            }
+        // إنشاء عنوان التصنيف (مثال: أكشن، كوميدي...)
+        const rowHeader = document.createElement('div');
+        rowHeader.className = 'row-header';
+        rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
+        categorySection.appendChild(rowHeader);
 
-            allStorageComments[activeMovieItem.title].push({
-                user: commenterName,
-                text: text,
-                timestamp: Date.now()
-            });
+        // إنشاء السلايدر الأفقي الخاص بهذا التصنيف
+        const moviesSlider = document.createElement('div');
+        moviesSlider.className = 'movies-slider';
 
-            localStorage.setItem('cf_media_comments', JSON.stringify(allStorageComments));
-            input.value = '';
-            renderComments();
-        }
+        // إضافة الأفلام التابعة لهذا التصنيف داخل السلايدر الخاص به
+        genresMap[genre].forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'movie-card';
+            card.innerHTML = `
+                <div class="poster-wrapper">
+                    <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                </div>
+                <div class="movie-info">
+                    <p class="movie-name">${item.title}</p>
+                    <div class="movie-meta">
+                        <span class="imdb-badge">${item.rating || 'N/A'}</span>
+                        <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
+                    </div>
+                </div>
+            `;
+            card.onclick = () => openMoviePage(item);
+            moviesSlider.appendChild(card);
+        });
+
+        categorySection.appendChild(moviesSlider);
+        if (categoriesBlock) categoriesBlock.appendChild(categorySection);
+    }
+}
 
         // ================= نظام البحث المباشر الاحترافي وسجل البحث =================
         function handleSearchSearch() {
