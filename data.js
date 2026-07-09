@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Furious 7",
+    "desc": "استكمالًا لأحداث الأجزاء السابقة، بعد مقتل (أوين شو) وفريقه أصبح بإستطاعة دومينيك (فان ديزيل) وبرايان (بول ووكر) وفريقهما العودة إلي الولايات المتحدة وعيش حياةٍ طبيعيةٍ مُجددًا، ولكن (إيان) الأخ الأكبر لـ(أوين) يسعي للإنتقام لمقتل أخيه من دومينيك، وبالتالي تصمم العصابة بأكملها علي الانتقام من الرجل الذي قام بقتل صديقهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/ktofZ9Htrjiy0P6LEowsDaxd3Ri.jpg",
+    "hdUrl": "https://streamtape.com/e/dvvgOyVp1ahbxB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/dvvgOyVp1ahbxB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Paul Walker",
+            "image": "https://image.tmdb.org/t/p/w185/q2PLqKHYCs35HR7QybaNPH3JT96.jpg"
+        },
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Tyrese Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg"
+        }
+    ]
+},
+    {
     "title": "Mission: Impossible II",
     "desc": "تدور أحداث القصة حول سرقة فيروس مميت يُدعى (كميرا) والمصل الخاص به، يتعين على العميل (إيثان هانت) منع انتشار الفيروس، والذي يؤدي للوفاة في حالة الإصابة به خلال ساعات معدودة، يكون على إيثان أن يسترجع مصل الفيروس من (شين آمبروز) الذي ينوي بيع المصل المضاد لمجموعة من الإرهابيين للحصول على الأموال الطائلة بعد نشر الفيروس في العالم كله، يستعين إيثان باللصة المحترفة (نياه) لمساعدته في استرجاع المصل والفيروس، إلا أنه سرعان ما يقع في حبها، يسعى إيثان لإنقاذ حبيبته من موت محتم بعد أن تصاب بالفيروس، في الوقت الذي يتوجب عليه إفشال مخطط نشر الفيروس.",
     "poster": "https://image.tmdb.org/t/p/w500/iPVZ3b4A4NlPZnFUF1e8nUFJSgW.jpg",
