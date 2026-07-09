@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fast & Furious",
+    "desc": "عندما تعيدهم جريمة ما إلى لوس أنجلوس ، يشعل المحتال السابق الهارب دوم توريتو عداءه مع العميل بريان أوكونر.  لكن بما أنهم مجبرون على مواجهة عدو مشترك ، يجب على دوم وبريان الاستسلام لثقة جديدة غير مؤكدة إذا كانا يأملان في التغلب عليه.  وسيجد الرجلان أفضل طريقة للانتقام: دفع حدود ما هو ممكن خلف عجلة القيادة.",
+    "poster": "https://image.tmdb.org/t/p/w500/lUtVoRukW7WNtUySwd8hWlByBds.jpg",
+    "hdUrl": "https://streamtape.com/e/4GX414v4LGsK6jo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4GX414v4LGsK6jo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Paul Walker",
+            "image": "https://image.tmdb.org/t/p/w185/q2PLqKHYCs35HR7QybaNPH3JT96.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Jordana Brewster",
+            "image": "https://image.tmdb.org/t/p/w185/ceL0zxeVbWfCfhoIDZIE1NYqBWb.jpg"
+        },
+        {
+            "name": "John Ortiz",
+            "image": "https://image.tmdb.org/t/p/w185/o2SOFI53N6Gv5S3fDEBNbeimbzY.jpg"
+        }
+    ]
+},
+    {
     "title": "The Amazing Spider-Man 2",
     "desc": "عندما تُحاصر شركة أوسكورب مدينة نيويورك، يقع على عاتق سبايدرمان إنقاذ المدينة التي أقسم على حمايتها، بالإضافة إلى إنقاذ أحبائه.",
     "poster": "https://image.tmdb.org/t/p/w500/hjsg70TQIreXTOpQYqgd78gMmit.jpg",
