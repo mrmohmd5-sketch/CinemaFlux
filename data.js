@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Fast and the Furious",
+    "desc": "دومينيك توريتو هو متسابق شوارع لوس أنجلوس يشتبه في أنه العقل المدبر لسلسلة من عمليات اختطاف منصات الحفر الكبيرة.  عندما يتسلل الشرطي السري Brian O'Conner إلى طاقم Toretto الأيقوني ، يقع في حب أخت Toretto ويجب عليه اختيار جانب: العصابة أو شرطة LAPD.",
+    "poster": "https://image.tmdb.org/t/p/w500/gqY0ITBgT7A82poL9jv851qdnIb.jpg",
+    "hdUrl": "https://streamtape.com/e/Qr1XdaVRv3FAG7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Qr1XdaVRv3FAG7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Paul Walker",
+            "image": "https://image.tmdb.org/t/p/w185/q2PLqKHYCs35HR7QybaNPH3JT96.jpg"
+        },
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Jordana Brewster",
+            "image": "https://image.tmdb.org/t/p/w185/ceL0zxeVbWfCfhoIDZIE1NYqBWb.jpg"
+        },
+        {
+            "name": "Rick Yune",
+            "image": "https://image.tmdb.org/t/p/w185/iC6qDOLaL7osc4eCZlm9AT9Ffxi.jpg"
+        }
+    ]
+},
+    {
     "title": "Mission: Impossible",
     "desc": "بعد التخطيط لتنفيذ إحدى المهام، يرسل (جيم فيليبس) مع زوجته (كلير) وشريكه (إيثان هانت) إلى مدينة (براغ)، وتفشل المهمة ولا ينجو سوى (إيثان هانت)، ويبدأ مدير الوكالة بالشك في (إيثان) بأنه السبب الرئيسي لفشل هذه المهمة، فيحاول إثبات براءته بمختلف الطرق والأساليب الممكنة واكتشاف المتورط الحقيقي.",
     "poster": "https://image.tmdb.org/t/p/w500/tVa2tSUvEM1THKwFjbVaVkBJErb.jpg",
