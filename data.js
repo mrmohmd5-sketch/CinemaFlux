@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "2 Fast 2 Furious",
+    "desc": "إنه تقاطع مزدوج كبير عندما يتعاون ضابط الشرطة السابق بريان أوكونر مع صديقه السابق رومان بيرس لنقل شحنة من الأموال 'القذرة' لتاجر الاستيراد والتصدير المشبوه في ميامي كارتر فيرون.  لكن الرجال يعملون بالفعل مع العميلة السرية مونيكا فوينتيس لإسقاط فيرون.",
+    "poster": "https://image.tmdb.org/t/p/w500/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg",
+    "hdUrl": "https://streamtape.com/e/ZroKglp096uMzM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ZroKglp096uMzM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Paul Walker",
+            "image": "https://image.tmdb.org/t/p/w185/q2PLqKHYCs35HR7QybaNPH3JT96.jpg"
+        },
+        {
+            "name": "Tyrese Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg"
+        },
+        {
+            "name": "Eva Mendes",
+            "image": "https://image.tmdb.org/t/p/w185/uj6IaUDEUB7swj46dPjHAi3TEk4.jpg"
+        },
+        {
+            "name": "Cole Hauser",
+            "image": "https://image.tmdb.org/t/p/w185/1SNoIDILoXtAUJu4f7nDCPVQH5j.jpg"
+        },
+        {
+            "name": "Ludacris",
+            "image": "https://image.tmdb.org/t/p/w185/erkJijujhe48vhJ8iCEtVpNEeVn.jpg"
+        }
+    ]
+},
+    {
     "title": "Fast & Furious 6",
     "desc": "دعا هوبز دومينيك وبريان إلى إعادة تجميع طاقمهما لإنزال فريق من المرتزقة: يواجه دومينيك بشكل غير متوقع أيضًا صديقته المتوفاة المفترضة ، ليتي.",
     "poster": "https://image.tmdb.org/t/p/w500/thSmnRdrzPBBospIOJjLZBReqzo.jpg",
