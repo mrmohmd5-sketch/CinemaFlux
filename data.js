@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Monsters, Inc.",
+    "desc": "تدور أحداث الفيلم عن مدينة للوحوش. شركة المرعبين المحدودة هي شركة توليد الطاقة للمدينة، والتي تستعمل كمصدر للطاقة صراخ الأطفال، لهذا يحاولون تخويفهم. وفي محاولة أحد الموظفين (راندل) بالاتفاق مع مدير الشركة أبو عنكبوت لتوفير الطاقة والتي أصبحت الشركة تعانى من قلتها بسبب عدم خوف الاطفال من المخوفاتيه يقوم هذا الموظف باختراع جهاز مهمته أن يأخذ الصراخ من الأطفال بالقوه. يكتشف شلبى سلوفان عن وجود باب بعد ساعات العمل، ومن هذا الباب تدخل طفله إلى مدينة المرعبيين. وهنا تبدأ الأحداث حيث يسعى شلبى سلوفان وماردوشوشنى إلى إعادة الطفلة إلى بيتها في ظل مطاردة من اندل للقبض على الطفلة وتجربة الجهاز عليها. أثناء هذه المطاردة يكتشفون ان مدير الشركة أبو عنكبوت مشترك في هذه الجريمة. وبعد عدة أحداث يتم القبض على أبو عنكبوت ويتم نفى اندل إلى عالم البشر. كما يكتشفون مصدر جديد للطاقة بدلا من تخويف وهو الضحك. ويستلم شلبى سلوفان إدارة الشركة والتي تعود للنمو من جديد.",
+    "poster": "https://image.tmdb.org/t/p/w500/oLKR5TveXBdAI50TpxXS1hURG9Y.jpg",
+    "hdUrl": "https://streamtape.com/e/p8RW2R1zOpcrmq2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/p8RW2R1zOpcrmq2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "John Goodman",
+            "image": "https://image.tmdb.org/t/p/w185/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
+        },
+        {
+            "name": "Billy Crystal",
+            "image": "https://image.tmdb.org/t/p/w185/jfcCceTnP7rrHz1pSjCxiqRosw3.jpg"
+        },
+        {
+            "name": "Mary Gibbs",
+            "image": "https://image.tmdb.org/t/p/w185/nqYOXIaf8ztfacrludRtS1Bytzz.jpg"
+        },
+        {
+            "name": "Steve Buscemi",
+            "image": "https://image.tmdb.org/t/p/w185/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+        },
+        {
+            "name": "James Coburn",
+            "image": "https://image.tmdb.org/t/p/w185/9GApjInyrVvjnTAr652C1aViPqZ.jpg"
+        }
+    ]
+},
+    {
     "title": "Coco",
     "desc": "الاحتفال بالعمر\r على الرغم من الحظر المحير الذي فرضته عائلته منذ أجيال على الموسيقى ، يحلم ميغيل بأن يصبح موسيقيا بارعا مثل معبوده إرنستو دي لا كروز. في محاولة يائسة لإثبات موهبته ، يجد ميغيل نفسه في أرض الموتى المذهلة والملونة بعد سلسلة غامضة من الأحداث. على طول الطريق ، يلتقي المحتال الساحر هيكتور ، وينطلقان معا في رحلة غير عادية لفتح القصة الحقيقية وراء تاريخ عائلة ميغيل.",
     "poster": "https://image.tmdb.org/t/p/w500/6vK2fKqxBB8q0gJD9CYL2wKJvqT.jpg",
