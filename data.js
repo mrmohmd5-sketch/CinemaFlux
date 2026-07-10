@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Black Widow",
+    "desc": "تواجه ناتاشا رومانوف الجوانب المظلمة من ماضيها حين تظهر مؤامرة خطيرة مرتبطة بماضيها.",
+    "poster": "https://image.tmdb.org/t/p/w500/aU6WYGPvGcIea3o9Ok3wuDRZ4FD.jpg",
+    "hdUrl": "https://streamtape.com/e/3wGADD2Y3yTdKGK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3wGADD2Y3yTdKGK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+            "name": "Florence Pugh",
+            "image": "https://image.tmdb.org/t/p/w185/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+        },
+        {
+            "name": "Rachel Weisz",
+            "image": "https://image.tmdb.org/t/p/w185/9tfHL5tholha1YF6bSKt422ETPM.jpg"
+        },
+        {
+            "name": "David Harbour",
+            "image": "https://image.tmdb.org/t/p/w185/qMFtMWlYVtFVyBoBhX5IoA5sN5a.jpg"
+        },
+        {
+            "name": "Ray Winstone",
+            "image": "https://image.tmdb.org/t/p/w185/eSRgAC98u5hQroeZzDeRf60XE21.jpg"
+        }
+    ]
+},
+    {
     "title": "The Babysitter",
     "desc": "تأخذ أحداث إحدى الأمسيات منعطفًا غير متوقع لطفل شقي صغير يدعى كول والذي يحاول التجسس على جليسته بي التي يحبها حبًا جمًا، ويكتشف أنها قاتلة متحالفة مع الشيطان.",
     "poster": "https://image.tmdb.org/t/p/w500/uAzKNxGnbK5SL7VF7UeQyZdQLHV.jpg",
