@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Deadpool 2",
+    "title": "Deadpool 2 super duper cut",
     "desc": "يقوم المرتزق المتحول ذو اللسان البذيء وايد ويلسون (المعروف أيضًا باسم ديدبول) بتجميع فريق من زملائه المتحولين الأشرار لحماية صبي صغير يتمتع بقدرات خاصة من السايبورغ الوحشي كيبل الذي يسافر عبر الزمن.",
     "poster": "https://image.tmdb.org/t/p/w500/grdBNhOSwnPpX5sncWWCQtELpKf.jpg",
     "hdUrl": "https://streamtape.com/e/1adzJ0b2jMCpAo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
