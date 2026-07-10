@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "desc": "شانغ تشي، سيد فنون الكونغ فو القائم على الأسلحة، يُجبر على مواجهة ماضيه بعد انضمامه إلى منظمة الحلقات العشر.",
+    "poster": "https://image.tmdb.org/t/p/w500/jcjGSIDtwJlPELn13yj1m7py9Ab.jpg",
+    "hdUrl": "https://streamtape.com/e/GKl3qDVxr2S1b3K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GKl3qDVxr2S1b3K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Simu Liu",
+            "image": "https://image.tmdb.org/t/p/w185/cCx2OghLj9KN73oyRZe92i2p3Ih.jpg"
+        },
+        {
+            "name": "Tony Leung Chiu-wai",
+            "image": "https://image.tmdb.org/t/p/w185/ybe5FGhJShc6qJqA0vsxfLkFXgY.jpg"
+        },
+        {
+            "name": "Awkwafina",
+            "image": "https://image.tmdb.org/t/p/w185/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+        },
+        {
+            "name": "Ben Kingsley",
+            "image": "https://image.tmdb.org/t/p/w185/k3Dmu49B2akwDvgqy52MOxznI59.jpg"
+        },
+        {
+            "name": "Zhang Meng'er",
+            "image": "https://image.tmdb.org/t/p/w185/lOJ0EIjNybCDT6J3ZLMDnqpoDXD.jpg"
+        }
+    ]
+},
+    {
     "title": "Eternals",
     "desc": "ملحمة الخالدين، وهم جنس من الكائنات الخالدة التي عاشت على الأرض وشكلت تاريخها وحضاراتها.",
     "poster": "https://image.tmdb.org/t/p/w500/9WflgM3cFL9PWK3PCS01Q0zKs6H.jpg",
