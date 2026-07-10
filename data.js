@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ready Player One",
+    "desc": "في المستقبل القريب، يحاول الشاب المنبوذ (وايد) الهروب من رعبه اليومي عن طريق التحاقه بلعبة إلكترونية تُدعى (الواحة). وعندما يموت مؤسس اللعبة البليونير، تُعرَض ثروته على اللاعبين كجائزة لمن يصل إلى نقطة معينة باللعبة، يجد وايد نفسه مُحاصرًا بديون خصومه من الشركة؛ في الواقع وداخل اللعبة على حد سواء.",
+    "poster": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+    "hdUrl": "https://streamtape.com/e/Ry1jd7YddgSdvYq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Ry1jd7YddgSdvYq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "مغامرة حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tye Sheridan",
+            "image": "https://image.tmdb.org/t/p/w185/d5ZS2fjqC98cIGkhEGX0fRYhku4.jpg"
+        },
+        {
+            "name": "Olivia Cooke",
+            "image": "https://image.tmdb.org/t/p/w185/eIpUKrBoddAM0PoNv8n2Mq99VO1.jpg"
+        },
+        {
+            "name": "Ben Mendelsohn",
+            "image": "https://image.tmdb.org/t/p/w185/pA9mu9D2IolVA0v2Yo0tJm6uUyI.jpg"
+        },
+        {
+            "name": "Lena Waithe",
+            "image": "https://image.tmdb.org/t/p/w185/yidK25mjpxTTYCICmZnxgks6utx.jpg"
+        },
+        {
+            "name": "T.J. Miller",
+            "image": "https://image.tmdb.org/t/p/w185/rRrVvBxOkyYM5XdLXimShHR1Itn.jpg"
+        }
+    ]
+},
+    {
     "title": "Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved",
     "desc": "ينقلب العيش الهادئ للآنسة كوباياشي والتنينات الساكنات معها، تورو وكانَّا وإلولو، عقب أن أتاهم ذات يوم كيمون كاموي، والد كانَّا. يتزعم كيمون كاموي فصيل الفوضى في العالم الذي جاءت منه التنانين، وما جلبه إلى عالم البشر إلَّا إرجاع كانَّا معه؛ إذ لديها شيء يريده يرجِّح كفة فصيل الفوضى على فصيل الانسجام المناوئ لهم، وقد نُفِيَت بسبب ما فعلته له إلى عالم البشر. يرى أبوها أن عودتها ومساعدتهم تصحيحٌ لذلك الخطأ الذي اقترفته في الماضي. يحتدم الصراع بين قوى الفوضى وقوى الانسجام، وتلوح في الأفق بوادر حربٍ كبرى قد تهدد استقرار كلا العالمين. تجد كانَّا نفسها حائرةً بين خيارين: بين أداء واجبها تجاه أبيها وفصيلها، وبين صون الأواصر التي بَنتْها مع أصدقائها البشر الذين أصبحوا بمنزلة عائلةٍ لها.",
     "poster": "https://image.tmdb.org/t/p/w500/udnoedTfNkI01LEZYmU50HJKy2R.jpg",
