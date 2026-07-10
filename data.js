@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Guardians of the Galaxy Vol. 2",
+    "desc": "يُكافح حراس المجرة للحفاظ على تماسكهم كفريق واحد، بينما يواجهون مشاكلهم العائلية الشخصية، ولا سيما لقاء ستار-لورد مع والده، الكائن السماوي الطموح إيغو.",
+    "poster": "https://image.tmdb.org/t/p/w500/3kGckArA1uCjkbzwMmFFyGx0J4N.jpg",
+    "hdUrl": "https://streamtape.com/e/9R4j60allwcaQQx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9R4j60allwcaQQx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "خيال علمي مغامرة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Pratt",
+            "image": "https://image.tmdb.org/t/p/w185/872Hzdq95gsbMRabsColTW3TLrD.jpg"
+        },
+        {
+            "name": "Zoe Saldaña",
+            "image": "https://image.tmdb.org/t/p/w185/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg"
+        },
+        {
+            "name": "Dave Bautista",
+            "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        },
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Bradley Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
+        }
+    ]
+},
+    {
     "title": "Thor: Ragnarok",
     "desc": "يُسجن ثور على كوكب ساكار، وعليه أن يسابق الزمن للعودة إلى أسغارد وإيقاف راجناروك، دمار عالمه، على يد الشرير القوي عديم الرحمة هيلا.",
     "poster": "https://image.tmdb.org/t/p/w500/4Zrcfq0kDltHKMgPSVzi6rw8UOA.jpg",
