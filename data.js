@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Doctor Strange",
+    "desc": "في رحلة شفاء جسدي وروحي، ينجذب جراح أعصاب بارع إلى عالم الفنون الخفية.",
+    "poster": "https://image.tmdb.org/t/p/w500/fP33MFHyjJ7CpdnEJXYWJHB0zf7.jpg",
+    "hdUrl": "https://streamtape.com/e/8K1vQO02J6Iog4J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/8K1vQO02J6Iog4J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "فانتازيا مغامرة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Benedict Cumberbatch",
+            "image": "https://image.tmdb.org/t/p/w185/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+        },
+        {
+            "name": "Chiwetel Ejiofor",
+            "image": "https://image.tmdb.org/t/p/w185/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg"
+        },
+        {
+            "name": "Rachel McAdams",
+            "image": "https://image.tmdb.org/t/p/w185/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg"
+        },
+        {
+            "name": "Benedict Wong",
+            "image": "https://image.tmdb.org/t/p/w185/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
+        },
+        {
+            "name": "Mads Mikkelsen",
+            "image": "https://image.tmdb.org/t/p/w185/AsX4bdvZ8UCayWTmAf9lAqOA8V7.jpg"
+        }
+    ]
+},
+    {
     "title": "Guardians of the Galaxy Vol. 2",
     "desc": "يُكافح حراس المجرة للحفاظ على تماسكهم كفريق واحد، بينما يواجهون مشاكلهم العائلية الشخصية، ولا سيما لقاء ستار-لورد مع والده، الكائن السماوي الطموح إيغو.",
     "poster": "https://image.tmdb.org/t/p/w500/3kGckArA1uCjkbzwMmFFyGx0J4N.jpg",
