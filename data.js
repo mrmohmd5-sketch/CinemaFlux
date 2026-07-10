@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Deadpool 2",
+    "desc": "يقوم المرتزق المتحول ذو اللسان البذيء وايد ويلسون (المعروف أيضًا باسم ديدبول) بتجميع فريق من زملائه المتحولين الأشرار لحماية صبي صغير يتمتع بقدرات خاصة من السايبورغ الوحشي كيبل الذي يسافر عبر الزمن.",
+    "poster": "https://image.tmdb.org/t/p/w500/grdBNhOSwnPpX5sncWWCQtELpKf.jpg",
+    "hdUrl": "https://streamtape.com/e/1adzJ0b2jMCpAo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1adzJ0b2jMCpAo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة كوميديا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ryan Reynolds",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Josh Brolin",
+            "image": "https://image.tmdb.org/t/p/w185/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+            "name": "Morena Baccarin",
+            "image": "https://image.tmdb.org/t/p/w185/4gyHyg6FJ1oFczOm5pmMkdEEo2J.jpg"
+        },
+        {
+            "name": "Julian Dennison",
+            "image": "https://image.tmdb.org/t/p/w185/zSFwaT2osi7D2G0vFetub4yCDwi.jpg"
+        },
+        {
+            "name": "Zazie Beetz",
+            "image": "https://image.tmdb.org/t/p/w185/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg"
+        }
+    ]
+},
+    {
     "title": "Black Widow",
     "desc": "تواجه ناتاشا رومانوف الجوانب المظلمة من ماضيها حين تظهر مؤامرة خطيرة مرتبطة بماضيها.",
     "poster": "https://image.tmdb.org/t/p/w500/aU6WYGPvGcIea3o9Ok3wuDRZ4FD.jpg",
