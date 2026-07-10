@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "A Bug's Life",
+    "desc": "يحكي الفيلم عن إحدى مستعمرات النمل التي يسيطر عليها عصابة من الجراد الشرير والتي تفرض على المستعمرة جمع الحبوب لصالحها مما يفرض على النمل عبئا إضافيا لجمع الحبوب للجراد ثم لنفسه قبل حلول موسم المطر الذي يلزمون فيه المستعمرة. إلا أن 'فليك' النملة الذكية وبطل الفيلم يقرر الرحيل عن المستعمرة والذهاب إلى مدينة مجاورة من أجل الاستعانة بحشرات مقاتلين لمعاونة قومه على نبذ سيطرة الجراد عليهم. ويوافق حكماء النمل على رحيل 'فليك' من أجل التخلص من متاعبه التي يسببها دائما بواسطة أختراعاته",
+    "poster": "https://image.tmdb.org/t/p/w500/hyLKSwnRxFQoEwAhf0wfDyw11Q4.jpg",
+    "hdUrl": "https://streamtape.com/e/a06DOJmqM1fx89o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/a06DOJmqM1fx89o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "مغامرة رسوم متحركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dave Foley",
+            "image": "https://image.tmdb.org/t/p/w185/muHRRGDTE7ZWk3guqDAk9L4DqVX.jpg"
+        },
+        {
+            "name": "Kevin Spacey",
+            "image": "https://image.tmdb.org/t/p/w185/nPrUZDEbGQe6jwpVbHKJCXsMd7r.jpg"
+        },
+        {
+            "name": "Julia Louis-Dreyfus",
+            "image": "https://image.tmdb.org/t/p/w185/iEfHQNrVbVFesDPjdySom9nqsFg.jpg"
+        },
+        {
+            "name": "Hayden Panettiere",
+            "image": "https://image.tmdb.org/t/p/w185/bhGkVHCFu8peC4rIXIUMWCQqZR7.jpg"
+        },
+        {
+            "name": "Phyllis Diller",
+            "image": "https://image.tmdb.org/t/p/w185/teELYDRWmPGAVCzH4n4lX17Wa4J.jpg"
+        }
+    ]
+},
+    {
     "title": "Piper",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/5fu2d809jepLwEpES7wggiECLoQ.jpg",
