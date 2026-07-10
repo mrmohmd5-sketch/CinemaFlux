@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Venom: Let There Be Carnage",
+    "desc": "في الوقت الذي يجتهد فيه 'إيدي بروك' و'فينوم' لخوض غمار علاقتهما الشائكة، يظهر تهديد جديد من القاتل المتسلسل 'كليتوس كاسادي' وكائن فضائي جديد مُعايش.",
+    "poster": "https://image.tmdb.org/t/p/w500/aLBiGL6Nqx8nY27X61g6szKn19Y.jpg",
+    "hdUrl": "https://streamtape.com/e/MaJOlP89bvim2kR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/MaJOlP89bvim2kR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "خيال علمي حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hardy",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Woody Harrelson",
+            "image": "https://image.tmdb.org/t/p/w185/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg"
+        },
+        {
+            "name": "Michelle Williams",
+            "image": "https://image.tmdb.org/t/p/w185/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg"
+        },
+        {
+            "name": "Naomie Harris",
+            "image": "https://image.tmdb.org/t/p/w185/41TVAcYqKKF7PGf3x7QfaLvkLSW.jpg"
+        },
+        {
+            "name": "Reid Scott",
+            "image": "https://image.tmdb.org/t/p/w185/kBAeDUDA7XJRXFLGNALlpE5d3lA.jpg"
+        }
+    ]
+},
+    {
     "title": "Doctor Strange in the Multiverse of Madness",
     "desc": "يخوض (دكتور سترينج)، بمساعدة حلفاء من الماضي والحاضر، رحلة عبر العوالم الموازية والمخيفة للكون المتعدد، متجاوزاً حدود العقل ليواجه خصماً جديداً غامضاً.",
     "poster": "https://image.tmdb.org/t/p/w500/iGMaJs2GIGVR7bTNRI2gclhW6ym.jpg",
