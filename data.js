@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "In the Grey",
+    "desc": "يعيش فريق سري من النخبة في الخفاء. وعندما يسطو طاغية مستبد على ثروة بمليارات الدولارات، يتم إرسالهم لاستعادتها في عملية سرقة مستحيلة تتحول إلى لعبة مميتة من الاستراتيجية و الخداع والبقاء.",
+    "poster": "https://image.tmdb.org/t/p/w500/owJLXVFzCGuLtwZ51WQPNE6ZMTK.jpg",
+    "hdUrl": "https://streamtape.com/e/Mx9Vda7x2mImWRp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Mx9Vda7x2mImWRp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "Jake Gyllenhaal",
+            "image": "https://image.tmdb.org/t/p/w185/j2Yahha9C0zN5DRaTDzYA7WtdOT.jpg"
+        },
+        {
+            "name": "Eiza González",
+            "image": "https://image.tmdb.org/t/p/w185/9kwfAiMeRUGR6cpZyY8FCuP5MSX.jpg"
+        },
+        {
+            "name": "Carlos Bardem",
+            "image": "https://image.tmdb.org/t/p/w185/4eVSnaYe4O06BNZjuw8UHnWaqB5.jpg"
+        },
+        {
+            "name": "Michael Vu",
+            "image": "https://image.tmdb.org/t/p/w185/rHtIIqQvViPHovSJkDzDegBU6nb.jpg"
+        }
+    ]
+},
+    {
     "title": "Ready or Not",
     "desc": "في ليلة زفافها، تجد العروس الشابة نفسها في كابوس مرعب عندما يجبرها أهل زوجها الأثرياء على المشاركة في لعبة قاتلة من الغميضة، حيث يتحول الاحتفال إلى صراع مميت للبقاء على قيد الحياة.",
     "poster": "https://image.tmdb.org/t/p/w500/oJD9KQFoObZmxAS1je56SIFVNJt.jpg",
