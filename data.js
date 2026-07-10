@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Captain Marvel",
+    "desc": "تُصبح كارول دانفرز واحدة من أقوى أبطال الكون عندما تجد الأرض نفسها عالقة في خضم حرب مجرية بين عرقين فضائيين.",
+    "poster": "https://image.tmdb.org/t/p/w500/7kypW3Vf3oa8bZ6pRXzrQsfwUoz.jpg",
+    "hdUrl": "https://streamtape.com/e/8O9Z6KRLxgToPbx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/8O9Z6KRLxgToPbx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brie Larson",
+            "image": "https://image.tmdb.org/t/p/w185/rlbQbpu3tkMAikPWM53VElMUnzR.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/AiAYAqwpM5xmiFrAIeQvUXDCVvo.jpg"
+        },
+        {
+            "name": "Ben Mendelsohn",
+            "image": "https://image.tmdb.org/t/p/w185/pA9mu9D2IolVA0v2Yo0tJm6uUyI.jpg"
+        },
+        {
+            "name": "Jude Law",
+            "image": "https://image.tmdb.org/t/p/w185/1rTmD8B1YAE1MrrBJs4krIiIvNM.jpg"
+        },
+        {
+            "name": "Annette Bening",
+            "image": "https://image.tmdb.org/t/p/w185/kGslMAWcpv8MKzODhDRDkFE0uX7.jpg"
+        }
+    ]
+},
+    {
     "title": "Deadpool 2 super duper cut",
     "desc": "يقوم المرتزق المتحول ذو اللسان البذيء وايد ويلسون (المعروف أيضًا باسم ديدبول) بتجميع فريق من زملائه المتحولين الأشرار لحماية صبي صغير يتمتع بقدرات خاصة من السايبورغ الوحشي كيبل الذي يسافر عبر الزمن.",
     "poster": "https://image.tmdb.org/t/p/w500/grdBNhOSwnPpX5sncWWCQtELpKf.jpg",
