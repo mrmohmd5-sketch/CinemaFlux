@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Mission: Impossible - Ghost Protocol",
+    "desc": "يتسابق إيثان هانت وفريقه مع الزمن لتعقب إرهابي خطير يدعى هندريكس ، الذي تمكن من الوصول إلى رموز الإطلاق النووية الروسية ويخطط لشن هجوم على الولايات المتحدة. وتنتهي محاولة منعه بانفجار تسبب في دمار شديد للكرملين وصندوق النقد الدولي لتورطهما في التفجير ، مما أجبر الرئيس على التنصل منهما. لم يعد إيثان وفريقه يتلقون المساعدة من الحكومة ، ويطاردون هندريكس في جميع أنحاء العالم ، على الرغم من أنهم ربما فات الأوان لوقف الكارثة.",
+    "poster": "https://image.tmdb.org/t/p/w500/bi61KYRPq3uOjcicWBB1xIU9q0x.jpg",
+    "hdUrl": "https://streamtape.com/e/ALw0J4pRjohXKLp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ALw0J4pRjohXKLp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "حركة إثارة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Cruise",
+            "image": "https://image.tmdb.org/t/p/w185/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg"
+        },
+        {
+            "name": "Paula Patton",
+            "image": "https://image.tmdb.org/t/p/w185/afEkMmwkHkmBsOHeor2vZKWzeGf.jpg"
+        },
+        {
+            "name": "Simon Pegg",
+            "image": "https://image.tmdb.org/t/p/w185/jw8bEEoTOithyNf0qxu4Zt1yaKp.jpg"
+        },
+        {
+            "name": "Jeremy Renner",
+            "image": "https://image.tmdb.org/t/p/w185/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+        },
+        {
+            "name": "Michael Nyqvist",
+            "image": "https://image.tmdb.org/t/p/w185/d9nGt8MloJwosRbGp10gaeHExcZ.jpg"
+        }
+    ]
+},
+    {
     "title": "Mission: Impossible - Dead Reckoning Part One",
     "desc": "يعود العميل إيثان هانت لاستخدام قدراته وخبرته لحل المزيد من الجرائم العالمية، حيث يسعى رفقة زملاؤه لتعقب سلاح مميت قبل أن يقع في الأيدي المظلمة.",
     "poster": "https://image.tmdb.org/t/p/w500/uRxZEctKI3w9quRXOSjFLl72ugV.jpg",
