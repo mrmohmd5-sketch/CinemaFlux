@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Captain America: Civil War",
+    "desc": "يؤدي التدخل السياسي في شؤون المنتقمين إلى حدوث شرخ بين كابتن أمريكا وآيرون مان.",
+    "poster": "https://image.tmdb.org/t/p/w500/8qrwEGagUE5Kc1IVxpWRHSGAPvD.jpg",
+    "hdUrl": "https://streamtape.com/e/rBwgeoJ8oKtbw4z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/rBwgeoJ8oKtbw4z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "مغامرة حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Evans",
+            "image": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+            "name": "Sebastian Stan",
+            "image": "https://image.tmdb.org/t/p/w185/v20RLWst39klatsqUgSrwHxhwee.jpg"
+        },
+        {
+            "name": "Anthony Mackie",
+            "image": "https://image.tmdb.org/t/p/w185/eZSIDrtTzhvabyjrmIITQLsjx8h.jpg"
+        }
+    ]
+},
+    {
     "title": "Ant-Man",
     "desc": "مُسلّحًا ببدلة خارقة ذات قدرة مذهلة على التقلص مع ازدياد القوة، يجد اللص سكوت لانغ نفسه مضطرًا لاستغلال بطولته الكامنة ومساعدة مُعلّمه، الدكتور هانك بيم، في تنفيذ خطة لإنقاذ العالم.",
     "poster": "https://image.tmdb.org/t/p/w500/14bx6O9BKFuQI5l8c9MSFh0zQQv.jpg",
