@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Venom",
+    "desc": "عندما يستحوذ إدي بروك على قوه خارقه من السمبيود، سيكون عليه أن يطلق سراح - فينوم -  من أجل إنقاذ حياته.",
+    "poster": "https://image.tmdb.org/t/p/w500/3EfE1jrO5Ww0ITP8uk3Rno64utS.jpg",
+    "hdUrl": "https://streamtape.com/e/OVp6YyzMbGuZJdy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/OVp6YyzMbGuZJdy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "خيال علمي حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hardy",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Michelle Williams",
+            "image": "https://image.tmdb.org/t/p/w185/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg"
+        },
+        {
+            "name": "Riz Ahmed",
+            "image": "https://image.tmdb.org/t/p/w185/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
+        },
+        {
+            "name": "Scott Haze",
+            "image": "https://image.tmdb.org/t/p/w185/i0k562EpJiuglK2VnUNAh12fZfj.jpg"
+        },
+        {
+            "name": "Reid Scott",
+            "image": "https://image.tmdb.org/t/p/w185/kBAeDUDA7XJRXFLGNALlpE5d3lA.jpg"
+        }
+    ]
+},
+    {
     "title": "Once Upon a Deadpool",
     "desc": "اضطر المختطف - فريد سافج - لمشاهدة نسخه معدلة من فلم ديدبول 2 لنسخه عائلية PG-13، حيث يكون فيها اميرات، عجائب وسحر.. وبدون كلام قذر!",
     "poster": "https://image.tmdb.org/t/p/w500/w6Jk8BHohhoKBUcxGeSyDQGWGWc.jpg",
