@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Babysitter",
+    "desc": "تأخذ أحداث إحدى الأمسيات منعطفًا غير متوقع لطفل شقي صغير يدعى كول والذي يحاول التجسس على جليسته بي التي يحبها حبًا جمًا، ويكتشف أنها قاتلة متحالفة مع الشيطان.",
+    "poster": "https://image.tmdb.org/t/p/w500/uAzKNxGnbK5SL7VF7UeQyZdQLHV.jpg",
+    "hdUrl": "https://streamtape.com/e/P7Ma03YmXGU0PJZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/P7Ma03YmXGU0PJZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "كوميديا رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Judah Lewis",
+            "image": "https://image.tmdb.org/t/p/w185/ekyNhCu18vYgJjt8MHrS9KsOqtD.jpg"
+        },
+        {
+            "name": "Samara Weaving",
+            "image": "https://image.tmdb.org/t/p/w185/rBgnkqLLUVbdyXfXEoiZsHHgZ7x.jpg"
+        },
+        {
+            "name": "Robbie Amell",
+            "image": "https://image.tmdb.org/t/p/w185/5MPx1TEdgPs9UEXV65nd80JikSH.jpg"
+        },
+        {
+            "name": "Hana Mae Lee",
+            "image": "https://image.tmdb.org/t/p/w185/l08BSDxmAAvCjgJ7A1IRsKWCPzA.jpg"
+        },
+        {
+            "name": "Bella Thorne",
+            "image": "https://image.tmdb.org/t/p/w185/lgz1eArGmzrN8pDbFhRnoXxC7c4.jpg"
+        }
+    ]
+},
+    {
     "title": "Brave",
     "desc": "غير مصيرك.\r تدور أحداث شجاع في المرتفعات الاسكتلندية الغامضة ، حيث ميريدا هي أميرة مملكة يحكمها الملك فيرغوس والملكة إلينور. ابنة جامحة ورامية بارعة ، تتحدى ميريدا ذات يوم عادة مقدسة للأرض وتجلب الاضطرابات عن غير قصد إلى المملكة. في محاولة لوضع الأمور في نصابها الصحيح ، تبحث ميريدا عن امرأة حكيمة عجوز غريبة الأطوار وتمنح أمنية مشؤومة. كما أن البحث عن مسعى ميريدا - والعمل كإغاثة كوميدية - هو أمراء المملكة الثلاثة: اللورد ماكجوفين الهائل ، واللورد ماكنتوش العابس ، واللورد دينجوال البغيض.",
     "poster": "https://image.tmdb.org/t/p/w500/4YmdndBO3cJ76kehGyIuT2C172X.jpg",
