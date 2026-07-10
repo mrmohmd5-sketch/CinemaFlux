@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Avengers: Endgame",
+    "desc": "بعد الأحداث المدمّرة لفيلم Avengers: Infinity War، أصبح الكون في حالة خراب بسبب أفعال الفضائي المجنون، ثانوس. وبمساعدة الحلفاء المتبقين، يجب على المنتقمين أن يجتمعوا مرة أخرى من أجل التراجع عن أفعال ثانوس وإعادة النظام إلى الكون مرة أخيرة، مهما كانت العواقب التي قد تنتظرهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/ieYywp9LuUI0Xxc5qkreP97cIQn.jpg",
+    "hdUrl": "https://streamtape.com/e/G67lY1VpqLtoyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/G67lY1VpqLtoyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "مغامرة خيال علمي حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Chris Evans",
+            "image": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        }
+    ]
+},
+    {
     "title": "The Avengers",
     "desc": "يجب على أقوى أبطال الأرض أن يتحدوا ويتعلموا القتال كفريق واحد إذا أرادوا إيقاف لوكي الشرير وجيشه الفضائي من استعباد البشرية.",
     "poster": "https://image.tmdb.org/t/p/w500/goQMyAlsmxBpPnMKIcm361Thju6.jpg",
