@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Avengers: Infinity War",
+    "desc": "مع استمرار المنتقمون وحلفائهم في حماية العالم من التهديدات التي لا يمكن لأي بطل لوحده التعامل معها، ظهر خطر جديد من الظلال الكوني - ثانوس -  مستبد من العار المجحف، هدفه هو جمع كل حجارة اللانهاية الستة، التي تحمل قوة لا يمكن تصورها، واستخدامها لإلحاق إرادته الملتوية على كل الواقع. لقد قادت كل الأمور التي كافحها المنتقمون حتى هذه اللحظة  - لم يكن مصير الأرض ووجودها أكثر غموضاً من ذي قبل.",
+    "poster": "https://image.tmdb.org/t/p/w500/oGnmYZ61rkudhF7nWirXxYOmdQW.jpg",
+    "hdUrl": "https://streamtape.com/e/Z3DXL6JVgXtqb1A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Z3DXL6JVgXtqb1A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "مغامرة حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Chris Evans",
+            "image": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Josh Brolin",
+            "image": "https://image.tmdb.org/t/p/w185/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        }
+    ]
+},
+    {
     "title": "Avengers: Age of Ultron",
     "desc": "عندما يحاول توني ستارك إعادة تشغيل برنامج لحفظ السلام كان متوقفًا، تسير الأمور بشكل كارثي، ويجد أقوى أبطال الأرض أنفسهم أمام أصعب اختبار في حياتهم، بينما يصبح مصير الكوكب بأكمله على المحك.  ومع ظهور الشرير ألترون، يصبح على 'المنتقمون' إيقافه قبل أن ينفذ خططه المروعة. وسرعان ما تؤدي التحالفات غير المستقرة والمواجهات غير المتوقعة إلى انطلاق مغامرة عالمية ملحمية وفريدة من نوعها.",
     "poster": "https://image.tmdb.org/t/p/w500/23hItmIT3tHckHl0GPpAblOJuPr.jpg",
