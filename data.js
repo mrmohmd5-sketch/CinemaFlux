@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Babysitter: Killer Queen",
+    "desc": "بعد مرور عامين على الطائفة الدموية الشيطانية، يعيش كول حياة بائسة مليئة بالكوابيس في المدرسة الثانوية، وسرعان ما تزداد الأمور سوء حينما يعود قتلة الماضي لحياته من جديد.",
+    "poster": "https://image.tmdb.org/t/p/w500/imy1OoT1xddt2kqw6hhc4v01e8i.jpg",
+    "hdUrl": "https://streamtape.com/e/dLpg6k6XgAuk8XO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/dLpg6k6XgAuk8XO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "كوميديا رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Judah Lewis",
+            "image": "https://image.tmdb.org/t/p/w185/ekyNhCu18vYgJjt8MHrS9KsOqtD.jpg"
+        },
+        {
+            "name": "Jenna Ortega",
+            "image": "https://image.tmdb.org/t/p/w185/dQb6COORkv8liT5FMtXdHuvjUsb.jpg"
+        },
+        {
+            "name": "Robbie Amell",
+            "image": "https://image.tmdb.org/t/p/w185/5MPx1TEdgPs9UEXV65nd80JikSH.jpg"
+        },
+        {
+            "name": "Emily Alyn Lind",
+            "image": "https://image.tmdb.org/t/p/w185/oyamam9VmA6KsBCNUPLK8BfseVH.jpg"
+        },
+        {
+            "name": "Andrew Bachelor",
+            "image": "https://image.tmdb.org/t/p/w185/dReXjimiVOydELw2ASQwRcStkbo.jpg"
+        }
+    ]
+},
+    {
     "title": "Avengers: Endgame",
     "desc": "بعد الأحداث المدمّرة لفيلم Avengers: Infinity War، أصبح الكون في حالة خراب بسبب أفعال الفضائي المجنون، ثانوس. وبمساعدة الحلفاء المتبقين، يجب على المنتقمين أن يجتمعوا مرة أخرى من أجل التراجع عن أفعال ثانوس وإعادة النظام إلى الكون مرة أخيرة، مهما كانت العواقب التي قد تنتظرهم.",
     "poster": "https://image.tmdb.org/t/p/w500/ieYywp9LuUI0Xxc5qkreP97cIQn.jpg",
