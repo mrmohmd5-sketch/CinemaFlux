@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Obsession",
+    "desc": "بعد أن كسر غصنًا من ’صفصافة الأمنية الواحدة‘ الغامضة ليفوز بقلب الفتاة التي يعشقها، يجد رومانسي يائس نفسه يحصل على ما طلب تمامًا، لكنه سرعان ما يكتشف أن بعض الرغبات تأتي بثمن باهظ ومظلم",
+    "poster": "https://image.tmdb.org/t/p/w500/qukypUmPwd21UnNTRvUdZHd4pNJ.jpg",
+    "hdUrl": "https://streamtape.com/e/4WWXPYb28ztKaOP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4WWXPYb28ztKaOP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.3",
+    "genre": "رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Michael Johnston",
+            "image": "https://image.tmdb.org/t/p/w185/fbpcCkBzu43kMdlXxEAMuLhseL8.jpg"
+        },
+        {
+            "name": "Inde Navarrette",
+            "image": "https://image.tmdb.org/t/p/w185/8mYBaOximzwBgXOYRzbS6eUnoMX.jpg"
+        },
+        {
+            "name": "Cooper Tomlinson",
+            "image": "https://image.tmdb.org/t/p/w185/vBMQbYT1DyWPCUp11dIiqZR9zhd.jpg"
+        },
+        {
+            "name": "Megan Lawless",
+            "image": "https://image.tmdb.org/t/p/w185/6qW63YEgB1qro01sM7T2HvhtFkh.jpg"
+        },
+        {
+            "name": "Andy Richter",
+            "image": "https://image.tmdb.org/t/p/w185/5Qr7N6TzC8cI0ULxDm6EC5GpZ4C.jpg"
+        }
+    ]
+},
+    {
     "title": "Surf's Up",
     "desc": "يقرر البطريق كودي، ، المشاركة في أكبر مسابقة ركوب أمواج في العالم. وفي طريقه، تنضم إليه دجاجة غريبة الأطوار، ومدير ثعلب الماء الحكيم،",
     "poster": "https://image.tmdb.org/t/p/w500/lgcCzTwQhLS9GkG6x83R0krgnoG.jpg",
