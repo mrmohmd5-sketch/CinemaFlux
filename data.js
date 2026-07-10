@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "F1",
+    "desc": "يتم إقناع أسطورة السباقات سوني هايز بالعودة من التقاعد لقيادة فريق فورمولا 1 المتعثر - وتوجيه سائق شاب موهوب على أمل تحقيق إنجاز جديد معه - بينما يطارد فرصة أخرى للمجد.",
+    "poster": "https://image.tmdb.org/t/p/w500/2Iikih1n9fPEIsBiUTZ2dCOcPqi.jpg",
+    "hdUrl": "https://streamtape.com/e/L1gKbMKwrbFRjLY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/L1gKbMKwrbFRjLY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "حركة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brad Pitt",
+            "image": "https://image.tmdb.org/t/p/w185/m09Y1YfPPeNYYUSHnnVqahkrC1o.jpg"
+        },
+        {
+            "name": "Damson Idris",
+            "image": "https://image.tmdb.org/t/p/w185/y0dcRs4GF6Xx23OxDr1ytc8thlL.jpg"
+        },
+        {
+            "name": "Javier Bardem",
+            "image": "https://image.tmdb.org/t/p/w185/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg"
+        },
+        {
+            "name": "Kerry Condon",
+            "image": "https://image.tmdb.org/t/p/w185/8RO25vJxQSoNdhsVbiAHOsiGfvl.jpg"
+        },
+        {
+            "name": "Tobias Menzies",
+            "image": "https://image.tmdb.org/t/p/w185/hGhAw2obMEOu1K0ed9b3jds9thf.jpg"
+        }
+    ]
+},
+    {
     "title": "The Devil Wears Prada 2",
     "desc": "ستبقى الأيقونات خالدة.  مع اقتراب ميراندا بريستلي من سن التقاعد، تجتمع مجدداً مع أندي ساكس لمواجهة مساعدتها السابقة التي تحولت إلى منافسة لدودة: إميلي شارلتون.",
     "poster": "https://image.tmdb.org/t/p/w500/norHRkEH77pCtqjUOCkdYPWEI7w.jpg",
