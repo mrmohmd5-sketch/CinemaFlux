@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Incredibles",
+    "desc": "تخلى بوب بار عن حياة الابطال الخارقين ليعمل في شركة تأمين ويربي مع زوجته اطفالة الثلاث في الضواحي. لكن بعد استلامه مهمة غامضة، فقد حان الوقت للعودة إلى لبس الزي.",
+    "poster": "https://image.tmdb.org/t/p/w500/sQsT5kZ1es2BkmFKUhp0dlzZi9n.jpg",
+    "hdUrl": "https://streamtape.com/e/96b2v391PVfaGXm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/96b2v391PVfaGXm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "حركة مغامرة رسوم متحركة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Craig T. Nelson",
+            "image": "https://image.tmdb.org/t/p/w185/rMh8qdexFKmc7mq7oLzsLLvCCjs.jpg"
+        },
+        {
+            "name": "Holly Hunter",
+            "image": "https://image.tmdb.org/t/p/w185/kC7KX03VAWvogOCuwKbMo4V6TuU.jpg"
+        },
+        {
+            "name": "Sarah Vowell",
+            "image": "https://image.tmdb.org/t/p/w185/dP1hMYTk2q4voIUxtgmvD81nMty.jpg"
+        },
+        {
+            "name": "Spencer Fox",
+            "image": "https://image.tmdb.org/t/p/w185/vMyWK5qZWEG0GZh4FXCDXx4Jqfm.jpg"
+        },
+        {
+            "name": "Jason Lee",
+            "image": "https://image.tmdb.org/t/p/w185/3duPl6Ve8RnvcouOaXoMCdJf5ln.jpg"
+        }
+    ]
+},
+    {
     "title": "Ratatouille",
     "desc": "ريمي ، المقيم في باريس ، يقدر الطعام الجيد ولديه حنك متطور. ويرغب بأن  يحب أن يصبح طاهياً ليتمكن من ابتكار روائع الطهي والاستمتاع بها. المشكلة الوحيدة هي أن ريمي فأر. عندما ينتهي به المطاف في المجاري أسفل أحد أرقى المطاعم في باريس ، يجد ذوّاقة القوارض نفسه في وضع مثالي لتحقيق حلمه.",
     "poster": "https://image.tmdb.org/t/p/w500/lBfftNxNUTvuWyVnhvQuvj2IOnI.jpg",
