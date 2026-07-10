@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Sheep Detectives",
+    "desc": "عندما يُعثر على مربّيهم المحبوب ميتاً في ظروف غامضة، يستنتج قطيع من الأغنام أنه سيتعين عليهم حل جريمة القتل بأنفسهم، حتى لو كان ذلك يعني مغادرة مرعاهم لأول مرة ومواجهة حقيقة أن العالم البشري ليس بالبساطة التي يبدو عليها في الكتب.",
+    "poster": "https://image.tmdb.org/t/p/w500/2hqxC1MvuQFAv8LdLppNuUHBz1i.jpg",
+    "hdUrl": "https://streamtape.com/e/L34kGQ6YoRsR2gq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/L34kGQ6YoRsR2gq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "مغامرة كوميديا جريمة عائلي غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hugh Jackman",
+            "image": "https://image.tmdb.org/t/p/w185/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+        },
+        {
+            "name": "Nicholas Braun",
+            "image": "https://image.tmdb.org/t/p/w185/b2I6bZptuld3pjlVkYIy4DtMKGg.jpg"
+        },
+        {
+            "name": "Nicholas Galitzine",
+            "image": "https://image.tmdb.org/t/p/w185/hG4rH7eBMs117746bBOd8fUa4PA.jpg"
+        },
+        {
+            "name": "Molly Gordon",
+            "image": "https://image.tmdb.org/t/p/w185/5sMIadZ0CIL7IUCJHnqO4ZFsdEM.jpg"
+        },
+        {
+            "name": "Julia Louis-Dreyfus",
+            "image": "https://image.tmdb.org/t/p/w185/iEfHQNrVbVFesDPjdySom9nqsFg.jpg"
+        }
+    ]
+},
+    {
     "title": "Ready or Not: Here I Come",
     "desc": "بعد لحظات من نجاتها من هجومٍ شاملٍ شنّته عائلة لو دوماس، تكتشف غريس أنها وصلت إلى المرحلة التالية من هذه اللعبة الكابوسية، وهذه المرة برفقة أختها المنفصلة عنها، فيث. أمام غريس فرصة واحدة للنجاة، والحفاظ على حياة أختها، والوصول إلى أعلى منصب في المجلس الذي يُسيطر على العالم. أربع عائلات متنافسة تُطاردها للاستيلاء على العرش، والفائز هو من سيحكم العالم بأسره.",
     "poster": "https://image.tmdb.org/t/p/w500/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg",
