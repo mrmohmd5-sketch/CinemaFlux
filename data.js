@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Mission: Impossible - Rogue Nation",
+    "desc": "بعد حل وحدة المهام المستحيلة (IMF) يجد العميل إيثان هانت (توم كروز) نفسه بمفرده، بينما يواجه فريقه شبكة خاصة من العملاء ذوي المهارات العالية تحمل اسم النقابة، حيث تضم أفرادًا على أعلى تدريب يسعون لتكوين نظام عالمي جديد أيًا كان الثمن، عبر سلسلة متصاعدة من الهجمات الإرهابية. يجمع إيثان فريقًا ويوحد قواه مع العميلة السابقة إلسا فاوست (ريبيكا فيرجسون) بعد أن تبرأت منها الاستخبارات البريطانية، رغم إنها قد تكون جزءًا من تلك المجموعة المارقة، ليواجه هذا الفريق أكثر مهمة مستحيلة له على الإطلاق.",
+    "poster": "https://image.tmdb.org/t/p/w500/n1UCFfRqZlWo4UuAizVhAFEylGT.jpg",
+    "hdUrl": "https://streamtape.com/e/3ppMprL03JIRp2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3ppMprL03JIRp2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Cruise",
+            "image": "https://image.tmdb.org/t/p/w185/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg"
+        },
+        {
+            "name": "Jeremy Renner",
+            "image": "https://image.tmdb.org/t/p/w185/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+        },
+        {
+            "name": "Simon Pegg",
+            "image": "https://image.tmdb.org/t/p/w185/jw8bEEoTOithyNf0qxu4Zt1yaKp.jpg"
+        },
+        {
+            "name": "Rebecca Ferguson",
+            "image": "https://image.tmdb.org/t/p/w185/lJloTOheuQSirSLXNA3JHsrMNfH.jpg"
+        },
+        {
+            "name": "Ving Rhames",
+            "image": "https://image.tmdb.org/t/p/w185/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
+        }
+    ]
+},
+    {
     "title": "Mission: Impossible - Ghost Protocol",
     "desc": "يتسابق إيثان هانت وفريقه مع الزمن لتعقب إرهابي خطير يدعى هندريكس ، الذي تمكن من الوصول إلى رموز الإطلاق النووية الروسية ويخطط لشن هجوم على الولايات المتحدة. وتنتهي محاولة منعه بانفجار تسبب في دمار شديد للكرملين وصندوق النقد الدولي لتورطهما في التفجير ، مما أجبر الرئيس على التنصل منهما. لم يعد إيثان وفريقه يتلقون المساعدة من الحكومة ، ويطاردون هندريكس في جميع أنحاء العالم ، على الرغم من أنهم ربما فات الأوان لوقف الكارثة.",
     "poster": "https://image.tmdb.org/t/p/w500/bi61KYRPq3uOjcicWBB1xIU9q0x.jpg",
