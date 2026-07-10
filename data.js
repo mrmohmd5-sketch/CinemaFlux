@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Black Panther",
+    "desc": "يجب على تشالا، وريث مملكة واكاندا الخفية والمتقدمة، أن يتقدم ليقود شعبه نحو مستقبل جديد، وأن يواجه خصماً من ماضي بلاده.",
+    "poster": "https://image.tmdb.org/t/p/w500/sksOGFDEd9f2mvIM68m8i1XRS30.jpg",
+    "hdUrl": "https://streamtape.com/e/y7D0bxvDqRF1R1Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/y7D0bxvDqRF1R1Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chadwick Boseman",
+            "image": "https://image.tmdb.org/t/p/w185/nL16SKfyP1b7Hk6LsuWiqMfbdb8.jpg"
+        },
+        {
+            "name": "Michael B. Jordan",
+            "image": "https://image.tmdb.org/t/p/w185/sMBpav8cK7t7Nk0yf4tuNOqNUyW.jpg"
+        },
+        {
+            "name": "Lupita Nyong'o",
+            "image": "https://image.tmdb.org/t/p/w185/mJMpsADPpt0bmXEzs3ywrUiCkpD.jpg"
+        },
+        {
+            "name": "Danai Gurira",
+            "image": "https://image.tmdb.org/t/p/w185/z7H7QeQvr24vskGlANQhG43vozQ.jpg"
+        },
+        {
+            "name": "Martin Freeman",
+            "image": "https://image.tmdb.org/t/p/w185/nrO54AzrxiNgCjBUOSz6ebyxDZY.jpg"
+        }
+    ]
+},
+    {
     "title": "Captain Marvel",
     "desc": "تُصبح كارول دانفرز واحدة من أقوى أبطال الكون عندما تجد الأرض نفسها عالقة في خضم حرب مجرية بين عرقين فضائيين.",
     "poster": "https://image.tmdb.org/t/p/w500/7kypW3Vf3oa8bZ6pRXzrQsfwUoz.jpg",
