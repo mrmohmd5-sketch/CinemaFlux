@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ant-Man",
+    "desc": "مُسلّحًا ببدلة خارقة ذات قدرة مذهلة على التقلص مع ازدياد القوة، يجد اللص سكوت لانغ نفسه مضطرًا لاستغلال بطولته الكامنة ومساعدة مُعلّمه، الدكتور هانك بيم، في تنفيذ خطة لإنقاذ العالم.",
+    "poster": "https://image.tmdb.org/t/p/w500/14bx6O9BKFuQI5l8c9MSFh0zQQv.jpg",
+    "hdUrl": "https://streamtape.com/e/xPzmbVoeg2Ik4bD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/xPzmbVoeg2Ik4bD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "خيال علمي مغامرة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Paul Rudd",
+            "image": "https://image.tmdb.org/t/p/w185/6jtwNOLKy0LdsRAKwZqgYMAfd5n.jpg"
+        },
+        {
+            "name": "Michael Douglas",
+            "image": "https://image.tmdb.org/t/p/w185/kVYGPIZowzXLEQfAGUNOqKjAbBb.jpg"
+        },
+        {
+            "name": "Evangeline Lilly",
+            "image": "https://image.tmdb.org/t/p/w185/zgztLIWTJZm3vjGU7ezhF8GXESJ.jpg"
+        },
+        {
+            "name": "Corey Stoll",
+            "image": "https://image.tmdb.org/t/p/w185/a5wxOBGmXVwcEqWvEizFk06SDSj.jpg"
+        },
+        {
+            "name": "Bobby Cannavale",
+            "image": "https://image.tmdb.org/t/p/w185/wlp20ggyNI7x0xGUtTjC2Xl2XmD.jpg"
+        }
+    ]
+},
+    {
     "title": "Doctor Strange",
     "desc": "في رحلة شفاء جسدي وروحي، ينجذب جراح أعصاب بارع إلى عالم الفنون الخفية.",
     "poster": "https://image.tmdb.org/t/p/w500/fP33MFHyjJ7CpdnEJXYWJHB0zf7.jpg",
