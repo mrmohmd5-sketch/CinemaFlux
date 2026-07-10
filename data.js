@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Eternals",
+    "desc": "ملحمة الخالدين، وهم جنس من الكائنات الخالدة التي عاشت على الأرض وشكلت تاريخها وحضاراتها.",
+    "poster": "https://image.tmdb.org/t/p/w500/9WflgM3cFL9PWK3PCS01Q0zKs6H.jpg",
+    "hdUrl": "https://streamtape.com/e/pk4jDKj7BXfr4VB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pk4jDKj7BXfr4VB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "خيال علمي حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Gemma Chan",
+            "image": "https://image.tmdb.org/t/p/w185/stTKj4iNauhqlVmZ6XAsFsvcMCY.jpg"
+        },
+        {
+            "name": "Richard Madden",
+            "image": "https://image.tmdb.org/t/p/w185/9QQFfVZ6PLe3WVmOL56wGNOnbGL.jpg"
+        },
+        {
+            "name": "Angelina Jolie",
+            "image": "https://image.tmdb.org/t/p/w185/bXNxIKcJ5cNNW8QFrBPWcfTSu9x.jpg"
+        },
+        {
+            "name": "Salma Hayek Pinault",
+            "image": "https://image.tmdb.org/t/p/w185/1qfYF7NGRObmeKR7IVXUFVIC0CN.jpg"
+        },
+        {
+            "name": "Kumail Nanjiani",
+            "image": "https://image.tmdb.org/t/p/w185/nUIuTKmB855tdWKTNaHrdiLNuyg.jpg"
+        }
+    ]
+},
+    {
     "title": "Obsession",
     "desc": "بعد أن كسر غصنًا من ’صفصافة الأمنية الواحدة‘ الغامضة ليفوز بقلب الفتاة التي يعشقها، يجد رومانسي يائس نفسه يحصل على ما طلب تمامًا، لكنه سرعان ما يكتشف أن بعض الرغبات تأتي بثمن باهظ ومظلم",
     "poster": "https://image.tmdb.org/t/p/w500/qukypUmPwd21UnNTRvUdZHd4pNJ.jpg",
