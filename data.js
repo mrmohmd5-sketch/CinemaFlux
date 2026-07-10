@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Coco",
+    "desc": "الاحتفال بالعمر\r على الرغم من الحظر المحير الذي فرضته عائلته منذ أجيال على الموسيقى ، يحلم ميغيل بأن يصبح موسيقيا بارعا مثل معبوده إرنستو دي لا كروز. في محاولة يائسة لإثبات موهبته ، يجد ميغيل نفسه في أرض الموتى المذهلة والملونة بعد سلسلة غامضة من الأحداث. على طول الطريق ، يلتقي المحتال الساحر هيكتور ، وينطلقان معا في رحلة غير عادية لفتح القصة الحقيقية وراء تاريخ عائلة ميغيل.",
+    "poster": "https://image.tmdb.org/t/p/w500/6vK2fKqxBB8q0gJD9CYL2wKJvqT.jpg",
+    "hdUrl": "https://streamtape.com/e/ZVG01PB6BLTKqM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ZVG01PB6BLTKqM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "عائلي رسوم متحركة موسيقى مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Anthony Gonzalez",
+            "image": "https://image.tmdb.org/t/p/w185/WF7bn6t0LkxwBWyDMWvomVujn7.jpg"
+        },
+        {
+            "name": "Gael García Bernal",
+            "image": "https://image.tmdb.org/t/p/w185/7uEO29wtdyY9bjt2JN43gVpE6vt.jpg"
+        },
+        {
+            "name": "Benjamin Bratt",
+            "image": "https://image.tmdb.org/t/p/w185/hBenHPT4iJEG2kt5z2TOGnkRZwh.jpg"
+        },
+        {
+            "name": "Alanna Ubach",
+            "image": "https://image.tmdb.org/t/p/w185/p2sIpgftEIkhPrrpgu8wW8XEpDg.jpg"
+        },
+        {
+            "name": "Renée Victor",
+            "image": "https://image.tmdb.org/t/p/w185/wAVDqwFhQsRQgO6VIYq6T9Wbbx8.jpg"
+        }
+    ]
+},
+    {
     "title": "Toy Story 2",
     "desc": "تحكي القصة عن المأمور وودي الذي يتعرض للإصابة كلعبة في بداية الفيلم فيتم ركنه على الرفّ ويجد صديقة القديم المريض بسبب الركنة ولما يحاول إنقاذه من البيع كروبابيكيا يقوم أحد المتجولين في معرض الروبابيكيا بسرقة المأمور وودي لأغراض ربحية وتدور القصة بعد ذلك حول محاولة أصدقاء المأمور وودي بقيادة باز يطير لاسترجاع صديقهم وإنقاذه إلى أنهم يجدوا الكثير من المفاجآت ولكنهم يعدوا في نهاية الفيلم وقد انضم إليهم صديقين جدد.",
     "poster": "https://image.tmdb.org/t/p/w500/eGWUhABoftpRmcSo2PJUSRWo50c.jpg",
