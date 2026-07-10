@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Hokum",
+    "desc": "عندما ينعزل الروائي أوم بومان في نُزل ناءٍ لينثر رماد والديه، تسيطر عليه حكايات عن ساحرة تطارد نزلاء جناح شهر العسل. لكن الرؤى المزعجة وحالة اختفاء صادمة تجبره على مواجهة الزوايا المظلمة من ماضيه",
+    "poster": "https://image.tmdb.org/t/p/w500/jHKPnRPjX16Itl2jhfv3Ay4J6vL.jpg",
+    "hdUrl": "https://streamtape.com/e/ldLokdG6e0fZ39/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ldLokdG6e0fZ39/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Adam Scott",
+            "image": "https://image.tmdb.org/t/p/w185/b82C29R6fGiPoqIglQ4lzS6q2YX.jpg"
+        },
+        {
+            "name": "Peter Coonan",
+            "image": "https://image.tmdb.org/t/p/w185/4CIPj53v871Gwwyean91BhXesfW.jpg"
+        },
+        {
+            "name": "David Wilmot",
+            "image": "https://image.tmdb.org/t/p/w185/epb46N0iJyAmSOguMdFn6qQGSsy.jpg"
+        },
+        {
+            "name": "Florence Ordesh",
+            "image": "https://image.tmdb.org/t/p/w185/vOSd53O4QOjZUl9U8LIP84lrvGk.jpg"
+        },
+        {
+            "name": "Will O'Connell",
+            "image": "https://image.tmdb.org/t/p/w185/9aQlrstSFoKQdsCigFWQibyfZhW.jpg"
+        }
+    ]
+},
+    {
     "title": "Tom Clancy's Jack Ryan: Ghost War",
     "desc": "في هذا الفيلم الجديد، يعود جاك رايان إلى عالم التجسس رغماً عنه عندما تكشف مهمة سرّية دولية عن مؤامرة مميتة. وفي سباق مع الزمن، ينضم إلى حلفاء وكالة المخابرات المركزية مايك نوفمبر وجيمس  غرير، وضابطة المخابرات البريطانية إيما مارلو، لمواجهة وحدة عمليات سرّية مارقة في معركة مصيرية وشخصية للغاية.",
     "poster": "https://image.tmdb.org/t/p/w500/iBEQJqPdmzFvPjuTxy2KZtbsEQJ.jpg",
