@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Tom Clancy's Jack Ryan: Ghost War",
+    "desc": "في هذا الفيلم الجديد، يعود جاك رايان إلى عالم التجسس رغماً عنه عندما تكشف مهمة سرّية دولية عن مؤامرة مميتة. وفي سباق مع الزمن، ينضم إلى حلفاء وكالة المخابرات المركزية مايك نوفمبر وجيمس  غرير، وضابطة المخابرات البريطانية إيما مارلو، لمواجهة وحدة عمليات سرّية مارقة في معركة مصيرية وشخصية للغاية.",
+    "poster": "https://image.tmdb.org/t/p/w500/iBEQJqPdmzFvPjuTxy2KZtbsEQJ.jpg",
+    "hdUrl": "https://streamtape.com/e/3PlMdrGpr4CdODo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3PlMdrGpr4CdODo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "John Krasinski",
+            "image": "https://image.tmdb.org/t/p/w185/pmVGDb6Yl6OyFcHVGbu1EYNfyFK.jpg"
+        },
+        {
+            "name": "Wendell Pierce",
+            "image": "https://image.tmdb.org/t/p/w185/r6yKahL6Z8l9aUX5qvWxTmWl8Nm.jpg"
+        },
+        {
+            "name": "Sienna Miller",
+            "image": "https://image.tmdb.org/t/p/w185/lq2mEeDbL98bSz0H7xcHA3F2Rrb.jpg"
+        },
+        {
+            "name": "Michael Kelly",
+            "image": "https://image.tmdb.org/t/p/w185/6MI8HhX1GWbcrWG8DiHffzmqaVm.jpg"
+        },
+        {
+            "name": "Max Beesley",
+            "image": "https://image.tmdb.org/t/p/w185/kUBoZ4cMo1i6ojBci0VMznmbn9y.jpg"
+        }
+    ]
+},
+    {
     "title": "Iron Lung",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
