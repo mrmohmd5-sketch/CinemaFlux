@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Deadpool",
+    "desc": "يخضع مرتزقٌ فكاهي لتجارب تجعله خالداً ولكنه مشوه بشكل بشع، وينطلق في رحلة للبحث عن الرجل الذي شوّه مظهره.",
+    "poster": "https://image.tmdb.org/t/p/w500/sxSvb0bb5MonuwiT21gxTcrrOL0.jpg",
+    "hdUrl": "https://streamtape.com/e/RpL98wxPzrTdOdz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/RpL98wxPzrTdOdz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "حركة مغامرة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ryan Reynolds",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Morena Baccarin",
+            "image": "https://image.tmdb.org/t/p/w185/4gyHyg6FJ1oFczOm5pmMkdEEo2J.jpg"
+        },
+        {
+            "name": "Ed Skrein",
+            "image": "https://image.tmdb.org/t/p/w185/btJvbQbWf3ciYM4SM5tMWSJEkXX.jpg"
+        },
+        {
+            "name": "T.J. Miller",
+            "image": "https://image.tmdb.org/t/p/w185/rRrVvBxOkyYM5XdLXimShHR1Itn.jpg"
+        },
+        {
+            "name": "Gina Carano",
+            "image": "https://image.tmdb.org/t/p/w185/6K89PVbt3v2N7cqbPyZiO74yuOj.jpg"
+        }
+    ]
+},
+    {
     "title": "Captain America: Civil War",
     "desc": "يؤدي التدخل السياسي في شؤون المنتقمين إلى حدوث شرخ بين كابتن أمريكا وآيرون مان.",
     "poster": "https://image.tmdb.org/t/p/w500/8qrwEGagUE5Kc1IVxpWRHSGAPvD.jpg",
