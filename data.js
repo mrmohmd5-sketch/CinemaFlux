@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ratatouille",
+    "desc": "ريمي ، المقيم في باريس ، يقدر الطعام الجيد ولديه حنك متطور. ويرغب بأن  يحب أن يصبح طاهياً ليتمكن من ابتكار روائع الطهي والاستمتاع بها. المشكلة الوحيدة هي أن ريمي فأر. عندما ينتهي به المطاف في المجاري أسفل أحد أرقى المطاعم في باريس ، يجد ذوّاقة القوارض نفسه في وضع مثالي لتحقيق حلمه.",
+    "poster": "https://image.tmdb.org/t/p/w500/lBfftNxNUTvuWyVnhvQuvj2IOnI.jpg",
+    "hdUrl": "https://streamtape.com/e/okwX1ob69oH98o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/okwX1ob69oH98o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Patton Oswalt",
+            "image": "https://image.tmdb.org/t/p/w185/ljQvjbPmcIAl205Lb2Mu4CW8WO7.jpg"
+        },
+        {
+            "name": "Ian Holm",
+            "image": "https://image.tmdb.org/t/p/w185/cOJDgvgj4nMec6Inzj1H5nugTO5.jpg"
+        },
+        {
+            "name": "Lou Romano",
+            "image": "https://image.tmdb.org/t/p/w185/1qOuqRzlp5BghzTkYSN3MsaEXgF.jpg"
+        },
+        {
+            "name": "Brian Dennehy",
+            "image": "https://image.tmdb.org/t/p/w185/cg7CwS1vMJXCzZ0FUm4RbrjAJ2t.jpg"
+        },
+        {
+            "name": "Peter Sohn",
+            "image": "https://image.tmdb.org/t/p/w185/8cQGViF2lXlcsAIvFUMWboXYXIu.jpg"
+        }
+    ]
+},
+    {
     "title": "Monsters, Inc.",
     "desc": "تدور أحداث الفيلم عن مدينة للوحوش. شركة المرعبين المحدودة هي شركة توليد الطاقة للمدينة، والتي تستعمل كمصدر للطاقة صراخ الأطفال، لهذا يحاولون تخويفهم. وفي محاولة أحد الموظفين (راندل) بالاتفاق مع مدير الشركة أبو عنكبوت لتوفير الطاقة والتي أصبحت الشركة تعانى من قلتها بسبب عدم خوف الاطفال من المخوفاتيه يقوم هذا الموظف باختراع جهاز مهمته أن يأخذ الصراخ من الأطفال بالقوه. يكتشف شلبى سلوفان عن وجود باب بعد ساعات العمل، ومن هذا الباب تدخل طفله إلى مدينة المرعبيين. وهنا تبدأ الأحداث حيث يسعى شلبى سلوفان وماردوشوشنى إلى إعادة الطفلة إلى بيتها في ظل مطاردة من اندل للقبض على الطفلة وتجربة الجهاز عليها. أثناء هذه المطاردة يكتشفون ان مدير الشركة أبو عنكبوت مشترك في هذه الجريمة. وبعد عدة أحداث يتم القبض على أبو عنكبوت ويتم نفى اندل إلى عالم البشر. كما يكتشفون مصدر جديد للطاقة بدلا من تخويف وهو الضحك. ويستلم شلبى سلوفان إدارة الشركة والتي تعود للنمو من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/oLKR5TveXBdAI50TpxXS1hURG9Y.jpg",
