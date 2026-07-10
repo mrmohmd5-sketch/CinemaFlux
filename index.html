@@ -551,29 +551,29 @@
             });
 
             // 2. نظام التصنيفات الديناميكي الذكي (محدث لدعم الفواصل العربية والإنجليزية)
-const genresMap = {};
+            const genresMap = {};
 
-allMoviesData.forEach(item => {
-    if (item.genre) {
-        // تم التعديل هنا ليفصل بناءً على الفاصلة الإنجليزية (,) والفاصلة العربية (،)
-        const genresList = item.genre.split(/,|،/).map(g => g.trim());
-        genresList.forEach(genre => {
-            if (genre) { // التأكد من أن اسم التصنيف ليس فارغاً
-                if (!genresMap[genre]) genresMap[genre] = [];
-                // تجنب تكرار الفيلم داخل نفس التصنيف
-                if (!genresMap[genre].some(m => m.title === item.title)) {
-                    genresMap[genre].push(item);
+            allMoviesData.forEach(item => {
+                if (item.genre) {
+                    // تم التعديل هنا ليفصل بناءً على الفاصلة الإنجليزية (,) والفاصلة العربية (،)
+                    const genresList = item.genre.split(/,|،/).map(g => g.trim());
+                    genresList.forEach(genre => {
+                        if (genre) { // التأكد من أن اسم التصنيف ليس فارغاً
+                            if (!genresMap[genre]) genresMap[genre] = [];
+                            // تجنب تكرار الفيلم داخل نفس التصنيف
+                            if (!genresMap[genre].some(m => m.title === item.title)) {
+                                genresMap[genre].push(item);
+                            }
+                        }
+                    });
+                } else {
+                    const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
+                    if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
+                    if (!genresMap[defaultGenre].some(m => m.title === item.title)) {
+                        genresMap[defaultGenre].push(item);
+                    }
                 }
-            }
-        });
-    } else {
-        const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
-        if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
-        if (!genresMap[defaultGenre].some(m => m.title === item.title)) {
-            genresMap[defaultGenre].push(item);
-        }
-    }
-});
+            });
                     const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
                     if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
                     genresMap[defaultGenre].push(item);
