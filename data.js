@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "desc": "يخوض (دكتور سترينج)، بمساعدة حلفاء من الماضي والحاضر، رحلة عبر العوالم الموازية والمخيفة للكون المتعدد، متجاوزاً حدود العقل ليواجه خصماً جديداً غامضاً.",
+    "poster": "https://image.tmdb.org/t/p/w500/iGMaJs2GIGVR7bTNRI2gclhW6ym.jpg",
+    "hdUrl": "https://streamtape.com/e/mq1aLzQDOaiVxx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mq1aLzQDOaiVxx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "فانتازيا حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Benedict Cumberbatch",
+            "image": "https://image.tmdb.org/t/p/w185/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+        },
+        {
+            "name": "Xochitl Gomez",
+            "image": "https://image.tmdb.org/t/p/w185/q39DOx44YHrGF1h88R9HxRNZS3.jpg"
+        },
+        {
+            "name": "Elizabeth Olsen",
+            "image": "https://image.tmdb.org/t/p/w185/dlS1CKO8Dh2lORhE73WosZ4bRt2.jpg"
+        },
+        {
+            "name": "Chiwetel Ejiofor",
+            "image": "https://image.tmdb.org/t/p/w185/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg"
+        },
+        {
+            "name": "Benedict Wong",
+            "image": "https://image.tmdb.org/t/p/w185/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
+        }
+    ]
+},
+    {
     "title": "Shang-Chi and the Legend of the Ten Rings",
     "desc": "شانغ تشي، سيد فنون الكونغ فو القائم على الأسلحة، يُجبر على مواجهة ماضيه بعد انضمامه إلى منظمة الحلقات العشر.",
     "poster": "https://image.tmdb.org/t/p/w500/jcjGSIDtwJlPELn13yj1m7py9Ab.jpg",
