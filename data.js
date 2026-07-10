@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Finding Nemo",
+    "desc": "القصة عن سمكتين (من نوع كلون أو المهرج) تعيشان في المحيط الهادئ وبعد وضع الأنثى للبيوض تهاجم من قبل سمكة البينارا فتموت ويرعى الأب 'مرهف' البيضة الوحيدة المتبقية ويسميها 'نيمو' بناء لرغبة الأم 'مرجانة'. يحاول 'مرهف' حماية ابنه من الخطر بهوس زائد عن الحد فيتمرد نيمو ويذهب ناحية قارب لقوم بتبين شجاعتة لأبوه ويقع في يد غواص ياخذه إلى أستراليا في سيدنى فيبدأ مرهف رحلة عبر المحيط لإيجاده مع سمكة تعاني من فقدان ذاكرة مؤقت! اسمها 'دوري' في حين يحاول الابن الخروج من حوض الأسماك الذي وضعه فيه دكتور أسنان وبمساعدة بعض الأصدقاء لنيمو في الخروج من الحوض وبالفعل ينجحو ويعود الابن لأبوه.",
+    "poster": "https://image.tmdb.org/t/p/w500/lYkqmcx2yETvDDIMl5SCcoqVskS.jpg",
+    "hdUrl": "https://streamtape.com/e/A4MW2W4MrKIXkZK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/A4MW2W4MrKIXkZK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة عائلي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Albert Brooks",
+            "image": "https://image.tmdb.org/t/p/w185/8iDSGu5l93N7benjf6b3AysBore.jpg"
+        },
+        {
+            "name": "Ellen DeGeneres",
+            "image": "https://image.tmdb.org/t/p/w185/z8IEEid4z63CBlJtxrTKEfsW7NA.jpg"
+        },
+        {
+            "name": "Alexander Gould",
+            "image": "https://image.tmdb.org/t/p/w185/zzfj8LHhSiRntnyThvOBirEEmII.jpg"
+        },
+        {
+            "name": "Willem Dafoe",
+            "image": "https://image.tmdb.org/t/p/w185/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg"
+        },
+        {
+            "name": "Geoffrey Rush",
+            "image": "https://image.tmdb.org/t/p/w185/npXFjaFQzBNroCEPllGPTZ5IisA.jpg"
+        }
+    ]
+},
+    {
     "title": "A Bug's Life",
     "desc": "يحكي الفيلم عن إحدى مستعمرات النمل التي يسيطر عليها عصابة من الجراد الشرير والتي تفرض على المستعمرة جمع الحبوب لصالحها مما يفرض على النمل عبئا إضافيا لجمع الحبوب للجراد ثم لنفسه قبل حلول موسم المطر الذي يلزمون فيه المستعمرة. إلا أن 'فليك' النملة الذكية وبطل الفيلم يقرر الرحيل عن المستعمرة والذهاب إلى مدينة مجاورة من أجل الاستعانة بحشرات مقاتلين لمعاونة قومه على نبذ سيطرة الجراد عليهم. ويوافق حكماء النمل على رحيل 'فليك' من أجل التخلص من متاعبه التي يسببها دائما بواسطة أختراعاته",
     "poster": "https://image.tmdb.org/t/p/w500/hyLKSwnRxFQoEwAhf0wfDyw11Q4.jpg",
