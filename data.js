@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Avengers",
+    "desc": "يجب على أقوى أبطال الأرض أن يتحدوا ويتعلموا القتال كفريق واحد إذا أرادوا إيقاف لوكي الشرير وجيشه الفضائي من استعباد البشرية.",
+    "poster": "https://image.tmdb.org/t/p/w500/goQMyAlsmxBpPnMKIcm361Thju6.jpg",
+    "hdUrl": "https://streamtape.com/e/Qe68aY8Dx2C0LAJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Qe68aY8Dx2C0LAJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.1",
+    "genre": "خيال علمي حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Chris Evans",
+            "image": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        }
+    ]
+},
+    {
     "title": "Ready Player One",
     "desc": "في المستقبل القريب، يحاول الشاب المنبوذ (وايد) الهروب من رعبه اليومي عن طريق التحاقه بلعبة إلكترونية تُدعى (الواحة). وعندما يموت مؤسس اللعبة البليونير، تُعرَض ثروته على اللاعبين كجائزة لمن يصل إلى نقطة معينة باللعبة، يجد وايد نفسه مُحاصرًا بديون خصومه من الشركة؛ في الواقع وداخل اللعبة على حد سواء.",
     "poster": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
