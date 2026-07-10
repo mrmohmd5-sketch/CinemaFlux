@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved",
+    "desc": "ينقلب العيش الهادئ للآنسة كوباياشي والتنينات الساكنات معها، تورو وكانَّا وإلولو، عقب أن أتاهم ذات يوم كيمون كاموي، والد كانَّا. يتزعم كيمون كاموي فصيل الفوضى في العالم الذي جاءت منه التنانين، وما جلبه إلى عالم البشر إلَّا إرجاع كانَّا معه؛ إذ لديها شيء يريده يرجِّح كفة فصيل الفوضى على فصيل الانسجام المناوئ لهم، وقد نُفِيَت بسبب ما فعلته له إلى عالم البشر. يرى أبوها أن عودتها ومساعدتهم تصحيحٌ لذلك الخطأ الذي اقترفته في الماضي. يحتدم الصراع بين قوى الفوضى وقوى الانسجام، وتلوح في الأفق بوادر حربٍ كبرى قد تهدد استقرار كلا العالمين. تجد كانَّا نفسها حائرةً بين خيارين: بين أداء واجبها تجاه أبيها وفصيلها، وبين صون الأواصر التي بَنتْها مع أصدقائها البشر الذين أصبحوا بمنزلة عائلةٍ لها.",
+    "poster": "https://image.tmdb.org/t/p/w500/udnoedTfNkI01LEZYmU50HJKy2R.jpg",
+    "hdUrl": "https://streamtape.com/e/mPoDpABm3DsQ4D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mPoDpABm3DsQ4D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.8",
+    "genre": "رسوم متحركة كوميديا فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Maria Naganawa",
+            "image": "https://image.tmdb.org/t/p/w185/tt0j0z34Oq3MyvDA3VeizskWcw4.jpg"
+        },
+        {
+            "name": "Mutsumi Tamura",
+            "image": "https://image.tmdb.org/t/p/w185/uvbBIRiBK6GDLEESiYSFWOVlaE4.jpg"
+        },
+        {
+            "name": "Yuuki Kuwahara",
+            "image": "https://image.tmdb.org/t/p/w185/n9kLcB2YNl9S2kK6b2rId7cpjdh.jpg"
+        },
+        {
+            "name": "Yuuki Takada",
+            "image": "https://image.tmdb.org/t/p/w185/sbe8XOF0JHg6KB96fuqHuXGUQtK.jpg"
+        },
+        {
+            "name": "Minami Takahashi",
+            "image": "https://image.tmdb.org/t/p/w185/9SRX6yrHGtGEJxcnLyGFhOZkXSH.jpg"
+        }
+    ]
+},
+    {
     "title": "The Sheep Detectives",
     "desc": "عندما يُعثر على مربّيهم المحبوب ميتاً في ظروف غامضة، يستنتج قطيع من الأغنام أنه سيتعين عليهم حل جريمة القتل بأنفسهم، حتى لو كان ذلك يعني مغادرة مرعاهم لأول مرة ومواجهة حقيقة أن العالم البشري ليس بالبساطة التي يبدو عليها في الكتب.",
     "poster": "https://image.tmdb.org/t/p/w500/2hqxC1MvuQFAv8LdLppNuUHBz1i.jpg",
