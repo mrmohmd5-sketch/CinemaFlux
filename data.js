@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Surf's Up",
+    "desc": "يقرر البطريق كودي، ، المشاركة في أكبر مسابقة ركوب أمواج في العالم. وفي طريقه، تنضم إليه دجاجة غريبة الأطوار، ومدير ثعلب الماء الحكيم،",
+    "poster": "https://image.tmdb.org/t/p/w500/lgcCzTwQhLS9GkG6x83R0krgnoG.jpg",
+    "hdUrl": "https://streamtape.com/e/aVaGyMRrYJux480/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/aVaGyMRrYJux480/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "رسوم متحركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Shia LaBeouf",
+            "image": "https://image.tmdb.org/t/p/w185/egvlIdeizCkSkuHVoDuuduIThFA.jpg"
+        },
+        {
+            "name": "Jeff Bridges",
+            "image": "https://image.tmdb.org/t/p/w185/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
+        },
+        {
+            "name": "Zooey Deschanel",
+            "image": "https://image.tmdb.org/t/p/w185/30KQyjsXfrdm4Dcori7bDFTg9Le.jpg"
+        },
+        {
+            "name": "Jon Heder",
+            "image": "https://image.tmdb.org/t/p/w185/xGLRJEKKmNsDpz6MefPMU4gqQj1.jpg"
+        },
+        {
+            "name": "James Woods",
+            "image": "https://image.tmdb.org/t/p/w185/tLH7mpH4KqkWL5VgjueTbewGsfK.jpg"
+        }
+    ]
+},
+    {
     "title": "Empire of Lies",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/2uAFDuOCv6jjbRolZQDnVsbjU8n.jpg",
