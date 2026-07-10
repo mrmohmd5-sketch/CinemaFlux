@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Devil Wears Prada 2",
+    "desc": "ستبقى الأيقونات خالدة.  مع اقتراب ميراندا بريستلي من سن التقاعد، تجتمع مجدداً مع أندي ساكس لمواجهة مساعدتها السابقة التي تحولت إلى منافسة لدودة: إميلي شارلتون.",
+    "poster": "https://image.tmdb.org/t/p/w500/norHRkEH77pCtqjUOCkdYPWEI7w.jpg",
+    "hdUrl": "https://streamtape.com/e/qKrwdgYedXSzlr4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/qKrwdgYedXSzlr4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "كوميديا دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Meryl Streep",
+            "image": "https://image.tmdb.org/t/p/w185/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
+        },
+        {
+            "name": "Anne Hathaway",
+            "image": "https://image.tmdb.org/t/p/w185/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+            "name": "Emily Blunt",
+            "image": "https://image.tmdb.org/t/p/w185/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+        },
+        {
+            "name": "Stanley Tucci",
+            "image": "https://image.tmdb.org/t/p/w185/q4TanMDI5Rgsvw4SfyNbPBh4URr.jpg"
+        },
+        {
+            "name": "Kenneth Branagh",
+            "image": "https://image.tmdb.org/t/p/w185/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
+        }
+    ]
+},
+    {
     "title": "Captain America: The Winter Soldier",
     "desc": "بينما يكافح ستيف روجرز من أجل تقبّل دوره في العالم الحديث، يتعاون مع زميلته المنتقمة وعميلة منظمة شيلد، الأرملة السوداء، لمحاربة تهديد جديد من التاريخ: قاتل يُعرف باسم الجندي الشتوي.",
     "poster": "https://image.tmdb.org/t/p/w500/eEoO2Ns5pAf5vtwAS3UXCUQRLGB.jpg",
