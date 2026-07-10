@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ready or Not",
+    "desc": "في ليلة زفافها، تجد العروس الشابة نفسها في كابوس مرعب عندما يجبرها أهل زوجها الأثرياء على المشاركة في لعبة قاتلة من الغميضة، حيث يتحول الاحتفال إلى صراع مميت للبقاء على قيد الحياة.",
+    "poster": "https://image.tmdb.org/t/p/w500/oJD9KQFoObZmxAS1je56SIFVNJt.jpg",
+    "hdUrl": "https://streamtape.com/e/e2ArBAXYMysYWeJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/e2ArBAXYMysYWeJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "رعب كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Samara Weaving",
+            "image": "https://image.tmdb.org/t/p/w185/rBgnkqLLUVbdyXfXEoiZsHHgZ7x.jpg"
+        },
+        {
+            "name": "Adam Brody",
+            "image": "https://image.tmdb.org/t/p/w185/qKBWrohBYegm6AAaLrtxEqqouIK.jpg"
+        },
+        {
+            "name": "Mark O'Brien",
+            "image": "https://image.tmdb.org/t/p/w185/8ckgltvlife4BBJcBpHEQWXfQ9p.jpg"
+        },
+        {
+            "name": "Henry Czerny",
+            "image": "https://image.tmdb.org/t/p/w185/zOWZzRmliKf9032IOOq0a3jXhVv.jpg"
+        },
+        {
+            "name": "Andie MacDowell",
+            "image": "https://image.tmdb.org/t/p/w185/akeheO4i3cR1HpSU8yu9HrLcsKm.jpg"
+        }
+    ]
+},
+    {
     "title": "Mission: Impossible - Fallout",
     "desc": "عندما تنتهي مهمة صندوق النقد الدولي بشكل سيئ، يواجه العالم عواقب وخيمة. كما يأخذ إيثان هانت على عاتقه أن يفي بالتوجيهات الاصلية، تبدأ وكالة المخابرات المركزية بالتشكيك في ولائه ودوافعه. يجد فريق صندوق النقد الدولي نفسه في سباق مع الزمن، يلاحقون من قبل المرتزقه بينما يحاولون منع كارثة عالمية.",
     "poster": "https://image.tmdb.org/t/p/w500/lonGvu7rQ4D1WboRLsJ5Pzpy0dm.jpg",
