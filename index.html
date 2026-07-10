@@ -550,30 +550,17 @@
                 featuredSlider.appendChild(slide);
             });
 
-            // 2. نظام التصنيفات الديناميكي الذكي (محدث لدعم الفواصل العربية والإنجليزية)
+            // 2. نظام التصنيفات الديناميكي الذكي
             const genresMap = {};
 
             allMoviesData.forEach(item => {
                 if (item.genre) {
-                    // تم التعديل هنا ليفصل بناءً على الفاصلة الإنجليزية (,) والفاصلة العربية (،)
-                    const genresList = item.genre.split(/,|،/).map(g => g.trim());
+                    const genresList = item.genre.split(',').map(g => g.trim());
                     genresList.forEach(genre => {
-                        if (genre) { // التأكد من أن اسم التصنيف ليس فارغاً
-                            if (!genresMap[genre]) genresMap[genre] = [];
-                            // تجنب تكرار الفيلم داخل نفس التصنيف
-                            if (!genresMap[genre].some(m => m.title === item.title)) {
-                                genresMap[genre].push(item);
-                            }
-                        }
+                        if (!genresMap[genre]) genresMap[genre] = [];
+                        genresMap[genre].push(item);
                     });
                 } else {
-                    const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
-                    if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
-                    if (!genresMap[defaultGenre].some(m => m.title === item.title)) {
-                        genresMap[defaultGenre].push(item);
-                    }
-                }
-            });
                     const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
                     if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
                     genresMap[defaultGenre].push(item);
@@ -678,25 +665,25 @@
             document.getElementById('btnSD').classList.remove('active');
             
             // بناء الكادر والطاقم
-            const sliderCast = document.getElementById('castListSlider');
-            sliderCast.innerHTML = '';
-            if (item.cast && item.cast.length > 0) {
-                document.getElementById('castContainerBlock').style.display = 'block';
-                item.cast.forEach(person => {
-                    // التحقق من جميع المسميات المحتملة لرابط الصورة في ملف data.js
-                    const actorImage = person.image || person.img || person.avatar || person.photo || person.pic || person.profile_path || '';
-                    
-                    const castCard = document.createElement('div');
-                    castCard.className = 'cast-card';
-                    castCard.innerHTML = `
-                        <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
-                        <div class="cast-name">${person.name || 'مجهول'}</div>
-                    `;
-                    sliderCast.appendChild(castCard);
-                });
-            } else {
-                document.getElementById('castContainerBlock').style.display = 'none';
-            }
+const sliderCast = document.getElementById('castListSlider');
+sliderCast.innerHTML = '';
+if (item.cast && item.cast.length > 0) {
+    document.getElementById('castContainerBlock').style.display = 'block';
+    item.cast.forEach(person => {
+        // التحقق من جميع المسميات المحتملة لرابط الصورة في ملف data.js
+        const actorImage = person.image || person.img || person.avatar || person.photo || person.pic || person.profile_path || '';
+        
+        const castCard = document.createElement('div');
+        castCard.className = 'cast-card';
+        castCard.innerHTML = `
+            <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+            <div class="cast-name">${person.name || 'مجهول'}</div>
+        `;
+        sliderCast.appendChild(castCard);
+    });
+} else {
+    document.getElementById('castContainerBlock').style.display = 'none';
+}
             
             // جلب التعليقات الافتراضية
             const commentsContainer = document.getElementById('commentsListContainer');
