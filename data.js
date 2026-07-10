@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "F9",
+    "desc": "بعد اﻷحداث التي جرت في الجزء السابق The Fate Of the Furious، تقرر سايفر تلقي المساعدة من جاكوب، شقيق دوم الأصغر من أجل تنفيذ خطة انتقام من دوم وفريقه .",
+    "poster": "https://image.tmdb.org/t/p/w500/eBRVLUoOqM0qVOgKAwjlqeaQ3za.jpg",
+    "hdUrl": "https://streamtape.com/e/3BxKQXV0KWtrqg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3BxKQXV0KWtrqg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة مغامرة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Tyrese Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg"
+        },
+        {
+            "name": "Ludacris",
+            "image": "https://image.tmdb.org/t/p/w185/erkJijujhe48vhJ8iCEtVpNEeVn.jpg"
+        },
+        {
+            "name": "John Cena",
+            "image": "https://image.tmdb.org/t/p/w185/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg"
+        }
+    ]
+},
+    {
     "title": "In the Grey",
     "desc": "يعيش فريق سري من النخبة في الخفاء. وعندما يسطو طاغية مستبد على ثروة بمليارات الدولارات، يتم إرسالهم لاستعادتها في عملية سرقة مستحيلة تتحول إلى لعبة مميتة من الاستراتيجية و الخداع والبقاء.",
     "poster": "https://image.tmdb.org/t/p/w500/owJLXVFzCGuLtwZ51WQPNE6ZMTK.jpg",
