@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Toy Story",
+    "desc": "تعيش ألعاب آندي، بقيادة وودي، بسعادة في غرفته حتى عيد ميلاد آندي الذي جلب معه باز لايتيير إلى المشهد. خوفًا من فقدان مكانته في قلب آندي، يدبر وودي مكائد ضد باز. ولكن عندما تفرق الظروف باز ووودي عن صاحبهما، يتعلم الثنائي في النهاية وضع خلافاتهما جانبًا.",
+    "poster": "https://image.tmdb.org/t/p/w500/hX5TEEzea1XX8t2V9VK5InW4M7x.jpg",
+    "hdUrl": "https://streamtape.com/e/1ampg0yWKyT0KO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1ampg0yWKyT0KO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "عائلي كوميديا رسوم متحركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Tim Allen",
+            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+            "name": "Don Rickles",
+            "image": "https://image.tmdb.org/t/p/w185/iGMOVxIQoTPepRvqSCtRulfpx7u.jpg"
+        },
+        {
+            "name": "Jim Varney",
+            "image": "https://image.tmdb.org/t/p/w185/zvBFmvKUrPvE6FW35O3RP4i1ZPp.jpg"
+        },
+        {
+            "name": "Wallace Shawn",
+            "image": "https://image.tmdb.org/t/p/w185/wVaM1WlFKDce4esThwL4XtNLhOe.jpg"
+        }
+    ]
+},
+    {
     "title": "Avengers: Infinity War",
     "desc": "مع استمرار المنتقمون وحلفائهم في حماية العالم من التهديدات التي لا يمكن لأي بطل لوحده التعامل معها، ظهر خطر جديد من الظلال الكوني - ثانوس -  مستبد من العار المجحف، هدفه هو جمع كل حجارة اللانهاية الستة، التي تحمل قوة لا يمكن تصورها، واستخدامها لإلحاق إرادته الملتوية على كل الواقع. لقد قادت كل الأمور التي كافحها المنتقمون حتى هذه اللحظة  - لم يكن مصير الأرض ووجودها أكثر غموضاً من ذي قبل.",
     "poster": "https://image.tmdb.org/t/p/w500/oGnmYZ61rkudhF7nWirXxYOmdQW.jpg",
