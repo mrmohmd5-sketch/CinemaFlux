@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Thor: Ragnarok",
+    "desc": "يُسجن ثور على كوكب ساكار، وعليه أن يسابق الزمن للعودة إلى أسغارد وإيقاف راجناروك، دمار عالمه، على يد الشرير القوي عديم الرحمة هيلا.",
+    "poster": "https://image.tmdb.org/t/p/w500/4Zrcfq0kDltHKMgPSVzi6rw8UOA.jpg",
+    "hdUrl": "https://streamtape.com/e/rJ1L6qMl6XHbwk2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/rJ1L6qMl6XHbwk2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "حركة خيال علمي كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Tom Hiddleston",
+            "image": "https://image.tmdb.org/t/p/w185/mclHxMm8aPlCPKptP67257F5GPo.jpg"
+        },
+        {
+            "name": "Cate Blanchett",
+            "image": "https://image.tmdb.org/t/p/w185/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg"
+        },
+        {
+            "name": "Idris Elba",
+            "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        }
+    ]
+},
+    {
     "title": "Venom",
     "desc": "عندما يستحوذ إدي بروك على قوه خارقه من السمبيود، سيكون عليه أن يطلق سراح - فينوم -  من أجل إنقاذ حياته.",
     "poster": "https://image.tmdb.org/t/p/w500/3EfE1jrO5Ww0ITP8uk3Rno64utS.jpg",
