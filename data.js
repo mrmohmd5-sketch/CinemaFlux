@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Cars",
+    "desc": "القصة عن لايتننج ماكويين سيارة السباق ذات الشخصية البطولية المثالية التي تخاطر بكل شيء في سبيل النجاح والشهرة ولا تئبأ باى شخص حولها ماذا يحدث حين ترغم على العيش في مدينة ريفية فقيرة لا يهتم أحد بها بالمظاهر هناك تبدأ بتعلم الصداقة والوفاء والحب",
+    "poster": "https://image.tmdb.org/t/p/w500/wQyTF7K5SknpqWBTM8nPMJw1ztr.jpg",
+    "hdUrl": "https://streamtape.com/e/mvy773bQoqhb1A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mvy773bQoqhb1A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رسوم متحركة مغامرة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Owen Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/5A46lNOwmpX77jAdhyKxU7e2Hub.jpg"
+        },
+        {
+            "name": "Paul Newman",
+            "image": "https://image.tmdb.org/t/p/w185/bP2fByqNR7BorsUNuD6nSm0u2vJ.jpg"
+        },
+        {
+            "name": "Bonnie Hunt",
+            "image": "https://image.tmdb.org/t/p/w185/tT9C6uLztgN8OxJULq6F9iEzqlA.jpg"
+        },
+        {
+            "name": "Larry the Cable Guy",
+            "image": "https://image.tmdb.org/t/p/w185/34pX2sQj9DddaQWRBGukSWYdXxS.jpg"
+        },
+        {
+            "name": "Cheech Marin",
+            "image": "https://image.tmdb.org/t/p/w185/eecHDNRn9K80ZcuSocsMhQb2G1i.jpg"
+        }
+    ]
+},
+    {
     "title": "Finding Nemo",
     "desc": "القصة عن سمكتين (من نوع كلون أو المهرج) تعيشان في المحيط الهادئ وبعد وضع الأنثى للبيوض تهاجم من قبل سمكة البينارا فتموت ويرعى الأب 'مرهف' البيضة الوحيدة المتبقية ويسميها 'نيمو' بناء لرغبة الأم 'مرجانة'. يحاول 'مرهف' حماية ابنه من الخطر بهوس زائد عن الحد فيتمرد نيمو ويذهب ناحية قارب لقوم بتبين شجاعتة لأبوه ويقع في يد غواص ياخذه إلى أستراليا في سيدنى فيبدأ مرهف رحلة عبر المحيط لإيجاده مع سمكة تعاني من فقدان ذاكرة مؤقت! اسمها 'دوري' في حين يحاول الابن الخروج من حوض الأسماك الذي وضعه فيه دكتور أسنان وبمساعدة بعض الأصدقاء لنيمو في الخروج من الحوض وبالفعل ينجحو ويعود الابن لأبوه.",
     "poster": "https://image.tmdb.org/t/p/w500/lYkqmcx2yETvDDIMl5SCcoqVskS.jpg",
