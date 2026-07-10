@@ -1,5 +1,25 @@
 const globalMoviesData = [
     {
+    "title": "Empire of Lies",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/2uAFDuOCv6jjbRolZQDnVsbjU8n.jpg",
+    "hdUrl": "https://streamtape.com/e/OJRRjA3yQLFZyXA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/OJRRjA3yQLFZyXA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Joseph Millson",
+            "image": "https://image.tmdb.org/t/p/w185/pd5iENRPBpybR935qv8C2TVtGNL.jpg"
+        },
+        {
+            "name": "Natalie Spence",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ]
+},
+    {
     "title": "Up",
     "desc": "الفيلم يتحدث عن ذكريات العجوز كارل فريدريكسون (كرم فَريد زين في النسخة العربية) البالغ 87 عاماً الذي حلم طيلة حياته هو وزوجته أن يزورا حدائق وغابات أمريكا الجنوبية، إلا أنها توفيت قبل أن يحقق لها ما تريد، فيقرر الذهاب إلى هناك مباشرة. ولأنه كان بائعا للبالون يقرر السفر إلى هناك مع منزله الذي يحمل معه كل ذكرياته، بأن يرفع البيت بعدد كبير من البالون المليء بالهيليوم ويبحر به كالمنطاد. ومع انطلاقه فوق لا يلاحظ العجوز أن أحد الأطفال الفضوليين قد تعلق بشرفة المنزل وارتفع معه. وهنا تبدأ المغامرة حيث رجل عجوز وطفل شقي في مغامرة بغابات وأدغال فنزويلا.",
     "poster": "https://image.tmdb.org/t/p/w500/fPtAMZkhSZuz71XVm94F1n6f1oZ.jpg",
