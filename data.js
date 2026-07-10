@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Brave",
+    "desc": "غير مصيرك.\r تدور أحداث شجاع في المرتفعات الاسكتلندية الغامضة ، حيث ميريدا هي أميرة مملكة يحكمها الملك فيرغوس والملكة إلينور. ابنة جامحة ورامية بارعة ، تتحدى ميريدا ذات يوم عادة مقدسة للأرض وتجلب الاضطرابات عن غير قصد إلى المملكة. في محاولة لوضع الأمور في نصابها الصحيح ، تبحث ميريدا عن امرأة حكيمة عجوز غريبة الأطوار وتمنح أمنية مشؤومة. كما أن البحث عن مسعى ميريدا - والعمل كإغاثة كوميدية - هو أمراء المملكة الثلاثة: اللورد ماكجوفين الهائل ، واللورد ماكنتوش العابس ، واللورد دينجوال البغيض.",
+    "poster": "https://image.tmdb.org/t/p/w500/4YmdndBO3cJ76kehGyIuT2C172X.jpg",
+    "hdUrl": "https://streamtape.com/e/6bO9Zw3O1OH9Dxj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/6bO9Zw3O1OH9Dxj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "مغامرة رسوم متحركة عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kelly Macdonald",
+            "image": "https://image.tmdb.org/t/p/w185/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg"
+        },
+        {
+            "name": "Emma Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/zQ0hWHh3tzaOOziPbABQI8s9WCu.jpg"
+        },
+        {
+            "name": "Billy Connolly",
+            "image": "https://image.tmdb.org/t/p/w185/imqsEA1EPet7OvHx80VfTYfFcWf.jpg"
+        },
+        {
+            "name": "Julie Walters",
+            "image": "https://image.tmdb.org/t/p/w185/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg"
+        },
+        {
+            "name": "Robbie Coltrane",
+            "image": "https://image.tmdb.org/t/p/w185/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg"
+        }
+    ]
+},
+    {
     "title": "Cars",
     "desc": "القصة عن لايتننج ماكويين سيارة السباق ذات الشخصية البطولية المثالية التي تخاطر بكل شيء في سبيل النجاح والشهرة ولا تئبأ باى شخص حولها ماذا يحدث حين ترغم على العيش في مدينة ريفية فقيرة لا يهتم أحد بها بالمظاهر هناك تبدأ بتعلم الصداقة والوفاء والحب",
     "poster": "https://image.tmdb.org/t/p/w500/wQyTF7K5SknpqWBTM8nPMJw1ztr.jpg",
