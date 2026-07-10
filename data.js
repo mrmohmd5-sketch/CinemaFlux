@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Guardians of the Galaxy",
+    "desc": "يتعين على مجموعة من المجرمين بين المجرات أن يتحدوا لإيقاف محارب متعصب يخطط لتطهير الكون.",
+    "poster": "https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+    "hdUrl": "https://streamtape.com/e/d7paBJK1bAfkKa6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/d7paBJK1bAfkKa6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "حركة خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Pratt",
+            "image": "https://image.tmdb.org/t/p/w185/872Hzdq95gsbMRabsColTW3TLrD.jpg"
+        },
+        {
+            "name": "Zoe Saldaña",
+            "image": "https://image.tmdb.org/t/p/w185/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg"
+        },
+        {
+            "name": "Dave Bautista",
+            "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        },
+        {
+            "name": "Vin Diesel",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Bradley Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
+        }
+    ]
+},
+    {
     "title": "Deadpool",
     "desc": "يخضع مرتزقٌ فكاهي لتجارب تجعله خالداً ولكنه مشوه بشكل بشع، وينطلق في رحلة للبحث عن الرجل الذي شوّه مظهره.",
     "poster": "https://image.tmdb.org/t/p/w500/sxSvb0bb5MonuwiT21gxTcrrOL0.jpg",
