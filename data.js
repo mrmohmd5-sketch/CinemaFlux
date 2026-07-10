@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Up",
+    "desc": "الفيلم يتحدث عن ذكريات العجوز كارل فريدريكسون (كرم فَريد زين في النسخة العربية) البالغ 87 عاماً الذي حلم طيلة حياته هو وزوجته أن يزورا حدائق وغابات أمريكا الجنوبية، إلا أنها توفيت قبل أن يحقق لها ما تريد، فيقرر الذهاب إلى هناك مباشرة. ولأنه كان بائعا للبالون يقرر السفر إلى هناك مع منزله الذي يحمل معه كل ذكرياته، بأن يرفع البيت بعدد كبير من البالون المليء بالهيليوم ويبحر به كالمنطاد. ومع انطلاقه فوق لا يلاحظ العجوز أن أحد الأطفال الفضوليين قد تعلق بشرفة المنزل وارتفع معه. وهنا تبدأ المغامرة حيث رجل عجوز وطفل شقي في مغامرة بغابات وأدغال فنزويلا.",
+    "poster": "https://image.tmdb.org/t/p/w500/fPtAMZkhSZuz71XVm94F1n6f1oZ.jpg",
+    "hdUrl": "https://streamtape.com/e/BOBD6GVK7dIWvz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BOBD6GVK7dIWvz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "رسوم متحركة كوميديا عائلي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ed Asner",
+            "image": "https://image.tmdb.org/t/p/w185/AeVizz1AfAB2TbsfyzgBvqeSR3G.jpg"
+        },
+        {
+            "name": "Christopher Plummer",
+            "image": "https://image.tmdb.org/t/p/w185/u0YBwss0ebEUp8sjRtQKnK2wZdR.jpg"
+        },
+        {
+            "name": "Jordan Nagai",
+            "image": "https://image.tmdb.org/t/p/w185/j1kVS2sI3wWIHCCzzYD1buXAP9e.jpg"
+        },
+        {
+            "name": "Bob Peterson",
+            "image": "https://image.tmdb.org/t/p/w185/dJe3nTCIToebjj1WHFHP7LmZKyk.jpg"
+        },
+        {
+            "name": "Delroy Lindo",
+            "image": "https://image.tmdb.org/t/p/w185/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg"
+        }
+    ]
+},
+    {
     "title": "Hokum",
     "desc": "عندما ينعزل الروائي أوم بومان في نُزل ناءٍ لينثر رماد والديه، تسيطر عليه حكايات عن ساحرة تطارد نزلاء جناح شهر العسل. لكن الرؤى المزعجة وحالة اختفاء صادمة تجبره على مواجهة الزوايا المظلمة من ماضيه",
     "poster": "https://image.tmdb.org/t/p/w500/jHKPnRPjX16Itl2jhfv3Ay4J6vL.jpg",
