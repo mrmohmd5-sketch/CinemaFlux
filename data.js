@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Avengers: Age of Ultron",
+    "desc": "عندما يحاول توني ستارك إعادة تشغيل برنامج لحفظ السلام كان متوقفًا، تسير الأمور بشكل كارثي، ويجد أقوى أبطال الأرض أنفسهم أمام أصعب اختبار في حياتهم، بينما يصبح مصير الكوكب بأكمله على المحك.  ومع ظهور الشرير ألترون، يصبح على 'المنتقمون' إيقافه قبل أن ينفذ خططه المروعة. وسرعان ما تؤدي التحالفات غير المستقرة والمواجهات غير المتوقعة إلى انطلاق مغامرة عالمية ملحمية وفريدة من نوعها.",
+    "poster": "https://image.tmdb.org/t/p/w500/23hItmIT3tHckHl0GPpAblOJuPr.jpg",
+    "hdUrl": "https://streamtape.com/e/xqK8WlYWB8HkgJQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/xqK8WlYWB8HkgJQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Chris Evans",
+            "image": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        }
+    ]
+},
+    {
     "title": "The Babysitter: Killer Queen",
     "desc": "بعد مرور عامين على الطائفة الدموية الشيطانية، يعيش كول حياة بائسة مليئة بالكوابيس في المدرسة الثانوية، وسرعان ما تزداد الأمور سوء حينما يعود قتلة الماضي لحياته من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/imy1OoT1xddt2kqw6hhc4v01e8i.jpg",
