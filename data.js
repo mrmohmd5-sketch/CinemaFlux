@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Captain America: The Winter Soldier",
+    "desc": "بينما يكافح ستيف روجرز من أجل تقبّل دوره في العالم الحديث، يتعاون مع زميلته المنتقمة وعميلة منظمة شيلد، الأرملة السوداء، لمحاربة تهديد جديد من التاريخ: قاتل يُعرف باسم الجندي الشتوي.",
+    "poster": "https://image.tmdb.org/t/p/w500/eEoO2Ns5pAf5vtwAS3UXCUQRLGB.jpg",
+    "hdUrl": "https://streamtape.com/e/wO0zBD8Wg2tJrYz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wO0zBD8Wg2tJrYz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Evans",
+            "image": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/AiAYAqwpM5xmiFrAIeQvUXDCVvo.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+            "name": "Robert Redford",
+            "image": "https://image.tmdb.org/t/p/w185/14FuWhuwRLXCplIur2v39L5NZ1W.jpg"
+        },
+        {
+            "name": "Sebastian Stan",
+            "image": "https://image.tmdb.org/t/p/w185/v20RLWst39klatsqUgSrwHxhwee.jpg"
+        }
+    ]
+},
+    {
     "title": "Guardians of the Galaxy",
     "desc": "يتعين على مجموعة من المجرمين بين المجرات أن يتحدوا لإيقاف محارب متعصب يخطط لتطهير الكون.",
     "poster": "https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
