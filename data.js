@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ready or Not: Here I Come",
+    "desc": "بعد لحظات من نجاتها من هجومٍ شاملٍ شنّته عائلة لو دوماس، تكتشف غريس أنها وصلت إلى المرحلة التالية من هذه اللعبة الكابوسية، وهذه المرة برفقة أختها المنفصلة عنها، فيث. أمام غريس فرصة واحدة للنجاة، والحفاظ على حياة أختها، والوصول إلى أعلى منصب في المجلس الذي يُسيطر على العالم. أربع عائلات متنافسة تُطاردها للاستيلاء على العرش، والفائز هو من سيحكم العالم بأسره.",
+    "poster": "https://image.tmdb.org/t/p/w500/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg",
+    "hdUrl": "https://streamtape.com/e/p1jGL7QV8wirPoZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/p1jGL7QV8wirPoZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "إثارة رعب كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Samara Weaving",
+            "image": "https://image.tmdb.org/t/p/w185/rBgnkqLLUVbdyXfXEoiZsHHgZ7x.jpg"
+        },
+        {
+            "name": "Kathryn Newton",
+            "image": "https://image.tmdb.org/t/p/w185/1jRMjb3gvulT74tiIkWbz2xJEsc.jpg"
+        },
+        {
+            "name": "Sarah Michelle Gellar",
+            "image": "https://image.tmdb.org/t/p/w185/xKe52w4tpv61ohz9iz75wNdzcwZ.jpg"
+        },
+        {
+            "name": "Shawn Hatosy",
+            "image": "https://image.tmdb.org/t/p/w185/hm3KRxmotbJ93fJQJvE0G0EGONw.jpg"
+        },
+        {
+            "name": "Nestor Carbonell",
+            "image": "https://image.tmdb.org/t/p/w185/4Xn03t2qDEMR2ecM7BtLwpvs3J0.jpg"
+        }
+    ]
+},
+    {
     "title": "F9",
     "desc": "بعد اﻷحداث التي جرت في الجزء السابق The Fate Of the Furious، تقرر سايفر تلقي المساعدة من جاكوب، شقيق دوم الأصغر من أجل تنفيذ خطة انتقام من دوم وفريقه .",
     "poster": "https://image.tmdb.org/t/p/w500/eBRVLUoOqM0qVOgKAwjlqeaQ3za.jpg",
