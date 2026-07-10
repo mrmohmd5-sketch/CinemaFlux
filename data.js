@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Mission: Impossible - Fallout",
+    "desc": "عندما تنتهي مهمة صندوق النقد الدولي بشكل سيئ، يواجه العالم عواقب وخيمة. كما يأخذ إيثان هانت على عاتقه أن يفي بالتوجيهات الاصلية، تبدأ وكالة المخابرات المركزية بالتشكيك في ولائه ودوافعه. يجد فريق صندوق النقد الدولي نفسه في سباق مع الزمن، يلاحقون من قبل المرتزقه بينما يحاولون منع كارثة عالمية.",
+    "poster": "https://image.tmdb.org/t/p/w500/lonGvu7rQ4D1WboRLsJ5Pzpy0dm.jpg",
+    "hdUrl": "https://streamtape.com/e/p4WrdbYoxasr8yB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/p4WrdbYoxasr8yB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Cruise",
+            "image": "https://image.tmdb.org/t/p/w185/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg"
+        },
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "Ving Rhames",
+            "image": "https://image.tmdb.org/t/p/w185/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
+        },
+        {
+            "name": "Simon Pegg",
+            "image": "https://image.tmdb.org/t/p/w185/jw8bEEoTOithyNf0qxu4Zt1yaKp.jpg"
+        },
+        {
+            "name": "Rebecca Ferguson",
+            "image": "https://image.tmdb.org/t/p/w185/lJloTOheuQSirSLXNA3JHsrMNfH.jpg"
+        }
+    ]
+},
+    {
     "title": "Mission: Impossible - Rogue Nation",
     "desc": "بعد حل وحدة المهام المستحيلة (IMF) يجد العميل إيثان هانت (توم كروز) نفسه بمفرده، بينما يواجه فريقه شبكة خاصة من العملاء ذوي المهارات العالية تحمل اسم النقابة، حيث تضم أفرادًا على أعلى تدريب يسعون لتكوين نظام عالمي جديد أيًا كان الثمن، عبر سلسلة متصاعدة من الهجمات الإرهابية. يجمع إيثان فريقًا ويوحد قواه مع العميلة السابقة إلسا فاوست (ريبيكا فيرجسون) بعد أن تبرأت منها الاستخبارات البريطانية، رغم إنها قد تكون جزءًا من تلك المجموعة المارقة، ليواجه هذا الفريق أكثر مهمة مستحيلة له على الإطلاق.",
     "poster": "https://image.tmdb.org/t/p/w500/n1UCFfRqZlWo4UuAizVhAFEylGT.jpg",
