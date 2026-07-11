@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Thor",
+    "desc": "تم طرد الإله القوي والمتغطرس ثور من أسغارد ليعيش بين البشر في ميدغارد (الأرض)، حيث سرعان ما أصبح أحد أفضل المدافعين عنهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/1FHQvc3OeqlalUkUdAdh1k4xaoO.jpg",
+    "hdUrl": "https://streamtape.com/e/o1empwkvdasWpD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/o1empwkvdasWpD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "مغامرة فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Natalie Portman",
+            "image": "https://image.tmdb.org/t/p/w185/edPU5HxncLWa1YkgRPNkSd68ONG.jpg"
+        },
+        {
+            "name": "Tom Hiddleston",
+            "image": "https://image.tmdb.org/t/p/w185/mclHxMm8aPlCPKptP67257F5GPo.jpg"
+        },
+        {
+            "name": "Anthony Hopkins",
+            "image": "https://image.tmdb.org/t/p/w185/iaf7SHSkGDpnyrDh1Jolilwk2TD.jpg"
+        },
+        {
+            "name": "Stellan Skarsgård",
+            "image": "https://image.tmdb.org/t/p/w185/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg"
+        }
+    ]
+},
+    {
     "title": "Iron Man 2",
     "desc": "بعد أن أصبح العالم على دراية بهويته كرجل حديدي، يتعين على توني ستارك أن يتعامل مع تدهور صحته ومع رجل مجنون يسعى للانتقام وله صلات بإرث والده.",
     "poster": "https://image.tmdb.org/t/p/w500/yhQxDrmpgJiiTuT76ulq5BTpq43.jpg",
