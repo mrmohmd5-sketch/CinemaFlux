@@ -160,6 +160,7 @@
                 let castData = [];
                 if(creditsRes.ok) {
                     const creditsData = await creditsRes.json();
+                    // نأخذ أول 5 ممثلين، وتم تعديل دالة الخريطة (map) للتأكد من قراءة الرابط الخاص بكل ممثل بشكل فريد تماماً
                     castData = creditsData.cast.slice(0, 5).map(actor => {
                         return {
                             name: actor.name,
@@ -168,7 +169,6 @@
                     });
                 }
 
-                // تعديل طريقة الدمج لضمان الفصل التام بين الكلمات والتصنيفات المتعددة
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
                 const overviewText = dataAr.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
@@ -208,10 +208,12 @@
 
                 let updatedContentText = "";
                 
+                // هنا نقوم بالبحث الآمن عن القوس المربع الأول للإدراج الصحيح في بداية المصفوفة
                 if (currentContentText.indexOf("[") !== -1) {
                     const bracketIndex = currentContentText.indexOf("[");
                     const stringToObject = JSON.stringify(newMediaObject, null, 4);
                     
+                    // يتم إدراج الفيلم الجديد في السطر التالي للقوس المربع مباشرة لضمان الحفاظ على الهيكل العام
                     updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
                 } else {
                     updatedContentText = `const globalMoviesData = [\n    ${JSON.stringify(newMediaObject, null, 4)}\n];`;
@@ -226,7 +228,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية آمنة للمحتوى: ${titleText} مع طاقم التمثيل والتصنيف الصحيح`,
+                        message: `إضافة تلقائية آمنة للفيلم: ${titleText} مع طاقم التمثيل الصحيح`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -234,7 +236,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح مع التصنيفات وطاقم العمل دون أي تكرار!`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح مع صور الممثلين الصحيحة وبدون أي تكرار!`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
 
