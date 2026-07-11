@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Iron Man",
+    "desc": "بعد أن تم احتجازه أسيراً في كهف أفغاني، قام المهندس الملياردير توني ستارك بصنع بدلة درع فريدة من نوعها مزودة بأسلحة لمحاربة الشر.",
+    "poster": "https://image.tmdb.org/t/p/w500/yGzI4mAq683ULhac34MZuhdH5eY.jpg",
+    "hdUrl": "https://streamtape.com/e/vLJyol0Rx3T2Dg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vLJyol0Rx3T2Dg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "حركة خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Terrence Howard",
+            "image": "https://image.tmdb.org/t/p/w185/wXWt2NSY23v7DHe2yZQ1C8TikBp.jpg"
+        },
+        {
+            "name": "Jeff Bridges",
+            "image": "https://image.tmdb.org/t/p/w185/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
+        },
+        {
+            "name": "Gwyneth Paltrow",
+            "image": "https://image.tmdb.org/t/p/w185/r4wbWWEEjmtRFZ0GU10XbLTgp47.jpg"
+        },
+        {
+            "name": "Leslie Bibb",
+            "image": "https://image.tmdb.org/t/p/w185/g3a1O9lOTZvrwQupUtg4Fc3CdTd.jpg"
+        }
+    ]
+},
+    {
     "title": "Captain America: The First Avenger",
     "desc": "خلال الحرب العالمية الثانية، يتحول 'ستيف روجرز'، الشاب الضعيف القادم من بروكلين، إلى الجندي الخارق 'كابتن أمريكا' للمساهمة في المجهود الحربي. لكن مهمته الحقيقية تبدأ عندما يواجه 'ريد سكال'، قائد برنامج الأسلحة النازي وعدو هتلر الأكثر قسوة، والذي يسعى مع منظمته إلى تسخير قوة جهاز غامض ذي قدرات لا تُحصى لإخضاع العالم بأسره.",
     "poster": "https://image.tmdb.org/t/p/w500/zsXne3JCapkJxPAPPOaTlPJQLVI.jpg",
