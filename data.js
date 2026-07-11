@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Good Dinosaur",
+    "desc": "يحكي الفيلم قصة الديناصور المراهق والمنتمي إلى فصيلة (أباتوصور)  يُدعى (أرلو) الذي فقد اباه في حادث مأسوي بعد فيضان نهر وغرق الاب ، وعلى أثره يخرج في رحلة، حيث يقابل الفتى (سبوت) من بني البشر، تتطور بينهم علاقة صداقة تغير مجرى حياتهم",
+    "poster": "https://image.tmdb.org/t/p/w500/soTwRZR0dOVa05yZLkfXq6Z9BIK.jpg",
+    "hdUrl": "https://streamtape.com/e/qJ42wQrgV3FZ9Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/qJ42wQrgV3FZ9Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "مغامرة رسوم متحركة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Frances McDormand",
+            "image": "https://image.tmdb.org/t/p/w185/gBkoteKZshmQXEyEoyT6WE7N0tF.jpg"
+        },
+        {
+            "name": "Raymond Ochoa",
+            "image": "https://image.tmdb.org/t/p/w185/bsX4yaqlI7am1dhKkJ0eeRj0ugx.jpg"
+        },
+        {
+            "name": "Jeffrey Wright",
+            "image": "https://image.tmdb.org/t/p/w185/quunS3w4QtALMDnvA0y81Y2pO9N.jpg"
+        },
+        {
+            "name": "Steve Zahn",
+            "image": "https://image.tmdb.org/t/p/w185/rwrPdKGwXnByxUVMxMf8Y7oswi3.jpg"
+        },
+        {
+            "name": "Sam Elliott",
+            "image": "https://image.tmdb.org/t/p/w185/zE1fpXlIUo7fcujlVlGvHdDiCv6.jpg"
+        }
+    ]
+},
+    {
     "title": "Monsters University",
     "desc": "قصة الفيلم: يعود بنا الفيلم إلى أيام الجامعة عندما كان مايك وازوسكي (صوت بيللي كريستال) وحشاً صغيراً يحلم بأنيصبح مخيفاً، خاصة وهو يعتقد أنه أفضل مخيف في جامعة الوحوش، ولكن خلال الفصل الدراسي الأول له في الجامعة،تتغير خطط مايك بعد أن التقى بالبارع جيمس بي سوليفان (صوت جون جودمان) الذي وُلد مخيفاً بشكل طبيعي،التنافس بين الاثنين يخرج عن السيطرة ويكون السبب في طردهما من جامعة النخبة المرعبة، وتصبح الأمورأسوأ عندما يُضطران إلى العمل معاً، جنباً إلى جنب مع مجموعة غريبة من الوحوش الماهرة.",
     "poster": "https://image.tmdb.org/t/p/w500/5J8k8r0R5nhlZcqSyJUqDxg2nPZ.jpg",
