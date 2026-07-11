@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Incredible Hulk",
+    "desc": "بروس بانر، عالم هارب من الحكومة الأمريكية، عليه أن يجد علاجاً للوحش الذي يتحول إليه كلما فقد أعصابه.",
+    "poster": "https://image.tmdb.org/t/p/w500/783TC3fhSq7kMyWdPfuHZp9SfSR.jpg",
+    "hdUrl": "https://streamtape.com/e/Qa9me74ebAu0X2V/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Qa9me74ebAu0X2V/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "خيال علمي حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Edward Norton",
+            "image": "https://image.tmdb.org/t/p/w185/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg"
+        },
+        {
+            "name": "Liv Tyler",
+            "image": "https://image.tmdb.org/t/p/w185/hXFKqlOPVjtfBSPlmQwFnJvhvmU.jpg"
+        },
+        {
+            "name": "Tim Roth",
+            "image": "https://image.tmdb.org/t/p/w185/qSizF2i9gz6c6DbAC5RoIq8sVqX.jpg"
+        },
+        {
+            "name": "William Hurt",
+            "image": "https://image.tmdb.org/t/p/w185/j3mjmuHLBW4XQSw53C8Sh0Lh3ZQ.jpg"
+        },
+        {
+            "name": "Tim Blake Nelson",
+            "image": "https://image.tmdb.org/t/p/w185/rWuTGiAMaaHIJ30eRkQS23LbRSW.jpg"
+        }
+    ]
+},
+    {
     "title": "Iron Man",
     "desc": "بعد أن تم احتجازه أسيراً في كهف أفغاني، قام المهندس الملياردير توني ستارك بصنع بدلة درع فريدة من نوعها مزودة بأسلحة لمحاربة الشر.",
     "poster": "https://image.tmdb.org/t/p/w500/yGzI4mAq683ULhac34MZuhdH5eY.jpg",
