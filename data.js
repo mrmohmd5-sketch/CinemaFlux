@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "WALL·E",
+    "desc": "تدور أحداث الفيلم حول الروبوت وول-ي، وهو روبوت مُصمم لتنظيف الأرض المهجورة والمغطاة بالنفايات في المستقبل البعيد. يقع وول-ي في حب روبوت آخر إسمها إيف، فيتبعها إلى الفضاء الخارجي في مغامرة تُغير مصير جنسه والجنس البشري. يُظهر كل من الروبوتين مظاهر من حرية الإرادة والمشاعر، التي تتطور مع تقدم أحداث الفيلم.",
+    "poster": "https://image.tmdb.org/t/p/w500/7NIvqdL3q8dPjJTjSl9cylRdTYL.jpg",
+    "hdUrl": "https://streamtape.com/e/pY2z67m0XqFryDy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pY2z67m0XqFryDy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.1",
+    "genre": "رسوم متحركة عائلي خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Burtt",
+            "image": "https://image.tmdb.org/t/p/w185/7asFDWjls2bYQSfXJf5StjXmlhI.jpg"
+        },
+        {
+            "name": "Elissa Knight",
+            "image": "https://image.tmdb.org/t/p/w185/exRLyaNaHcgawQA0DoBxo5IvdoI.jpg"
+        },
+        {
+            "name": "Jeff Garlin",
+            "image": "https://image.tmdb.org/t/p/w185/8shJOwynglerVVxhOKbvDYTThBd.jpg"
+        },
+        {
+            "name": "Fred Willard",
+            "image": "https://image.tmdb.org/t/p/w185/AaHxpkee9nQfBpQeDyJLoPNtYR6.jpg"
+        },
+        {
+            "name": "John Ratzenberger",
+            "image": "https://image.tmdb.org/t/p/w185/oRtDEOuIO1yDhTz5dORBdxXuLMO.jpg"
+        }
+    ]
+},
+    {
     "title": "Toy Story 3",
     "desc": "لم يلعب وودي وبظ وبقية ألعاب آندي منذ سنوات. مع اقتراب آندي من الذهاب إلى الكلية، تجد المجموعة نفسها تُركت عن طريق الخطأ في مركز رعاية نهارية سيئ. يجب أن تتجمع الألعاب معًا للهروب والعودة إلى منزل آندي.",
     "poster": "https://image.tmdb.org/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
