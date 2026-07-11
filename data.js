@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Your Name.",
+    "title": "Your Name",
     "desc": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
     "poster": "https://image.tmdb.org/t/p/w500/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg",
     "hdUrl": "https://streamtape.com/e/1ajX11Zg6wuevv1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
