@@ -69,10 +69,10 @@
             <div class="grid">
                 <div class="input-group">
                     <label>رابط الفيلم أو المسلسل من موقع TMDB</label>
-                    <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx">
+                    <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx أو https://www.themoviedb.org/tv/xxxxx">
                 </div>
                 <div class="input-group">
-                    <label>رابط تشغيل الفيديو من Doodstream أو Playmogo</label>
+                    <label>رابط تشغيل الفيديو (رابط الفيلم أو سيرفر السلسلة الموحد)</label>
                     <input type="text" id="mogoUrlInput" placeholder="https://dood.to/e/xxxxx">
                 </div>
             </div>
@@ -160,7 +160,6 @@
                 let castData = [];
                 if(creditsRes.ok) {
                     const creditsData = await creditsRes.json();
-                    // نأخذ أول 5 ممثلين، وتم تعديل دالة الخريطة (map) للتأكد من قراءة الرابط الخاص بكل ممثل بشكل فريد تماماً
                     castData = creditsData.cast.slice(0, 5).map(actor => {
                         return {
                             name: actor.name,
@@ -176,20 +175,52 @@
                 const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
-                // إنشاء كائن المحتوى الجديد
+                // إنشاء كائن المحتوى الأساسي
                 const newMediaObject = {
                     title: titleText,
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
                     poster: posterUrl,
-                    hdUrl: mediaUrl,
-                    sdUrl: mediaUrl,
+                    hdUrl: finalType === "movie" ? mediaUrl : "",
+                    sdUrl: finalType === "movie" ? mediaUrl : "",
                     rating: ratingValue,
                     genre: genresArray,
                     type: finalType,
                     cast: castData
                 };
 
-                logStatus(`⏳ تم جلب "${titleText}" وطاقم العمل بنجاح. جاري الاتصال بـ GitHub...`);
+                // إذا كانت المادة مسلسلاً، نقوم بجلب المواسم والحلقات ديناميكياً وبنائها تلقائياً
+                if (finalType === "series") {
+                    logStatus("⏳ تم كشف مسلسل! جاري سحب وهيكلة المواسم والحلقات تلقائياً من TMDB...");
+                    const seasonsArray = [];
+                    
+                    if (dataAr.seasons && dataAr.seasons.length > 0) {
+                        for (const s of dataAr.seasons) {
+                            // تجاهل موسم الصفر أو الكواليس الإضافية غير الأساسية للتبسيط
+                            if (s.season_number === 0) continue;
+                            
+                            const epRes = await fetch(`https://api.themoviedb.org/3/tv/${id}/season/${s.season_number}?api_key=${tmdbKey}&language=ar`);
+                            if (epRes.ok) {
+                                const epData = await epRes.ok ? await epRes.json() : null;
+                                if (epData && epData.episodes) {
+                                    const episodesList = epData.episodes.map(e => {
+                                        return {
+                                            episode_number: e.episode_number,
+                                            url: mediaUrl // يتم وضع الرابط كقاعدة افتراضية لسهولة التحكم اللاحق
+                                        };
+                                    });
+                                    
+                                    seasonsArray.push({
+                                        season_number: s.season_number,
+                                        episodes: episodesList
+                                    });
+                                }
+                            }
+                        }
+                    }
+                    newMediaObject.seasons = seasonsArray;
+                }
+
+                logStatus(`⏳ تم جلب "${titleText}" وهيكلته بنجاح. جاري الاتصال بـ GitHub...`);
 
                 const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
                 const ghGetRes = await fetch(fileUrl, {
@@ -204,16 +235,14 @@
                     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
                 }).join(''));
 
-                logStatus("⏳ جاري دمج وتحديث قاعدة البيانات بأمان دون حذف الأفلام السابقة...");
+                logStatus("⏳ جاري دمج وتحديث قاعدة البيانات بأمان دون حذف المواد السابقة...");
 
                 let updatedContentText = "";
                 
-                // هنا نقوم بالبحث الآمن عن القوس المربع الأول للإدراج الصحيح في بداية المصفوفة
                 if (currentContentText.indexOf("[") !== -1) {
                     const bracketIndex = currentContentText.indexOf("[");
                     const stringToObject = JSON.stringify(newMediaObject, null, 4);
                     
-                    // يتم إدراج الفيلم الجديد في السطر التالي للقوس المربع مباشرة لضمان الحفاظ على الهيكل العام
                     updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
                 } else {
                     updatedContentText = `const globalMoviesData = [\n    ${JSON.stringify(newMediaObject, null, 4)}\n];`;
@@ -228,7 +257,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية آمنة للفيلم: ${titleText} مع طاقم التمثيل الصحيح`,
+                        message: `إضافة تلقائية آمنة للمادة: ${titleText} مع دعم نظام الحلقات والمواسم`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -236,7 +265,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح مع صور الممثلين الصحيحة وبدون أي تكرار!`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وتحديث قاعدة البيانات بالكامل دون أي تكرار!`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
 
