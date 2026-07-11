@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Toy Story 3",
+    "desc": "لم يلعب وودي وبظ وبقية ألعاب آندي منذ سنوات. مع اقتراب آندي من الذهاب إلى الكلية، تجد المجموعة نفسها تُركت عن طريق الخطأ في مركز رعاية نهارية سيئ. يجب أن تتجمع الألعاب معًا للهروب والعودة إلى منزل آندي.",
+    "poster": "https://image.tmdb.org/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
+    "hdUrl": "https://streamtape.com/e/Mrad7GdXM1smpqP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Mrad7GdXM1smpqP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة عائلي كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Tim Allen",
+            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+            "name": "Joan Cusack",
+            "image": "https://image.tmdb.org/t/p/w185/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
+        },
+        {
+            "name": "Don Rickles",
+            "image": "https://image.tmdb.org/t/p/w185/iGMOVxIQoTPepRvqSCtRulfpx7u.jpg"
+        },
+        {
+            "name": "Wallace Shawn",
+            "image": "https://image.tmdb.org/t/p/w185/wVaM1WlFKDce4esThwL4XtNLhOe.jpg"
+        }
+    ]
+},
+    {
     "title": "Cars 2",
     "desc": "تدور أحداث الفيلم حول نجم سباق السيارات الامع ماكوين وصديقه ماطر في الخارج للتنافس في سباق الجائزة الكبرى العالمية.",
     "poster": "https://image.tmdb.org/t/p/w500/3IVfHN4xRjJ4InqDPusCgd8kyoQ.jpg",
