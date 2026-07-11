@@ -372,12 +372,10 @@
         <div id="viewMovieDetail" class="app-view">
             <button class="back-nav-btn" onclick="closeMoviePage()">➔ <span id="txtBackToMain">الرئيسية</span></button>
             
-            <div id="seriesStructureContainer" style="display:none; background: var(--bg-card); padding:15px; border-radius:12px; margin-bottom:15px; border:1px solid var(--border-color); direction: rtl;"></div>
-
-            <div class="video-container" id="mainVideoContainer">
+            <div class="video-container">
                 <iframe id="mainIframe" src="" allowfullscreen="true" scrolling="no"></iframe>
             </div>
-            <div class="player-controls" id="mainPlayerControls">
+            <div class="player-controls">
                 <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر عالي الجودة</button>
                 <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر إنترنت ضعيف</button>
                 <button class="cast-btn" id="btnCast" onclick="castToTV()">📺 بث للشاشة</button>
@@ -645,65 +643,47 @@
             switchNav('home');
         }
 
-        // ================= دالة فتح صفحة الفيلم التفصيلية وإظهار الممثلين والمسلسلات =================
+        // ================= دالة فتح صفحة الفيلم التفصيلية وإظهار الممثلين =================
         function openMoviePage(item) {
             activeMovieItem = item;
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewMovieDetail').classList.add('active');
             
+            currentHD = item.hdUrl || "";
+            currentSD = item.sdUrl || item.hdUrl || "";
+            
             const iframe = document.getElementById('mainIframe');
-            const seriesContainer = document.getElementById('seriesStructureContainer');
-            const playerContainer = document.getElementById('mainVideoContainer');
-            const playerControls = document.getElementById('mainPlayerControls');
-
-            if (item.type === 'series') {
-                // إعدادات واجهة المسلسلات
-                playerContainer.style.display = 'none';
-                playerControls.style.display = 'none';
-                iframe.src = "";
-                
-                if (seriesContainer) {
-                    seriesContainer.style.display = 'block';
-                    renderSeriesControls(item, seriesContainer, playerContainer, playerControls);
-                }
-            } else {
-                // إعدادات واجهة الأفلام المعتادة
-                if (seriesContainer) seriesContainer.style.display = 'none';
-                playerContainer.style.display = 'block';
-                playerControls.style.display = 'flex';
-                
-                currentHD = item.hdUrl || "";
-                currentSD = item.sdUrl || item.hdUrl || "";
-                iframe.src = currentHD;
-
-                document.getElementById('btnHD').classList.add('active');
-                document.getElementById('btnSD').classList.remove('active');
-            }
+            iframe.src = currentHD;
             
             document.getElementById('currentTitle').innerText = item.title;
             document.getElementById('currentRating').innerText = item.rating || "0.0";
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
             
+            // تبديل السيرفر الافتراضي للـ HD
+            document.getElementById('btnHD').classList.add('active');
+            document.getElementById('btnSD').classList.remove('active');
+            
             // بناء الكادر والطاقم
-            const sliderCast = document.getElementById('castListSlider');
-            sliderCast.innerHTML = '';
-            if (item.cast && item.cast.length > 0) {
-                document.getElementById('castContainerBlock').style.display = 'block';
-                item.cast.forEach(person => {
-                    const actorImage = person.image || person.img || person.avatar || person.photo || person.pic || person.profile_path || '';
-                    
-                    const castCard = document.createElement('div');
-                    castCard.className = 'cast-card';
-                    castCard.innerHTML = `
-                        <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
-                        <div class="cast-name">${person.name || 'مجهول'}</div>
-                    `;
-                    sliderCast.appendChild(castCard);
-                });
-            } else {
-                document.getElementById('castContainerBlock').style.display = 'none';
-            }
+const sliderCast = document.getElementById('castListSlider');
+sliderCast.innerHTML = '';
+if (item.cast && item.cast.length > 0) {
+    document.getElementById('castContainerBlock').style.display = 'block';
+    item.cast.forEach(person => {
+        // التحقق من جميع المسميات المحتملة لرابط الصورة في ملف data.js
+        const actorImage = person.image || person.img || person.avatar || person.photo || person.pic || person.profile_path || '';
+        
+        const castCard = document.createElement('div');
+        castCard.className = 'cast-card';
+        castCard.innerHTML = `
+            <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+            <div class="cast-name">${person.name || 'مجهول'}</div>
+        `;
+        sliderCast.appendChild(castCard);
+    });
+} else {
+    document.getElementById('castContainerBlock').style.display = 'none';
+}
             
             // جلب التعليقات الافتراضية
             const commentsContainer = document.getElementById('commentsListContainer');
@@ -715,83 +695,6 @@
             `;
             
             addToWatchHistory(item);
-        }
-
-        // ================= دالة بناء قوائم الحلقات والمواسم للمسلسلات ديناميكياً =================
-        function renderSeriesControls(media, container, playerContainer, playerControls) {
-            if (!media.seasons || media.seasons.length === 0) {
-                container.innerHTML = `<p style="color:var(--accent); text-align:center; font-weight:bold; margin:0;">${currentLang === 'ar' ? 'لا توجد مواسم مضافة بعد لهذه المادة' : 'No seasons available for this media'}</p>`;
-                return;
-            }
-
-            let lblSeason = currentLang === 'ar' ? 'اختر الموسم:' : 'Select Season:';
-            let lblEpisode = currentLang === 'ar' ? 'اختر الحلقة:' : 'Select Episode:';
-            let txtSeasonPrefix = currentLang === 'ar' ? 'الموسم' : 'Season';
-
-            let html = `
-                <div style="margin-bottom: 15px;">
-                    <label style="color: var(--text-sub); display:block; margin-bottom:8px; font-weight:bold; font-size:13px;">${lblSeason}</label>
-                    <select id="seasonSelect" style="width:100%; padding:10px; background:var(--bg-main); color:var(--text-main); border:1px solid var(--border-color); border-radius:8px; cursor:pointer; font-weight:bold; outline:none;">
-                        ${media.seasons.map(s => `<option value="${s.season_number}">${txtSeasonPrefix} ${s.season_number}</option>`).join('')}
-                    </select>
-                </div>
-                <div>
-                    <label style="color: var(--text-sub); display:block; margin-bottom:8px; font-weight:bold; font-size:13px;">${lblEpisode}</label>
-                    <div id="episodesList" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap:10px; max-height:160px; overflow-y:auto; padding:5px;">
-                        </div>
-                </div>
-            `;
-            container.innerHTML = html;
-
-            const seasonSelect = document.getElementById('seasonSelect');
-            
-            function updateEpisodes(seasonNum) {
-                const season = media.seasons.find(s => s.season_number == seasonNum);
-                const epListContainer = document.getElementById('episodesList');
-                if (!season || !season.episodes) {
-                    epListContainer.innerHTML = '';
-                    return;
-                }
-
-                epListContainer.innerHTML = season.episodes.map(ep => {
-                    let safeUrl = btoa(unescape(encodeURIComponent(ep.url)));
-                    return `
-                        <button onclick="playEpisode('${safeUrl}')" style="background:var(--bg-main); color:var(--text-main); border:1px solid var(--border-color); padding:10px; border-radius:6px; cursor:pointer; font-weight:bold; transition:all 0.2s;" onmouseover="this.style.background='var(--accent)'; this.style.color='#fff'; this.style.borderColor='var(--accent)';" onmouseout="this.style.background='var(--bg-main)'; this.style.color='var(--text-main)'; this.style.borderColor='var(--border-color)';">
-                            ${ep.episode_number}
-                        </button>
-                    `;
-                }).join('');
-            }
-
-            seasonSelect.addEventListener('change', (e) => updateEpisodes(e.target.value));
-            updateEpisodes(seasonSelect.value);
-        }
-
-        // ================= دالة تشغيل السيرفر المباشر للحلقة المختارة داخل مشغل الفيديو =================
-        function playEpisode(encodedUrl) {
-            const playerContainer = document.getElementById('mainVideoContainer');
-            const playerControls = document.getElementById('mainPlayerControls');
-            const iframe = document.getElementById('mainIframe');
-            
-            let decodedUrlStr = decodeURIComponent(escape(atob(encodedUrl)));
-            
-            // استخراج الرابط المباشر فقط من كود iframe إذا تم تمريره بالكامل
-            if (decodedUrlStr.includes('<iframe')) {
-                const srcMatch = decodedUrlStr.match(/src=["']([^"']+)["']/);
-                if (srcMatch && srcMatch[1]) {
-                    decodedUrlStr = srcMatch[1];
-                }
-            }
-
-            currentHD = decodedUrlStr;
-            currentSD = decodedUrlStr;
-            iframe.src = decodedUrlStr;
-
-            playerContainer.style.display = 'block';
-            playerControls.style.display = 'flex';
-            
-            document.getElementById('btnHD').classList.add('active');
-            document.getElementById('btnSD').classList.remove('active');
         }
 
         function closeMoviePage() {
@@ -865,7 +768,7 @@
                         <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
                         <div class="search-item-details">
                             <h4 class="search-item-title">${item.title}</h4>
-                            <div class="search-item-meta">${item.year || ''} • ★ ${item.rating || '0.0'}</div>
+                            <div class="search-item-meta">${item.year} • ★ ${item.rating}</div>
                         </div>
                     `;
                     row.onclick = () => {
@@ -904,7 +807,7 @@
                         <img class="search-item-poster" src="${matchedItem.poster}">
                         <div class="search-item-details">
                             <h4 class="search-item-title">${matchedItem.title}</h4>
-                            <div class="search-item-meta">${matchedItem.year || ''} • ★ ${matchedItem.rating || '0.0'}</div>
+                            <div class="search-item-meta">${matchedItem.year} • ★ ${matchedItem.rating}</div>
                         </div>
                         <span class="remove-search-btn" onclick="event.stopPropagation(); removeSearchTerm(${index})">×</span>
                     `;
