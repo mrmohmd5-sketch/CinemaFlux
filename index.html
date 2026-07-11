@@ -555,11 +555,10 @@
 
             allMoviesData.forEach(item => {
                 if (item.genre) {
-                    const genresList = item.genre.split(',').map(g => g.trim());
-                    genresList.forEach(genre => {
-                        if (!genresMap[genre]) genresMap[genre] = [];
-                        genresMap[genre].push(item);
-                    });
+                    // أخذ التصنيف الأول فقط لتجنب تكرار الخانات عشوائياً حسب الترتيب
+                    const primaryGenre = item.genre.split(',')[0].trim();
+                    if (!genresMap[primaryGenre]) genresMap[primaryGenre] = [];
+                    genresMap[primaryGenre].push(item);
                 } else {
                     const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
                     if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
