@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Monsters University",
+    "desc": "قصة الفيلم: يعود بنا الفيلم إلى أيام الجامعة عندما كان مايك وازوسكي (صوت بيللي كريستال) وحشاً صغيراً يحلم بأنيصبح مخيفاً، خاصة وهو يعتقد أنه أفضل مخيف في جامعة الوحوش، ولكن خلال الفصل الدراسي الأول له في الجامعة،تتغير خطط مايك بعد أن التقى بالبارع جيمس بي سوليفان (صوت جون جودمان) الذي وُلد مخيفاً بشكل طبيعي،التنافس بين الاثنين يخرج عن السيطرة ويكون السبب في طردهما من جامعة النخبة المرعبة، وتصبح الأمورأسوأ عندما يُضطران إلى العمل معاً، جنباً إلى جنب مع مجموعة غريبة من الوحوش الماهرة.",
+    "poster": "https://image.tmdb.org/t/p/w500/5J8k8r0R5nhlZcqSyJUqDxg2nPZ.jpg",
+    "hdUrl": "https://streamtape.com/e/KkYyW4YwR3u0X1d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KkYyW4YwR3u0X1d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "رسوم متحركة عائلي كوميديا فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Billy Crystal",
+            "image": "https://image.tmdb.org/t/p/w185/jfcCceTnP7rrHz1pSjCxiqRosw3.jpg"
+        },
+        {
+            "name": "John Goodman",
+            "image": "https://image.tmdb.org/t/p/w185/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
+        },
+        {
+            "name": "Steve Buscemi",
+            "image": "https://image.tmdb.org/t/p/w185/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+        },
+        {
+            "name": "Helen Mirren",
+            "image": "https://image.tmdb.org/t/p/w185/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg"
+        },
+        {
+            "name": "Peter Sohn",
+            "image": "https://image.tmdb.org/t/p/w185/8cQGViF2lXlcsAIvFUMWboXYXIu.jpg"
+        }
+    ]
+},
+    {
     "title": "Finding Dory",
     "desc": "بعد أن علما نيمو ووالده مارلن أن دوري عرفت مكان عائلتها يقرران مساعدتها في البحث، ويذهبان إلى كاليفورنيا من خلال التيار السريع بمساعدة السلاحف، وعند وصولهم إلى هُناك عانوا الصعوبات بعد أن واجهوا حباراً مُفترسا طاردهم حتى وصلوا إلى منطقة آمنة، ذهبت دوري إلى سطح الماء بعد أن سمعت صوتاً خفياً، لكنها اختُطفت من قِبل عمال المعهد البحري في مورو باي، وانفصلت عن نيمو ووالده",
     "poster": "https://image.tmdb.org/t/p/w500/pFHAkjvImCq5pGggbTteUhAsInl.jpg",
