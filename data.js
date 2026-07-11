@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Nimona",
+    "desc": "ينضم فارس، لُفقت له جريمة مأساوية، إلى مراهقة مشاكسة ذات هيئة متحولة لإثبات براءته... ولكن ماذا لو كانت هي الوحش الذي أقسم على تدميره؟",
+    "poster": "https://image.tmdb.org/t/p/w500/2NQljeavtfl22207D1kxLpa4LS3.jpg",
+    "hdUrl": "https://streamtape.com/e/jbypQ6zo0BuJ4w/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jbypQ6zo0BuJ4w/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "رسوم متحركة عائلي فانتازيا مغامرة خيال علمي حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chloë Grace Moretz",
+            "image": "https://image.tmdb.org/t/p/w185/yq4rYmaTRC5degaOYmJQFpaiho1.jpg"
+        },
+        {
+            "name": "Riz Ahmed",
+            "image": "https://image.tmdb.org/t/p/w185/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
+        },
+        {
+            "name": "Eugene Lee Yang",
+            "image": "https://image.tmdb.org/t/p/w185/2NSmyWPyUExWn6MrICMSJiP4XnZ.jpg"
+        },
+        {
+            "name": "Frances Conroy",
+            "image": "https://image.tmdb.org/t/p/w185/aJRQAkO24L6bH8qkkE5Iv1nA3gf.jpg"
+        },
+        {
+            "name": "Lorraine Toussaint",
+            "image": "https://image.tmdb.org/t/p/w185/ali9XSMkZ0uAQLkmK0PoHXhJS0t.jpg"
+        }
+    ]
+},
+    {
     "title": "Incredibles 2",
     "desc": "تنطلق إلاستيقيرل إلى العمل لإنقاذ اليوم، بينما يواجه السيد خارق أكبر تحد له حتى الآن - وهو ان يعتني بمشاكل أطفاله الثلاثة.",
     "poster": "https://image.tmdb.org/t/p/w500/s3IfCcxPPNaog6s62RhoadmzZRa.jpg",
