@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Thor: The Dark World",
+    "desc": "عندما يحاول الجان المظلمون إغراق الكون في الظلام، يجب على ثور أن يشرع في رحلة محفوفة بالمخاطر وشخصية من شأنها أن تعيده إلى الطبيبة جين فوستر.",
+    "poster": "https://image.tmdb.org/t/p/w500/gRKpFNeghRPLsayN14dC2611o7J.jpg",
+    "hdUrl": "https://streamtape.com/e/1jO81y61XoTy38/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1jO81y61XoTy38/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Natalie Portman",
+            "image": "https://image.tmdb.org/t/p/w185/edPU5HxncLWa1YkgRPNkSd68ONG.jpg"
+        },
+        {
+            "name": "Tom Hiddleston",
+            "image": "https://image.tmdb.org/t/p/w185/mclHxMm8aPlCPKptP67257F5GPo.jpg"
+        },
+        {
+            "name": "Christopher Eccleston",
+            "image": "https://image.tmdb.org/t/p/w185/v6ezjezzDo6xP2wlONO5ZzBciwl.jpg"
+        },
+        {
+            "name": "Anthony Hopkins",
+            "image": "https://image.tmdb.org/t/p/w185/iaf7SHSkGDpnyrDh1Jolilwk2TD.jpg"
+        }
+    ]
+},
+    {
     "title": "Venom: Let There Be Carnage",
     "desc": "في الوقت الذي يجتهد فيه 'إيدي بروك' و'فينوم' لخوض غمار علاقتهما الشائكة، يظهر تهديد جديد من القاتل المتسلسل 'كليتوس كاسادي' وكائن فضائي جديد مُعايش.",
     "poster": "https://image.tmdb.org/t/p/w500/aLBiGL6Nqx8nY27X61g6szKn19Y.jpg",
