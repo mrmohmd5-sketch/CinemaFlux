@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Incredibles 2",
+    "desc": "تنطلق إلاستيقيرل إلى العمل لإنقاذ اليوم، بينما يواجه السيد خارق أكبر تحد له حتى الآن - وهو ان يعتني بمشاكل أطفاله الثلاثة.",
+    "poster": "https://image.tmdb.org/t/p/w500/s3IfCcxPPNaog6s62RhoadmzZRa.jpg",
+    "hdUrl": "https://streamtape.com/e/A2P8YpJmJrsvGj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/A2P8YpJmJrsvGj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة مغامرة رسوم متحركة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Craig T. Nelson",
+            "image": "https://image.tmdb.org/t/p/w185/rMh8qdexFKmc7mq7oLzsLLvCCjs.jpg"
+        },
+        {
+            "name": "Holly Hunter",
+            "image": "https://image.tmdb.org/t/p/w185/kC7KX03VAWvogOCuwKbMo4V6TuU.jpg"
+        },
+        {
+            "name": "Sarah Vowell",
+            "image": "https://image.tmdb.org/t/p/w185/dP1hMYTk2q4voIUxtgmvD81nMty.jpg"
+        },
+        {
+            "name": "Huck Milner",
+            "image": "https://image.tmdb.org/t/p/w185/OnucCCKkO0tmBDfH6uDEoeThAb.jpg"
+        },
+        {
+            "name": "Catherine Keener",
+            "image": "https://image.tmdb.org/t/p/w185/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg"
+        }
+    ]
+},
+    {
     "title": "Thor",
     "desc": "تم طرد الإله القوي والمتغطرس ثور من أسغارد ليعيش بين البشر في ميدغارد (الأرض)، حيث سرعان ما أصبح أحد أفضل المدافعين عنهم.",
     "poster": "https://image.tmdb.org/t/p/w500/1FHQvc3OeqlalUkUdAdh1k4xaoO.jpg",
