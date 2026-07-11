@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Captain America: The First Avenger",
+    "desc": "خلال الحرب العالمية الثانية، يتحول 'ستيف روجرز'، الشاب الضعيف القادم من بروكلين، إلى الجندي الخارق 'كابتن أمريكا' للمساهمة في المجهود الحربي. لكن مهمته الحقيقية تبدأ عندما يواجه 'ريد سكال'، قائد برنامج الأسلحة النازي وعدو هتلر الأكثر قسوة، والذي يسعى مع منظمته إلى تسخير قوة جهاز غامض ذي قدرات لا تُحصى لإخضاع العالم بأسره.",
+    "poster": "https://image.tmdb.org/t/p/w500/zsXne3JCapkJxPAPPOaTlPJQLVI.jpg",
+    "hdUrl": "https://streamtape.com/e/ZzOegj0K7viq024/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ZzOegj0K7viq024/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Evans",
+            "image": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+            "name": "Hayley Atwell",
+            "image": "https://image.tmdb.org/t/p/w185/x57wXHexIjD2ywly9cRA4rov7cu.jpg"
+        },
+        {
+            "name": "Sebastian Stan",
+            "image": "https://image.tmdb.org/t/p/w185/v20RLWst39klatsqUgSrwHxhwee.jpg"
+        },
+        {
+            "name": "Tommy Lee Jones",
+            "image": "https://image.tmdb.org/t/p/w185/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg"
+        },
+        {
+            "name": "Hugo Weaving",
+            "image": "https://image.tmdb.org/t/p/w185/lSC8Et0PYi5zeQb3IpPkFje7hgR.jpg"
+        }
+    ]
+},
+    {
     "title": "Iron Man 3",
     "desc": "عندما يتمزق عالم توني ستارك على يد إرهابي هائل يُدعى الماندرين، يبدأ رحلة إعادة البناء والانتقام.",
     "poster": "https://image.tmdb.org/t/p/w500/mBfLDsgqqdeYKxhLWz0jeUzz41B.jpg",
