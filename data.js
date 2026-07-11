@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Cars 2",
+    "desc": "تدور أحداث الفيلم حول نجم سباق السيارات الامع ماكوين وصديقه ماطر في الخارج للتنافس في سباق الجائزة الكبرى العالمية.",
+    "poster": "https://image.tmdb.org/t/p/w500/3IVfHN4xRjJ4InqDPusCgd8kyoQ.jpg",
+    "hdUrl": "https://streamtape.com/e/GXkWvrG7V4s1gB0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GXkWvrG7V4s1gB0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "رسوم متحركة عائلي مغامرة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Larry the Cable Guy",
+            "image": "https://image.tmdb.org/t/p/w185/34pX2sQj9DddaQWRBGukSWYdXxS.jpg"
+        },
+        {
+            "name": "Owen Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/5A46lNOwmpX77jAdhyKxU7e2Hub.jpg"
+        },
+        {
+            "name": "Michael Caine",
+            "image": "https://image.tmdb.org/t/p/w185/bVZRMlpjTAO2pJK6v90buFgVbSW.jpg"
+        },
+        {
+            "name": "Emily Mortimer",
+            "image": "https://image.tmdb.org/t/p/w185/oZ4CZW2eW8lL2alD1mwZrFkfACI.jpg"
+        },
+        {
+            "name": "Suzy Eddie Izzard",
+            "image": "https://image.tmdb.org/t/p/w185/yo55CX1eirka40DSkniv7xgy2LZ.jpg"
+        }
+    ]
+},
+    {
     "title": "Inside Out",
     "desc": "عندما تنتقل 'رايلي' البالغة من العمر 11 عامًا إلى مدينة جديدة، تتعاون مشاعرها الداخلية لمساعدتها على التأقلم مع التغيير. يعمل كل من 'الفرح' و'الخوف' و'الغضب' و'الاشمئزاز' و'الحزن' معًا للحفاظ على توازنها، لكن بعد أن يضيع 'الفرح' و'الحزن'، ينطلقان في رحلة عبر أماكن غريبة وغير مألوفة في محاولة للعودة إلى موطنهما داخل عقل 'رايلي'.",
     "poster": "https://image.tmdb.org/t/p/w500/sCoh9F6BRsvvkYwFNNlKvIla6sQ.jpg",
