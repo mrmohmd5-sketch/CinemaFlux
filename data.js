@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Iron Man 3",
+    "desc": "عندما يتمزق عالم توني ستارك على يد إرهابي هائل يُدعى الماندرين، يبدأ رحلة إعادة البناء والانتقام.",
+    "poster": "https://image.tmdb.org/t/p/w500/mBfLDsgqqdeYKxhLWz0jeUzz41B.jpg",
+    "hdUrl": "https://streamtape.com/e/BJQWJyPLV4TyBKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BJQWJyPLV4TyBKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Gwyneth Paltrow",
+            "image": "https://image.tmdb.org/t/p/w185/r4wbWWEEjmtRFZ0GU10XbLTgp47.jpg"
+        },
+        {
+            "name": "Don Cheadle",
+            "image": "https://image.tmdb.org/t/p/w185/umhTmcVF26qZKEpSfG1ZNpcbs9D.jpg"
+        },
+        {
+            "name": "Guy Pearce",
+            "image": "https://image.tmdb.org/t/p/w185/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg"
+        },
+        {
+            "name": "Rebecca Hall",
+            "image": "https://image.tmdb.org/t/p/w185/coC58ANiDbqRIyle5zEl9QDektf.jpg"
+        }
+    ]
+},
+    {
     "title": "Thor: The Dark World",
     "desc": "عندما يحاول الجان المظلمون إغراق الكون في الظلام، يجب على ثور أن يشرع في رحلة محفوفة بالمخاطر وشخصية من شأنها أن تعيده إلى الطبيبة جين فوستر.",
     "poster": "https://image.tmdb.org/t/p/w500/gRKpFNeghRPLsayN14dC2611o7J.jpg",
