@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Iron Man 2",
+    "desc": "بعد أن أصبح العالم على دراية بهويته كرجل حديدي، يتعين على توني ستارك أن يتعامل مع تدهور صحته ومع رجل مجنون يسعى للانتقام وله صلات بإرث والده.",
+    "poster": "https://image.tmdb.org/t/p/w500/yhQxDrmpgJiiTuT76ulq5BTpq43.jpg",
+    "hdUrl": "https://streamtape.com/e/7dlKJ1l4JofArlM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7dlKJ1l4JofArlM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "مغامرة حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Gwyneth Paltrow",
+            "image": "https://image.tmdb.org/t/p/w185/r4wbWWEEjmtRFZ0GU10XbLTgp47.jpg"
+        },
+        {
+            "name": "Don Cheadle",
+            "image": "https://image.tmdb.org/t/p/w185/umhTmcVF26qZKEpSfG1ZNpcbs9D.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+            "name": "Sam Rockwell",
+            "image": "https://image.tmdb.org/t/p/w185/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg"
+        }
+    ]
+},
+    {
     "title": "The Incredible Hulk",
     "desc": "بروس بانر، عالم هارب من الحكومة الأمريكية، عليه أن يجد علاجاً للوحش الذي يتحول إليه كلما فقد أعصابه.",
     "poster": "https://image.tmdb.org/t/p/w500/783TC3fhSq7kMyWdPfuHZp9SfSR.jpg",
