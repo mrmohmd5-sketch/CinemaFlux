@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Cars 3",
+    "desc": "تواتي (ماكوين) صدمة عاتية بسبب جيل جديد من المتسابقين فائقي السرعة؛ فيجد نفسه مُستبعدًا فجأة من الرياضة التي يعشقها، ولكي يستطيع العودة للعبة من جديد سيحتاج لعون تقني سيارات سباق شاب لديه مقدار كبير من الحرص وخطة مُحكمة للفوز.",
+    "poster": "https://image.tmdb.org/t/p/w500/nrY8PCqPdC8Ac8aKqakrzKq8yDq.jpg",
+    "hdUrl": "https://streamtape.com/e/owpy1jybvYuJqpQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/owpy1jybvYuJqpQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "رسوم متحركة دراما عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Owen Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/5A46lNOwmpX77jAdhyKxU7e2Hub.jpg"
+        },
+        {
+            "name": "Cristela Alonzo",
+            "image": "https://image.tmdb.org/t/p/w185/h4nQQZtVbB5Oimhu73eWmTbHtI4.jpg"
+        },
+        {
+            "name": "Chris Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/j0sQDzaDlnNAdaYhy6HRRAFi22.jpg"
+        },
+        {
+            "name": "Nathan Fillion",
+            "image": "https://image.tmdb.org/t/p/w185/aW6vCxkUZtwb6iH2Wf88Uq0XNVv.jpg"
+        },
+        {
+            "name": "Larry the Cable Guy",
+            "image": "https://image.tmdb.org/t/p/w185/34pX2sQj9DddaQWRBGukSWYdXxS.jpg"
+        }
+    ]
+},
+    {
     "title": "Nimona",
     "desc": "ينضم فارس، لُفقت له جريمة مأساوية، إلى مراهقة مشاكسة ذات هيئة متحولة لإثبات براءته... ولكن ماذا لو كانت هي الوحش الذي أقسم على تدميره؟",
     "poster": "https://image.tmdb.org/t/p/w500/2NQljeavtfl22207D1kxLpa4LS3.jpg",
