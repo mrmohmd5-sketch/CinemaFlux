@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Your Name.",
+    "desc": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
+    "poster": "https://image.tmdb.org/t/p/w500/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg",
+    "hdUrl": "https://streamtape.com/e/1ajX11Zg6wuevv1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1ajX11Zg6wuevv1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "رسوم متحركة رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ryunosuke Kamiki",
+            "image": "https://image.tmdb.org/t/p/w185/ut7ewXjdgUmgkhJ1EtbOo9tbc7s.jpg"
+        },
+        {
+            "name": "Mone Kamishiraishi",
+            "image": "https://image.tmdb.org/t/p/w185/cPydoy2sSqFDsbXeBPmzQGPmq0R.jpg"
+        },
+        {
+            "name": "Ryo Narita",
+            "image": "https://image.tmdb.org/t/p/w185/f42OXn4J7cM62wtykL196YW7x85.jpg"
+        },
+        {
+            "name": "Aoi Yuuki",
+            "image": "https://image.tmdb.org/t/p/w185/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+        },
+        {
+            "name": "Nobunaga Shimazaki",
+            "image": "https://image.tmdb.org/t/p/w185/qke5rZusHsjSlvB0NKlJ5dQF5D.jpg"
+        }
+    ]
+},
+    {
     "title": "WALL·E",
     "desc": "تدور أحداث الفيلم حول الروبوت وول-ي، وهو روبوت مُصمم لتنظيف الأرض المهجورة والمغطاة بالنفايات في المستقبل البعيد. يقع وول-ي في حب روبوت آخر إسمها إيف، فيتبعها إلى الفضاء الخارجي في مغامرة تُغير مصير جنسه والجنس البشري. يُظهر كل من الروبوتين مظاهر من حرية الإرادة والمشاعر، التي تتطور مع تقدم أحداث الفيلم.",
     "poster": "https://image.tmdb.org/t/p/w500/7NIvqdL3q8dPjJTjSl9cylRdTYL.jpg",
