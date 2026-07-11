@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Finding Dory",
+    "desc": "بعد أن علما نيمو ووالده مارلن أن دوري عرفت مكان عائلتها يقرران مساعدتها في البحث، ويذهبان إلى كاليفورنيا من خلال التيار السريع بمساعدة السلاحف، وعند وصولهم إلى هُناك عانوا الصعوبات بعد أن واجهوا حباراً مُفترسا طاردهم حتى وصلوا إلى منطقة آمنة، ذهبت دوري إلى سطح الماء بعد أن سمعت صوتاً خفياً، لكنها اختُطفت من قِبل عمال المعهد البحري في مورو باي، وانفصلت عن نيمو ووالده",
+    "poster": "https://image.tmdb.org/t/p/w500/pFHAkjvImCq5pGggbTteUhAsInl.jpg",
+    "hdUrl": "https://streamtape.com/e/zpbojPYWx8sYzog/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zpbojPYWx8sYzog/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "مغامرة رسوم متحركة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Albert Brooks",
+            "image": "https://image.tmdb.org/t/p/w185/8iDSGu5l93N7benjf6b3AysBore.jpg"
+        },
+        {
+            "name": "Ellen DeGeneres",
+            "image": "https://image.tmdb.org/t/p/w185/z8IEEid4z63CBlJtxrTKEfsW7NA.jpg"
+        },
+        {
+            "name": "Ed O'Neill",
+            "image": "https://image.tmdb.org/t/p/w185/4RrxSno3UEtGWuMm4yJoaFzckpL.jpg"
+        },
+        {
+            "name": "Hayden Rolence",
+            "image": "https://image.tmdb.org/t/p/w185/7VVdyfGSiq9asqfaUw4gDBLopun.jpg"
+        },
+        {
+            "name": "Diane Keaton",
+            "image": "https://image.tmdb.org/t/p/w185/A8B3BsFgbmw2WEmJuQX38qeU9eR.jpg"
+        }
+    ]
+},
+    {
     "title": "Cars 3",
     "desc": "تواتي (ماكوين) صدمة عاتية بسبب جيل جديد من المتسابقين فائقي السرعة؛ فيجد نفسه مُستبعدًا فجأة من الرياضة التي يعشقها، ولكي يستطيع العودة للعبة من جديد سيحتاج لعون تقني سيارات سباق شاب لديه مقدار كبير من الحرص وخطة مُحكمة للفوز.",
     "poster": "https://image.tmdb.org/t/p/w500/nrY8PCqPdC8Ac8aKqakrzKq8yDq.jpg",
