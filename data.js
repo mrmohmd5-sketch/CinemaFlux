@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Inside Out",
+    "desc": "عندما تنتقل 'رايلي' البالغة من العمر 11 عامًا إلى مدينة جديدة، تتعاون مشاعرها الداخلية لمساعدتها على التأقلم مع التغيير. يعمل كل من 'الفرح' و'الخوف' و'الغضب' و'الاشمئزاز' و'الحزن' معًا للحفاظ على توازنها، لكن بعد أن يضيع 'الفرح' و'الحزن'، ينطلقان في رحلة عبر أماكن غريبة وغير مألوفة في محاولة للعودة إلى موطنهما داخل عقل 'رايلي'.",
+    "poster": "https://image.tmdb.org/t/p/w500/sCoh9F6BRsvvkYwFNNlKvIla6sQ.jpg",
+    "hdUrl": "https://streamtape.com/e/dZeR801qWzIPQd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/dZeR801qWzIPQd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "رسوم متحركة عائلي مغامرة دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Amy Poehler",
+            "image": "https://image.tmdb.org/t/p/w185/rwmvRonpluV6dCPiQissYrchvSD.jpg"
+        },
+        {
+            "name": "Phyllis Smith",
+            "image": "https://image.tmdb.org/t/p/w185/h9w9pQbiderRWAC2mi7spjzuIGz.jpg"
+        },
+        {
+            "name": "Richard Kind",
+            "image": "https://image.tmdb.org/t/p/w185/yWmuVQeQUzb5OSMVDoWkR0IylCK.jpg"
+        },
+        {
+            "name": "Bill Hader",
+            "image": "https://image.tmdb.org/t/p/w185/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg"
+        },
+        {
+            "name": "Lewis Black",
+            "image": "https://image.tmdb.org/t/p/w185/f6660RU8eG10Rrk0Fnfih90b0ME.jpg"
+        }
+    ]
+},
+    {
     "title": "The Good Dinosaur",
     "desc": "يحكي الفيلم قصة الديناصور المراهق والمنتمي إلى فصيلة (أباتوصور)  يُدعى (أرلو) الذي فقد اباه في حادث مأسوي بعد فيضان نهر وغرق الاب ، وعلى أثره يخرج في رحلة، حيث يقابل الفتى (سبوت) من بني البشر، تتطور بينهم علاقة صداقة تغير مجرى حياتهم",
     "poster": "https://image.tmdb.org/t/p/w500/soTwRZR0dOVa05yZLkfXq6Z9BIK.jpg",
