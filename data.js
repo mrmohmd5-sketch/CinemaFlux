@@ -63,31 +63,6 @@ const globalMoviesData = [
     ]
 },
     {
-        "title": "اسم المسلسل بالإنجليزية",
-        "desc": "قصة المسلسل باللغة العربية هنا...",
-        "poster": "https://image.tmdb.org/t/p/w500/رابط_البوستر.jpg",
-        "hdUrl": "",
-        "sdUrl": "",
-        "rating": "8.5",
-        "genre": "دراما حركة غموض",
-        "type": "series",
-        "cast": [
-            {
-                "name": "اسم الممثل",
-                "image": "رابط_صورة_الممثل"
-            }
-        ],
-        "seasons": [
-            {
-                "season_number": 1,
-                "episodes": [
-                    { "episode_number": 1, "url": "رابط_الحلقة_الأولى" },
-                    { "episode_number": 2, "url": "رابط_الحلقة_الثانية" }
-                ]
-            }
-        ]
-    },
-    {
     "title": "Your Name",
     "desc": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
     "poster": "https://image.tmdb.org/t/p/w500/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg",
