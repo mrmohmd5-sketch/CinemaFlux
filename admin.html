@@ -19,16 +19,18 @@
         .grid { display: flex; flex-direction: column; gap: 15px; margin-bottom: 20px; }
         .input-group { display: flex; flex-direction: column; gap: 5px; }
         label { font-size: 12px; color: #9aa6b1; }
-        input {
+        input, textarea {
             padding: 14px; border-radius: 8px; background-color: #121b22; border: 1px solid #1c252d; color: white; outline: none; font-size: 14px; width: 100%; box-sizing: border-box;
         }
-        input:focus { border-color: #e50914; }
+        input:focus, textarea:focus { border-color: #e50914; }
+        textarea { resize: vertical; min-height: 100px; font-family: monospace; font-size: 13px; }
         button { background-color: #e50914; color: white; border: none; padding: 14px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; font-size: 15px; transition: 0.2s; }
         button:hover { background-color: #b80710; }
         button.btn-save { background-color: #28a745; }
         button.btn-save:hover { background-color: #218838; }
         #statusOutput { margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #000; font-family: monospace; font-size: 12px; color: #00ff00; border: 1px solid #1c252d; min-height: 40px; white-space: pre-wrap; }
         #authBlock { text-align: center; }
+        .hint { font-size: 11px; color: #e50914; margin-top: 2px; }
     </style>
 </head>
 <body>
@@ -69,11 +71,12 @@
             <div class="grid">
                 <div class="input-group">
                     <label>رابط الفيلم أو المسلسل من موقع TMDB</label>
-                    <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx أو https://www.themoviedb.org/tv/xxxxx">
+                    <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx أو /tv/xxxxx">
                 </div>
                 <div class="input-group">
-                    <label>رابط تشغيل الفيديو (رابط الفيلم أو سيرفر السلسلة الموحد)</label>
-                    <input type="text" id="mogoUrlInput" placeholder="https://dood.to/e/xxxxx">
+                    <label>روابط تشغيل الفيديو (للفيلم ضع رابط واحد | للمسلسل ضع كل رابط في سطر منفصل بالترتيب)</label>
+                    <textarea id="mogoUrlInput" placeholder="للفيلم: رابط واحد فقط&#10;للمسلسلات:&#10;رابط الحلقة 1&#10;رابط الحلقة 2&#10;رابط الحلقة 3"></textarea>
+                    <span class="hint">* ملحوظة للمسلسلات: يرجى وضع روابط الحلقات مرتبة (كل رابط في سطر)، وسيقوم الأدمن بتوزيعها تلقائياً على أرقام الحلقات المستخرجة من TMDB.</span>
                 </div>
             </div>
 
@@ -123,9 +126,9 @@
             const ghToken = document.getElementById('ghToken').value.trim();
             const tmdbKey = document.getElementById('tmdbApiKey').value.trim();
             const tmdbUrl = document.getElementById('tmdbUrlInput').value.trim();
-            const mediaUrl = document.getElementById('mogoUrlInput').value.trim();
+            const mediaUrlRaw = document.getElementById('mogoUrlInput').value.trim();
 
-            if(!ghUser || !ghRepo || !ghToken || !tmdbKey || !tmdbUrl || !mediaUrl) {
+            if(!ghUser || !ghRepo || !ghToken || !tmdbKey || !tmdbUrl || !mediaUrlRaw) {
                 alert("برجاء ملء جميع الحقول المطلوبة!");
                 return;
             }
@@ -142,6 +145,9 @@
                 if (match && match[2]) id = match[2];
                 else { logStatus("❌ رابط TMDB غير صحيح!", true); return; }
             }
+
+            // تقسيم الروابط إلى مصفوفة بناءً على الأسطر
+            const linksArray = mediaUrlRaw.split('\n').map(link => link.trim()).filter(link => link.length > 0);
 
             try {
                 // 1. جلب البيانات العربية الأساسية
@@ -180,32 +186,36 @@
                     title: titleText,
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
                     poster: posterUrl,
-                    hdUrl: finalType === "movie" ? mediaUrl : "",
-                    sdUrl: finalType === "movie" ? mediaUrl : "",
+                    hdUrl: finalType === "movie" ? linksArray[0] : "",
+                    sdUrl: finalType === "movie" ? linksArray[0] : "",
                     rating: ratingValue,
                     genre: genresArray,
                     type: finalType,
                     cast: castData
                 };
 
-                // إذا كانت المادة مسلسلاً، نقوم بجلب المواسم والحلقات ديناميكياً وبنائها تلقائياً
+                // إذا كانت المادة مسلسلاً، نقوم بجلب المواسم والحلقات وتوزيع الروابط بالترتيب
                 if (finalType === "series") {
-                    logStatus("⏳ تم كشف مسلسل! جاري سحب وهيكلة المواسم والحلقات تلقائياً من TMDB...");
+                    logStatus("⏳ تم كشف مسلسل! جاري سحب وهيكلة المواسم والحلقات تلقائياً وتوزيع الروابط المخصصة...");
                     const seasonsArray = [];
+                    let overallEpisodeCounter = 0; // عدّاد لتوزيع الروابط من المصفوفة بالترتيب
                     
                     if (dataAr.seasons && dataAr.seasons.length > 0) {
                         for (const s of dataAr.seasons) {
-                            // تجاهل موسم الصفر أو الكواليس الإضافية غير الأساسية للتبسيط
-                            if (s.season_number === 0) continue;
+                            if (s.season_number === 0) continue; // تخطي المواسم الخاصة غير الأساسية
                             
                             const epRes = await fetch(`https://api.themoviedb.org/3/tv/${id}/season/${s.season_number}?api_key=${tmdbKey}&language=ar`);
                             if (epRes.ok) {
-                                const epData = await epRes.ok ? await epRes.json() : null;
+                                const epData = await epRes.json();
                                 if (epData && epData.episodes) {
                                     const episodesList = epData.episodes.map(e => {
+                                        // أخذ الرابط المطابق للترتيب الحالي، وإذا انتهت الروابط نضع أول رابط كإجراء احتياطي
+                                        const assignedUrl = linksArray[overallEpisodeCounter] || linksArray[0] || "";
+                                        overallEpisodeCounter++;
+                                        
                                         return {
                                             episode_number: e.episode_number,
-                                            url: mediaUrl // يتم وضع الرابط كقاعدة افتراضية لسهولة التحكم اللاحق
+                                            url: assignedUrl
                                         };
                                     });
                                     
@@ -220,7 +230,7 @@
                     newMediaObject.seasons = seasonsArray;
                 }
 
-                logStatus(`⏳ تم جلب "${titleText}" وهيكلته بنجاح. جاري الاتصال بـ GitHub...`);
+                logStatus(`⏳ تم هيكلة "${titleText}" بنجاح. جاري الاتصال بـ GitHub لرفع البيانات...`);
 
                 const fileUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/contents/data.js`;
                 const ghGetRes = await fetch(fileUrl, {
@@ -257,7 +267,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية آمنة للمادة: ${titleText} مع دعم نظام الحلقات والمواسم`,
+                        message: `إضافة تلقائية ذكية ومباشرة للمادة: ${titleText} مع روابط الحلقات المرتبة`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -265,7 +275,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وتحديث قاعدة البيانات بالكامل دون أي تكرار!`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وتوزيع روابط الحلقات الفردية تلقائياً لكل حلقة!`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
 
