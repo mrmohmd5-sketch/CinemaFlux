@@ -1,5 +1,68 @@
 const globalMoviesData = [
     {
+    "title": "Moon Knight",
+    "desc": "عندما يعاني ستيفن غرانت، وهو موظف في متجر هدايا معتدل السلوك، من انقطاع التيار الكهربائي وذكريات حياة أخرى، يكتشف أنه يعاني من اضطراب الهوية التفارقية ويشارك جثة مع المرتزق مارك سبيكتور. بينما يتلاقى أعداء ستيفن/مارك عليهم، يجب عليهم التنقل في هوياتهم المعقدة بينما يدفعون إلى لغز قاتل بين آلهة مصر القوية.",
+    "poster": "https://image.tmdb.org/t/p/w500/mdsh6PgayTmhNJIoPgh2zEajLZm.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.6",
+    "genre": "خيال علمي وفانتازيا غموض حركة ومغامرة",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Oscar Isaac",
+            "image": "https://image.tmdb.org/t/p/w185/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+        },
+        {
+            "name": "Ethan Hawke",
+            "image": "https://image.tmdb.org/t/p/w185/oojD9jSshvUT4t6AUySsBxoekHk.jpg"
+        },
+        {
+            "name": "May Calamawy",
+            "image": "https://image.tmdb.org/t/p/w185/5S3nNkH5p85xK7k7AaXBZ0ouyOR.jpg"
+        },
+        {
+            "name": "Ann Akinjirin",
+            "image": "https://image.tmdb.org/t/p/w185/o4Tbudvow3rzgxmlilnRral5fpr.jpg"
+        },
+        {
+            "name": "David Ganly",
+            "image": "https://image.tmdb.org/t/p/w185/e9NUAspQ306cmyhkl3gG5LU1LHi.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/jlBzOD6KA8FQRe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/Aq7dbRyQkwfXk2L/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/b14grV2oYdcP88D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/LYL3ql8GZRtRl17/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/86e4G3vD14CJRm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/xoZ0wrRzqDSqAR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
         "title": "اسم المسلسل بالإنجليزية",
         "desc": "قصة المسلسل باللغة العربية هنا...",
         "poster": "https://image.tmdb.org/t/p/w500/رابط_البوستر.jpg",
