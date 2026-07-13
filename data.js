@@ -1,4 +1,141 @@
-const globalMoviesData = [
+// بيانات الأفلام والمسلسلات
+const contentData = [
+    {
+        id: "wall-e",
+        title: "WALL·E",
+        category: "خيال",
+        rating: "8.1",
+        tags: "رسوم متحركة • عائلي • خيال علمي",
+        image: "https://image.tmdb.org/t/p/w500/h28t2JzCNL19QA3ueqq0z0eYvCc.jpg",
+        description: "تدور أحداث الفيلم حول الروبوت وول-ي، وهو روبوت صمم لتنظيف الأرض المهجورة والمغطاة بالنفايات في المستقبل البعيد. يقع وول-ي في حب روبوت آخر اسمها إيف، فيتبعها إلى الفضاء الخارجي في مغامرة تغير مصير جنسه والجنس البشري. يُظهر كل من الروبوتين مظاهر من الإرادة والمشاعر التي تتطور مع تقدم أحداث الفيلم.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+        id: "moon-knight",
+        title: "Moon Knight",
+        category: "خيال",
+        rating: "7.6",
+        tags: "أكشن • مغامرة • خيال",
+        image: "https://image.tmdb.org/t/p/w500/x747ZvNmO41Wx3m2wYVjHnZ92OJ.jpg",
+        description: "يتبع المسلسل ستيفن غرانت، وهو موظف في متجر هدايا يعاني من اضطراب الهوية الانفصامية، حيث يتشارك جسده مع المرتزق السابق مارك سبكتور. مع اقتراب أعدائهم منهم، يجب عليهم التنقل في هوياتهم المعقدة وسط لغز مميت بين الآلهة القوية في مصر.",
+        videoUrl: "https://www.w3schools.com/html/movie.mp4"
+    },
+    {
+        id: "nimona",
+        title: "Nimona",
+        category: "خيال",
+        rating: "7.9",
+        tags: "رسوم متحركة • أكشن • مغامرة",
+        image: "https://image.tmdb.org/t/p/w500/22s621tN11wo0Yd7qALFFee2eJ1.jpg",
+        description: "عندما يُتهم فارس في عالم مستقبل قروسطي بجريمة لم يرتكبها، تكون الوحيدة التي يمكنها مساعدته في إثبات براءته هي نيمونا، وهي مراهقة متحولة الشكل قد تكون هي نفسها الوحش الذي أقسم على تدميره.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4"
+    }
+];
+
+// مصفوفة غرف المشاهدة الجماعية (تبدأ بغرفة افتراضية)
+let activeRooms = [
+    { id: "room-1", name: "غرفة سهرة الويكند", watchers: 5 }
+];
+
+// دالة لعرض غرف المشاهدة الجماعية في الواجهة
+function renderRooms() {
+    const roomsContainer = document.getElementById('active-rooms-list');
+    if (!roomsContainer) return;
+
+    roomsContainer.innerHTML = '';
+
+    if (activeRooms.length === 0) {
+        roomsContainer.innerHTML = '<p style="color: #aaa; text-align: center; padding: 10px;">لا توجد غرف نشطة حالياً. أنشئ غرفتك الآن!</p>';
+        return;
+    }
+
+    activeRooms.forEach(room => {
+        const roomElement = document.createElement('div');
+        roomElement.className = 'room-item';
+        roomElement.style.cssText = `
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.05);
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        `;
+        
+        roomElement.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="color: #ff4757;">●</span>
+                <span style="font-weight: bold; color: #fff;">${room.name}</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 0.9rem; color: #aaa;">👤 ${room.watchers} مشاهدين</span>
+                <button onclick="joinRoom('${room.id}')" style="background: #ff4757; color: white; border: none; padding: 5px 12px; border-radius: 5px; cursor: pointer; font-family: 'Cairo', sans-serif; font-size: 0.85rem;">دخول</button>
+            </div>
+        `;
+        roomsContainer.appendChild(roomElement);
+    });
+}
+
+// دالة إنشاء غرفة جديدة (التي كانت مفقودة)
+function createRoom() {
+    const roomName = prompt("أدخل اسم الغرفة الجديدة:");
+    
+    // التحقق من أن المستخدم كتب اسماً ولم يضغط إلغاء
+    if (roomName && roomName.trim() !== "") {
+        const newRoom = {
+            id: "room-" + Date.now(), // توليد معرف فريد يعتمد على الوقت
+            name: roomName.trim(),
+            watchers: 1 // منشئ الغرفة هو أول مشاهد
+        };
+        
+        // إضافة الغرفة للمصفوفة
+        activeRooms.unshift(newRoom); 
+        
+        // إعادة تحديث القائمة في الواجهة فوراً
+        renderRooms();
+        
+        alert(`تم إنشاء غرفة "${roomName}" بنجاح!`);
+    }
+}
+
+// دالة دخول الغرفة (تجريبية)
+function joinRoom(roomId) {
+    const room = activeRooms.find(r => r.id === roomId);
+    if (room) {
+        room.watchers++;
+        renderRooms();
+        alert(`جاري الانضمام إلى: ${room.name}`);
+    }
+}
+
+// دالة تشغيل فيلم محدد وتحديث البيانات في الواجهة
+function playContent(contentId) {
+    const item = contentData.find(c => c.id === contentId);
+    if (!item) return;
+
+    // تحديث الفيديو
+    const videoPlayer = document.getElementById('video-player');
+    if (videoPlayer) {
+        videoPlayer.src = item.videoUrl;
+        videoPlayer.play().catch(e => console.log("Auto-play prevented"));
+    }
+
+    // تحديث العناوين والنصوص الرئيسية
+    document.getElementById('main-title').innerText = item.title;
+    document.getElementById('movie-title-display').innerText = item.title + ".mp4";
+    document.getElementById('movie-rating').innerText = item.rating;
+    document.getElementById('movie-tags').innerText = item.tags;
+    document.getElementById('movie-description').innerText = item.description;
+
+    // التمرير لأعلى الصفحة بسلاسة لرؤية المشغل
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// عند تحميل الصفحة، نقوم بعرض الغرف لأول مرة
+document.addEventListener("DOMContentLoaded", () => {
+    renderRooms();
+});
     {
     "title": "Moon Knight",
     "desc": "عندما يعاني ستيفن غرانت، وهو موظف في متجر هدايا معتدل السلوك، من انقطاع التيار الكهربائي وذكريات حياة أخرى، يكتشف أنه يعاني من اضطراب الهوية التفارقية ويشارك جثة مع المرتزق مارك سبيكتور. بينما يتلاقى أعداء ستيفن/مارك عليهم، يجب عليهم التنقل في هوياتهم المعقدة بينما يدفعون إلى لغز قاتل بين آلهة مصر القوية.",
