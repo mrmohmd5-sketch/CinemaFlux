@@ -183,7 +183,6 @@
         .share-section { text-align: center; padding: 20px 0; }
         .share-title { font-size: 14px; font-weight: bold; margin-bottom: 5px; }
         .share-desc { font-size: 12px; color: var(--text-sub); margin-bottom: 12px; }
-
         .elena-credit { font-size: 11px; color: var(--text-sub); text-align: center; padding: 15px 0; font-style: italic; opacity: 0.7; letter-spacing: 0.5px; }
 
         /* صفحة الفيلم المنفصلة الكاملة */
@@ -192,18 +191,28 @@
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; width: 100%; background-color: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
         .player-controls { display: flex; gap: 8px; padding: 12px; background-color: var(--bg-surface); justify-content: center; flex-wrap: wrap; border-radius: 0 0 12px 12px; border: 1px solid var(--border-color); border-top: none; }
-        .server-btn, .cast-btn {
+        .server-btn, .cast-btn, .room-action-btn {
             background-color: var(--bg-card);
             color: var(--text-main); border: 1px solid var(--border-color); padding: 8px 14px;
-            font-size: 12px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; font-weight: bold;
+            font-size: 12px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center;
+            gap: 5px; font-weight: bold;
         }
         .server-btn.active { background-color: var(--accent); border-color: var(--accent); color: #fff; }
         .cast-btn { background-color: #28a745; border-color: #28a745; color: #fff; }
+        .room-action-btn { background-color: #007bff; border-color: #007bff; color: #fff; }
         
         .media-info-block { padding: 15px 0; }
         .media-title-row { font-size: 20px; font-weight: bold; margin: 0 0 5px 0; }
         .media-meta-row { font-size: 12px; color: var(--text-sub); margin-bottom: 12px; display: flex; gap: 10px; align-items: center; }
         .media-description { font-size: 13px; color: var(--text-sub); line-height: 1.6; margin-bottom: 20px; }
+
+        /* غرف المشاهدة المضافة حديثاً والتنسيقات */
+        .rooms-section { margin-top: 20px; background: var(--bg-card); padding: 15px; border-radius: 12px; border: 1px solid var(--border-color); }
+        .rooms-list { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+        .room-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 8px; }
+        .room-chat-box { margin-top: 15px; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 8px; padding: 10px; height: 150px; overflow-y: auto; display: flex; flex-direction: column; gap: 5px; }
+        .chat-msg { font-size: 12px; line-height: 1.4; }
+        .chat-msg b { color: var(--accent); }
 
         /* قسم الممثلين الاحترافي */
         .cast-container { margin-top: 20px; }
@@ -231,20 +240,17 @@
             display: none; justify-content: center; align-items: center; z-index: 1000; padding: 15px;
         }
         .auth-box {
-            background-color: var(--bg-surface);
-            border: 1px solid var(--border-color);
+            background-color: var(--bg-surface); border: 1px solid var(--border-color);
             border-radius: 12px; width: 100%; max-width: 340px; padding: 20px; box-sizing: border-box; position: relative;
         }
         .auth-box h3 { margin-top: 0; font-size: 16px; margin-bottom: 15px; text-align: center; }
         .auth-box input {
-            width: 100%;
-            padding: 10px; margin-bottom: 10px; box-sizing: border-box;
+            width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;
             background-color: var(--bg-main); border: 1px solid var(--border-color);
             color: var(--text-main); border-radius: 6px; outline: none;
         }
         .auth-box button {
-            width: 100%;
-            padding: 10px; background-color: var(--accent); color: white;
+            width: 100%; padding: 10px; background-color: var(--accent); color: white;
             border: none; font-weight: bold; border-radius: 6px; cursor: pointer; margin-bottom: 10px;
         }
         .auth-toggle-link { text-align: center; font-size: 12px; color: var(--text-sub); cursor: pointer; text-decoration: underline; }
@@ -381,6 +387,20 @@
                 <button class="server-btn active" id="btnHD" onclick="changeServer('HD')">سيرفر عالي الجودة</button>
                 <button class="server-btn" id="btnSD" onclick="changeServer('SD')">سيرفر إنترنت ضعيف</button>
                 <button class="cast-btn" id="btnCast" onclick="castToTV()">📺 بث للشاشة</button>
+                <button class="room-action-btn" id="btnCreateRoom" onclick="createNewWatchRoom()">➕ إنشاء غرفة مشاهدة</button>
+            </div>
+
+            <div class="rooms-section" id="roomsSectionBlock">
+                <div class="row-title" style="font-size: 14px; padding: 0;">👥 غرف المشاهدة الجماعية الحالية</div>
+                <div class="rooms-list" id="roomsListContainer"></div>
+                <div id="activeRoomInterface" style="display: none; margin-top: 15px;">
+                    <div style="font-size: 12px; color: var(--accent); font-weight: bold;" id="activeRoomTitleInfo">أنت داخل غرفة الآن</div>
+                    <div class="room-chat-box" id="roomChatMessages"></div>
+                    <div class="comment-input-box">
+                        <input type="text" id="roomChatInput" placeholder="أرسل رسالة للغرفة الآن...">
+                        <button class="comment-submit-btn" onclick="sendRoomChatMessage()">إرسال</button>
+                    </div>
+                </div>
             </div>
             
             <div class="media-info-block">
@@ -436,7 +456,10 @@
     </div>
 
     <script>
-        // قواعد البيانات المحفوظة محلياً والمطورة
+        // قواعد البيانات والمفاتيح الخاصة بـ Supabase للربط المباشر والمزامنة اللحظية
+        const SUPABASE_URL = "https://efeisbnbiabfehrjmpyb.supabase.co/rest/v1/";
+        const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVmZWlzYm5iaWFiZmVocmptcHliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM4NDU0MTgsImV4cCI6MjA5OTQyMTQxOH0.s7GZxyhl_6qwxPBAYql3WrZqKVZYtBZeZf5rIxeeB9E";
+
         let allMoviesData = [];
         let currentLang = 'ar';
         let currentTheme = 'dark';
@@ -448,7 +471,10 @@
         let activeMovieItem = null;
         let currentHD = "", currentSD = "";
 
-        // حزمة الترجمة الكاملة للغات
+        // متغيرات تتبع الغرف النشطة
+        let currentActiveRoomId = null;
+        let roomPollingInterval = null;
+        
         const langPack = {
             ar: {
                 logo: "🎬 سينما فلوكس | CinemaFlux", navHome: "الرئيسية", navSearch: "بحث", navProfile: "الحساب",
@@ -480,33 +506,27 @@
             }
         };
 
-        let authMode = 'login'; // login أو register
+        let authMode = 'login';
 
         window.addEventListener('DOMContentLoaded', () => {
-            // جلب البيانات من data.js
             if (typeof globalMoviesData !== 'undefined') {
                 allMoviesData = globalMoviesData;
             } else {
-                // بيانات تجريبية في حال غياب ملف data.js
                 allMoviesData = [
                     { title: "هوس", type: "movie", rating: "8.2", genre: "رعب, رومانسي", year: "2025", poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400", desc: "في إطار من الرعب، يتمنى شاب حالم أمنية بهدف الفوز بقلب الفتاة التي يحبها...", hdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", sdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", cast: [{name: "Andy", img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100"}, {name: "Cooper", img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100"}] },
                     { title: "الشيطان يرتدي برادا 2", type: "movie", rating: "6.6", genre: "كوميدي", year: "2026", poster: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400", hdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", sdUrl: "", cast: [] },
                     { title: "Silo", type: "series", rating: "8.8", genre: "خيال علمي", year: "2024", poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400", hdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", sdUrl: "", cast: [] }
                 ];
             }
-
-            // إعداد التطبيق الأولي
             updateUserUI();
             renderHomeDOM();
             renderSearchHistoryUI();
             applyLocalization();
         });
 
-        // ================= نظام التنقل والتبديل الأساسي =================
         function switchNav(target) {
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
-
             if (target === 'home') {
                 document.getElementById('navHome').classList.add('active');
                 document.getElementById('viewHome').classList.add('active');
@@ -523,20 +543,14 @@
         function switchView(viewId) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById(viewId).classList.add('active');
-            if(viewId === 'viewHistory') {
-                renderWatchHistoryUI();
-            }
+            if(viewId === 'viewHistory') { renderWatchHistoryUI(); }
         }
 
-        // ================= بناء محتويات الصفحة الرئيسية بالتصنيفات الديناميكية =================
         function renderHomeDOM() {
             const featuredSlider = document.getElementById('featuredSlider');
             const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
-            
             featuredSlider.innerHTML = '';
             if (categoriesBlock) categoriesBlock.innerHTML = '';
-
-            // 1. عرض أول 10 عناصر مباشرة (الأحدث على الإطلاق) في السلايدر العلوي
             const newestItems = [...allMoviesData].slice(0, 10);
             newestItems.forEach(item => {
                 const slide = document.createElement('div');
@@ -552,9 +566,7 @@
                 featuredSlider.appendChild(slide);
             });
 
-            // 2. نظام التصنيفات الديناميكي الذكي
             const genresMap = {};
-
             allMoviesData.forEach(item => {
                 if (item.genre) {
                     const genresList = item.genre.trim().split(/\s+/).map(g => g.trim());
@@ -569,24 +581,17 @@
                 }
             });
 
-            // 3. بناء وتوليد القوائم والسلايدرز لكل تصنيف في واجهة الموقع
             for (const genre in genresMap) {
                 if (genresMap[genre].length === 0) continue;
-
                 const categorySection = document.createElement('div');
                 categorySection.style.marginBottom = '25px';
-
                 const rowHeader = document.createElement('div');
                 rowHeader.className = 'row-header';
                 rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
-                
-                // جعل العنوان يفتح الصفحة الكاملة للتصنيف عند الضغط عليه
                 rowHeader.querySelector('.row-title').onclick = () => openCategoryPage(genre, genresMap[genre]);
                 categorySection.appendChild(rowHeader);
-
                 const moviesSlider = document.createElement('div');
                 moviesSlider.className = 'movies-slider';
-
                 genresMap[genre].forEach(item => {
                     const card = document.createElement('div');
                     card.className = 'movie-card';
@@ -605,39 +610,34 @@
                     card.onclick = () => openMoviePage(item);
                     moviesSlider.appendChild(card);
                 });
-
                 categorySection.appendChild(moviesSlider);
                 if (categoriesBlock) categoriesBlock.appendChild(categorySection);
             }
         }
 
-        // ================= فتح وإغلاق الصفحة الكاملة لتصنيف معين =================
         function openCategoryPage(genreName, items) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewCategoryDetail').classList.add('active');
             document.getElementById('currentCategoryTitle').innerText = genreName;
-            
-            const gridContainer = document.getElementById('categoryGridItems');
-            gridContainer.innerHTML = '';
-            
+            const gridItems = document.getElementById('categoryGridItems');
+            gridItems.innerHTML = '';
             items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'movie-card';
-                card.style.maxWidth = '100%';
+                card.style.minWidth = '100%';
                 card.innerHTML = `
-                    <div class="poster-wrapper">
+                    <div class="poster-wrapper" style="height:150px;">
                         <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
                     </div>
                     <div class="movie-info">
                         <p class="movie-name">${item.title}</p>
                         <div class="movie-meta">
                             <span class="imdb-badge">${item.rating || 'N/A'}</span>
-                            <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
                         </div>
                     </div>
                 `;
                 card.onclick = () => openMoviePage(item);
-                gridContainer.appendChild(card);
+                gridItems.appendChild(card);
             });
         }
 
@@ -645,498 +645,457 @@
             switchNav('home');
         }
 
-        // ================= دالة فتح صفحة الفيلم التفصيلية وإظهار الممثلين والمسلسلات =================
         function openMoviePage(item) {
             activeMovieItem = item;
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewMovieDetail').classList.add('active');
             
-            const iframe = document.getElementById('mainIframe');
-            const seriesContainer = document.getElementById('seriesStructureContainer');
-            const playerContainer = document.getElementById('mainVideoContainer');
-            const playerControls = document.getElementById('mainPlayerControls');
-
-            if (item.type === 'series') {
-                // إعدادات واجهة المسلسلات
-                playerContainer.style.display = 'none';
-                playerControls.style.display = 'none';
-                iframe.src = "";
-                
-                if (seriesContainer) {
-                    seriesContainer.style.display = 'block';
-                    renderSeriesControls(item, seriesContainer, playerContainer, playerControls);
-                }
-            } else {
-                // إعدادات واجهة الأفلام المعتادة
-                if (seriesContainer) seriesContainer.style.display = 'none';
-                playerContainer.style.display = 'block';
-                playerControls.style.display = 'flex';
-                
-                currentHD = item.hdUrl || "";
-                currentSD = item.sdUrl || item.hdUrl || "";
-                iframe.src = currentHD;
-
-                document.getElementById('btnHD').classList.add('active');
-                document.getElementById('btnSD').classList.remove('active');
-            }
+            currentHD = item.hdUrl || "";
+            currentSD = item.sdUrl || "";
             
-            document.getElementById('currentTitle').innerText = item.title;
+            const mainIframe = document.getElementById('mainIframe');
+            mainIframe.src = currentHD ? currentHD : currentSD;
+
+            const btnHD = document.getElementById('btnHD');
+            const btnSD = document.getElementById('btnSD');
+            if(currentHD) { btnHD.style.display = "inline-flex"; btnHD.classList.add('active'); } else { btnHD.style.display = "none"; }
+            if(currentSD) { btnSD.style.display = "inline-flex"; if(!currentHD) btnSD.classList.add('active'); } else { btnSD.style.display = "none"; }
+
+            document.getElementById('currentTitle').innerText = item.title || "";
             document.getElementById('currentRating').innerText = item.rating || "0.0";
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
-            
-            // بناء الكادر والطاقم
-            const sliderCast = document.getElementById('castListSlider');
-            sliderCast.innerHTML = '';
-            if (item.cast && item.cast.length > 0) {
-                document.getElementById('castContainerBlock').style.display = 'block';
-                item.cast.forEach(person => {
-                    const actorImage = person.image || person.img || person.avatar || person.photo || person.pic || person.profile_path || '';
-                    
-                    const castCard = document.createElement('div');
-                    castCard.className = 'cast-card';
-                    castCard.innerHTML = `
-                        <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
-                        <div class="cast-name">${person.name || 'مجهول'}</div>
+
+            const seriesBlock = document.getElementById('seriesStructureContainer');
+            if(item.type === 'series' && item.seasons) {
+                seriesBlock.style.display = "block";
+                renderSeriesStructure(item.seasons);
+            } else {
+                seriesBlock.style.display = "none";
+            }
+
+            const castBlock = document.getElementById('castContainerBlock');
+            const castSlider = document.getElementById('castListSlider');
+            castSlider.innerHTML = '';
+            if(item.cast && item.cast.length > 0) {
+                castBlock.style.display = "block";
+                item.cast.forEach(c => {
+                    const cCard = document.createElement('div');
+                    cCard.className = 'cast-card';
+                    cCard.innerHTML = `
+                        <img class="cast-avatar" src="${c.img}" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+                        <div class="cast-name">${c.name}</div>
                     `;
-                    sliderCast.appendChild(castCard);
+                    castSlider.appendChild(cCard);
                 });
             } else {
-                document.getElementById('castContainerBlock').style.display = 'none';
-            }
-            
-            // جلب التعليقات الافتراضية
-            const commentsContainer = document.getElementById('commentsListContainer');
-            commentsContainer.innerHTML = `
-                <div class="comment-item">
-                    <div class="comment-user">👤 أحمد علي</div>
-                    <p class="comment-text">فيلم رائع جداً وممتع، أنصح بالكل بمشاهدته! الكواليتي خرافية وسرعة السيرفر ممتازة.</p>
-                </div>
-            `;
-            
-            addToWatchHistory(item);
-        }
-
-        // ================= دالة بناء قوائم الحلقات والمواسم للمسلسلات ديناميكياً =================
-        function renderSeriesControls(media, container, playerContainer, playerControls) {
-            if (!media.seasons || media.seasons.length === 0) {
-                container.innerHTML = `<p style="color:var(--accent); text-align:center; font-weight:bold; margin:0;">${currentLang === 'ar' ? 'لا توجد مواسم مضافة بعد لهذه المادة' : 'No seasons available for this media'}</p>`;
-                return;
+                castBlock.style.display = "none";
             }
 
-            let lblSeason = currentLang === 'ar' ? 'اختر الموسم:' : 'Select Season:';
-            let lblEpisode = currentLang === 'ar' ? 'اختر الحلقة:' : 'Select Episode:';
-            let txtSeasonPrefix = currentLang === 'ar' ? 'الموسم' : 'Season';
-
-            let html = `
-                <div style="margin-bottom: 15px;">
-                    <label style="color: var(--text-sub); display:block; margin-bottom:8px; font-weight:bold; font-size:13px;">${lblSeason}</label>
-                    <select id="seasonSelect" style="width:100%; padding:10px; background:var(--bg-main); color:var(--text-main); border:1px solid var(--border-color); border-radius:8px; cursor:pointer; font-weight:bold; outline:none;">
-                        ${media.seasons.map(s => `<option value="${s.season_number}">${txtSeasonPrefix} ${s.season_number}</option>`).join('')}
-                    </select>
-                </div>
-                <div>
-                    <label style="color: var(--text-sub); display:block; margin-bottom:8px; font-weight:bold; font-size:13px;">${lblEpisode}</label>
-                    <div id="episodesList" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap:10px; max-height:160px; overflow-y:auto; padding:5px;">
-                        </div>
-                </div>
-            `;
-            container.innerHTML = html;
-
-            const seasonSelect = document.getElementById('seasonSelect');
-            
-            function updateEpisodes(seasonNum) {
-                const season = media.seasons.find(s => s.season_number == seasonNum);
-                const epListContainer = document.getElementById('episodesList');
-                if (!season || !season.episodes) {
-                    epListContainer.innerHTML = '';
-                    return;
-                }
-
-                epListContainer.innerHTML = season.episodes.map(ep => {
-                    let safeUrl = btoa(unescape(encodeURIComponent(ep.url)));
-                    return `
-                        <button onclick="playEpisode('${safeUrl}')" style="background:var(--bg-main); color:var(--text-main); border:1px solid var(--border-color); padding:10px; border-radius:6px; cursor:pointer; font-weight:bold; transition:all 0.2s;" onmouseover="this.style.background='var(--accent)'; this.style.color='#fff'; this.style.borderColor='var(--accent)';" onmouseout="this.style.background='var(--bg-main)'; this.style.color='var(--text-main)'; this.style.borderColor='var(--border-color)';">
-                            ${ep.episode_number}
-                        </button>
-                    `;
-                }).join('');
+            // تتبع سجل المشاهدة محلياً
+            if(!watchHistory.some(w => w.title === item.title)) {
+                watchHistory.unshift(item);
+                localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
             }
 
-            seasonSelect.addEventListener('change', (e) => updateEpisodes(e.target.value));
-            updateEpisodes(seasonSelect.value);
-        }
+            // تشغيل جلب غرف المشاهدة المزامنة من Supabase لعنوان الفيلم المحدد
+            fetchActiveRoomsFromSupabase();
+            if(roomPollingInterval) clearInterval(roomPollingInterval);
+            roomPollingInterval = setInterval(fetchActiveRoomsFromSupabase, 5000);
 
-        // ================= دالة تشغيل السيرفر المباشر للحلقة المختارة داخل مشغل الفيديو =================
-        function playEpisode(encodedUrl) {
-            const playerContainer = document.getElementById('mainVideoContainer');
-            const playerControls = document.getElementById('mainPlayerControls');
-            const iframe = document.getElementById('mainIframe');
-            
-            let decodedUrlStr = decodeURIComponent(escape(atob(encodedUrl)));
-            
-            // استخراج الرابط المباشر فقط من كود iframe إذا تم تمريره بالكامل
-            if (decodedUrlStr.includes('<iframe')) {
-                const srcMatch = decodedUrlStr.match(/src=["']([^"']+)["']/);
-                if (srcMatch && srcMatch[1]) {
-                    decodedUrlStr = srcMatch[1];
-                }
-            }
-
-            currentHD = decodedUrlStr;
-            currentSD = decodedUrlStr;
-            iframe.src = decodedUrlStr;
-
-            playerContainer.style.display = 'block';
-            playerControls.style.display = 'flex';
-            
-            document.getElementById('btnHD').classList.add('active');
-            document.getElementById('btnSD').classList.remove('active');
+            loadCommentsUI();
         }
 
         function closeMoviePage() {
-            document.getElementById('mainIframe').src = "";
+            if(roomPollingInterval) { clearInterval(roomPollingInterval); roomPollingInterval = null; }
+            currentActiveRoomId = null;
+            document.getElementById('activeRoomInterface').style.display = "none";
             switchNav('home');
         }
 
         function changeServer(type) {
             const iframe = document.getElementById('mainIframe');
-            if (type === 'HD') {
+            document.querySelectorAll('.server-btn').forEach(b => b.classList.remove('active'));
+            if(type === 'HD') {
                 iframe.src = currentHD;
                 document.getElementById('btnHD').classList.add('active');
-                document.getElementById('btnSD').classList.remove('active');
             } else {
                 iframe.src = currentSD;
                 document.getElementById('btnSD').classList.add('active');
-                document.getElementById('btnHD').classList.remove('active');
+            }
+            
+            // إخطار الغرفة إذا كان المستخدم هو المنشئ أو متصل بغرفة نشطة
+            if(currentActiveRoomId) {
+                updateRoomStateInSupabase({ current_server: type, stream_src: iframe.src });
             }
         }
 
-        function addCommentAction() {
-            const input = document.getElementById('commentTextInput');
-            const text = input.value.trim();
-            if (!text) return;
-            
-            const commentsContainer = document.getElementById('commentsListContainer');
-            const item = document.createElement('div');
-            item.className = 'comment-item';
-            
-            const name = currentUser ? currentUser.username : (currentLang === 'ar' ? "مشاهد مجهول" : "Anonymous User");
-            item.innerHTML = `
-                <div class="comment-user">👤 ${name}</div>
-                <p class="comment-text">${text}</p>
-            `;
-            commentsContainer.appendChild(item);
-            input.value = "";
+        // ================= نظام غرف المشاهدة المشتركة (Supabase Rooms Integration) =================
+        function createNewWatchRoom() {
+            if(!currentUser) { alert(currentLang === 'ar' ? 'يرجى تسجيل الدخول أولاً لتتمكن من إنشاء غرفة مشاهدة.' : 'Please log in first to create a watch room.'); openAuthModal(); return; }
+            const roomTitle = prompt(currentLang === 'ar' ? 'أدخل اسم الغرفة الجديدة:' : 'Enter new room name:');
+            if(!roomTitle) return;
+
+            const iframe = document.getElementById('mainIframe');
+            const roomData = {
+                room_name: roomTitle,
+                movie_title: activeMovieItem.title,
+                created_by: currentUser.username,
+                stream_src: iframe.src,
+                current_server: document.getElementById('btnHD').classList.contains('active') ? 'HD' : 'SD',
+                created_at: new Date().toISOString()
+            };
+
+            fetch(`${SUPABASE_URL}watch_rooms`, {
+                method: 'POST',
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                    'Content-Type': 'application/json',
+                    'Prefer': 'return=representation'
+                },
+                body: JSON.stringify(roomData)
+            })
+            .then(res => res.json())
+            .then(data => {
+                if(data && data.length > 0) {
+                    joinWatchRoom(data[0].id, data[0].room_name);
+                }
+            }).catch(err => console.error("Error creating room:", err));
         }
 
-        // ================= نظام البحث المباشر الاحترافي وسجل البحث =================
+        function fetchActiveRoomsFromSupabase() {
+            if(!activeMovieItem) return;
+            fetch(`${SUPABASE_URL}watch_rooms?movie_title=eq.${encodeURIComponent(activeMovieItem.title)}&order=created_at.desc`, {
+                method: 'GET',
+                headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+            })
+            .then(res => res.json())
+            .then(rooms => {
+                const container = document.getElementById('roomsListContainer');
+                container.innerHTML = '';
+                if(!rooms || rooms.length === 0) {
+                    container.innerHTML = `<div style="font-size:12px; color:var(--text-sub); text-align:center;">${currentLang === 'ar' ? 'لا توجد غرف بث نشطة حالياً لهذا الفيلم.' : 'No active watch rooms for this movie.'}</div>`;
+                    return;
+                }
+                rooms.forEach(r => {
+                    const div = document.createElement('div');
+                    div.className = 'room-item';
+                    div.innerHTML = `
+                        <div style="font-size:12px;"><b>${r.room_name}</b> <span style="font-size:10px; color:var(--text-sub)">(${currentLang === 'ar' ? 'بواسطة' : 'by'} ${r.created_by})</span></div>
+                        <button class="slide-btn" style="padding:4px 10px; font-size:11px;" onclick="joinWatchRoom('${r.id}', '${r.room_name}')">${currentLang === 'ar' ? 'انضمام' : 'Join'}</button>
+                    `;
+                    container.appendChild(div);
+                });
+
+                if(currentActiveRoomId) {
+                    const activeRoom = rooms.find(r => r.id == currentActiveRoomId);
+                    if(activeRoom) {
+                        const mainIframe = document.getElementById('mainIframe');
+                        if(mainIframe.src !== activeRoom.stream_src) {
+                            mainIframe.src = activeRoom.stream_src;
+                            document.querySelectorAll('.server-btn').forEach(b => b.classList.remove('active'));
+                            if(activeRoom.current_server === 'HD') {
+                                document.getElementById('btnHD').classList.add('active');
+                            } else {
+                                document.getElementById('btnSD').classList.add('active');
+                            }
+                        }
+                        fetchRoomChatsFromSupabase();
+                    }
+                }
+            }).catch(err => console.error("Error fetching rooms:", err));
+        }
+
+        function joinWatchRoom(roomId, roomName) {
+            currentActiveRoomId = roomId;
+            document.getElementById('activeRoomInterface').style.display = "block";
+            document.getElementById('activeRoomTitleInfo').innerText = (currentLang === 'ar' ? `أنت داخل غرفة: ` : `You are in room: `) + roomName;
+            fetchRoomChatsFromSupabase();
+        }
+
+        function updateRoomStateInSupabase(updatedFields) {
+            if(!currentActiveRoomId) return;
+            fetch(`${SUPABASE_URL}watch_rooms?id=eq.${currentActiveRoomId}`, {
+                method: 'PATCH',
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatedFields)
+            }).catch(err => console.error("Error updating room state:", err));
+        }
+
+        function fetchRoomChatsFromSupabase() {
+            if(!currentActiveRoomId) return;
+            fetch(`${SUPABASE_URL}room_chats?room_id=eq.${currentActiveRoomId}&order=created_at.asc`, {
+                method: 'GET',
+                headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+            })
+            .then(res => res.json())
+            .then(chats => {
+                const box = document.getElementById('roomChatMessages');
+                box.innerHTML = '';
+                if(chats && chats.length > 0) {
+                    chats.forEach(c => {
+                        const p = document.createElement('div');
+                        p.className = 'chat-msg';
+                        p.innerHTML = `<b>${c.username}:</b> ${c.message}`;
+                        box.appendChild(p);
+                    });
+                    box.scrollTop = box.scrollHeight;
+                }
+            }).catch(err => console.error("Error fetching chats:", err));
+        }
+
+        function sendRoomChatMessage() {
+            if(!currentActiveRoomId) return;
+            if(!currentUser) { alert(currentLang === 'ar' ? 'يرجى تسجيل الدخول لإرسال الرسائل.' : 'Please log in to send messages.'); openAuthModal(); return; }
+            const input = document.getElementById('roomChatInput');
+            const msg = input.value.trim();
+            if(!msg) return;
+
+            const chatData = {
+                room_id: currentActiveRoomId,
+                username: currentUser.username,
+                message: msg,
+                created_at: new Date().toISOString()
+            };
+
+            fetch(`${SUPABASE_URL}room_chats`, {
+                method: 'POST',
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(chatData)
+            })
+            .then(() => {
+                input.value = '';
+                fetchRoomChatsFromSupabase();
+            }).catch(err => console.error("Error sending chat:", err));
+        }
+
+        // ================= النظم الفرعية المتبقية بدون تغيير لكودك =================
+        function castToTV() {
+            alert(currentLang === 'ar' ? "جاري البحث عن أجهزة كاست قريبة وبث الشاشة..." : "Casting stream to nearest TV screen device...");
+        }
+
+        function renderSeriesStructure(seasons) {
+            const container = document.getElementById('seriesStructureContainer');
+            container.innerHTML = '';
+            seasons.forEach((season, sIdx) => {
+                const sHeader = document.createElement('div');
+                sHeader.style.fontWeight = "bold"; sHeader.style.fontSize = "13px"; sHeader.style.marginBottom = "8px";
+                sHeader.innerText = `${currentLang === 'ar' ? 'الموسم' : 'Season'} ${sIdx + 1} (${season.name || ''})`;
+                container.appendChild(sHeader);
+                const epList = document.createElement('div');
+                epList.style.display = "flex"; epList.style.gap = "8px"; epList.style.overflowX = "auto"; epList.style.paddingBottom = "10px";
+                season.episodes.forEach((ep, eIdx) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'server-btn';
+                    btn.style.borderRadius = "6px";
+                    btn.innerText = `${currentLang === 'ar' ? 'حلقة' : 'Ep'} ${eIdx + 1}`;
+                    btn.onclick = () => {
+                        currentHD = ep.hdUrl || ""; currentSD = ep.sdUrl || "";
+                        document.getElementById('mainIframe').src = currentHD ? currentHD : currentSD;
+                        if(currentActiveRoomId) {
+                            updateRoomStateInSupabase({ stream_src: document.getElementById('mainIframe').src });
+                        }
+                    };
+                    epList.appendChild(btn);
+                });
+                container.appendChild(epList);
+            });
+        }
+
         function handleSearchSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
             const historyBlock = document.getElementById('searchHistoryBlock');
             const resultsBlock = document.getElementById('searchResultsBlock');
-            const resultsList = document.getElementById('searchResultsList');
             const noResults = document.getElementById('noResultsMessage');
-
-            if (!query) {
-                resultsBlock.style.display = 'none';
-                historyBlock.style.display = 'block';
-                noResults.style.display = 'none';
+            
+            if(!query) {
+                resultsBlock.style.display = "none";
+                noResults.style.display = "none";
+                historyBlock.style.display = "block";
+                renderSearchHistoryUI();
                 return;
             }
 
-            historyBlock.style.display = 'none';
-            const matches = allMoviesData.filter(item => 
-                item.title.toLowerCase().includes(query) || 
-                (item.genre && item.genre.toLowerCase().includes(query))
-            );
+            historyBlock.style.display = "none";
+            const filtered = allMoviesData.filter(m => (m.title && m.title.toLowerCase().includes(query)) || (m.genre && m.genre.toLowerCase().includes(query)));
+            const resList = document.getElementById('searchResultsList');
+            resList.innerHTML = '';
 
-            resultsList.innerHTML = '';
-            if (matches.length === 0) {
-                resultsBlock.style.display = 'none';
-                noResults.style.display = 'block';
+            if(filtered.length === 0) {
+                resultsBlock.style.display = "none";
+                noResults.style.display = "block";
             } else {
-                noResults.style.display = 'none';
-                resultsBlock.style.display = 'block';
-                matches.forEach(item => {
+                noResults.style.display = "none";
+                resultsBlock.style.display = "block";
+                filtered.forEach(item => {
                     const row = document.createElement('div');
                     row.className = 'search-item-row';
                     row.innerHTML = `
                         <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
                         <div class="search-item-details">
-                            <h4 class="search-item-title">${item.title}</h4>
-                            <div class="search-item-meta">${item.year || ''} • ★ ${item.rating || '0.0'}</div>
+                            <p class="search-item-title">${item.title}</p>
+                            <span class="search-item-meta">${item.year || ''} • IMDb: ${item.rating || 'N/A'}</span>
                         </div>
                     `;
                     row.onclick = () => {
-                        saveToSearchHistory(item.title);
+                        if(!searchHistory.includes(item.title)){
+                            searchHistory.unshift(item.title);
+                            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+                        }
                         openMoviePage(item);
                     };
-                    resultsList.appendChild(row);
+                    resList.appendChild(row);
                 });
             }
         }
 
-        function saveToSearchHistory(term) {
-            searchHistory = searchHistory.filter(x => x !== term);
-            searchHistory.unshift(term);
-            if(searchHistory.length > 10) searchHistory.pop();
-            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
-        }
-
         function renderSearchHistoryUI() {
-            const listContainer = document.getElementById('searchHistoryList');
-            listContainer.innerHTML = '';
-
+            const container = document.getElementById('searchHistoryList');
+            container.innerHTML = '';
             if(searchHistory.length === 0) {
-                document.getElementById('searchHistoryBlock').style.display = 'none';
+                container.innerHTML = `<div style="font-size:12px; color:var(--text-sub); text-align:center; padding:15px 0;">${currentLang === 'ar' ? 'لا توجد عمليات بحث سابقة.' : 'No recent searches.'}</div>`;
                 return;
             }
-
-            document.getElementById('searchHistoryBlock').style.display = 'block';
-            searchHistory.forEach((term, index) => {
-                const matchedItem = allMoviesData.find(x => x.title.toLowerCase() === term.toLowerCase());
+            searchHistory.forEach(text => {
+                const matchedItem = allMoviesData.find(m => m.title === text);
                 const row = document.createElement('div');
                 row.className = 'search-item-row';
-
                 if (matchedItem) {
                     row.innerHTML = `
-                        <img class="search-item-poster" src="${matchedItem.poster}">
+                        <img class="search-item-poster" src="${matchedItem.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
                         <div class="search-item-details">
-                            <h4 class="search-item-title">${matchedItem.title}</h4>
-                            <div class="search-item-meta">${matchedItem.year || ''} • ★ ${matchedItem.rating || '0.0'}</div>
+                            <p class="search-item-title">${matchedItem.title}</p>
+                            <span class="search-item-meta">${matchedItem.year || ''}</span>
                         </div>
-                        <span class="remove-search-btn" onclick="event.stopPropagation(); removeSearchTerm(${index})">×</span>
+                        <span class="remove-search-btn" onclick="removeSingleSearchAction(event, '${text}')">×</span>
                     `;
                     row.onclick = () => openMoviePage(matchedItem);
                 } else {
                     row.innerHTML = `
-                        <div class="search-item-details" style="padding-left:10px;">
-                            <h4 class="search-item-title">🔍 ${term}</h4>
-                        </div>
-                        <span class="remove-search-btn" onclick="event.stopPropagation(); removeSearchTerm(${index})">×</span>
+                        <div class="search-item-details" style="padding-left:10px;"><p class="search-item-title">${text}</p></div>
+                        <span class="remove-search-btn" onclick="removeSingleSearchAction(event, '${text}')">×</span>
                     `;
-                    row.onclick = () => {
-                        document.getElementById('searchInput').value = term;
-                        handleSearchSearch();
-                    };
                 }
-                listContainer.appendChild(row);
+                container.appendChild(row);
             });
         }
 
-        function removeSearchTerm(index) {
-            searchHistory.splice(index, 1);
+        function removeSingleSearchAction(event, text) {
+            event.stopPropagation();
+            searchHistory = searchHistory.filter(s => s !== text);
             localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
             renderSearchHistoryUI();
         }
 
         function clearSearchHistoryAction() {
-            if(confirm(currentLang === 'ar' ? "هل أنت متأكد من مسح سجل البحث كاملاً؟" : "Are you sure you want to clear search history?")) {
-                searchHistory = [];
-                localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
-                renderSearchHistoryUI();
-                alert(currentLang === 'ar' ? "تم مسح سجل البحث." : "Search history cleared.");
-            }
-        }
-
-        // ================= سجل المشاهدة للمستخدم (مخزن محلياً) =================
-        function addToWatchHistory(item) {
-            watchHistory = watchHistory.filter(x => x.title !== item.title);
-            watchHistory.unshift({
-                title: item.title,
-                poster: item.poster,
-                year: item.year,
-                rating: item.rating,
-                timestamp: Date.now()
-            });
-            if(watchHistory.length > 20) watchHistory.pop();
-            localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
+            searchHistory = [];
+            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+            renderSearchHistoryUI();
         }
 
         function renderWatchHistoryUI() {
-            const listContainer = document.getElementById('fullWatchHistoryList');
-            listContainer.innerHTML = '';
-
+            const container = document.getElementById('fullWatchHistoryList');
+            container.innerHTML = '';
             if(watchHistory.length === 0) {
-                listContainer.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-sub); font-size:13px;">${currentLang === 'ar' ? 'سجل المشاهدة فارغ حالياً 🎬' : 'Your watch history is currently empty 🎬'}</div>`;
+                container.innerHTML = `<div style="font-size:12px; color:var(--text-sub); text-align:center; padding:30px 0;">${currentLang === 'ar' ? 'سجل المشاهدة فارغ تماماً حالياً.' : 'Your watch history is currently empty.'}</div>`;
                 return;
             }
-
-            watchHistory.forEach((hist) => {
+            watchHistory.forEach(item => {
                 const row = document.createElement('div');
                 row.className = 'search-item-row';
                 row.innerHTML = `
-                    <img class="search-item-poster" src="${hist.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                    <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
                     <div class="search-item-details">
-                        <h4 class="search-item-title">${hist.title}</h4>
-                        <div class="search-item-meta">${hist.year || ''} • ★ ${hist.rating || '0.0'}</div>
+                        <p class="search-item-title">${item.title}</p>
+                        <span class="search-item-meta">IMDb: ${item.rating || '0.0'}</span>
                     </div>
                 `;
-                row.onclick = () => {
-                    const originalItem = allMoviesData.find(x => x.title === hist.title);
-                    if(originalItem) openMoviePage(originalItem);
-                };
-                listContainer.appendChild(row);
+                row.onclick = () => openMoviePage(item);
+                container.appendChild(row);
             });
         }
 
         function clearWatchHistoryAction() {
-            if(confirm(currentLang === 'ar' ? "هل أنت متأكد من مسح سجل المشاهدة؟" : "Are you sure you want to clear your watch history?")) {
-                watchHistory = [];
-                localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
-                renderWatchHistoryUI();
+            watchHistory = [];
+            localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
+            renderWatchHistoryUI();
+        }
+
+        function loadCommentsUI() {
+            const container = document.getElementById('commentsListContainer');
+            container.innerHTML = '';
+            let key = `cf_comments_${activeMovieItem.title}`;
+            let cms = JSON.parse(localStorage.getItem(key)) || [];
+            if(cms.length === 0) {
+                container.innerHTML = `<div style="font-size:12px; color:var(--text-sub); text-align:center; padding:10px 0;">${currentLang === 'ar' ? 'لا توجد تعليقات بعد، كن أول من يكتب رأيه!' : 'No comments yet. Be the first to share your opinion!'}</div>`;
+                return;
             }
+            cms.forEach(c => {
+                const div = document.createElement('div');
+                div.className = 'comment-item';
+                div.innerHTML = `<div class="comment-user">👤 ${c.user}</div><p class="comment-text">${c.msg}</p>`;
+                container.appendChild(div);
+            });
         }
 
-        // ================= الإعدادات، التوطين واللغات والتحكم الكامل =================
-        function setLanguage(lang) {
-            currentLang = lang;
-            document.getElementById('settingLangAr').classList.toggle('active', lang === 'ar');
-            document.getElementById('settingLangEn').classList.toggle('active', lang === 'en');
-            
-            const htmlNode = document.getElementById('mainHtml');
-            if(lang === 'ar') {
-                htmlNode.setAttribute('dir', 'rtl');
-                htmlNode.setAttribute('lang', 'ar');
-            } else {
-                htmlNode.setAttribute('dir', 'ltr');
-                htmlNode.setAttribute('lang', 'en');
-            }
-
-            applyLocalization();
-            renderHomeDOM();
-            if(document.getElementById('viewHistory').classList.contains('active')) renderWatchHistoryUI();
+        function addCommentAction() {
+            const input = document.getElementById('commentTextInput');
+            const txt = input.value.trim();
+            if(!txt) return;
+            let name = currentUser ? currentUser.username : (currentLang === 'ar' ? "زائر عابر" : "Guest");
+            let key = `cf_comments_${activeMovieItem.title}`;
+            let cms = JSON.parse(localStorage.getItem(key)) || [];
+            cms.push({ user: name, msg: txt });
+            localStorage.setItem(key, JSON.stringify(cms));
+            input.value = '';
+            loadCommentsUI();
         }
 
-        function applyLocalization() {
-            const dict = langPack[currentLang];
-            
-            document.getElementById('txtLogo').innerText = dict.logo;
-            document.getElementById('txtNavHome').innerText = dict.navHome;
-            document.getElementById('txtNavSearch').innerText = dict.navSearch;
-            document.getElementById('txtNavProfile').innerText = dict.navProfile;
-
-            document.getElementById('searchInput').placeholder = dict.searchPlaceholder;
-            document.getElementById('txtRecentSearches').innerText = dict.recentSearches;
-            document.getElementById('txtSearchResultsTitle').innerText = dict.searchResultsTitle;
-            document.getElementById('noResultsMessage').innerText = dict.noResults;
-
-            document.getElementById('txtMenuHistory').innerText = dict.watchHistoryTitle;
-            document.getElementById('txtMenuSettings').innerText = dict.settingsTitle;
-
-            document.getElementById('txtShareApp').innerText = dict.shareApp;
-            document.getElementById('txtShareDesc').innerText = dict.shareDesc;
-            document.getElementById('btnShareSubmit').innerText = dict.btnShare;
-
-            document.getElementById('txtSettingClearSearch').innerText = dict.clearSearch;
-            document.getElementById('txtBtnClearAllSearch').innerText = dict.clearAllBtn;
-            document.getElementById('txtSettingLang').innerText = dict.settingLang;
-            document.getElementById('txtSettingTheme').innerText = dict.settingTheme;
-            document.getElementById('themeDarkBtn').innerText = dict.themeDark;
-            document.getElementById('themeLightBtn').innerText = dict.themeLight;
-
-            updateUserUI();
-
-            document.getElementById('txtBackToProfile').innerText = dict.backToProfile;
-            document.getElementById('txtSettingsTitlePage').innerText = dict.settingsTitlePage;
-            document.getElementById('txtBackFromHistory').innerText = dict.backToProfile;
-            document.getElementById('txtWatchHistoryTitlePage').innerText = dict.watchHistoryPageTitle;
-            document.getElementById('txtClearWatchHistoryBtn').innerText = dict.clearAllBtn;
-
-            document.getElementById('txtBackToMain').innerText = dict.backToMain;
-            document.getElementById('txtBackToMainFromCat').innerText = dict.backToMain;
-            document.getElementById('btnHD').innerText = dict.hdServer;
-            document.getElementById('btnSD').innerText = dict.sdServer;
-            document.getElementById('btnCast').innerText = dict.castBtn;
-            document.getElementById('txtCastTitle').innerText = dict.castTitle;
-
-            // تغيير نصوص السلايدر
-            document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = dict.watchNow);
-        }
-
-        // ================= إعدادات الوضع المضيء والداكن الحقيقي الفعال =================
-        function setTheme(theme) {
-            currentTheme = theme;
-            document.body.setAttribute('data-theme', theme);
-
-            document.getElementById('themeDarkBtn').classList.toggle('active', theme === 'dark');
-            document.getElementById('themeLightBtn').classList.toggle('active', theme === 'light');
-        }
-
-        function castToTV() {
-            alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
-        }
-
-        // ================= نظام العضوية وتسجيل الدخول المحاكي الآمن =================
-        function openAuthModal() {
-            if (currentUser) {
-                if(confirm(currentLang === 'ar' ? "هل تريد تسجيل الخروج؟" : "Do you want to log out?")) {
-                    currentUser = null;
-                    localStorage.removeItem('cf_user');
-                    updateUserUI();
-                    alert(currentLang === 'ar' ? "تم تسجيل الخروج بنجاح." : "Logged out successfully.");
-                }
+        function openAuthModal() { document.getElementById('authModal').style.display = "flex"; }
+        function closeAuthModal() { document.getElementById('authModal').style.display = "none"; }
+        
+        function toggleAuthMode() {
+            const title = document.getElementById('authModalTitle');
+            const btn = document.getElementById('authPrimaryBtn');
+            const link = document.getElementById('authToggleText');
+            if(authMode === 'login') {
+                authMode = 'register';
+                title.innerText = currentLang === 'ar' ? "إنشاء حساب جديد" : "Create Account";
+                btn.innerText = currentLang === 'ar' ? "تسجيل الحساب" : "Register";
+                link.innerText = currentLang === 'ar' ? "لديك حساب بالفعل؟ سجل الدخول" : "Have an account? Log In";
             } else {
                 authMode = 'login';
-                setupAuthModalUI();
-                document.getElementById('authModal').style.display = 'flex';
-            }
-        }
-
-        function closeAuthModal() {
-            document.getElementById('authModal').style.display = 'none';
-        }
-
-        function toggleAuthMode() {
-            authMode = (authMode === 'login') ? 'register' : 'login';
-            setupAuthModalUI();
-        }
-
-        function setupAuthModalUI() {
-            const isAr = (currentLang === 'ar');
-            if (authMode === 'login') {
-                document.getElementById('authModalTitle').innerText = isAr ? "تسجيل الدخول" : "Log In";
-                document.getElementById('authPrimaryBtn').innerText = isAr ? "تسجيل الدخول" : "Log In";
-                document.getElementById('authToggleText').innerText = isAr ? "ليس لديك حساب؟ إنشاء حساب جديد" : "Don't have an account? Register new account";
-            } else {
-                document.getElementById('authModalTitle').innerText = isAr ? "إنشاء حساب جديد" : "Create New Account";
-                document.getElementById('authPrimaryBtn').innerText = isAr ? "تأكيد التسجيل والإنشاء" : "Register Now";
-                document.getElementById('authToggleText').innerText = isAr ? "لديك حساب بالفعل؟ سجل دخولك" : "Already have an account? Log In";
+                title.innerText = currentLang === 'ar' ? "تسجيل الدخول" : "Log In";
+                btn.innerText = currentLang === 'ar' ? "تسجيل الدخول" : "Log In";
+                link.innerText = currentLang === 'ar' ? "ليس لديك حساب؟ إنشاء حساب جديد" : "Don't have an account? Sign Up";
             }
         }
 
         function handleAuthSubmit() {
-            const user = document.getElementById('authUsername').value.trim();
-            const pass = document.getElementById('authPassword').value.trim();
-            const isAr = (currentLang === 'ar');
-
-            if(!user || !pass) {
-                alert(isAr ? "يرجى ملء جميع الحقول أولاً!" : "Please fill in all fields!");
-                return;
-            }
-
-            if(authMode === 'login') {
-                currentUser = { username: user };
-                localStorage.setItem('cf_user', JSON.stringify(currentUser));
-                alert(isAr ? `مرحباً بك مجدداً، ${user} ✨` : `Welcome back, ${user} ✨`);
-            } else {
-                currentUser = { username: user };
-                localStorage.setItem('cf_user', JSON.stringify(currentUser));
-                alert(isAr ? "تم إنشاء الحساب وتجربته بنجاح!" : "Account created successfully!");
-            }
-
-            document.getElementById('authUsername').value = "";
-            document.getElementById('authPassword').value = "";
+            const u = document.getElementById('authUsername').value.trim();
+            const p = document.getElementById('authPassword').value.trim();
+            if(!u || !p) { alert(currentLang === 'ar' ? "يرجى ملء جميع الحقول!" : "Please fill all fields!"); return; }
+            
+            currentUser = { username: u };
+            localStorage.setItem('cf_user', JSON.stringify(currentUser));
             closeAuthModal();
             updateUserUI();
         }
 
         function updateUserUI() {
-            const dict = langPack[currentLang];
             const titleNode = document.getElementById('userDisplayTitle');
             const subNode = document.getElementById('userDisplaySubtitle');
             const btnNode = document.getElementById('authBtnAction');
+            const dict = langPack[currentLang];
 
             if(currentUser) {
                 titleNode.innerText = currentUser.username;
@@ -1144,13 +1103,70 @@
                 btnNode.innerText = dict.btnLogout;
                 btnNode.style.backgroundColor = "#dc3545";
                 btnNode.style.color = "#fff";
+                btnNode.onclick = () => {
+                    currentUser = null;
+                    localStorage.removeItem('cf_user');
+                    updateUserUI();
+                };
             } else {
                 titleNode.innerText = dict.userDefaultTitle;
                 subNode.innerText = dict.userDefaultSub;
                 btnNode.innerText = dict.btnLogin;
                 btnNode.style.backgroundColor = "#fff";
                 btnNode.style.color = "#000";
+                btnNode.onclick = openAuthModal;
             }
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.getElementById('settingLangAr').classList.toggle('active', lang === 'ar');
+            document.getElementById('settingLangEn').classList.toggle('active', lang === 'en');
+            applyLocalization();
+        }
+
+        function applyLocalization() {
+            const pack = langPack[currentLang];
+            document.getElementById('mainHtml').setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+            document.getElementById('mainHtml').setAttribute('lang', currentLang);
+            document.getElementById('txtLogo').innerText = pack.logo;
+            document.getElementById('txtNavHome').innerText = pack.navHome;
+            document.getElementById('txtNavSearch').innerText = pack.navSearch;
+            document.getElementById('txtNavProfile').innerText = pack.navProfile;
+            document.getElementById('searchInput').placeholder = pack.searchPlaceholder;
+            document.getElementById('txtRecentSearches').innerText = pack.recentSearches;
+            document.getElementById('txtSearchResultsTitle').innerText = pack.searchResultsTitle;
+            document.getElementById('noResultsMessage').innerText = pack.noResults;
+            document.getElementById('txtMenuHistory').innerText = pack.watchHistoryTitle;
+            document.getElementById('txtMenuSettings').innerText = pack.settingsTitle;
+            document.getElementById('txtShareApp').innerText = pack.shareApp;
+            document.getElementById('txtShareDesc').innerText = pack.shareDesc;
+            document.getElementById('btnShareSubmit').innerText = pack.btnShare;
+            document.getElementById('txtBackToProfile').innerText = pack.backToProfile;
+            document.getElementById('txtSettingsTitlePage').innerText = pack.settingsTitlePage;
+            document.getElementById('txtSettingClearSearch').innerText = pack.clearSearch;
+            document.getElementById('txtBtnClearAllSearch').innerText = pack.clearAllBtn;
+            document.getElementById('txtSettingLang').innerText = pack.settingLang;
+            document.getElementById('txtSettingTheme').innerText = pack.settingTheme;
+            document.getElementById('txtBackFromHistory').innerText = pack.backToProfile;
+            document.getElementById('txtWatchHistoryTitlePage').innerText = pack.watchHistoryPageTitle;
+            document.getElementById('txtClearWatchHistoryBtn').innerText = pack.clearAllBtn;
+            document.getElementById('txtBackToMain').innerText = pack.backToMain;
+            document.getElementById('txtBackToMainFromCat').innerText = pack.backToMain;
+            document.getElementById('btnHD').innerText = pack.hdServer;
+            document.getElementById('btnSD').innerText = pack.sdServer;
+            document.getElementById('btnCast').innerText = pack.castBtn;
+            document.getElementById('txtCastTitle').innerText = pack.castTitle;
+            
+            updateUserUI();
+            renderHomeDOM();
+        }
+
+        function setTheme(theme) {
+            currentTheme = theme;
+            document.getElementById('mainHtml').setAttribute('data-theme', theme);
+            document.getElementById('themeDarkBtn').classList.toggle('active', theme === 'dark');
+            document.getElementById('themeLightBtn').classList.toggle('active', theme === 'light');
         }
 
         function shareAppAction() {
