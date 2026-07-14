@@ -1,5 +1,113 @@
 const globalMoviesData = [
     {
+    "title": "Love 101",
+    "desc": "خلال سعيهم لإيقاع معلّمتهم في حبّ مدرّب كرة السلّة، يكتشف أربعة مشاغبين وطالبة مثاليّة معنى الصداقة والحبّ والشجاعة وهم يبحثون عن ذاتهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/2tg3X5N3vtr7UJnaKWMxJoICrz7.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.7",
+    "genre": "كوميديا دراما",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Alina Boz",
+            "image": "https://image.tmdb.org/t/p/w185/xoqBSBsIs6WtvvJ8i6Y5btyo3MM.jpg"
+        },
+        {
+            "name": "Mert Yazıcıoğlu",
+            "image": "https://image.tmdb.org/t/p/w185/9QoscT7oKcuRJRIr2SKUza3qr6x.jpg"
+        },
+        {
+            "name": "Kubilay Aka",
+            "image": "https://image.tmdb.org/t/p/w185/mSk2nqlDcdEJDbWKdSUk3B2GpWV.jpg"
+        },
+        {
+            "name": "Selahattin Paşalı",
+            "image": "https://image.tmdb.org/t/p/w185/u6jUB3BpDj6BCXafGyPHAMxWNsZ.jpg"
+        },
+        {
+            "name": "İpek Filiz Yazıcı",
+            "image": "https://image.tmdb.org/t/p/w185/Aajgi89hMwBBnHNvNbCC0SYbjKP.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/J3LMAWjOqqFjLwm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/LQo8dWxxPRFyAq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/KJ8QOwDdx8C0d3D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/WPkG2Ol8wktQJq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/0Zjjwp9WzkibXO4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/0Zjjwp9WzkibXO4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/OkjAgK30pAcZQv0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/OXGlPqZro2hZPyV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        },
+        {
+            "season_number": 2,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/aygQOm73XouxxRV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/O60d00MmaJUZ29a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/8Vq0KBwO7jHo7ZG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/OkjAgK30pAcZQv0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/1AKvpBBk9YU1dq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/Y1O0DMxZOlHvmd2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/Z3RYzZRoqlcRRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/Z3RYzZRoqlcRRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Sweetpea",
     "desc": " تعاني ريانون لويس من التجاهل المستمر فهي الفتاة التي لا يلاحظها أحد في العمل ، ولكن حياتها تنقلب رأساً على عقب عندما تفقد السيطرة وتلجأ للقتل للتخلص من كل من يستفزها أو يؤذيها، لتكتشف جانباً مظلماً ومثيراً في شخصيتها.",
     "poster": "https://image.tmdb.org/t/p/w500/feoDYCy0AUD031gLqBmA9gC4pw1.jpg",
