@@ -1,5 +1,72 @@
 const globalMoviesData = [
     {
+    "title": "Sweetpea",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/feoDYCy0AUD031gLqBmA9gC4pw1.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.4",
+    "genre": "كوميديا دراما",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Ella Purnell",
+            "image": "https://image.tmdb.org/t/p/w185/jqrYg35GHuMGwGqEVUthqTLQnay.jpg"
+        },
+        {
+            "name": "Nicôle Lecky",
+            "image": "https://image.tmdb.org/t/p/w185/1BgqAILgJMGPUYr2bugzejs97S3.jpg"
+        },
+        {
+            "name": "Jon Pointing",
+            "image": "https://image.tmdb.org/t/p/w185/44uiVF37L3jsIq90bBWVFUh8XAB.jpg"
+        },
+        {
+            "name": "Calam Lynch",
+            "image": "https://image.tmdb.org/t/p/w185/6Zkz6DF6tW96LYx0DDqxEPIc31P.jpg"
+        },
+        {
+            "name": "Jeremy Swift",
+            "image": "https://image.tmdb.org/t/p/w185/muRh4WbyEE4S2763bv777ywpKP3.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/81KWzOqwq6tozVJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/ZK49lg04Pmsqlle/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/zQeMJXoVMOfY60D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/P7XxwGe80wT060e/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/k91qbdXbGrUPyK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/mrbg4b3mdmS6BW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        },
+        {
+            "season_number": 2,
+            "episodes": []
+        }
+    ]
+},
+    {
     "title": "Moon Knight",
     "desc": "عندما يعاني ستيفن غرانت، وهو موظف في متجر هدايا معتدل السلوك، من انقطاع التيار الكهربائي وذكريات حياة أخرى، يكتشف أنه يعاني من اضطراب الهوية التفارقية ويشارك جثة مع المرتزق مارك سبيكتور. بينما يتلاقى أعداء ستيفن/مارك عليهم، يجب عليهم التنقل في هوياتهم المعقدة بينما يدفعون إلى لغز قاتل بين آلهة مصر القوية.",
     "poster": "https://image.tmdb.org/t/p/w500/mdsh6PgayTmhNJIoPgh2zEajLZm.jpg",
