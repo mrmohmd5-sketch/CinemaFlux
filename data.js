@@ -1,5 +1,142 @@
 const globalMoviesData = [
     {
+    "title": "Dark",
+    "desc": "يتسبب فقدان طفل في انطلاق أربع عائلات في رحلة بحث محمومة للحصول على إجابات، إذ أنها تكشف عن لغزٍ محيّر يمتدّ عبر ثلاثة أجيال.",
+    "poster": "https://image.tmdb.org/t/p/w500/7yQyDCqSazrYTnmxdQLAZ8YDH87.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "8.4",
+    "genre": "جريمة دراما خيال علمي وفانتازيا غموض",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Louis Hofmann",
+            "image": "https://image.tmdb.org/t/p/w185/m3Mo38afbKmy9EOsfmUagvTFM9q.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/Jpyyk2w1Zmsj4lK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/klemOj1JxVuezP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/GGdPeV3w23t1K4y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/VrZLD8y1G0HK7MQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/wGrBDW034RHJ7le/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/Jy2jK7AlBAfj8rR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/QK3Ggqy0mxh0Ywp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/PLZWVoD3pbIgKj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 9,
+                    "url": "https://streamtape.com/e/01yoaBJA4yFbjgg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 10,
+                    "url": "https://streamtape.com/e/ZxYBZDKQ1BsqxpO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                }
+            ]
+        },
+        {
+            "season_number": 2,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/RA9wG1OVWVfdrq4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/oeDJy96j6xtJ2w0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/kl21eXawLwSOdOe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/DzXVGW2ZWAsdoX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/8R6gxyvR9lC6Rg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/wlwZ6xdXdoCJbdW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/R4b7jW6wjqtd1vW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/g9aYkq3Ob3HqlL3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                }
+            ]
+        },
+        {
+            "season_number": 3,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/Pj6yQggWxzSBX9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/2o4WKyq2GGTZJxZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/kgkoYr00oPCOORK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/MyrmVb4gqoTDgo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/Ao8ZDGdZZ7HwzG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/PJxlADGJvgcDmd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/OYLdkp90maf77J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/DQb1Yqrzx6IGKm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\">"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Love 101",
     "desc": "خلال سعيهم لإيقاع معلّمتهم في حبّ مدرّب كرة السلّة، يكتشف أربعة مشاغبين وطالبة مثاليّة معنى الصداقة والحبّ والشجاعة وهم يبحثون عن ذاتهم.",
     "poster": "https://image.tmdb.org/t/p/w500/2tg3X5N3vtr7UJnaKWMxJoICrz7.jpg",
