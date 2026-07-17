@@ -87,22 +87,18 @@
     </div>
 
     <script>
+        // التعديل الآمن: استخدام تشفير SHA-256 بدلاً من Base64 المخترق
         async function checkAccess() {
             const pass = document.getElementById('passInput').value;
             
-            // تحويل النص إلى مصفوفة بايتات
-            const encoder = new TextEncoder();
-            const data = encoder.encode(pass);
-            
-            // استخدام التشفير أحادي الاتجاه SHA-256
-            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-            
-            // تحويل النتيجة إلى نص
+            // عملية تحويل الكلمة إلى بيانات مشفرة
+            const msgUint8 = new TextEncoder().encode(pass);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
             const hashArray = Array.from(new Uint8Array(hashBuffer));
             const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 
-            // الهاش الخاص بكلمة المرور mrmrmrmr4
-            // لا يمكن لأحد معرفة الكلمة الأصلية من خلال هذا الرمز
+            // الرمز المكتوب هنا هو نتيجة تشفير كلمة المرور الخاصة بك. 
+            // يستحيل على أي مبرمج رؤية هذا الرمز ومعرفة الكلمة الأصلية
             if (hashHex === "8698f2c83874a9cb32d1307d050945ee775905b4480825dd31be4b9446b8ca2e") { 
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
