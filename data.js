@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Amélie",
+    "desc": "في مقهى باريسي صغير ، تكتشف أميلي (أودري توتو) المحبوبة والخجولة بشكل مؤلم هدية لمساعدة الآخرين. سرعان ما تقضي أميلي أيامها كخاطبة ، وملاك وصي ، وخبيرة شاملة. ولكن عندما تصطدم بشخص غريب وسيم ، فهل ستجد الشجاعة لتصبح نجمة قصة حبها الخاصة؟",
+    "poster": "https://image.tmdb.org/t/p/w500/tdXtLG6L1QMwrv0MNdW6B9IwC8B.jpg",
+    "hdUrl": "https://streamtape.com/e/KA7kL9LwG8Sa3o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KA7kL9LwG8Sa3o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "كوميديا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Audrey Tautou",
+            "image": "https://image.tmdb.org/t/p/w185/d1HVrV8zXy1FJVptmOCkHWG8Jf2.jpg"
+        },
+        {
+            "name": "Mathieu Kassovitz",
+            "image": "https://image.tmdb.org/t/p/w185/3FRBEdKKlxhvPWPt0jzgmSjeHwn.jpg"
+        },
+        {
+            "name": "Rufus",
+            "image": "https://image.tmdb.org/t/p/w185/aC6rEJrBgCNjeG6vetJPBdgj5h3.jpg"
+        },
+        {
+            "name": "Serge Merlin",
+            "image": "https://image.tmdb.org/t/p/w185/90Kwb8hfORDXcEeA1lzikAubcQe.jpg"
+        },
+        {
+            "name": "Jamel Debbouze",
+            "image": "https://image.tmdb.org/t/p/w185/aiqWSWbRJ6rrjxxVE6y2Xb3KdSp.jpg"
+        }
+    ]
+},
+    {
     "title": "1917",
     "desc": "خلال الحرب العالمية الأولى، يغامر شابان في الجيش البريطاني بالتوغل خلف خطوط العدو لإيصال رسالة حاسمة يمكن أن تمنع مذبحة كتيبة بريطانية وقعت في فخ نصبه لها العدو.",
     "poster": "https://image.tmdb.org/t/p/w500/jRPa10ooxCEdIpoRfMq9pfmdsry.jpg",
