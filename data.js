@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ballerina",
+    "desc": "تسعى (إيف) المرأة الشابة للانتقام ممن قاموا بالتخلص من عائلتها، حين يتقاطع دربها مع (جون ويك) القاتل المحترف الذي اعتزل حياة الإجرام.",
+    "poster": "https://image.tmdb.org/t/p/w500/d0g7NgTjYHkfqFP0p4eGL9e0w1F.jpg",
+    "hdUrl": "https://streamtape.com/e/eGyZXVolW0TY4q8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eGyZXVolW0TY4q8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ana de Armas",
+            "image": "https://image.tmdb.org/t/p/w185/3vxvsmYLTf4jnr163SUlBIw51ee.jpg"
+        },
+        {
+            "name": "Keanu Reeves",
+            "image": "https://image.tmdb.org/t/p/w185/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        },
+        {
+            "name": "Ian McShane",
+            "image": "https://image.tmdb.org/t/p/w185/qh9RTLbnr128TZLdGuXwUH9mdBM.jpg"
+        },
+        {
+            "name": "Anjelica Huston",
+            "image": "https://image.tmdb.org/t/p/w185/6hnYeHa7Rc1w1MmQ3JsLSIb7yCX.jpg"
+        },
+        {
+            "name": "Gabriel Byrne",
+            "image": "https://image.tmdb.org/t/p/w185/9r9oDGENg92VYYFMkV4C09IUlrb.jpg"
+        }
+    ]
+},
+    {
     "title": " أن غاب القط ",
     "desc": "تؤدي سرقة لوحة شهيرة من أحد المتاحف إلى صراع غير متوقّع بين أفراد العصابة وموظفي المتحف، وفي خضم ذلك، تنشأ علاقة حب غير مألوفة.",
     "poster": "https://image.tmdb.org/t/p/w500/gjeRJALgxL1lTN0pn8r1pyoBH3Y.jpg",
