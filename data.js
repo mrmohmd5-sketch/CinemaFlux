@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Love, Imagined",
+    "desc": "يحاول يوسف، الأستاذ الجامعي الانطوائي، أن يعيش حياة هادئة ومنعزلة، لكن وصول الطالبة وردة إلى عالمه يقلب كل شيء رأسًا على عقب. بينما تحاول إصلاح علاقتها مع صديقها نوح، يجد يوسف نفسه يتورط تدريجياً في علاقتهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/q521ctl7fuG6fVitQ4DVCNYRNRk.jpg",
+    "hdUrl": "https://streamtape.com/e/XAROVQQPygFD8vz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/XAROVQQPygFD8vz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ahmed Salah ElSaadany",
+            "image": "https://image.tmdb.org/t/p/w185/bWNJ21irKIjy4aT0GB3EEAZAri8.jpg"
+        },
+        {
+            "name": "Mayan ElSayed",
+            "image": "https://image.tmdb.org/t/p/w185/9C0D8kzaaQUHzHBCFONQXbY0cOR.jpg"
+        },
+        {
+            "name": "Omar Rozik",
+            "image": "https://image.tmdb.org/t/p/w185/A1w19YJWliIdXwLzO4YLDcufLz9.jpg"
+        },
+        {
+            "name": "Farida Ragab",
+            "image": "https://image.tmdb.org/t/p/w185/rwLxGq2y4rbEjxD4TGmMMA29PMu.jpg"
+        },
+        {
+            "name": "Seif Hemida",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ]
+},
+    {
     "title": "The Babysitter",
     "desc": "تأخذ أحداث إحدى الأمسيات منعطفًا غير متوقع لطفل شقي صغير يدعى كول والذي يحاول التجسس على جليسته بي التي يحبها حبًا جمًا، ويكتشف أنها قاتلة متحالفة مع الشيطان.",
     "poster": "https://image.tmdb.org/t/p/w500/uAzKNxGnbK5SL7VF7UeQyZdQLHV.jpg",
