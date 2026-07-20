@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "3 Idiots",
+    "desc": "في تقليد 'يوم عطلة فيريس بيولر' ، تأتي هذه الكوميديا المنعشة حول مخادع متمرد بعقل ماكر وقلب من الذهب. الوغد. مهرج. حالم. عبقري ... لم تقابل طالبًا جامعيًا مثل 'رانشو'. منذ لحظة وصوله إلى أكثر الجامعات المرموقة في الهند ، تقلب مخططات رانشو الغريبة الحرم الجامعي رأسًا على عقب - جنبًا إلى جنب مع حياة اثنين من أصدقائه الجدد. معًا ، يجعلون الحياة بائسة لـ 'الفيروسات' ، عميد المدرسة المتوتر والقلوب. ولكن عندما لفت رانشو أنظار ابنة العميد المثيرة ، فإن Virus يضع نصب عينيه إخفاق 'الحمقى الثلاثة' مرة واحدة وإلى الأبد.",
+    "poster": "https://image.tmdb.org/t/p/w500/9FhGenQJbIYZ7OPeUysi49i2IjH.jpg",
+    "hdUrl": "https://streamtape.com/e/oWlveoK3xkcvJ7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oWlveoK3xkcvJ7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Aamir Khan",
+            "image": "https://image.tmdb.org/t/p/w185/6uiZSwi2kvd1jZ7X7Xz9W9VGuV4.jpg"
+        },
+        {
+            "name": "R. Madhavan",
+            "image": "https://image.tmdb.org/t/p/w185/gaDrAdXxIrbBRCd9cX8YvJDEuLb.jpg"
+        },
+        {
+            "name": "Sharman Joshi",
+            "image": "https://image.tmdb.org/t/p/w185/mQr8ynFFVq08qgQ4aSNl5B0ko8v.jpg"
+        },
+        {
+            "name": "Kareena Kapoor Khan",
+            "image": "https://image.tmdb.org/t/p/w185/kp9xnwDALUt6nuPBGuJHlvnxGnM.jpg"
+        },
+        {
+            "name": "Boman Irani",
+            "image": "https://image.tmdb.org/t/p/w185/5J7GiiNar9bg9rGYeA2L30JXE2W.jpg"
+        }
+    ]
+},
+    {
     "title": "Bad Boys",
     "desc": "ماركس، رب أسرة. مايك، اعزب مولع بالنساء. كلاهما في شرطة ميامي ولديهم 72 ساعة لاستعادة شحنة من المخدرات المسروقة من مركزهم، ولتعقيد الأمور، يجب عليهم أن يتبادلوا الشخصيات.",
     "poster": "https://image.tmdb.org/t/p/w500/x1ygBecKHfXX4M2kRhmFKWfWbJc.jpg",
