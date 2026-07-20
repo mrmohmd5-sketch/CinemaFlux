@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "1917",
+    "desc": "خلال الحرب العالمية الأولى، يغامر شابان في الجيش البريطاني بالتوغل خلف خطوط العدو لإيصال رسالة حاسمة يمكن أن تمنع مذبحة كتيبة بريطانية وقعت في فخ نصبه لها العدو.",
+    "poster": "https://image.tmdb.org/t/p/w500/jRPa10ooxCEdIpoRfMq9pfmdsry.jpg",
+    "hdUrl": "https://streamtape.com/e/galLMMg6y3hqdgq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/galLMMg6y3hqdgq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "حرب تاريخ دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "George MacKay",
+            "image": "https://image.tmdb.org/t/p/w185/wnDAg1CyCbBCklQAZ9I1dj5X6QY.jpg"
+        },
+        {
+            "name": "Dean-Charles Chapman",
+            "image": "https://image.tmdb.org/t/p/w185/xIVxI2ECxxN5J2XNkHPjRax0IHc.jpg"
+        },
+        {
+            "name": "Mark Strong",
+            "image": "https://image.tmdb.org/t/p/w185/3cNmatYsoifytg7TfQhI1EHow3v.jpg"
+        },
+        {
+            "name": "Andrew Scott",
+            "image": "https://image.tmdb.org/t/p/w185/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg"
+        },
+        {
+            "name": "Richard Madden",
+            "image": "https://image.tmdb.org/t/p/w185/9QQFfVZ6PLe3WVmOL56wGNOnbGL.jpg"
+        }
+    ]
+},
+    {
     "title": "3 Idiots",
     "desc": "في تقليد 'يوم عطلة فيريس بيولر' ، تأتي هذه الكوميديا المنعشة حول مخادع متمرد بعقل ماكر وقلب من الذهب. الوغد. مهرج. حالم. عبقري ... لم تقابل طالبًا جامعيًا مثل 'رانشو'. منذ لحظة وصوله إلى أكثر الجامعات المرموقة في الهند ، تقلب مخططات رانشو الغريبة الحرم الجامعي رأسًا على عقب - جنبًا إلى جنب مع حياة اثنين من أصدقائه الجدد. معًا ، يجعلون الحياة بائسة لـ 'الفيروسات' ، عميد المدرسة المتوتر والقلوب. ولكن عندما لفت رانشو أنظار ابنة العميد المثيرة ، فإن Virus يضع نصب عينيه إخفاق 'الحمقى الثلاثة' مرة واحدة وإلى الأبد.",
     "poster": "https://image.tmdb.org/t/p/w500/9FhGenQJbIYZ7OPeUysi49i2IjH.jpg",
