@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "If the Cat is Absent",
+    "desc": "تؤدي سرقة لوحة شهيرة من أحد المتاحف إلى صراع غير متوقّع بين أفراد العصابة وموظفي المتحف، وفي خضم ذلك، تنشأ علاقة حب غير مألوفة.",
+    "poster": "https://image.tmdb.org/t/p/w500/gjeRJALgxL1lTN0pn8r1pyoBH3Y.jpg",
+    "hdUrl": "https://streamtape.com/e/LMdAJ7YpJkFRjWM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LMdAJ7YpJkFRjWM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "4.8",
+    "genre": "حركة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Asser Yassin",
+            "image": "https://image.tmdb.org/t/p/w185/olUkZr3b6wcKCiU7Kmdoxd9CZiw.jpg"
+        },
+        {
+            "name": "Asmaa Galal",
+            "image": "https://image.tmdb.org/t/p/w185/7693taWWq3QkNjImgoZtt0idO1h.jpg"
+        },
+        {
+            "name": "Aly Sobhy",
+            "image": "https://image.tmdb.org/t/p/w185/rdfCcZOwbfA1tgOilGfzfelBtHv.jpg"
+        },
+        {
+            "name": "Mohamed Shaheen",
+            "image": "https://image.tmdb.org/t/p/w185/yvtb7nS52zr26MJIg6IVDkxzNKF.jpg"
+        },
+        {
+            "name": "Samah Anwar",
+            "image": "https://image.tmdb.org/t/p/w185/l8qoHeDrHdqYZz1wUDCfurbHMzF.jpg"
+        }
+    ]
+},
+    {
     "title": " ولنا في الخيال حب ",
     "desc": "يحاول يوسف، الأستاذ الجامعي الانطوائي، أن يعيش حياة هادئة ومنعزلة، لكن وصول الطالبة وردة إلى عالمه يقلب كل شيء رأسًا على عقب. بينما تحاول إصلاح علاقتها مع صديقها نوح، يجد يوسف نفسه يتورط تدريجياً في علاقتهما.",
     "poster": "https://image.tmdb.org/t/p/w500/q521ctl7fuG6fVitQ4DVCNYRNRk.jpg",
