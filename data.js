@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Love, Imagined",
+    "title": "ولنا في الخيال حب.. ",
     "desc": "يحاول يوسف، الأستاذ الجامعي الانطوائي، أن يعيش حياة هادئة ومنعزلة، لكن وصول الطالبة وردة إلى عالمه يقلب كل شيء رأسًا على عقب. بينما تحاول إصلاح علاقتها مع صديقها نوح، يجد يوسف نفسه يتورط تدريجياً في علاقتهما.",
     "poster": "https://image.tmdb.org/t/p/w500/q521ctl7fuG6fVitQ4DVCNYRNRk.jpg",
     "hdUrl": "https://streamtape.com/e/XAROVQQPygFD8vz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
