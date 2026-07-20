@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "American Beauty",
+    "desc": "يقرر ليستر بورنهام ، وهو أب مكتئب في إحدى الضواحي يعاني من أزمة منتصف العمر ، تغيير مسار حياته المحمومة بعد أن نشأ افتتانًا بصديق ابنته الجذاب.",
+    "poster": "https://image.tmdb.org/t/p/w500/ljCs1rsg52u5PDb1YfGrMtVBXNN.jpg",
+    "hdUrl": "https://streamtape.com/e/4qppGG4Mz0srDj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4qppGG4Mz0srDj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kevin Spacey",
+            "image": "https://image.tmdb.org/t/p/w185/nPrUZDEbGQe6jwpVbHKJCXsMd7r.jpg"
+        },
+        {
+            "name": "Annette Bening",
+            "image": "https://image.tmdb.org/t/p/w185/kGslMAWcpv8MKzODhDRDkFE0uX7.jpg"
+        },
+        {
+            "name": "Thora Birch",
+            "image": "https://image.tmdb.org/t/p/w185/xJ6Bb3C8f0ior5LlWdNzxlb8cgV.jpg"
+        },
+        {
+            "name": "Wes Bentley",
+            "image": "https://image.tmdb.org/t/p/w185/voD93lzFZrr9xfAggwFcPRBi84i.jpg"
+        },
+        {
+            "name": "Mena Suvari",
+            "image": "https://image.tmdb.org/t/p/w185/xjqKvy0bos02oSKNYzC4mxLbQ0W.jpg"
+        }
+    ]
+},
+    {
     "title": "Amélie",
     "desc": "في مقهى باريسي صغير ، تكتشف أميلي (أودري توتو) المحبوبة والخجولة بشكل مؤلم هدية لمساعدة الآخرين. سرعان ما تقضي أميلي أيامها كخاطبة ، وملاك وصي ، وخبيرة شاملة. ولكن عندما تصطدم بشخص غريب وسيم ، فهل ستجد الشجاعة لتصبح نجمة قصة حبها الخاصة؟",
     "poster": "https://image.tmdb.org/t/p/w500/tdXtLG6L1QMwrv0MNdW6B9IwC8B.jpg",
