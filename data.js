@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Bad Boys",
+    "desc": "ماركس، رب أسرة. مايك، اعزب مولع بالنساء. كلاهما في شرطة ميامي ولديهم 72 ساعة لاستعادة شحنة من المخدرات المسروقة من مركزهم، ولتعقيد الأمور، يجب عليهم أن يتبادلوا الشخصيات.",
+    "poster": "https://image.tmdb.org/t/p/w500/x1ygBecKHfXX4M2kRhmFKWfWbJc.jpg",
+    "hdUrl": "https://streamtape.com/e/oAe3yvp3DVsJ029/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oAe3yvp3DVsJ029/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "حركة كوميديا جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Will Smith",
+            "image": "https://image.tmdb.org/t/p/w185/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg"
+        },
+        {
+            "name": "Martin Lawrence",
+            "image": "https://image.tmdb.org/t/p/w185/y3SQzIPUPJpdueb1DkbTYph68nk.jpg"
+        },
+        {
+            "name": "Téa Leoni",
+            "image": "https://image.tmdb.org/t/p/w185/vWijsKTlNs9bgKdUVgsr2w4msGo.jpg"
+        },
+        {
+            "name": "Tchéky Karyo",
+            "image": "https://image.tmdb.org/t/p/w185/EcpFzLMmfz6fm4FrpamfFQ51pz.jpg"
+        },
+        {
+            "name": "Joe Pantoliano",
+            "image": "https://image.tmdb.org/t/p/w185/3OHUI3nX4SYGGItDk3xqeIvWtIf.jpg"
+        }
+    ]
+},
+    {
     "title": "Ballerina",
     "desc": "تسعى (إيف) المرأة الشابة للانتقام ممن قاموا بالتخلص من عائلتها، حين يتقاطع دربها مع (جون ويك) القاتل المحترف الذي اعتزل حياة الإجرام.",
     "poster": "https://image.tmdb.org/t/p/w500/d0g7NgTjYHkfqFP0p4eGL9e0w1F.jpg",
