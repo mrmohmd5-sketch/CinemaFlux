@@ -33,7 +33,7 @@ const globalMoviesData = [
 },
     {
     "title": "Death Note Relight 1: Visions of a God",
-    "desc": "ماذا لو امتلكت القوة المطلقة لإعدام أي مجرم في العالم بمجرد كتابة اسمه 
+    "desc": "
 في إعادة صياغة سينمائية لأحداث النصف الأول من ألاسطورة يروي إله الموت ريوك حكاية المعركة الذهنية الأعظم في تاريخ الأنمي. تبدأ القصة عندما يعثر الطالب العبقري لايت ياغامي على دفتر غامض يتسبب بموت أي شخص يُكتب اسمه فيه، ليقرر إعادة تشكيل العالم ومحو الشر بيده تحت اسم كيرا  لكن أحلامه تصطدم بظهور L  المحقق المجهول الذي يتحدى هذا الكيان الغامض في لعبة شطرنج نفسية وحابسة للأنفاس  حيث خطأ واحد يعني الموت المحتم",
     "poster": "https://image.tmdb.org/t/p/w500/mtcYWsCg3h7xVlp32QgbFOcL4gY.jpg",
     "hdUrl": "https://streamtape.com/e/KqZL3v7ZprH0q6v/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
