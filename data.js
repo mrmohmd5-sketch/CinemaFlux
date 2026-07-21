@@ -1,7 +1,7 @@
 const globalMoviesData = [
     {
     "title": "Death Note Relight 2: L's Successors",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "حلقة خاصة تستكمل أحداث الجزء الثاني من السلسلة وتغطي الصراع النهائي تبدأ الأحداث بعد غياب إل واستلام لايت زمام الأمور في دور المحقق تظهر شخصيات جديدة تتمثل في خلفاء إل وهم نير وميلو والذين يبدأون بجمع الأدلة لكشف حقيقة كيرا يركز الفيلم على المحاولات المستمرة لإسقاط لايت والتغيرات الكبيرة في سير الأحداث حتى المواجهة الحاسمة والأخيرة يقدم هذا الإصدار ملخصا مكثفا للنصف الثاني من القصة مع تسليط الضوء على المطاردين الجدد ونهاية قصة كيرا.",
     "poster": "https://image.tmdb.org/t/p/w500/e7gHO1hJHhiPV7nRG6oRUHWFe2q.jpg",
     "hdUrl": "https://streamtape.com/e/4GoX7YPdzpFKvdA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/4GoX7YPdzpFKvdA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
