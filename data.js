@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "El Sett",
+    "title": "الست",
     "desc": "من قرية صغيرة، خرج صوت أكبر من كل المسارح. جعلت أم كلثوم من القاهرة صدى لنجاحها العابر للحدود. يروي هذا الفيلم رحلة سبعة عقود توجت الست بلقبي 'كوكب الشرق' و'صوت الأمة العربية'.",
     "poster": "https://image.tmdb.org/t/p/w500/rRBB5LOq7RBeIocv7HMh1kPCSBL.jpg",
     "hdUrl": "https://streamtape.com/e/3pmvRgokr4CdJVj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
