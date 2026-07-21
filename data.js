@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Death Note Relight 2: L's Successors",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/e7gHO1hJHhiPV7nRG6oRUHWFe2q.jpg",
+    "hdUrl": "https://streamtape.com/e/4GoX7YPdzpFKvdA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4GoX7YPdzpFKvdA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "فيلم تلفازي إثارة رسوم متحركة جريمة دراما فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mamoru Miyano",
+            "image": "https://image.tmdb.org/t/p/w185/nuok8ueG7k9hPZ09Tpr8e7Qn0ah.jpg"
+        },
+        {
+            "name": "Shido Nakamura",
+            "image": "https://image.tmdb.org/t/p/w185/dMyf8ZoHD5xkld66h8bEw9QgQZI.jpg"
+        },
+        {
+            "name": "Aya Hirano",
+            "image": "https://image.tmdb.org/t/p/w185/zaSJKfuKhw7e4VTnTKnlHBRzjQU.jpg"
+        },
+        {
+            "name": "Noriko Hidaka",
+            "image": "https://image.tmdb.org/t/p/w185/43OuwsjqGf7JxpFpUvB75OdDDXQ.jpg"
+        },
+        {
+            "name": "Nozomu Sasaki",
+            "image": "https://image.tmdb.org/t/p/w185/7usoPlvc9Xa1rDA2vxmVi0OvLDb.jpg"
+        }
+    ]
+},
+    {
     "title": "Death Note Relight 1: Visions of a God",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/mtcYWsCg3h7xVlp32QgbFOcL4gY.jpg",
