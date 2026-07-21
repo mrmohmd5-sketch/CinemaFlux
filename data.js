@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "El Sett",
+    "desc": "من قرية صغيرة، خرج صوت أكبر من كل المسارح. جعلت أم كلثوم من القاهرة صدى لنجاحها العابر للحدود. يروي هذا الفيلم رحلة سبعة عقود توجت الست بلقبي 'كوكب الشرق' و'صوت الأمة العربية'.",
+    "poster": "https://image.tmdb.org/t/p/w500/rRBB5LOq7RBeIocv7HMh1kPCSBL.jpg",
+    "hdUrl": "https://streamtape.com/e/3pmvRgokr4CdJVj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3pmvRgokr4CdJVj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.7",
+    "genre": "دراما تاريخ موسيقى",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mona Zaki",
+            "image": "https://image.tmdb.org/t/p/w185/qXImbMkrqYpWg2jEerb1RDPr3hN.jpg"
+        },
+        {
+            "name": "Mohamed Farag",
+            "image": "https://image.tmdb.org/t/p/w185/hjMAlmyVRbZe9mRrhjO0l5EpsAn.jpg"
+        },
+        {
+            "name": "Tamer Nabil",
+            "image": "https://image.tmdb.org/t/p/w185/niIfD5bZkmi6VvdYoU4olKtVpzo.jpg"
+        },
+        {
+            "name": "Sayed Ragab",
+            "image": "https://image.tmdb.org/t/p/w185/r6zPbQX4Rj4Y1ynk5Ym4kfdYBpq.jpg"
+        },
+        {
+            "name": "Ahmed Khalid Saleh",
+            "image": "https://image.tmdb.org/t/p/w185/oh1ng5yRPv56h6tXza661BMR1G3.jpg"
+        }
+    ]
+},
+    {
     "title": "Death Note Relight 2: L's Successors",
     "desc": "حلقة خاصة تستكمل أحداث الجزء الثاني من السلسلة وتغطي الصراع النهائي تبدأ الأحداث بعد غياب إل واستلام لايت زمام الأمور في دور المحقق تظهر شخصيات جديدة تتمثل في خلفاء إل وهم نير وميلو والذين يبدأون بجمع الأدلة لكشف حقيقة كيرا يركز الفيلم على المحاولات المستمرة لإسقاط لايت والتغيرات الكبيرة في سير الأحداث حتى المواجهة الحاسمة والأخيرة يقدم هذا الإصدار ملخصا مكثفا للنصف الثاني من القصة مع تسليط الضوء على المطاردين الجدد ونهاية قصة كيرا.",
     "poster": "https://image.tmdb.org/t/p/w500/e7gHO1hJHhiPV7nRG6oRUHWFe2q.jpg",
