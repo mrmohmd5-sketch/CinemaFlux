@@ -1,5 +1,192 @@
 const globalMoviesData = [
     {
+    "title": "Death Note",
+    "desc": "لايت ياغامي هو طالب في المرحلة الثانوية عثر على مذكرة تحمل اسم 'مذكرة الموت' بعدما قام الشينيغامي (حاصد الأرواح) المعروف باسم 'ريوك' بإسقاطها علي كوكب الأرض. تمنح لمن يستخدمها القدرة على قتل أي شخص سبق وأن رآه عن طريق كتابة اسمه في المذكرة. وتسرد ألأحداث محاولة 'لايت' إقامة عالم خالٍ من الشر باستخدام المذكرة، ومن هنا يدور الصراع بين 'لايت' وبين المحقق 'إل' الذي يحاول القبض عليه.",
+    "poster": "https://image.tmdb.org/t/p/w500/6tk3niGT9rf48KePCv4fPKM0K62.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "8.6",
+    "genre": "رسوم متحركة غموض خيال علمي وفانتازيا",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Mamoru Miyano",
+            "image": "https://image.tmdb.org/t/p/w185/nuok8ueG7k9hPZ09Tpr8e7Qn0ah.jpg"
+        },
+        {
+            "name": "Shido Nakamura",
+            "image": "https://image.tmdb.org/t/p/w185/dMyf8ZoHD5xkld66h8bEw9QgQZI.jpg"
+        },
+        {
+            "name": "Aya Hirano",
+            "image": "https://image.tmdb.org/t/p/w185/zaSJKfuKhw7e4VTnTKnlHBRzjQU.jpg"
+        },
+        {
+            "name": "Kappei Yamaguchi",
+            "image": "https://image.tmdb.org/t/p/w185/mJyxKRZxLv9D7LH5KcNSkjSKYOB.jpg"
+        },
+        {
+            "name": "Kimiko Saito",
+            "image": "https://image.tmdb.org/t/p/w185/rPP0jCjtLuEEroY3e2aRT8zonYK.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/3GdVKrgBz8Hde89/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/g9d7ae0V8AIqpWJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/KLb9o0Wvdyt03AD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/v2ZP067e92S466B/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/KAjl9KzM8Gt0OLL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/vLZDrJr2KzI44gX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/Mxa6aXZQ9YTmqXk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/qDwDrO1xOLtz09k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 9,
+                    "url": "https://streamtape.com/e/MxMD0MwOjzUmVXe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 10,
+                    "url": "https://streamtape.com/e/y2eJ9OBOwkU1Q4r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 11,
+                    "url": "https://streamtape.com/e/ZajqDwDjkJFqp9k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 12,
+                    "url": "https://streamtape.com/e/6al1QYZZPbf99mz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 13,
+                    "url": "https://streamtape.com/e/GeLDOL3LAGF1vRK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 14,
+                    "url": "https://streamtape.com/e/LD0k70OGYdfRleO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 15,
+                    "url": "https://streamtape.com/e/vKoBpZPzRRiLoj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 16,
+                    "url": "https://streamtape.com/e/2amGYDx9WlfZ93W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 17,
+                    "url": "https://streamtape.com/e/r0BMbk2o2xSbq8B/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 18,
+                    "url": "https://streamtape.com/e/laem1rao6ah71eP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 19,
+                    "url": "https://streamtape.com/e/QWvMWJRVaRu0MwM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 20,
+                    "url": "https://streamtape.com/e/RwzdZpvwYDIdPKr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 21,
+                    "url": "https://streamtape.com/e/XoA0j7lwa8UDbaL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 22,
+                    "url": "https://streamtape.com/e/pMp8A7X6jvsGz4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 23,
+                    "url": "https://streamtape.com/e/zb3ppY8rjkUYOJg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 24,
+                    "url": "https://streamtape.com/e/16p2YXe8vlHevgK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 25,
+                    "url": "https://streamtape.com/e/0pkW7k02PlfALa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 26,
+                    "url": "https://streamtape.com/e/Zzv6LQBRxatPeG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 27,
+                    "url": "https://streamtape.com/e/BLWl9xO9qPIm37/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 28,
+                    "url": "https://streamtape.com/e/YBqGD44rbqSvl8b/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 29,
+                    "url": "https://streamtape.com/e/J0zZvGoGjQUoQM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 30,
+                    "url": "https://streamtape.com/e/zVeW694VpJHkew/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 31,
+                    "url": "https://streamtape.com/e/jkkrQaz0ooSzR48/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 32,
+                    "url": "https://streamtape.com/e/0poWXPXd3libo3d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 33,
+                    "url": "https://streamtape.com/e/xyLDbvp4apHk6v4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 34,
+                    "url": "https://streamtape.com/e/V76MavvkyPI9M0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 35,
+                    "url": "https://streamtape.com/e/KgzZG9wAaVs0m1K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 36,
+                    "url": "https://streamtape.com/e/bPL8BzQlRoiPe7q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 37,
+                    "url": "https://streamtape.com/e/9PGYaXOK74uaxoD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Backrooms",
     "desc": "يظهر مدخل غريب في الطابق السفلي من صالة عرض الأثاث",
     "poster": "https://image.tmdb.org/t/p/w500/9FZaaQstyvpmmK1sHOwU39ijtCO.jpg",
