@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Backrooms",
+    "desc": "يظهر مدخل غريب في الطابق السفلي من صالة عرض الأثاث",
+    "poster": "https://image.tmdb.org/t/p/w500/9FZaaQstyvpmmK1sHOwU39ijtCO.jpg",
+    "hdUrl": "https://streamtape.com/e/zbqj4M8VYJCYYOm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zbqj4M8VYJCYYOm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رعب غموض خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chiwetel Ejiofor",
+            "image": "https://image.tmdb.org/t/p/w185/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg"
+        },
+        {
+            "name": "Renate Reinsve",
+            "image": "https://image.tmdb.org/t/p/w185/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+        },
+        {
+            "name": "Finn Bennett",
+            "image": "https://image.tmdb.org/t/p/w185/p4ya77nmLlhS2cyPKUZi9zVD4Mu.jpg"
+        },
+        {
+            "name": "Lukita Maxwell",
+            "image": "https://image.tmdb.org/t/p/w185/g5g6XxUAtSdPfsJrSoFkl7vH51d.jpg"
+        },
+        {
+            "name": "Mark Duplass",
+            "image": "https://image.tmdb.org/t/p/w185/lRDf99rAfcdqt8Cqk4LsIT7XSD2.jpg"
+        }
+    ]
+},
+    {
     "title": "American Beauty",
     "desc": "يقرر ليستر بورنهام ، وهو أب مكتئب في إحدى الضواحي يعاني من أزمة منتصف العمر ، تغيير مسار حياته المحمومة بعد أن نشأ افتتانًا بصديق ابنته الجذاب.",
     "poster": "https://image.tmdb.org/t/p/w500/ljCs1rsg52u5PDb1YfGrMtVBXNN.jpg",
