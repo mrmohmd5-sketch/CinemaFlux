@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Death Note Relight 1: Visions of a God",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/mtcYWsCg3h7xVlp32QgbFOcL4gY.jpg",
+    "hdUrl": "https://streamtape.com/e/KqZL3v7ZprH0q6v/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KqZL3v7ZprH0q6v/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "فيلم تلفازي جريمة دراما فانتازيا إثارة رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mamoru Miyano",
+            "image": "https://image.tmdb.org/t/p/w185/nuok8ueG7k9hPZ09Tpr8e7Qn0ah.jpg"
+        },
+        {
+            "name": "Shido Nakamura",
+            "image": "https://image.tmdb.org/t/p/w185/dMyf8ZoHD5xkld66h8bEw9QgQZI.jpg"
+        },
+        {
+            "name": "Kappei Yamaguchi",
+            "image": "https://image.tmdb.org/t/p/w185/mJyxKRZxLv9D7LH5KcNSkjSKYOB.jpg"
+        },
+        {
+            "name": "Aya Hirano",
+            "image": "https://image.tmdb.org/t/p/w185/zaSJKfuKhw7e4VTnTKnlHBRzjQU.jpg"
+        },
+        {
+            "name": "Naoya Uchida",
+            "image": "https://image.tmdb.org/t/p/w185/i1Vl4QbiEsyATmX2HSH2rIEyzeS.jpg"
+        }
+    ]
+},
+    {
     "title": "Death Note",
     "desc": "لايت ياغامي هو طالب في المرحلة الثانوية عثر على مذكرة تحمل اسم 'مذكرة الموت' بعدما قام الشينيغامي (حاصد الأرواح) المعروف باسم 'ريوك' بإسقاطها علي كوكب الأرض. تمنح لمن يستخدمها القدرة على قتل أي شخص سبق وأن رآه عن طريق كتابة اسمه في المذكرة. وتسرد ألأحداث محاولة 'لايت' إقامة عالم خالٍ من الشر باستخدام المذكرة، ومن هنا يدور الصراع بين 'لايت' وبين المحقق 'إل' الذي يحاول القبض عليه.",
     "poster": "https://image.tmdb.org/t/p/w500/6tk3niGT9rf48KePCv4fPKM0K62.jpg",
