@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "City of God",
+    "desc": "Cidade de Deus هي مدينة أكواخ بدأت خلال الستينيات وأصبحت واحدة من أخطر الأماكن في ريو دي جانيرو في بداية الثمانينيات. لرواية قصة هذا المكان ، يصف الفيلم حياة الشخصيات المختلفة ، وكلها ترى من وجهة نظر الراوي ، بوسكابي. نشأ Buscapé في بيئة شديدة العنف. على الرغم من شعوره بأن كل الصعاب كانت ضده ، اكتشف أن الحياة يمكن رؤيتها بعيون أخرى ...",
+    "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg",
+    "hdUrl": "https://streamtape.com/e/qJ0ADMy9RBuzxRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/qJ0ADMy9RBuzxRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Alexandre Rodrigues",
+            "image": "https://image.tmdb.org/t/p/w185/iExs5h6LeFmdR3kDtSS5xYU1Qgx.jpg"
+        },
+        {
+            "name": "Leandro Firmino",
+            "image": "https://image.tmdb.org/t/p/w185/aEzWJgEzId04EP8C2UFQaF28WTW.jpg"
+        },
+        {
+            "name": "Phellipe Haagensen",
+            "image": "https://image.tmdb.org/t/p/w185/3dxy4unadLTAb6aUQUyX2r3AkE.jpg"
+        },
+        {
+            "name": "Douglas Silva",
+            "image": "https://image.tmdb.org/t/p/w185/7C2ZoLBU0W2gwnGbNRbi1cyIU2h.jpg"
+        },
+        {
+            "name": "Jonathan Haagensen",
+            "image": "https://image.tmdb.org/t/p/w185/cha3GxI1MfbCjc973iUNKUvopQF.jpg"
+        }
+    ]
+},
+    {
     "title": "الست",
     "desc": "من قرية صغيرة، خرج صوت أكبر من كل المسارح. جعلت أم كلثوم من القاهرة صدى لنجاحها العابر للحدود. يروي هذا الفيلم رحلة سبعة عقود توجت الست بلقبي 'كوكب الشرق' و'صوت الأمة العربية'.",
     "poster": "https://image.tmdb.org/t/p/w500/rRBB5LOq7RBeIocv7HMh1kPCSBL.jpg",
