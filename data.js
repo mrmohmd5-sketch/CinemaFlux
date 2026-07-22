@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "John Wick: Chapter 2",
+    "desc": "أُجبر جون ويك على ترك التقاعد على يد زميل سابق يسعى للسيطرة على نقابة قتلة دولية غامضة. ملتزمًا بقسم الدم لمساعدته ، يسافر ويك إلى روما ويخوض معركة ضد بعض أخطر القتلة في العالم.",
+    "poster": "https://image.tmdb.org/t/p/w500/eRsjW25YfROtayinWVI8HVIHyoX.jpg",
+    "hdUrl": "https://streamtape.com/e/ezk0GOZmK6cYYdp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ezk0GOZmK6cYYdp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Keanu Reeves",
+            "image": "https://image.tmdb.org/t/p/w185/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        },
+        {
+            "name": "Common",
+            "image": "https://image.tmdb.org/t/p/w185/eggJAnJxpn8wYraX7ea5svETB54.jpg"
+        },
+        {
+            "name": "Laurence Fishburne",
+            "image": "https://image.tmdb.org/t/p/w185/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+        },
+        {
+            "name": "Riccardo Scamarcio",
+            "image": "https://image.tmdb.org/t/p/w185/s3ZAW6QA6yZaOx9wmAZfGZ1Z8BP.jpg"
+        },
+        {
+            "name": "Ruby Rose",
+            "image": "https://image.tmdb.org/t/p/w185/djhT0A2hZxpYKPnCeRtim8qUdPi.jpg"
+        }
+    ]
+},
+    {
     "title": "John Wick",
     "desc": "تدور أحداث الفيلم حول القاتل المحترف السابق جون ويك (كيانو ريفز) ، والذي يحدث له شيء يعكر عليه حياته المسالمة الحالية ، حيث يقوم أحد اللصوص باقتحام بيته ، وسرقة سيارته ، وقتل كلبه ، الكلب الذي أعطته له زوجته السابقة ، فيذهب (جون) إلى (نيويورك) سعيا إلى الانتقام من هذا اللص ، ولكن يكتشف أن والد هذا اللص هو زعيم عصابة روسي ، والذي يضع مكافأة لمن يقتل (جون) ، وإذا بـ(ماركوس) الشريك السابق ، وصديق (جون) يحاول الحصول على هذه المكافأة .",
     "poster": "https://image.tmdb.org/t/p/w500/AhFvO9Yl5W767qwao3rKpuB2LbC.jpg",
