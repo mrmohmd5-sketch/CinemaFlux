@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Come and See",
+    "desc": "غزو ​​القوات الألمانية لقرية في بيلاروسيا يدفع فلوريا الشاب إلى الغابة للانضمام إلى مقاتلي المقاومة المنهكين، رغماً عن عائلته. هناك يلتقي بفتاة تُدعى غلاشا، ترافقه إلى قريته. عند عودته، يجد فلوريا عائلته وزملاءه الفلاحين يُقتلون. يصبح بقاءه على قيد الحياة وسط حطام الحرب الوحشي كابوساً متزايداً، صراعاً بين اليأس والأمل.",
+    "poster": "https://image.tmdb.org/t/p/w500/iezAR5UqjpIPu5J95xvrF8ig3Yl.jpg",
+    "hdUrl": "https://streamtape.com/e/k9WoP6dPLVueaO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/k9WoP6dPLVueaO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "دراما حرب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Aleksei Kravchenko",
+            "image": "https://image.tmdb.org/t/p/w185/o7UD6o30iJ29dTHPCbtOScv9s5E.jpg"
+        },
+        {
+            "name": "Olga Mironova",
+            "image": "https://image.tmdb.org/t/p/w185/fdckmeak5L63LnuD9pqC3jGJDL1.jpg"
+        },
+        {
+            "name": "Liubomiras Laucevičius",
+            "image": "https://image.tmdb.org/t/p/w185/r6Gdi2P7D6cPHcgTvvO4NSzvb9I.jpg"
+        },
+        {
+            "name": "Vladas Bagdonas",
+            "image": "https://image.tmdb.org/t/p/w185/58chkP7aSp51iKDjEtP295ZWl6k.jpg"
+        },
+        {
+            "name": "Jüri Lumiste",
+            "image": "https://image.tmdb.org/t/p/w185/wU5CyMxiwzEU5mCSSUsTZeIHp8A.jpg"
+        }
+    ]
+},
+    {
     "title": "Fight Club",
     "desc": "إدوارد يتعرض لضغوط حتى يصل به الحال إلى أنه لا يستطيع النوم لفتراتٍ طويلة، لكنه يجد بعض السلام في جلسات العلاج النفسي الجماعي، يتعرف إدوارد على أحد الأشخاص وهو (تايلر ديردن) الذي يحرره من تعلقه بالأشياء الذي تستعبده ،ثم يحرره من خوفه من الناس. يقومان معًا بإنشاء نادي القتال الذي يجذب الكثير من الأفراد المحبطين ،الذين يقومون بإخراج طاقة غضبهم وكرههم للعالم في القتال.",
     "poster": "https://image.tmdb.org/t/p/w500/2xmknsEcjSaznfKsRY6VloqKRUo.jpg",
