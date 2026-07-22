@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Toy Story 4",
+    "title": "Toy Story 4مدبلج",
     "desc": "لطالما كان وودي واثقا من مكانته في العالم وأن أولويته هي رعاية طفله ، سواء كان ذلك آندي أو بوني. ولكن عندما تضيف بوني لعبة جديدة مترددة تسمى 'فوركي' إلى غرفتها ، فإن مغامرة رحلة على الطريق جنبا إلى جنب مع الأصدقاء القدامى والجدد ستظهر لوودي مدى ضخامة العالم بالنسبة للعبة.",
     "poster": "https://image.tmdb.org/t/p/w500/ds8GyaDSW6RTlZIXlrh20Ja9VFY.jpg",
     "hdUrl": "https://streamtape.com/e/LkoZjWo4QySRm1W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -32,7 +32,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Toy Story 3",
+    "title": "Toy Story 3مدبلج",
     "desc": "لم يلعب وودي وبظ وبقية ألعاب آندي منذ سنوات. مع اقتراب آندي من الذهاب إلى الكلية، تجد المجموعة نفسها تُركت عن طريق الخطأ في مركز رعاية نهارية سيئ. يجب أن تتجمع الألعاب معًا للهروب والعودة إلى منزل آندي.",
     "poster": "https://image.tmdb.org/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
     "hdUrl": "https://streamtape.com/e/3dygwV6mRpsdk8a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -64,7 +64,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Toy Story 2",
+    "title": "Toy Story 2مدبلج",
     "desc": "تحكي القصة عن المأمور وودي الذي يتعرض للإصابة كلعبة في بداية الفيلم فيتم ركنه على الرفّ ويجد صديقة القديم المريض بسبب الركنة ولما يحاول إنقاذه من البيع كروبابيكيا يقوم أحد المتجولين في معرض الروبابيكيا بسرقة المأمور وودي لأغراض ربحية وتدور القصة بعد ذلك حول محاولة أصدقاء المأمور وودي بقيادة باز يطير لاسترجاع صديقهم وإنقاذه إلى أنهم يجدوا الكثير من المفاجآت ولكنهم يعدوا في نهاية الفيلم وقد انضم إليهم صديقين جدد.",
     "poster": "https://image.tmdb.org/t/p/w500/eGWUhABoftpRmcSo2PJUSRWo50c.jpg",
     "hdUrl": "https://streamtape.com/e/3dJGvg1yeacdVRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
