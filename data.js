@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Matrix",
+    "desc": "يدرك أحد قراصنة الكمبيوتر أن ما يعتبره معظم الناس واقعًا هو في الحقيقة محاكاة يتم إنشاؤها بواسطة آلات، فينضم إلى المتمردين ليتحرر.",
+    "poster": "https://image.tmdb.org/t/p/w500/nrTnHdza19bagccAj9LX5VCsU7g.jpg",
+    "hdUrl": "https://streamtape.com/e/l2xkPok14rc7qqg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/l2xkPok14rc7qqg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.3",
+    "genre": "حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Keanu Reeves",
+            "image": "https://image.tmdb.org/t/p/w185/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        },
+        {
+            "name": "Laurence Fishburne",
+            "image": "https://image.tmdb.org/t/p/w185/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+        },
+        {
+            "name": "Carrie-Anne Moss",
+            "image": "https://image.tmdb.org/t/p/w185/xD4jTA3KmVp5Rq3aHcymL9DUGjD.jpg"
+        },
+        {
+            "name": "Hugo Weaving",
+            "image": "https://image.tmdb.org/t/p/w185/lSC8Et0PYi5zeQb3IpPkFje7hgR.jpg"
+        },
+        {
+            "name": "Gloria Foster",
+            "image": "https://image.tmdb.org/t/p/w185/AriGXtC9fjBOia9Zr8CZjn4o3rx.jpg"
+        }
+    ]
+},
+    {
     "title": "The Dark Knight Rises",
     "desc": "ثمان سنواتٍ مضت تحمْل فيها باتمان (كريستيان بال) مسئولية موت هارفي دنت حتى أنه عاش في ظلامٍ حالكٍ لفترةٍ طويلةٍ نتيجة ذلك. يعود باتمان مرةً أخرى عندما يهدد الشرير المقنع باين (توم هاردي) مدينة جوثام ويقودها نحو الهاوية؛ فيحاول باتمان إنقاذ المدينة وسكان المدينة من هذه العقلية الإجرامية. حيث إن باين ما هو إلا قائدٌ إرهابيٌ يقود مدينة جوثام للهلاك. في جوٍ مليءٍ بالتشويق والإثارة تدور معاركٌ حامية بين باتمان وباين وتتعقد الأحداث لتصل لمدى لا يتخيله أحد.",
     "poster": "https://image.tmdb.org/t/p/w500/gDQLSmVsPxvOmQIAVFcl6Akn7Nh.jpg",
