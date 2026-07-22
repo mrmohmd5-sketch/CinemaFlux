@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Klaus",
+    "desc": "تنشأ صداقة غير متوقعة بين ساعي بريد أناني وصانع ألعاب منعزل، فيبعثان الأمل في بلدة باردة ومظلمة تفتقر بشدّة إلى البهجة... فماذا فعلا؟",
+    "poster": "https://image.tmdb.org/t/p/w500/7v5pb4YUrjJ4P3OEOl0hjh6JXPr.jpg",
+    "hdUrl": "https://streamtape.com/e/eLRD23k0vYFmo3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eLRD23k0vYFmo3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "رسوم متحركة عائلي كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Schwartzman",
+            "image": "https://image.tmdb.org/t/p/w185/gCjMdmW1DiPAClHVl4zHEIffIsE.jpg"
+        },
+        {
+            "name": "J.K. Simmons",
+            "image": "https://image.tmdb.org/t/p/w185/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg"
+        },
+        {
+            "name": "Rashida Jones",
+            "image": "https://image.tmdb.org/t/p/w185/cgWGm9eYCretBWeljPVtpRV7n6V.jpg"
+        },
+        {
+            "name": "Joan Cusack",
+            "image": "https://image.tmdb.org/t/p/w185/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
+        },
+        {
+            "name": "Norm Macdonald",
+            "image": "https://image.tmdb.org/t/p/w185/pGOpdt9Xy9YO2nUEWgp8G89KC5r.jpg"
+        }
+    ]
+},
+    {
     "title": "Joker",
     "desc": "خلال الثمانينيات من القرن الماضي، ممثل كوميدي فاشل - مدفوعًا بالجنون - يتحول إلى حياة الجريمة والفوضى في مدينة قوثام بينما يصبح شخصية مجرمة بنفسية سيئة.",
     "poster": "https://image.tmdb.org/t/p/w500/ddWLmm7keTTsvPnVCVPAh2l4C4P.jpg",
