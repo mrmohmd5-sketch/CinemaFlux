@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Toy Story 4",
+    "desc": "لطالما كان وودي واثقا من مكانته في العالم وأن أولويته هي رعاية طفله ، سواء كان ذلك آندي أو بوني. ولكن عندما تضيف بوني لعبة جديدة مترددة تسمى 'فوركي' إلى غرفتها ، فإن مغامرة رحلة على الطريق جنبا إلى جنب مع الأصدقاء القدامى والجدد ستظهر لوودي مدى ضخامة العالم بالنسبة للعبة.",
+    "poster": "https://image.tmdb.org/t/p/w500/ds8GyaDSW6RTlZIXlrh20Ja9VFY.jpg",
+    "hdUrl": "https://streamtape.com/e/LkoZjWo4QySRm1W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LkoZjWo4QySRm1W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "عائلي كوميديا رسوم متحركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Tim Allen",
+            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+            "name": "Annie Potts",
+            "image": "https://image.tmdb.org/t/p/w185/nugPVN28qOhOIoHawrDJ6fIfrxR.jpg"
+        },
+        {
+            "name": "Tony Hale",
+            "image": "https://image.tmdb.org/t/p/w185/ar4uapp4w5wMkThZcqWUNMSTO8z.jpg"
+        },
+        {
+            "name": "Keegan-Michael Key",
+            "image": "https://image.tmdb.org/t/p/w185/xmdzYXP9j87a43FSiL138nLesuS.jpg"
+        }
+    ]
+},
+    {
     "title": "Toy Story 3",
     "desc": "لم يلعب وودي وبظ وبقية ألعاب آندي منذ سنوات. مع اقتراب آندي من الذهاب إلى الكلية، تجد المجموعة نفسها تُركت عن طريق الخطأ في مركز رعاية نهارية سيئ. يجب أن تتجمع الألعاب معًا للهروب والعودة إلى منزل آندي.",
     "poster": "https://image.tmdb.org/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
