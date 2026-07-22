@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Lion King",
+    "desc": "أسد أمير صغير يطرد من أرضه من قبل عمه القاسي، الذي يدعي أنه كان السبب في موت والده. بينما يحكم العم المملكة بمخلب من حديد، يكبر الأمير خارج السافانا، ويعيش وفقًا لفلسفة 'هاكونا ماتاتا'، أي أن تنسى الماضي ولا تقلق. لكن عندما يطارده ماضيه، يجب على الأمير الشاب أن يقرر مصيره: هل سيبقى منبوذاً أم يواجه مخاوفه ويصبح ما يحتاج إليه؟",
+    "poster": "https://image.tmdb.org/t/p/w500/l0DfggxJn89s0hOv8vVK6fa1QCX.jpg",
+    "hdUrl": "https://streamtape.com/e/llP4wg2G69id4Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/llP4wg2G69id4Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.3",
+    "genre": "رسوم متحركة عائلي دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matthew Broderick",
+            "image": "https://image.tmdb.org/t/p/w185/papqFgpyroZJEqd7WvuNGN8ti2k.jpg"
+        },
+        {
+            "name": "Moira Kelly",
+            "image": "https://image.tmdb.org/t/p/w185/3yQRnGSfbPWQDInZHTzzXsrAhUR.jpg"
+        },
+        {
+            "name": "Jeremy Irons",
+            "image": "https://image.tmdb.org/t/p/w185/w8Ct1q02Ht3sWdOSqfp3B85TzT.jpg"
+        },
+        {
+            "name": "Nathan Lane",
+            "image": "https://image.tmdb.org/t/p/w185/jLPp3RoDhwOpLimKj3NhhBofPfT.jpg"
+        },
+        {
+            "name": "Ernie Sabella",
+            "image": "https://image.tmdb.org/t/p/w185/tOJUui0e88SmGKF5iLlYKBxDKvx.jpg"
+        }
+    ]
+},
+    {
     "title": "Rush",
     "desc": "دراما سيرة ذاتية تركزت على التنافس بين سائقي الفورمولا 1 جيمس هانت ونيكي لاودا خلال موسم سباق السيارات للفورمولا 1 عام 1976.",
     "poster": "https://image.tmdb.org/t/p/w500/ieGa88TTLY6nltJmLrHUYV1XXOP.jpg",
