@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Mad Max: Fury Road",
+    "desc": "في أقصى أطراف الأرض، وسط صحراء قاحلة وعالم ممزق، يقاتل الجميع بجنون من أجل البقاء. في قلب الفوضى، يهرب متمردان... وقد يكون بيدهما أمل استعادة النظام.",
+    "poster": "https://image.tmdb.org/t/p/w500/rvoQHUQGskr7HIQdsyYeOe0GYiL.jpg",
+    "hdUrl": "https://streamtape.com/e/9oraRWePLZSYV6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9oraRWePLZSYV6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hardy",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Charlize Theron",
+            "image": "https://image.tmdb.org/t/p/w185/gd7ShD0yt4bsR2STeQ19KQ6hvXL.jpg"
+        },
+        {
+            "name": "Nicholas Hoult",
+            "image": "https://image.tmdb.org/t/p/w185/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg"
+        },
+        {
+            "name": "Hugh Keays-Byrne",
+            "image": "https://image.tmdb.org/t/p/w185/7XSPjKNwmyEPMnmoVSQ42ykMz6M.jpg"
+        },
+        {
+            "name": "Josh Helman",
+            "image": "https://image.tmdb.org/t/p/w185/1thwLjrgvFv7ifjyVtTKQh23OCh.jpg"
+        }
+    ]
+},
+    {
     "title": "Marriage Story",
     "desc": "يُخرج 'نواه باومباك' صانع الأفلام المرشح لجائزة الأوسكار هذه النظرة الثاقبة والمتعاطفة عن زواج ينهار وأسرة تحافظ على ترابطها",
     "poster": "https://image.tmdb.org/t/p/w500/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
