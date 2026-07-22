@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ava",
+    "desc": "تعمل آفا كقاتلة مأجورة لمنظمة متخصصة في العمليات غير المشروعة، ولكن عندما تسير مهمة كُلفت بها على نحو خاطئ، يصبح عليها فعل المستحيل من أجل إنقاذ حياتها.",
+    "poster": "https://image.tmdb.org/t/p/w500/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
+    "hdUrl": "https://streamtape.com/e/jOJW4oae9RTzygd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jOJW4oae9RTzygd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.8",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jessica Chastain",
+            "image": "https://image.tmdb.org/t/p/w185/eQKnihReJeB9vQEa5gySzAlKfZt.jpg"
+        },
+        {
+            "name": "John Malkovich",
+            "image": "https://image.tmdb.org/t/p/w185/7GoOdGNc4ra1L0F5nJTkmIB37iu.jpg"
+        },
+        {
+            "name": "Common",
+            "image": "https://image.tmdb.org/t/p/w185/eggJAnJxpn8wYraX7ea5svETB54.jpg"
+        },
+        {
+            "name": "Colin Farrell",
+            "image": "https://image.tmdb.org/t/p/w185/5FdalJbrbZ5UCsED5rFrXpvbqJa.jpg"
+        },
+        {
+            "name": "Geena Davis",
+            "image": "https://image.tmdb.org/t/p/w185/jNsZLedzKPuyUmgnvpRpP5oG3Wr.jpg"
+        }
+    ]
+},
+    {
     "title": "Warrior",
     "desc": "يعود الابن الأصغر لملاكم سابق مدمن على الكحول إلى المنزل ، حيث تدرب على يد والده للمنافسة في بطولة فنون القتال المختلطة - وهو المسار الذي يضع المقاتل في مسار تصادمي مع أخيه الأكبر المنفصل.",
     "poster": "https://image.tmdb.org/t/p/w500/iM8n4nZJPR2abpnyZ36FUgHiRjr.jpg",
