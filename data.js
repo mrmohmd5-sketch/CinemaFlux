@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Toy Story",
+    "title": "Toy Storyمدبلج ",
     "desc": "تعيش ألعاب آندي، بقيادة وودي، بسعادة في غرفته حتى عيد ميلاد آندي الذي جلب معه باز لايتيير إلى المشهد. خوفًا من فقدان مكانته في قلب آندي، يدبر وودي مكائد ضد باز. ولكن عندما تفرق الظروف باز ووودي عن صاحبهما، يتعلم الثنائي في النهاية وضع خلافاتهما جانبًا.",
     "poster": "https://image.tmdb.org/t/p/w500/hX5TEEzea1XX8t2V9VK5InW4M7x.jpg",
     "hdUrl": "https://streamtape.com/e/YGp4xqlyKwirLP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
