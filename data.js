@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Marriage Story",
+    "desc": "يُخرج 'نواه باومباك' صانع الأفلام المرشح لجائزة الأوسكار هذه النظرة الثاقبة والمتعاطفة عن زواج ينهار وأسرة تحافظ على ترابطها",
+    "poster": "https://image.tmdb.org/t/p/w500/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
+    "hdUrl": "https://streamtape.com/e/WQXYDOwDQGHWdz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/WQXYDOwDQGHWdz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Adam Driver",
+            "image": "https://image.tmdb.org/t/p/w185/b5w381C8Z33D1iF30KT4k8tJNsk.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+            "name": "Laura Dern",
+            "image": "https://image.tmdb.org/t/p/w185/gB9PnGEvxKg33OSlcqptQwTBwPE.jpg"
+        },
+        {
+            "name": "Alan Alda",
+            "image": "https://image.tmdb.org/t/p/w185/dJBtCXUwWnAxhveiPdXQS6e71pw.jpg"
+        },
+        {
+            "name": "Ray Liotta",
+            "image": "https://image.tmdb.org/t/p/w185/jdwGJbJNSRQiG2kB5MJxiu2clCQ.jpg"
+        }
+    ]
+},
+    {
     "title": "Memento",
     "desc": "يقوم ليونارد شيلبي بتعقب الرجل الذي اغتصب زوجته وقتلها. ومع ذلك ، فإن صعوبة تحديد مكان قاتل زوجته تتفاقم بسبب حقيقة أنه يعاني من شكل نادر وغير قابل للعلاج من فقدان الذاكرة قصير المدى. على الرغم من أنه يستطيع تذكر تفاصيل الحياة قبل وقوع الحادث ، إلا أن ليونارد لا يتذكر ما حدث قبل خمسة عشر دقيقة ، إلى أين يذهب ، أو لماذا.",
     "poster": "https://image.tmdb.org/t/p/w500/dUOPHJdQTMq80dCQLglFkjFGnd0.jpg",
