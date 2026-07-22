@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Toy Story of Terror!",
+    "desc": "ما بدأ كرحلة برية ممتعة لفرقة 'قصة لعبة' تحول فجأةً إلى كارثة عندما انحرفت الرحلة إلى فندق على جانب الطريق. بعد اختفاء إحدى الدمى، يجد الآخرون أنفسهم عالقين في سلسلة أحداث غامضة يجب حلها قبل أن يواجهوا جميعًا نفس المصير في 'قصة لعبة الرعب' هذه.",
+    "poster": "https://image.tmdb.org/t/p/w500/1bS0fM6pxW8wdsQHbRoznEPpMkY.jpg",
+    "hdUrl": "https://streamtape.com/e/wkZg9Ve430cGae/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wkZg9Ve430cGae/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "مغامرة رسوم متحركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Joan Cusack",
+            "image": "https://image.tmdb.org/t/p/w185/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
+        },
+        {
+            "name": "Carl Weathers",
+            "image": "https://image.tmdb.org/t/p/w185/oUwtC5hEbcIZv53WPerZ9HhlSJR.jpg"
+        },
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Tim Allen",
+            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+            "name": "Stephen Tobolowsky",
+            "image": "https://image.tmdb.org/t/p/w185/uL8yfcm0dCFYFQt052kczVQVvac.jpg"
+        }
+    ]
+},
+    {
     "title": "Toy Story 4",
     "desc": "لطالما كان وودي واثقا من مكانته في العالم وأن أولويته هي رعاية طفله ، سواء كان ذلك آندي أو بوني. ولكن عندما تضيف بوني لعبة جديدة مترددة تسمى 'فوركي' إلى غرفتها ، فإن مغامرة رحلة على الطريق جنبا إلى جنب مع الأصدقاء القدامى والجدد ستظهر لوودي مدى ضخامة العالم بالنسبة للعبة.",
     "poster": "https://image.tmdb.org/t/p/w500/ds8GyaDSW6RTlZIXlrh20Ja9VFY.jpg",
