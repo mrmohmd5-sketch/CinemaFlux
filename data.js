@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Spirited Away",
+    "desc": "تتجول 'شيهيرو' في عالم سحري تحكمه ساحرة - تقوم بتحويل كل من يعصيها إلى حيوانات.",
+    "poster": "https://image.tmdb.org/t/p/w500/o9bDF4M3CQPn8e6PMAhJW5K6ciQ.jpg",
+    "hdUrl": "https://streamtape.com/e/zPlwW3JrYeiYAxQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zPlwW3JrYeiYAxQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "رسوم متحركة عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Rumi Hiiragi",
+            "image": "https://image.tmdb.org/t/p/w185/nTKM4GgfkrZvAOFL55uhEuckt7M.jpg"
+        },
+        {
+            "name": "Miyu Irino",
+            "image": "https://image.tmdb.org/t/p/w185/8qEEhHUObNvGQr4e6eqLu5z4qTz.jpg"
+        },
+        {
+            "name": "Mari Natsuki",
+            "image": "https://image.tmdb.org/t/p/w185/MIFzUc77Sx57FQOZsoiGWEbpH2.jpg"
+        },
+        {
+            "name": "Takashi Naito",
+            "image": "https://image.tmdb.org/t/p/w185/xwsm0ygjG79jLIogutwo6r64igy.jpg"
+        },
+        {
+            "name": "Yasuko Sawaguchi",
+            "image": "https://image.tmdb.org/t/p/w185/rWspusb13VeJowmctnniXYYTcqq.jpg"
+        }
+    ]
+},
+    {
     "title": "Parasite",
     "desc": "تدور أحداث الفيلم حول عائلة عاطلة عن العمل، تُقيم داخل شقة فقيرة، تتغير حياتهم كُليًا عندما يلتحق الابن بوظيفة مدرس لابنة عائلة ثرية، وسرعان ما يصير جميع أفراد اﻷسرة الفقيرة عاملين لدى اﻷسرة الثرية إلى أن يتورطوا في حادث غير متوقع.",
     "poster": "https://image.tmdb.org/t/p/w500/yWAshnqG2WXP25FYZJmC2hfe2LH.jpg",
