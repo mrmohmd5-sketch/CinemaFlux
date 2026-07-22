@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Pulp Fiction",
+    "desc": "يتلاقى الرجل الضارب المحب للبرغر ، وشريكه الفلسفي ، ورجل العصابات المدمن على المخدرات ، والملاكم المغسول في هذه الجريمة الكوميدية المترامية الأطراف. تتجلى مغامراتهم في ثلاث قصص تتنقل ببراعة ذهابًا وإيابًا في الوقت المناسب.",
+    "poster": "https://image.tmdb.org/t/p/w500/A3NXS5e7Zc3FRyi63b7TdPGjFwI.jpg",
+    "hdUrl": "https://streamtape.com/e/LdvWWBJlqMI6oA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LdvWWBJlqMI6oA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "إثارة جريمة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "John Travolta",
+            "image": "https://image.tmdb.org/t/p/w185/ap8eEYfBKTLixmVVpRlq4NslDD5.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+        },
+        {
+            "name": "Uma Thurman",
+            "image": "https://image.tmdb.org/t/p/w185/hlYG0MC6im0MHNq1xixxVilfwyR.jpg"
+        },
+        {
+            "name": "Bruce Willis",
+            "image": "https://image.tmdb.org/t/p/w185/w3aXr1e7gQCn8MSp1vW4sXHn99P.jpg"
+        },
+        {
+            "name": "Ving Rhames",
+            "image": "https://image.tmdb.org/t/p/w185/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
+        }
+    ]
+},
+    {
     "title": "Spirited Away",
     "desc": "تتجول 'شيهيرو' في عالم سحري تحكمه ساحرة - تقوم بتحويل كل من يعصيها إلى حيوانات.",
     "poster": "https://image.tmdb.org/t/p/w500/o9bDF4M3CQPn8e6PMAhJW5K6ciQ.jpg",
