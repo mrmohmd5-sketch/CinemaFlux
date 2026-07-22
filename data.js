@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Kill Bill: Vol. 1",
+    "desc": "قُتل قاتل من قبل صاحب عملها الذي لا يرحم ، بيل ، وأعضاء آخرون في دائرة الاغتيال - لكنها تعيش لتخطط للانتقام منها.",
+    "poster": "https://image.tmdb.org/t/p/w500/wA8Pse0PtRhYxXpEw5bSJ7t3v8O.jpg",
+    "hdUrl": "https://streamtape.com/e/wd1JoqApAafor6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wd1JoqApAafor6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "حركة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Uma Thurman",
+            "image": "https://image.tmdb.org/t/p/w185/hlYG0MC6im0MHNq1xixxVilfwyR.jpg"
+        },
+        {
+            "name": "Lucy Liu",
+            "image": "https://image.tmdb.org/t/p/w185/9nbtjqsx3De7hO2XDtrBQ7M9VCH.jpg"
+        },
+        {
+            "name": "Vivica A. Fox",
+            "image": "https://image.tmdb.org/t/p/w185/wj77CCErWt1H0GNqYwCFNYulH7g.jpg"
+        },
+        {
+            "name": "Daryl Hannah",
+            "image": "https://image.tmdb.org/t/p/w185/5FllFmoiaru7tjXJ6Orc11OpQcw.jpg"
+        },
+        {
+            "name": "David Carradine",
+            "image": "https://image.tmdb.org/t/p/w185/1X2GlkMKS9FIG1kGou7o6LRqAjz.jpg"
+        }
+    ]
+},
+    {
     "title": "Klaus",
     "desc": "تنشأ صداقة غير متوقعة بين ساعي بريد أناني وصانع ألعاب منعزل، فيبعثان الأمل في بلدة باردة ومظلمة تفتقر بشدّة إلى البهجة... فماذا فعلا؟",
     "poster": "https://image.tmdb.org/t/p/w500/7v5pb4YUrjJ4P3OEOl0hjh6JXPr.jpg",
