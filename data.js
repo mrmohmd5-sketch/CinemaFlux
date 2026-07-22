@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Wolf of Wall Street",
+    "desc": "يستند هذا العمل إلى القصة الحقيقية لجوردان بيلفورت، من صعوده إلى سمسار أسهم ثري يعيش حياة مترفة إلى سقوطه الذي تورط فيه بالجريمة والفساد والحكومة الفيدرالية.",
+    "poster": "https://image.tmdb.org/t/p/w500/dthIkG1QqqVZhXWnVHgLCf2KvXH.jpg",
+    "hdUrl": "https://streamtape.com/e/a1vlbo6kmKuJqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/a1vlbo6kmKuJqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "جريمة دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Leonardo DiCaprio",
+            "image": "https://image.tmdb.org/t/p/w185/mkdRcVIQl4WZhDf1vXKWTD7HZrZ.jpg"
+        },
+        {
+            "name": "Jonah Hill",
+            "image": "https://image.tmdb.org/t/p/w185/cymlWttB83MsAGR2EkTgANtjeRH.jpg"
+        },
+        {
+            "name": "Margot Robbie",
+            "image": "https://image.tmdb.org/t/p/w185/au6Hq8nQXJD67mDtl34ZOm8DXrh.jpg"
+        },
+        {
+            "name": "Matthew McConaughey",
+            "image": "https://image.tmdb.org/t/p/w185/lCySuYjhXix3FzQdS4oceDDrXKI.jpg"
+        },
+        {
+            "name": "Kyle Chandler",
+            "image": "https://image.tmdb.org/t/p/w185/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
+        }
+    ]
+},
+    {
     "title": "The Matrix",
     "desc": "يدرك أحد قراصنة الكمبيوتر أن ما يعتبره معظم الناس واقعًا هو في الحقيقة محاكاة يتم إنشاؤها بواسطة آلات، فينضم إلى المتمردين ليتحرر.",
     "poster": "https://image.tmdb.org/t/p/w500/nrTnHdza19bagccAj9LX5VCsU7g.jpg",
