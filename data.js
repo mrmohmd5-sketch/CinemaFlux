@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Inglourious Basterds",
+    "desc": "في فرنسا التي احتلها النازيون خلال الحرب العالمية الثانية ، تم اختيار مجموعة من الجنود الأمريكيين اليهود المعروفين باسم 'الباستردز' على وجه التحديد لنشر الخوف في جميع أنحاء الرايخ الثالث عن طريق المضاربة وقتل النازيين بوحشية. سرعان ما التقى آل باستردز بقيادة الملازم ألدو راين مع فتاة مراهقة فرنسية يهودية تدير مسرحًا للسينما في باريس استهدفها الجنود.",
+    "poster": "https://image.tmdb.org/t/p/w500/6Fzavx3TDDFSZctwGn4j60EHyN.jpg",
+    "hdUrl": "https://streamtape.com/e/vBkbkXrkryi43M8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vBkbkXrkryi43M8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "دراما إثارة حرب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brad Pitt",
+            "image": "https://image.tmdb.org/t/p/w185/m09Y1YfPPeNYYUSHnnVqahkrC1o.jpg"
+        },
+        {
+            "name": "Mélanie Laurent",
+            "image": "https://image.tmdb.org/t/p/w185/i99ogEo4gQyanCmHWYYoS6hsUqL.jpg"
+        },
+        {
+            "name": "Christoph Waltz",
+            "image": "https://image.tmdb.org/t/p/w185/jMvLGCVXLaBqjRLf5olyvEucZob.jpg"
+        },
+        {
+            "name": "Eli Roth",
+            "image": "https://image.tmdb.org/t/p/w185/qQTkpxzh1FlBGL1HD5hzdUMxv49.jpg"
+        },
+        {
+            "name": "Michael Fassbender",
+            "image": "https://image.tmdb.org/t/p/w185/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
+        }
+    ]
+},
+    {
     "title": "Interstellar",
     "desc": "تدور الأحداث حول مجموعة من المستكشفين يستفيدون من ثقب دودي اكتُشف حديثًا لتجاوز حدود السفر البشري عبر الفضاء، وعبور المسافات الشاسعة التي تفصل بين العوالم البعيدة، في رحلة 'بين النجوم' قد تغيّر مصير البشرية إلى الأبد.",
     "poster": "https://image.tmdb.org/t/p/w500/rR8bjK9dOXXH9H8AdpfPTlRx8Fy.jpg",
