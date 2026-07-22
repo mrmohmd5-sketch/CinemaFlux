@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Lord of the Rings: The Two Towers",
+    "desc": "يسافر فرودو وسام إلى موردور لتدمير حلقة القوة الواحدة بينما يبحث جيملي وليجولاس وأراغورن عن ميري وبيبين المأسورين من قبل شركة مصفاة نفط عمان. طوال الوقت، ينتظر الساحر الشائن سارومان أعضاء الزمالة في برج أورثانك في إيسينغارد.",
+    "poster": "https://image.tmdb.org/t/p/w500/6gZlbPmghGc9rSplHtRm94ezNIa.jpg",
+    "hdUrl": "https://streamtape.com/e/a1vlbo6kmKuJqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/a1vlbo6kmKuJqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "مغامرة فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Elijah Wood",
+            "image": "https://image.tmdb.org/t/p/w185/7UKRbJBNG7mxBl2QQc5XsAh6F8B.jpg"
+        },
+        {
+            "name": "Ian McKellen",
+            "image": "https://image.tmdb.org/t/p/w185/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg"
+        },
+        {
+            "name": "Viggo Mortensen",
+            "image": "https://image.tmdb.org/t/p/w185/vH5gVSpHAMhDaFWfh0Q7BG61O1y.jpg"
+        },
+        {
+            "name": "Sean Astin",
+            "image": "https://image.tmdb.org/t/p/w185/As3ctGUtBYmG4zj4Ifyrcqd71HP.jpg"
+        },
+        {
+            "name": "Andy Serkis",
+            "image": "https://image.tmdb.org/t/p/w185/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg"
+        }
+    ]
+},
+    {
     "title": "The Matrix",
     "desc": "يدرك أحد قراصنة الكمبيوتر أن ما يعتبره معظم الناس واقعًا هو في الحقيقة محاكاة يتم إنشاؤها بواسطة آلات، فينضم إلى المتمردين ليتحرر.",
     "poster": "https://image.tmdb.org/t/p/w500/nrTnHdza19bagccAj9LX5VCsU7g.jpg",
