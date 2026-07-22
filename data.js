@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "John Wick: Chapter 4",
+    "desc": "بعدما اكتشف طريقة ستمكنه من القضاء على المجلس الأعلى واستعادة حريته، يجد جون ويك نفسه في مواجهة مع عدو جديد تدفعه للشك حتى في أصدقاؤه القدامى.",
+    "poster": "https://image.tmdb.org/t/p/w500/j6Zcib1u1QhBs0KVKU8yxOugkAv.jpg",
+    "hdUrl": "https://streamtape.com/e/4AOXaLeK6GuK6Aw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4AOXaLeK6GuK6Aw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Keanu Reeves",
+            "image": "https://image.tmdb.org/t/p/w185/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        },
+        {
+            "name": "Donnie Yen",
+            "image": "https://image.tmdb.org/t/p/w185/hTlhrrZMj8hZVvD17j4KyAFWBHc.jpg"
+        },
+        {
+            "name": "Bill Skarsgård",
+            "image": "https://image.tmdb.org/t/p/w185/yGML6E9OtHQ5PFSvxoIj901tvsL.jpg"
+        },
+        {
+            "name": "Ian McShane",
+            "image": "https://image.tmdb.org/t/p/w185/qh9RTLbnr128TZLdGuXwUH9mdBM.jpg"
+        },
+        {
+            "name": "Laurence Fishburne",
+            "image": "https://image.tmdb.org/t/p/w185/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+        }
+    ]
+},
+    {
     "title": "John Wick: Chapter 3 - Parabellum",
     "desc": "يعود القاتل الخارق جون ويك باربعة عشر مليون دولار على رأسه وجيش من القتلة الذين يصطادون المكافآت على دربه. بعد قتل عضو في جماعة القتله الدولية الغامضة  'هاي تايبل' جون ويك هو طارد، لكن أكثر الرجال والنساء ضرباً في العالم ينتظرونه بكل منعطف.",
     "poster": "https://image.tmdb.org/t/p/w500/LbIUMWP752hkVPxafA1LR5otGn.jpg",
