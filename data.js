@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Howl's Moving Castle",
+    "desc": "أخذت القصة من رواية خيالية للأطفال من نفس الاسم وتأليف الكاتبة 'ديانا وايني جونز' بطلة القصة هي 'صوفي' التي تعيش مع زوجة أبيها وبنتيها بعد وفاة أبيها ، الذي ترك لهم محل لبيع القبعات ، تحولت إلى امرأة عجوز من قبل ساحرة ولذلك خرجت للبحث عن 'هاول' الساحر الذي أنقذها من قبل ليرجعها إلى شكلها الطبيعي ، والذي يمتلك قلعة مدهشة وغريبة والتي تبدو وكأنها رجل آلي عملاق وتتحرك بواسطة قوة شيطان النار 'كالكفر' فماذا سيحدث بعد ذلك ؟ وهل ستتمكن 'صوفي' من استرجاع شكلها السابق؟",
+    "poster": "https://image.tmdb.org/t/p/w500/qkXpq1mjx5Bh9TpW3zMBRirDwEU.jpg",
+    "hdUrl": "https://streamtape.com/e/6Q3ORomO8AT9AG2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/6Q3ORomO8AT9AG2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "فانتازيا رسوم متحركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chieko Baisho",
+            "image": "https://image.tmdb.org/t/p/w185/b8ANR4WfdUZtoU4ktlnMFzbq759.jpg"
+        },
+        {
+            "name": "Takuya Kimura",
+            "image": "https://image.tmdb.org/t/p/w185/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
+        },
+        {
+            "name": "Akihiro Miwa",
+            "image": "https://image.tmdb.org/t/p/w185/20n18waqgVo5zSO6Ot0d4fz3jAM.jpg"
+        },
+        {
+            "name": "Tatsuya Gashuin",
+            "image": "https://image.tmdb.org/t/p/w185/fLqIdkShknsJmZy4EfBWuWyHN4C.jpg"
+        },
+        {
+            "name": "Ryunosuke Kamiki",
+            "image": "https://image.tmdb.org/t/p/w185/ut7ewXjdgUmgkhJ1EtbOo9tbc7s.jpg"
+        }
+    ]
+},
+    {
     "title": "Ford v Ferrari",
     "desc": "استنادًا إلى قصة حقيقية، يتعاون كل من مصمم السيارات كارول شيلبي والسائق كين مايلز في سبيل تصميم سيارة سباق فائقة لصالح شركة فورد من أجل منافسة نظيرتها اﻹيطالية فيراري للفوز بالسباق المقام في مدينة ليمان الفرنسية عام 1966.",
     "poster": "https://image.tmdb.org/t/p/w500/i9FUL1B0ComrhEXnsCR3L5SlOJ7.jpg",
