@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fight Club",
+    "desc": "إدوارد يتعرض لضغوط حتى يصل به الحال إلى أنه لا يستطيع النوم لفتراتٍ طويلة، لكنه يجد بعض السلام في جلسات العلاج النفسي الجماعي، يتعرف إدوارد على أحد الأشخاص وهو (تايلر ديردن) الذي يحرره من تعلقه بالأشياء الذي تستعبده ،ثم يحرره من خوفه من الناس. يقومان معًا بإنشاء نادي القتال الذي يجذب الكثير من الأفراد المحبطين ،الذين يقومون بإخراج طاقة غضبهم وكرههم للعالم في القتال.",
+    "poster": "https://image.tmdb.org/t/p/w500/2xmknsEcjSaznfKsRY6VloqKRUo.jpg",
+    "hdUrl": "https://streamtape.com/e/bz4laObPRqcPwgK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bz4laObPRqcPwgK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Edward Norton",
+            "image": "https://image.tmdb.org/t/p/w185/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg"
+        },
+        {
+            "name": "Brad Pitt",
+            "image": "https://image.tmdb.org/t/p/w185/m09Y1YfPPeNYYUSHnnVqahkrC1o.jpg"
+        },
+        {
+            "name": "Helena Bonham Carter",
+            "image": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        },
+        {
+            "name": "Meat Loaf",
+            "image": "https://image.tmdb.org/t/p/w185/1zkohpaG3my4qQAZGVgzgPuXwZ6.jpg"
+        },
+        {
+            "name": "Jared Leto",
+            "image": "https://image.tmdb.org/t/p/w185/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg"
+        }
+    ]
+},
+    {
     "title": "Braveheart",
     "desc": "غضب المحارب الاسكتلندي ويليام والاس من ذبح مورون وعروسه الجديدة وحبه للطفولة ، ويقتل فصيلة من جنود اللورد الإنجليز المحليين. هذا يقود القرية إلى التمرد ، وفي النهاية ، تنهض الدولة بأكملها ضد الحكم الإنجليزي.",
     "poster": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg",
