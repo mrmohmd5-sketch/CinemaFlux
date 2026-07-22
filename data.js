@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Parasite",
+    "desc": "تدور أحداث الفيلم حول عائلة عاطلة عن العمل، تُقيم داخل شقة فقيرة، تتغير حياتهم كُليًا عندما يلتحق الابن بوظيفة مدرس لابنة عائلة ثرية، وسرعان ما يصير جميع أفراد اﻷسرة الفقيرة عاملين لدى اﻷسرة الثرية إلى أن يتورطوا في حادث غير متوقع.",
+    "poster": "https://image.tmdb.org/t/p/w500/yWAshnqG2WXP25FYZJmC2hfe2LH.jpg",
+    "hdUrl": "https://streamtape.com/e/DjZpa3Z6yesk1m9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DjZpa3Z6yesk1m9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "كوميديا إثارة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Song Kang-ho",
+            "image": "https://image.tmdb.org/t/p/w185/kBM9UTPYXUA2RNk210DXhztLFns.jpg"
+        },
+        {
+            "name": "Lee Sun-kyun",
+            "image": "https://image.tmdb.org/t/p/w185/nHFBbSFohzOUOvMxPVwe3Es2nJw.jpg"
+        },
+        {
+            "name": "Cho Yeo-jeong",
+            "image": "https://image.tmdb.org/t/p/w185/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg"
+        },
+        {
+            "name": "Choi Woo-shik",
+            "image": "https://image.tmdb.org/t/p/w185/hRDiuKWwe156zRjEu826eci7H3r.jpg"
+        },
+        {
+            "name": "Park So-dam",
+            "image": "https://image.tmdb.org/t/p/w185/fGVOikpvivopeATDy6ZzLdKYXDu.jpg"
+        }
+    ]
+},
+    {
     "title": "Requiem for a Dream",
     "desc": "تحطمت آمال وأحلام أربعة أشخاص طموحين عندما بدأ إدمانهم للمخدرات بالخروج عن نطاق السيطرة. نظرة إلى الإدمان وكيف يتغلب على العقل والجسد.",
     "poster": "https://image.tmdb.org/t/p/w500/n1PTcgvAiZzp8z471zMxaXf1Oi4.jpg",
