@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "John Carter",
+    "desc": "جون كارتر هو كابتن عسكري سابق مرهق من الحرب وتم نقله لسبب غير مفهوم إلى كوكب برسوم الغامض والغريب (المريخ) وأصبح متورطًا على مضض في صراع ملحمي. إنه عالم على وشك الانهيار ، ويعيد كارتر اكتشاف إنسانيته عندما يدرك أن بقاء برصوم وشعبه بين يديه.",
+    "poster": "https://image.tmdb.org/t/p/w500/jdQXo2ggRRl07vTeXSLauzHubay.jpg",
+    "hdUrl": "https://streamtape.com/e/JDpXbdaMyvIG9R/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/JDpXbdaMyvIG9R/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Taylor Kitsch",
+            "image": "https://image.tmdb.org/t/p/w185/pTFkwvE2URbbftiaofexfolhkH9.jpg"
+        },
+        {
+            "name": "Lynn Collins",
+            "image": "https://image.tmdb.org/t/p/w185/ajPwDxFs3D0gbsaphHyB0ufWc3V.jpg"
+        },
+        {
+            "name": "Samantha Morton",
+            "image": "https://image.tmdb.org/t/p/w185/hyxtpw9axreB8CcS30eRmvzdLAY.jpg"
+        },
+        {
+            "name": "Mark Strong",
+            "image": "https://image.tmdb.org/t/p/w185/3cNmatYsoifytg7TfQhI1EHow3v.jpg"
+        },
+        {
+            "name": "Ciarán Hinds",
+            "image": "https://image.tmdb.org/t/p/w185/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg"
+        }
+    ]
+},
+    {
     "title": "Hacksaw Ridge",
     "desc": "يرفض طبيب الجيش الأمريكي في الحرب العالمية الثانية ديزموند تي دوس ، الذي خدم أثناء معركة أوكيناوا ، قتل الناس ويصبح أول معترض ضميريًا في التاريخ الأمريكي يحصل على ميدالية الشرف من الكونغرس.",
     "poster": "https://image.tmdb.org/t/p/w500/fnOMP6mjmOmZwmlC1n0K7ivrzt1.jpg",
