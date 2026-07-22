@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Despicable Me 4",
+    "title": "Despicable Me 4مدبلج",
     "desc": "يواجه (جرو) العديد من التحديات العائلية بعد إنجاب زوجته لطفلهما الأول، تزامنًا مع هروب المجرم (ماكسيم لو مال)، والذي يقرر الانتقام من عدوه اللدود (جرو).",
     "poster": "https://image.tmdb.org/t/p/w500/rxIEByG8SSVuO1sPncNl7D703pd.jpg",
     "hdUrl": "https://streamtape.com/e/4DLV0rORG9IKaOP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -32,7 +32,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Despicable Me 3",
+    "title": "Despicable Me 3مدبلج",
     "desc": "غرو يجد نفسه عالق في أزمة البحث عن هويته بعد أن تم طرده من رابطة مكافحة الأشرار. ولكنه يكتشف أن له أخ توأم، وأن أخوه معجب جدا به كشخص شرير ويريد أن يصبح مثله. مما سيجعله يشعر بالحنين لهذا الشرير السابق ويفكر في عودته من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/vv2VVWruiYT3YArGu03sHny3zab.jpg",
     "hdUrl": "https://streamtape.com/e/rbd4O66WwYFbLKY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
