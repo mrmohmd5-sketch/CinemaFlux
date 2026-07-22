@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Green Mile",
+    "desc": "حكاية خارقة للطبيعة على ذمة الإعدام في سجن جنوبي ، حيث يمتلك العملاق اللطيف جون كوفي القوة الغامضة لعلاج أمراض الناس. عندما يتعرف حارس المبنى الرئيسي ، بول إدجكومب ، على هدية كوفي المعجزة ، يحاول يائسًا المساعدة في تجنب إعدام الرجل المدان.",
+    "poster": "https://image.tmdb.org/t/p/w500/vAHuvaUC885P78BNS3BMu9qM7ve.jpg",
+    "hdUrl": "https://streamtape.com/e/mwZ2WGWBokubjl2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mwZ2WGWBokubjl2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "فانتازيا دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "David Morse",
+            "image": "https://image.tmdb.org/t/p/w185/A6zGbkFjM3uajIakgsSeNTmSKqY.jpg"
+        },
+        {
+            "name": "Bonnie Hunt",
+            "image": "https://image.tmdb.org/t/p/w185/tT9C6uLztgN8OxJULq6F9iEzqlA.jpg"
+        },
+        {
+            "name": "Michael Clarke Duncan",
+            "image": "https://image.tmdb.org/t/p/w185/3RX8OBqt3gbvFwKYZqiom4O3Ta6.jpg"
+        },
+        {
+            "name": "James Cromwell",
+            "image": "https://image.tmdb.org/t/p/w185/vpNQQbM5PtxsYmVm4oh79SGFyUK.jpg"
+        }
+    ]
+},
+    {
     "title": "The Lion King",
     "desc": "أسد أمير صغير يطرد من أرضه من قبل عمه القاسي، الذي يدعي أنه كان السبب في موت والده. بينما يحكم العم المملكة بمخلب من حديد، يكبر الأمير خارج السافانا، ويعيش وفقًا لفلسفة 'هاكونا ماتاتا'، أي أن تنسى الماضي ولا تقلق. لكن عندما يطارده ماضيه، يجب على الأمير الشاب أن يقرر مصيره: هل سيبقى منبوذاً أم يواجه مخاوفه ويصبح ما يحتاج إليه؟",
     "poster": "https://image.tmdb.org/t/p/w500/l0DfggxJn89s0hOv8vVK6fa1QCX.jpg",
