@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ford v Ferrari",
+    "desc": "استنادًا إلى قصة حقيقية، يتعاون كل من مصمم السيارات كارول شيلبي والسائق كين مايلز في سبيل تصميم سيارة سباق فائقة لصالح شركة فورد من أجل منافسة نظيرتها اﻹيطالية فيراري للفوز بالسباق المقام في مدينة ليمان الفرنسية عام 1966.",
+    "poster": "https://image.tmdb.org/t/p/w500/i9FUL1B0ComrhEXnsCR3L5SlOJ7.jpg",
+    "hdUrl": "https://streamtape.com/e/XAkV8lYdJDCBz1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/XAkV8lYdJDCBz1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "دراما تاريخ حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matt Damon",
+            "image": "https://image.tmdb.org/t/p/w185/aCvBXTAR9B1qRjIRzMBYhhbm1fR.jpg"
+        },
+        {
+            "name": "Christian Bale",
+            "image": "https://image.tmdb.org/t/p/w185/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+        },
+        {
+            "name": "Jon Bernthal",
+            "image": "https://image.tmdb.org/t/p/w185/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
+        },
+        {
+            "name": "Caitríona Balfe",
+            "image": "https://image.tmdb.org/t/p/w185/4KQRDj74lKwU52Ewmzz7sVIakgn.jpg"
+        },
+        {
+            "name": "Josh Lucas",
+            "image": "https://image.tmdb.org/t/p/w185/ueR4CH32f22DGjFxuhnW1o3YKB3.jpg"
+        }
+    ]
+},
+    {
     "title": "Come and See",
     "desc": "غزو ​​القوات الألمانية لقرية في بيلاروسيا يدفع فلوريا الشاب إلى الغابة للانضمام إلى مقاتلي المقاومة المنهكين، رغماً عن عائلته. هناك يلتقي بفتاة تُدعى غلاشا، ترافقه إلى قريته. عند عودته، يجد فلوريا عائلته وزملاءه الفلاحين يُقتلون. يصبح بقاءه على قيد الحياة وسط حطام الحرب الوحشي كابوساً متزايداً، صراعاً بين اليأس والأمل.",
     "poster": "https://image.tmdb.org/t/p/w500/iezAR5UqjpIPu5J95xvrF8ig3Yl.jpg",
