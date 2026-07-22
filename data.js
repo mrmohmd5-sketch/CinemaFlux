@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Inception",
+    "desc": "تدور احداث الفيلم حول كوب (ليوناردو دي كابريو) هو عميل من طراز خاص جدًا ومستوى رفيع للغاية، في الواقع هو متسلل أحلام! يقوم بتجنيده رجل أعمال فاحش الثراء يدعى (سايتو) كي يقوم بالتسلل إلى عقل أحد منافسيه يدعى (روبرت فيشر) بمساعدة جهاز خاص، بزرع فكرة داخل عقل الرجل تبدو وكأنها تأتي من داخله هو نفسه، وليست من الخارج. الفكرة هي أن يفكك الرجل شركات أبيه التي سيورثها عنه.",
+    "poster": "https://image.tmdb.org/t/p/w500/okXrvv9kCNrYTpjMQTpmzXV9JCi.jpg",
+    "hdUrl": "https://streamtape.com/e/R4ewxYZkvjudvq9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/R4ewxYZkvjudvq9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "حركة خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Leonardo DiCaprio",
+            "image": "https://image.tmdb.org/t/p/w185/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
+        },
+        {
+            "name": "Joseph Gordon-Levitt",
+            "image": "https://image.tmdb.org/t/p/w185/z2FA8js799xqtfiFjBTicFYdfk.jpg"
+        },
+        {
+            "name": "Ken Watanabe",
+            "image": "https://image.tmdb.org/t/p/w185/psAXOYp9SBOXvg6AXzARDedNQ9P.jpg"
+        },
+        {
+            "name": "Tom Hardy",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Elliot Page",
+            "image": "https://image.tmdb.org/t/p/w185/nXO8DE4biVXY4UDYP0NdIY1zvXS.jpg"
+        }
+    ]
+},
+    {
     "title": "The Tank",
     "desc": "الجبهة الشرقية عام 1943: يُرسل طاقم دبابة ألمانية طراز تايغر في مهمة خطرة وراء خطوط النزاع التي تشهد حرباً شرسة. مع تقدمهم عبر الأراضي المحفوفة بالمخاطر المميتة، عليهم مواجهة العدو وهواجسهم الداخلية أيضاً.",
     "poster": "https://image.tmdb.org/t/p/w500/1dYvIciST7D2lTxHy4kgCjFAhkI.jpg",
