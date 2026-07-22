@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Despicable Me 4",
+    "desc": "يواجه (جرو) العديد من التحديات العائلية بعد إنجاب زوجته لطفلهما الأول، تزامنًا مع هروب المجرم (ماكسيم لو مال)، والذي يقرر الانتقام من عدوه اللدود (جرو).",
+    "poster": "https://image.tmdb.org/t/p/w500/rxIEByG8SSVuO1sPncNl7D703pd.jpg",
+    "hdUrl": "https://streamtape.com/e/Ry6679p68gsjzM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Ry6679p68gsjzM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رسوم متحركة كوميديا حركة خيال علمي عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Steve Carell",
+            "image": "https://image.tmdb.org/t/p/w185/cS7Cbyff6wFVfUGem497vy9LS7A.jpg"
+        },
+        {
+            "name": "Kristen Wiig",
+            "image": "https://image.tmdb.org/t/p/w185/6U6UGztBwk7c4lg8n5BS5QOByot.jpg"
+        },
+        {
+            "name": "Will Ferrell",
+            "image": "https://image.tmdb.org/t/p/w185/yjGbyQzVjpQl8xFkFGa7JxKZWQb.jpg"
+        },
+        {
+            "name": "Sofía Vergara",
+            "image": "https://image.tmdb.org/t/p/w185/xK7e7NrSm1igQecDQkdy9Uc1KAg.jpg"
+        },
+        {
+            "name": "Miranda Cosgrove",
+            "image": "https://image.tmdb.org/t/p/w185/qIGeoyXEVu1LxTH34TWx1YSHyQr.jpg"
+        }
+    ]
+},
+    {
     "title": "Despicable Me 3",
     "desc": "غرو يجد نفسه عالق في أزمة البحث عن هويته بعد أن تم طرده من رابطة مكافحة الأشرار. ولكنه يكتشف أن له أخ توأم، وأن أخوه معجب جدا به كشخص شرير ويريد أن يصبح مثله. مما سيجعله يشعر بالحنين لهذا الشرير السابق ويفكر في عودته من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/vv2VVWruiYT3YArGu03sHny3zab.jpg",
