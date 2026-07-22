@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "To All the Boys I've Loved Before",
+    "desc": "تنقلب الأمور تمامًا، وذلك حينما تخرج خطابات سرية لفتاة مراهقة تخص أولاد كانت تواعدهم إلى النور، لتنكشف العديد من الأسرار حول العلاقات الاجتماعية والبشر.",
+    "poster": "https://image.tmdb.org/t/p/w500/hKHZhUbIyUAjcSrqJThFGYIR6kI.jpg",
+    "hdUrl": "https://streamtape.com/e/XgMl6DpqQZCg0P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/XgMl6DpqQZCg0P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "كوميديا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lana Condor",
+            "image": "https://image.tmdb.org/t/p/w185/vWn27Fk2GLwH7o9fBG9hBWZI6OR.jpg"
+        },
+        {
+            "name": "Noah Centineo",
+            "image": "https://image.tmdb.org/t/p/w185/bQtEsHw2fu2zdIDBCsMgQF8Crae.jpg"
+        },
+        {
+            "name": "Israel Broussard",
+            "image": "https://image.tmdb.org/t/p/w185/7HmcvPVEkzKncyn2KKaX3AX0Yc0.jpg"
+        },
+        {
+            "name": "Janel Parrish",
+            "image": "https://image.tmdb.org/t/p/w185/cXZjvwdbh3L5Jz0FI03GMR2ysfh.jpg"
+        },
+        {
+            "name": "Anna Cathcart",
+            "image": "https://image.tmdb.org/t/p/w185/fdWbljGWJ0T9ViOYB3BohnArM16.jpg"
+        }
+    ]
+},
+    {
     "title": "Toy Story of Terror!",
     "desc": "ما بدأ كرحلة برية ممتعة لفرقة 'قصة لعبة' تحول فجأةً إلى كارثة عندما انحرفت الرحلة إلى فندق على جانب الطريق. بعد اختفاء إحدى الدمى، يجد الآخرون أنفسهم عالقين في سلسلة أحداث غامضة يجب حلها قبل أن يواجهوا جميعًا نفس المصير في 'قصة لعبة الرعب' هذه.",
     "poster": "https://image.tmdb.org/t/p/w500/1bS0fM6pxW8wdsQHbRoznEPpMkY.jpg",
