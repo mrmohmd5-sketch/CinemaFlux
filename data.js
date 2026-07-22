@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Logan",
+    "desc": "في المستقبل القريب، يعتني لوغان المُرهق بالبروفيسور X المريض في مخبأ على الحدود المكسيكية. لكن محاولات لوغان للاختباء من العالم وإرثه تنقلب رأسا على عقب عندما تصل متحولة شابة، تلاحقها قوى الظلام.",
+    "poster": "https://image.tmdb.org/t/p/w500/26LrQAVnCF5RlDEHKoXOr5ohlX0.jpg",
+    "hdUrl": "https://streamtape.com/e/mQ0OWXkQYOtb3pK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mQ0OWXkQYOtb3pK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "حركة دراما خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hugh Jackman",
+            "image": "https://image.tmdb.org/t/p/w185/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+        },
+        {
+            "name": "Dafne Keen",
+            "image": "https://image.tmdb.org/t/p/w185/g325OIjIHrFr0te8ewPfhKQ2SKj.jpg"
+        },
+        {
+            "name": "Patrick Stewart",
+            "image": "https://image.tmdb.org/t/p/w185/ufqtnLh3JJjPbEgxEag3MM5nZyv.jpg"
+        },
+        {
+            "name": "Elizabeth Rodriguez",
+            "image": "https://image.tmdb.org/t/p/w185/9f851DP7NHAOKvvlZdXxYigDYbl.jpg"
+        },
+        {
+            "name": "Boyd Holbrook",
+            "image": "https://image.tmdb.org/t/p/w185/xmkpedcct3ey1d1HGDNsUMQPHcB.jpg"
+        }
+    ]
+},
+    {
     "title": "Kill Bill: Vol. 2",
     "desc": "تعود العروس (أوما ثورمان) لتستكمل رحلة انتقامها ضد رئيسها السابق (بيل)، وعصابته الذين حرموها من رضيعها.\r ترغب العروس في قتل كل أعضاء الفريق القاتل، والتي كانت يومًا ما واحدة من أعضائه، بالإضافة إلى بيل (ديفيد كارادين) الذي كان يومًا حبيبها.",
     "poster": "https://image.tmdb.org/t/p/w500/ddTV49uQTyTN3CYxSFgoppYDuME.jpg",
