@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Kill Bill: Vol. 2",
+    "desc": "تعود العروس (أوما ثورمان) لتستكمل رحلة انتقامها ضد رئيسها السابق (بيل)، وعصابته الذين حرموها من رضيعها.\r ترغب العروس في قتل كل أعضاء الفريق القاتل، والتي كانت يومًا ما واحدة من أعضائه، بالإضافة إلى بيل (ديفيد كارادين) الذي كان يومًا حبيبها.",
+    "poster": "https://image.tmdb.org/t/p/w500/ddTV49uQTyTN3CYxSFgoppYDuME.jpg",
+    "hdUrl": "https://streamtape.com/e/zQ6OWmaZR2tY3ao/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zQ6OWmaZR2tY3ao/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Uma Thurman",
+            "image": "https://image.tmdb.org/t/p/w185/hlYG0MC6im0MHNq1xixxVilfwyR.jpg"
+        },
+        {
+            "name": "David Carradine",
+            "image": "https://image.tmdb.org/t/p/w185/1X2GlkMKS9FIG1kGou7o6LRqAjz.jpg"
+        },
+        {
+            "name": "Daryl Hannah",
+            "image": "https://image.tmdb.org/t/p/w185/5FllFmoiaru7tjXJ6Orc11OpQcw.jpg"
+        },
+        {
+            "name": "Michael Madsen",
+            "image": "https://image.tmdb.org/t/p/w185/fvr2EXEPrVwsF2JlfRp0Olbj4g8.jpg"
+        },
+        {
+            "name": "Gordon Liu Chia-Hui",
+            "image": "https://image.tmdb.org/t/p/w185/nGpgPSRGXJ808e1ay54nym3qUdp.jpg"
+        }
+    ]
+},
+    {
     "title": "Kill Bill: Vol. 1",
     "desc": "قُتل قاتل من قبل صاحب عملها الذي لا يرحم ، بيل ، وأعضاء آخرون في دائرة الاغتيال - لكنها تعيش لتخطط للانتقام منها.",
     "poster": "https://image.tmdb.org/t/p/w500/wA8Pse0PtRhYxXpEw5bSJ7t3v8O.jpg",
