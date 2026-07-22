@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Braveheart",
+    "desc": "غضب المحارب الاسكتلندي ويليام والاس من ذبح مورون وعروسه الجديدة وحبه للطفولة ، ويقتل فصيلة من جنود اللورد الإنجليز المحليين. هذا يقود القرية إلى التمرد ، وفي النهاية ، تنهض الدولة بأكملها ضد الحكم الإنجليزي.",
+    "poster": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg",
+    "hdUrl": "https://streamtape.com/e/pbLJad0w10cB32/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pbLJad0w10cB32/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "حركة دراما تاريخ حرب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mel Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/jnqHMaOslt8cef2atSmOpGRvNla.jpg"
+        },
+        {
+            "name": "Catherine McCormack",
+            "image": "https://image.tmdb.org/t/p/w185/vYyMCGKeIUTZMdEgVwQCgX7q1T3.jpg"
+        },
+        {
+            "name": "Sophie Marceau",
+            "image": "https://image.tmdb.org/t/p/w185/b56TRCVVMZ2LMZqzXg0FxeGMd0u.jpg"
+        },
+        {
+            "name": "Patrick McGoohan",
+            "image": "https://image.tmdb.org/t/p/w185/xtUMgFYGF7KmJg1KqiYQuwYTTe3.jpg"
+        },
+        {
+            "name": "Angus Macfadyen",
+            "image": "https://image.tmdb.org/t/p/w185/yUuA7U3lw6yM0Eb6mD83qYeevH2.jpg"
+        }
+    ]
+},
+    {
     "title": "Batman Begins",
     "desc": "مدفوعًا بالمأساة ، كرّس الملياردير بروس واين حياته لكشف ودحر الفساد الذي ابتلي بمنزله ، مدينة جوثام. غير قادر على العمل داخل النظام ، بدلاً من ذلك ، أنشأ هوية جديدة ، رمزًا للخوف على عالم الجريمة الإجرامي - باتمان.",
     "poster": "https://image.tmdb.org/t/p/w500/9WO6y90Q275A8tiMNrJ28fxwU9H.jpg",
