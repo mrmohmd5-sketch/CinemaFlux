@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Despicable Me 3",
+    "desc": "غرو يجد نفسه عالق في أزمة البحث عن هويته بعد أن تم طرده من رابطة مكافحة الأشرار. ولكنه يكتشف أن له أخ توأم، وأن أخوه معجب جدا به كشخص شرير ويريد أن يصبح مثله. مما سيجعله يشعر بالحنين لهذا الشرير السابق ويفكر في عودته من جديد.",
+    "poster": "https://image.tmdb.org/t/p/w500/vv2VVWruiYT3YArGu03sHny3zab.jpg",
+    "hdUrl": "https://streamtape.com/e/JeaxLR73kWhjW7o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/JeaxLR73kWhjW7o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة رسوم متحركة كوميديا عائلي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Steve Carell",
+            "image": "https://image.tmdb.org/t/p/w185/cS7Cbyff6wFVfUGem497vy9LS7A.jpg"
+        },
+        {
+            "name": "Kristen Wiig",
+            "image": "https://image.tmdb.org/t/p/w185/6U6UGztBwk7c4lg8n5BS5QOByot.jpg"
+        },
+        {
+            "name": "Trey Parker",
+            "image": "https://image.tmdb.org/t/p/w185/3tJe8t90lrcQzXj9cRcpW9wmj2c.jpg"
+        },
+        {
+            "name": "Miranda Cosgrove",
+            "image": "https://image.tmdb.org/t/p/w185/qIGeoyXEVu1LxTH34TWx1YSHyQr.jpg"
+        },
+        {
+            "name": "Dana Gaier",
+            "image": "https://image.tmdb.org/t/p/w185/hw3Ou8cj22MLXl8QKrL8vcidcCB.jpg"
+        }
+    ]
+},
+    {
     "title": "Despicable Me 2",
     "desc": "في الوقت الذي يعاني فيه من مسؤولياته كأب، تستدعي رابطة مكافحة الأشرار جرو للمشاركة في مهمة للقبض على أحد أفراد العصابات الخطيرة الذي يحاول نشر الشر بالعالم، ليثبت بأنه الأفضل في هذا المجال.",
     "poster": "https://image.tmdb.org/t/p/w500/2CdVQ8U8xp7mUPMdYwIAnM6hcTh.jpg",
