@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Warrior",
+    "desc": "يعود الابن الأصغر لملاكم سابق مدمن على الكحول إلى المنزل ، حيث تدرب على يد والده للمنافسة في بطولة فنون القتال المختلطة - وهو المسار الذي يضع المقاتل في مسار تصادمي مع أخيه الأكبر المنفصل.",
+    "poster": "https://image.tmdb.org/t/p/w500/iM8n4nZJPR2abpnyZ36FUgHiRjr.jpg",
+    "hdUrl": "https://streamtape.com/e/oeZqaGbmpjHJg4B/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oeZqaGbmpjHJg4B/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "دراما حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Joel Edgerton",
+            "image": "https://image.tmdb.org/t/p/w185/r2TTDZ8cG5wrZqx7Drz1M95S9z3.jpg"
+        },
+        {
+            "name": "Tom Hardy",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Nick Nolte",
+            "image": "https://image.tmdb.org/t/p/w185/jpYzFBi6zfn8CHVaXmqgiOTas4V.jpg"
+        },
+        {
+            "name": "Jennifer Morrison",
+            "image": "https://image.tmdb.org/t/p/w185/lTu5IRT6egUMfQeC3kFhNNzWvqV.jpg"
+        },
+        {
+            "name": "Frank Grillo",
+            "image": "https://image.tmdb.org/t/p/w185/kuEco4vo1xrsM8DyrNSZUEi593P.jpg"
+        }
+    ]
+},
+    {
     "title": "To All the Boys I've Loved Before",
     "desc": "تنقلب الأمور تمامًا، وذلك حينما تخرج خطابات سرية لفتاة مراهقة تخص أولاد كانت تواعدهم إلى النور، لتنكشف العديد من الأسرار حول العلاقات الاجتماعية والبشر.",
     "poster": "https://image.tmdb.org/t/p/w500/hKHZhUbIyUAjcSrqJThFGYIR6kI.jpg",
