@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "My Neighbor Totoro",
+    "desc": "عند احتجاز والدتهما بالمستشفى، أمضت الأختان الصغيرتان الصيف في الريف الياباني بصحبة والدهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/c5BdKITdpcp47tLw7CU7xbp0orU.jpg",
+    "hdUrl": "https://streamtape.com/e/kqOB66ZojYSeom/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/kqOB66ZojYSeom/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.1",
+    "genre": "فانتازيا رسوم متحركة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Noriko Hidaka",
+            "image": "https://image.tmdb.org/t/p/w185/43OuwsjqGf7JxpFpUvB75OdDDXQ.jpg"
+        },
+        {
+            "name": "Chika Sakamoto",
+            "image": "https://image.tmdb.org/t/p/w185/lIIwnLmcgGpifpRflBq0kLW9EpK.jpg"
+        },
+        {
+            "name": "Hitoshi Takagi",
+            "image": "https://image.tmdb.org/t/p/w185/lQWkgAGIdJ3Q93xI95ke6LZfzHW.jpg"
+        },
+        {
+            "name": "Shigesato Itoi",
+            "image": "https://image.tmdb.org/t/p/w185/2V17CMIcxb6JEHT5Qp3FKdlHUoE.jpg"
+        },
+        {
+            "name": "Sumi Shimamoto",
+            "image": "https://image.tmdb.org/t/p/w185/iKIDv2VFpAgzJ0uMQi7pzcMHB9i.jpg"
+        }
+    ]
+},
+    {
     "title": "Logan",
     "desc": "في المستقبل القريب، يعتني لوغان المُرهق بالبروفيسور X المريض في مخبأ على الحدود المكسيكية. لكن محاولات لوغان للاختباء من العالم وإرثه تنقلب رأسا على عقب عندما تصل متحولة شابة، تلاحقها قوى الظلام.",
     "poster": "https://image.tmdb.org/t/p/w500/26LrQAVnCF5RlDEHKoXOr5ohlX0.jpg",
