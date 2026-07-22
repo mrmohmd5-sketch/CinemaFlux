@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Despicable Me",
+    "desc": "يُدبّر الشرير 'غرو' لسرقة القمر من السماء، لكنه يجد صعوبة في الاستمرار في هذه المهمّة بعدما يجد نفسه مسؤولًا عن رعاية ثلاث يتيمات.",
+    "poster": "https://image.tmdb.org/t/p/w500/2tIPyOpZBcfFnf4ZKbiFPPDQn30.jpg",
+    "hdUrl": "https://streamtape.com/e/9qAAogkX8mIB8b/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9qAAogkX8mIB8b/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "رسوم متحركة كوميديا جريمة خيال علمي عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Steve Carell",
+            "image": "https://image.tmdb.org/t/p/w185/cS7Cbyff6wFVfUGem497vy9LS7A.jpg"
+        },
+        {
+            "name": "Jason Segel",
+            "image": "https://image.tmdb.org/t/p/w185/aG6tVNSbl1YEjN65G3luFYnWbUM.jpg"
+        },
+        {
+            "name": "Russell Brand",
+            "image": "https://image.tmdb.org/t/p/w185/AzRt43rdeK5nH7w6uWyyVwYla0.jpg"
+        },
+        {
+            "name": "Julie Andrews",
+            "image": "https://image.tmdb.org/t/p/w185/yQ0J92DMiLtQYoytLJ6CuBkdeN0.jpg"
+        },
+        {
+            "name": "Will Arnett",
+            "image": "https://image.tmdb.org/t/p/w185/cXupYqk2ERP13XBkw816skYdVDO.jpg"
+        }
+    ]
+},
+    {
     "title": "Ava",
     "desc": "تعمل آفا كقاتلة مأجورة لمنظمة متخصصة في العمليات غير المشروعة، ولكن عندما تسير مهمة كُلفت بها على نحو خاطئ، يصبح عليها فعل المستحيل من أجل إنقاذ حياتها.",
     "poster": "https://image.tmdb.org/t/p/w500/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
