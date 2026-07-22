@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Batman Begins",
+    "desc": "مدفوعًا بالمأساة ، كرّس الملياردير بروس واين حياته لكشف ودحر الفساد الذي ابتلي بمنزله ، مدينة جوثام. غير قادر على العمل داخل النظام ، بدلاً من ذلك ، أنشأ هوية جديدة ، رمزًا للخوف على عالم الجريمة الإجرامي - باتمان.",
+    "poster": "https://image.tmdb.org/t/p/w500/9WO6y90Q275A8tiMNrJ28fxwU9H.jpg",
+    "hdUrl": "https://streamtape.com/e/ZaxV8703goHoJm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ZaxV8703goHoJm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "دراما جريمة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Christian Bale",
+            "image": "https://image.tmdb.org/t/p/w185/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+        },
+        {
+            "name": "Michael Caine",
+            "image": "https://image.tmdb.org/t/p/w185/bVZRMlpjTAO2pJK6v90buFgVbSW.jpg"
+        },
+        {
+            "name": "Liam Neeson",
+            "image": "https://image.tmdb.org/t/p/w185/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+        },
+        {
+            "name": "Katie Holmes",
+            "image": "https://image.tmdb.org/t/p/w185/gDhc9rLbhpXdY8lISD7yPiIhvp4.jpg"
+        },
+        {
+            "name": "Gary Oldman",
+            "image": "https://image.tmdb.org/t/p/w185/yhaSM5habNNI1Tf4ALRwRk3VvSZ.jpg"
+        }
+    ]
+},
+    {
     "title": "Catch Me If You Can",
     "desc": "قصة حقيقية عن فرانك أباجنال جونيور الذي نجح قبل عيد ميلاده التاسع عشر في خداع شيكات بملايين الدولارات كطيار وطبيب ومدعي عام في شركة بان آم. عميل في مكتب التحقيقات الفيدرالي يجعل مهمته وضعه وراء القضبان. لكن فرانك لا يستعصي فقط على الاستيلاء ، بل يبهج في السعي وراءه.",
     "poster": "https://image.tmdb.org/t/p/w500/jm4wVFzzVHMlUOd6fiPJB2wjo9J.jpg",
