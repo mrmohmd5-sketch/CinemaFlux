@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Oldboy",
+    "desc": "دون أن يكون لديه أدنى فكرة عن سبب حبسه وتخديره وتعذيبه على مدى 15 عامًا، يسعى رجل يائس إلى الانتقام من آسريه.",
+    "poster": "https://image.tmdb.org/t/p/w500/29a5z1V42FXK1zHNqxYdCqfc8N3.jpg",
+    "hdUrl": "https://streamtape.com/e/9y21Pj9J2pIaXm0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9y21Pj9J2pIaXm0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "إثارة غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Choi Min-sik",
+            "image": "https://image.tmdb.org/t/p/w185/sd7gIA6nEkq6zumkDCfxSE0YSSV.jpg"
+        },
+        {
+            "name": "Yoo Ji-tae",
+            "image": "https://image.tmdb.org/t/p/w185/gGGV2gc0orgssYJ0Q9MSomdYo2I.jpg"
+        },
+        {
+            "name": "Kang Hye-jung",
+            "image": "https://image.tmdb.org/t/p/w185/1MYnPxhU9GnhkitxVoWuR9kNiqu.jpg"
+        },
+        {
+            "name": "Kim Byeong-ok",
+            "image": "https://image.tmdb.org/t/p/w185/oGVs2OmYTyXR0KT9xvzVWCAKx8t.jpg"
+        },
+        {
+            "name": "Ji Dae-han",
+            "image": "https://image.tmdb.org/t/p/w185/9aoOX8p2oxUAwOaT8jT6GWfjs01.jpg"
+        }
+    ]
+},
+    {
     "title": "Mad Max: Fury Road",
     "desc": "في أقصى أطراف الأرض، وسط صحراء قاحلة وعالم ممزق، يقاتل الجميع بجنون من أجل البقاء. في قلب الفوضى، يهرب متمردان... وقد يكون بيدهما أمل استعادة النظام.",
     "poster": "https://image.tmdb.org/t/p/w500/rvoQHUQGskr7HIQdsyYeOe0GYiL.jpg",
