@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Hacksaw Ridge",
+    "desc": "يرفض طبيب الجيش الأمريكي في الحرب العالمية الثانية ديزموند تي دوس ، الذي خدم أثناء معركة أوكيناوا ، قتل الناس ويصبح أول معترض ضميريًا في التاريخ الأمريكي يحصل على ميدالية الشرف من الكونغرس.",
+    "poster": "https://image.tmdb.org/t/p/w500/fnOMP6mjmOmZwmlC1n0K7ivrzt1.jpg",
+    "hdUrl": "https://streamtape.com/e/RXyw8ADb7LULo3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/RXyw8ADb7LULo3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "دراما تاريخ حرب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Andrew Garfield",
+            "image": "https://image.tmdb.org/t/p/w185/beO5YvbTjrr5yy8hW26KVDMSr35.jpg"
+        },
+        {
+            "name": "Sam Worthington",
+            "image": "https://image.tmdb.org/t/p/w185/vM1WIfYQ1HUBtlVPwB9Hp9fLcn8.jpg"
+        },
+        {
+            "name": "Vince Vaughn",
+            "image": "https://image.tmdb.org/t/p/w185/qImHvsd7SFJh46Ujx50xUfkeMNz.jpg"
+        },
+        {
+            "name": "Teresa Palmer",
+            "image": "https://image.tmdb.org/t/p/w185/sjSiLSCp9LS1Z0nyGpmquTBuUyr.jpg"
+        },
+        {
+            "name": "Luke Bracey",
+            "image": "https://image.tmdb.org/t/p/w185/ot2h7IrXpC8XSnIZDSVsj2FQ5cx.jpg"
+        }
+    ]
+},
+    {
     "title": "John Wick: Chapter 4",
     "desc": "بعدما اكتشف طريقة ستمكنه من القضاء على المجلس الأعلى واستعادة حريته، يجد جون ويك نفسه في مواجهة مع عدو جديد تدفعه للشك حتى في أصدقاؤه القدامى.",
     "poster": "https://image.tmdb.org/t/p/w500/j6Zcib1u1QhBs0KVKU8yxOugkAv.jpg",
