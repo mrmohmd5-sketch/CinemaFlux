@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Dark Knight",
+    "desc": "يبدأ باتمان فى محاربة العدو الجديد (الجوكر) الذي يسعى لنشر الذعر والشر في جوثام، وإثبات أن العيش بدون قواعد أفضل، مما يؤدي لصراع بين الاثنين يشترك فيه المفتش جوردن والمدعى العام هارفي دينت وراشيل صديقة بروس وين.",
+    "poster": "https://image.tmdb.org/t/p/w500/6Z9znq1IxwknrdPbXyr7NJJPhpP.jpg",
+    "hdUrl": "https://streamtape.com/e/dr1eboyXKoFkkV1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/dr1eboyXKoFkkV1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Christian Bale",
+            "image": "https://image.tmdb.org/t/p/w185/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+        },
+        {
+            "name": "Heath Ledger",
+            "image": "https://image.tmdb.org/t/p/w185/AdWKVqyWpkYSfKE5Gb2qn8JzHni.jpg"
+        },
+        {
+            "name": "Aaron Eckhart",
+            "image": "https://image.tmdb.org/t/p/w185/u5JjnRMr9zKEVvOP7k3F6gdcwT6.jpg"
+        },
+        {
+            "name": "Michael Caine",
+            "image": "https://image.tmdb.org/t/p/w185/bVZRMlpjTAO2pJK6v90buFgVbSW.jpg"
+        },
+        {
+            "name": "Maggie Gyllenhaal",
+            "image": "https://image.tmdb.org/t/p/w185/vsfkWdYWmA9CpzMHTJzrFxlDnEZ.jpg"
+        }
+    ]
+},
+    {
     "title": "The Green Mile",
     "desc": "حكاية خارقة للطبيعة على ذمة الإعدام في سجن جنوبي ، حيث يمتلك العملاق اللطيف جون كوفي القوة الغامضة لعلاج أمراض الناس. عندما يتعرف حارس المبنى الرئيسي ، بول إدجكومب ، على هدية كوفي المعجزة ، يحاول يائسًا المساعدة في تجنب إعدام الرجل المدان.",
     "poster": "https://image.tmdb.org/t/p/w500/vAHuvaUC885P78BNS3BMu9qM7ve.jpg",
