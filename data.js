@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Rush",
+    "desc": "دراما سيرة ذاتية تركزت على التنافس بين سائقي الفورمولا 1 جيمس هانت ونيكي لاودا خلال موسم سباق السيارات للفورمولا 1 عام 1976.",
+    "poster": "https://image.tmdb.org/t/p/w500/ieGa88TTLY6nltJmLrHUYV1XXOP.jpg",
+    "hdUrl": "https://streamtape.com/e/yPxx64WG9yC19kL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yPxx64WG9yC19kL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "دراما حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Daniel Brühl",
+            "image": "https://image.tmdb.org/t/p/w185/3YlmTfiy5qZXkrdKGjaM1uMjGKP.jpg"
+        },
+        {
+            "name": "Olivia Wilde",
+            "image": "https://image.tmdb.org/t/p/w185/eODi1QKamyVa41eSK2SjU20VAZS.jpg"
+        },
+        {
+            "name": "Alexandra Maria Lara",
+            "image": "https://image.tmdb.org/t/p/w185/68YNY2TfvsE9T3tcCeHDVXbnzyB.jpg"
+        },
+        {
+            "name": "Pierfrancesco Favino",
+            "image": "https://image.tmdb.org/t/p/w185/hedzgTKFKrSleWvLkBlANng8w4T.jpg"
+        }
+    ]
+},
+    {
     "title": "Pulp Fiction",
     "desc": "يتلاقى الرجل الضارب المحب للبرغر ، وشريكه الفلسفي ، ورجل العصابات المدمن على المخدرات ، والملاكم المغسول في هذه الجريمة الكوميدية المترامية الأطراف. تتجلى مغامراتهم في ثلاث قصص تتنقل ببراعة ذهابًا وإيابًا في الوقت المناسب.",
     "poster": "https://image.tmdb.org/t/p/w500/A3NXS5e7Zc3FRyi63b7TdPGjFwI.jpg",
