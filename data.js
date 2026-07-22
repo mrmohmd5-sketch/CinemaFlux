@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Lord of the Rings: The Return of the King",
+    "desc": "تم الكشف عن أراغورن باعتباره وريث الملوك القدامى حيث يكافح هو وقاندالف والأعضاء الآخرون في الشركة المكسورة لإنقاذ جوندور من قوات سورون. في هذه الأثناء ، يقترب فرودو وسام من الخاتم إلى قلب موردور ، عالم اللورد المظلم.",
+    "poster": "https://image.tmdb.org/t/p/w500/xMMnQwgVbz5tbbKN6rxHxST9613.jpg",
+    "hdUrl": "https://streamtape.com/e/QKGvv9Yorxh00zj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QKGvv9Yorxh00zj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "مغامرة فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Elijah Wood",
+            "image": "https://image.tmdb.org/t/p/w185/7UKRbJBNG7mxBl2QQc5XsAh6F8B.jpg"
+        },
+        {
+            "name": "Ian McKellen",
+            "image": "https://image.tmdb.org/t/p/w185/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg"
+        },
+        {
+            "name": "Viggo Mortensen",
+            "image": "https://image.tmdb.org/t/p/w185/vH5gVSpHAMhDaFWfh0Q7BG61O1y.jpg"
+        },
+        {
+            "name": "Sean Astin",
+            "image": "https://image.tmdb.org/t/p/w185/As3ctGUtBYmG4zj4Ifyrcqd71HP.jpg"
+        },
+        {
+            "name": "Andy Serkis",
+            "image": "https://image.tmdb.org/t/p/w185/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg"
+        }
+    ]
+},
+    {
     "title": "The Lord of the Rings: The Two Towers",
     "desc": "يسافر فرودو وسام إلى موردور لتدمير حلقة القوة الواحدة بينما يبحث جيملي وليجولاس وأراغورن عن ميري وبيبين المأسورين من قبل شركة مصفاة نفط عمان. طوال الوقت، ينتظر الساحر الشائن سارومان أعضاء الزمالة في برج أورثانك في إيسينغارد.",
     "poster": "https://image.tmdb.org/t/p/w500/6gZlbPmghGc9rSplHtRm94ezNIa.jpg",
