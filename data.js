@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "John Wick",
+    "desc": "تدور أحداث الفيلم حول القاتل المحترف السابق جون ويك (كيانو ريفز) ، والذي يحدث له شيء يعكر عليه حياته المسالمة الحالية ، حيث يقوم أحد اللصوص باقتحام بيته ، وسرقة سيارته ، وقتل كلبه ، الكلب الذي أعطته له زوجته السابقة ، فيذهب (جون) إلى (نيويورك) سعيا إلى الانتقام من هذا اللص ، ولكن يكتشف أن والد هذا اللص هو زعيم عصابة روسي ، والذي يضع مكافأة لمن يقتل (جون) ، وإذا بـ(ماركوس) الشريك السابق ، وصديق (جون) يحاول الحصول على هذه المكافأة .",
+    "poster": "https://image.tmdb.org/t/p/w500/AhFvO9Yl5W767qwao3rKpuB2LbC.jpg",
+    "hdUrl": "https://streamtape.com/e/34Vre627yaSa2r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/34Vre627yaSa2r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Keanu Reeves",
+            "image": "https://image.tmdb.org/t/p/w185/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        },
+        {
+            "name": "Michael Nyqvist",
+            "image": "https://image.tmdb.org/t/p/w185/d9nGt8MloJwosRbGp10gaeHExcZ.jpg"
+        },
+        {
+            "name": "Alfie Allen",
+            "image": "https://image.tmdb.org/t/p/w185/aF3SyXNd2JfktnYkUvC1tsFHJDu.jpg"
+        },
+        {
+            "name": "Willem Dafoe",
+            "image": "https://image.tmdb.org/t/p/w185/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg"
+        },
+        {
+            "name": "Dean Winters",
+            "image": "https://image.tmdb.org/t/p/w185/zxgOZAYGxa2qmiZkJKGRIhwbGhG.jpg"
+        }
+    ]
+},
+    {
     "title": "Inglourious Basterds",
     "desc": "في فرنسا التي احتلها النازيون خلال الحرب العالمية الثانية ، تم اختيار مجموعة من الجنود الأمريكيين اليهود المعروفين باسم 'الباستردز' على وجه التحديد لنشر الخوف في جميع أنحاء الرايخ الثالث عن طريق المضاربة وقتل النازيين بوحشية. سرعان ما التقى آل باستردز بقيادة الملازم ألدو راين مع فتاة مراهقة فرنسية يهودية تدير مسرحًا للسينما في باريس استهدفها الجنود.",
     "poster": "https://image.tmdb.org/t/p/w500/6Fzavx3TDDFSZctwGn4j60EHyN.jpg",
