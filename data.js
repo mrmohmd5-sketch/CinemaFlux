@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Requiem for a Dream",
+    "desc": "تحطمت آمال وأحلام أربعة أشخاص طموحين عندما بدأ إدمانهم للمخدرات بالخروج عن نطاق السيطرة. نظرة إلى الإدمان وكيف يتغلب على العقل والجسد.",
+    "poster": "https://image.tmdb.org/t/p/w500/n1PTcgvAiZzp8z471zMxaXf1Oi4.jpg",
+    "hdUrl": "https://streamtape.com/e/paeeOWVgAlirp3p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/paeeOWVgAlirp3p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "جريمة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ellen Burstyn",
+            "image": "https://image.tmdb.org/t/p/w185/zGihSIVRzwmCqilnA4PmNM4C2RT.jpg"
+        },
+        {
+            "name": "Jared Leto",
+            "image": "https://image.tmdb.org/t/p/w185/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg"
+        },
+        {
+            "name": "Jennifer Connelly",
+            "image": "https://image.tmdb.org/t/p/w185/wdmcJagSRJ65AuJ4IUCzuHAdvgy.jpg"
+        },
+        {
+            "name": "Marlon Wayans",
+            "image": "https://image.tmdb.org/t/p/w185/7LYnX3vluHFBs1WCRKUjSIEDEkn.jpg"
+        },
+        {
+            "name": "Christopher McDonald",
+            "image": "https://image.tmdb.org/t/p/w185/gK1XhbfD9Xd8s3VXRPpgDCluyZp.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
     "desc": "الاستعداد ليتم تفجيرها من الماء.  جاك سبارو ، قرصان حر من القرن 18th ، يتشاجر مع قرصان منافس عازم على نهب بورت رويال. عندما يتم اختطاف ابنة الحاكم ، يقرر سبارو مساعدة حب الفتاة في إنقاذها.",
     "poster": "https://image.tmdb.org/t/p/w500/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg",
