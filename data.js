@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "John Wick: Chapter 3 - Parabellum",
+    "desc": "يعود القاتل الخارق جون ويك باربعة عشر مليون دولار على رأسه وجيش من القتلة الذين يصطادون المكافآت على دربه. بعد قتل عضو في جماعة القتله الدولية الغامضة  'هاي تايبل' جون ويك هو طارد، لكن أكثر الرجال والنساء ضرباً في العالم ينتظرونه بكل منعطف.",
+    "poster": "https://image.tmdb.org/t/p/w500/LbIUMWP752hkVPxafA1LR5otGn.jpg",
+    "hdUrl": "https://streamtape.com/e/w48xdLgz3ghJXpP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/w48xdLgz3ghJXpP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Keanu Reeves",
+            "image": "https://image.tmdb.org/t/p/w185/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        },
+        {
+            "name": "Halle Berry",
+            "image": "https://image.tmdb.org/t/p/w185/yfAJMERSlDIZD1iy6Aab8bArcCK.jpg"
+        },
+        {
+            "name": "Ian McShane",
+            "image": "https://image.tmdb.org/t/p/w185/qh9RTLbnr128TZLdGuXwUH9mdBM.jpg"
+        },
+        {
+            "name": "Laurence Fishburne",
+            "image": "https://image.tmdb.org/t/p/w185/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+        },
+        {
+            "name": "Mark Dacascos",
+            "image": "https://image.tmdb.org/t/p/w185/trOACuJz1KzhB51qe6asaxRuxrh.jpg"
+        }
+    ]
+},
+    {
     "title": "John Wick: Chapter 2",
     "desc": "أُجبر جون ويك على ترك التقاعد على يد زميل سابق يسعى للسيطرة على نقابة قتلة دولية غامضة. ملتزمًا بقسم الدم لمساعدته ، يسافر ويك إلى روما ويخوض معركة ضد بعض أخطر القتلة في العالم.",
     "poster": "https://image.tmdb.org/t/p/w500/eRsjW25YfROtayinWVI8HVIHyoX.jpg",
