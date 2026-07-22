@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Toy Story",
+    "desc": "تعيش ألعاب آندي، بقيادة وودي، بسعادة في غرفته حتى عيد ميلاد آندي الذي جلب معه باز لايتيير إلى المشهد. خوفًا من فقدان مكانته في قلب آندي، يدبر وودي مكائد ضد باز. ولكن عندما تفرق الظروف باز ووودي عن صاحبهما، يتعلم الثنائي في النهاية وضع خلافاتهما جانبًا.",
+    "poster": "https://image.tmdb.org/t/p/w500/hX5TEEzea1XX8t2V9VK5InW4M7x.jpg",
+    "hdUrl": "https://streamtape.com/e/YGp4xqlyKwirLP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YGp4xqlyKwirLP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "عائلي كوميديا رسوم متحركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Tim Allen",
+            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+            "name": "Don Rickles",
+            "image": "https://image.tmdb.org/t/p/w185/iGMOVxIQoTPepRvqSCtRulfpx7u.jpg"
+        },
+        {
+            "name": "Jim Varney",
+            "image": "https://image.tmdb.org/t/p/w185/zvBFmvKUrPvE6FW35O3RP4i1ZPp.jpg"
+        },
+        {
+            "name": "Wallace Shawn",
+            "image": "https://image.tmdb.org/t/p/w185/wVaM1WlFKDce4esThwL4XtNLhOe.jpg"
+        }
+    ]
+},
+    {
     "title": "The Lord of the Rings: The Return of the King",
     "desc": "تم الكشف عن أراغورن باعتباره وريث الملوك القدامى حيث يكافح هو وقاندالف والأعضاء الآخرون في الشركة المكسورة لإنقاذ جوندور من قوات سورون. في هذه الأثناء ، يقترب فرودو وسام من الخاتم إلى قلب موردور ، عالم اللورد المظلم.",
     "poster": "https://image.tmdb.org/t/p/w500/xMMnQwgVbz5tbbKN6rxHxST9613.jpg",
