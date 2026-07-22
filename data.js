@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "No Country for Old Men",
+    "desc": "يتعثر Llewelyn Moss على جثث الموتى ، ومليوني دولار وكنزًا من الهيروين في صحراء تكساس ، لكن القاتل المنهجي أنطون تشيجور يأتي للبحث عنه ، مع المأمور المحلي إد توم بيل في طريقه. يتلاشى دور الفريسة والحيوان بينما يتصادم السعي العنيف وراء المال والعدالة.",
+    "poster": "https://image.tmdb.org/t/p/w500/9aIdpQ1FOcb9hSu4KOmrgN5KAfl.jpg",
+    "hdUrl": "https://streamtape.com/e/RwwZxqprqVfxY9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/RwwZxqprqVfxY9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "جريمة إثارة غربي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Javier Bardem",
+            "image": "https://image.tmdb.org/t/p/w185/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+        },
+        {
+            "name": "Tommy Lee Jones",
+            "image": "https://image.tmdb.org/t/p/w185/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg"
+        },
+        {
+            "name": "Josh Brolin",
+            "image": "https://image.tmdb.org/t/p/w185/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+            "name": "Woody Harrelson",
+            "image": "https://image.tmdb.org/t/p/w185/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg"
+        },
+        {
+            "name": "Kelly Macdonald",
+            "image": "https://image.tmdb.org/t/p/w185/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg"
+        }
+    ]
+},
+    {
     "title": "Oldboy",
     "desc": "دون أن يكون لديه أدنى فكرة عن سبب حبسه وتخديره وتعذيبه على مدى 15 عامًا، يسعى رجل يائس إلى الانتقام من آسريه.",
     "poster": "https://image.tmdb.org/t/p/w500/29a5z1V42FXK1zHNqxYdCqfc8N3.jpg",
