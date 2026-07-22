@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "desc": "الاستعداد ليتم تفجيرها من الماء.  جاك سبارو ، قرصان حر من القرن 18th ، يتشاجر مع قرصان منافس عازم على نهب بورت رويال. عندما يتم اختطاف ابنة الحاكم ، يقرر سبارو مساعدة حب الفتاة في إنقاذها.",
+    "poster": "https://image.tmdb.org/t/p/w500/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg",
+    "hdUrl": "https://streamtape.com/e/yovb3qQX1Qu1rpo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yovb3qQX1Qu1rpo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "مغامرة فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Johnny Depp",
+            "image": "https://image.tmdb.org/t/p/w185/k2xt6EUxQDwYRKIyI4IBdZxfs8n.jpg"
+        },
+        {
+            "name": "Geoffrey Rush",
+            "image": "https://image.tmdb.org/t/p/w185/npXFjaFQzBNroCEPllGPTZ5IisA.jpg"
+        },
+        {
+            "name": "Orlando Bloom",
+            "image": "https://image.tmdb.org/t/p/w185/lwQoA0qJTCZ6l2FH6PjmhRQjiaB.jpg"
+        },
+        {
+            "name": "Keira Knightley",
+            "image": "https://image.tmdb.org/t/p/w185/k69IOXdz8PAvaegAI8WYvQvyyUJ.jpg"
+        },
+        {
+            "name": "Jack Davenport",
+            "image": "https://image.tmdb.org/t/p/w185/shGH0YWJBfiJznidS0f2ZfN056c.jpg"
+        }
+    ]
+},
+    {
     "title": "No Country for Old Men",
     "desc": "يتعثر Llewelyn Moss على جثث الموتى ، ومليوني دولار وكنزًا من الهيروين في صحراء تكساس ، لكن القاتل المنهجي أنطون تشيجور يأتي للبحث عنه ، مع المأمور المحلي إد توم بيل في طريقه. يتلاشى دور الفريسة والحيوان بينما يتصادم السعي العنيف وراء المال والعدالة.",
     "poster": "https://image.tmdb.org/t/p/w500/9aIdpQ1FOcb9hSu4KOmrgN5KAfl.jpg",
