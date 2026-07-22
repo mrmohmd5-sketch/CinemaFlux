@@ -539,7 +539,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": " أن غاب القط ",
+    "title": " ان غاب القط ",
     "desc": "تؤدي سرقة لوحة شهيرة من أحد المتاحف إلى صراع غير متوقّع بين أفراد العصابة وموظفي المتحف، وفي خضم ذلك، تنشأ علاقة حب غير مألوفة.",
     "poster": "https://image.tmdb.org/t/p/w500/gjeRJALgxL1lTN0pn8r1pyoBH3Y.jpg",
     "hdUrl": "https://streamtape.com/e/LMdAJ7YpJkFRjWM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
