@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Dark Knight Rises",
+    "desc": "ثمان سنواتٍ مضت تحمْل فيها باتمان (كريستيان بال) مسئولية موت هارفي دنت حتى أنه عاش في ظلامٍ حالكٍ لفترةٍ طويلةٍ نتيجة ذلك. يعود باتمان مرةً أخرى عندما يهدد الشرير المقنع باين (توم هاردي) مدينة جوثام ويقودها نحو الهاوية؛ فيحاول باتمان إنقاذ المدينة وسكان المدينة من هذه العقلية الإجرامية. حيث إن باين ما هو إلا قائدٌ إرهابيٌ يقود مدينة جوثام للهلاك. في جوٍ مليءٍ بالتشويق والإثارة تدور معاركٌ حامية بين باتمان وباين وتتعقد الأحداث لتصل لمدى لا يتخيله أحد.",
+    "poster": "https://image.tmdb.org/t/p/w500/gDQLSmVsPxvOmQIAVFcl6Akn7Nh.jpg",
+    "hdUrl": "https://streamtape.com/e/P636DX4xWvtBpq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/P636DX4xWvtBpq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "حركة جريمة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Christian Bale",
+            "image": "https://image.tmdb.org/t/p/w185/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+        },
+        {
+            "name": "Gary Oldman",
+            "image": "https://image.tmdb.org/t/p/w185/yhaSM5habNNI1Tf4ALRwRk3VvSZ.jpg"
+        },
+        {
+            "name": "Tom Hardy",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Joseph Gordon-Levitt",
+            "image": "https://image.tmdb.org/t/p/w185/z2FA8js799xqtfiFjBTicFYdfk.jpg"
+        },
+        {
+            "name": "Anne Hathaway",
+            "image": "https://image.tmdb.org/t/p/w185/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        }
+    ]
+},
+    {
     "title": "The Dark Knight",
     "desc": "يبدأ باتمان فى محاربة العدو الجديد (الجوكر) الذي يسعى لنشر الذعر والشر في جوثام، وإثبات أن العيش بدون قواعد أفضل، مما يؤدي لصراع بين الاثنين يشترك فيه المفتش جوردن والمدعى العام هارفي دينت وراشيل صديقة بروس وين.",
     "poster": "https://image.tmdb.org/t/p/w500/6Z9znq1IxwknrdPbXyr7NJJPhpP.jpg",
