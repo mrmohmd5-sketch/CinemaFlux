@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Despicable Me 2",
+    "title": "Despicable Me 2مدبلج",
     "desc": "في الوقت الذي يعاني فيه من مسؤولياته كأب، تستدعي رابطة مكافحة الأشرار جرو للمشاركة في مهمة للقبض على أحد أفراد العصابات الخطيرة الذي يحاول نشر الشر بالعالم، ليثبت بأنه الأفضل في هذا المجال.",
     "poster": "https://image.tmdb.org/t/p/w500/2CdVQ8U8xp7mUPMdYwIAnM6hcTh.jpg",
     "hdUrl": "https://streamtape.com/e/8V7W2eo7OaiXwg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -32,7 +32,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Despicable Me",
+    "title": "Despicable Meمدبلج",
     "desc": "يُدبّر الشرير 'غرو' لسرقة القمر من السماء، لكنه يجد صعوبة في الاستمرار في هذه المهمّة بعدما يجد نفسه مسؤولًا عن رعاية ثلاث يتيمات.",
     "poster": "https://image.tmdb.org/t/p/w500/2tIPyOpZBcfFnf4ZKbiFPPDQn30.jpg",
     "hdUrl": "https://streamtape.com/e/PDwZdJGJDjf0OOW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
