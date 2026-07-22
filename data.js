@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Memento",
+    "desc": "يقوم ليونارد شيلبي بتعقب الرجل الذي اغتصب زوجته وقتلها. ومع ذلك ، فإن صعوبة تحديد مكان قاتل زوجته تتفاقم بسبب حقيقة أنه يعاني من شكل نادر وغير قابل للعلاج من فقدان الذاكرة قصير المدى. على الرغم من أنه يستطيع تذكر تفاصيل الحياة قبل وقوع الحادث ، إلا أن ليونارد لا يتذكر ما حدث قبل خمسة عشر دقيقة ، إلى أين يذهب ، أو لماذا.",
+    "poster": "https://image.tmdb.org/t/p/w500/dUOPHJdQTMq80dCQLglFkjFGnd0.jpg",
+    "hdUrl": "https://streamtape.com/e/3BqVPRJO9wuXWo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3BqVPRJO9wuXWo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "غموض إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Guy Pearce",
+            "image": "https://image.tmdb.org/t/p/w185/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg"
+        },
+        {
+            "name": "Carrie-Anne Moss",
+            "image": "https://image.tmdb.org/t/p/w185/xD4jTA3KmVp5Rq3aHcymL9DUGjD.jpg"
+        },
+        {
+            "name": "Joe Pantoliano",
+            "image": "https://image.tmdb.org/t/p/w185/3OHUI3nX4SYGGItDk3xqeIvWtIf.jpg"
+        },
+        {
+            "name": "Mark Boone Junior",
+            "image": "https://image.tmdb.org/t/p/w185/zcYYnZNxOfMOLq7zL0hJheoVM2k.jpg"
+        },
+        {
+            "name": "Russ Fega",
+            "image": "https://image.tmdb.org/t/p/w185/d0W7kq97Ul8Iz5LZIVNDKxSly8M.jpg"
+        }
+    ]
+},
+    {
     "title": "My Neighbor Totoro",
     "desc": "عند احتجاز والدتهما بالمستشفى، أمضت الأختان الصغيرتان الصيف في الريف الياباني بصحبة والدهما.",
     "poster": "https://image.tmdb.org/t/p/w500/c5BdKITdpcp47tLw7CU7xbp0orU.jpg",
