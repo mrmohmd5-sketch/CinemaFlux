@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Tank",
+    "desc": "الجبهة الشرقية عام 1943: يُرسل طاقم دبابة ألمانية طراز تايغر في مهمة خطرة وراء خطوط النزاع التي تشهد حرباً شرسة. مع تقدمهم عبر الأراضي المحفوفة بالمخاطر المميتة، عليهم مواجهة العدو وهواجسهم الداخلية أيضاً.",
+    "poster": "https://image.tmdb.org/t/p/w500/1dYvIciST7D2lTxHy4kgCjFAhkI.jpg",
+    "hdUrl": "https://streamtape.com/e/2WP9vWk1QXHZ0l7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/2WP9vWk1QXHZ0l7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "حرب حركة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Laurence Rupp",
+            "image": "https://image.tmdb.org/t/p/w185/91VVksg6HJxUv0ahiay7ryatUqP.jpg"
+        },
+        {
+            "name": "David Schütter",
+            "image": "https://image.tmdb.org/t/p/w185/eCyL55l0fb9tccOQfdCGCd7XKAf.jpg"
+        },
+        {
+            "name": "Sebastian Urzendowsky",
+            "image": "https://image.tmdb.org/t/p/w185/hhviYpZZZIHkWVrd8LHWmVyreSp.jpg"
+        },
+        {
+            "name": "Leonard Kunz",
+            "image": "https://image.tmdb.org/t/p/w185/htq6xkZ03jkwLFdgbXMbranPRvI.jpg"
+        },
+        {
+            "name": "Yoran Leicher",
+            "image": "https://image.tmdb.org/t/p/w185/xn7csx8aw5VjPyNMxoViyfF8EyQ.jpg"
+        }
+    ]
+},
+    {
     "title": "Despicable Me 4مدبلج",
     "desc": "يواجه (جرو) العديد من التحديات العائلية بعد إنجاب زوجته لطفلهما الأول، تزامنًا مع هروب المجرم (ماكسيم لو مال)، والذي يقرر الانتقام من عدوه اللدود (جرو).",
     "poster": "https://image.tmdb.org/t/p/w500/rxIEByG8SSVuO1sPncNl7D703pd.jpg",
