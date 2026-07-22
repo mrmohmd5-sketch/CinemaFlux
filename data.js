@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Joker",
+    "desc": "خلال الثمانينيات من القرن الماضي، ممثل كوميدي فاشل - مدفوعًا بالجنون - يتحول إلى حياة الجريمة والفوضى في مدينة قوثام بينما يصبح شخصية مجرمة بنفسية سيئة.",
+    "poster": "https://image.tmdb.org/t/p/w500/ddWLmm7keTTsvPnVCVPAh2l4C4P.jpg",
+    "hdUrl": "https://streamtape.com/e/ykkyk2AOqRCo8J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ykkyk2AOqRCo8J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.1",
+    "genre": "جريمة إثارة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Joaquin Phoenix",
+            "image": "https://image.tmdb.org/t/p/w185/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg"
+        },
+        {
+            "name": "Robert De Niro",
+            "image": "https://image.tmdb.org/t/p/w185/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg"
+        },
+        {
+            "name": "Zazie Beetz",
+            "image": "https://image.tmdb.org/t/p/w185/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg"
+        },
+        {
+            "name": "Frances Conroy",
+            "image": "https://image.tmdb.org/t/p/w185/aJRQAkO24L6bH8qkkE5Iv1nA3gf.jpg"
+        },
+        {
+            "name": "Brett Cullen",
+            "image": "https://image.tmdb.org/t/p/w185/4P6TsRcnr9MRbXlCdHitulGM5LT.jpg"
+        }
+    ]
+},
+    {
     "title": "John Carter",
     "desc": "جون كارتر هو كابتن عسكري سابق مرهق من الحرب وتم نقله لسبب غير مفهوم إلى كوكب برسوم الغامض والغريب (المريخ) وأصبح متورطًا على مضض في صراع ملحمي. إنه عالم على وشك الانهيار ، ويعيد كارتر اكتشاف إنسانيته عندما يدرك أن بقاء برصوم وشعبه بين يديه.",
     "poster": "https://image.tmdb.org/t/p/w500/jdQXo2ggRRl07vTeXSLauzHubay.jpg",
