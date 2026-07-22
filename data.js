@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Catch Me If You Can",
+    "desc": "قصة حقيقية عن فرانك أباجنال جونيور الذي نجح قبل عيد ميلاده التاسع عشر في خداع شيكات بملايين الدولارات كطيار وطبيب ومدعي عام في شركة بان آم. عميل في مكتب التحقيقات الفيدرالي يجعل مهمته وضعه وراء القضبان. لكن فرانك لا يستعصي فقط على الاستيلاء ، بل يبهج في السعي وراءه.",
+    "poster": "https://image.tmdb.org/t/p/w500/jm4wVFzzVHMlUOd6fiPJB2wjo9J.jpg",
+    "hdUrl": "https://streamtape.com/e/dq10zvwVbeHkaZK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/dq10zvwVbeHkaZK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Leonardo DiCaprio",
+            "image": "https://image.tmdb.org/t/p/w185/mkdRcVIQl4WZhDf1vXKWTD7HZrZ.jpg"
+        },
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Christopher Walken",
+            "image": "https://image.tmdb.org/t/p/w185/ApgDL7nudR9T2GpjCG4vESgymO2.jpg"
+        },
+        {
+            "name": "Martin Sheen",
+            "image": "https://image.tmdb.org/t/p/w185/m2Y3Q0uyuW6htrn2W9UWCWMkpZu.jpg"
+        },
+        {
+            "name": "Nathalie Baye",
+            "image": "https://image.tmdb.org/t/p/w185/9WZnFcyqdixlOfqHKBXq0l0Rc4L.jpg"
+        }
+    ]
+},
+    {
     "title": "City of God",
     "desc": "Cidade de Deus هي مدينة أكواخ بدأت خلال الستينيات وأصبحت واحدة من أخطر الأماكن في ريو دي جانيرو في بداية الثمانينيات. لرواية قصة هذا المكان ، يصف الفيلم حياة الشخصيات المختلفة ، وكلها ترى من وجهة نظر الراوي ، بوسكابي. نشأ Buscapé في بيئة شديدة العنف. على الرغم من شعوره بأن كل الصعاب كانت ضده ، اكتشف أن الحياة يمكن رؤيتها بعيون أخرى ...",
     "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg",
