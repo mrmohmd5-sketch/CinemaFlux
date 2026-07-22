@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Interstellar",
+    "desc": "تدور الأحداث حول مجموعة من المستكشفين يستفيدون من ثقب دودي اكتُشف حديثًا لتجاوز حدود السفر البشري عبر الفضاء، وعبور المسافات الشاسعة التي تفصل بين العوالم البعيدة، في رحلة 'بين النجوم' قد تغيّر مصير البشرية إلى الأبد.",
+    "poster": "https://image.tmdb.org/t/p/w500/rR8bjK9dOXXH9H8AdpfPTlRx8Fy.jpg",
+    "hdUrl": "https://streamtape.com/e/R6G13XjAk7Cd4Vw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/R6G13XjAk7Cd4Vw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.5",
+    "genre": "مغامرة دراما خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matthew McConaughey",
+            "image": "https://image.tmdb.org/t/p/w185/lCySuYjhXix3FzQdS4oceDDrXKI.jpg"
+        },
+        {
+            "name": "Anne Hathaway",
+            "image": "https://image.tmdb.org/t/p/w185/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+            "name": "Michael Caine",
+            "image": "https://image.tmdb.org/t/p/w185/bVZRMlpjTAO2pJK6v90buFgVbSW.jpg"
+        },
+        {
+            "name": "Jessica Chastain",
+            "image": "https://image.tmdb.org/t/p/w185/eQKnihReJeB9vQEa5gySzAlKfZt.jpg"
+        },
+        {
+            "name": "Casey Affleck",
+            "image": "https://image.tmdb.org/t/p/w185/304ilSygaCRWykoBWAL67TOw8g9.jpg"
+        }
+    ]
+},
+    {
     "title": "Howl's Moving Castle",
     "desc": "أخذت القصة من رواية خيالية للأطفال من نفس الاسم وتأليف الكاتبة 'ديانا وايني جونز' بطلة القصة هي 'صوفي' التي تعيش مع زوجة أبيها وبنتيها بعد وفاة أبيها ، الذي ترك لهم محل لبيع القبعات ، تحولت إلى امرأة عجوز من قبل ساحرة ولذلك خرجت للبحث عن 'هاول' الساحر الذي أنقذها من قبل ليرجعها إلى شكلها الطبيعي ، والذي يمتلك قلعة مدهشة وغريبة والتي تبدو وكأنها رجل آلي عملاق وتتحرك بواسطة قوة شيطان النار 'كالكفر' فماذا سيحدث بعد ذلك ؟ وهل ستتمكن 'صوفي' من استرجاع شكلها السابق؟",
     "poster": "https://image.tmdb.org/t/p/w500/qkXpq1mjx5Bh9TpW3zMBRirDwEU.jpg",
