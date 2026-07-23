@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Fuze",
+    "desc": "تدور أحداث الفيلم حين يكتشف عمال بناء في لندن وجود قنبلة لم تنفجر تحت الأرض منذ الحرب العالمية الثانية مما يؤدي إلى إخلاء موقع العمل، لذا تستغل مجموعة من اللصوص حالة الفوضى في المحيط لتنفيذ عملية سرقة متقنة.",
+    "poster": "https://image.tmdb.org/t/p/w500/mjgisv866VI5PvaUZuvARwqY68R.jpg",
+    "hdUrl": "https://streamtape.com/e/oxwY8kyykkHJ11Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oxwY8kyykkHJ11Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة جريمة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Aaron Taylor-Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/pFtHhih2XEaFaD3qOFyQW6q83br.jpg"
+        },
+        {
+            "name": "Theo James",
+            "image": "https://image.tmdb.org/t/p/w185/lSC4cMhcQeCjPFkK6qCjSGDSeR3.jpg"
+        },
+        {
+            "name": "Gugu Mbatha-Raw",
+            "image": "https://image.tmdb.org/t/p/w185/sHAnv0kw5JHzWBOP7gAezwqgl8J.jpg"
+        },
+        {
+            "name": "Elham Ehsas",
+            "image": "https://image.tmdb.org/t/p/w185/mlOS34qKEVApg5VVLTBUzY8cftN.jpg"
+        },
+        {
+            "name": "Sam Worthington",
+            "image": "https://image.tmdb.org/t/p/w185/vM1WIfYQ1HUBtlVPwB9Hp9fLcn8.jpg"
+        }
+    ]
+},
+    {
     "title": "Whiplash",
     "desc": "تحت إشراف مدرب لا يرحم ، يبدأ عازف إيقاع شاب موهوب في السعي وراء الكمال بأي ثمن ، حتى إنسانيته.",
     "poster": "https://image.tmdb.org/t/p/w500/mcv2wacN8VO8YkOPZrcoPkqL34P.jpg",
