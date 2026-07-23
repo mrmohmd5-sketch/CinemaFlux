@@ -1,37 +1,5 @@
 const globalMoviesData = [
     {
-    "title": "Project Hail Mary",
-    "desc": "يستيقظ رايلاند غريس، مدرس العلوم، على متن مركبة فضائية تبعد سنوات ضوئية عن موطنه، فاقدًا للذاكرة تمامًا، لا يتذكر من هو ولا كيف وصل إلى هناك. ومع عودة ذاكرته تدريجيًا، يبدأ في اكتشاف مهمته: حل لغز المادة الغامضة التي تتسبب في انطفاء الشمس. عليه أن يستعين بمعرفته العلمية وأفكاره غير التقليدية لإنقاذ كل شيء على الأرض من الفناء... لكن صداقة غير متوقعة تعني أنه قد لا يضطر إلى القيام بذلك بمفرده.",
-    "poster": "https://image.tmdb.org/t/p/w500/wNnoJaRb5Oc9SodTWJLEC26wL8q.jpg",
-    "hdUrl": "https://streamtape.com/e/xqQ4AjDKQ8tkAe6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/xqQ4AjDKQ8tkAe6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "8.7",
-    "genre": "خيال علمي مغامرة",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Ryan Gosling",
-            "image": "https://image.tmdb.org/t/p/w185/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg"
-        },
-        {
-            "name": "Sandra Hüller",
-            "image": "https://image.tmdb.org/t/p/w185/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg"
-        },
-        {
-            "name": "James Ortiz",
-            "image": "https://image.tmdb.org/t/p/w185/unzBwVsoq8rAH8BAYlPR1zsWQ4E.jpg"
-        },
-        {
-            "name": "Lionel Boyce",
-            "image": "https://image.tmdb.org/t/p/w185/hpIxX5nkfA3pWCW8rYkEUCSBVyS.jpg"
-        },
-        {
-            "name": "Milana Vayntrub",
-            "image": "https://image.tmdb.org/t/p/w185/i5Cou9ExwTZvRRtl79V75CsI7oC.jpg"
-        }
-    ]
-},
-    {
     "title": "Avatar: Fire and Ash",
     "desc": "في أعقاب الحرب المدمرة ضد منظمة إدارة تنمية الموارد (RDA) وفقدان ابنهما الأكبر، يواجه جيك سولي ونيتيري تهديدًا جديدًا على باندورا: شعب الرماد، قبيلة نافي عنيفة ومتعطشة للسلطة بقيادة فارانغ القاسي. يجب على عائلة جيك أن تقاتل من أجل بقائها ومستقبل باندورا في صراع يدفعهم إلى أقصى حدودهم العاطفية والجسدية.",
     "poster": "https://image.tmdb.org/t/p/w500/2G3dQUuoFWPvNxVamp5RvogGv83.jpg",
