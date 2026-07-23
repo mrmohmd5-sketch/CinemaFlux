@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Gladiator",
+    "desc": "في روما القديمة، تتحول حياة الجنرال العظيم ماكسيموس إلى مأساة عندما يقتل الإمبراطور الجديد كومودوس عائلته ويرسله للعبودية. يجد ماكسيموس نفسه مجبراً على القتال كمصارع في حلبات الموت، متخذاً طريقاً دموياً نحو روما حيث يسعى للانتقام من الطاغية الذي دمر حياته.",
+    "poster": "https://image.tmdb.org/t/p/w500/3ThtMXP24MxSkUOTqFElQdWzAXe.jpg",
+    "hdUrl": "https://streamtape.com/e/79gY2QvYQ0FovB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/79gY2QvYQ0FovB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "حركة دراما مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Russell Crowe",
+            "image": "https://image.tmdb.org/t/p/w185/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg"
+        },
+        {
+            "name": "Joaquin Phoenix",
+            "image": "https://image.tmdb.org/t/p/w185/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg"
+        },
+        {
+            "name": "Connie Nielsen",
+            "image": "https://image.tmdb.org/t/p/w185/gSQ3O3PJ6ly6nT63joOtfZyscFP.jpg"
+        },
+        {
+            "name": "Oliver Reed",
+            "image": "https://image.tmdb.org/t/p/w185/dWfotc1X71wNCGyPO9hXpv8U9Gw.jpg"
+        },
+        {
+            "name": "Richard Harris",
+            "image": "https://image.tmdb.org/t/p/w185/lCvcVMuxrg1f5A8OMqY9AqkkcZR.jpg"
+        }
+    ]
+},
+    {
     "title": "Fuze",
     "desc": "تدور أحداث الفيلم حين يكتشف عمال بناء في لندن وجود قنبلة لم تنفجر تحت الأرض منذ الحرب العالمية الثانية مما يؤدي إلى إخلاء موقع العمل، لذا تستغل مجموعة من اللصوص حالة الفوضى في المحيط لتنفيذ عملية سرقة متقنة.",
     "poster": "https://image.tmdb.org/t/p/w500/mjgisv866VI5PvaUZuvARwqY68R.jpg",
