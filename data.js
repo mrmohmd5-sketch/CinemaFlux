@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Drive",
+    "desc": "يعمل السائق (ريان جوسلينج) الماهر في قيادة السيارات كومبارس ، حيث يتولى القيادة بدلا من أبطال الفلم في المطاردات الخطيرة أثناء التصوير ، إضافة إلى عمله ميكانيكيا في الورشة التي يمتلكها (شانون)، وغير ذلك يعمل على مساعدة السارقين في عملية الفرار من الشرطة بعد إتمام مهامهم . وفي إحدى الليالي يتعرف على جارته (إيرين) ، ويقع في حبها، ويتبادلان الإعجاب، لكنها تتزوج من آخر وتتركه، وبعد فترة من الوقت يفاجأ بأنها وحيدة بعد موت زوجها، فيسعى إلى مساعدتها ليضمن لها حياة كريمة وآمنة.",
+    "poster": "https://image.tmdb.org/t/p/w500/31opsfgzNFOmT8TWM5zuk9mFU53.jpg",
+    "hdUrl": "https://streamtape.com/e/1dGP6R2DomUp68/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1dGP6R2DomUp68/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "دراما إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ryan Gosling",
+            "image": "https://image.tmdb.org/t/p/w185/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg"
+        },
+        {
+            "name": "Carey Mulligan",
+            "image": "https://image.tmdb.org/t/p/w185/gmIwSz2XBwaadR9eksgYDLxEdCi.jpg"
+        },
+        {
+            "name": "Bryan Cranston",
+            "image": "https://image.tmdb.org/t/p/w185/npIIZJGSrcJIJ6yHdmbqO6Jzo5I.jpg"
+        },
+        {
+            "name": "Albert Brooks",
+            "image": "https://image.tmdb.org/t/p/w185/8iDSGu5l93N7benjf6b3AysBore.jpg"
+        },
+        {
+            "name": "Oscar Isaac",
+            "image": "https://image.tmdb.org/t/p/w185/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+        }
+    ]
+},
+    {
     "title": "Inception",
     "desc": "تدور احداث الفيلم حول كوب (ليوناردو دي كابريو) هو عميل من طراز خاص جدًا ومستوى رفيع للغاية، في الواقع هو متسلل أحلام! يقوم بتجنيده رجل أعمال فاحش الثراء يدعى (سايتو) كي يقوم بالتسلل إلى عقل أحد منافسيه يدعى (روبرت فيشر) بمساعدة جهاز خاص، بزرع فكرة داخل عقل الرجل تبدو وكأنها تأتي من داخله هو نفسه، وليست من الخارج. الفكرة هي أن يفكك الرجل شركات أبيه التي سيورثها عنه.",
     "poster": "https://image.tmdb.org/t/p/w500/okXrvv9kCNrYTpjMQTpmzXV9JCi.jpg",
