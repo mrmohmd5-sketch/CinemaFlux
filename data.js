@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Baby Driver",
+    "desc": "بعد إجباره على العمل لدى زعيم جريمة ، يجد سائق فرار شاب نفسه يشارك في سرقة محكوم عليها بالفشل.",
+    "poster": "https://image.tmdb.org/t/p/w500/6tEhtGf2eqsbr0SOzaMcBQz1Trz.jpg",
+    "hdUrl": "https://streamtape.com/e/Jy8MG4LwK6Sj42W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Jy8MG4LwK6Sj42W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ansel Elgort",
+            "image": "https://image.tmdb.org/t/p/w185/pbU6qz8eudly20UE6u9T7jUXTgT.jpg"
+        },
+        {
+            "name": "Kevin Spacey",
+            "image": "https://image.tmdb.org/t/p/w185/nPrUZDEbGQe6jwpVbHKJCXsMd7r.jpg"
+        },
+        {
+            "name": "Lily James",
+            "image": "https://image.tmdb.org/t/p/w185/7UN8GVsDzccK9UVYzMx3hooLyzZ.jpg"
+        },
+        {
+            "name": "Jon Hamm",
+            "image": "https://image.tmdb.org/t/p/w185/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg"
+        },
+        {
+            "name": "Jamie Foxx",
+            "image": "https://image.tmdb.org/t/p/w185/zD8Nsy4Xrghp7WunwpCj5JKBPeU.jpg"
+        }
+    ]
+},
+    {
     "title": "Love & Other Drugs",
     "desc": "جيمي راندل الشاب العابث يتم طرده من العمل بمتجر للالكترونيات في بيتسبرج لأنه كان على علاقة بصديقة مدير المتجر. ينجح أخوه جوش في إيجاد فرصة عمل له في شركة فايزر كمندوب لمبيعات الأدوية. يقوم جيمي بالترويج لعدد من أدوية معالجة الاكتئاب وفي أثناء زيارته لأحد الأطباء يقابل ماجي المصابة بأعراض أولية لمرض باركنسون لتنشأ بينهما علاقة تتحول إلى علاقة حب قوية.",
     "poster": "https://image.tmdb.org/t/p/w500/dabzGpaBSV2UOOTx2ZMR9imknu.jpg",
