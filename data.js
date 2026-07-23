@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Avatar: Fire and Ash",
+    "desc": "في أعقاب الحرب المدمرة ضد منظمة إدارة تنمية الموارد (RDA) وفقدان ابنهما الأكبر، يواجه جيك سولي ونيتيري تهديدًا جديدًا على باندورا: شعب الرماد، قبيلة نافي عنيفة ومتعطشة للسلطة بقيادة فارانغ القاسي. يجب على عائلة جيك أن تقاتل من أجل بقائها ومستقبل باندورا في صراع يدفعهم إلى أقصى حدودهم العاطفية والجسدية.",
+    "poster": "https://image.tmdb.org/t/p/w500/2G3dQUuoFWPvNxVamp5RvogGv83.jpg",
+    "hdUrl": "https://streamtape.com/e/4qBJ8Aqpo7UKgrl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4qBJ8Aqpo7UKgrl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "خيال علمي مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sam Worthington",
+            "image": "https://image.tmdb.org/t/p/w185/vM1WIfYQ1HUBtlVPwB9Hp9fLcn8.jpg"
+        },
+        {
+            "name": "Zoe Saldaña",
+            "image": "https://image.tmdb.org/t/p/w185/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg"
+        },
+        {
+            "name": "Sigourney Weaver",
+            "image": "https://image.tmdb.org/t/p/w185/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+        },
+        {
+            "name": "Stephen Lang",
+            "image": "https://image.tmdb.org/t/p/w185/gnO5VfkDgA2fsHweD0622LUY3Hu.jpg"
+        },
+        {
+            "name": "Oona Chaplin",
+            "image": "https://image.tmdb.org/t/p/w185/uYnBSVKcFgw48Wxts01Dh5Gxlar.jpg"
+        }
+    ]
+},
+    {
     "title": "Hoppers",
     "desc": "تدور قصة الفيلم حول فتاة تُدعى 'مايبل تاناكا'، الشابة الشغوفة بالحيوانات، التي ترتبط عاطفيًا بمكان طبيعي كانت تزوره مع جدتها. لكن هذا المكان مهدد بسبب مشروع طريق سريع يخطط له العمدة وبينما تحاول إنقاذه، تكتشف تقنية تمكّن البشر من الدخول في أجساد حيوانات آلية والتواصل مع الحياة البرية، فتقرر استخدامها وتتحول إلى قندس.",
     "poster": "https://image.tmdb.org/t/p/w500/aUhnoIdBZYETNvsR4QlZhNYZffw.jpg",
