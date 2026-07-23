@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Love & Other Drugs",
+    "desc": "جيمي راندل الشاب العابث يتم طرده من العمل بمتجر للالكترونيات في بيتسبرج لأنه كان على علاقة بصديقة مدير المتجر. ينجح أخوه جوش في إيجاد فرصة عمل له في شركة فايزر كمندوب لمبيعات الأدوية. يقوم جيمي بالترويج لعدد من أدوية معالجة الاكتئاب وفي أثناء زيارته لأحد الأطباء يقابل ماجي المصابة بأعراض أولية لمرض باركنسون لتنشأ بينهما علاقة تتحول إلى علاقة حب قوية.",
+    "poster": "https://image.tmdb.org/t/p/w500/dabzGpaBSV2UOOTx2ZMR9imknu.jpg",
+    "hdUrl": "https://streamtape.com/e/2DlrlzAy7kIj1z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/2DlrlzAy7kIj1z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "دراما كوميديا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jake Gyllenhaal",
+            "image": "https://image.tmdb.org/t/p/w185/ct2Gh2sJSxd4yaMrSsqSt1HpIC3.jpg"
+        },
+        {
+            "name": "Anne Hathaway",
+            "image": "https://image.tmdb.org/t/p/w185/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+            "name": "Oliver Platt",
+            "image": "https://image.tmdb.org/t/p/w185/ipBzOzgWRdxxYoM5xNN1cfenFaC.jpg"
+        },
+        {
+            "name": "Hank Azaria",
+            "image": "https://image.tmdb.org/t/p/w185/uON3TWSySIy8wbDhkSzmFTDM6XO.jpg"
+        },
+        {
+            "name": "Josh Gad",
+            "image": "https://image.tmdb.org/t/p/w185/p9hWNRwrVEBpl8We2bxLMHkk5Mj.jpg"
+        }
+    ]
+},
+    {
     "title": "Cha Cha Real Smooth",
     "desc": "بعد أن تخرج حديثاً في الجامعة، وكان عالقاً ببيته في 'نيوجيرسي' دون فكرة واضحة عن المستقبل، يبدأ 'آندرو' ذو الـ22 عاماً العمل كمنشط لحفلات البلوغ اليهودية للصبية والفتيات، حيث يكوّن صداقة فريدة مع أم شابة وابنتها المراهقة.",
     "poster": "https://image.tmdb.org/t/p/w500/iUvoVhvwTlP8DofoqeIu7QAGLAe.jpg",
