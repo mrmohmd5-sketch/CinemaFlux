@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Hoppers",
+    "desc": "تدور قصة الفيلم حول فتاة تُدعى 'مايبل تاناكا'، الشابة الشغوفة بالحيوانات، التي ترتبط عاطفيًا بمكان طبيعي كانت تزوره مع جدتها. لكن هذا المكان مهدد بسبب مشروع طريق سريع يخطط له العمدة وبينما تحاول إنقاذه، تكتشف تقنية تمكّن البشر من الدخول في أجساد حيوانات آلية والتواصل مع الحياة البرية، فتقرر استخدامها وتتحول إلى قندس.",
+    "poster": "https://image.tmdb.org/t/p/w500/aUhnoIdBZYETNvsR4QlZhNYZffw.jpg",
+    "hdUrl": "https://streamtape.com/e/x9m3ROalPDckP6d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/x9m3ROalPDckP6d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "مغامرة رسوم متحركة كوميديا عائلي خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Piper Curda",
+            "image": "https://image.tmdb.org/t/p/w185/oyitEBcracNWMuF8Frhsqkjgzuc.jpg"
+        },
+        {
+            "name": "Bobby Moynihan",
+            "image": "https://image.tmdb.org/t/p/w185/gOvwNz5joi5yWJ7dAhuF8WA2aas.jpg"
+        },
+        {
+            "name": "Jon Hamm",
+            "image": "https://image.tmdb.org/t/p/w185/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg"
+        },
+        {
+            "name": "Kathy Najimy",
+            "image": "https://image.tmdb.org/t/p/w185/nqbZF7Igr0SC8Xq8y0jwmx0mLDN.jpg"
+        },
+        {
+            "name": "Dave Franco",
+            "image": "https://image.tmdb.org/t/p/w185/d0I1BgNBAVvLJEDSfmyNVjYWPZE.jpg"
+        }
+    ]
+},
+    {
     "title": "Predestination",
     "desc": "يروي القدر المسبق حياة عميل مؤقت أرسل في سلسلة معقدة من رحلات السفر عبر الزمن المصممة لمنع القتلة في المستقبل من ارتكاب جرائمهم. الآن ، في مهمته النهائية ، يجب على العميل إيقاف المجرم الوحيد الذي استعصى عليه طوال الوقت ومنع هجوم مدمر يقتل فيه الآلاف من الأرواح.",
     "poster": "https://image.tmdb.org/t/p/w500/38Xr1JnV1ZcLQ55zmdSp6n475cZ.jpg",
