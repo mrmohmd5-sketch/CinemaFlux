@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Whiplash",
+    "desc": "تحت إشراف مدرب لا يرحم ، يبدأ عازف إيقاع شاب موهوب في السعي وراء الكمال بأي ثمن ، حتى إنسانيته.",
+    "poster": "https://image.tmdb.org/t/p/w500/mcv2wacN8VO8YkOPZrcoPkqL34P.jpg",
+    "hdUrl": "https://streamtape.com/e/yx49RjO7eWc1QeX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yx49RjO7eWc1QeX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "دراما موسيقى إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Miles Teller",
+            "image": "https://image.tmdb.org/t/p/w185/kDf3sW3USjEBDQ3Ua7lbwOfwty6.jpg"
+        },
+        {
+            "name": "J.K. Simmons",
+            "image": "https://image.tmdb.org/t/p/w185/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg"
+        },
+        {
+            "name": "Paul Reiser",
+            "image": "https://image.tmdb.org/t/p/w185/rGryzG00uSk8LsidacSBXVgo3iv.jpg"
+        },
+        {
+            "name": "Melissa Benoist",
+            "image": "https://image.tmdb.org/t/p/w185/1F0fCPNhb5W0WyFe8Tszfbx1DEp.jpg"
+        },
+        {
+            "name": "Austin Stowell",
+            "image": "https://image.tmdb.org/t/p/w185/At09XQpVXnChgedNsxu4ceR5W9i.jpg"
+        }
+    ]
+},
+    {
     "title": "Oppenheimer",
     "desc": "فلم يحكي السيرة الذاتية وقصة العالم الأمريكي روبرت أوبنهايمر ودوره في تطوير القنبلة الذرية، وكيف غير مشروع مانهاتن من كل شيء في العالم.",
     "poster": "https://image.tmdb.org/t/p/w500/fj4Sw2PihpjJkkeyhAWV5x933no.jpg",
