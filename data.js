@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Cha Cha Real Smooth",
+    "desc": "بعد أن تخرج حديثاً في الجامعة، وكان عالقاً ببيته في 'نيوجيرسي' دون فكرة واضحة عن المستقبل، يبدأ 'آندرو' ذو الـ22 عاماً العمل كمنشط لحفلات البلوغ اليهودية للصبية والفتيات، حيث يكوّن صداقة فريدة مع أم شابة وابنتها المراهقة.",
+    "poster": "https://image.tmdb.org/t/p/w500/iUvoVhvwTlP8DofoqeIu7QAGLAe.jpg",
+    "hdUrl": "https://streamtape.com/e/aRLjxM1ydDhx1QA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/aRLjxM1ydDhx1QA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Cooper Raiff",
+            "image": "https://image.tmdb.org/t/p/w185/d5BYFTCrBQWf48MfwoKjkN7MaOx.jpg"
+        },
+        {
+            "name": "Dakota Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/qFek0KqpaPV5mVyHHNfAapDE9Tj.jpg"
+        },
+        {
+            "name": "Evan Assante",
+            "image": "https://image.tmdb.org/t/p/w185/f5ZtumV6Z4WfvfZmfCLBHC5ICxL.jpg"
+        },
+        {
+            "name": "Vanessa Burghardt",
+            "image": "https://image.tmdb.org/t/p/w185/yYQSOTgjm9Kd7o0KPmvIWZSlVLa.jpg"
+        },
+        {
+            "name": "Leslie Mann",
+            "image": "https://image.tmdb.org/t/p/w185/x3OS9RL3qsv50kzRtpR2OhbuTkr.jpg"
+        }
+    ]
+},
+    {
     "title": "Drive",
     "desc": "يعمل السائق (ريان جوسلينج) الماهر في قيادة السيارات كومبارس ، حيث يتولى القيادة بدلا من أبطال الفلم في المطاردات الخطيرة أثناء التصوير ، إضافة إلى عمله ميكانيكيا في الورشة التي يمتلكها (شانون)، وغير ذلك يعمل على مساعدة السارقين في عملية الفرار من الشرطة بعد إتمام مهامهم . وفي إحدى الليالي يتعرف على جارته (إيرين) ، ويقع في حبها، ويتبادلان الإعجاب، لكنها تتزوج من آخر وتتركه، وبعد فترة من الوقت يفاجأ بأنها وحيدة بعد موت زوجها، فيسعى إلى مساعدتها ليضمن لها حياة كريمة وآمنة.",
     "poster": "https://image.tmdb.org/t/p/w500/31opsfgzNFOmT8TWM5zuk9mFU53.jpg",
