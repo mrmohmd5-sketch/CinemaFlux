@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Scarface",
+    "desc": "بعد حصوله على البطاقة الخضراء مقابل اغتيال مسؤول حكومي كوبي ، يطالب توني مونتانا بتجارة المخدرات في ميامي. يقتل توني بوحشية أي شخص يقف في طريقه ، ويصبح في النهاية أكبر أباطرة مخدرات في الولاية ، حيث يتحكم تقريبًا في كل الكوكايين الذي يأتي عبر ميامي. لكن الضغط المتزايد من الشرطة والحروب مع عصابات المخدرات الكولومبية والبارانويا التي تغذيها المخدرات تعمل على تأجيج نيران سقوطه في نهاية المطاف.",
+    "poster": "https://image.tmdb.org/t/p/w500/ouzvJkit0MO5U51CEUlOFB5dYVe.jpg",
+    "hdUrl": "https://streamtape.com/e/gReLqJPGlWSqWqj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/gReLqJPGlWSqWqj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "حركة جريمة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Al Pacino",
+            "image": "https://image.tmdb.org/t/p/w185/m8HAAjq1T75JypKk0v1FFQn4ysZ.jpg"
+        },
+        {
+            "name": "Steven Bauer",
+            "image": "https://image.tmdb.org/t/p/w185/eMSeKPgfilE2v5VcmwSt5pxbp0x.jpg"
+        },
+        {
+            "name": "Michelle Pfeiffer",
+            "image": "https://image.tmdb.org/t/p/w185/8qwNMFzmM3BxGKIj1iIqiHHBpx3.jpg"
+        },
+        {
+            "name": "Mary Elizabeth Mastrantonio",
+            "image": "https://image.tmdb.org/t/p/w185/vbZ1E557K5oj34xLHR5ErO8wPCi.jpg"
+        },
+        {
+            "name": "Robert Loggia",
+            "image": "https://image.tmdb.org/t/p/w185/mRSUgJnfprCNw83pyVfpfW7ryfK.jpg"
+        }
+    ]
+},
+    {
     "title": "Gladiator",
     "desc": "في روما القديمة، تتحول حياة الجنرال العظيم ماكسيموس إلى مأساة عندما يقتل الإمبراطور الجديد كومودوس عائلته ويرسله للعبودية. يجد ماكسيموس نفسه مجبراً على القتال كمصارع في حلبات الموت، متخذاً طريقاً دموياً نحو روما حيث يسعى للانتقام من الطاغية الذي دمر حياته.",
     "poster": "https://image.tmdb.org/t/p/w500/3ThtMXP24MxSkUOTqFElQdWzAXe.jpg",
