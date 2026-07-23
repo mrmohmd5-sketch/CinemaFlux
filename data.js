@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Oppenheimer",
+    "desc": "فلم يحكي السيرة الذاتية وقصة العالم الأمريكي روبرت أوبنهايمر ودوره في تطوير القنبلة الذرية، وكيف غير مشروع مانهاتن من كل شيء في العالم.",
+    "poster": "https://image.tmdb.org/t/p/w500/fj4Sw2PihpjJkkeyhAWV5x933no.jpg",
+    "hdUrl": "https://streamtape.com/e/0WpkXeBxZqSb9l8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/0WpkXeBxZqSb9l8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "دراما تاريخ",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Cillian Murphy",
+            "image": "https://image.tmdb.org/t/p/w185/2lKs67r7FI4bPu0AXxMUJZxmUXn.jpg"
+        },
+        {
+            "name": "Emily Blunt",
+            "image": "https://image.tmdb.org/t/p/w185/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+        },
+        {
+            "name": "Matt Damon",
+            "image": "https://image.tmdb.org/t/p/w185/aCvBXTAR9B1qRjIRzMBYhhbm1fR.jpg"
+        },
+        {
+            "name": "Robert Downey Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Florence Pugh",
+            "image": "https://image.tmdb.org/t/p/w185/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+        }
+    ]
+},
+    {
     "title": "Baby Driver",
     "desc": "بعد إجباره على العمل لدى زعيم جريمة ، يجد سائق فرار شاب نفسه يشارك في سرقة محكوم عليها بالفشل.",
     "poster": "https://image.tmdb.org/t/p/w500/6tEhtGf2eqsbr0SOzaMcBQz1Trz.jpg",
