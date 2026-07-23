@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Predestination",
+    "desc": "يروي القدر المسبق حياة عميل مؤقت أرسل في سلسلة معقدة من رحلات السفر عبر الزمن المصممة لمنع القتلة في المستقبل من ارتكاب جرائمهم. الآن ، في مهمته النهائية ، يجب على العميل إيقاف المجرم الوحيد الذي استعصى عليه طوال الوقت ومنع هجوم مدمر يقتل فيه الآلاف من الأرواح.",
+    "poster": "https://image.tmdb.org/t/p/w500/38Xr1JnV1ZcLQ55zmdSp6n475cZ.jpg",
+    "hdUrl": "https://streamtape.com/e/bP8wowp4YbhP3Ak/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bP8wowp4YbhP3Ak/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ethan Hawke",
+            "image": "https://image.tmdb.org/t/p/w185/oojD9jSshvUT4t6AUySsBxoekHk.jpg"
+        },
+        {
+            "name": "Sarah Snook",
+            "image": "https://image.tmdb.org/t/p/w185/w9xv72oaTISLgeT381fU4Jor9GV.jpg"
+        },
+        {
+            "name": "Noah Taylor",
+            "image": "https://image.tmdb.org/t/p/w185/a9VuohmpqbvcYflOpi0F3ck8L2j.jpg"
+        },
+        {
+            "name": "Christopher Kirby",
+            "image": "https://image.tmdb.org/t/p/w185/djNk4Q2A79XPhMOtAE2F2fgCIhI.jpg"
+        },
+        {
+            "name": "Madeleine West",
+            "image": "https://image.tmdb.org/t/p/w185/buJ3lN6iDQBuuP9FwGgpT9WQxLt.jpg"
+        }
+    ]
+},
+    {
     "title": "Scarface",
     "desc": "بعد حصوله على البطاقة الخضراء مقابل اغتيال مسؤول حكومي كوبي ، يطالب توني مونتانا بتجارة المخدرات في ميامي. يقتل توني بوحشية أي شخص يقف في طريقه ، ويصبح في النهاية أكبر أباطرة مخدرات في الولاية ، حيث يتحكم تقريبًا في كل الكوكايين الذي يأتي عبر ميامي. لكن الضغط المتزايد من الشرطة والحروب مع عصابات المخدرات الكولومبية والبارانويا التي تغذيها المخدرات تعمل على تأجيج نيران سقوطه في نهاية المطاف.",
     "poster": "https://image.tmdb.org/t/p/w500/ouzvJkit0MO5U51CEUlOFB5dYVe.jpg",
