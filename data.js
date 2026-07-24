@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "year": "2001",
+    "desc": "يلتحق صبي يتيم بمدرسة للسحر، حيث يكتشف حقيقة نفسه وعائلته والشر الرهيب الذي يطارد عالم السحر.",
+    "poster": "https://image.tmdb.org/t/p/w500/wWsjPFuYYewEcDlXizYGeUpbdEU.jpg",
+    "hdUrl": "https://streamtape.com/e/P8rWm6pvZkhbmQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/P8rWm6pvZkhbmQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Richard Harris",
+            "image": "https://image.tmdb.org/t/p/w185/lCvcVMuxrg1f5A8OMqY9AqkkcZR.jpg"
+        },
+        {
+            "name": "Tom Felton",
+            "image": "https://image.tmdb.org/t/p/w185/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
+        }
+    ]
+},
+    {
     "title": "They Will Kill You",
     "year": "2026",
     "desc": "تستجيب امرأة لإعلان طلب مساعدة للعمل كتدبير منزلي في برج سكني غامض بمدينة نيويورك، غير مدركة أنها تدخل مجتمعاً شهد العديد من حالات الاختفاء على مر السنين، وقد يكون واقعاً تحت قبضة طائفة شيطانية.",
