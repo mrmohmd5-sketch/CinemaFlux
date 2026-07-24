@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Devil Wears Prada",
+    "desc": "تطمح (أندريا) المتخرجة حديثًا للعمل في إحدي مجلات الموضة، وتقبل للعمل بأحد أشهر تلك المجلات، ولكن للعمل كمساعدة ثانية لرئيسة التحرير (ميراندا)، ولكي تضمن أندريا الحفاظ على وظيفتها المستقبلية، عليها أن تنال رضا رئيستها المتسلطة والقوية.",
+    "poster": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+    "hdUrl": "https://streamtape.com/e/bpxbKXqoRVuP90Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bpxbKXqoRVuP90Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Meryl Streep",
+            "image": "https://image.tmdb.org/t/p/w185/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
+        },
+        {
+            "name": "Anne Hathaway",
+            "image": "https://image.tmdb.org/t/p/w185/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+            "name": "Emily Blunt",
+            "image": "https://image.tmdb.org/t/p/w185/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+        },
+        {
+            "name": "Stanley Tucci",
+            "image": "https://image.tmdb.org/t/p/w185/q4TanMDI5Rgsvw4SfyNbPBh4URr.jpg"
+        },
+        {
+            "name": "Simon Baker",
+            "image": "https://image.tmdb.org/t/p/w185/oay0Lo2zl0lJdguptxgx1BK9Xq7.jpg"
+        }
+    ]
+},
+    {
     "title": "The Drama",
     "desc": "يواجه خطيبان في قمة سعادتهما اختبارًا مصيريًا، حينما تأخذ الأحداث منعطفًا غير متوقع يقلب أسبوع زفافهما رأسًا على عقب ويخرج بكل خططهما عن السيطرة.",
     "poster": "https://image.tmdb.org/t/p/w500/fLFXaQzRYbgTZQ17FBVZvxBbWgY.jpg",
