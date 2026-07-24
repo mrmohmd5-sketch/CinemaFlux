@@ -859,8 +859,12 @@
         let currentTheme = 'dark';
         let currentUser = JSON.parse(localStorage.getItem('cf_user')) || null;
 
+        // ===== بيانات المستخدمين =====
+        let usersDB = JSON.parse(localStorage.getItem('cf_users')) || {}; // { username: password }
+        // ===== سجل المشاهدة لكل مستخدم =====
+        let userWatchHistories = JSON.parse(localStorage.getItem('cf_user_watch_histories')) || {}; // { username: [history] }
+
         let searchHistory = JSON.parse(localStorage.getItem('cf_search_history')) || [];
-        let watchHistory = JSON.parse(localStorage.getItem('cf_watch_history')) || [];
         let commentsDB = JSON.parse(localStorage.getItem('cf_comments')) || {};
 
         let activeMovieItem = null;
@@ -915,7 +919,15 @@
                 watchNow: "شاهد الآن",
                 allMoviesTitle: "كل الأفلام",
                 allSeriesTitle: "كل المسلسلات",
-                countPrefix: " ("
+                countPrefix: " (",
+                loginFail: "اسم المستخدم أو كلمة المرور غير صحيحة",
+                userExists: "اسم المستخدم موجود بالفعل، اختر اسم آخر",
+                registerSuccess: "تم إنشاء الحساب بنجاح، يمكنك الآن تسجيل الدخول",
+                emptyFields: "يرجى ملء جميع الحقول",
+                logoutConfirm: "هل تريد تسجيل الخروج؟",
+                logoutSuccess: "تم تسجيل الخروج بنجاح.",
+                historyEmpty: "سجل المشاهدة فارغ حالياً 🎬",
+                loginRequired: "يرجى تسجيل الدخول أولاً لمشاهدة سجل المشاهدة."
             },
             en: {
                 logo: "🎬 CinemaFlux",
@@ -954,7 +966,15 @@
                 watchNow: "Watch Now",
                 allMoviesTitle: "All Movies",
                 allSeriesTitle: "All Series",
-                countPrefix: " ("
+                countPrefix: " (",
+                loginFail: "Invalid username or password",
+                userExists: "Username already exists, choose another",
+                registerSuccess: "Account created successfully, you can now log in",
+                emptyFields: "Please fill in all fields",
+                logoutConfirm: "Do you want to log out?",
+                logoutSuccess: "Logged out successfully.",
+                historyEmpty: "Your watch history is currently empty 🎬",
+                loginRequired: "Please log in first to view watch history."
             }
         };
 
@@ -1364,7 +1384,6 @@
         function createMovieCard(item) {
             const card = document.createElement('div');
             card.className = 'movie-card';
-            // تم حذف إضافة السنة إلى اسم الفيلم (الآن نعرض فقط item.title)
             card.innerHTML = `
                 <div class="poster-wrapper">
                     <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy" decoding="async" fetchpriority="low">
@@ -1378,7 +1397,6 @@
                     </div>
                 </div>
             `;
-            // استخدام Intersection Observer لتحميل الصورة عند الظهور (بالإضافة إلى loading="lazy")
             const img = card.querySelector('.movie-poster');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -1487,12 +1505,10 @@
             if (!featuredSlider) return;
             featuredSlider.innerHTML = '';
 
-            // نأخذ عدد أقل من العناصر في البداية لتخفيف الحمل (5 بدلاً من 10)
             const newestItems = [...allMoviesData].slice(0, 5);
             newestItems.forEach(item => {
                 const slide = document.createElement('div');
                 slide.className = 'slide-item';
-                // تم حذف إضافة السنة إلى اسم الفيلم في السلايدر
                 slide.innerHTML = `
                     <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" alt="${item.title}">
                     <div class="slide-details">
@@ -1601,7 +1617,6 @@
                         <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'" loading="lazy" decoding="async" fetchpriority="low">
                         <div class="cast-name">${person.name || 'مجهول'}</div>
                     `;
-                    // إضافة loaded لأفلام الكاست
                     const img = castCard.querySelector('.cast-avatar');
                     img.onload = () => img.classList.add('loaded');
                     img.onerror = () => img.classList.add('loaded');
@@ -1801,7 +1816,6 @@
                 matches.forEach(item => {
                     const row = document.createElement('div');
                     row.className = 'search-item-row';
-                    // تم حذف إضافة السنة إلى اسم الفيلم في نتائج البحث
                     row.innerHTML = `
                         <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy" decoding="async" fetchpriority="low">
                         <div class="search-item-details">
@@ -1809,7 +1823,6 @@
                             <div class="search-item-meta">${item.year || ''} • ★ ${item.rating || '0.0'}</div>
                         </div>
                     `;
-                    // إضافة loaded عند تحميل الصورة
                     const img = row.querySelector('.search-item-poster');
                     img.onload = () => img.classList.add('loaded');
                     img.onerror = () => img.classList.add('loaded');
@@ -1848,7 +1861,6 @@
                 row.className = 'search-item-row';
 
                 if (matchedItem) {
-                    // تم حذف إضافة السنة إلى اسم الفيلم في سجل البحث
                     row.innerHTML = `
                         <img class="search-item-poster" src="${matchedItem.poster}" loading="lazy" decoding="async" fetchpriority="low">
                         <div class="search-item-details">
@@ -1895,33 +1907,53 @@
             }
         }
 
-        // ===== سجل المشاهدة =====
+        // ===== سجل المشاهدة (لكل مستخدم) =====
         function addToWatchHistory(item) {
-            watchHistory = watchHistory.filter(x => x.title !== item.title);
-            watchHistory.unshift({
+            // إذا لم يكن هناك مستخدم مسجل، لا نحفظ السجل
+            if (!currentUser) return;
+
+            const username = currentUser.username;
+            if (!userWatchHistories[username]) {
+                userWatchHistories[username] = [];
+            }
+
+            let history = userWatchHistories[username];
+            history = history.filter(x => x.title !== item.title);
+            history.unshift({
                 title: item.title,
                 poster: item.poster,
                 year: item.year,
                 rating: item.rating,
                 timestamp: Date.now()
             });
-            if(watchHistory.length > 20) watchHistory.pop();
-            localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
+            if (history.length > 20) history.pop();
+            userWatchHistories[username] = history;
+
+            localStorage.setItem('cf_user_watch_histories', JSON.stringify(userWatchHistories));
         }
 
         function renderWatchHistoryUI() {
             const listContainer = document.getElementById('fullWatchHistoryList');
             listContainer.innerHTML = '';
 
-            if(watchHistory.length === 0) {
-                listContainer.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-sub); font-size:13px;">${currentLang === 'ar' ? 'سجل المشاهدة فارغ حالياً 🎬' : 'Your watch history is currently empty 🎬'}</div>`;
+            const dict = langPack[currentLang];
+
+            if (!currentUser) {
+                listContainer.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-sub); font-size:13px;">${dict.loginRequired}</div>`;
                 return;
             }
 
-            watchHistory.forEach((hist) => {
+            const username = currentUser.username;
+            const history = userWatchHistories[username] || [];
+
+            if (history.length === 0) {
+                listContainer.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-sub); font-size:13px;">${dict.historyEmpty}</div>`;
+                return;
+            }
+
+            history.forEach((hist) => {
                 const row = document.createElement('div');
                 row.className = 'search-item-row';
-                // تم حذف إضافة السنة إلى اسم الفيلم في سجل المشاهدة
                 row.innerHTML = `
                     <img class="search-item-poster" src="${hist.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy" decoding="async" fetchpriority="low">
                     <div class="search-item-details">
@@ -1944,10 +1976,19 @@
         }
 
         function clearWatchHistoryAction() {
-            if(confirm(currentLang === 'ar' ? "هل أنت متأكد من مسح سجل المشاهدة؟" : "Are you sure you want to clear your watch history?")) {
-                watchHistory = [];
-                localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
+            if (!currentUser) {
+                alert(langPack[currentLang].loginRequired);
+                return;
+            }
+
+            if(confirm(currentLang === 'ar' ? "هل أنت متأكد من مسح سجل المشاهدة الخاص بك؟" : "Are you sure you want to clear your watch history?")) {
+                const username = currentUser.username;
+                if (userWatchHistories[username]) {
+                    userWatchHistories[username] = [];
+                }
+                localStorage.setItem('cf_user_watch_histories', JSON.stringify(userWatchHistories));
                 renderWatchHistoryUI();
+                alert(currentLang === 'ar' ? "تم مسح سجل المشاهدة." : "Watch history cleared.");
             }
         }
 
@@ -1967,7 +2008,6 @@
             }
 
             applyLocalization();
-            // إعادة ضبط الكاش لإعادة التصنيفات باللغة الجديدة
             genresCache = null;
             categoriesRendered = {};
             sliderListeners = {};
@@ -2041,14 +2081,19 @@
             alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
         }
 
-        // ===== نظام العضوية =====
+        // ===== نظام العضوية (محسن) =====
         function openAuthModal() {
             if (currentUser) {
-                if(confirm(currentLang === 'ar' ? "هل تريد تسجيل الخروج؟" : "Do you want to log out?")) {
+                // تسجيل الخروج
+                if(confirm(langPack[currentLang].logoutConfirm)) {
                     currentUser = null;
                     localStorage.removeItem('cf_user');
                     updateUserUI();
-                    alert(currentLang === 'ar' ? "تم تسجيل الخروج بنجاح." : "Logged out successfully.");
+                    // إعادة تحميل سجل المشاهدة إذا كانت صفحة التاريخ مفتوحة
+                    if (document.getElementById('viewHistory').classList.contains('active')) {
+                        renderWatchHistoryUI();
+                    }
+                    alert(langPack[currentLang].logoutSuccess);
                 }
             } else {
                 authMode = 'login';
@@ -2074,7 +2119,7 @@
                 document.getElementById('authToggleText').innerText = isAr ? "ليس لديك حساب؟ إنشاء حساب جديد" : "Don't have an account? Register new account";
             } else {
                 document.getElementById('authModalTitle').innerText = isAr ? "إنشاء حساب جديد" : "Create New Account";
-                document.getElementById('authPrimaryBtn').innerText = isAr ? "تأكيد التسجيل والإنشاء" : "Register Now";
+                document.getElementById('authPrimaryBtn').innerText = isAr ? "تأكيد التسجيل" : "Register";
                 document.getElementById('authToggleText').innerText = isAr ? "لديك حساب بالفعل؟ سجل دخولك" : "Already have an account? Log In";
             }
         }
@@ -2083,26 +2128,54 @@
             const user = document.getElementById('authUsername').value.trim();
             const pass = document.getElementById('authPassword').value.trim();
             const isAr = (currentLang === 'ar');
+            const dict = langPack[currentLang];
 
             if(!user || !pass) {
-                alert(isAr ? "يرجى ملء جميع الحقول أولاً!" : "Please fill in all fields!");
+                alert(dict.emptyFields);
                 return;
             }
 
-            if(authMode === 'login') {
-                currentUser = { username: user };
-                localStorage.setItem('cf_user', JSON.stringify(currentUser));
-                alert(isAr ? `مرحباً بك مجدداً، ${user} ✨` : `Welcome back, ${user} ✨`);
+            // تحميل قاعدة المستخدمين من localStorage
+            usersDB = JSON.parse(localStorage.getItem('cf_users')) || {};
+
+            if (authMode === 'login') {
+                // تسجيل الدخول: تحقق من وجود المستخدم وكلمة المرور
+                if (usersDB[user] && usersDB[user] === pass) {
+                    currentUser = { username: user };
+                    localStorage.setItem('cf_user', JSON.stringify(currentUser));
+                    alert(isAr ? `مرحباً بك مجدداً، ${user} ✨` : `Welcome back, ${user} ✨`);
+                    closeAuthModal();
+                    updateUserUI();
+                    // تحديث سجل المشاهدة إذا كانت الصفحة مفتوحة
+                    if (document.getElementById('viewHistory').classList.contains('active')) {
+                        renderWatchHistoryUI();
+                    }
+                } else {
+                    alert(dict.loginFail);
+                }
             } else {
+                // التسجيل: تحقق من عدم وجود المستخدم
+                if (usersDB[user]) {
+                    alert(dict.userExists);
+                    return;
+                }
+                // إنشاء حساب جديد
+                usersDB[user] = pass;
+                localStorage.setItem('cf_users', JSON.stringify(usersDB));
+                // تسجيل الدخول تلقائياً
                 currentUser = { username: user };
                 localStorage.setItem('cf_user', JSON.stringify(currentUser));
-                alert(isAr ? "تم إنشاء الحساب وتجربته بنجاح!" : "Account created successfully!");
+                alert(dict.registerSuccess);
+                closeAuthModal();
+                updateUserUI();
+                if (document.getElementById('viewHistory').classList.contains('active')) {
+                    renderWatchHistoryUI();
+                }
             }
 
+            // تنظيف الحقول
             document.getElementById('authUsername').value = "";
             document.getElementById('authPassword').value = "";
-            closeAuthModal();
-            updateUserUI();
         }
 
         function updateUserUI() {
