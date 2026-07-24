@@ -259,6 +259,121 @@
 
         .no-results { display: none; text-align: center; padding: 30px 15px; color: var(--text-sub); font-size: 13px; }
 
+        /* ===== انتقالات احترافية بأسلوب نتفلكس وسينمانا ===== */
+
+        /* تأثير ظهور تدريجي للصفحات */
+        .app-view {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.28s ease, transform 0.28s ease;
+            pointer-events: none;
+        }
+        .app-view.active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        /* تأثير hover احترافي على بطاقة الفيلم */
+        .movie-card {
+            transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+        .movie-card:active {
+            transform: scale(0.96);
+        }
+
+        /* تأثير hover على الـ poster بالـ overlay */
+        .poster-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(229, 9, 20, 0);
+            transition: background 0.25s ease;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+        .movie-card:hover .poster-wrapper::after {
+            background: rgba(229, 9, 20, 0.12);
+        }
+
+        /* زر تشغيل يظهر عند hover */
+        .poster-play-icon {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%) scale(0.6);
+            opacity: 0;
+            font-size: 32px;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            pointer-events: none;
+            z-index: 3;
+        }
+        .movie-card:hover .poster-play-icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* تأثير ripple عند الضغط */
+        .movie-card {
+            position: relative;
+            overflow: visible;
+        }
+        .ripple-effect {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(229, 9, 20, 0.35);
+            transform: scale(0);
+            animation: ripple-anim 0.5s ease-out forwards;
+            pointer-events: none;
+            z-index: 10;
+        }
+        @keyframes ripple-anim {
+            to { transform: scale(4); opacity: 0; }
+        }
+
+        /* slide-in للصفحة التفصيلية من الأسفل */
+        #viewMovieDetail {
+            animation: none;
+        }
+        #viewMovieDetail.active {
+            animation: slideUpIn 0.32s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        @keyframes slideUpIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* تأثير hover على بطاقات السلايدر العلوي */
+        .slide-item {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .slide-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 30px rgba(229, 9, 20, 0.25);
+        }
+        .slide-item:active {
+            transform: scale(0.98);
+        }
+
+        /* تأثير على أزرار شريط التنقل السفلي */
+        .nav-item {
+            transition: transform 0.15s ease, color 0.15s ease;
+        }
+        .nav-item:active {
+            transform: scale(0.88);
+        }
+
+        /* تأثير على صفحة التصنيف */
+        #viewCategoryDetail.active {
+            animation: slideUpIn 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
         /* التنسيقات المضافة خصيصاً لقسم الأقسام التبويبات الفورية والاحترافية */
         .sections-tabs-wrapper {
             display: flex; gap: 10px; margin: 15px 0 20px 0;
@@ -660,6 +775,7 @@
             card.innerHTML = `
                 <div class="poster-wrapper">
                     <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
+                    <div class="poster-play-icon">▶</div>
                 </div>
                 <div class="movie-info">
                     <p class="movie-name">${item.title}</p>
@@ -669,7 +785,19 @@
                     </div>
                 </div>
             `;
-            card.onclick = () => openMoviePage(item);
+            card.addEventListener('click', function(e) {
+                // تأثير ripple عند الضغط
+                const ripple = document.createElement('span');
+                ripple.className = 'ripple-effect';
+                const rect = card.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+                ripple.style.top  = (e.clientY - rect.top  - size / 2) + 'px';
+                card.querySelector('.poster-wrapper').appendChild(ripple);
+                setTimeout(() => ripple.remove(), 500);
+                openMoviePage(item);
+            });
             return card;
         }
 
@@ -817,6 +945,7 @@
                 card.innerHTML = `
                     <div class="poster-wrapper">
                         <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
+                        <div class="poster-play-icon">▶</div>
                     </div>
                     <div class="movie-info">
                         <p class="movie-name">${item.title}</p>
@@ -826,7 +955,18 @@
                         </div>
                     </div>
                 `;
-                card.onclick = () => openMoviePage(item);
+                card.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    ripple.className = 'ripple-effect';
+                    const rect = card.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+                    ripple.style.top  = (e.clientY - rect.top  - size / 2) + 'px';
+                    card.querySelector('.poster-wrapper').appendChild(ripple);
+                    setTimeout(() => ripple.remove(), 500);
+                    openMoviePage(item);
+                });
                 gridContainer.appendChild(card);
             });
         }
