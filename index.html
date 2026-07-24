@@ -546,7 +546,17 @@
             const genresMap = {};
             allMoviesData.forEach(item => {
                 if (item.genre) {
-                    const genresList = item.genre.trim().split(/,|،/).map(g => g.trim()).filter(Boolean);
+                    // حماية الكلمات المركبة من الفصل (خيال علمي و رسوم متحركة)
+                    let protectedGenre = item.genre
+                        .replace(/خيال علمي/g, 'خيال_علمي')
+                        .replace(/رسوم متحركة/g, 'رسوم_متحركة');
+                    
+                    const genresList = protectedGenre.trim().split(/[\s,،]+/).map(g => {
+                        return g.replace(/خيال_علمي/g, 'خيال علمي')
+                                .replace(/رسوم_متحركة/g, 'رسوم متحركة')
+                                .trim();
+                    }).filter(g => g !== "");
+
                     genresList.forEach(genre => {
                         if (!genresMap[genre]) genresMap[genre] = [];
                         genresMap[genre].push(item);
@@ -750,7 +760,17 @@
                 const targetMap = isSeries ? seriesGenresMap : moviesGenresMap;
 
                 if (item.genre) {
-                    const genresList = item.genre.trim().split(/,|،/).map(g => g.trim()).filter(Boolean);
+                    // حماية الكلمات المركبة من الفصل (خيال علمي و رسوم متحركة)
+                    let protectedGenre = item.genre
+                        .replace(/خيال علمي/g, 'خيال_علمي')
+                        .replace(/رسوم متحركة/g, 'رسوم_متحركة');
+
+                    const genresList = protectedGenre.trim().split(/[\s,،]+/).map(g => {
+                        return g.replace(/خيال_علمي/g, 'خيال علمي')
+                                .replace(/رسوم_متحركة/g, 'رسوم متحركة')
+                                .trim();
+                    }).filter(g => g !== "");
+
                     genresList.forEach(genre => {
                         if (!targetMap[genre]) targetMap[genre] = [];
                         targetMap[genre].push(item);
