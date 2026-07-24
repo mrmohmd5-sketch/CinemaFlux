@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Back in Action",
+    "desc": "بعد مضي 15 عامًا من اختفائهما من وكالة الاستخبارات المركزية من أجل تكوين عائلة، يعود جاسوسان من النخبة إلى عالم التجسس الخطير بعدما تُكتشَف خطة تخفّيهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/oKZHIpZ5ubEfYnKc42DSybBvUhW.jpg",
+    "hdUrl": "https://streamtape.com/e/2Vwv0aryZKCxQX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/2Vwv0aryZKCxQX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "حركة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jamie Foxx",
+            "image": "https://image.tmdb.org/t/p/w185/zD8Nsy4Xrghp7WunwpCj5JKBPeU.jpg"
+        },
+        {
+            "name": "Cameron Diaz",
+            "image": "https://image.tmdb.org/t/p/w185/tTpQSKwdLrR6xBGHCqg8VcVQZzH.jpg"
+        },
+        {
+            "name": "McKenna Roberts",
+            "image": "https://image.tmdb.org/t/p/w185/74G750E1HZzjksJ9oSr8aWFadE2.jpg"
+        },
+        {
+            "name": "Rylan Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/o2BK58fxhAJnOFfELtxMenZ4fpd.jpg"
+        },
+        {
+            "name": "Kyle Chandler",
+            "image": "https://image.tmdb.org/t/p/w185/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
+        }
+    ]
+},
+    {
     "title": "The Devil Wears Prada",
     "desc": "تطمح (أندريا) المتخرجة حديثًا للعمل في إحدي مجلات الموضة، وتقبل للعمل بأحد أشهر تلك المجلات، ولكن للعمل كمساعدة ثانية لرئيسة التحرير (ميراندا)، ولكي تضمن أندريا الحفاظ على وظيفتها المستقبلية، عليها أن تنال رضا رئيستها المتسلطة والقوية.",
     "poster": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
