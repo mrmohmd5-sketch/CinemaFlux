@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "They Will Kill You",
+    "desc": "تستجيب امرأة لإعلان طلب مساعدة للعمل كتدبير منزلي في برج سكني غامض بمدينة نيويورك، غير مدركة أنها تدخل مجتمعاً شهد العديد من حالات الاختفاء على مر السنين، وقد يكون واقعاً تحت قبضة طائفة شيطانية.",
+    "poster": "https://image.tmdb.org/t/p/w500/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg",
+    "hdUrl": "https://streamtape.com/e/XzzeAVlP1QiB3R/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/XzzeAVlP1QiB3R/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة كوميديا رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Zazie Beetz",
+            "image": "https://image.tmdb.org/t/p/w185/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg"
+        },
+        {
+            "name": "Myha'la",
+            "image": "https://image.tmdb.org/t/p/w185/hRc3igngt5dkpM08i0a3z7gkYWa.jpg"
+        },
+        {
+            "name": "Paterson Joseph",
+            "image": "https://image.tmdb.org/t/p/w185/7CIVAl4HiuWrmp4r8Jk09sqxTBy.jpg"
+        },
+        {
+            "name": "Tom Felton",
+            "image": "https://image.tmdb.org/t/p/w185/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
+        },
+        {
+            "name": "Heather Graham",
+            "image": "https://image.tmdb.org/t/p/w185/avYdNkeg1oTvmrNJbFDcTlBCkKs.jpg"
+        }
+    ]
+},
+    {
     "title": "The Shadow's Edge",
     "desc": "يختفي طاقم من المجرمين العباقرة ومعهم مليارات، مهربين من القبض عليهم بتفوقهم على نظام المراقبة 'عين السماء' الهائل. يائسين ومُتخاذلين، تستعين شرطة ماكاو بأسطورة - وونغ تاك تشونغ (جاكي شان)، خبير تعقب متقاعد. يُرشد وونغ الضابط المبتدئ هي تشيوغو (تشانغ زيفنغ)، ويُعيد بناء وحدة مراقبة النخبة. مهمتهم: تعقب 'ملك الذئاب' المراوغ، فو لونغ شنغ (ليونغ كا فاي توني)، العقل المدبر وراء السرقة. مع اقتراب الشرطة، يُنصب اللصوص فخًا خاصًا بهم. تتصادم العقول، وتُختبر الولاءات، وتبدأ لعبة القط والفأر النهائية...",
     "poster": "https://image.tmdb.org/t/p/w500/90s6kuQ8qUHJFrjnCnUCWQXnu1V.jpg",
