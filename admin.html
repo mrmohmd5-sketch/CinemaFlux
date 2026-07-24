@@ -182,6 +182,17 @@
                     });
                 }
 
+                // 4. استخراج سنة الإنتاج (المطلوب إضافتها)
+                let year = "";
+                if (dataAr.release_date) {
+                    year = dataAr.release_date.substring(0,4);
+                } else if (dataAr.first_air_date) {
+                    year = dataAr.first_air_date.substring(0,4);
+                } else if (dataAr.air_date) {
+                    year = dataAr.air_date.substring(0,4);
+                }
+                // إذا لم توجد، نتركها فارغة
+
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
                 const overviewText = dataAr.overview || "لا يوجد وصف متاح حالياً باللغة العربية.";
@@ -189,9 +200,10 @@
                 const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
-                // إنشاء كائن المحتوى الأساسي
+                // إنشاء كائن المحتوى الأساسي مع إضافة السنة
                 const newMediaObject = {
                     title: titleText,
+                    year: year,          // <-- تمت الإضافة
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
                     poster: posterUrl,
                     hdUrl: finalType === "movie" ? linksArray[0] : "",
