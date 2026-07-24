@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Shadow's Edge",
+    "desc": "يختفي طاقم من المجرمين العباقرة ومعهم مليارات، مهربين من القبض عليهم بتفوقهم على نظام المراقبة 'عين السماء' الهائل. يائسين ومُتخاذلين، تستعين شرطة ماكاو بأسطورة - وونغ تاك تشونغ (جاكي شان)، خبير تعقب متقاعد. يُرشد وونغ الضابط المبتدئ هي تشيوغو (تشانغ زيفنغ)، ويُعيد بناء وحدة مراقبة النخبة. مهمتهم: تعقب 'ملك الذئاب' المراوغ، فو لونغ شنغ (ليونغ كا فاي توني)، العقل المدبر وراء السرقة. مع اقتراب الشرطة، يُنصب اللصوص فخًا خاصًا بهم. تتصادم العقول، وتُختبر الولاءات، وتبدأ لعبة القط والفأر النهائية...",
+    "poster": "https://image.tmdb.org/t/p/w500/90s6kuQ8qUHJFrjnCnUCWQXnu1V.jpg",
+    "hdUrl": "https://streamtape.com/e/3prgvA232qtXej/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3prgvA232qtXej/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "حركة جريمة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jackie Chan",
+            "image": "https://image.tmdb.org/t/p/w185/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg"
+        },
+        {
+            "name": "Zhang Zifeng",
+            "image": "https://image.tmdb.org/t/p/w185/3S8yEnTVqH8T3bTVf9FmtXxWcu2.jpg"
+        },
+        {
+            "name": "Tony Leung Ka-fai",
+            "image": "https://image.tmdb.org/t/p/w185/ksrZeHeEKqPm5GS1IrmJ9WC9sRS.jpg"
+        },
+        {
+            "name": "Ci Sha",
+            "image": "https://image.tmdb.org/t/p/w185/eWytg5M0VUCb0aHEKpUDijQ7JxF.jpg"
+        },
+        {
+            "name": "Jun",
+            "image": "https://image.tmdb.org/t/p/w185/z1seXrQQWG7nsQVHqSWKefJQ8DO.jpg"
+        }
+    ]
+},
+    {
     "title": "Blonde",
     "desc": "يتناول العمل السيرة الذاتية لواحدة من أجمل نساء هوليود مارلين مونرو، البداية تحت اسم نورما جين، مرورًا بالعديد من المواقف التي صنعت منها أيقونة في الجمال والفن.",
     "poster": "https://image.tmdb.org/t/p/w500/3kygQnqSgq9gZcv5ktX0vLxjlzj.jpg",
