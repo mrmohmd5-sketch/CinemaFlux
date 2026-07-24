@@ -394,7 +394,18 @@
             transition: all 0.2s;
         }
         .search-item-row:hover { background-color: var(--bg-card); transform: scale(1.01); border-color: var(--accent); }
-        .search-item-poster { width: 65px; height: 95px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border-color); }
+        .search-item-poster { 
+            width: 65px; 
+            height: 95px; 
+            object-fit: cover; 
+            border-radius: 6px; 
+            border: 1px solid var(--border-color);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        .search-item-poster.loaded {
+            opacity: 1;
+        }
         .search-item-details { display: flex; flex-direction: column; justify-content: center; gap: 6px; }
         .search-item-title { font-size: 14px; font-weight: bold; margin: 0; }
         .search-item-meta { font-size: 12px; color: var(--text-sub); }
@@ -548,7 +559,8 @@
         .cast-slider::-webkit-scrollbar { height: 4px; }
         .cast-slider::-webkit-scrollbar-thumb { background-color: var(--border-color); border-radius: 4px; }
         .cast-card { min-width: 70px; text-align: center; }
-        .cast-avatar { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); margin-bottom: 5px; display: block; margin-left: auto; margin-right: auto; }
+        .cast-avatar { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); margin-bottom: 5px; display: block; margin-left: auto; margin-right: auto; opacity: 0; transition: opacity 0.2s ease; }
+        .cast-avatar.loaded { opacity: 1; }
         .cast-name { font-size: 11px; font-weight: 500; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 75px; margin: 0 auto; }
 
         .comments-section { margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px; }
@@ -1370,7 +1382,6 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // الصورة جاهزة بالفعل لأن src موجودة، لكن نضيف class loaded لتأثير التلاشي
                         img.classList.add('loaded');
                         observer.disconnect();
                     }
@@ -1487,12 +1498,9 @@
                         <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
                     </div>
                 `;
-                // إضافة class loaded فوراً لأن الصورة تظهر فوراً
                 const img = slide.querySelector('.slide-img');
                 img.onload = () => img.classList.add('loaded');
-                // إذا فشل التحميل، نضيف class loaded أيضاً لتظهر الصورة البديلة
                 img.onerror = () => img.classList.add('loaded');
-                // إذا كانت الصورة محملة بالفعل من الكاش
                 if (img.complete) {
                     img.classList.add('loaded');
                 }
@@ -1591,6 +1599,13 @@
                         <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'" loading="lazy" decoding="async" fetchpriority="low">
                         <div class="cast-name">${person.name || 'مجهول'}</div>
                     `;
+                    // إضافة loaded لأفلام الكاست
+                    const img = castCard.querySelector('.cast-avatar');
+                    img.onload = () => img.classList.add('loaded');
+                    img.onerror = () => img.classList.add('loaded');
+                    if (img.complete) {
+                        img.classList.add('loaded');
+                    }
                     sliderCast.appendChild(castCard);
                 });
             } else {
@@ -1791,6 +1806,13 @@
                             <div class="search-item-meta">${item.year || ''} • ★ ${item.rating || '0.0'}</div>
                         </div>
                     `;
+                    // إضافة loaded عند تحميل الصورة
+                    const img = row.querySelector('.search-item-poster');
+                    img.onload = () => img.classList.add('loaded');
+                    img.onerror = () => img.classList.add('loaded');
+                    if (img.complete) {
+                        img.classList.add('loaded');
+                    }
                     row.onclick = () => {
                         saveToSearchHistory(item.title);
                         openMoviePage(item);
@@ -1831,6 +1853,12 @@
                         </div>
                         <span class="remove-search-btn" onclick="event.stopPropagation(); removeSearchTerm(${index})">×</span>
                     `;
+                    const img = row.querySelector('.search-item-poster');
+                    img.onload = () => img.classList.add('loaded');
+                    img.onerror = () => img.classList.add('loaded');
+                    if (img.complete) {
+                        img.classList.add('loaded');
+                    }
                     row.onclick = () => openMoviePage(matchedItem);
                 } else {
                     row.innerHTML = `
@@ -1896,6 +1924,12 @@
                         <div class="search-item-meta">${hist.year || ''} • ★ ${hist.rating || '0.0'}</div>
                     </div>
                 `;
+                const img = row.querySelector('.search-item-poster');
+                img.onload = () => img.classList.add('loaded');
+                img.onerror = () => img.classList.add('loaded');
+                if (img.complete) {
+                    img.classList.add('loaded');
+                }
                 row.onclick = () => {
                     const originalItem = allMoviesData.find(x => x.title === hist.title);
                     if(originalItem) openMoviePage(originalItem);
