@@ -389,6 +389,32 @@
         .section-tab-btn.active {
             background-color: var(--accent); color: #ffffff;
         }
+
+        /* زر تحميل المزيد */
+        .load-more-btn {
+            display: block;
+            width: 78%;
+            margin: 10px auto 28px auto;
+            padding: 13px 24px;
+            background-color: var(--bg-card);
+            color: var(--text-main);
+            border: 2px solid var(--accent);
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.25s ease, color 0.25s ease, transform 0.15s ease;
+            font-family: inherit;
+            letter-spacing: 0.3px;
+        }
+        .load-more-btn:hover {
+            background-color: var(--accent);
+            color: #fff;
+        }
+        .load-more-btn:active {
+            transform: scale(0.96);
+        }
     </style>
 </head>
 <body>
@@ -600,6 +626,18 @@
         let sliderListeners = {}; // تخزين معلومات المستمعين لكل سلايدر
         let sectionsRendered = false; // متغير لتتبع تحميل قسم الأقسام
 
+        // ================= متغيرات تحميل المزيد التدريجي =================
+        const HOME_CATS_BATCH = 3;      // عدد التصنيفات لكل دفعة في الرئيسية
+        const SECTIONS_CATS_BATCH = 3;  // عدد التصنيفات لكل دفعة في الأقسام
+        let homeCategoriesIndex = 0;    // موضع التحميل الحالي في الرئيسية
+        let homeAllGenresList = [];     // قائمة كل التصنيفات في الرئيسية
+        let sectionsMovieIndex = 0;     // موضع التحميل الحالي لأفلام الأقسام
+        let sectionsSeriesIndex = 0;    // موضع التحميل الحالي لمسلسلات الأقسام
+        let sectionsMoviesGenresMap = {};   // خريطة تصنيفات الأفلام
+        let sectionsSeriesGenresMap = {};   // خريطة تصنيفات المسلسلات
+        let sectionsMoviesGenreList = [];   // قائمة تصنيفات الأفلام
+        let sectionsSeriesGenreList = [];   // قائمة تصنيفات المسلسلات
+
         // حزمة الترجمة الكاملة للغات مع إضافة المصطلحات الجديدة للأقسام
         const langPack = {
             ar: {
@@ -689,29 +727,75 @@
         function scheduleProgressiveCategoryRendering() {
             const genresMap = buildGenresCache();
             const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
-            const allGenres = Object.keys(genresMap);
-            let currentIndex = 0;
+            homeAllGenresList = Object.keys(genresMap);
 
-            const renderNextBatch = () => {
-                if (currentIndex >= allGenres.length) return;
+            // إزالة زر تحميل المزيد القديم إن وجد
+            const oldBtn = document.getElementById('homeLoadMoreBtn');
+            if (oldBtn) oldBtn.remove();
 
-                const genre = allGenres[currentIndex];
+            // إذا كانت الدفعة الأولى قد حُمِّلت من قبل، فقط أعد إضافة الزر
+            if (homeCategoriesIndex > 0) {
+                if (homeCategoriesIndex < homeAllGenresList.length) {
+                    const loadMoreBtn = document.createElement('button');
+                    loadMoreBtn.id = 'homeLoadMoreBtn';
+                    loadMoreBtn.className = 'load-more-btn';
+                    loadMoreBtn.innerText = currentLang === 'ar' ? '⬇ تحميل المزيد' : '⬇ Load More';
+                    loadMoreBtn.onclick = loadMoreHomeCategories;
+                    categoriesBlock.appendChild(loadMoreBtn);
+                }
+                return;
+            }
+
+            // أول تحميل: عرض الدفعة الأولى فقط
+            const endIndex = Math.min(HOME_CATS_BATCH, homeAllGenresList.length);
+            for (let i = 0; i < endIndex; i++) {
+                const genre = homeAllGenresList[i];
                 if (!categoriesRendered[genre]) {
                     renderSingleCategory(genre, genresMap[genre], categoriesBlock);
                     categoriesRendered[genre] = true;
                 }
+            }
+            homeCategoriesIndex = endIndex;
 
-                currentIndex++;
-                if (currentIndex < allGenres.length) {
-                    if (typeof requestIdleCallback !== 'undefined') {
-                        requestIdleCallback(() => renderNextBatch(), { timeout: 500 });
-                    } else {
-                        setTimeout(renderNextBatch, 500);
-                    }
+            // إضافة زر تحميل المزيد إذا تبقّت تصنيفات
+            if (homeCategoriesIndex < homeAllGenresList.length) {
+                const loadMoreBtn = document.createElement('button');
+                loadMoreBtn.id = 'homeLoadMoreBtn';
+                loadMoreBtn.className = 'load-more-btn';
+                loadMoreBtn.innerText = currentLang === 'ar' ? '⬇ تحميل المزيد' : '⬇ Load More';
+                loadMoreBtn.onclick = loadMoreHomeCategories;
+                categoriesBlock.appendChild(loadMoreBtn);
+            }
+        }
+
+        function loadMoreHomeCategories() {
+            const genresMap = buildGenresCache();
+            const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
+
+            // إزالة الزر أولاً
+            const btn = document.getElementById('homeLoadMoreBtn');
+            if (btn) btn.remove();
+
+            const endIndex = Math.min(homeCategoriesIndex + HOME_CATS_BATCH, homeAllGenresList.length);
+
+            for (let i = homeCategoriesIndex; i < endIndex; i++) {
+                const genre = homeAllGenresList[i];
+                if (!categoriesRendered[genre]) {
+                    renderSingleCategory(genre, genresMap[genre], categoriesBlock);
+                    categoriesRendered[genre] = true;
                 }
-            };
+            }
+            homeCategoriesIndex = endIndex;
 
-            renderNextBatch();
+            // إعادة إضافة الزر إذا بقيت تصنيفات
+            if (homeCategoriesIndex < homeAllGenresList.length) {
+                const loadMoreBtn = document.createElement('button');
+                loadMoreBtn.id = 'homeLoadMoreBtn';
+                loadMoreBtn.className = 'load-more-btn';
+                loadMoreBtn.innerText = currentLang === 'ar' ? '⬇ تحميل المزيد' : '⬇ Load More';
+                loadMoreBtn.onclick = loadMoreHomeCategories;
+                categoriesBlock.appendChild(loadMoreBtn);
+            }
         }
 
         function renderSingleCategory(genre, items, parentContainer) {
@@ -880,12 +964,12 @@
             seriesContainer.innerHTML = '';
 
             // فصل الأفلام والمسلسلات وتجميعها حسب التصنيفات
-            const moviesGenresMap = {};
-            const seriesGenresMap = {};
+            sectionsMoviesGenresMap = {};
+            sectionsSeriesGenresMap = {};
 
             allMoviesData.forEach(item => {
                 const isSeries = (item.type && item.type === 'series');
-                const targetMap = isSeries ? seriesGenresMap : moviesGenresMap;
+                const targetMap = isSeries ? sectionsSeriesGenresMap : sectionsMoviesGenresMap;
 
                 if (item.genre) {
                     // حماية الكلمات المركبة من الفصل (خيال علمي و رسوم متحركة)
@@ -910,23 +994,76 @@
                 }
             });
 
-            // رسم تصنيفات الأفلام
-            Object.keys(moviesGenresMap).forEach(genre => {
-                renderSingleCategory(genre, moviesGenresMap[genre], moviesContainer);
-            });
-            if (Object.keys(moviesGenresMap).length === 0) {
-                moviesContainer.innerHTML = `<p style="text-align:center; color:var(--text-sub); padding:30px;">${currentLang === 'ar' ? 'لا توجد أفلام مضافة حالياً.' : 'No movies available.'}</p>`;
-            }
+            // تهيئة القوائم والمؤشرات
+            sectionsMoviesGenreList = Object.keys(sectionsMoviesGenresMap);
+            sectionsSeriesGenreList = Object.keys(sectionsSeriesGenresMap);
+            sectionsMovieIndex = 0;
+            sectionsSeriesIndex = 0;
 
-            // رسم تصنيفات المسلسلات
-            Object.keys(seriesGenresMap).forEach(genre => {
-                renderSingleCategory(genre, seriesGenresMap[genre], seriesContainer);
-            });
-            if (Object.keys(seriesGenresMap).length === 0) {
-                seriesContainer.innerHTML = `<p style="text-align:center; color:var(--text-sub); padding:30px;">${currentLang === 'ar' ? 'لا توجد مسلسلات مضافة حالياً.' : 'No series available.'}</p>`;
-            }
+            // رسم الدفعة الأولى فقط
+            renderSectionsBatch('movies');
+            renderSectionsBatch('series');
 
             sectionsRendered = true;
+        }
+
+        function renderSectionsBatch(type) {
+            if (type === 'movies') {
+                const container = document.getElementById('sectionsMoviesContent');
+                const genreList = sectionsMoviesGenreList;
+                const genresMap = sectionsMoviesGenresMap;
+
+                // إزالة زر تحميل المزيد القديم
+                const oldBtn = container.querySelector('.sections-load-more-btn');
+                if (oldBtn) oldBtn.remove();
+
+                if (genreList.length === 0) {
+                    container.innerHTML = `<p style="text-align:center; color:var(--text-sub); padding:30px;">${currentLang === 'ar' ? 'لا توجد أفلام مضافة حالياً.' : 'No movies available.'}</p>`;
+                    return;
+                }
+
+                const endIndex = Math.min(sectionsMovieIndex + SECTIONS_CATS_BATCH, genreList.length);
+                for (let i = sectionsMovieIndex; i < endIndex; i++) {
+                    renderSingleCategory(genreList[i], genresMap[genreList[i]], container);
+                }
+                sectionsMovieIndex = endIndex;
+
+                if (sectionsMovieIndex < genreList.length) {
+                    const btn = document.createElement('button');
+                    btn.className = 'load-more-btn sections-load-more-btn';
+                    btn.innerText = currentLang === 'ar' ? '⬇ تحميل المزيد' : '⬇ Load More';
+                    btn.onclick = () => renderSectionsBatch('movies');
+                    container.appendChild(btn);
+                }
+
+            } else {
+                const container = document.getElementById('sectionsSeriesContent');
+                const genreList = sectionsSeriesGenreList;
+                const genresMap = sectionsSeriesGenresMap;
+
+                // إزالة زر تحميل المزيد القديم
+                const oldBtn = container.querySelector('.sections-load-more-btn');
+                if (oldBtn) oldBtn.remove();
+
+                if (genreList.length === 0) {
+                    container.innerHTML = `<p style="text-align:center; color:var(--text-sub); padding:30px;">${currentLang === 'ar' ? 'لا توجد مسلسلات مضافة حالياً.' : 'No series available.'}</p>`;
+                    return;
+                }
+
+                const endIndex = Math.min(sectionsSeriesIndex + SECTIONS_CATS_BATCH, genreList.length);
+                for (let i = sectionsSeriesIndex; i < endIndex; i++) {
+                    renderSingleCategory(genreList[i], genresMap[genreList[i]], container);
+                }
+                sectionsSeriesIndex = endIndex;
+
+                if (sectionsSeriesIndex < genreList.length) {
+                    const btn = document.createElement('button');
+                    btn.className = 'load-more-btn sections-load-more-btn';
+                    btn.innerText = currentLang === 'ar' ? '⬇ تحميل المزيد' : '⬇ Load More';
+                    btn.onclick = () => renderSectionsBatch('series');
+                    container.appendChild(btn);
+                }
+            }
         }
 
         // ================= فتح صفحة التصنيف =================
@@ -1334,6 +1471,15 @@
             categoriesRendered = {};
             sliderListeners = {};
             sectionsRendered = false; // إعادة ضبط لتحديث قسم الأقسام باللغة الجديدة عند زيارته
+            // إعادة ضبط متغيرات تحميل المزيد
+            homeCategoriesIndex = 0;
+            homeAllGenresList = [];
+            sectionsMovieIndex = 0;
+            sectionsSeriesIndex = 0;
+            sectionsMoviesGenresMap = {};
+            sectionsSeriesGenresMap = {};
+            sectionsMoviesGenreList = [];
+            sectionsSeriesGenreList = [];
             document.getElementById('dynamicCategoriesBlock').innerHTML = '';
             renderHomeDOM();
             scheduleProgressiveCategoryRendering();
