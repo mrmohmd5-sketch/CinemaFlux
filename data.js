@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Tall Girl",
+    "year": "2019",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/3o3kuThfjJZfXz1Na23lWviXUFR.jpg",
+    "hdUrl": "https://streamtape.com/e/GjzQX8MxmjT1K81/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GjzQX8MxmjT1K81/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ava Michelle",
+            "image": "https://image.tmdb.org/t/p/w185/fdZCrDLJ1ccR6KyMZwy4VSJs39Y.jpg"
+        },
+        {
+            "name": "Sabrina Carpenter",
+            "image": "https://image.tmdb.org/t/p/w185/h2JcSqZ220VXDqb6xKBVcRquGGN.jpg"
+        },
+        {
+            "name": "Steve Zahn",
+            "image": "https://image.tmdb.org/t/p/w185/rwrPdKGwXnByxUVMxMf8Y7oswi3.jpg"
+        },
+        {
+            "name": "Griffin Gluck",
+            "image": "https://image.tmdb.org/t/p/w185/j7KSBKYLgnLxkZfhQ679HRSDIjj.jpg"
+        },
+        {
+            "name": "Clara Wilsey",
+            "image": "https://image.tmdb.org/t/p/w185/rrblGwHQAyvklTfIdZbuhlRC0QD.jpg"
+        }
+    ]
+},
+    {
     "title": "They Will Kill You",
     "desc": "تستجيب امرأة لإعلان طلب مساعدة للعمل كتدبير منزلي في برج سكني غامض بمدينة نيويورك، غير مدركة أنها تدخل مجتمعاً شهد العديد من حالات الاختفاء على مر السنين، وقد يكون واقعاً تحت قبضة طائفة شيطانية.",
     "poster": "https://image.tmdb.org/t/p/w500/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg",
