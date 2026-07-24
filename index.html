@@ -452,6 +452,7 @@
         let genresCache = null;
         let categoriesRendered = {};
         let homeInitialized = false;
+        let sliderListeners = {}; // تخزين معلومات المستمعين لكل سلايدر
 
         // حزمة الترجمة الكاملة للغات
         const langPack = {
@@ -505,7 +506,7 @@
             scheduleProgressiveCategoryRendering();
         });
 
-        // ================= نظام التحميل التدريجي المحسّن =================
+        // ================= نظام التحميل التدريجي المحسّن بدون تكرار =================
         function buildGenresCache() {
             if (genresCache) return genresCache;
 
@@ -569,6 +570,8 @@
 
             const moviesSlider = document.createElement('div');
             moviesSlider.className = 'movies-slider';
+            const sliderId = `slider-${Date.now()}-${Math.random()}`; // معرف فريد لكل سلايدر
+            moviesSlider.id = sliderId;
 
             const itemsToShow = items.slice(0, 5);
             const remainingItems = items.slice(5);
@@ -580,19 +583,31 @@
             categorySection.appendChild(moviesSlider);
             parentContainer.appendChild(categorySection);
 
+            // تحميل البقية عند التمرير - مع منع التكرار
             if (remainingItems.length > 0) {
+                sliderListeners[sliderId] = {
+                    slider: moviesSlider,
+                    remainingItems: remainingItems,
+                    hasListener: false,
+                    loadedIndices: new Set()
+                };
+
+                const sliderInfo = sliderListeners[sliderId];
+
                 moviesSlider.addEventListener('scroll', () => {
                     const scrollPercentage = (moviesSlider.scrollLeft / (moviesSlider.scrollWidth - moviesSlider.clientWidth)) * 100;
                     if (scrollPercentage > 70) {
-                        remainingItems.forEach(item => {
-                            if (!moviesSlider.querySelector(`[data-movie-id="${item.title}"]`)) {
+                        sliderInfo.remainingItems.forEach((item, index) => {
+                            // تحقق من عدم إضافة العنصر مسبقاً
+                            if (!sliderInfo.loadedIndices.has(index) && !moviesSlider.querySelector(`[data-movie-title="${item.title}"]`)) {
                                 const card = createMovieCard(item);
-                                card.setAttribute('data-movie-id', item.title);
+                                card.setAttribute('data-movie-title', item.title);
                                 moviesSlider.appendChild(card);
+                                sliderInfo.loadedIndices.add(index);
                             }
                         });
                     }
-                }, { once: false });
+                });
             }
         }
 
@@ -676,10 +691,7 @@
             const gridContainer = document.getElementById('categoryGridItems');
             gridContainer.innerHTML = '';
             
-            const itemsToShow = items.slice(0, 12);
-            const remainingItems = items.slice(12);
-
-            itemsToShow.forEach(item => {
+            items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'movie-card';
                 card.style.maxWidth = '100%';
@@ -698,37 +710,6 @@
                 card.onclick = () => openMoviePage(item);
                 gridContainer.appendChild(card);
             });
-
-            if (remainingItems.length > 0) {
-                let loadedMore = 12;
-                window.addEventListener('scroll', () => {
-                    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
-                        remainingItems.slice(0, 6).forEach((item, index) => {
-                            if (gridContainer.querySelector(`[data-item-id="${loadedMore + index}"]`)) return;
-                            
-                            const card = document.createElement('div');
-                            card.className = 'movie-card';
-                            card.style.maxWidth = '100%';
-                            card.setAttribute('data-item-id', loadedMore + index);
-                            card.innerHTML = `
-                                <div class="poster-wrapper">
-                                    <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
-                                </div>
-                                <div class="movie-info">
-                                    <p class="movie-name">${item.title}</p>
-                                    <div class="movie-meta">
-                                        <span class="imdb-badge">${item.rating || 'N/A'}</span>
-                                        <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
-                                    </div>
-                                </div>
-                            `;
-                            card.onclick = () => openMoviePage(item);
-                            gridContainer.appendChild(card);
-                        });
-                        loadedMore += 6;
-                    }
-                }, { once: false });
-            }
         }
 
         function closeCategoryPage() {
@@ -1092,6 +1073,8 @@
             applyLocalization();
             genresCache = null;
             categoriesRendered = {};
+            sliderListeners = {};
+            document.getElementById('dynamicCategoriesBlock').innerHTML = '';
             renderHomeDOM();
             scheduleProgressiveCategoryRendering();
             if(document.getElementById('viewHistory').classList.contains('active')) renderWatchHistoryUI();
