@@ -222,7 +222,18 @@
         }
         .slide-item:hover { transform: scale(1.02); box-shadow: 0 8px 30px rgba(229, 9, 20, 0.25); }
         .slide-item:active { transform: scale(0.98); }
-        .slide-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6); }
+        .slide-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            display: block;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .slide-img.loaded {
+            opacity: 1;
+        }
         .slide-details {
             position: absolute;
             bottom: 0;
@@ -763,11 +774,11 @@
         @keyframes spin { to { transform: rotate(360deg); } }
 
         /* تحسين lazy load للصور */
-        .movie-poster, .slide-img, .search-item-poster, .cast-avatar {
+        .movie-poster, .search-item-poster, .cast-avatar {
             transition: opacity 0.2s ease;
             opacity: 0;
         }
-        .movie-poster.loaded, .slide-img.loaded, .search-item-poster.loaded, .cast-avatar.loaded {
+        .movie-poster.loaded, .search-item-poster.loaded, .cast-avatar.loaded {
             opacity: 1;
         }
     </style>
@@ -1470,12 +1481,21 @@
                 const slide = document.createElement('div');
                 slide.className = 'slide-item';
                 slide.innerHTML = `
-                    <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy" decoding="async" fetchpriority="low">
+                    <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" alt="${item.title}">
                     <div class="slide-details">
                         <div class="slide-title">${item.title}</div>
                         <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
                     </div>
                 `;
+                // إضافة class loaded فوراً لأن الصورة تظهر فوراً
+                const img = slide.querySelector('.slide-img');
+                img.onload = () => img.classList.add('loaded');
+                // إذا فشل التحميل، نضيف class loaded أيضاً لتظهر الصورة البديلة
+                img.onerror = () => img.classList.add('loaded');
+                // إذا كانت الصورة محملة بالفعل من الكاش
+                if (img.complete) {
+                    img.classList.add('loaded');
+                }
                 slide.onclick = () => openMoviePage(item);
                 featuredSlider.appendChild(slide);
             });
