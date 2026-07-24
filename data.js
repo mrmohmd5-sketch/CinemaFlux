@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Irreversible",
+    "desc": "تتكشف الأحداث على مدار إحدى الليالي الصادمة في باريس بترتيب زمني عكسي حيث تعرضت أليكس الجميلة للاغتصاب والضرب بوحشية من قبل شخص غريب في النفق. يتولى صديقها وعشيقها السابق زمام الأمور بأنفسهم من خلال توظيف مجرمين لمساعدتهما في العثور على المغتصب حتى يتمكنوا من الانتقام. فحص جميل ورهيب في نفس الوقت للطبيعة المدمرة للسبب والنتيجة ، وكيف يدمر الوقت كل شيء.",
+    "poster": "https://image.tmdb.org/t/p/w500/AdrItykbv1evqcbIPrItVWnkaKj.jpg",
+    "hdUrl": "https://streamtape.com/e/lw8b368K7xhakJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/lw8b368K7xhakJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "دراما إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Monica Bellucci",
+            "image": "https://image.tmdb.org/t/p/w185/7g3k3u2gZpE7XU8GRYwHDuN1jlM.jpg"
+        },
+        {
+            "name": "Vincent Cassel",
+            "image": "https://image.tmdb.org/t/p/w185/ivUQfhn5olOmR5hthN8C8GThBV4.jpg"
+        },
+        {
+            "name": "Albert Dupontel",
+            "image": "https://image.tmdb.org/t/p/w185/gwZFclFz6IQcKadX3wYhagP0r2I.jpg"
+        },
+        {
+            "name": "Jo Prestia",
+            "image": "https://image.tmdb.org/t/p/w185/owAotRB9XMCf1LkceEl0ygWueQA.jpg"
+        },
+        {
+            "name": "Philippe Nahon",
+            "image": "https://image.tmdb.org/t/p/w185/CHlLvN1GCXb78eB418z9yfhrSu.jpg"
+        }
+    ]
+},
+    {
     "title": "Project Hail Mary",
     "desc": "يستيقظ رايلاند غريس، مدرس العلوم، على متن مركبة فضائية تبعد سنوات ضوئية عن موطنه، فاقدًا للذاكرة تمامًا، لا يتذكر من هو ولا كيف وصل إلى هناك. ومع عودة ذاكرته تدريجيًا، يبدأ في اكتشاف مهمته: حل لغز المادة الغامضة التي تتسبب في انطفاء الشمس. عليه أن يستعين بمعرفته العلمية وأفكاره غير التقليدية لإنقاذ كل شيء على الأرض من الفناء... لكن صداقة غير متوقعة تعني أنه قد لا يضطر إلى القيام بذلك بمفرده.",
     "poster": "https://image.tmdb.org/t/p/w500/wNnoJaRb5Oc9SodTWJLEC26wL8q.jpg",
