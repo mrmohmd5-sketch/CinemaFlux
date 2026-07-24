@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Ernest & Celestine",
+    "desc": "من غير المستحسن أن يتصادق دب مع فأرة. لكنّ 'إرنست' الذي هو مهرّج وموسيقي يأوي في منزله 'سيليستين' التي هي فأرة يتيمة صغيرة تعشق الرسم والكتابة. يتخطّى هذان الفنانان الموهوبان المشاكل اليوميّة سوياً، ويتآزران وقد قرّرا أن يعيشا بسعادة تامة.",
+    "poster": "https://image.tmdb.org/t/p/w500/6sL1zDX8hpDgIwvMVQlaCQxwAK.jpg",
+    "hdUrl": "https://streamtape.com/e/xkwk8GxBWwikpaK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/xkwk8GxBWwikpaK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "رسوم متحركة عائلي جريمة دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Anne-Marie Loop",
+            "image": "https://image.tmdb.org/t/p/w185/igYOgcbWoe8g7WoNG4RaaS68nFO.jpg"
+        },
+        {
+            "name": "Lambert Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/pFuLPZtgrKsnRXJCKWILQ69k6Ta.jpg"
+        },
+        {
+            "name": "Pauline Brunner",
+            "image": "https://image.tmdb.org/t/p/w185/jpWniaKDBgJUObxpJUbLKHLs1DV.jpg"
+        },
+        {
+            "name": "Patrice Melennec",
+            "image": "https://image.tmdb.org/t/p/w185/1tlxgaJI359t0umsGQGQMbqPT7C.jpg"
+        },
+        {
+            "name": "Brigitte Virtudes",
+            "image": "https://image.tmdb.org/t/p/w185/3iLxgUzw9GI6g09WLEKMcycLs3x.jpg"
+        }
+    ]
+},
+    {
     "title": "This Is Where I Leave You",
     "desc": "مرحبًا بك في بيتك. الحصول على غير مرتاح.\r عندما يتوفى والدهم ، يعود أربعة أشقاء بالغين مرهقين من العالم إلى منزل طفولتهم ويطلب منهم - مع تحذير - البقاء هناك معا لمدة أسبوع ، جنبا إلى جنب مع والدتهم التي تتحدث بحرية ومجموعة من الأزواج ، السابقين والذين ربما كانوا. بينما يعيد الإخوة والأخوات فحص تاريخهم المشترك ووضع كل علاقة ممزقة بين أولئك الذين يعرفونهم ويحبونهم بشكل أفضل ، فإنهم يعيدون الاتصال بطرق مضحكة بشكل هستيري وذات أهمية عاطفية.",
     "poster": "https://image.tmdb.org/t/p/w500/rVUI2267FdetVWz9UBQbqTmRVhQ.jpg",
