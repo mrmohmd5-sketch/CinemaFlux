@@ -43,63 +43,16 @@
             padding: 15px; border-bottom: 1px solid var(--border-color);
             display: flex; justify-content: space-between; align-items: center;
         }
-        
-        /* ----- تصميم اللوجو الجديد الاحترافي ----- */
-        .logo-text {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 22px;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 12px rgba(229, 9, 20, 0.6);
-            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            cursor: default;
-            letter-spacing: 0.5px;
-            background: linear-gradient(135deg, var(--accent), #ff4d6d);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            position: relative;
+        .logo-text { 
+            font-size: 20px; font-weight: bold; color: var(--accent);
+            display: flex; align-items: center;
         }
-        .logo-text::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), #ff4d6d, transparent);
-            border-radius: 2px;
-            opacity: 0.7;
-            transition: opacity 0.3s;
+        .logo-text img {
+            height: 40px;
+            width: auto;
+            max-height: 50px;
+            object-fit: contain;
         }
-        .logo-text:hover {
-            transform: scale(1.05) rotate(-1deg);
-            text-shadow: 0 0 30px rgba(229, 9, 20, 0.9);
-        }
-        .logo-text:hover::after {
-            opacity: 1;
-        }
-        .logo-icon {
-            font-size: 28px;
-            -webkit-text-fill-color: initial;
-            filter: drop-shadow(0 0 8px rgba(229, 9, 20, 0.5));
-            transition: transform 0.3s ease;
-        }
-        .logo-text:hover .logo-icon {
-            transform: scale(1.2) rotate(-6deg);
-        }
-        .logo-sub {
-            font-size: 12px;
-            font-weight: 400;
-            color: var(--text-sub);
-            -webkit-text-fill-color: var(--text-sub);
-            margin-right: 4px;
-            letter-spacing: 1px;
-            opacity: 0.8;
-        }
-        /* نهاية اللوجو */
 
         .container { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 12px; box-sizing: border-box; }
         
@@ -736,11 +689,8 @@
     <script src="data.js"></script>
 
     <header>
-        <!-- لوجو جديد بتصميم احترافي -->
         <div class="logo-text" id="txtLogo">
-            <span class="logo-icon">🎬</span>
-            <span>CinemaFlux</span>
-            <span class="logo-sub">| سينما فلوكس</span>
+            <img src="https://k.top4top.io/p_3857e9khx1.jpg" alt="CinemaFlux Logo">
         </div>
     </header>
 
@@ -1812,9 +1762,7 @@
         function applyLocalization() {
             const dict = langPack[currentLang];
             
-            // تم تعديل اللوجو ليصبح ثابتاً بتصميم خاص، لذا لن نغير نصه من هنا
-            // لكننا نحتفظ بتحديث باقي العناصر
-            
+            document.getElementById('txtLogo').innerHTML = `<img src="https://k.top4top.io/p_3857e9khx1.jpg" alt="CinemaFlux Logo" style="height:40px; width:auto; max-height:50px; object-fit:contain;">`;
             document.getElementById('txtNavHome').innerText = dict.navHome;
             document.getElementById('txtNavSections').innerText = dict.navSections;
             document.getElementById('txtNavSearch').innerText = dict.navSearch;
