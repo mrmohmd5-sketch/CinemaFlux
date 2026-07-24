@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "They Will Kill You",
+    "year": "2026",
+    "desc": "تستجيب امرأة لإعلان طلب مساعدة للعمل كتدبير منزلي في برج سكني غامض بمدينة نيويورك، غير مدركة أنها تدخل مجتمعاً شهد العديد من حالات الاختفاء على مر السنين، وقد يكون واقعاً تحت قبضة طائفة شيطانية.",
+    "poster": "https://image.tmdb.org/t/p/w500/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg",
+    "hdUrl": "https://streamtape.com/e/3B1YBYjBK0UdzdY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3B1YBYjBK0UdzdY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة كوميديا رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Zazie Beetz",
+            "image": "https://image.tmdb.org/t/p/w185/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg"
+        },
+        {
+            "name": "Myha'la",
+            "image": "https://image.tmdb.org/t/p/w185/hRc3igngt5dkpM08i0a3z7gkYWa.jpg"
+        },
+        {
+            "name": "Paterson Joseph",
+            "image": "https://image.tmdb.org/t/p/w185/7CIVAl4HiuWrmp4r8Jk09sqxTBy.jpg"
+        },
+        {
+            "name": "Tom Felton",
+            "image": "https://image.tmdb.org/t/p/w185/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
+        },
+        {
+            "name": "Heather Graham",
+            "image": "https://image.tmdb.org/t/p/w185/avYdNkeg1oTvmrNJbFDcTlBCkKs.jpg"
+        }
+    ]
+},
+    {
     "title": "Tall Girl",
     "year": "2019",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
