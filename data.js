@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Shrek",
+    "desc": "شريك غول اخضر يعيش في المستنقع وحيدًا مستمتعًا بعزلته، إلى أن يجد في يوم ما كل شخصيات القصص الخيالية ينامون في مستنقعه, فيذهب إلى اللورد فركواد ومعه الحمار كمساعده كي يامرهم بالرحيل, فيطلب منه فركواد ان يذهب لعرين التنين لينقذ الأميرة فيونا التي تتحول في المساء إلى غولة بدورها.",
+    "poster": "https://image.tmdb.org/t/p/w500/vQDAFMwOEdo2qSNZEb5uFixNfV0.jpg",
+    "hdUrl": "https://streamtape.com/e/DWglKRyaDbTkez3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DWglKRyaDbTkez3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة كوميديا فانتازيا مغامرة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mike Myers",
+            "image": "https://image.tmdb.org/t/p/w185/gjfDl52Kk02MPgUYFjs9bOy33OY.jpg"
+        },
+        {
+            "name": "Eddie Murphy",
+            "image": "https://image.tmdb.org/t/p/w185/qgjMfefsKwSYsyCaIX46uyOXIpy.jpg"
+        },
+        {
+            "name": "Cameron Diaz",
+            "image": "https://image.tmdb.org/t/p/w185/tTpQSKwdLrR6xBGHCqg8VcVQZzH.jpg"
+        },
+        {
+            "name": "John Lithgow",
+            "image": "https://image.tmdb.org/t/p/w185/ajfuBSm1HuVqFJlbTmAlza62Xxr.jpg"
+        },
+        {
+            "name": "Vincent Cassel",
+            "image": "https://image.tmdb.org/t/p/w185/ivUQfhn5olOmR5hthN8C8GThBV4.jpg"
+        }
+    ]
+},
+    {
     "title": "Ernest & Celestine",
     "desc": "من غير المستحسن أن يتصادق دب مع فأرة. لكنّ 'إرنست' الذي هو مهرّج وموسيقي يأوي في منزله 'سيليستين' التي هي فأرة يتيمة صغيرة تعشق الرسم والكتابة. يتخطّى هذان الفنانان الموهوبان المشاكل اليوميّة سوياً، ويتآزران وقد قرّرا أن يعيشا بسعادة تامة.",
     "poster": "https://image.tmdb.org/t/p/w500/6sL1zDX8hpDgIwvMVQlaCQxwAK.jpg",
