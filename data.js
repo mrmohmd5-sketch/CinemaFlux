@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Jurassic Park",
+    "desc": "ينشئ رجل أعمال ثري سراً متنزهًا يضم ديناصورات حية مأخوذة من الحمض النووي لعصور ما قبل التاريخ. قبل يوم الافتتاح ، دعا فريقًا من الخبراء وأحفاده المتحمسين لتجربة الحديقة ومساعدة المستثمرين القلقين. ومع ذلك ، فإن الحديقة ليست مسلية على الإطلاق حيث أن أنظمة الأمان تخرج عن الخط وتهرب الديناصورات.",
+    "poster": "https://image.tmdb.org/t/p/w500/b1xCNnyrPebIc7EWNZIa6jhb1Ww.jpg",
+    "hdUrl": "https://streamtape.com/e/GXKWAVxqjpH1zPW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GXKWAVxqjpH1zPW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sam Neill",
+            "image": "https://image.tmdb.org/t/p/w185/iIfuxalf37xUayuGyK0zG7z6WEZ.jpg"
+        },
+        {
+            "name": "Laura Dern",
+            "image": "https://image.tmdb.org/t/p/w185/gB9PnGEvxKg33OSlcqptQwTBwPE.jpg"
+        },
+        {
+            "name": "Jeff Goldblum",
+            "image": "https://image.tmdb.org/t/p/w185/kcyEPgYtBP5Pm6LLeLGfXKjYovL.jpg"
+        },
+        {
+            "name": "Richard Attenborough",
+            "image": "https://image.tmdb.org/t/p/w185/mJGvNS69xUqiNRybKzPl2Zuxe9Z.jpg"
+        },
+        {
+            "name": "Bob Peck",
+            "image": "https://image.tmdb.org/t/p/w185/66wkMHY76swadwfHLcTEKEKhUbv.jpg"
+        }
+    ]
+},
+    {
     "title": "Irreversible",
     "desc": "تتكشف الأحداث على مدار إحدى الليالي الصادمة في باريس بترتيب زمني عكسي حيث تعرضت أليكس الجميلة للاغتصاب والضرب بوحشية من قبل شخص غريب في النفق. يتولى صديقها وعشيقها السابق زمام الأمور بأنفسهم من خلال توظيف مجرمين لمساعدتهما في العثور على المغتصب حتى يتمكنوا من الانتقام. فحص جميل ورهيب في نفس الوقت للطبيعة المدمرة للسبب والنتيجة ، وكيف يدمر الوقت كل شيء.",
     "poster": "https://image.tmdb.org/t/p/w500/AdrItykbv1evqcbIPrItVWnkaKj.jpg",
