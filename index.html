@@ -936,10 +936,9 @@
             // بناء واجهة التطبيق
             buildAppUI();
             updateUserUI();
-            renderHomeDOM();
-            renderSearchHistoryUI();
             applyLocalization();
-            scheduleProgressiveCategoryRendering();
+            // نستخدم switchNav('home') لتأكيد تنشيط الصفحة الرئيسية وعرض المحتوى فوراً
+            switchNav('home');
             addGlobalRippleEffect();
 
             // استعادة حالة الفيلم إذا كانت موجودة
@@ -971,7 +970,7 @@
                     <div class="slider-container">
                         <div class="featured-slider" id="featuredSlider"></div>
                     </div>
-                    <div id="dynamicCategoriesBlock"></div>
+                    <div id="dynamicCategoriesBlock"><div style="text-align:center; padding:30px; color:var(--text-sub);">⏳ جاري التحميل...</div></div>
                 </div>
 
                 <!-- ================= صفحة كل الأفلام ================= -->
@@ -1158,6 +1157,11 @@
 
             const oldBtn = document.getElementById('homeLoadMoreBtn');
             if (oldBtn) oldBtn.remove();
+
+            // إذا كانت هذه أول مرة يتم فيها استدعاء الدالة، نمسح رسالة التحميل
+            if (homeCategoriesIndex === 0) {
+                categoriesBlock.innerHTML = '';
+            }
 
             if (homeCategoriesIndex > 0) {
                 if (homeCategoriesIndex < homeAllGenresList.length) {
@@ -1834,7 +1838,7 @@
             sliderListeners = {};
             homeCategoriesIndex = 0;
             homeAllGenresList = [];
-            document.getElementById('dynamicCategoriesBlock').innerHTML = '';
+            document.getElementById('dynamicCategoriesBlock').innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-sub);">⏳ جاري التحميل...</div>';
             renderHomeDOM();
             scheduleProgressiveCategoryRendering();
             if(document.getElementById('viewHistory').classList.contains('active')) renderWatchHistoryUI();
