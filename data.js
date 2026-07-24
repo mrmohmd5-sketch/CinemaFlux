@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Blonde",
+    "desc": "يتناول العمل السيرة الذاتية لواحدة من أجمل نساء هوليود مارلين مونرو، البداية تحت اسم نورما جين، مرورًا بالعديد من المواقف التي صنعت منها أيقونة في الجمال والفن.",
+    "poster": "https://image.tmdb.org/t/p/w500/3kygQnqSgq9gZcv5ktX0vLxjlzj.jpg",
+    "hdUrl": "https://streamtape.com/e/jO3741eVl1IzA3m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jO3741eVl1IzA3m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.9",
+    "genre": "دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ana de Armas",
+            "image": "https://image.tmdb.org/t/p/w185/3vxvsmYLTf4jnr163SUlBIw51ee.jpg"
+        },
+        {
+            "name": "Adrien Brody",
+            "image": "https://image.tmdb.org/t/p/w185/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg"
+        },
+        {
+            "name": "Bobby Cannavale",
+            "image": "https://image.tmdb.org/t/p/w185/wlp20ggyNI7x0xGUtTjC2Xl2XmD.jpg"
+        },
+        {
+            "name": "Sara Paxton",
+            "image": "https://image.tmdb.org/t/p/w185/atau2a3BlZaTaWSosp4zU7SAFmt.jpg"
+        },
+        {
+            "name": "Lucy DeVito",
+            "image": "https://image.tmdb.org/t/p/w185/ilsebP0Rv9DEpersonvY9WF68eN.jpg"
+        }
+    ]
+},
+    {
     "title": "Crime 101",
     "desc": "بينما يخطط لص غامض لسرقة العمر الكبرى على طريق 101 السريع الشهير في لوس أنجلوس لتكون عمليته الأخيرة، تتعقد خيوط اللعبة حين تتقاطع طرقه مع وسيطة تأمين تواجه أزمتها الخاصة. وفي ظل مطاردة شرسة من محقق لا يرحم، يجد الجميع أنفسهم في سباق مع الزمن، حيث الخطأ الواحد يعني النهاية، والقاعدة الأولى هي: احرص دائماً على وجود مخرج.",
     "poster": "https://image.tmdb.org/t/p/w500/cZY1IOguquyYhJdRbuLcdypXnDA.jpg",
