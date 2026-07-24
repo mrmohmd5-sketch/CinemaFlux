@@ -920,7 +920,6 @@
                 }
             } catch (e) {
                 console.error('فشل تحميل البيانات من GitHub:', e);
-                // عرض رسالة خطأ في الصفحة
                 document.getElementById('mainContainer').innerHTML = `
                     <div class="error-container">
                         <h2>⚠️ فشل تحميل البيانات</h2>
@@ -928,18 +927,22 @@
                         <button onclick="location.reload()">🔄 إعادة المحاولة</button>
                     </div>
                 `;
-                return; // التوقف عن تنفيذ باقي التطبيق
+                return;
             }
 
             // إذا وصلنا إلى هنا فهذا يعني أن البيانات جُلبت بنجاح
             document.getElementById('bottomNav').style.display = 'flex';
-            // بناء واجهة التطبيق
+
+            // بناء واجهة التطبيق (مرة واحدة فقط)
             buildAppUI();
+
+            // ===== حل مشكلة عدم ظهور المحتوى في الصفحة الرئيسية =====
+            // إعادة ضبط الحالة والتصنيفات ثم إعادة التصيير
+            resetAndRenderHome();
+
             updateUserUI();
-            renderHomeDOM();
             renderSearchHistoryUI();
             applyLocalization();
-            scheduleProgressiveCategoryRendering();
             addGlobalRippleEffect();
 
             // استعادة حالة الفيلم إذا كانت موجودة
@@ -959,11 +962,29 @@
             }
         });
 
+        // ===== دالة إعادة ضبط وتصيير الصفحة الرئيسية =====
+        function resetAndRenderHome() {
+            // إعادة تعيين المتغيرات المؤقتة
+            genresCache = null;
+            categoriesRendered = {};
+            homeCategoriesIndex = 0;
+            homeAllGenresList = [];
+
+            // تفريغ حاوية التصنيفات الديناميكية
+            const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
+            if (categoriesBlock) categoriesBlock.innerHTML = '';
+
+            // إعادة تصيير السلايدر العلوي
+            renderHomeDOM();
+
+            // إعادة جدولة التصنيفات التدريجية
+            scheduleProgressiveCategoryRendering();
+        }
+
         // ===== بناء واجهة التطبيق =====
         function buildAppUI() {
             const container = document.getElementById('mainContainer');
-            // إذا كان المحتوى قد تم بناؤه مسبقاً (في حالة إعادة التحميل) نتجاوز
-            if (container.querySelector('.app-view')) return;
+            if (container.querySelector('.app-view')) return; // تم البناء مسبقاً
 
             container.innerHTML = `
                 <!-- ================= الصفحة الرئيسية ================= -->
@@ -1156,6 +1177,7 @@
             const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
             homeAllGenresList = Object.keys(genresMap);
 
+            // إزالة زر "تحميل المزيد" القديم إن وجد
             const oldBtn = document.getElementById('homeLoadMoreBtn');
             if (oldBtn) oldBtn.remove();
 
@@ -1382,6 +1404,7 @@
         // ===== دالة بناء الصفحة الرئيسية (السلايدر العلوي) =====
         function renderHomeDOM() {
             const featuredSlider = document.getElementById('featuredSlider');
+            if (!featuredSlider) return;
             featuredSlider.innerHTML = '';
 
             const newestItems = [...allMoviesData].slice(0, 10);
@@ -1406,7 +1429,6 @@
         function openCategoryPage(genreName, items) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewCategoryDetail')?.classList.add('active');
-            // إنشاء الصفحة ديناميكياً إذا لم توجد
             let catView = document.getElementById('viewCategoryDetail');
             if (!catView) {
                 const container = document.getElementById('mainContainer');
@@ -1838,7 +1860,6 @@
             renderHomeDOM();
             scheduleProgressiveCategoryRendering();
             if(document.getElementById('viewHistory').classList.contains('active')) renderWatchHistoryUI();
-            // إعادة رسم كل الأفلام والمسلسلات إذا كانت معروضة
             if(document.getElementById('viewAllMovies').classList.contains('active')) renderAllMoviesView();
             if(document.getElementById('viewAllSeries').classList.contains('active')) renderAllSeriesView();
         }
@@ -2081,7 +2102,6 @@
             });
         }
 
-        // إضافة تعريف keyframes للـ ripple
         const styleSheet = document.createElement("style");
         styleSheet.textContent = `
             @keyframes ripple-anim-global {
