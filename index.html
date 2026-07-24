@@ -473,7 +473,7 @@
         let currentUser = JSON.parse(localStorage.getItem('cf_user')) || null;
         
         let searchHistory = JSON.parse(localStorage.getItem('cf_search_history')) || [];
-        let watchHistory = JSON.parse(localStorage.getItem('cf_watch_history')) || [];
+        let watchHistory = []; // يتم تحميله لاحقاً بحسب المستخدم النشط
 
         let activeMovieItem = null;
         let currentHD = "", currentSD = "";
@@ -482,10 +482,9 @@
         let genresCache = null;
         let categoriesRendered = {};
         let homeInitialized = false;
-        let sliderListeners = {}; // تخزين معلومات المستمعين لكل سلايدر
-        let sectionsRendered = false; // متغير لتتبع تحميل قسم الأقسام
+        let sliderListeners = {};
+        let sectionsRendered = false;
 
-        // حزمة الترجمة الكاملة للغات مع إضافة المصطلحات الجديدة للأقسام
         const langPack = {
             ar: {
                 logo: "🎬 سينما فلوكس | CinemaFlux", navHome: "الرئيسية", navSections: "الأقسام", navSearch: "بحث", navProfile: "الحساب",
@@ -521,6 +520,23 @@
 
         let authMode = 'login';
 
+        // ================= دوال إدارة السجل الخاص بالمستخدم =================
+        function getWatchHistoryKey() {
+            // توليد مفتاح ذاكرة خاص بناءً على اسم المستخدم أو وضعه كزائر
+            return currentUser ? `cf_watch_history_${currentUser.username}` : 'cf_watch_history_guest';
+        }
+
+        function loadUserWatchHistory() {
+            // سحب البيانات من مفتاح المستخدم الحالي تحديداً
+            const key = getWatchHistoryKey();
+            watchHistory = JSON.parse(localStorage.getItem(key)) || [];
+            
+            // إذا كان المستخدم حالياً داخل صفحة سجل المشاهدة، قم بتحديث القائمة المعروضة فوراً
+            if (document.getElementById('viewHistory').classList.contains('active')) {
+                renderWatchHistoryUI();
+            }
+        }
+
         window.addEventListener('DOMContentLoaded', () => {
             if (typeof globalMoviesData !== 'undefined') {
                 allMoviesData = globalMoviesData;
@@ -533,6 +549,7 @@
             }
 
             updateUserUI();
+            loadUserWatchHistory(); // تحميل سجل المشاهدة للمستخدم النشط عند بدء التشغيل
             renderHomeDOM();
             renderSearchHistoryUI();
             applyLocalization();
@@ -603,7 +620,7 @@
 
             const moviesSlider = document.createElement('div');
             moviesSlider.className = 'movies-slider';
-            const sliderId = `slider-${Date.now()}-${Math.random()}`; // معرف فريد لكل سلايدر
+            const sliderId = `slider-${Date.now()}-${Math.random()}`;
             moviesSlider.id = sliderId;
 
             const itemsToShow = items.slice(0, 5);
@@ -616,7 +633,6 @@
             categorySection.appendChild(moviesSlider);
             parentContainer.appendChild(categorySection);
 
-            // تحميل البقية عند التمرير - مع منع التكرار
             if (remainingItems.length > 0) {
                 sliderListeners[sliderId] = {
                     slider: moviesSlider,
@@ -631,7 +647,6 @@
                     const scrollPercentage = (moviesSlider.scrollLeft / (moviesSlider.scrollWidth - moviesSlider.clientWidth)) * 100;
                     if (scrollPercentage > 70) {
                         sliderInfo.remainingItems.forEach((item, index) => {
-                            // تحقق من عدم إضافة العنصر مسبقاً
                             if (!sliderInfo.loadedIndices.has(index) && !moviesSlider.querySelector(`[data-movie-title="${item.title}"]`)) {
                                 const card = createMovieCard(item);
                                 card.setAttribute('data-movie-title', item.title);
@@ -663,7 +678,6 @@
             return card;
         }
 
-        // ================= بناء محتويات الصفحة الرئيسية =================
         function renderHomeDOM() {
             const featuredSlider = document.getElementById('featuredSlider');
             featuredSlider.innerHTML = '';
@@ -686,7 +700,6 @@
             homeInitialized = true;
         }
 
-        // ================= نظام التنقل (مع إضافة قسم الأقسام) =================
         function switchNav(target) {
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
@@ -698,7 +711,6 @@
                 if (!homeInitialized) renderHomeDOM();
                 scheduleProgressiveCategoryRendering();
             } else if (target === 'sections') {
-                // تفعيل صفحة الأقسام الجديدة
                 document.getElementById('navSections').classList.add('active');
                 document.getElementById('viewSections').classList.add('active');
                 if (!sectionsRendered) renderSectionsView();
@@ -720,7 +732,6 @@
             }
         }
 
-        // ================= وظائف قسم الأقسام (الميزة الجديدة) =================
         function switchSectionTab(type) {
             document.getElementById('btnTabMovies').classList.toggle('active', type === 'movies');
             document.getElementById('btnTabSeries').classList.toggle('active', type === 'series');
@@ -741,7 +752,6 @@
             moviesContainer.innerHTML = '';
             seriesContainer.innerHTML = '';
 
-            // فصل الأفلام والمسلسلات وتجميعها حسب التصنيفات
             const moviesGenresMap = {};
             const seriesGenresMap = {};
 
@@ -762,7 +772,6 @@
                 }
             });
 
-            // رسم تصنيفات الأفلام
             Object.keys(moviesGenresMap).forEach(genre => {
                 renderSingleCategory(genre, moviesGenresMap[genre], moviesContainer);
             });
@@ -770,7 +779,6 @@
                 moviesContainer.innerHTML = `<p style="text-align:center; color:var(--text-sub); padding:30px;">${currentLang === 'ar' ? 'لا توجد أفلام مضافة حالياً.' : 'No movies available.'}</p>`;
             }
 
-            // رسم تصنيفات المسلسلات
             Object.keys(seriesGenresMap).forEach(genre => {
                 renderSingleCategory(genre, seriesGenresMap[genre], seriesContainer);
             });
@@ -781,7 +789,6 @@
             sectionsRendered = true;
         }
 
-        // ================= فتح صفحة التصنيف =================
         function openCategoryPage(genreName, items) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewCategoryDetail').classList.add('active');
@@ -815,7 +822,6 @@
             switchNav('home');
         }
 
-        // ================= فتح صفحة الفيلم =================
         function openMoviePage(item) {
             activeMovieItem = item;
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
@@ -876,14 +882,13 @@
             commentsContainer.innerHTML = `
                 <div class="comment-item">
                     <div class="comment-user"> CinemaFlux </div>
-                    <p class="comment-text">  أترك تعليقا لطيف للشخص الذي سيشاهد من بعدك  !  تحياتي مطور الموقع  .</p>
+                    <p class="comment-text"> أترك تعليقا لطيف للشخص الذي سيشاهد من بعدك ! تحياتي مطور الموقع .</p>
                 </div>
             `;
             
-            addToWatchHistory(item);
+            addToWatchHistory(item); // عند فتح الفيلم يتم حفظه في السجل المخصص للمستخدم الحالي
         }
 
-        // ================= دالة بناء قوائم المسلسلات =================
         function renderSeriesControls(media, container, playerContainer, playerControls) {
             if (!media.seasons || media.seasons.length === 0) {
                 container.innerHTML = `<p style="color:var(--accent); text-align:center; font-weight:bold; margin:0;">${currentLang === 'ar' ? 'لا توجد مواسم مضافة بعد لهذه المادة' : 'No seasons available for this media'}</p>`;
@@ -933,7 +938,6 @@
             updateEpisodes(seasonSelect.value);
         }
 
-        // ================= تشغيل الحلقات =================
         function playEpisode(encodedUrl) {
             const playerContainer = document.getElementById('mainVideoContainer');
             const playerControls = document.getElementById('mainPlayerControls');
@@ -995,7 +999,6 @@
             input.value = "";
         }
 
-        // ================= البحث =================
         function handleSearchSearch() {
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
             const historyBlock = document.getElementById('searchHistoryBlock');
@@ -1105,7 +1108,7 @@
             }
         }
 
-        // ================= سجل المشاهدة =================
+        // ================= سجل المشاهدة (مطور ليدعم كل حساب على حدة) =================
         function addToWatchHistory(item) {
             watchHistory = watchHistory.filter(x => x.title !== item.title);
             watchHistory.unshift({
@@ -1116,7 +1119,8 @@
                 timestamp: Date.now()
             });
             if(watchHistory.length > 20) watchHistory.pop();
-            localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
+            // الحفظ بالمفتاح الخاص بالمستخدم الحالي
+            localStorage.setItem(getWatchHistoryKey(), JSON.stringify(watchHistory));
         }
 
         function renderWatchHistoryUI() {
@@ -1149,12 +1153,12 @@
         function clearWatchHistoryAction() {
             if(confirm(currentLang === 'ar' ? "هل أنت متأكد من مسح سجل المشاهدة؟" : "Are you sure you want to clear your watch history?")) {
                 watchHistory = [];
-                localStorage.setItem('cf_watch_history', JSON.stringify(watchHistory));
+                // مسح السجل المربوط بالحساب الحالي فقط
+                localStorage.setItem(getWatchHistoryKey(), JSON.stringify(watchHistory));
                 renderWatchHistoryUI();
             }
         }
 
-        // ================= الإعدادات =================
         function setLanguage(lang) {
             currentLang = lang;
             document.getElementById('settingLangAr').classList.toggle('active', lang === 'ar');
@@ -1173,7 +1177,7 @@
             genresCache = null;
             categoriesRendered = {};
             sliderListeners = {};
-            sectionsRendered = false; // إعادة ضبط لتحديث قسم الأقسام باللغة الجديدة عند زيارته
+            sectionsRendered = false;
             document.getElementById('dynamicCategoriesBlock').innerHTML = '';
             renderHomeDOM();
             scheduleProgressiveCategoryRendering();
@@ -1230,7 +1234,6 @@
             document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = dict.watchNow);
         }
 
-        // ================= الوضع الفاتح والغامق =================
         function setTheme(theme) {
             currentTheme = theme;
             document.body.setAttribute('data-theme', theme);
@@ -1243,13 +1246,14 @@
             alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
         }
 
-        // ================= نظام العضوية =================
+        // ================= نظام العضوية (معدل لربط المشاهدات) =================
         function openAuthModal() {
             if (currentUser) {
                 if(confirm(currentLang === 'ar' ? "هل تريد تسجيل الخروج؟" : "Do you want to log out?")) {
                     currentUser = null;
                     localStorage.removeItem('cf_user');
                     updateUserUI();
+                    loadUserWatchHistory(); // العودة تلقائياً لسجل الزائر عند الخروج
                     alert(currentLang === 'ar' ? "تم تسجيل الخروج بنجاح." : "Logged out successfully.");
                 }
             } else {
@@ -1305,6 +1309,7 @@
             document.getElementById('authPassword').value = "";
             closeAuthModal();
             updateUserUI();
+            loadUserWatchHistory(); // تحميل سجل المشاهدة الخاص بالحساب فور دخوله
         }
 
         function updateUserUI() {
