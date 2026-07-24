@@ -448,6 +448,11 @@
         let activeMovieItem = null;
         let currentHD = "", currentSD = "";
 
+        // متغيرات التحميل التدريجي
+        let genresCache = null;
+        let categoriesRendered = {};
+        let homeInitialized = false;
+
         // حزمة الترجمة الكاملة للغات
         const langPack = {
             ar: {
@@ -480,14 +485,12 @@
             }
         };
 
-        let authMode = 'login'; // login أو register
+        let authMode = 'login';
 
         window.addEventListener('DOMContentLoaded', () => {
-            // جلب البيانات من data.js
             if (typeof globalMoviesData !== 'undefined') {
                 allMoviesData = globalMoviesData;
             } else {
-                // بيانات تجريبية في حال غياب ملف data.js
                 allMoviesData = [
                     { title: "هوس", type: "movie", rating: "8.2", genre: "رعب, رومانسي", year: "2025", poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400", desc: "في إطار من الرعب، يتمنى شاب حالم أمنية بهدف الفوز بقلب الفتاة التي يحبها...", hdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", sdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", cast: [{name: "Andy", img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100"}, {name: "Cooper", img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100"}] },
                     { title: "الشيطان يرتدي برادا 2", type: "movie", rating: "6.6", genre: "كوميدي", year: "2026", poster: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400", hdUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", sdUrl: "", cast: [] },
@@ -495,14 +498,147 @@
                 ];
             }
 
-            // إعداد التطبيق الأولي
             updateUserUI();
             renderHomeDOM();
             renderSearchHistoryUI();
             applyLocalization();
+            scheduleProgressiveCategoryRendering();
         });
 
-        // ================= نظام التنقل والتبديل الأساسي =================
+        // ================= نظام التحميل التدريجي المحسّن =================
+        function buildGenresCache() {
+            if (genresCache) return genresCache;
+
+            const genresMap = {};
+            allMoviesData.forEach(item => {
+                if (item.genre) {
+                    const genresList = item.genre.trim().split(/\s+/).map(g => g.trim());
+                    genresList.forEach(genre => {
+                        if (!genresMap[genre]) genresMap[genre] = [];
+                        genresMap[genre].push(item);
+                    });
+                } else {
+                    const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
+                    if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
+                    genresMap[defaultGenre].push(item);
+                }
+            });
+            genresCache = genresMap;
+            return genresMap;
+        }
+
+        function scheduleProgressiveCategoryRendering() {
+            const genresMap = buildGenresCache();
+            const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
+            const allGenres = Object.keys(genresMap);
+            let currentIndex = 0;
+
+            const renderNextBatch = () => {
+                if (currentIndex >= allGenres.length) return;
+
+                const genre = allGenres[currentIndex];
+                if (!categoriesRendered[genre]) {
+                    renderSingleCategory(genre, genresMap[genre], categoriesBlock);
+                    categoriesRendered[genre] = true;
+                }
+
+                currentIndex++;
+                if (currentIndex < allGenres.length) {
+                    if (typeof requestIdleCallback !== 'undefined') {
+                        requestIdleCallback(() => renderNextBatch(), { timeout: 500 });
+                    } else {
+                        setTimeout(renderNextBatch, 500);
+                    }
+                }
+            };
+
+            renderNextBatch();
+        }
+
+        function renderSingleCategory(genre, items, parentContainer) {
+            if (items.length === 0) return;
+
+            const categorySection = document.createElement('div');
+            categorySection.style.marginBottom = '25px';
+
+            const rowHeader = document.createElement('div');
+            rowHeader.className = 'row-header';
+            rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
+            rowHeader.querySelector('.row-title').onclick = () => openCategoryPage(genre, items);
+            categorySection.appendChild(rowHeader);
+
+            const moviesSlider = document.createElement('div');
+            moviesSlider.className = 'movies-slider';
+
+            const itemsToShow = items.slice(0, 5);
+            const remainingItems = items.slice(5);
+
+            itemsToShow.forEach(item => {
+                moviesSlider.appendChild(createMovieCard(item));
+            });
+
+            categorySection.appendChild(moviesSlider);
+            parentContainer.appendChild(categorySection);
+
+            if (remainingItems.length > 0) {
+                moviesSlider.addEventListener('scroll', () => {
+                    const scrollPercentage = (moviesSlider.scrollLeft / (moviesSlider.scrollWidth - moviesSlider.clientWidth)) * 100;
+                    if (scrollPercentage > 70) {
+                        remainingItems.forEach(item => {
+                            if (!moviesSlider.querySelector(`[data-movie-id="${item.title}"]`)) {
+                                const card = createMovieCard(item);
+                                card.setAttribute('data-movie-id', item.title);
+                                moviesSlider.appendChild(card);
+                            }
+                        });
+                    }
+                }, { once: false });
+            }
+        }
+
+        function createMovieCard(item) {
+            const card = document.createElement('div');
+            card.className = 'movie-card';
+            card.innerHTML = `
+                <div class="poster-wrapper">
+                    <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
+                </div>
+                <div class="movie-info">
+                    <p class="movie-name">${item.title}</p>
+                    <div class="movie-meta">
+                        <span class="imdb-badge">${item.rating || 'N/A'}</span>
+                        <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
+                    </div>
+                </div>
+            `;
+            card.onclick = () => openMoviePage(item);
+            return card;
+        }
+
+        // ================= بناء محتويات الصفحة الرئيسية =================
+        function renderHomeDOM() {
+            const featuredSlider = document.getElementById('featuredSlider');
+            featuredSlider.innerHTML = '';
+
+            const newestItems = [...allMoviesData].slice(0, 10);
+            newestItems.forEach(item => {
+                const slide = document.createElement('div');
+                slide.className = 'slide-item';
+                slide.innerHTML = `
+                    <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
+                    <div class="slide-details">
+                        <div class="slide-title">${item.title}</div>
+                        <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
+                    </div>
+                `;
+                slide.onclick = () => openMoviePage(item);
+                featuredSlider.appendChild(slide);
+            });
+
+            homeInitialized = true;
+        }
+
+        // ================= نظام التنقل =================
         function switchNav(target) {
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
@@ -510,6 +646,9 @@
             if (target === 'home') {
                 document.getElementById('navHome').classList.add('active');
                 document.getElementById('viewHome').classList.add('active');
+                
+                if (!homeInitialized) renderHomeDOM();
+                scheduleProgressiveCategoryRendering();
             } else if (target === 'search') {
                 document.getElementById('navSearch').classList.add('active');
                 document.getElementById('viewSearch').classList.add('active');
@@ -528,90 +667,7 @@
             }
         }
 
-        // ================= بناء محتويات الصفحة الرئيسية بالتصنيفات الديناميكية =================
-        function renderHomeDOM() {
-            const featuredSlider = document.getElementById('featuredSlider');
-            const categoriesBlock = document.getElementById('dynamicCategoriesBlock');
-            
-            featuredSlider.innerHTML = '';
-            if (categoriesBlock) categoriesBlock.innerHTML = '';
-
-            // 1. عرض أول 10 عناصر مباشرة (الأحدث على الإطلاق) في السلايدر العلوي
-            const newestItems = [...allMoviesData].slice(0, 10);
-            newestItems.forEach(item => {
-                const slide = document.createElement('div');
-                slide.className = 'slide-item';
-                slide.innerHTML = `
-                    <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
-                    <div class="slide-details">
-                        <div class="slide-title">${item.title}</div>
-                        <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
-                    </div>
-                `;
-                slide.onclick = () => openMoviePage(item);
-                featuredSlider.appendChild(slide);
-            });
-
-            // 2. نظام التصنيفات الديناميكي الذكي
-            const genresMap = {};
-
-            allMoviesData.forEach(item => {
-                if (item.genre) {
-                    const genresList = item.genre.trim().split(/\s+/).map(g => g.trim());
-                    genresList.forEach(genre => {
-                        if (!genresMap[genre]) genresMap[genre] = [];
-                        genresMap[genre].push(item);
-                    });
-                } else {
-                    const defaultGenre = currentLang === 'ar' ? 'عام' : 'General';
-                    if (!genresMap[defaultGenre]) genresMap[defaultGenre] = [];
-                    genresMap[defaultGenre].push(item);
-                }
-            });
-
-            // 3. بناء وتوليد القوائم والسلايدرز لكل تصنيف في واجهة الموقع
-            for (const genre in genresMap) {
-                if (genresMap[genre].length === 0) continue;
-
-                const categorySection = document.createElement('div');
-                categorySection.style.marginBottom = '25px';
-
-                const rowHeader = document.createElement('div');
-                rowHeader.className = 'row-header';
-                rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
-                
-                // جعل العنوان يفتح الصفحة الكاملة للتصنيف عند الضغط عليه
-                rowHeader.querySelector('.row-title').onclick = () => openCategoryPage(genre, genresMap[genre]);
-                categorySection.appendChild(rowHeader);
-
-                const moviesSlider = document.createElement('div');
-                moviesSlider.className = 'movies-slider';
-
-                genresMap[genre].forEach(item => {
-                    const card = document.createElement('div');
-                    card.className = 'movie-card';
-                    card.innerHTML = `
-                        <div class="poster-wrapper">
-                            <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
-                        </div>
-                        <div class="movie-info">
-                            <p class="movie-name">${item.title}</p>
-                            <div class="movie-meta">
-                                <span class="imdb-badge">${item.rating || 'N/A'}</span>
-                                <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
-                            </div>
-                        </div>
-                    `;
-                    card.onclick = () => openMoviePage(item);
-                    moviesSlider.appendChild(card);
-                });
-
-                categorySection.appendChild(moviesSlider);
-                if (categoriesBlock) categoriesBlock.appendChild(categorySection);
-            }
-        }
-
-        // ================= فتح وإغلاق الصفحة الكاملة لتصنيف معين =================
+        // ================= فتح صفحة التصنيف =================
         function openCategoryPage(genreName, items) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewCategoryDetail').classList.add('active');
@@ -620,13 +676,16 @@
             const gridContainer = document.getElementById('categoryGridItems');
             gridContainer.innerHTML = '';
             
-            items.forEach(item => {
+            const itemsToShow = items.slice(0, 12);
+            const remainingItems = items.slice(12);
+
+            itemsToShow.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'movie-card';
                 card.style.maxWidth = '100%';
                 card.innerHTML = `
                     <div class="poster-wrapper">
-                        <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                        <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
                     </div>
                     <div class="movie-info">
                         <p class="movie-name">${item.title}</p>
@@ -639,13 +698,44 @@
                 card.onclick = () => openMoviePage(item);
                 gridContainer.appendChild(card);
             });
+
+            if (remainingItems.length > 0) {
+                let loadedMore = 12;
+                window.addEventListener('scroll', () => {
+                    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
+                        remainingItems.slice(0, 6).forEach((item, index) => {
+                            if (gridContainer.querySelector(`[data-item-id="${loadedMore + index}"]`)) return;
+                            
+                            const card = document.createElement('div');
+                            card.className = 'movie-card';
+                            card.style.maxWidth = '100%';
+                            card.setAttribute('data-item-id', loadedMore + index);
+                            card.innerHTML = `
+                                <div class="poster-wrapper">
+                                    <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
+                                </div>
+                                <div class="movie-info">
+                                    <p class="movie-name">${item.title}</p>
+                                    <div class="movie-meta">
+                                        <span class="imdb-badge">${item.rating || 'N/A'}</span>
+                                        <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
+                                    </div>
+                                </div>
+                            `;
+                            card.onclick = () => openMoviePage(item);
+                            gridContainer.appendChild(card);
+                        });
+                        loadedMore += 6;
+                    }
+                }, { once: false });
+            }
         }
 
         function closeCategoryPage() {
             switchNav('home');
         }
 
-        // ================= دالة فتح صفحة الفيلم التفصيلية وإظهار الممثلين والمسلسلات =================
+        // ================= فتح صفحة الفيلم =================
         function openMoviePage(item) {
             activeMovieItem = item;
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
@@ -657,7 +747,6 @@
             const playerControls = document.getElementById('mainPlayerControls');
 
             if (item.type === 'series') {
-                // إعدادات واجهة المسلسلات
                 playerContainer.style.display = 'none';
                 playerControls.style.display = 'none';
                 iframe.src = "";
@@ -667,7 +756,6 @@
                     renderSeriesControls(item, seriesContainer, playerContainer, playerControls);
                 }
             } else {
-                // إعدادات واجهة الأفلام المعتادة
                 if (seriesContainer) seriesContainer.style.display = 'none';
                 playerContainer.style.display = 'block';
                 playerControls.style.display = 'flex';
@@ -685,7 +773,6 @@
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
             
-            // بناء الكادر والطاقم
             const sliderCast = document.getElementById('castListSlider');
             sliderCast.innerHTML = '';
             if (item.cast && item.cast.length > 0) {
@@ -696,7 +783,7 @@
                     const castCard = document.createElement('div');
                     castCard.className = 'cast-card';
                     castCard.innerHTML = `
-                        <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'">
+                        <img class="cast-avatar" src="${actorImage}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100'" loading="lazy">
                         <div class="cast-name">${person.name || 'مجهول'}</div>
                     `;
                     sliderCast.appendChild(castCard);
@@ -705,7 +792,6 @@
                 document.getElementById('castContainerBlock').style.display = 'none';
             }
             
-            // جلب التعليقات الافتراضية
             const commentsContainer = document.getElementById('commentsListContainer');
             commentsContainer.innerHTML = `
                 <div class="comment-item">
@@ -717,7 +803,7 @@
             addToWatchHistory(item);
         }
 
-        // ================= دالة بناء قوائم الحلقات والمواسم للمسلسلات ديناميكياً =================
+        // ================= دالة بناء قوائم المسلسلات =================
         function renderSeriesControls(media, container, playerContainer, playerControls) {
             if (!media.seasons || media.seasons.length === 0) {
                 container.innerHTML = `<p style="color:var(--accent); text-align:center; font-weight:bold; margin:0;">${currentLang === 'ar' ? 'لا توجد مواسم مضافة بعد لهذه المادة' : 'No seasons available for this media'}</p>`;
@@ -767,7 +853,7 @@
             updateEpisodes(seasonSelect.value);
         }
 
-        // ================= دالة تشغيل السيرفر المباشر للحلقة المختارة داخل مشغل الفيديو =================
+        // ================= تشغيل الحلقات =================
         function playEpisode(encodedUrl) {
             const playerContainer = document.getElementById('mainVideoContainer');
             const playerControls = document.getElementById('mainPlayerControls');
@@ -775,7 +861,6 @@
             
             let decodedUrlStr = decodeURIComponent(escape(atob(encodedUrl)));
             
-            // استخراج الرابط المباشر فقط من كود iframe إذا تم تمريره بالكامل
             if (decodedUrlStr.includes('<iframe')) {
                 const srcMatch = decodedUrlStr.match(/src=["']([^"']+)["']/);
                 if (srcMatch && srcMatch[1]) {
@@ -830,7 +915,7 @@
             input.value = "";
         }
 
-        // ================= نظام البحث المباشر الاحترافي وسجل البحث =================
+        // ================= البحث =================
         function handleSearchSearch() {
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
             const historyBlock = document.getElementById('searchHistoryBlock');
@@ -862,7 +947,7 @@
                     const row = document.createElement('div');
                     row.className = 'search-item-row';
                     row.innerHTML = `
-                        <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                        <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
                         <div class="search-item-details">
                             <h4 class="search-item-title">${item.title}</h4>
                             <div class="search-item-meta">${item.year || ''} • ★ ${item.rating || '0.0'}</div>
@@ -901,7 +986,7 @@
 
                 if (matchedItem) {
                     row.innerHTML = `
-                        <img class="search-item-poster" src="${matchedItem.poster}">
+                        <img class="search-item-poster" src="${matchedItem.poster}" loading="lazy">
                         <div class="search-item-details">
                             <h4 class="search-item-title">${matchedItem.title}</h4>
                             <div class="search-item-meta">${matchedItem.year || ''} • ★ ${matchedItem.rating || '0.0'}</div>
@@ -940,7 +1025,7 @@
             }
         }
 
-        // ================= سجل المشاهدة للمستخدم (مخزن محلياً) =================
+        // ================= سجل المشاهدة =================
         function addToWatchHistory(item) {
             watchHistory = watchHistory.filter(x => x.title !== item.title);
             watchHistory.unshift({
@@ -967,7 +1052,7 @@
                 const row = document.createElement('div');
                 row.className = 'search-item-row';
                 row.innerHTML = `
-                    <img class="search-item-poster" src="${hist.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'">
+                    <img class="search-item-poster" src="${hist.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
                     <div class="search-item-details">
                         <h4 class="search-item-title">${hist.title}</h4>
                         <div class="search-item-meta">${hist.year || ''} • ★ ${hist.rating || '0.0'}</div>
@@ -989,7 +1074,7 @@
             }
         }
 
-        // ================= الإعدادات، التوطين واللغات والتحكم الكامل =================
+        // ================= الإعدادات =================
         function setLanguage(lang) {
             currentLang = lang;
             document.getElementById('settingLangAr').classList.toggle('active', lang === 'ar');
@@ -1005,7 +1090,10 @@
             }
 
             applyLocalization();
+            genresCache = null;
+            categoriesRendered = {};
             renderHomeDOM();
+            scheduleProgressiveCategoryRendering();
             if(document.getElementById('viewHistory').classList.contains('active')) renderWatchHistoryUI();
         }
 
@@ -1051,11 +1139,10 @@
             document.getElementById('btnCast').innerText = dict.castBtn;
             document.getElementById('txtCastTitle').innerText = dict.castTitle;
 
-            // تغيير نصوص السلايدر
             document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = dict.watchNow);
         }
 
-        // ================= إعدادات الوضع المضيء والداكن الحقيقي الفعال =================
+        // ================= الوضع الفاتح والغامق =================
         function setTheme(theme) {
             currentTheme = theme;
             document.body.setAttribute('data-theme', theme);
@@ -1068,7 +1155,7 @@
             alert(currentLang === 'ar' ? "قم باستخدام خاصية Smart View أو AirPlay من هاتفك للبث المتكامل." : "Please use your device's built-in Smart View or AirPlay to cast.");
         }
 
-        // ================= نظام العضوية وتسجيل الدخول المحاكي الآمن =================
+        // ================= نظام العضوية =================
         function openAuthModal() {
             if (currentUser) {
                 if(confirm(currentLang === 'ar' ? "هل تريد تسجيل الخروج؟" : "Do you want to log out?")) {
