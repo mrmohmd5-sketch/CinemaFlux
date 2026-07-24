@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Drama",
+    "desc": "يواجه خطيبان في قمة سعادتهما اختبارًا مصيريًا، حينما تأخذ الأحداث منعطفًا غير متوقع يقلب أسبوع زفافهما رأسًا على عقب ويخرج بكل خططهما عن السيطرة.",
+    "poster": "https://image.tmdb.org/t/p/w500/fLFXaQzRYbgTZQ17FBVZvxBbWgY.jpg",
+    "hdUrl": "https://streamtape.com/e/4vdwqJGwG7crQB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4vdwqJGwG7crQB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "رومنسية كوميديا دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Zendaya",
+            "image": "https://image.tmdb.org/t/p/w185/1qup8tSt95HLbcy2c2xrx4iJNxv.jpg"
+        },
+        {
+            "name": "Robert Pattinson",
+            "image": "https://image.tmdb.org/t/p/w185/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+        },
+        {
+            "name": "Alana Haim",
+            "image": "https://image.tmdb.org/t/p/w185/uOU4uueRxH5BYhzNjzPxJOxZStJ.jpg"
+        },
+        {
+            "name": "Mamoudou Athie",
+            "image": "https://image.tmdb.org/t/p/w185/ycUbhfZRKC8MtNK9oMwscRsl3uM.jpg"
+        },
+        {
+            "name": "Hailey Benton Gates",
+            "image": "https://image.tmdb.org/t/p/w185/6gwH5IN15L4PXtLRwZYED6mO5xp.jpg"
+        }
+    ]
+},
+    {
     "title": "Ronin",
     "desc": "تدور الأحداث فى مدينة باريس، تقوم السيدة الأيرلندية (دييدرا) بتشكيل فريق من المرتزقة المتخصصين لتكليفهم بمهمة إحضار حقيبة غامضة من أحد المجرمين الخطرين.  ولا يعرف أحد محتوى تلك الحقيبة، ولكنهم ينجحون فى الحصول عليها، إلا أنه سرعان ما تختفي الحقيبة الأصلية، ويتم استبدالها من قبل أحد أعضاء الفريق، والذي يبدو أن لديه خططًا أخرى مختلفة.",
     "poster": "https://image.tmdb.org/t/p/w500/AirrhRJjHwytOV0pdLu7YZ4DEyr.jpg",
