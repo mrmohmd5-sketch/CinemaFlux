@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Shrek the Third",
+    "desc": "عندما يسقط حماه -الملك هارولد- مريضًا، يصبح شريك الوريث المنتظر للأرض البعيدة، من أجل عدم التخلي عن حبيبته، يجند شريك أصدقائه الحمار والقط لتثبيت أرتي المتمرد الملك الجديد، ولكن الأميرة فيونا، تنظم مسيرات مجموعة من الصديقات الملكية لدرء انقلاب من قبل الأمير الساحر.",
+    "poster": "https://image.tmdb.org/t/p/w500/t3bVJm42Dr9VB6ZOr8rrLZ0V2kR.jpg",
+    "hdUrl": "https://streamtape.com/e/a49M82dd06SMXQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/a49M82dd06SMXQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "فانتازيا مغامرة رسوم متحركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mike Myers",
+            "image": "https://image.tmdb.org/t/p/w185/gjfDl52Kk02MPgUYFjs9bOy33OY.jpg"
+        },
+        {
+            "name": "Eddie Murphy",
+            "image": "https://image.tmdb.org/t/p/w185/qgjMfefsKwSYsyCaIX46uyOXIpy.jpg"
+        },
+        {
+            "name": "Cameron Diaz",
+            "image": "https://image.tmdb.org/t/p/w185/tTpQSKwdLrR6xBGHCqg8VcVQZzH.jpg"
+        },
+        {
+            "name": "Antonio Banderas",
+            "image": "https://image.tmdb.org/t/p/w185/fce7zl6elUzsv7wudHFc7RgFtjD.jpg"
+        },
+        {
+            "name": "Julie Andrews",
+            "image": "https://image.tmdb.org/t/p/w185/yQ0J92DMiLtQYoytLJ6CuBkdeN0.jpg"
+        }
+    ]
+},
+    {
     "title": "Shrek 2",
     "desc": "يبدأ الجزء الثاني من حيث انتهى الجزء الأول، بعدما تحولت الأميرة فيونا إلى غولة قبيحة وتزوجت شريك وعاشا معا في مستنقعة، يتوجب على فيونا وشريك زيارة والديها الملك والملكة بعد فترة غياب عنهما طويلة، لكنهما يصابان بصدمة كبيرة، بعد لقائهما مع ابنتهما في هيئتها الجديدة، تتقبل الملكة الأم الواقع الجديد الأليم، بينما يرفضه الملك ويقرر التخلص من شريك، وبعد فشله بجميع المؤامرات، يلجأ إلى الجنية العرابة لتعيد له ابنته بصورتها الحقيقة، ولكنها تشترط عليه أن تتزوج من ابنها المغرور.",
     "poster": "https://image.tmdb.org/t/p/w500/gbn4OmfFNnzp9pfXDYh7CbxgqLN.jpg",
