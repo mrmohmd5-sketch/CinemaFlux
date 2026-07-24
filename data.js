@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "The Map That Leads to You",
+    "desc": "يدور الفيلم حول هيذر، شابّة تجوب أوروبا مع صديقتيها، قبل أن تبدأ حياتها التي خططت لها بشكل مثالي. تصادف جاك على نحو غير متوقع فيبدآن مغامرة عاطفية تقود إلى اكتشافات ذاتية عاطفية عميقة. بينما تختبر الأسرار وقرارات الحياة الرباط الذي يجمع بينهما، يتغير مسار حياتها إلى الأبد. مستوحاة من الرواية بقلم جاي بي مونينغر.",
+    "poster": "https://image.tmdb.org/t/p/w500/qczscZJa7IR8ikeSOxLifLAPAIF.jpg",
+    "hdUrl": "https://streamtape.com/e/7PwvQvWl3dCAdYp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7PwvQvWl3dCAdYp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Madelyn Cline",
+            "image": "https://image.tmdb.org/t/p/w185/6bFItWARGJFRrkhBaZtvLJf6VRQ.jpg"
+        },
+        {
+            "name": "KJ Apa",
+            "image": "https://image.tmdb.org/t/p/w185/e2mowKCKKkexzsKy0bTGk5S5Soa.jpg"
+        },
+        {
+            "name": "Sofia Wylie",
+            "image": "https://image.tmdb.org/t/p/w185/bH7Qo3rRCJ2gLrcYZj9xS50rg5.jpg"
+        },
+        {
+            "name": "Madison Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/pjuUkAsn1bivbjw5XvTzQuxzIkP.jpg"
+        },
+        {
+            "name": "Orlando Norman",
+            "image": "https://image.tmdb.org/t/p/w185/s1xzQEuIPYlnrRvWWvnmGIUl3dU.jpg"
+        }
+    ]
+},
+    {
     "title": "Shrek the Third",
     "desc": "عندما يسقط حماه -الملك هارولد- مريضًا، يصبح شريك الوريث المنتظر للأرض البعيدة، من أجل عدم التخلي عن حبيبته، يجند شريك أصدقائه الحمار والقط لتثبيت أرتي المتمرد الملك الجديد، ولكن الأميرة فيونا، تنظم مسيرات مجموعة من الصديقات الملكية لدرء انقلاب من قبل الأمير الساحر.",
     "poster": "https://image.tmdb.org/t/p/w500/t3bVJm42Dr9VB6ZOr8rrLZ0V2kR.jpg",
