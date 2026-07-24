@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Shrek 2",
+    "desc": "يبدأ الجزء الثاني من حيث انتهى الجزء الأول، بعدما تحولت الأميرة فيونا إلى غولة قبيحة وتزوجت شريك وعاشا معا في مستنقعة، يتوجب على فيونا وشريك زيارة والديها الملك والملكة بعد فترة غياب عنهما طويلة، لكنهما يصابان بصدمة كبيرة، بعد لقائهما مع ابنتهما في هيئتها الجديدة، تتقبل الملكة الأم الواقع الجديد الأليم، بينما يرفضه الملك ويقرر التخلص من شريك، وبعد فشله بجميع المؤامرات، يلجأ إلى الجنية العرابة لتعيد له ابنته بصورتها الحقيقة، ولكنها تشترط عليه أن تتزوج من ابنها المغرور.",
+    "poster": "https://image.tmdb.org/t/p/w500/gbn4OmfFNnzp9pfXDYh7CbxgqLN.jpg",
+    "hdUrl": "https://streamtape.com/e/oDZLLzDVKlIKdw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oDZLLzDVKlIKdw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mike Myers",
+            "image": "https://image.tmdb.org/t/p/w185/gjfDl52Kk02MPgUYFjs9bOy33OY.jpg"
+        },
+        {
+            "name": "Eddie Murphy",
+            "image": "https://image.tmdb.org/t/p/w185/qgjMfefsKwSYsyCaIX46uyOXIpy.jpg"
+        },
+        {
+            "name": "Cameron Diaz",
+            "image": "https://image.tmdb.org/t/p/w185/tTpQSKwdLrR6xBGHCqg8VcVQZzH.jpg"
+        },
+        {
+            "name": "Julie Andrews",
+            "image": "https://image.tmdb.org/t/p/w185/yQ0J92DMiLtQYoytLJ6CuBkdeN0.jpg"
+        },
+        {
+            "name": "Antonio Banderas",
+            "image": "https://image.tmdb.org/t/p/w185/fce7zl6elUzsv7wudHFc7RgFtjD.jpg"
+        }
+    ]
+},
+    {
     "title": "Shrek",
     "desc": "شريك غول اخضر يعيش في المستنقع وحيدًا مستمتعًا بعزلته، إلى أن يجد في يوم ما كل شخصيات القصص الخيالية ينامون في مستنقعه, فيذهب إلى اللورد فركواد ومعه الحمار كمساعده كي يامرهم بالرحيل, فيطلب منه فركواد ان يذهب لعرين التنين لينقذ الأميرة فيونا التي تتحول في المساء إلى غولة بدورها.",
     "poster": "https://image.tmdb.org/t/p/w500/vQDAFMwOEdo2qSNZEb5uFixNfV0.jpg",
