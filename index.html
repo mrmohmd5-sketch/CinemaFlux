@@ -415,6 +415,264 @@
         .load-more-btn:active {
             transform: scale(0.96);
         }
+
+        /* ============================================================ */
+        /* ===== تأثيرات حركية احترافية لجميع الأزرار ===== */
+        /* ============================================================ */
+
+        /* قاعدة عامة لجميع العناصر القابلة للنقر */
+        button,
+        .nav-item,
+        .menu-item,
+        .profile-btn,
+        .slide-btn,
+        .server-btn,
+        .cast-btn,
+        .back-nav-btn,
+        .load-more-btn,
+        .toggle-btn,
+        .section-tab-btn,
+        .comment-submit-btn,
+        .auth-toggle-link,
+        .close-auth,
+        .remove-search-btn,
+        .movie-card,
+        .search-item-row,
+        .row-title,
+        .voice-icon,
+        .slide-item,
+        .auth-box button,
+        .auth-box input,
+        .comment-input-box input,
+        .search-bar-wrapper input {
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform, background, box-shadow, color;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* تأثير الـ glow والرفع عند التمرير */
+        button:hover,
+        .nav-item:hover,
+        .menu-item:hover,
+        .profile-btn:hover,
+        .slide-btn:hover,
+        .server-btn:hover,
+        .cast-btn:hover,
+        .back-nav-btn:hover,
+        .load-more-btn:hover,
+        .toggle-btn:hover,
+        .section-tab-btn:hover,
+        .comment-submit-btn:hover,
+        .auth-toggle-link:hover,
+        .close-auth:hover,
+        .remove-search-btn:hover,
+        .row-title:hover,
+        .voice-icon:hover,
+        .slide-item:hover,
+        .auth-box button:hover,
+        .search-item-row:hover,
+        .movie-card:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(229, 9, 20, 0.3);
+            z-index: 5;
+        }
+
+        /* تأثير الضغط (active) لجميع الأزرار */
+        button:active,
+        .nav-item:active,
+        .menu-item:active,
+        .profile-btn:active,
+        .slide-btn:active,
+        .server-btn:active,
+        .cast-btn:active,
+        .back-nav-btn:active,
+        .load-more-btn:active,
+        .toggle-btn:active,
+        .section-tab-btn:active,
+        .comment-submit-btn:active,
+        .auth-toggle-link:active,
+        .close-auth:active,
+        .remove-search-btn:active,
+        .row-title:active,
+        .voice-icon:active,
+        .slide-item:active,
+        .auth-box button:active,
+        .search-item-row:active,
+        .movie-card:active {
+            transform: scale(0.94) translateY(0px);
+            box-shadow: 0 2px 10px rgba(229, 9, 20, 0.2);
+            transition-duration: 0.08s;
+        }
+
+        /* تخصيصات إضافية لأزرار معينة للحفاظ على التميز */
+        .slide-btn:hover {
+            background-color: #ff0a1f;
+            box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+            transform: scale(1.08);
+        }
+
+        .profile-btn:hover {
+            background-color: var(--accent);
+            color: #fff !important;
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(229, 9, 20, 0.4);
+        }
+
+        .server-btn:hover:not(.active) {
+            background-color: var(--border-color);
+            transform: scale(1.05);
+        }
+        .server-btn.active:hover {
+            background-color: #ff0a1f;
+            transform: scale(1.05);
+        }
+
+        .cast-btn:hover {
+            background-color: #2c9b4a;
+            transform: scale(1.05) rotate(-1deg);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5);
+        }
+
+        .back-nav-btn:hover {
+            transform: translateX(-4px) scale(1.05);
+            color: var(--accent);
+        }
+        html[dir="rtl"] .back-nav-btn:hover {
+            transform: translateX(4px) scale(1.05);
+        }
+
+        .load-more-btn:hover {
+            background-color: var(--accent);
+            color: #fff;
+            transform: scale(1.03);
+            box-shadow: 0 10px 35px rgba(229, 9, 20, 0.5);
+        }
+
+        .section-tab-btn:hover:not(.active) {
+            background-color: var(--bg-card);
+            transform: scale(1.02);
+            color: var(--text-main);
+        }
+        .section-tab-btn.active:hover {
+            background-color: #ff0a1f;
+            transform: scale(1.02);
+        }
+
+        .toggle-btn:hover {
+            transform: scale(1.1);
+        }
+        .toggle-btn.active:hover {
+            background-color: #ff0a1f;
+        }
+
+        .comment-submit-btn:hover {
+            background-color: #ff0a1f;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(229, 9, 20, 0.4);
+        }
+
+        .auth-toggle-link:hover {
+            color: var(--accent);
+            transform: scale(1.05);
+        }
+        .close-auth:hover {
+            transform: rotate(90deg) scale(1.2);
+            color: #fff;
+        }
+        .remove-search-btn:hover {
+            transform: scale(1.3);
+            color: #ff0a1f;
+        }
+
+        .voice-icon:hover {
+            transform: scale(1.2) rotate(10deg);
+            color: var(--accent);
+        }
+
+        .menu-item:hover {
+            background-color: var(--bg-card);
+            transform: translateX(4px);
+        }
+        html[dir="rtl"] .menu-item:hover {
+            transform: translateX(-4px);
+        }
+
+        .row-title:hover {
+            transform: translateX(4px);
+        }
+        html[dir="rtl"] .row-title:hover {
+            transform: translateX(-4px);
+        }
+
+        .nav-item:hover {
+            transform: translateY(-3px);
+            color: var(--accent);
+        }
+        .nav-item.active:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        /* تأثير النبض للزر الرئيسي لتسجيل الدخول */
+        #authBtnAction {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(229, 9, 20, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(229, 9, 20, 0); }
+        }
+
+        /* تأثير بسيط عند التركيز على حقول الإدخال */
+        .search-bar-wrapper input:focus,
+        .comment-input-box input:focus,
+        .auth-box input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* تأثير خاص لأزرار تبديل اللغة والثيم */
+        .toggle-switch .toggle-btn {
+            transition: all 0.25s ease;
+        }
+        .toggle-switch .toggle-btn:hover {
+            transform: scale(1.08);
+        }
+
+        /* تحسين تأثير الـ ripple لجميع الأزرار التي تحتوي على .ripple-target */
+        .ripple-target {
+            position: relative;
+            overflow: hidden;
+        }
+        .ripple-target .ripple-effect-global {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: scale(0);
+            animation: ripple-anim-global 0.6s ease-out forwards;
+            pointer-events: none;
+            z-index: 20;
+        }
+        @keyframes ripple-anim-global {
+            to { transform: scale(4); opacity: 0; }
+        }
+
+        /* تحسينات إضافية لبعض الأزرار */
+        .auth-box button {
+            transition: all 0.3s ease;
+        }
+        .auth-box button:hover {
+            background-color: #ff0a1f;
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(229, 9, 20, 0.4);
+        }
+
+        .search-item-row:hover {
+            background-color: var(--bg-card);
+            transform: scale(1.01);
+            border-color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -690,6 +948,9 @@
             renderSearchHistoryUI();
             applyLocalization();
             scheduleProgressiveCategoryRendering();
+
+            // إضافة تأثير الـ Ripple العالمي لجميع الأزرار
+            addGlobalRippleEffect();
         });
 
         // ================= نظام التحميل التدريجي المحسّن بدون تكرار =================
@@ -1647,6 +1908,61 @@
                 alert(currentLang === 'ar' ? "تم نسخ رابط الموقع بنجاح، يمكنك مشاركته الآن مع أصدقائك!" : "Website link copied successfully, you can share it now with your friends!");
             }
         }
+
+        // ================= دالة إضافة تأثير الـ Ripple لجميع الأزرار =================
+        function addGlobalRippleEffect() {
+            // نختار جميع العناصر القابلة للنقر والتي لم تحصل على الـ ripple بعد
+            const clickableElements = document.querySelectorAll('button, .nav-item, .menu-item, .profile-btn, .slide-btn, .server-btn, .cast-btn, .back-nav-btn, .load-more-btn, .toggle-btn, .section-tab-btn, .comment-submit-btn, .auth-toggle-link, .close-auth, .remove-search-btn, .movie-card, .search-item-row, .row-title, .voice-icon, .slide-item, .auth-box button');
+            
+            clickableElements.forEach(el => {
+                // نتجنب إضافة أكثر من مستمع
+                if (el.dataset.rippleAdded) return;
+                el.dataset.rippleAdded = 'true';
+                
+                el.addEventListener('click', function(e) {
+                    // نمنع الـ ripple إذا كان العنصر يحتوي على class يمنع ذلك (اختياري)
+                    if (this.classList.contains('no-ripple')) return;
+                    
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    const ripple = document.createElement('span');
+                    ripple.className = 'ripple-effect-global';
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(255,255,255,0.3)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple-anim-global 0.6s ease-out forwards';
+                    ripple.style.pointerEvents = 'none';
+                    ripple.style.zIndex = '9999';
+                    
+                    // نضيف الـ ripple إلى العنصر
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    
+                    // نزيل الـ ripple بعد انتهاء الأنيميشن
+                    setTimeout(() => {
+                        if (ripple.parentNode) ripple.remove();
+                    }, 700);
+                });
+            });
+        }
+
+        // نضيف تعريف keyframes للـ ripple العام في CSS (تم إضافته بالفعل)
+        // لكن نضيفه هنا للتأكد
+        const styleSheet = document.createElement("style");
+        styleSheet.textContent = `
+            @keyframes ripple-anim-global {
+                to { transform: scale(4); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(styleSheet);
     </script>
 </body>
 </html>
