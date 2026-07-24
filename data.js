@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "Crime 101",
+    "desc": "بينما يخطط لص غامض لسرقة العمر الكبرى على طريق 101 السريع الشهير في لوس أنجلوس لتكون عمليته الأخيرة، تتعقد خيوط اللعبة حين تتقاطع طرقه مع وسيطة تأمين تواجه أزمتها الخاصة. وفي ظل مطاردة شرسة من محقق لا يرحم، يجد الجميع أنفسهم في سباق مع الزمن، حيث الخطأ الواحد يعني النهاية، والقاعدة الأولى هي: احرص دائماً على وجود مخرج.",
+    "poster": "https://image.tmdb.org/t/p/w500/cZY1IOguquyYhJdRbuLcdypXnDA.jpg",
+    "hdUrl": "https://streamtape.com/e/DzZMl0ywXwiAyK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DzZMl0ywXwiAyK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Halle Berry",
+            "image": "https://image.tmdb.org/t/p/w185/wtFetpWV8kjBsvzYKN9uEEmPdpy.jpg"
+        },
+        {
+            "name": "Barry Keoghan",
+            "image": "https://image.tmdb.org/t/p/w185/ngoitknM6hw8fffLywyvjzy6Iti.jpg"
+        },
+        {
+            "name": "Monica Barbaro",
+            "image": "https://image.tmdb.org/t/p/w185/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+        }
+    ]
+},
+    {
     "title": "It Ends with Us",
     "desc": "تعتقد ليلي أنها وجدت الحب الحقيقي مع رايل، إلا أن حادث صعب يؤدي إلى الرجوع لصدمة سابقة تجعلها تفكر ما إذا كان الحب وحده كافي لاستمرار زواجها، لكن الأمور تزداد صعوبة عندما يعود حبها الأول لحياتها مرة أخرى.",
     "poster": "https://image.tmdb.org/t/p/w500/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
