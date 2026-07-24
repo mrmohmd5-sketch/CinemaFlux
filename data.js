@@ -1,5 +1,37 @@
 const globalMoviesData = [
     {
+    "title": "It Ends with Us",
+    "desc": "تعتقد ليلي أنها وجدت الحب الحقيقي مع رايل، إلا أن حادث صعب يؤدي إلى الرجوع لصدمة سابقة تجعلها تفكر ما إذا كان الحب وحده كافي لاستمرار زواجها، لكن الأمور تزداد صعوبة عندما يعود حبها الأول لحياتها مرة أخرى.",
+    "poster": "https://image.tmdb.org/t/p/w500/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
+    "hdUrl": "https://streamtape.com/e/bgo093yeQWTP9qm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bgo093yeQWTP9qm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Blake Lively",
+            "image": "https://image.tmdb.org/t/p/w185/rkGVjd6wImtgjOCi0IpeffdEWtb.jpg"
+        },
+        {
+            "name": "Justin Baldoni",
+            "image": "https://image.tmdb.org/t/p/w185/a7Z3lA96nyZswEc80nXAKCWfXn1.jpg"
+        },
+        {
+            "name": "Jenny Slate",
+            "image": "https://image.tmdb.org/t/p/w185/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
+        },
+        {
+            "name": "Brandon Sklenar",
+            "image": "https://image.tmdb.org/t/p/w185/juLH1EhkY1Xx9Zai2H4icvfn4pD.jpg"
+        },
+        {
+            "name": "Hasan Minhaj",
+            "image": "https://image.tmdb.org/t/p/w185/6vHHhLnbKBCPmYc90qAV2Cde95F.jpg"
+        }
+    ]
+},
+    {
     "title": "Back in Action",
     "desc": "بعد مضي 15 عامًا من اختفائهما من وكالة الاستخبارات المركزية من أجل تكوين عائلة، يعود جاسوسان من النخبة إلى عالم التجسس الخطير بعدما تُكتشَف خطة تخفّيهما.",
     "poster": "https://image.tmdb.org/t/p/w500/oKZHIpZ5ubEfYnKc42DSybBvUhW.jpg",
