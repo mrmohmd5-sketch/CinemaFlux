@@ -909,10 +909,8 @@
                 const response = await fetch('https://raw.githubusercontent.com/mrmohmd5-sketch/CinemaFlux/main/data.js?t=' + Date.now(), { cache: 'no-store' });
                 if (!response.ok) throw new Error('HTTP error ' + response.status);
                 const text = await response.text();
-                const script = document.createElement('script');
-                script.text = text;
-                document.body.appendChild(script);
-
+                // تنفيذ النص مباشرة باستخدام eval لضمان توفر البيانات فوراً
+                eval(text);
                 if (typeof globalMoviesData !== 'undefined' && globalMoviesData.length > 0) {
                     allMoviesData = globalMoviesData;
                 } else {
@@ -933,13 +931,19 @@
 
             // إذا وصلنا إلى هنا فهذا يعني أن البيانات جُلبت بنجاح
             document.getElementById('bottomNav').style.display = 'flex';
+
             // بناء واجهة التطبيق
             buildAppUI();
+
+            // تحديث واجهة المستخدم
             updateUserUI();
             applyLocalization();
-            // نستخدم switchNav('home') لتأكيد تنشيط الصفحة الرئيسية وعرض المحتوى فوراً
-            switchNav('home');
+
+            // إضافة تأثير الـ Ripple
             addGlobalRippleEffect();
+
+            // عرض الصفحة الرئيسية (البيانات جاهزة الآن)
+            switchNav('home');
 
             // استعادة حالة الفيلم إذا كانت موجودة
             const savedMovie = localStorage.getItem('cf_active_movie');
