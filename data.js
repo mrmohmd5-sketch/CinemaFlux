@@ -68,7 +68,7 @@ const globalMoviesData = [
     {
     "title": "Tall Girl",
     "year": "2019",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور الأحداث حول جودي كريمان وهي فتاة في السادسة عشرة من عمرها، تعاني من مشكلة واحدة تسيطر على حياتها طولها الفارع الذي يبلغ حوالي 187 سم . بسبب هذا الطول، تقتنع جودي بأنه يُبعد عنها الجميع، ويجعلها عرضة للتنمر والسخرية الدائمة في المدرسة الثانوية ، مما يدفعها لمحاولة الاختباء والانزواء وعدم إبراز نفسها.",
     "poster": "https://image.tmdb.org/t/p/w500/3o3kuThfjJZfXz1Na23lWviXUFR.jpg",
     "hdUrl": "https://streamtape.com/e/GjzQX8MxmjT1K81/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/GjzQX8MxmjT1K81/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
