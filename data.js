@@ -67,6 +67,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Shadow's Edge",
+    "year": "2025",
     "desc": "يختفي طاقم من المجرمين العباقرة ومعهم مليارات، مهربين من القبض عليهم بتفوقهم على نظام المراقبة 'عين السماء' الهائل. يائسين ومُتخاذلين، تستعين شرطة ماكاو بأسطورة - وونغ تاك تشونغ (جاكي شان)، خبير تعقب متقاعد. يُرشد وونغ الضابط المبتدئ هي تشيوغو (تشانغ زيفنغ)، ويُعيد بناء وحدة مراقبة النخبة. مهمتهم: تعقب 'ملك الذئاب' المراوغ، فو لونغ شنغ (ليونغ كا فاي توني)، العقل المدبر وراء السرقة. مع اقتراب الشرطة، يُنصب اللصوص فخًا خاصًا بهم. تتصادم العقول، وتُختبر الولاءات، وتبدأ لعبة القط والفأر النهائية...",
     "poster": "https://image.tmdb.org/t/p/w500/90s6kuQ8qUHJFrjnCnUCWQXnu1V.jpg",
     "hdUrl": "https://streamtape.com/e/3prgvA232qtXej/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -99,6 +100,7 @@ const globalMoviesData = [
 },
     {
     "title": "Blonde",
+    "year": "2022",
     "desc": "يتناول العمل السيرة الذاتية لواحدة من أجمل نساء هوليود مارلين مونرو، البداية تحت اسم نورما جين، مرورًا بالعديد من المواقف التي صنعت منها أيقونة في الجمال والفن.",
     "poster": "https://image.tmdb.org/t/p/w500/3kygQnqSgq9gZcv5ktX0vLxjlzj.jpg",
     "hdUrl": "https://streamtape.com/e/jO3741eVl1IzA3m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -131,6 +133,7 @@ const globalMoviesData = [
 },
     {
     "title": "Crime 101",
+    "year": "2025",
     "desc": "بينما يخطط لص غامض لسرقة العمر الكبرى على طريق 101 السريع الشهير في لوس أنجلوس لتكون عمليته الأخيرة، تتعقد خيوط اللعبة حين تتقاطع طرقه مع وسيطة تأمين تواجه أزمتها الخاصة. وفي ظل مطاردة شرسة من محقق لا يرحم، يجد الجميع أنفسهم في سباق مع الزمن، حيث الخطأ الواحد يعني النهاية، والقاعدة الأولى هي: احرص دائماً على وجود مخرج.",
     "poster": "https://image.tmdb.org/t/p/w500/cZY1IOguquyYhJdRbuLcdypXnDA.jpg",
     "hdUrl": "https://streamtape.com/e/DzZMl0ywXwiAyK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -163,6 +166,7 @@ const globalMoviesData = [
 },
     {
     "title": "It Ends with Us",
+    "year": "2024",
     "desc": "تعتقد ليلي أنها وجدت الحب الحقيقي مع رايل، إلا أن حادث صعب يؤدي إلى الرجوع لصدمة سابقة تجعلها تفكر ما إذا كان الحب وحده كافي لاستمرار زواجها، لكن الأمور تزداد صعوبة عندما يعود حبها الأول لحياتها مرة أخرى.",
     "poster": "https://image.tmdb.org/t/p/w500/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
     "hdUrl": "https://streamtape.com/e/bgo093yeQWTP9qm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -195,6 +199,7 @@ const globalMoviesData = [
 },
     {
     "title": "Back in Action",
+    "year": "2025",
     "desc": "بعد مضي 15 عامًا من اختفائهما من وكالة الاستخبارات المركزية من أجل تكوين عائلة، يعود جاسوسان من النخبة إلى عالم التجسس الخطير بعدما تُكتشَف خطة تخفّيهما.",
     "poster": "https://image.tmdb.org/t/p/w500/oKZHIpZ5ubEfYnKc42DSybBvUhW.jpg",
     "hdUrl": "https://streamtape.com/e/2Vwv0aryZKCxQX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -227,6 +232,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Devil Wears Prada",
+    "year": "2006",
     "desc": "تطمح (أندريا) المتخرجة حديثًا للعمل في إحدي مجلات الموضة، وتقبل للعمل بأحد أشهر تلك المجلات، ولكن للعمل كمساعدة ثانية لرئيسة التحرير (ميراندا)، ولكي تضمن أندريا الحفاظ على وظيفتها المستقبلية، عليها أن تنال رضا رئيستها المتسلطة والقوية.",
     "poster": "https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg",
     "hdUrl": "https://streamtape.com/e/bpxbKXqoRVuP90Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -259,6 +265,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Drama",
+    "year": "2025",
     "desc": "يواجه خطيبان في قمة سعادتهما اختبارًا مصيريًا، حينما تأخذ الأحداث منعطفًا غير متوقع يقلب أسبوع زفافهما رأسًا على عقب ويخرج بكل خططهما عن السيطرة.",
     "poster": "https://image.tmdb.org/t/p/w500/fLFXaQzRYbgTZQ17FBVZvxBbWgY.jpg",
     "hdUrl": "https://streamtape.com/e/4vdwqJGwG7crQB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -291,6 +298,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ronin",
+    "year": "1998",
     "desc": "تدور الأحداث فى مدينة باريس، تقوم السيدة الأيرلندية (دييدرا) بتشكيل فريق من المرتزقة المتخصصين لتكليفهم بمهمة إحضار حقيبة غامضة من أحد المجرمين الخطرين.  ولا يعرف أحد محتوى تلك الحقيبة، ولكنهم ينجحون فى الحصول عليها، إلا أنه سرعان ما تختفي الحقيبة الأصلية، ويتم استبدالها من قبل أحد أعضاء الفريق، والذي يبدو أن لديه خططًا أخرى مختلفة.",
     "poster": "https://image.tmdb.org/t/p/w500/AirrhRJjHwytOV0pdLu7YZ4DEyr.jpg",
     "hdUrl": "https://streamtape.com/e/W64klM94DqFbaLR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -323,6 +331,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Map That Leads to You",
+    "year": "2025",
     "desc": "يدور الفيلم حول هيذر، شابّة تجوب أوروبا مع صديقتيها، قبل أن تبدأ حياتها التي خططت لها بشكل مثالي. تصادف جاك على نحو غير متوقع فيبدآن مغامرة عاطفية تقود إلى اكتشافات ذاتية عاطفية عميقة. بينما تختبر الأسرار وقرارات الحياة الرباط الذي يجمع بينهما، يتغير مسار حياتها إلى الأبد. مستوحاة من الرواية بقلم جاي بي مونينغر.",
     "poster": "https://image.tmdb.org/t/p/w500/qczscZJa7IR8ikeSOxLifLAPAIF.jpg",
     "hdUrl": "https://streamtape.com/e/7PwvQvWl3dCAdYp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -355,6 +364,7 @@ const globalMoviesData = [
 },
     {
     "title": "Shrek the Third",
+    "year": "2007",
     "desc": "عندما يسقط حماه -الملك هارولد- مريضًا، يصبح شريك الوريث المنتظر للأرض البعيدة، من أجل عدم التخلي عن حبيبته، يجند شريك أصدقائه الحمار والقط لتثبيت أرتي المتمرد الملك الجديد، ولكن الأميرة فيونا، تنظم مسيرات مجموعة من الصديقات الملكية لدرء انقلاب من قبل الأمير الساحر.",
     "poster": "https://image.tmdb.org/t/p/w500/t3bVJm42Dr9VB6ZOr8rrLZ0V2kR.jpg",
     "hdUrl": "https://streamtape.com/e/a49M82dd06SMXQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -387,6 +397,7 @@ const globalMoviesData = [
 },
     {
     "title": "Shrek 2",
+    "year": "2004",
     "desc": "يبدأ الجزء الثاني من حيث انتهى الجزء الأول، بعدما تحولت الأميرة فيونا إلى غولة قبيحة وتزوجت شريك وعاشا معا في مستنقعة، يتوجب على فيونا وشريك زيارة والديها الملك والملكة بعد فترة غياب عنهما طويلة، لكنهما يصابان بصدمة كبيرة، بعد لقائهما مع ابنتهما في هيئتها الجديدة، تتقبل الملكة الأم الواقع الجديد الأليم، بينما يرفضه الملك ويقرر التخلص من شريك، وبعد فشله بجميع المؤامرات، يلجأ إلى الجنية العرابة لتعيد له ابنته بصورتها الحقيقة، ولكنها تشترط عليه أن تتزوج من ابنها المغرور.",
     "poster": "https://image.tmdb.org/t/p/w500/gbn4OmfFNnzp9pfXDYh7CbxgqLN.jpg",
     "hdUrl": "https://streamtape.com/e/oDZLLzDVKlIKdw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -419,6 +430,7 @@ const globalMoviesData = [
 },
     {
     "title": "Shrek",
+    "year": "2001",
     "desc": "شريك غول اخضر يعيش في المستنقع وحيدًا مستمتعًا بعزلته، إلى أن يجد في يوم ما كل شخصيات القصص الخيالية ينامون في مستنقعه, فيذهب إلى اللورد فركواد ومعه الحمار كمساعده كي يامرهم بالرحيل, فيطلب منه فركواد ان يذهب لعرين التنين لينقذ الأميرة فيونا التي تتحول في المساء إلى غولة بدورها.",
     "poster": "https://image.tmdb.org/t/p/w500/vQDAFMwOEdo2qSNZEb5uFixNfV0.jpg",
     "hdUrl": "https://streamtape.com/e/DWglKRyaDbTkez3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -451,6 +463,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ernest & Celestine",
+    "year": "2012",
     "desc": "من غير المستحسن أن يتصادق دب مع فأرة. لكنّ 'إرنست' الذي هو مهرّج وموسيقي يأوي في منزله 'سيليستين' التي هي فأرة يتيمة صغيرة تعشق الرسم والكتابة. يتخطّى هذان الفنانان الموهوبان المشاكل اليوميّة سوياً، ويتآزران وقد قرّرا أن يعيشا بسعادة تامة.",
     "poster": "https://image.tmdb.org/t/p/w500/6sL1zDX8hpDgIwvMVQlaCQxwAK.jpg",
     "hdUrl": "https://streamtape.com/e/xkwk8GxBWwikpaK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -483,6 +496,7 @@ const globalMoviesData = [
 },
     {
     "title": "This Is Where I Leave You",
+    "year": "2014",
     "desc": "مرحبًا بك في بيتك. الحصول على غير مرتاح.\r عندما يتوفى والدهم ، يعود أربعة أشقاء بالغين مرهقين من العالم إلى منزل طفولتهم ويطلب منهم - مع تحذير - البقاء هناك معا لمدة أسبوع ، جنبا إلى جنب مع والدتهم التي تتحدث بحرية ومجموعة من الأزواج ، السابقين والذين ربما كانوا. بينما يعيد الإخوة والأخوات فحص تاريخهم المشترك ووضع كل علاقة ممزقة بين أولئك الذين يعرفونهم ويحبونهم بشكل أفضل ، فإنهم يعيدون الاتصال بطرق مضحكة بشكل هستيري وذات أهمية عاطفية.",
     "poster": "https://image.tmdb.org/t/p/w500/rVUI2267FdetVWz9UBQbqTmRVhQ.jpg",
     "hdUrl": "https://streamtape.com/e/6aq09VqaPdT9GOM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -515,6 +529,7 @@ const globalMoviesData = [
 },
     {
     "title": "Jurassic Park",
+    "year": "1993",
     "desc": "ينشئ رجل أعمال ثري سراً متنزهًا يضم ديناصورات حية مأخوذة من الحمض النووي لعصور ما قبل التاريخ. قبل يوم الافتتاح ، دعا فريقًا من الخبراء وأحفاده المتحمسين لتجربة الحديقة ومساعدة المستثمرين القلقين. ومع ذلك ، فإن الحديقة ليست مسلية على الإطلاق حيث أن أنظمة الأمان تخرج عن الخط وتهرب الديناصورات.",
     "poster": "https://image.tmdb.org/t/p/w500/b1xCNnyrPebIc7EWNZIa6jhb1Ww.jpg",
     "hdUrl": "https://streamtape.com/e/GXKWAVxqjpH1zPW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -547,6 +562,7 @@ const globalMoviesData = [
 },
     {
     "title": "Irreversible",
+    "year": "2002",
     "desc": "تتكشف الأحداث على مدار إحدى الليالي الصادمة في باريس بترتيب زمني عكسي حيث تعرضت أليكس الجميلة للاغتصاب والضرب بوحشية من قبل شخص غريب في النفق. يتولى صديقها وعشيقها السابق زمام الأمور بأنفسهم من خلال توظيف مجرمين لمساعدتهما في العثور على المغتصب حتى يتمكنوا من الانتقام. فحص جميل ورهيب في نفس الوقت للطبيعة المدمرة للسبب والنتيجة ، وكيف يدمر الوقت كل شيء.",
     "poster": "https://image.tmdb.org/t/p/w500/AdrItykbv1evqcbIPrItVWnkaKj.jpg",
     "hdUrl": "https://streamtape.com/e/lw8b368K7xhakJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -579,6 +595,7 @@ const globalMoviesData = [
 },
     {
     "title": "Project Hail Mary",
+    "year": "2025",
     "desc": "يستيقظ رايلاند غريس، مدرس العلوم، على متن مركبة فضائية تبعد سنوات ضوئية عن موطنه، فاقدًا للذاكرة تمامًا، لا يتذكر من هو ولا كيف وصل إلى هناك. ومع عودة ذاكرته تدريجيًا، يبدأ في اكتشاف مهمته: حل لغز المادة الغامضة التي تتسبب في انطفاء الشمس. عليه أن يستعين بمعرفته العلمية وأفكاره غير التقليدية لإنقاذ كل شيء على الأرض من الفناء... لكن صداقة غير متوقعة تعني أنه قد لا يضطر إلى القيام بذلك بمفرده.",
     "poster": "https://image.tmdb.org/t/p/w500/wNnoJaRb5Oc9SodTWJLEC26wL8q.jpg",
     "hdUrl": "https://streamtape.com/e/xqQ4AjDKQ8tkAe6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -611,6 +628,7 @@ const globalMoviesData = [
 },
     {
     "title": "Avatar: Fire and Ash",
+    "year": "2025",
     "desc": "في أعقاب الحرب المدمرة ضد منظمة إدارة تنمية الموارد (RDA) وفقدان ابنهما الأكبر، يواجه جيك سولي ونيتيري تهديدًا جديدًا على باندورا: شعب الرماد، قبيلة نافي عنيفة ومتعطشة للسلطة بقيادة فارانغ القاسي. يجب على عائلة جيك أن تقاتل من أجل بقائها ومستقبل باندورا في صراع يدفعهم إلى أقصى حدودهم العاطفية والجسدية.",
     "poster": "https://image.tmdb.org/t/p/w500/2G3dQUuoFWPvNxVamp5RvogGv83.jpg",
     "hdUrl": "https://streamtape.com/e/4qBJ8Aqpo7UKgrl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -643,6 +661,7 @@ const globalMoviesData = [
 },
     {
     "title": "Hoppers",
+    "year": "2025",
     "desc": "تدور قصة الفيلم حول فتاة تُدعى 'مايبل تاناكا'، الشابة الشغوفة بالحيوانات، التي ترتبط عاطفيًا بمكان طبيعي كانت تزوره مع جدتها. لكن هذا المكان مهدد بسبب مشروع طريق سريع يخطط له العمدة وبينما تحاول إنقاذه، تكتشف تقنية تمكّن البشر من الدخول في أجساد حيوانات آلية والتواصل مع الحياة البرية، فتقرر استخدامها وتتحول إلى قندس.",
     "poster": "https://image.tmdb.org/t/p/w500/aUhnoIdBZYETNvsR4QlZhNYZffw.jpg",
     "hdUrl": "https://streamtape.com/e/x9m3ROalPDckP6d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -675,6 +694,7 @@ const globalMoviesData = [
 },
     {
     "title": "Predestination",
+    "year": "2014",
     "desc": "يروي القدر المسبق حياة عميل مؤقت أرسل في سلسلة معقدة من رحلات السفر عبر الزمن المصممة لمنع القتلة في المستقبل من ارتكاب جرائمهم. الآن ، في مهمته النهائية ، يجب على العميل إيقاف المجرم الوحيد الذي استعصى عليه طوال الوقت ومنع هجوم مدمر يقتل فيه الآلاف من الأرواح.",
     "poster": "https://image.tmdb.org/t/p/w500/38Xr1JnV1ZcLQ55zmdSp6n475cZ.jpg",
     "hdUrl": "https://streamtape.com/e/bP8wowp4YbhP3Ak/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -707,6 +727,7 @@ const globalMoviesData = [
 },
     {
     "title": "Scarface",
+    "year": "1983",
     "desc": "بعد حصوله على البطاقة الخضراء مقابل اغتيال مسؤول حكومي كوبي ، يطالب توني مونتانا بتجارة المخدرات في ميامي. يقتل توني بوحشية أي شخص يقف في طريقه ، ويصبح في النهاية أكبر أباطرة مخدرات في الولاية ، حيث يتحكم تقريبًا في كل الكوكايين الذي يأتي عبر ميامي. لكن الضغط المتزايد من الشرطة والحروب مع عصابات المخدرات الكولومبية والبارانويا التي تغذيها المخدرات تعمل على تأجيج نيران سقوطه في نهاية المطاف.",
     "poster": "https://image.tmdb.org/t/p/w500/ouzvJkit0MO5U51CEUlOFB5dYVe.jpg",
     "hdUrl": "https://streamtape.com/e/gReLqJPGlWSqWqj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -739,6 +760,7 @@ const globalMoviesData = [
 },
     {
     "title": "Gladiator",
+    "year": "2000",
     "desc": "في روما القديمة، تتحول حياة الجنرال العظيم ماكسيموس إلى مأساة عندما يقتل الإمبراطور الجديد كومودوس عائلته ويرسله للعبودية. يجد ماكسيموس نفسه مجبراً على القتال كمصارع في حلبات الموت، متخذاً طريقاً دموياً نحو روما حيث يسعى للانتقام من الطاغية الذي دمر حياته.",
     "poster": "https://image.tmdb.org/t/p/w500/3ThtMXP24MxSkUOTqFElQdWzAXe.jpg",
     "hdUrl": "https://streamtape.com/e/79gY2QvYQ0FovB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -771,6 +793,7 @@ const globalMoviesData = [
 },
     {
     "title": "Fuze",
+    "year": "2025",
     "desc": "تدور أحداث الفيلم حين يكتشف عمال بناء في لندن وجود قنبلة لم تنفجر تحت الأرض منذ الحرب العالمية الثانية مما يؤدي إلى إخلاء موقع العمل، لذا تستغل مجموعة من اللصوص حالة الفوضى في المحيط لتنفيذ عملية سرقة متقنة.",
     "poster": "https://image.tmdb.org/t/p/w500/mjgisv866VI5PvaUZuvARwqY68R.jpg",
     "hdUrl": "https://streamtape.com/e/oxwY8kyykkHJ11Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -803,6 +826,7 @@ const globalMoviesData = [
 },
     {
     "title": "Whiplash",
+    "year": "2014",
     "desc": "تحت إشراف مدرب لا يرحم ، يبدأ عازف إيقاع شاب موهوب في السعي وراء الكمال بأي ثمن ، حتى إنسانيته.",
     "poster": "https://image.tmdb.org/t/p/w500/mcv2wacN8VO8YkOPZrcoPkqL34P.jpg",
     "hdUrl": "https://streamtape.com/e/yx49RjO7eWc1QeX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -835,6 +859,7 @@ const globalMoviesData = [
 },
     {
     "title": "Oppenheimer",
+    "year": "2023",
     "desc": "فلم يحكي السيرة الذاتية وقصة العالم الأمريكي روبرت أوبنهايمر ودوره في تطوير القنبلة الذرية، وكيف غير مشروع مانهاتن من كل شيء في العالم.",
     "poster": "https://image.tmdb.org/t/p/w500/fj4Sw2PihpjJkkeyhAWV5x933no.jpg",
     "hdUrl": "https://streamtape.com/e/0WpkXeBxZqSb9l8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -867,6 +892,7 @@ const globalMoviesData = [
 },
     {
     "title": "Baby Driver",
+    "year": "2017",
     "desc": "بعد إجباره على العمل لدى زعيم جريمة ، يجد سائق فرار شاب نفسه يشارك في سرقة محكوم عليها بالفشل.",
     "poster": "https://image.tmdb.org/t/p/w500/6tEhtGf2eqsbr0SOzaMcBQz1Trz.jpg",
     "hdUrl": "https://streamtape.com/e/Jy8MG4LwK6Sj42W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -899,6 +925,7 @@ const globalMoviesData = [
 },
     {
     "title": "Love & Other Drugs",
+    "year": "2010",
     "desc": "جيمي راندل الشاب العابث يتم طرده من العمل بمتجر للالكترونيات في بيتسبرج لأنه كان على علاقة بصديقة مدير المتجر. ينجح أخوه جوش في إيجاد فرصة عمل له في شركة فايزر كمندوب لمبيعات الأدوية. يقوم جيمي بالترويج لعدد من أدوية معالجة الاكتئاب وفي أثناء زيارته لأحد الأطباء يقابل ماجي المصابة بأعراض أولية لمرض باركنسون لتنشأ بينهما علاقة تتحول إلى علاقة حب قوية.",
     "poster": "https://image.tmdb.org/t/p/w500/dabzGpaBSV2UOOTx2ZMR9imknu.jpg",
     "hdUrl": "https://streamtape.com/e/2DlrlzAy7kIj1z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -931,6 +958,7 @@ const globalMoviesData = [
 },
     {
     "title": "Cha Cha Real Smooth",
+    "year": "2022",
     "desc": "بعد أن تخرج حديثاً في الجامعة، وكان عالقاً ببيته في 'نيوجيرسي' دون فكرة واضحة عن المستقبل، يبدأ 'آندرو' ذو الـ22 عاماً العمل كمنشط لحفلات البلوغ اليهودية للصبية والفتيات، حيث يكوّن صداقة فريدة مع أم شابة وابنتها المراهقة.",
     "poster": "https://image.tmdb.org/t/p/w500/iUvoVhvwTlP8DofoqeIu7QAGLAe.jpg",
     "hdUrl": "https://streamtape.com/e/aRLjxM1ydDhx1QA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -963,6 +991,7 @@ const globalMoviesData = [
 },
     {
     "title": "Drive",
+    "year": "2011",
     "desc": "يعمل السائق (ريان جوسلينج) الماهر في قيادة السيارات كومبارس ، حيث يتولى القيادة بدلا من أبطال الفلم في المطاردات الخطيرة أثناء التصوير ، إضافة إلى عمله ميكانيكيا في الورشة التي يمتلكها (شانون)، وغير ذلك يعمل على مساعدة السارقين في عملية الفرار من الشرطة بعد إتمام مهامهم . وفي إحدى الليالي يتعرف على جارته (إيرين) ، ويقع في حبها، ويتبادلان الإعجاب، لكنها تتزوج من آخر وتتركه، وبعد فترة من الوقت يفاجأ بأنها وحيدة بعد موت زوجها، فيسعى إلى مساعدتها ليضمن لها حياة كريمة وآمنة.",
     "poster": "https://image.tmdb.org/t/p/w500/31opsfgzNFOmT8TWM5zuk9mFU53.jpg",
     "hdUrl": "https://streamtape.com/e/1dGP6R2DomUp68/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -995,6 +1024,7 @@ const globalMoviesData = [
 },
     {
     "title": "Inception",
+    "year": "2010",
     "desc": "تدور احداث الفيلم حول كوب (ليوناردو دي كابريو) هو عميل من طراز خاص جدًا ومستوى رفيع للغاية، في الواقع هو متسلل أحلام! يقوم بتجنيده رجل أعمال فاحش الثراء يدعى (سايتو) كي يقوم بالتسلل إلى عقل أحد منافسيه يدعى (روبرت فيشر) بمساعدة جهاز خاص، بزرع فكرة داخل عقل الرجل تبدو وكأنها تأتي من داخله هو نفسه، وليست من الخارج. الفكرة هي أن يفكك الرجل شركات أبيه التي سيورثها عنه.",
     "poster": "https://image.tmdb.org/t/p/w500/okXrvv9kCNrYTpjMQTpmzXV9JCi.jpg",
     "hdUrl": "https://streamtape.com/e/R4ewxYZkvjudvq9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1027,6 +1057,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Tank",
+    "year": "2024",
     "desc": "الجبهة الشرقية عام 1943: يُرسل طاقم دبابة ألمانية طراز تايغر في مهمة خطرة وراء خطوط النزاع التي تشهد حرباً شرسة. مع تقدمهم عبر الأراضي المحفوفة بالمخاطر المميتة، عليهم مواجهة العدو وهواجسهم الداخلية أيضاً.",
     "poster": "https://image.tmdb.org/t/p/w500/1dYvIciST7D2lTxHy4kgCjFAhkI.jpg",
     "hdUrl": "https://streamtape.com/e/2WP9vWk1QXHZ0l7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1059,6 +1090,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Me 4مدبلج",
+    "year": "2024",
     "desc": "يواجه (جرو) العديد من التحديات العائلية بعد إنجاب زوجته لطفلهما الأول، تزامنًا مع هروب المجرم (ماكسيم لو مال)، والذي يقرر الانتقام من عدوه اللدود (جرو).",
     "poster": "https://image.tmdb.org/t/p/w500/rxIEByG8SSVuO1sPncNl7D703pd.jpg",
     "hdUrl": "https://streamtape.com/e/4DLV0rORG9IKaOP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1091,6 +1123,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Me 3مدبلج",
+    "year": "2017",
     "desc": "غرو يجد نفسه عالق في أزمة البحث عن هويته بعد أن تم طرده من رابطة مكافحة الأشرار. ولكنه يكتشف أن له أخ توأم، وأن أخوه معجب جدا به كشخص شرير ويريد أن يصبح مثله. مما سيجعله يشعر بالحنين لهذا الشرير السابق ويفكر في عودته من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/vv2VVWruiYT3YArGu03sHny3zab.jpg",
     "hdUrl": "https://streamtape.com/e/rbd4O66WwYFbLKY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1123,6 +1156,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Me 2مدبلج",
+    "year": "2013",
     "desc": "في الوقت الذي يعاني فيه من مسؤولياته كأب، تستدعي رابطة مكافحة الأشرار جرو للمشاركة في مهمة للقبض على أحد أفراد العصابات الخطيرة الذي يحاول نشر الشر بالعالم، ليثبت بأنه الأفضل في هذا المجال.",
     "poster": "https://image.tmdb.org/t/p/w500/2CdVQ8U8xp7mUPMdYwIAnM6hcTh.jpg",
     "hdUrl": "https://streamtape.com/e/8V7W2eo7OaiXwg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1155,6 +1189,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Meمدبلج",
+    "year": "2010",
     "desc": "يُدبّر الشرير 'غرو' لسرقة القمر من السماء، لكنه يجد صعوبة في الاستمرار في هذه المهمّة بعدما يجد نفسه مسؤولًا عن رعاية ثلاث يتيمات.",
     "poster": "https://image.tmdb.org/t/p/w500/2tIPyOpZBcfFnf4ZKbiFPPDQn30.jpg",
     "hdUrl": "https://streamtape.com/e/PDwZdJGJDjf0OOW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1187,6 +1222,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Me 4",
+    "year": "2024",
     "desc": "يواجه (جرو) العديد من التحديات العائلية بعد إنجاب زوجته لطفلهما الأول، تزامنًا مع هروب المجرم (ماكسيم لو مال)، والذي يقرر الانتقام من عدوه اللدود (جرو).",
     "poster": "https://image.tmdb.org/t/p/w500/rxIEByG8SSVuO1sPncNl7D703pd.jpg",
     "hdUrl": "https://streamtape.com/e/Ry6679p68gsjzM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1219,6 +1255,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Me 3",
+    "year": "2017",
     "desc": "غرو يجد نفسه عالق في أزمة البحث عن هويته بعد أن تم طرده من رابطة مكافحة الأشرار. ولكنه يكتشف أن له أخ توأم، وأن أخوه معجب جدا به كشخص شرير ويريد أن يصبح مثله. مما سيجعله يشعر بالحنين لهذا الشرير السابق ويفكر في عودته من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/vv2VVWruiYT3YArGu03sHny3zab.jpg",
     "hdUrl": "https://streamtape.com/e/JeaxLR73kWhjW7o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1251,6 +1288,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Me 2",
+    "year": "2013",
     "desc": "في الوقت الذي يعاني فيه من مسؤولياته كأب، تستدعي رابطة مكافحة الأشرار جرو للمشاركة في مهمة للقبض على أحد أفراد العصابات الخطيرة الذي يحاول نشر الشر بالعالم، ليثبت بأنه الأفضل في هذا المجال.",
     "poster": "https://image.tmdb.org/t/p/w500/2CdVQ8U8xp7mUPMdYwIAnM6hcTh.jpg",
     "hdUrl": "https://streamtape.com/e/Z3b6yaJoY8Iqlx6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1283,6 +1321,7 @@ const globalMoviesData = [
 },
     {
     "title": "Despicable Me",
+    "year": "2010",
     "desc": "يُدبّر الشرير 'غرو' لسرقة القمر من السماء، لكنه يجد صعوبة في الاستمرار في هذه المهمّة بعدما يجد نفسه مسؤولًا عن رعاية ثلاث يتيمات.",
     "poster": "https://image.tmdb.org/t/p/w500/2tIPyOpZBcfFnf4ZKbiFPPDQn30.jpg",
     "hdUrl": "https://streamtape.com/e/9qAAogkX8mIB8b/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1315,6 +1354,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ava",
+    "year": "2020",
     "desc": "تعمل آفا كقاتلة مأجورة لمنظمة متخصصة في العمليات غير المشروعة، ولكن عندما تسير مهمة كُلفت بها على نحو خاطئ، يصبح عليها فعل المستحيل من أجل إنقاذ حياتها.",
     "poster": "https://image.tmdb.org/t/p/w500/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
     "hdUrl": "https://streamtape.com/e/jOJW4oae9RTzygd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1347,6 +1387,7 @@ const globalMoviesData = [
 },
     {
     "title": "Warrior",
+    "year": "2011",
     "desc": "يعود الابن الأصغر لملاكم سابق مدمن على الكحول إلى المنزل ، حيث تدرب على يد والده للمنافسة في بطولة فنون القتال المختلطة - وهو المسار الذي يضع المقاتل في مسار تصادمي مع أخيه الأكبر المنفصل.",
     "poster": "https://image.tmdb.org/t/p/w500/iM8n4nZJPR2abpnyZ36FUgHiRjr.jpg",
     "hdUrl": "https://streamtape.com/e/oeZqaGbmpjHJg4B/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1379,6 +1420,7 @@ const globalMoviesData = [
 },
     {
     "title": "To All the Boys I've Loved Before",
+    "year": "2018",
     "desc": "تنقلب الأمور تمامًا، وذلك حينما تخرج خطابات سرية لفتاة مراهقة تخص أولاد كانت تواعدهم إلى النور، لتنكشف العديد من الأسرار حول العلاقات الاجتماعية والبشر.",
     "poster": "https://image.tmdb.org/t/p/w500/hKHZhUbIyUAjcSrqJThFGYIR6kI.jpg",
     "hdUrl": "https://streamtape.com/e/XgMl6DpqQZCg0P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1411,6 +1453,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story of Terror!",
+    "year": "2013",
     "desc": "ما بدأ كرحلة برية ممتعة لفرقة 'قصة لعبة' تحول فجأةً إلى كارثة عندما انحرفت الرحلة إلى فندق على جانب الطريق. بعد اختفاء إحدى الدمى، يجد الآخرون أنفسهم عالقين في سلسلة أحداث غامضة يجب حلها قبل أن يواجهوا جميعًا نفس المصير في 'قصة لعبة الرعب' هذه.",
     "poster": "https://image.tmdb.org/t/p/w500/1bS0fM6pxW8wdsQHbRoznEPpMkY.jpg",
     "hdUrl": "https://streamtape.com/e/wkZg9Ve430cGae/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1443,6 +1486,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story 4",
+    "year": "2019",
     "desc": "لطالما كان وودي واثقا من مكانته في العالم وأن أولويته هي رعاية طفله ، سواء كان ذلك آندي أو بوني. ولكن عندما تضيف بوني لعبة جديدة مترددة تسمى 'فوركي' إلى غرفتها ، فإن مغامرة رحلة على الطريق جنبا إلى جنب مع الأصدقاء القدامى والجدد ستظهر لوودي مدى ضخامة العالم بالنسبة للعبة.",
     "poster": "https://image.tmdb.org/t/p/w500/ds8GyaDSW6RTlZIXlrh20Ja9VFY.jpg",
     "hdUrl": "https://streamtape.com/e/4wvP7apYVafK0vP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1475,6 +1519,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story 4مدبلج",
+    "year": "2019",
     "desc": "لطالما كان وودي واثقا من مكانته في العالم وأن أولويته هي رعاية طفله ، سواء كان ذلك آندي أو بوني. ولكن عندما تضيف بوني لعبة جديدة مترددة تسمى 'فوركي' إلى غرفتها ، فإن مغامرة رحلة على الطريق جنبا إلى جنب مع الأصدقاء القدامى والجدد ستظهر لوودي مدى ضخامة العالم بالنسبة للعبة.",
     "poster": "https://image.tmdb.org/t/p/w500/ds8GyaDSW6RTlZIXlrh20Ja9VFY.jpg",
     "hdUrl": "https://streamtape.com/e/LkoZjWo4QySRm1W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1507,6 +1552,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story 3مدبلج",
+    "year": "2010",
     "desc": "لم يلعب وودي وبظ وبقية ألعاب آندي منذ سنوات. مع اقتراب آندي من الذهاب إلى الكلية، تجد المجموعة نفسها تُركت عن طريق الخطأ في مركز رعاية نهارية سيئ. يجب أن تتجمع الألعاب معًا للهروب والعودة إلى منزل آندي.",
     "poster": "https://image.tmdb.org/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
     "hdUrl": "https://streamtape.com/e/3dygwV6mRpsdk8a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1539,6 +1585,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story 2مدبلج",
+    "year": "1999",
     "desc": "تحكي القصة عن المأمور وودي الذي يتعرض للإصابة كلعبة في بداية الفيلم فيتم ركنه على الرفّ ويجد صديقة القديم المريض بسبب الركنة ولما يحاول إنقاذه من البيع كروبابيكيا يقوم أحد المتجولين في معرض الروبابيكيا بسرقة المأمور وودي لأغراض ربحية وتدور القصة بعد ذلك حول محاولة أصدقاء المأمور وودي بقيادة باز يطير لاسترجاع صديقهم وإنقاذه إلى أنهم يجدوا الكثير من المفاجآت ولكنهم يعدوا في نهاية الفيلم وقد انضم إليهم صديقين جدد.",
     "poster": "https://image.tmdb.org/t/p/w500/eGWUhABoftpRmcSo2PJUSRWo50c.jpg",
     "hdUrl": "https://streamtape.com/e/3dJGvg1yeacdVRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1571,6 +1618,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Storyمدبلج ",
+    "year": "1995",
     "desc": "تعيش ألعاب آندي، بقيادة وودي، بسعادة في غرفته حتى عيد ميلاد آندي الذي جلب معه باز لايتيير إلى المشهد. خوفًا من فقدان مكانته في قلب آندي، يدبر وودي مكائد ضد باز. ولكن عندما تفرق الظروف باز ووودي عن صاحبهما، يتعلم الثنائي في النهاية وضع خلافاتهما جانبًا.",
     "poster": "https://image.tmdb.org/t/p/w500/hX5TEEzea1XX8t2V9VK5InW4M7x.jpg",
     "hdUrl": "https://streamtape.com/e/YGp4xqlyKwirLP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1603,6 +1651,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Lord of the Rings: The Return of the King",
+    "year": "2003",
     "desc": "تم الكشف عن أراغورن باعتباره وريث الملوك القدامى حيث يكافح هو وقاندالف والأعضاء الآخرون في الشركة المكسورة لإنقاذ جوندور من قوات سورون. في هذه الأثناء ، يقترب فرودو وسام من الخاتم إلى قلب موردور ، عالم اللورد المظلم.",
     "poster": "https://image.tmdb.org/t/p/w500/xMMnQwgVbz5tbbKN6rxHxST9613.jpg",
     "hdUrl": "https://streamtape.com/e/QKGvv9Yorxh00zj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1635,6 +1684,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Lord of the Rings: The Two Towers",
+    "year": "2002",
     "desc": "يسافر فرودو وسام إلى موردور لتدمير حلقة القوة الواحدة بينما يبحث جيملي وليجولاس وأراغورن عن ميري وبيبين المأسورين من قبل شركة مصفاة نفط عمان. طوال الوقت، ينتظر الساحر الشائن سارومان أعضاء الزمالة في برج أورثانك في إيسينغارد.",
     "poster": "https://image.tmdb.org/t/p/w500/6gZlbPmghGc9rSplHtRm94ezNIa.jpg",
     "hdUrl": "https://streamtape.com/e/BBW93DYk8lUyDkb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1667,6 +1717,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Wolf of Wall Street",
+    "year": "2013",
     "desc": "يستند هذا العمل إلى القصة الحقيقية لجوردان بيلفورت، من صعوده إلى سمسار أسهم ثري يعيش حياة مترفة إلى سقوطه الذي تورط فيه بالجريمة والفساد والحكومة الفيدرالية.",
     "poster": "https://image.tmdb.org/t/p/w500/dthIkG1QqqVZhXWnVHgLCf2KvXH.jpg",
     "hdUrl": "https://streamtape.com/e/a1vlbo6kmKuJqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1699,6 +1750,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Matrix",
+    "year": "1999",
     "desc": "يدرك أحد قراصنة الكمبيوتر أن ما يعتبره معظم الناس واقعًا هو في الحقيقة محاكاة يتم إنشاؤها بواسطة آلات، فينضم إلى المتمردين ليتحرر.",
     "poster": "https://image.tmdb.org/t/p/w500/nrTnHdza19bagccAj9LX5VCsU7g.jpg",
     "hdUrl": "https://streamtape.com/e/l2xkPok14rc7qqg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1731,6 +1783,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Dark Knight Rises",
+    "year": "2012",
     "desc": "ثمان سنواتٍ مضت تحمْل فيها باتمان (كريستيان بال) مسئولية موت هارفي دنت حتى أنه عاش في ظلامٍ حالكٍ لفترةٍ طويلةٍ نتيجة ذلك. يعود باتمان مرةً أخرى عندما يهدد الشرير المقنع باين (توم هاردي) مدينة جوثام ويقودها نحو الهاوية؛ فيحاول باتمان إنقاذ المدينة وسكان المدينة من هذه العقلية الإجرامية. حيث إن باين ما هو إلا قائدٌ إرهابيٌ يقود مدينة جوثام للهلاك. في جوٍ مليءٍ بالتشويق والإثارة تدور معاركٌ حامية بين باتمان وباين وتتعقد الأحداث لتصل لمدى لا يتخيله أحد.",
     "poster": "https://image.tmdb.org/t/p/w500/gDQLSmVsPxvOmQIAVFcl6Akn7Nh.jpg",
     "hdUrl": "https://streamtape.com/e/P636DX4xWvtBpq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1763,6 +1816,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Dark Knight",
+    "year": "2008",
     "desc": "يبدأ باتمان فى محاربة العدو الجديد (الجوكر) الذي يسعى لنشر الذعر والشر في جوثام، وإثبات أن العيش بدون قواعد أفضل، مما يؤدي لصراع بين الاثنين يشترك فيه المفتش جوردن والمدعى العام هارفي دينت وراشيل صديقة بروس وين.",
     "poster": "https://image.tmdb.org/t/p/w500/6Z9znq1IxwknrdPbXyr7NJJPhpP.jpg",
     "hdUrl": "https://streamtape.com/e/dr1eboyXKoFkkV1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1795,6 +1849,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Green Mile",
+    "year": "1999",
     "desc": "حكاية خارقة للطبيعة على ذمة الإعدام في سجن جنوبي ، حيث يمتلك العملاق اللطيف جون كوفي القوة الغامضة لعلاج أمراض الناس. عندما يتعرف حارس المبنى الرئيسي ، بول إدجكومب ، على هدية كوفي المعجزة ، يحاول يائسًا المساعدة في تجنب إعدام الرجل المدان.",
     "poster": "https://image.tmdb.org/t/p/w500/vAHuvaUC885P78BNS3BMu9qM7ve.jpg",
     "hdUrl": "https://streamtape.com/e/mwZ2WGWBokubjl2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1827,6 +1882,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Lion King",
+    "year": "1994",
     "desc": "أسد أمير صغير يطرد من أرضه من قبل عمه القاسي، الذي يدعي أنه كان السبب في موت والده. بينما يحكم العم المملكة بمخلب من حديد، يكبر الأمير خارج السافانا، ويعيش وفقًا لفلسفة 'هاكونا ماتاتا'، أي أن تنسى الماضي ولا تقلق. لكن عندما يطارده ماضيه، يجب على الأمير الشاب أن يقرر مصيره: هل سيبقى منبوذاً أم يواجه مخاوفه ويصبح ما يحتاج إليه؟",
     "poster": "https://image.tmdb.org/t/p/w500/l0DfggxJn89s0hOv8vVK6fa1QCX.jpg",
     "hdUrl": "https://streamtape.com/e/llP4wg2G69id4Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1859,6 +1915,7 @@ const globalMoviesData = [
 },
     {
     "title": "Rush",
+    "year": "2013",
     "desc": "دراما سيرة ذاتية تركزت على التنافس بين سائقي الفورمولا 1 جيمس هانت ونيكي لاودا خلال موسم سباق السيارات للفورمولا 1 عام 1976.",
     "poster": "https://image.tmdb.org/t/p/w500/ieGa88TTLY6nltJmLrHUYV1XXOP.jpg",
     "hdUrl": "https://streamtape.com/e/yPxx64WG9yC19kL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1891,6 +1948,7 @@ const globalMoviesData = [
 },
     {
     "title": "Pulp Fiction",
+    "year": "1994",
     "desc": "يتلاقى الرجل الضارب المحب للبرغر ، وشريكه الفلسفي ، ورجل العصابات المدمن على المخدرات ، والملاكم المغسول في هذه الجريمة الكوميدية المترامية الأطراف. تتجلى مغامراتهم في ثلاث قصص تتنقل ببراعة ذهابًا وإيابًا في الوقت المناسب.",
     "poster": "https://image.tmdb.org/t/p/w500/A3NXS5e7Zc3FRyi63b7TdPGjFwI.jpg",
     "hdUrl": "https://streamtape.com/e/LdvWWBJlqMI6oA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1923,6 +1981,7 @@ const globalMoviesData = [
 },
     {
     "title": "Spirited Away",
+    "year": "2001",
     "desc": "تتجول 'شيهيرو' في عالم سحري تحكمه ساحرة - تقوم بتحويل كل من يعصيها إلى حيوانات.",
     "poster": "https://image.tmdb.org/t/p/w500/o9bDF4M3CQPn8e6PMAhJW5K6ciQ.jpg",
     "hdUrl": "https://streamtape.com/e/zPlwW3JrYeiYAxQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1955,6 +2014,7 @@ const globalMoviesData = [
 },
     {
     "title": "Parasite",
+    "year": "2019",
     "desc": "تدور أحداث الفيلم حول عائلة عاطلة عن العمل، تُقيم داخل شقة فقيرة، تتغير حياتهم كُليًا عندما يلتحق الابن بوظيفة مدرس لابنة عائلة ثرية، وسرعان ما يصير جميع أفراد اﻷسرة الفقيرة عاملين لدى اﻷسرة الثرية إلى أن يتورطوا في حادث غير متوقع.",
     "poster": "https://image.tmdb.org/t/p/w500/yWAshnqG2WXP25FYZJmC2hfe2LH.jpg",
     "hdUrl": "https://streamtape.com/e/DjZpa3Z6yesk1m9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1987,6 +2047,7 @@ const globalMoviesData = [
 },
     {
     "title": "Requiem for a Dream",
+    "year": "2000",
     "desc": "تحطمت آمال وأحلام أربعة أشخاص طموحين عندما بدأ إدمانهم للمخدرات بالخروج عن نطاق السيطرة. نظرة إلى الإدمان وكيف يتغلب على العقل والجسد.",
     "poster": "https://image.tmdb.org/t/p/w500/n1PTcgvAiZzp8z471zMxaXf1Oi4.jpg",
     "hdUrl": "https://streamtape.com/e/paeeOWVgAlirp3p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2019,6 +2080,7 @@ const globalMoviesData = [
 },
     {
     "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "year": "2003",
     "desc": "الاستعداد ليتم تفجيرها من الماء.  جاك سبارو ، قرصان حر من القرن 18th ، يتشاجر مع قرصان منافس عازم على نهب بورت رويال. عندما يتم اختطاف ابنة الحاكم ، يقرر سبارو مساعدة حب الفتاة في إنقاذها.",
     "poster": "https://image.tmdb.org/t/p/w500/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg",
     "hdUrl": "https://streamtape.com/e/yovb3qQX1Qu1rpo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2051,6 +2113,7 @@ const globalMoviesData = [
 },
     {
     "title": "No Country for Old Men",
+    "year": "2007",
     "desc": "يتعثر Llewelyn Moss على جثث الموتى ، ومليوني دولار وكنزًا من الهيروين في صحراء تكساس ، لكن القاتل المنهجي أنطون تشيجور يأتي للبحث عنه ، مع المأمور المحلي إد توم بيل في طريقه. يتلاشى دور الفريسة والحيوان بينما يتصادم السعي العنيف وراء المال والعدالة.",
     "poster": "https://image.tmdb.org/t/p/w500/9aIdpQ1FOcb9hSu4KOmrgN5KAfl.jpg",
     "hdUrl": "https://streamtape.com/e/RwwZxqprqVfxY9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2083,6 +2146,7 @@ const globalMoviesData = [
 },
     {
     "title": "Oldboy",
+    "year": "2003",
     "desc": "دون أن يكون لديه أدنى فكرة عن سبب حبسه وتخديره وتعذيبه على مدى 15 عامًا، يسعى رجل يائس إلى الانتقام من آسريه.",
     "poster": "https://image.tmdb.org/t/p/w500/29a5z1V42FXK1zHNqxYdCqfc8N3.jpg",
     "hdUrl": "https://streamtape.com/e/9y21Pj9J2pIaXm0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2115,6 +2179,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mad Max: Fury Road",
+    "year": "2015",
     "desc": "في أقصى أطراف الأرض، وسط صحراء قاحلة وعالم ممزق، يقاتل الجميع بجنون من أجل البقاء. في قلب الفوضى، يهرب متمردان... وقد يكون بيدهما أمل استعادة النظام.",
     "poster": "https://image.tmdb.org/t/p/w500/rvoQHUQGskr7HIQdsyYeOe0GYiL.jpg",
     "hdUrl": "https://streamtape.com/e/9oraRWePLZSYV6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2147,6 +2212,7 @@ const globalMoviesData = [
 },
     {
     "title": "Marriage Story",
+    "year": "2019",
     "desc": "يُخرج 'نواه باومباك' صانع الأفلام المرشح لجائزة الأوسكار هذه النظرة الثاقبة والمتعاطفة عن زواج ينهار وأسرة تحافظ على ترابطها",
     "poster": "https://image.tmdb.org/t/p/w500/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
     "hdUrl": "https://streamtape.com/e/WQXYDOwDQGHWdz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2179,6 +2245,7 @@ const globalMoviesData = [
 },
     {
     "title": "Memento",
+    "year": "2000",
     "desc": "يقوم ليونارد شيلبي بتعقب الرجل الذي اغتصب زوجته وقتلها. ومع ذلك ، فإن صعوبة تحديد مكان قاتل زوجته تتفاقم بسبب حقيقة أنه يعاني من شكل نادر وغير قابل للعلاج من فقدان الذاكرة قصير المدى. على الرغم من أنه يستطيع تذكر تفاصيل الحياة قبل وقوع الحادث ، إلا أن ليونارد لا يتذكر ما حدث قبل خمسة عشر دقيقة ، إلى أين يذهب ، أو لماذا.",
     "poster": "https://image.tmdb.org/t/p/w500/dUOPHJdQTMq80dCQLglFkjFGnd0.jpg",
     "hdUrl": "https://streamtape.com/e/3BqVPRJO9wuXWo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2211,6 +2278,7 @@ const globalMoviesData = [
 },
     {
     "title": "My Neighbor Totoro",
+    "year": "1988",
     "desc": "عند احتجاز والدتهما بالمستشفى، أمضت الأختان الصغيرتان الصيف في الريف الياباني بصحبة والدهما.",
     "poster": "https://image.tmdb.org/t/p/w500/c5BdKITdpcp47tLw7CU7xbp0orU.jpg",
     "hdUrl": "https://streamtape.com/e/kqOB66ZojYSeom/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2243,6 +2311,7 @@ const globalMoviesData = [
 },
     {
     "title": "Logan",
+    "year": "2017",
     "desc": "في المستقبل القريب، يعتني لوغان المُرهق بالبروفيسور X المريض في مخبأ على الحدود المكسيكية. لكن محاولات لوغان للاختباء من العالم وإرثه تنقلب رأسا على عقب عندما تصل متحولة شابة، تلاحقها قوى الظلام.",
     "poster": "https://image.tmdb.org/t/p/w500/26LrQAVnCF5RlDEHKoXOr5ohlX0.jpg",
     "hdUrl": "https://streamtape.com/e/mQ0OWXkQYOtb3pK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2275,6 +2344,7 @@ const globalMoviesData = [
 },
     {
     "title": "Kill Bill: Vol. 2",
+    "year": "2004",
     "desc": "تعود العروس (أوما ثورمان) لتستكمل رحلة انتقامها ضد رئيسها السابق (بيل)، وعصابته الذين حرموها من رضيعها.\r ترغب العروس في قتل كل أعضاء الفريق القاتل، والتي كانت يومًا ما واحدة من أعضائه، بالإضافة إلى بيل (ديفيد كارادين) الذي كان يومًا حبيبها.",
     "poster": "https://image.tmdb.org/t/p/w500/ddTV49uQTyTN3CYxSFgoppYDuME.jpg",
     "hdUrl": "https://streamtape.com/e/zQ6OWmaZR2tY3ao/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2307,6 +2377,7 @@ const globalMoviesData = [
 },
     {
     "title": "Kill Bill: Vol. 1",
+    "year": "2003",
     "desc": "قُتل قاتل من قبل صاحب عملها الذي لا يرحم ، بيل ، وأعضاء آخرون في دائرة الاغتيال - لكنها تعيش لتخطط للانتقام منها.",
     "poster": "https://image.tmdb.org/t/p/w500/wA8Pse0PtRhYxXpEw5bSJ7t3v8O.jpg",
     "hdUrl": "https://streamtape.com/e/wd1JoqApAafor6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2339,6 +2410,7 @@ const globalMoviesData = [
 },
     {
     "title": "Klaus",
+    "year": "2019",
     "desc": "تنشأ صداقة غير متوقعة بين ساعي بريد أناني وصانع ألعاب منعزل، فيبعثان الأمل في بلدة باردة ومظلمة تفتقر بشدّة إلى البهجة... فماذا فعلا؟",
     "poster": "https://image.tmdb.org/t/p/w500/7v5pb4YUrjJ4P3OEOl0hjh6JXPr.jpg",
     "hdUrl": "https://streamtape.com/e/eLRD23k0vYFmo3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2371,6 +2443,7 @@ const globalMoviesData = [
 },
     {
     "title": "Joker",
+    "year": "2019",
     "desc": "خلال الثمانينيات من القرن الماضي، ممثل كوميدي فاشل - مدفوعًا بالجنون - يتحول إلى حياة الجريمة والفوضى في مدينة قوثام بينما يصبح شخصية مجرمة بنفسية سيئة.",
     "poster": "https://image.tmdb.org/t/p/w500/ddWLmm7keTTsvPnVCVPAh2l4C4P.jpg",
     "hdUrl": "https://streamtape.com/e/ykkyk2AOqRCo8J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2403,6 +2476,7 @@ const globalMoviesData = [
 },
     {
     "title": "John Carter",
+    "year": "2012",
     "desc": "جون كارتر هو كابتن عسكري سابق مرهق من الحرب وتم نقله لسبب غير مفهوم إلى كوكب برسوم الغامض والغريب (المريخ) وأصبح متورطًا على مضض في صراع ملحمي. إنه عالم على وشك الانهيار ، ويعيد كارتر اكتشاف إنسانيته عندما يدرك أن بقاء برصوم وشعبه بين يديه.",
     "poster": "https://image.tmdb.org/t/p/w500/jdQXo2ggRRl07vTeXSLauzHubay.jpg",
     "hdUrl": "https://streamtape.com/e/JDpXbdaMyvIG9R/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2435,6 +2509,7 @@ const globalMoviesData = [
 },
     {
     "title": "Hacksaw Ridge",
+    "year": "2016",
     "desc": "يرفض طبيب الجيش الأمريكي في الحرب العالمية الثانية ديزموند تي دوس ، الذي خدم أثناء معركة أوكيناوا ، قتل الناس ويصبح أول معترض ضميريًا في التاريخ الأمريكي يحصل على ميدالية الشرف من الكونغرس.",
     "poster": "https://image.tmdb.org/t/p/w500/fnOMP6mjmOmZwmlC1n0K7ivrzt1.jpg",
     "hdUrl": "https://streamtape.com/e/RXyw8ADb7LULo3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2467,6 +2542,7 @@ const globalMoviesData = [
 },
     {
     "title": "John Wick: Chapter 4",
+    "year": "2023",
     "desc": "بعدما اكتشف طريقة ستمكنه من القضاء على المجلس الأعلى واستعادة حريته، يجد جون ويك نفسه في مواجهة مع عدو جديد تدفعه للشك حتى في أصدقاؤه القدامى.",
     "poster": "https://image.tmdb.org/t/p/w500/j6Zcib1u1QhBs0KVKU8yxOugkAv.jpg",
     "hdUrl": "https://streamtape.com/e/4AOXaLeK6GuK6Aw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2499,6 +2575,7 @@ const globalMoviesData = [
 },
     {
     "title": "John Wick: Chapter 3 - Parabellum",
+    "year": "2019",
     "desc": "يعود القاتل الخارق جون ويك باربعة عشر مليون دولار على رأسه وجيش من القتلة الذين يصطادون المكافآت على دربه. بعد قتل عضو في جماعة القتله الدولية الغامضة  'هاي تايبل' جون ويك هو طارد، لكن أكثر الرجال والنساء ضرباً في العالم ينتظرونه بكل منعطف.",
     "poster": "https://image.tmdb.org/t/p/w500/LbIUMWP752hkVPxafA1LR5otGn.jpg",
     "hdUrl": "https://streamtape.com/e/w48xdLgz3ghJXpP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2531,6 +2608,7 @@ const globalMoviesData = [
 },
     {
     "title": "John Wick: Chapter 2",
+    "year": "2017",
     "desc": "أُجبر جون ويك على ترك التقاعد على يد زميل سابق يسعى للسيطرة على نقابة قتلة دولية غامضة. ملتزمًا بقسم الدم لمساعدته ، يسافر ويك إلى روما ويخوض معركة ضد بعض أخطر القتلة في العالم.",
     "poster": "https://image.tmdb.org/t/p/w500/eRsjW25YfROtayinWVI8HVIHyoX.jpg",
     "hdUrl": "https://streamtape.com/e/ezk0GOZmK6cYYdp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2563,6 +2641,7 @@ const globalMoviesData = [
 },
     {
     "title": "John Wick",
+    "year": "2014",
     "desc": "تدور أحداث الفيلم حول القاتل المحترف السابق جون ويك (كيانو ريفز) ، والذي يحدث له شيء يعكر عليه حياته المسالمة الحالية ، حيث يقوم أحد اللصوص باقتحام بيته ، وسرقة سيارته ، وقتل كلبه ، الكلب الذي أعطته له زوجته السابقة ، فيذهب (جون) إلى (نيويورك) سعيا إلى الانتقام من هذا اللص ، ولكن يكتشف أن والد هذا اللص هو زعيم عصابة روسي ، والذي يضع مكافأة لمن يقتل (جون) ، وإذا بـ(ماركوس) الشريك السابق ، وصديق (جون) يحاول الحصول على هذه المكافأة .",
     "poster": "https://image.tmdb.org/t/p/w500/AhFvO9Yl5W767qwao3rKpuB2LbC.jpg",
     "hdUrl": "https://streamtape.com/e/34Vre627yaSa2r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2595,6 +2674,7 @@ const globalMoviesData = [
 },
     {
     "title": "Inglourious Basterds",
+    "year": "2009",
     "desc": "في فرنسا التي احتلها النازيون خلال الحرب العالمية الثانية ، تم اختيار مجموعة من الجنود الأمريكيين اليهود المعروفين باسم 'الباستردز' على وجه التحديد لنشر الخوف في جميع أنحاء الرايخ الثالث عن طريق المضاربة وقتل النازيين بوحشية. سرعان ما التقى آل باستردز بقيادة الملازم ألدو راين مع فتاة مراهقة فرنسية يهودية تدير مسرحًا للسينما في باريس استهدفها الجنود.",
     "poster": "https://image.tmdb.org/t/p/w500/6Fzavx3TDDFSZctwGn4j60EHyN.jpg",
     "hdUrl": "https://streamtape.com/e/vBkbkXrkryi43M8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2627,6 +2707,7 @@ const globalMoviesData = [
 },
     {
     "title": "Interstellar",
+    "year": "2014",
     "desc": "تدور الأحداث حول مجموعة من المستكشفين يستفيدون من ثقب دودي اكتُشف حديثًا لتجاوز حدود السفر البشري عبر الفضاء، وعبور المسافات الشاسعة التي تفصل بين العوالم البعيدة، في رحلة 'بين النجوم' قد تغيّر مصير البشرية إلى الأبد.",
     "poster": "https://image.tmdb.org/t/p/w500/rR8bjK9dOXXH9H8AdpfPTlRx8Fy.jpg",
     "hdUrl": "https://streamtape.com/e/R6G13XjAk7Cd4Vw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2659,6 +2740,7 @@ const globalMoviesData = [
 },
     {
     "title": "Howl's Moving Castle",
+    "year": "2004",
     "desc": "أخذت القصة من رواية خيالية للأطفال من نفس الاسم وتأليف الكاتبة 'ديانا وايني جونز' بطلة القصة هي 'صوفي' التي تعيش مع زوجة أبيها وبنتيها بعد وفاة أبيها ، الذي ترك لهم محل لبيع القبعات ، تحولت إلى امرأة عجوز من قبل ساحرة ولذلك خرجت للبحث عن 'هاول' الساحر الذي أنقذها من قبل ليرجعها إلى شكلها الطبيعي ، والذي يمتلك قلعة مدهشة وغريبة والتي تبدو وكأنها رجل آلي عملاق وتتحرك بواسطة قوة شيطان النار 'كالكفر' فماذا سيحدث بعد ذلك ؟ وهل ستتمكن 'صوفي' من استرجاع شكلها السابق؟",
     "poster": "https://image.tmdb.org/t/p/w500/qkXpq1mjx5Bh9TpW3zMBRirDwEU.jpg",
     "hdUrl": "https://streamtape.com/e/6Q3ORomO8AT9AG2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2691,6 +2773,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ford v Ferrari",
+    "year": "2019",
     "desc": "استنادًا إلى قصة حقيقية، يتعاون كل من مصمم السيارات كارول شيلبي والسائق كين مايلز في سبيل تصميم سيارة سباق فائقة لصالح شركة فورد من أجل منافسة نظيرتها اﻹيطالية فيراري للفوز بالسباق المقام في مدينة ليمان الفرنسية عام 1966.",
     "poster": "https://image.tmdb.org/t/p/w500/i9FUL1B0ComrhEXnsCR3L5SlOJ7.jpg",
     "hdUrl": "https://streamtape.com/e/XAkV8lYdJDCBz1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2723,6 +2806,7 @@ const globalMoviesData = [
 },
     {
     "title": "Come and See",
+    "year": "1985",
     "desc": "غزو ​​القوات الألمانية لقرية في بيلاروسيا يدفع فلوريا الشاب إلى الغابة للانضمام إلى مقاتلي المقاومة المنهكين، رغماً عن عائلته. هناك يلتقي بفتاة تُدعى غلاشا، ترافقه إلى قريته. عند عودته، يجد فلوريا عائلته وزملاءه الفلاحين يُقتلون. يصبح بقاءه على قيد الحياة وسط حطام الحرب الوحشي كابوساً متزايداً، صراعاً بين اليأس والأمل.",
     "poster": "https://image.tmdb.org/t/p/w500/iezAR5UqjpIPu5J95xvrF8ig3Yl.jpg",
     "hdUrl": "https://streamtape.com/e/k9WoP6dPLVueaO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2755,6 +2839,7 @@ const globalMoviesData = [
 },
     {
     "title": "Fight Club",
+    "year": "1999",
     "desc": "إدوارد يتعرض لضغوط حتى يصل به الحال إلى أنه لا يستطيع النوم لفتراتٍ طويلة، لكنه يجد بعض السلام في جلسات العلاج النفسي الجماعي، يتعرف إدوارد على أحد الأشخاص وهو (تايلر ديردن) الذي يحرره من تعلقه بالأشياء الذي تستعبده ،ثم يحرره من خوفه من الناس. يقومان معًا بإنشاء نادي القتال الذي يجذب الكثير من الأفراد المحبطين ،الذين يقومون بإخراج طاقة غضبهم وكرههم للعالم في القتال.",
     "poster": "https://image.tmdb.org/t/p/w500/2xmknsEcjSaznfKsRY6VloqKRUo.jpg",
     "hdUrl": "https://streamtape.com/e/bz4laObPRqcPwgK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2787,6 +2872,7 @@ const globalMoviesData = [
 },
     {
     "title": "Braveheart",
+    "year": "1995",
     "desc": "غضب المحارب الاسكتلندي ويليام والاس من ذبح مورون وعروسه الجديدة وحبه للطفولة ، ويقتل فصيلة من جنود اللورد الإنجليز المحليين. هذا يقود القرية إلى التمرد ، وفي النهاية ، تنهض الدولة بأكملها ضد الحكم الإنجليزي.",
     "poster": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg",
     "hdUrl": "https://streamtape.com/e/pbLJad0w10cB32/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2819,6 +2905,7 @@ const globalMoviesData = [
 },
     {
     "title": "Batman Begins",
+    "year": "2005",
     "desc": "مدفوعًا بالمأساة ، كرّس الملياردير بروس واين حياته لكشف ودحر الفساد الذي ابتلي بمنزله ، مدينة جوثام. غير قادر على العمل داخل النظام ، بدلاً من ذلك ، أنشأ هوية جديدة ، رمزًا للخوف على عالم الجريمة الإجرامي - باتمان.",
     "poster": "https://image.tmdb.org/t/p/w500/9WO6y90Q275A8tiMNrJ28fxwU9H.jpg",
     "hdUrl": "https://streamtape.com/e/ZaxV8703goHoJm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2851,6 +2938,7 @@ const globalMoviesData = [
 },
     {
     "title": "Catch Me If You Can",
+    "year": "2002",
     "desc": "قصة حقيقية عن فرانك أباجنال جونيور الذي نجح قبل عيد ميلاده التاسع عشر في خداع شيكات بملايين الدولارات كطيار وطبيب ومدعي عام في شركة بان آم. عميل في مكتب التحقيقات الفيدرالي يجعل مهمته وضعه وراء القضبان. لكن فرانك لا يستعصي فقط على الاستيلاء ، بل يبهج في السعي وراءه.",
     "poster": "https://image.tmdb.org/t/p/w500/jm4wVFzzVHMlUOd6fiPJB2wjo9J.jpg",
     "hdUrl": "https://streamtape.com/e/dq10zvwVbeHkaZK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2883,6 +2971,7 @@ const globalMoviesData = [
 },
     {
     "title": "City of God",
+    "year": "2002",
     "desc": "Cidade de Deus هي مدينة أكواخ بدأت خلال الستينيات وأصبحت واحدة من أخطر الأماكن في ريو دي جانيرو في بداية الثمانينيات. لرواية قصة هذا المكان ، يصف الفيلم حياة الشخصيات المختلفة ، وكلها ترى من وجهة نظر الراوي ، بوسكابي. نشأ Buscapé في بيئة شديدة العنف. على الرغم من شعوره بأن كل الصعاب كانت ضده ، اكتشف أن الحياة يمكن رؤيتها بعيون أخرى ...",
     "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg",
     "hdUrl": "https://streamtape.com/e/qJ0ADMy9RBuzxRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2915,6 +3004,7 @@ const globalMoviesData = [
 },
     {
     "title": "الست",
+    "year": "2024",
     "desc": "من قرية صغيرة، خرج صوت أكبر من كل المسارح. جعلت أم كلثوم من القاهرة صدى لنجاحها العابر للحدود. يروي هذا الفيلم رحلة سبعة عقود توجت الست بلقبي 'كوكب الشرق' و'صوت الأمة العربية'.",
     "poster": "https://image.tmdb.org/t/p/w500/rRBB5LOq7RBeIocv7HMh1kPCSBL.jpg",
     "hdUrl": "https://streamtape.com/e/3pmvRgokr4CdJVj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2947,6 +3037,7 @@ const globalMoviesData = [
 },
     {
     "title": "Death Note Relight 2: L's Successors",
+    "year": "2008",
     "desc": "حلقة خاصة تستكمل أحداث الجزء الثاني من السلسلة وتغطي الصراع النهائي تبدأ الأحداث بعد غياب إل واستلام لايت زمام الأمور في دور المحقق تظهر شخصيات جديدة تتمثل في خلفاء إل وهم نير وميلو والذين يبدأون بجمع الأدلة لكشف حقيقة كيرا يركز الفيلم على المحاولات المستمرة لإسقاط لايت والتغيرات الكبيرة في سير الأحداث حتى المواجهة الحاسمة والأخيرة يقدم هذا الإصدار ملخصا مكثفا للنصف الثاني من القصة مع تسليط الضوء على المطاردين الجدد ونهاية قصة كيرا.",
     "poster": "https://image.tmdb.org/t/p/w500/e7gHO1hJHhiPV7nRG6oRUHWFe2q.jpg",
     "hdUrl": "https://streamtape.com/e/4GoX7YPdzpFKvdA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2979,6 +3070,7 @@ const globalMoviesData = [
 },
     {
     "title": "Death Note Relight 1: Visions of a God",
+    "year": "2007",
     "desc": "حلقة خاصة تعيد سرد الجزء الأول من سلسلة ديث نوت بلغة بصرية جديدة ومعدلة تدور الأحداث من منظور الشينيغامي ريوك وهو يروي قصة الصراع بين لايت ياغامي والعبقري إل لشينيغامي آخر مجهول الهوية يركز هذا الإصدار على المواجهة الذهنية والذكاء الخارق بين الطرفين من بداية حصول لايت على مذكرة الموت حتى نهاية الصراع الأول مع إل يتضمن الفيلم مشاهد إضافية وتفاصيل لم تظهر في المسلسل الأصلي مع تعديلات في الإخراج والموسيقى لتجربة جديدة ومكثفة.",
     "poster": "https://image.tmdb.org/t/p/w500/mtcYWsCg3h7xVlp32QgbFOcL4gY.jpg",
     "hdUrl": "https://streamtape.com/e/KqZL3v7ZprH0q6v/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3011,6 +3103,7 @@ const globalMoviesData = [
 },
     {
     "title": "Death Note",
+    "year": "2006",
     "desc": "لايت ياغامي هو طالب في المرحلة الثانوية عثر على مذكرة تحمل اسم 'مذكرة الموت' بعدما قام الشينيغامي (حاصد الأرواح) المعروف باسم 'ريوك' بإسقاطها علي كوكب الأرض. تمنح لمن يستخدمها القدرة على قتل أي شخص سبق وأن رآه عن طريق كتابة اسمه في المذكرة. وتسرد ألأحداث محاولة 'لايت' إقامة عالم خالٍ من الشر باستخدام المذكرة، ومن هنا يدور الصراع بين 'لايت' وبين المحقق 'إل' الذي يحاول القبض عليه.",
     "poster": "https://image.tmdb.org/t/p/w500/6tk3niGT9rf48KePCv4fPKM0K62.jpg",
     "hdUrl": "",
@@ -3198,6 +3291,7 @@ const globalMoviesData = [
 },
     {
     "title": "Backrooms",
+    "year": "2025",
     "desc": "يظهر مدخل غريب في الطابق السفلي من صالة عرض الأثاث",
     "poster": "https://image.tmdb.org/t/p/w500/9FZaaQstyvpmmK1sHOwU39ijtCO.jpg",
     "hdUrl": "https://streamtape.com/e/zbqj4M8VYJCYYOm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3230,6 +3324,7 @@ const globalMoviesData = [
 },
     {
     "title": "American Beauty",
+    "year": "1999",
     "desc": "يقرر ليستر بورنهام ، وهو أب مكتئب في إحدى الضواحي يعاني من أزمة منتصف العمر ، تغيير مسار حياته المحمومة بعد أن نشأ افتتانًا بصديق ابنته الجذاب.",
     "poster": "https://image.tmdb.org/t/p/w500/ljCs1rsg52u5PDb1YfGrMtVBXNN.jpg",
     "hdUrl": "https://streamtape.com/e/4qppGG4Mz0srDj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3262,6 +3357,7 @@ const globalMoviesData = [
 },
     {
     "title": "Amélie",
+    "year": "2001",
     "desc": "في مقهى باريسي صغير ، تكتشف أميلي (أودري توتو) المحبوبة والخجولة بشكل مؤلم هدية لمساعدة الآخرين. سرعان ما تقضي أميلي أيامها كخاطبة ، وملاك وصي ، وخبيرة شاملة. ولكن عندما تصطدم بشخص غريب وسيم ، فهل ستجد الشجاعة لتصبح نجمة قصة حبها الخاصة؟",
     "poster": "https://image.tmdb.org/t/p/w500/tdXtLG6L1QMwrv0MNdW6B9IwC8B.jpg",
     "hdUrl": "https://streamtape.com/e/KA7kL9LwG8Sa3o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3294,6 +3390,7 @@ const globalMoviesData = [
 },
     {
     "title": "1917",
+    "year": "2019",
     "desc": "خلال الحرب العالمية الأولى، يغامر شابان في الجيش البريطاني بالتوغل خلف خطوط العدو لإيصال رسالة حاسمة يمكن أن تمنع مذبحة كتيبة بريطانية وقعت في فخ نصبه لها العدو.",
     "poster": "https://image.tmdb.org/t/p/w500/jRPa10ooxCEdIpoRfMq9pfmdsry.jpg",
     "hdUrl": "https://streamtape.com/e/galLMMg6y3hqdgq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3326,6 +3423,7 @@ const globalMoviesData = [
 },
     {
     "title": "3 Idiots",
+    "year": "2009",
     "desc": "في تقليد 'يوم عطلة فيريس بيولر' ، تأتي هذه الكوميديا المنعشة حول مخادع متمرد بعقل ماكر وقلب من الذهب. الوغد. مهرج. حالم. عبقري ... لم تقابل طالبًا جامعيًا مثل 'رانشو'. منذ لحظة وصوله إلى أكثر الجامعات المرموقة في الهند ، تقلب مخططات رانشو الغريبة الحرم الجامعي رأسًا على عقب - جنبًا إلى جنب مع حياة اثنين من أصدقائه الجدد. معًا ، يجعلون الحياة بائسة لـ 'الفيروسات' ، عميد المدرسة المتوتر والقلوب. ولكن عندما لفت رانشو أنظار ابنة العميد المثيرة ، فإن Virus يضع نصب عينيه إخفاق 'الحمقى الثلاثة' مرة واحدة وإلى الأبد.",
     "poster": "https://image.tmdb.org/t/p/w500/9FhGenQJbIYZ7OPeUysi49i2IjH.jpg",
     "hdUrl": "https://streamtape.com/e/oWlveoK3xkcvJ7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3358,6 +3456,7 @@ const globalMoviesData = [
 },
     {
     "title": "Bad Boys",
+    "year": "1995",
     "desc": "ماركس، رب أسرة. مايك، اعزب مولع بالنساء. كلاهما في شرطة ميامي ولديهم 72 ساعة لاستعادة شحنة من المخدرات المسروقة من مركزهم، ولتعقيد الأمور، يجب عليهم أن يتبادلوا الشخصيات.",
     "poster": "https://image.tmdb.org/t/p/w500/x1ygBecKHfXX4M2kRhmFKWfWbJc.jpg",
     "hdUrl": "https://streamtape.com/e/oAe3yvp3DVsJ029/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3390,6 +3489,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ballerina",
+    "year": "2025",
     "desc": "تسعى (إيف) المرأة الشابة للانتقام ممن قاموا بالتخلص من عائلتها، حين يتقاطع دربها مع (جون ويك) القاتل المحترف الذي اعتزل حياة الإجرام.",
     "poster": "https://image.tmdb.org/t/p/w500/d0g7NgTjYHkfqFP0p4eGL9e0w1F.jpg",
     "hdUrl": "https://streamtape.com/e/eGyZXVolW0TY4q8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3422,6 +3522,7 @@ const globalMoviesData = [
 },
     {
     "title": " ان غاب القط ",
+    "year": "2023",
     "desc": "تؤدي سرقة لوحة شهيرة من أحد المتاحف إلى صراع غير متوقّع بين أفراد العصابة وموظفي المتحف، وفي خضم ذلك، تنشأ علاقة حب غير مألوفة.",
     "poster": "https://image.tmdb.org/t/p/w500/gjeRJALgxL1lTN0pn8r1pyoBH3Y.jpg",
     "hdUrl": "https://streamtape.com/e/LMdAJ7YpJkFRjWM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3454,6 +3555,7 @@ const globalMoviesData = [
 },
     {
     "title": " ولنا في الخيال حب ",
+    "year": "2024",
     "desc": "يحاول يوسف، الأستاذ الجامعي الانطوائي، أن يعيش حياة هادئة ومنعزلة، لكن وصول الطالبة وردة إلى عالمه يقلب كل شيء رأسًا على عقب. بينما تحاول إصلاح علاقتها مع صديقها نوح، يجد يوسف نفسه يتورط تدريجياً في علاقتهما.",
     "poster": "https://image.tmdb.org/t/p/w500/q521ctl7fuG6fVitQ4DVCNYRNRk.jpg",
     "hdUrl": "https://streamtape.com/e/XAROVQQPygFD8vz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3486,6 +3588,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Babysitter",
+    "year": "2017",
     "desc": "تأخذ أحداث إحدى الأمسيات منعطفًا غير متوقع لطفل شقي صغير يدعى كول والذي يحاول التجسس على جليسته بي التي يحبها حبًا جمًا، ويكتشف أنها قاتلة متحالفة مع الشيطان.",
     "poster": "https://image.tmdb.org/t/p/w500/uAzKNxGnbK5SL7VF7UeQyZdQLHV.jpg",
     "hdUrl": "https://streamtape.com/e/1qxDO3aZw6tePjp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3518,6 +3621,7 @@ const globalMoviesData = [
 },
     {
     "title": "Dark",
+    "year": "2017",
     "desc": "يتسبب فقدان طفل في انطلاق أربع عائلات في رحلة بحث محمومة للحصول على إجابات، إذ أنها تكشف عن لغزٍ محيّر يمتدّ عبر ثلاثة أجيال.",
     "poster": "https://image.tmdb.org/t/p/w500/7yQyDCqSazrYTnmxdQLAZ8YDH87.jpg",
     "hdUrl": "",
@@ -3655,6 +3759,7 @@ const globalMoviesData = [
 },
     {
     "title": "Love 101",
+    "year": "2020",
     "desc": "خلال سعيهم لإيقاع معلّمتهم في حبّ مدرّب كرة السلّة، يكتشف أربعة مشاغبين وطالبة مثاليّة معنى الصداقة والحبّ والشجاعة وهم يبحثون عن ذاتهم.",
     "poster": "https://image.tmdb.org/t/p/w500/2tg3X5N3vtr7UJnaKWMxJoICrz7.jpg",
     "hdUrl": "",
@@ -3763,6 +3868,7 @@ const globalMoviesData = [
 },
     {
     "title": "Sweetpea",
+    "year": "2024",
     "desc": " تعاني ريانون لويس من التجاهل المستمر فهي الفتاة التي لا يلاحظها أحد في العمل ، ولكن حياتها تنقلب رأساً على عقب عندما تفقد السيطرة وتلجأ للقتل للتخلص من كل من يستفزها أو يؤذيها، لتكتشف جانباً مظلماً ومثيراً في شخصيتها.",
     "poster": "https://image.tmdb.org/t/p/w500/feoDYCy0AUD031gLqBmA9gC4pw1.jpg",
     "hdUrl": "",
@@ -3830,6 +3936,7 @@ const globalMoviesData = [
 },
     {
     "title": "Moon Knight",
+    "year": "2022",
     "desc": "عندما يعاني ستيفن غرانت، وهو موظف في متجر هدايا معتدل السلوك، من انقطاع التيار الكهربائي وذكريات حياة أخرى، يكتشف أنه يعاني من اضطراب الهوية التفارقية ويشارك جثة مع المرتزق مارك سبيكتور. بينما يتلاقى أعداء ستيفن/مارك عليهم، يجب عليهم التنقل في هوياتهم المعقدة بينما يدفعون إلى لغز قاتل بين آلهة مصر القوية.",
     "poster": "https://image.tmdb.org/t/p/w500/mdsh6PgayTmhNJIoPgh2zEajLZm.jpg",
     "hdUrl": "",
@@ -3893,6 +4000,7 @@ const globalMoviesData = [
 },
     {
     "title": "Your Name",
+    "year": "2016",
     "desc": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
     "poster": "https://image.tmdb.org/t/p/w500/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg",
     "hdUrl": "https://streamtape.com/e/1ajX11Zg6wuevv1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3925,6 +4033,7 @@ const globalMoviesData = [
 },
     {
     "title": "WALL·E",
+    "year": "2008",
     "desc": "تدور أحداث الفيلم حول الروبوت وول-ي، وهو روبوت مُصمم لتنظيف الأرض المهجورة والمغطاة بالنفايات في المستقبل البعيد. يقع وول-ي في حب روبوت آخر إسمها إيف، فيتبعها إلى الفضاء الخارجي في مغامرة تُغير مصير جنسه والجنس البشري. يُظهر كل من الروبوتين مظاهر من حرية الإرادة والمشاعر، التي تتطور مع تقدم أحداث الفيلم.",
     "poster": "https://image.tmdb.org/t/p/w500/7NIvqdL3q8dPjJTjSl9cylRdTYL.jpg",
     "hdUrl": "https://streamtape.com/e/pY2z67m0XqFryDy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3957,6 +4066,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story 3",
+    "year": "2010",
     "desc": "لم يلعب وودي وبظ وبقية ألعاب آندي منذ سنوات. مع اقتراب آندي من الذهاب إلى الكلية، تجد المجموعة نفسها تُركت عن طريق الخطأ في مركز رعاية نهارية سيئ. يجب أن تتجمع الألعاب معًا للهروب والعودة إلى منزل آندي.",
     "poster": "https://image.tmdb.org/t/p/w500/jV4eWv8jPH5uLa5yNUfRqWdWZTG.jpg",
     "hdUrl": "https://streamtape.com/e/Mrad7GdXM1smpqP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3989,6 +4099,7 @@ const globalMoviesData = [
 },
     {
     "title": "Cars 2",
+    "year": "2011",
     "desc": "تدور أحداث الفيلم حول نجم سباق السيارات الامع ماكوين وصديقه ماطر في الخارج للتنافس في سباق الجائزة الكبرى العالمية.",
     "poster": "https://image.tmdb.org/t/p/w500/3IVfHN4xRjJ4InqDPusCgd8kyoQ.jpg",
     "hdUrl": "https://streamtape.com/e/GXkWvrG7V4s1gB0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4021,6 +4132,7 @@ const globalMoviesData = [
 },
     {
     "title": "Inside Out",
+    "year": "2015",
     "desc": "عندما تنتقل 'رايلي' البالغة من العمر 11 عامًا إلى مدينة جديدة، تتعاون مشاعرها الداخلية لمساعدتها على التأقلم مع التغيير. يعمل كل من 'الفرح' و'الخوف' و'الغضب' و'الاشمئزاز' و'الحزن' معًا للحفاظ على توازنها، لكن بعد أن يضيع 'الفرح' و'الحزن'، ينطلقان في رحلة عبر أماكن غريبة وغير مألوفة في محاولة للعودة إلى موطنهما داخل عقل 'رايلي'.",
     "poster": "https://image.tmdb.org/t/p/w500/sCoh9F6BRsvvkYwFNNlKvIla6sQ.jpg",
     "hdUrl": "https://streamtape.com/e/dZeR801qWzIPQd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4053,6 +4165,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Good Dinosaur",
+    "year": "2015",
     "desc": "يحكي الفيلم قصة الديناصور المراهق والمنتمي إلى فصيلة (أباتوصور)  يُدعى (أرلو) الذي فقد اباه في حادث مأسوي بعد فيضان نهر وغرق الاب ، وعلى أثره يخرج في رحلة، حيث يقابل الفتى (سبوت) من بني البشر، تتطور بينهم علاقة صداقة تغير مجرى حياتهم",
     "poster": "https://image.tmdb.org/t/p/w500/soTwRZR0dOVa05yZLkfXq6Z9BIK.jpg",
     "hdUrl": "https://streamtape.com/e/qJ42wQrgV3FZ9Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4085,6 +4198,7 @@ const globalMoviesData = [
 },
     {
     "title": "Monsters University",
+    "year": "2013",
     "desc": "قصة الفيلم: يعود بنا الفيلم إلى أيام الجامعة عندما كان مايك وازوسكي (صوت بيللي كريستال) وحشاً صغيراً يحلم بأنيصبح مخيفاً، خاصة وهو يعتقد أنه أفضل مخيف في جامعة الوحوش، ولكن خلال الفصل الدراسي الأول له في الجامعة،تتغير خطط مايك بعد أن التقى بالبارع جيمس بي سوليفان (صوت جون جودمان) الذي وُلد مخيفاً بشكل طبيعي،التنافس بين الاثنين يخرج عن السيطرة ويكون السبب في طردهما من جامعة النخبة المرعبة، وتصبح الأمورأسوأ عندما يُضطران إلى العمل معاً، جنباً إلى جنب مع مجموعة غريبة من الوحوش الماهرة.",
     "poster": "https://image.tmdb.org/t/p/w500/5J8k8r0R5nhlZcqSyJUqDxg2nPZ.jpg",
     "hdUrl": "https://streamtape.com/e/KkYyW4YwR3u0X1d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4117,6 +4231,7 @@ const globalMoviesData = [
 },
     {
     "title": "Finding Dory",
+    "year": "2016",
     "desc": "بعد أن علما نيمو ووالده مارلن أن دوري عرفت مكان عائلتها يقرران مساعدتها في البحث، ويذهبان إلى كاليفورنيا من خلال التيار السريع بمساعدة السلاحف، وعند وصولهم إلى هُناك عانوا الصعوبات بعد أن واجهوا حباراً مُفترسا طاردهم حتى وصلوا إلى منطقة آمنة، ذهبت دوري إلى سطح الماء بعد أن سمعت صوتاً خفياً، لكنها اختُطفت من قِبل عمال المعهد البحري في مورو باي، وانفصلت عن نيمو ووالده",
     "poster": "https://image.tmdb.org/t/p/w500/pFHAkjvImCq5pGggbTteUhAsInl.jpg",
     "hdUrl": "https://streamtape.com/e/zpbojPYWx8sYzog/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4149,6 +4264,7 @@ const globalMoviesData = [
 },
     {
     "title": "Cars 3",
+    "year": "2017",
     "desc": "تواتي (ماكوين) صدمة عاتية بسبب جيل جديد من المتسابقين فائقي السرعة؛ فيجد نفسه مُستبعدًا فجأة من الرياضة التي يعشقها، ولكي يستطيع العودة للعبة من جديد سيحتاج لعون تقني سيارات سباق شاب لديه مقدار كبير من الحرص وخطة مُحكمة للفوز.",
     "poster": "https://image.tmdb.org/t/p/w500/nrY8PCqPdC8Ac8aKqakrzKq8yDq.jpg",
     "hdUrl": "https://streamtape.com/e/owpy1jybvYuJqpQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4181,6 +4297,7 @@ const globalMoviesData = [
 },
     {
     "title": "Nimona",
+    "year": "2023",
     "desc": "ينضم فارس، لُفقت له جريمة مأساوية، إلى مراهقة مشاكسة ذات هيئة متحولة لإثبات براءته... ولكن ماذا لو كانت هي الوحش الذي أقسم على تدميره؟",
     "poster": "https://image.tmdb.org/t/p/w500/2NQljeavtfl22207D1kxLpa4LS3.jpg",
     "hdUrl": "https://streamtape.com/e/jbypQ6zo0BuJ4w/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4213,6 +4330,7 @@ const globalMoviesData = [
 },
     {
     "title": "Incredibles 2",
+    "year": "2018",
     "desc": "تنطلق إلاستيقيرل إلى العمل لإنقاذ اليوم، بينما يواجه السيد خارق أكبر تحد له حتى الآن - وهو ان يعتني بمشاكل أطفاله الثلاثة.",
     "poster": "https://image.tmdb.org/t/p/w500/s3IfCcxPPNaog6s62RhoadmzZRa.jpg",
     "hdUrl": "https://streamtape.com/e/A2P8YpJmJrsvGj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4245,6 +4363,7 @@ const globalMoviesData = [
 },
     {
     "title": "Thor",
+    "year": "2011",
     "desc": "تم طرد الإله القوي والمتغطرس ثور من أسغارد ليعيش بين البشر في ميدغارد (الأرض)، حيث سرعان ما أصبح أحد أفضل المدافعين عنهم.",
     "poster": "https://image.tmdb.org/t/p/w500/1FHQvc3OeqlalUkUdAdh1k4xaoO.jpg",
     "hdUrl": "https://streamtape.com/e/o1empwkvdasWpD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4277,6 +4396,7 @@ const globalMoviesData = [
 },
     {
     "title": "Iron Man 2",
+    "year": "2010",
     "desc": "بعد أن أصبح العالم على دراية بهويته كرجل حديدي، يتعين على توني ستارك أن يتعامل مع تدهور صحته ومع رجل مجنون يسعى للانتقام وله صلات بإرث والده.",
     "poster": "https://image.tmdb.org/t/p/w500/yhQxDrmpgJiiTuT76ulq5BTpq43.jpg",
     "hdUrl": "https://streamtape.com/e/7dlKJ1l4JofArlM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4309,6 +4429,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Incredible Hulk",
+    "year": "2008",
     "desc": "بروس بانر، عالم هارب من الحكومة الأمريكية، عليه أن يجد علاجاً للوحش الذي يتحول إليه كلما فقد أعصابه.",
     "poster": "https://image.tmdb.org/t/p/w500/783TC3fhSq7kMyWdPfuHZp9SfSR.jpg",
     "hdUrl": "https://streamtape.com/e/Qa9me74ebAu0X2V/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4341,6 +4462,7 @@ const globalMoviesData = [
 },
     {
     "title": "Iron Man",
+    "year": "2008",
     "desc": "بعد أن تم احتجازه أسيراً في كهف أفغاني، قام المهندس الملياردير توني ستارك بصنع بدلة درع فريدة من نوعها مزودة بأسلحة لمحاربة الشر.",
     "poster": "https://image.tmdb.org/t/p/w500/yGzI4mAq683ULhac34MZuhdH5eY.jpg",
     "hdUrl": "https://streamtape.com/e/vLJyol0Rx3T2Dg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4373,6 +4495,7 @@ const globalMoviesData = [
 },
     {
     "title": "Captain America: The First Avenger",
+    "year": "2011",
     "desc": "خلال الحرب العالمية الثانية، يتحول 'ستيف روجرز'، الشاب الضعيف القادم من بروكلين، إلى الجندي الخارق 'كابتن أمريكا' للمساهمة في المجهود الحربي. لكن مهمته الحقيقية تبدأ عندما يواجه 'ريد سكال'، قائد برنامج الأسلحة النازي وعدو هتلر الأكثر قسوة، والذي يسعى مع منظمته إلى تسخير قوة جهاز غامض ذي قدرات لا تُحصى لإخضاع العالم بأسره.",
     "poster": "https://image.tmdb.org/t/p/w500/zsXne3JCapkJxPAPPOaTlPJQLVI.jpg",
     "hdUrl": "https://streamtape.com/e/ZzOegj0K7viq024/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4405,6 +4528,7 @@ const globalMoviesData = [
 },
     {
     "title": "Iron Man 3",
+    "year": "2013",
     "desc": "عندما يتمزق عالم توني ستارك على يد إرهابي هائل يُدعى الماندرين، يبدأ رحلة إعادة البناء والانتقام.",
     "poster": "https://image.tmdb.org/t/p/w500/mBfLDsgqqdeYKxhLWz0jeUzz41B.jpg",
     "hdUrl": "https://streamtape.com/e/BJQWJyPLV4TyBKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4437,6 +4561,7 @@ const globalMoviesData = [
 },
     {
     "title": "Thor: The Dark World",
+    "year": "2013",
     "desc": "عندما يحاول الجان المظلمون إغراق الكون في الظلام، يجب على ثور أن يشرع في رحلة محفوفة بالمخاطر وشخصية من شأنها أن تعيده إلى الطبيبة جين فوستر.",
     "poster": "https://image.tmdb.org/t/p/w500/gRKpFNeghRPLsayN14dC2611o7J.jpg",
     "hdUrl": "https://streamtape.com/e/1jO81y61XoTy38/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4469,6 +4594,7 @@ const globalMoviesData = [
 },
     {
     "title": "Venom: Let There Be Carnage",
+    "year": "2021",
     "desc": "في الوقت الذي يجتهد فيه 'إيدي بروك' و'فينوم' لخوض غمار علاقتهما الشائكة، يظهر تهديد جديد من القاتل المتسلسل 'كليتوس كاسادي' وكائن فضائي جديد مُعايش.",
     "poster": "https://image.tmdb.org/t/p/w500/aLBiGL6Nqx8nY27X61g6szKn19Y.jpg",
     "hdUrl": "https://streamtape.com/e/MaJOlP89bvim2kR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4501,6 +4627,7 @@ const globalMoviesData = [
 },
     {
     "title": "Doctor Strange in the Multiverse of Madness",
+    "year": "2022",
     "desc": "يخوض (دكتور سترينج)، بمساعدة حلفاء من الماضي والحاضر، رحلة عبر العوالم الموازية والمخيفة للكون المتعدد، متجاوزاً حدود العقل ليواجه خصماً جديداً غامضاً.",
     "poster": "https://image.tmdb.org/t/p/w500/iGMaJs2GIGVR7bTNRI2gclhW6ym.jpg",
     "hdUrl": "https://streamtape.com/e/mq1aLzQDOaiVxx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4533,6 +4660,7 @@ const globalMoviesData = [
 },
     {
     "title": "Shang-Chi and the Legend of the Ten Rings",
+    "year": "2021",
     "desc": "شانغ تشي، سيد فنون الكونغ فو القائم على الأسلحة، يُجبر على مواجهة ماضيه بعد انضمامه إلى منظمة الحلقات العشر.",
     "poster": "https://image.tmdb.org/t/p/w500/jcjGSIDtwJlPELn13yj1m7py9Ab.jpg",
     "hdUrl": "https://streamtape.com/e/GKl3qDVxr2S1b3K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4565,6 +4693,7 @@ const globalMoviesData = [
 },
     {
     "title": "Eternals",
+    "year": "2021",
     "desc": "ملحمة الخالدين، وهم جنس من الكائنات الخالدة التي عاشت على الأرض وشكلت تاريخها وحضاراتها.",
     "poster": "https://image.tmdb.org/t/p/w500/9WflgM3cFL9PWK3PCS01Q0zKs6H.jpg",
     "hdUrl": "https://streamtape.com/e/pk4jDKj7BXfr4VB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4597,6 +4726,7 @@ const globalMoviesData = [
 },
     {
     "title": "Obsession",
+    "year": "2025",
     "desc": "بعد أن كسر غصنًا من ’صفصافة الأمنية الواحدة‘ الغامضة ليفوز بقلب الفتاة التي يعشقها، يجد رومانسي يائس نفسه يحصل على ما طلب تمامًا، لكنه سرعان ما يكتشف أن بعض الرغبات تأتي بثمن باهظ ومظلم",
     "poster": "https://image.tmdb.org/t/p/w500/qukypUmPwd21UnNTRvUdZHd4pNJ.jpg",
     "hdUrl": "https://streamtape.com/e/4WWXPYb28ztKaOP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4629,6 +4759,7 @@ const globalMoviesData = [
 },
     {
     "title": "Surf's Up",
+    "year": "2007",
     "desc": "يقرر البطريق كودي، ، المشاركة في أكبر مسابقة ركوب أمواج في العالم. وفي طريقه، تنضم إليه دجاجة غريبة الأطوار، ومدير ثعلب الماء الحكيم،",
     "poster": "https://image.tmdb.org/t/p/w500/lgcCzTwQhLS9GkG6x83R0krgnoG.jpg",
     "hdUrl": "https://streamtape.com/e/aVaGyMRrYJux480/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4661,6 +4792,7 @@ const globalMoviesData = [
 },
     {
     "title": "Empire of Lies",
+    "year": "2024",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/2uAFDuOCv6jjbRolZQDnVsbjU8n.jpg",
     "hdUrl": "https://streamtape.com/e/OJRRjA3yQLFZyXA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4681,6 +4813,7 @@ const globalMoviesData = [
 },
     {
     "title": "Up",
+    "year": "2009",
     "desc": "الفيلم يتحدث عن ذكريات العجوز كارل فريدريكسون (كرم فَريد زين في النسخة العربية) البالغ 87 عاماً الذي حلم طيلة حياته هو وزوجته أن يزورا حدائق وغابات أمريكا الجنوبية، إلا أنها توفيت قبل أن يحقق لها ما تريد، فيقرر الذهاب إلى هناك مباشرة. ولأنه كان بائعا للبالون يقرر السفر إلى هناك مع منزله الذي يحمل معه كل ذكرياته، بأن يرفع البيت بعدد كبير من البالون المليء بالهيليوم ويبحر به كالمنطاد. ومع انطلاقه فوق لا يلاحظ العجوز أن أحد الأطفال الفضوليين قد تعلق بشرفة المنزل وارتفع معه. وهنا تبدأ المغامرة حيث رجل عجوز وطفل شقي في مغامرة بغابات وأدغال فنزويلا.",
     "poster": "https://image.tmdb.org/t/p/w500/fPtAMZkhSZuz71XVm94F1n6f1oZ.jpg",
     "hdUrl": "https://streamtape.com/e/BOBD6GVK7dIWvz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4713,6 +4846,7 @@ const globalMoviesData = [
 },
     {
     "title": "Hokum",
+    "year": "2025",
     "desc": "عندما ينعزل الروائي أوم بومان في نُزل ناءٍ لينثر رماد والديه، تسيطر عليه حكايات عن ساحرة تطارد نزلاء جناح شهر العسل. لكن الرؤى المزعجة وحالة اختفاء صادمة تجبره على مواجهة الزوايا المظلمة من ماضيه",
     "poster": "https://image.tmdb.org/t/p/w500/jHKPnRPjX16Itl2jhfv3Ay4J6vL.jpg",
     "hdUrl": "https://streamtape.com/e/ldLokdG6e0fZ39/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4745,6 +4879,7 @@ const globalMoviesData = [
 },
     {
     "title": "Tom Clancy's Jack Ryan: Ghost War",
+    "year": "2025",
     "desc": "في هذا الفيلم الجديد، يعود جاك رايان إلى عالم التجسس رغماً عنه عندما تكشف مهمة سرّية دولية عن مؤامرة مميتة. وفي سباق مع الزمن، ينضم إلى حلفاء وكالة المخابرات المركزية مايك نوفمبر وجيمس  غرير، وضابطة المخابرات البريطانية إيما مارلو، لمواجهة وحدة عمليات سرّية مارقة في معركة مصيرية وشخصية للغاية.",
     "poster": "https://image.tmdb.org/t/p/w500/iBEQJqPdmzFvPjuTxy2KZtbsEQJ.jpg",
     "hdUrl": "https://streamtape.com/e/3PlMdrGpr4CdODo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4777,6 +4912,7 @@ const globalMoviesData = [
 },
     {
     "title": "Iron Lung",
+    "year": "2023",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
     "hdUrl": "https://streamtape.com/e/7wOQ7mYqQ4IRmg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4809,6 +4945,7 @@ const globalMoviesData = [
 },
     {
     "title": "F1",
+    "year": "2025",
     "desc": "يتم إقناع أسطورة السباقات سوني هايز بالعودة من التقاعد لقيادة فريق فورمولا 1 المتعثر - وتوجيه سائق شاب موهوب على أمل تحقيق إنجاز جديد معه - بينما يطارد فرصة أخرى للمجد.",
     "poster": "https://image.tmdb.org/t/p/w500/2Iikih1n9fPEIsBiUTZ2dCOcPqi.jpg",
     "hdUrl": "https://streamtape.com/e/L1gKbMKwrbFRjLY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4841,6 +4978,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Devil Wears Prada 2",
+    "year": "2025",
     "desc": "ستبقى الأيقونات خالدة.  مع اقتراب ميراندا بريستلي من سن التقاعد، تجتمع مجدداً مع أندي ساكس لمواجهة مساعدتها السابقة التي تحولت إلى منافسة لدودة: إميلي شارلتون.",
     "poster": "https://image.tmdb.org/t/p/w500/norHRkEH77pCtqjUOCkdYPWEI7w.jpg",
     "hdUrl": "https://streamtape.com/e/qKrwdgYedXSzlr4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4873,6 +5011,7 @@ const globalMoviesData = [
 },
     {
     "title": "Captain America: The Winter Soldier",
+    "year": "2014",
     "desc": "بينما يكافح ستيف روجرز من أجل تقبّل دوره في العالم الحديث، يتعاون مع زميلته المنتقمة وعميلة منظمة شيلد، الأرملة السوداء، لمحاربة تهديد جديد من التاريخ: قاتل يُعرف باسم الجندي الشتوي.",
     "poster": "https://image.tmdb.org/t/p/w500/eEoO2Ns5pAf5vtwAS3UXCUQRLGB.jpg",
     "hdUrl": "https://streamtape.com/e/wO0zBD8Wg2tJrYz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4905,6 +5044,7 @@ const globalMoviesData = [
 },
     {
     "title": "Guardians of the Galaxy",
+    "year": "2014",
     "desc": "يتعين على مجموعة من المجرمين بين المجرات أن يتحدوا لإيقاف محارب متعصب يخطط لتطهير الكون.",
     "poster": "https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
     "hdUrl": "https://streamtape.com/e/d7paBJK1bAfkKa6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4937,6 +5077,7 @@ const globalMoviesData = [
 },
     {
     "title": "Deadpool",
+    "year": "2016",
     "desc": "يخضع مرتزقٌ فكاهي لتجارب تجعله خالداً ولكنه مشوه بشكل بشع، وينطلق في رحلة للبحث عن الرجل الذي شوّه مظهره.",
     "poster": "https://image.tmdb.org/t/p/w500/sxSvb0bb5MonuwiT21gxTcrrOL0.jpg",
     "hdUrl": "https://streamtape.com/e/RpL98wxPzrTdOdz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -4969,6 +5110,7 @@ const globalMoviesData = [
 },
     {
     "title": "Captain America: Civil War",
+    "year": "2016",
     "desc": "يؤدي التدخل السياسي في شؤون المنتقمين إلى حدوث شرخ بين كابتن أمريكا وآيرون مان.",
     "poster": "https://image.tmdb.org/t/p/w500/8qrwEGagUE5Kc1IVxpWRHSGAPvD.jpg",
     "hdUrl": "https://streamtape.com/e/rBwgeoJ8oKtbw4z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5001,6 +5143,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ant-Man",
+    "year": "2015",
     "desc": "مُسلّحًا ببدلة خارقة ذات قدرة مذهلة على التقلص مع ازدياد القوة، يجد اللص سكوت لانغ نفسه مضطرًا لاستغلال بطولته الكامنة ومساعدة مُعلّمه، الدكتور هانك بيم، في تنفيذ خطة لإنقاذ العالم.",
     "poster": "https://image.tmdb.org/t/p/w500/14bx6O9BKFuQI5l8c9MSFh0zQQv.jpg",
     "hdUrl": "https://streamtape.com/e/xPzmbVoeg2Ik4bD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5033,6 +5176,7 @@ const globalMoviesData = [
 },
     {
     "title": "Doctor Strange",
+    "year": "2016",
     "desc": "في رحلة شفاء جسدي وروحي، ينجذب جراح أعصاب بارع إلى عالم الفنون الخفية.",
     "poster": "https://image.tmdb.org/t/p/w500/fP33MFHyjJ7CpdnEJXYWJHB0zf7.jpg",
     "hdUrl": "https://streamtape.com/e/8K1vQO02J6Iog4J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5065,6 +5209,7 @@ const globalMoviesData = [
 },
     {
     "title": "Guardians of the Galaxy Vol. 2",
+    "year": "2017",
     "desc": "يُكافح حراس المجرة للحفاظ على تماسكهم كفريق واحد، بينما يواجهون مشاكلهم العائلية الشخصية، ولا سيما لقاء ستار-لورد مع والده، الكائن السماوي الطموح إيغو.",
     "poster": "https://image.tmdb.org/t/p/w500/3kGckArA1uCjkbzwMmFFyGx0J4N.jpg",
     "hdUrl": "https://streamtape.com/e/9R4j60allwcaQQx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5097,6 +5242,7 @@ const globalMoviesData = [
 },
     {
     "title": "Thor: Ragnarok",
+    "year": "2017",
     "desc": "يُسجن ثور على كوكب ساكار، وعليه أن يسابق الزمن للعودة إلى أسغارد وإيقاف راجناروك، دمار عالمه، على يد الشرير القوي عديم الرحمة هيلا.",
     "poster": "https://image.tmdb.org/t/p/w500/4Zrcfq0kDltHKMgPSVzi6rw8UOA.jpg",
     "hdUrl": "https://streamtape.com/e/rJ1L6qMl6XHbwk2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5129,6 +5275,7 @@ const globalMoviesData = [
 },
     {
     "title": "Venom",
+    "year": "2018",
     "desc": "عندما يستحوذ إدي بروك على قوه خارقه من السمبيود، سيكون عليه أن يطلق سراح - فينوم -  من أجل إنقاذ حياته.",
     "poster": "https://image.tmdb.org/t/p/w500/3EfE1jrO5Ww0ITP8uk3Rno64utS.jpg",
     "hdUrl": "https://streamtape.com/e/OVp6YyzMbGuZJdy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5161,6 +5308,7 @@ const globalMoviesData = [
 },
     {
     "title": "Once Upon a Deadpool",
+    "year": "2018",
     "desc": "اضطر المختطف - فريد سافج - لمشاهدة نسخه معدلة من فلم ديدبول 2 لنسخه عائلية PG-13، حيث يكون فيها اميرات، عجائب وسحر.. وبدون كلام قذر!",
     "poster": "https://image.tmdb.org/t/p/w500/w6Jk8BHohhoKBUcxGeSyDQGWGWc.jpg",
     "hdUrl": "https://streamtape.com/e/jp1Vzy1aqRtzR4J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5193,6 +5341,7 @@ const globalMoviesData = [
 },
     {
     "title": "Deadpool 2",
+    "year": "2018",
     "desc": "يقوم المرتزق المتحول ذو اللسان البذيء وايد ويلسون (المعروف أيضًا باسم ديدبول) بتجميع فريق من زملائه المتحولين الأشرار لحماية صبي صغير يتمتع بقدرات خاصة من السايبورغ الوحشي كيبل الذي يسافر عبر الزمن.",
     "poster": "https://image.tmdb.org/t/p/w500/grdBNhOSwnPpX5sncWWCQtELpKf.jpg",
     "hdUrl": "https://streamtape.com/e/DkDLYMayJVfkOjk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5225,6 +5374,7 @@ const globalMoviesData = [
 },
     {
     "title": "Black Panther",
+    "year": "2018",
     "desc": "يجب على تشالا، وريث مملكة واكاندا الخفية والمتقدمة، أن يتقدم ليقود شعبه نحو مستقبل جديد، وأن يواجه خصماً من ماضي بلاده.",
     "poster": "https://image.tmdb.org/t/p/w500/sksOGFDEd9f2mvIM68m8i1XRS30.jpg",
     "hdUrl": "https://streamtape.com/e/y7D0bxvDqRF1R1Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5257,6 +5407,7 @@ const globalMoviesData = [
 },
     {
     "title": "Captain Marvel",
+    "year": "2019",
     "desc": "تُصبح كارول دانفرز واحدة من أقوى أبطال الكون عندما تجد الأرض نفسها عالقة في خضم حرب مجرية بين عرقين فضائيين.",
     "poster": "https://image.tmdb.org/t/p/w500/7kypW3Vf3oa8bZ6pRXzrQsfwUoz.jpg",
     "hdUrl": "https://streamtape.com/e/8O9Z6KRLxgToPbx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5289,6 +5440,7 @@ const globalMoviesData = [
 },
     {
     "title": "Deadpool 2 super duper cut",
+    "year": "2018",
     "desc": "يقوم المرتزق المتحول ذو اللسان البذيء وايد ويلسون (المعروف أيضًا باسم ديدبول) بتجميع فريق من زملائه المتحولين الأشرار لحماية صبي صغير يتمتع بقدرات خاصة من السايبورغ الوحشي كيبل الذي يسافر عبر الزمن.",
     "poster": "https://image.tmdb.org/t/p/w500/grdBNhOSwnPpX5sncWWCQtELpKf.jpg",
     "hdUrl": "https://streamtape.com/e/1adzJ0b2jMCpAo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5321,6 +5473,7 @@ const globalMoviesData = [
 },
     {
     "title": "Black Widow",
+    "year": "2021",
     "desc": "تواجه ناتاشا رومانوف الجوانب المظلمة من ماضيها حين تظهر مؤامرة خطيرة مرتبطة بماضيها.",
     "poster": "https://image.tmdb.org/t/p/w500/aU6WYGPvGcIea3o9Ok3wuDRZ4FD.jpg",
     "hdUrl": "https://streamtape.com/e/3wGADD2Y3yTdKGK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5353,6 +5506,7 @@ const globalMoviesData = [
 },   
     {
     "title": "Brave",
+    "year": "2012",
     "desc": "غير مصيرك.\r تدور أحداث شجاع في المرتفعات الاسكتلندية الغامضة ، حيث ميريدا هي أميرة مملكة يحكمها الملك فيرغوس والملكة إلينور. ابنة جامحة ورامية بارعة ، تتحدى ميريدا ذات يوم عادة مقدسة للأرض وتجلب الاضطرابات عن غير قصد إلى المملكة. في محاولة لوضع الأمور في نصابها الصحيح ، تبحث ميريدا عن امرأة حكيمة عجوز غريبة الأطوار وتمنح أمنية مشؤومة. كما أن البحث عن مسعى ميريدا - والعمل كإغاثة كوميدية - هو أمراء المملكة الثلاثة: اللورد ماكجوفين الهائل ، واللورد ماكنتوش العابس ، واللورد دينجوال البغيض.",
     "poster": "https://image.tmdb.org/t/p/w500/4YmdndBO3cJ76kehGyIuT2C172X.jpg",
     "hdUrl": "https://streamtape.com/e/6bO9Zw3O1OH9Dxj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5385,6 +5539,7 @@ const globalMoviesData = [
 },
     {
     "title": "Cars",
+    "year": "2006",
     "desc": "القصة عن لايتننج ماكويين سيارة السباق ذات الشخصية البطولية المثالية التي تخاطر بكل شيء في سبيل النجاح والشهرة ولا تئبأ باى شخص حولها ماذا يحدث حين ترغم على العيش في مدينة ريفية فقيرة لا يهتم أحد بها بالمظاهر هناك تبدأ بتعلم الصداقة والوفاء والحب",
     "poster": "https://image.tmdb.org/t/p/w500/wQyTF7K5SknpqWBTM8nPMJw1ztr.jpg",
     "hdUrl": "https://streamtape.com/e/mvy773bQoqhb1A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5417,6 +5572,7 @@ const globalMoviesData = [
 },
     {
     "title": "Finding Nemo",
+    "year": "2003",
     "desc": "القصة عن سمكتين (من نوع كلون أو المهرج) تعيشان في المحيط الهادئ وبعد وضع الأنثى للبيوض تهاجم من قبل سمكة البينارا فتموت ويرعى الأب 'مرهف' البيضة الوحيدة المتبقية ويسميها 'نيمو' بناء لرغبة الأم 'مرجانة'. يحاول 'مرهف' حماية ابنه من الخطر بهوس زائد عن الحد فيتمرد نيمو ويذهب ناحية قارب لقوم بتبين شجاعتة لأبوه ويقع في يد غواص ياخذه إلى أستراليا في سيدنى فيبدأ مرهف رحلة عبر المحيط لإيجاده مع سمكة تعاني من فقدان ذاكرة مؤقت! اسمها 'دوري' في حين يحاول الابن الخروج من حوض الأسماك الذي وضعه فيه دكتور أسنان وبمساعدة بعض الأصدقاء لنيمو في الخروج من الحوض وبالفعل ينجحو ويعود الابن لأبوه.",
     "poster": "https://image.tmdb.org/t/p/w500/lYkqmcx2yETvDDIMl5SCcoqVskS.jpg",
     "hdUrl": "https://streamtape.com/e/A4MW2W4MrKIXkZK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5449,6 +5605,7 @@ const globalMoviesData = [
 },
     {
     "title": "A Bug's Life",
+    "year": "1998",
     "desc": "يحكي الفيلم عن إحدى مستعمرات النمل التي يسيطر عليها عصابة من الجراد الشرير والتي تفرض على المستعمرة جمع الحبوب لصالحها مما يفرض على النمل عبئا إضافيا لجمع الحبوب للجراد ثم لنفسه قبل حلول موسم المطر الذي يلزمون فيه المستعمرة. إلا أن 'فليك' النملة الذكية وبطل الفيلم يقرر الرحيل عن المستعمرة والذهاب إلى مدينة مجاورة من أجل الاستعانة بحشرات مقاتلين لمعاونة قومه على نبذ سيطرة الجراد عليهم. ويوافق حكماء النمل على رحيل 'فليك' من أجل التخلص من متاعبه التي يسببها دائما بواسطة أختراعاته",
     "poster": "https://image.tmdb.org/t/p/w500/hyLKSwnRxFQoEwAhf0wfDyw11Q4.jpg",
     "hdUrl": "https://streamtape.com/e/a06DOJmqM1fx89o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5481,6 +5638,7 @@ const globalMoviesData = [
 },
     {
     "title": "Piper",
+    "year": "2016",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/5fu2d809jepLwEpES7wggiECLoQ.jpg",
     "hdUrl": "https://streamtape.com/e/rrk1MGOopjF80J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5492,6 +5650,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Incredibles",
+    "year": "2004",
     "desc": "تخلى بوب بار عن حياة الابطال الخارقين ليعمل في شركة تأمين ويربي مع زوجته اطفالة الثلاث في الضواحي. لكن بعد استلامه مهمة غامضة، فقد حان الوقت للعودة إلى لبس الزي.",
     "poster": "https://image.tmdb.org/t/p/w500/sQsT5kZ1es2BkmFKUhp0dlzZi9n.jpg",
     "hdUrl": "https://streamtape.com/e/96b2v391PVfaGXm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5524,6 +5683,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ratatouille",
+    "year": "2007",
     "desc": "ريمي ، المقيم في باريس ، يقدر الطعام الجيد ولديه حنك متطور. ويرغب بأن  يحب أن يصبح طاهياً ليتمكن من ابتكار روائع الطهي والاستمتاع بها. المشكلة الوحيدة هي أن ريمي فأر. عندما ينتهي به المطاف في المجاري أسفل أحد أرقى المطاعم في باريس ، يجد ذوّاقة القوارض نفسه في وضع مثالي لتحقيق حلمه.",
     "poster": "https://image.tmdb.org/t/p/w500/lBfftNxNUTvuWyVnhvQuvj2IOnI.jpg",
     "hdUrl": "https://streamtape.com/e/okwX1ob69oH98o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5556,6 +5716,7 @@ const globalMoviesData = [
 },
     {
     "title": "Monsters, Inc.",
+    "year": "2001",
     "desc": "تدور أحداث الفيلم عن مدينة للوحوش. شركة المرعبين المحدودة هي شركة توليد الطاقة للمدينة، والتي تستعمل كمصدر للطاقة صراخ الأطفال، لهذا يحاولون تخويفهم. وفي محاولة أحد الموظفين (راندل) بالاتفاق مع مدير الشركة أبو عنكبوت لتوفير الطاقة والتي أصبحت الشركة تعانى من قلتها بسبب عدم خوف الاطفال من المخوفاتيه يقوم هذا الموظف باختراع جهاز مهمته أن يأخذ الصراخ من الأطفال بالقوه. يكتشف شلبى سلوفان عن وجود باب بعد ساعات العمل، ومن هذا الباب تدخل طفله إلى مدينة المرعبيين. وهنا تبدأ الأحداث حيث يسعى شلبى سلوفان وماردوشوشنى إلى إعادة الطفلة إلى بيتها في ظل مطاردة من اندل للقبض على الطفلة وتجربة الجهاز عليها. أثناء هذه المطاردة يكتشفون ان مدير الشركة أبو عنكبوت مشترك في هذه الجريمة. وبعد عدة أحداث يتم القبض على أبو عنكبوت ويتم نفى اندل إلى عالم البشر. كما يكتشفون مصدر جديد للطاقة بدلا من تخويف وهو الضحك. ويستلم شلبى سلوفان إدارة الشركة والتي تعود للنمو من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/oLKR5TveXBdAI50TpxXS1hURG9Y.jpg",
     "hdUrl": "https://streamtape.com/e/p8RW2R1zOpcrmq2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5588,6 +5749,7 @@ const globalMoviesData = [
 },
     {
     "title": "Coco",
+    "year": "2017",
     "desc": "الاحتفال بالعمر\r على الرغم من الحظر المحير الذي فرضته عائلته منذ أجيال على الموسيقى ، يحلم ميغيل بأن يصبح موسيقيا بارعا مثل معبوده إرنستو دي لا كروز. في محاولة يائسة لإثبات موهبته ، يجد ميغيل نفسه في أرض الموتى المذهلة والملونة بعد سلسلة غامضة من الأحداث. على طول الطريق ، يلتقي المحتال الساحر هيكتور ، وينطلقان معا في رحلة غير عادية لفتح القصة الحقيقية وراء تاريخ عائلة ميغيل.",
     "poster": "https://image.tmdb.org/t/p/w500/6vK2fKqxBB8q0gJD9CYL2wKJvqT.jpg",
     "hdUrl": "https://streamtape.com/e/ZVG01PB6BLTKqM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5620,6 +5782,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story 2",
+    "year": "1999",
     "desc": "تحكي القصة عن المأمور وودي الذي يتعرض للإصابة كلعبة في بداية الفيلم فيتم ركنه على الرفّ ويجد صديقة القديم المريض بسبب الركنة ولما يحاول إنقاذه من البيع كروبابيكيا يقوم أحد المتجولين في معرض الروبابيكيا بسرقة المأمور وودي لأغراض ربحية وتدور القصة بعد ذلك حول محاولة أصدقاء المأمور وودي بقيادة باز يطير لاسترجاع صديقهم وإنقاذه إلى أنهم يجدوا الكثير من المفاجآت ولكنهم يعدوا في نهاية الفيلم وقد انضم إليهم صديقين جدد.",
     "poster": "https://image.tmdb.org/t/p/w500/eGWUhABoftpRmcSo2PJUSRWo50c.jpg",
     "hdUrl": "https://streamtape.com/e/wl30ZoRW34uJ0a4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5652,6 +5815,7 @@ const globalMoviesData = [
 },
     {
     "title": "Toy Story",
+    "year": "1995",
     "desc": "تعيش ألعاب آندي، بقيادة وودي، بسعادة في غرفته حتى عيد ميلاد آندي الذي جلب معه باز لايتيير إلى المشهد. خوفًا من فقدان مكانته في قلب آندي، يدبر وودي مكائد ضد باز. ولكن عندما تفرق الظروف باز ووودي عن صاحبهما، يتعلم الثنائي في النهاية وضع خلافاتهما جانبًا.",
     "poster": "https://image.tmdb.org/t/p/w500/hX5TEEzea1XX8t2V9VK5InW4M7x.jpg",
     "hdUrl": "https://streamtape.com/e/1ampg0yWKyT0KO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5684,6 +5848,7 @@ const globalMoviesData = [
 },
     {
     "title": "Avengers: Infinity War",
+    "year": "2018",
     "desc": "مع استمرار المنتقمون وحلفائهم في حماية العالم من التهديدات التي لا يمكن لأي بطل لوحده التعامل معها، ظهر خطر جديد من الظلال الكوني - ثانوس -  مستبد من العار المجحف، هدفه هو جمع كل حجارة اللانهاية الستة، التي تحمل قوة لا يمكن تصورها، واستخدامها لإلحاق إرادته الملتوية على كل الواقع. لقد قادت كل الأمور التي كافحها المنتقمون حتى هذه اللحظة  - لم يكن مصير الأرض ووجودها أكثر غموضاً من ذي قبل.",
     "poster": "https://image.tmdb.org/t/p/w500/oGnmYZ61rkudhF7nWirXxYOmdQW.jpg",
     "hdUrl": "https://streamtape.com/e/Z3DXL6JVgXtqb1A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5716,6 +5881,7 @@ const globalMoviesData = [
 },
     {
     "title": "Avengers: Age of Ultron",
+    "year": "2015",
     "desc": "عندما يحاول توني ستارك إعادة تشغيل برنامج لحفظ السلام كان متوقفًا، تسير الأمور بشكل كارثي، ويجد أقوى أبطال الأرض أنفسهم أمام أصعب اختبار في حياتهم، بينما يصبح مصير الكوكب بأكمله على المحك.  ومع ظهور الشرير ألترون، يصبح على 'المنتقمون' إيقافه قبل أن ينفذ خططه المروعة. وسرعان ما تؤدي التحالفات غير المستقرة والمواجهات غير المتوقعة إلى انطلاق مغامرة عالمية ملحمية وفريدة من نوعها.",
     "poster": "https://image.tmdb.org/t/p/w500/23hItmIT3tHckHl0GPpAblOJuPr.jpg",
     "hdUrl": "https://streamtape.com/e/xqK8WlYWB8HkgJQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5748,6 +5914,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Babysitter: Killer Queen",
+    "year": "2020",
     "desc": "بعد مرور عامين على الطائفة الدموية الشيطانية، يعيش كول حياة بائسة مليئة بالكوابيس في المدرسة الثانوية، وسرعان ما تزداد الأمور سوء حينما يعود قتلة الماضي لحياته من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/imy1OoT1xddt2kqw6hhc4v01e8i.jpg",
     "hdUrl": "https://streamtape.com/e/dLpg6k6XgAuk8XO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5780,6 +5947,7 @@ const globalMoviesData = [
 },
     {
     "title": "Avengers: Endgame",
+    "year": "2019",
     "desc": "بعد الأحداث المدمّرة لفيلم Avengers: Infinity War، أصبح الكون في حالة خراب بسبب أفعال الفضائي المجنون، ثانوس. وبمساعدة الحلفاء المتبقين، يجب على المنتقمين أن يجتمعوا مرة أخرى من أجل التراجع عن أفعال ثانوس وإعادة النظام إلى الكون مرة أخيرة، مهما كانت العواقب التي قد تنتظرهم.",
     "poster": "https://image.tmdb.org/t/p/w500/ieYywp9LuUI0Xxc5qkreP97cIQn.jpg",
     "hdUrl": "https://streamtape.com/e/G67lY1VpqLtoyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5812,6 +5980,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Avengers",
+    "year": "2012",
     "desc": "يجب على أقوى أبطال الأرض أن يتحدوا ويتعلموا القتال كفريق واحد إذا أرادوا إيقاف لوكي الشرير وجيشه الفضائي من استعباد البشرية.",
     "poster": "https://image.tmdb.org/t/p/w500/goQMyAlsmxBpPnMKIcm361Thju6.jpg",
     "hdUrl": "https://streamtape.com/e/Qe68aY8Dx2C0LAJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5844,6 +6013,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ready Player One",
+    "year": "2018",
     "desc": "في المستقبل القريب، يحاول الشاب المنبوذ (وايد) الهروب من رعبه اليومي عن طريق التحاقه بلعبة إلكترونية تُدعى (الواحة). وعندما يموت مؤسس اللعبة البليونير، تُعرَض ثروته على اللاعبين كجائزة لمن يصل إلى نقطة معينة باللعبة، يجد وايد نفسه مُحاصرًا بديون خصومه من الشركة؛ في الواقع وداخل اللعبة على حد سواء.",
     "poster": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
     "hdUrl": "https://streamtape.com/e/Ry1jd7YddgSdvYq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5876,6 +6046,7 @@ const globalMoviesData = [
 },
     {
     "title": "Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved",
+    "year": "2021",
     "desc": "ينقلب العيش الهادئ للآنسة كوباياشي والتنينات الساكنات معها، تورو وكانَّا وإلولو، عقب أن أتاهم ذات يوم كيمون كاموي، والد كانَّا. يتزعم كيمون كاموي فصيل الفوضى في العالم الذي جاءت منه التنانين، وما جلبه إلى عالم البشر إلَّا إرجاع كانَّا معه؛ إذ لديها شيء يريده يرجِّح كفة فصيل الفوضى على فصيل الانسجام المناوئ لهم، وقد نُفِيَت بسبب ما فعلته له إلى عالم البشر. يرى أبوها أن عودتها ومساعدتهم تصحيحٌ لذلك الخطأ الذي اقترفته في الماضي. يحتدم الصراع بين قوى الفوضى وقوى الانسجام، وتلوح في الأفق بوادر حربٍ كبرى قد تهدد استقرار كلا العالمين. تجد كانَّا نفسها حائرةً بين خيارين: بين أداء واجبها تجاه أبيها وفصيلها، وبين صون الأواصر التي بَنتْها مع أصدقائها البشر الذين أصبحوا بمنزلة عائلةٍ لها.",
     "poster": "https://image.tmdb.org/t/p/w500/udnoedTfNkI01LEZYmU50HJKy2R.jpg",
     "hdUrl": "https://streamtape.com/e/mPoDpABm3DsQ4D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5908,6 +6079,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Sheep Detectives",
+    "year": "2025",
     "desc": "عندما يُعثر على مربّيهم المحبوب ميتاً في ظروف غامضة، يستنتج قطيع من الأغنام أنه سيتعين عليهم حل جريمة القتل بأنفسهم، حتى لو كان ذلك يعني مغادرة مرعاهم لأول مرة ومواجهة حقيقة أن العالم البشري ليس بالبساطة التي يبدو عليها في الكتب.",
     "poster": "https://image.tmdb.org/t/p/w500/2hqxC1MvuQFAv8LdLppNuUHBz1i.jpg",
     "hdUrl": "https://streamtape.com/e/L34kGQ6YoRsR2gq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5940,6 +6112,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ready or Not: Here I Come",
+    "year": "2025",
     "desc": "بعد لحظات من نجاتها من هجومٍ شاملٍ شنّته عائلة لو دوماس، تكتشف غريس أنها وصلت إلى المرحلة التالية من هذه اللعبة الكابوسية، وهذه المرة برفقة أختها المنفصلة عنها، فيث. أمام غريس فرصة واحدة للنجاة، والحفاظ على حياة أختها، والوصول إلى أعلى منصب في المجلس الذي يُسيطر على العالم. أربع عائلات متنافسة تُطاردها للاستيلاء على العرش، والفائز هو من سيحكم العالم بأسره.",
     "poster": "https://image.tmdb.org/t/p/w500/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg",
     "hdUrl": "https://streamtape.com/e/p1jGL7QV8wirPoZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -5972,6 +6145,7 @@ const globalMoviesData = [
 },
     {
     "title": "F9",
+    "year": "2021",
     "desc": "بعد اﻷحداث التي جرت في الجزء السابق The Fate Of the Furious، تقرر سايفر تلقي المساعدة من جاكوب، شقيق دوم الأصغر من أجل تنفيذ خطة انتقام من دوم وفريقه .",
     "poster": "https://image.tmdb.org/t/p/w500/eBRVLUoOqM0qVOgKAwjlqeaQ3za.jpg",
     "hdUrl": "https://streamtape.com/e/3BxKQXV0KWtrqg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6004,6 +6178,7 @@ const globalMoviesData = [
 },
     {
     "title": "In the Grey",
+    "year": "2025",
     "desc": "يعيش فريق سري من النخبة في الخفاء. وعندما يسطو طاغية مستبد على ثروة بمليارات الدولارات، يتم إرسالهم لاستعادتها في عملية سرقة مستحيلة تتحول إلى لعبة مميتة من الاستراتيجية و الخداع والبقاء.",
     "poster": "https://image.tmdb.org/t/p/w500/owJLXVFzCGuLtwZ51WQPNE6ZMTK.jpg",
     "hdUrl": "https://streamtape.com/e/Mx9Vda7x2mImWRp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6036,6 +6211,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ready or Not",
+    "year": "2019",
     "desc": "في ليلة زفافها، تجد العروس الشابة نفسها في كابوس مرعب عندما يجبرها أهل زوجها الأثرياء على المشاركة في لعبة قاتلة من الغميضة، حيث يتحول الاحتفال إلى صراع مميت للبقاء على قيد الحياة.",
     "poster": "https://image.tmdb.org/t/p/w500/oJD9KQFoObZmxAS1je56SIFVNJt.jpg",
     "hdUrl": "https://streamtape.com/e/e2ArBAXYMysYWeJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6068,6 +6244,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mission: Impossible - Fallout",
+    "year": "2018",
     "desc": "عندما تنتهي مهمة صندوق النقد الدولي بشكل سيئ، يواجه العالم عواقب وخيمة. كما يأخذ إيثان هانت على عاتقه أن يفي بالتوجيهات الاصلية، تبدأ وكالة المخابرات المركزية بالتشكيك في ولائه ودوافعه. يجد فريق صندوق النقد الدولي نفسه في سباق مع الزمن، يلاحقون من قبل المرتزقه بينما يحاولون منع كارثة عالمية.",
     "poster": "https://image.tmdb.org/t/p/w500/lonGvu7rQ4D1WboRLsJ5Pzpy0dm.jpg",
     "hdUrl": "https://streamtape.com/e/p4WrdbYoxasr8yB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6100,6 +6277,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mission: Impossible - Rogue Nation",
+    "year": "2015",
     "desc": "بعد حل وحدة المهام المستحيلة (IMF) يجد العميل إيثان هانت (توم كروز) نفسه بمفرده، بينما يواجه فريقه شبكة خاصة من العملاء ذوي المهارات العالية تحمل اسم النقابة، حيث تضم أفرادًا على أعلى تدريب يسعون لتكوين نظام عالمي جديد أيًا كان الثمن، عبر سلسلة متصاعدة من الهجمات الإرهابية. يجمع إيثان فريقًا ويوحد قواه مع العميلة السابقة إلسا فاوست (ريبيكا فيرجسون) بعد أن تبرأت منها الاستخبارات البريطانية، رغم إنها قد تكون جزءًا من تلك المجموعة المارقة، ليواجه هذا الفريق أكثر مهمة مستحيلة له على الإطلاق.",
     "poster": "https://image.tmdb.org/t/p/w500/n1UCFfRqZlWo4UuAizVhAFEylGT.jpg",
     "hdUrl": "https://streamtape.com/e/3ppMprL03JIRp2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6132,6 +6310,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mission: Impossible - Ghost Protocol",
+    "year": "2011",
     "desc": "يتسابق إيثان هانت وفريقه مع الزمن لتعقب إرهابي خطير يدعى هندريكس ، الذي تمكن من الوصول إلى رموز الإطلاق النووية الروسية ويخطط لشن هجوم على الولايات المتحدة. وتنتهي محاولة منعه بانفجار تسبب في دمار شديد للكرملين وصندوق النقد الدولي لتورطهما في التفجير ، مما أجبر الرئيس على التنصل منهما. لم يعد إيثان وفريقه يتلقون المساعدة من الحكومة ، ويطاردون هندريكس في جميع أنحاء العالم ، على الرغم من أنهم ربما فات الأوان لوقف الكارثة.",
     "poster": "https://image.tmdb.org/t/p/w500/bi61KYRPq3uOjcicWBB1xIU9q0x.jpg",
     "hdUrl": "https://streamtape.com/e/ALw0J4pRjohXKLp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6164,6 +6343,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mission: Impossible - Dead Reckoning Part One",
+    "year": "2023",
     "desc": "يعود العميل إيثان هانت لاستخدام قدراته وخبرته لحل المزيد من الجرائم العالمية، حيث يسعى رفقة زملاؤه لتعقب سلاح مميت قبل أن يقع في الأيدي المظلمة.",
     "poster": "https://image.tmdb.org/t/p/w500/uRxZEctKI3w9quRXOSjFLl72ugV.jpg",
     "hdUrl": "https://streamtape.com/e/bgA2XQ3VpZFPXj9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6196,6 +6376,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mission: Impossible III",
+    "year": "2006",
     "desc": "يتقاعد العميل (إيثان هانت) من عمليات التدريب، لكن يُطلب منه العودة للعمل مرة أخرى لمواجهة تاجر سلاح ومعلومات دولية، يقوم (إيثان) بإعادة لم شمل فريقه بهدف تنفيذ مهمة جديدة، وتتعرض زوجته للخطر أثناء تنفيذ العملية، ويُضطر إيثان لتمديد وقت المهمة بهدف إنقاذ زوجته.",
     "poster": "https://image.tmdb.org/t/p/w500/iRpGoulWNMAWDUNtshUTetOTgtx.jpg",
     "hdUrl": "https://streamtape.com/e/L3yMJGX2VauRB3b/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6228,6 +6409,7 @@ const globalMoviesData = [
 },
     {
     "title": "Furious 7",
+    "year": "2015",
     "desc": "استكمالًا لأحداث الأجزاء السابقة، بعد مقتل (أوين شو) وفريقه أصبح بإستطاعة دومينيك (فان ديزيل) وبرايان (بول ووكر) وفريقهما العودة إلي الولايات المتحدة وعيش حياةٍ طبيعيةٍ مُجددًا، ولكن (إيان) الأخ الأكبر لـ(أوين) يسعي للإنتقام لمقتل أخيه من دومينيك، وبالتالي تصمم العصابة بأكملها علي الانتقام من الرجل الذي قام بقتل صديقهم.",
     "poster": "https://image.tmdb.org/t/p/w500/ktofZ9Htrjiy0P6LEowsDaxd3Ri.jpg",
     "hdUrl": "https://streamtape.com/e/dvvgOyVp1ahbxB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6260,6 +6442,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mission: Impossible II",
+    "year": "2000",
     "desc": "تدور أحداث القصة حول سرقة فيروس مميت يُدعى (كميرا) والمصل الخاص به، يتعين على العميل (إيثان هانت) منع انتشار الفيروس، والذي يؤدي للوفاة في حالة الإصابة به خلال ساعات معدودة، يكون على إيثان أن يسترجع مصل الفيروس من (شين آمبروز) الذي ينوي بيع المصل المضاد لمجموعة من الإرهابيين للحصول على الأموال الطائلة بعد نشر الفيروس في العالم كله، يستعين إيثان باللصة المحترفة (نياه) لمساعدته في استرجاع المصل والفيروس، إلا أنه سرعان ما يقع في حبها، يسعى إيثان لإنقاذ حبيبته من موت محتم بعد أن تصاب بالفيروس، في الوقت الذي يتوجب عليه إفشال مخطط نشر الفيروس.",
     "poster": "https://image.tmdb.org/t/p/w500/iPVZ3b4A4NlPZnFUF1e8nUFJSgW.jpg",
     "hdUrl": "https://streamtape.com/e/R4om6BpP08udGxR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6292,6 +6475,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Fast and the Furious",
+    "year": "2001",
     "desc": "دومينيك توريتو هو متسابق شوارع لوس أنجلوس يشتبه في أنه العقل المدبر لسلسلة من عمليات اختطاف منصات الحفر الكبيرة.  عندما يتسلل الشرطي السري Brian O'Conner إلى طاقم Toretto الأيقوني ، يقع في حب أخت Toretto ويجب عليه اختيار جانب: العصابة أو شرطة LAPD.",
     "poster": "https://image.tmdb.org/t/p/w500/gqY0ITBgT7A82poL9jv851qdnIb.jpg",
     "hdUrl": "https://streamtape.com/e/Qr1XdaVRv3FAG7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6324,6 +6508,7 @@ const globalMoviesData = [
 },
     {
     "title": "Mission: Impossible",
+    "year": "1996",
     "desc": "بعد التخطيط لتنفيذ إحدى المهام، يرسل (جيم فيليبس) مع زوجته (كلير) وشريكه (إيثان هانت) إلى مدينة (براغ)، وتفشل المهمة ولا ينجو سوى (إيثان هانت)، ويبدأ مدير الوكالة بالشك في (إيثان) بأنه السبب الرئيسي لفشل هذه المهمة، فيحاول إثبات براءته بمختلف الطرق والأساليب الممكنة واكتشاف المتورط الحقيقي.",
     "poster": "https://image.tmdb.org/t/p/w500/tVa2tSUvEM1THKwFjbVaVkBJErb.jpg",
     "hdUrl": "https://streamtape.com/e/j6egPbDeLeszl3a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6356,6 +6541,7 @@ const globalMoviesData = [
 },
     {
     "title": "2 Fast 2 Furious",
+    "year": "2003",
     "desc": "إنه تقاطع مزدوج كبير عندما يتعاون ضابط الشرطة السابق بريان أوكونر مع صديقه السابق رومان بيرس لنقل شحنة من الأموال 'القذرة' لتاجر الاستيراد والتصدير المشبوه في ميامي كارتر فيرون.  لكن الرجال يعملون بالفعل مع العميلة السرية مونيكا فوينتيس لإسقاط فيرون.",
     "poster": "https://image.tmdb.org/t/p/w500/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg",
     "hdUrl": "https://streamtape.com/e/ZroKglp096uMzM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6388,6 +6574,7 @@ const globalMoviesData = [
 },
     {
     "title": "Fast & Furious 6",
+    "year": "2013",
     "desc": "دعا هوبز دومينيك وبريان إلى إعادة تجميع طاقمهما لإنزال فريق من المرتزقة: يواجه دومينيك بشكل غير متوقع أيضًا صديقته المتوفاة المفترضة ، ليتي.",
     "poster": "https://image.tmdb.org/t/p/w500/thSmnRdrzPBBospIOJjLZBReqzo.jpg",
     "hdUrl": "https://streamtape.com/e/LdZoyyWM1rFRQk9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6420,6 +6607,7 @@ const globalMoviesData = [
 },
     {
     "title": "Fast & Furious",
+    "year": "2009",
     "desc": "عندما تعيدهم جريمة ما إلى لوس أنجلوس ، يشعل المحتال السابق الهارب دوم توريتو عداءه مع العميل بريان أوكونر.  لكن بما أنهم مجبرون على مواجهة عدو مشترك ، يجب على دوم وبريان الاستسلام لثقة جديدة غير مؤكدة إذا كانا يأملان في التغلب عليه.  وسيجد الرجلان أفضل طريقة للانتقام: دفع حدود ما هو ممكن خلف عجلة القيادة.",
     "poster": "https://image.tmdb.org/t/p/w500/lUtVoRukW7WNtUySwd8hWlByBds.jpg",
     "hdUrl": "https://streamtape.com/e/4GX414v4LGsK6jo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6452,6 +6640,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Amazing Spider-Man 2",
+    "year": "2014",
     "desc": "عندما تُحاصر شركة أوسكورب مدينة نيويورك، يقع على عاتق سبايدرمان إنقاذ المدينة التي أقسم على حمايتها، بالإضافة إلى إنقاذ أحبائه.",
     "poster": "https://image.tmdb.org/t/p/w500/hjsg70TQIreXTOpQYqgd78gMmit.jpg",
     "hdUrl": "https://streamtape.com/e/4GX414v4LGsK6jo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6484,6 +6673,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Fate of the Furious",
+    "year": "2017",
     "desc": "بعد قضاء (دوم) و(ليتي) فترة شهر العسل وتقاعد (برايان) و(ميا) من ألعابهما، تحاول سيدة غامضة أن تغري (دوم) لدخول عالم الجريمة، مما يعني خيانة أقرب أصدقائه إليه من فريقه، وهو ما يضع الفريق في اختبار عصيب عليهم غير كل ما شهدوه من قبل، وتأخذهم في رحلة من شواطيء كوبا وحتى شوارع نيويورك.",
     "poster": "https://image.tmdb.org/t/p/w500/dImWM7GJqryWJO9LHa3XQ8DD5NH.jpg",
     "hdUrl": "https://streamtape.com/e/wVlbVzW4raiJ0QB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6516,6 +6706,7 @@ const globalMoviesData = [
 },
     {
     "title": "Spider-Man: Across the Spider-Verse",
+    "year": "2023",
     "desc": "بعد مرور فترة طويلة، يتلقى مايلز موراليس زيارة جديدة من جوين ستيسي، ومعًا ينطلق الثنائي في مغامرة جديدة مليئة بالمخاطر والأعداء عبر عالم العنكبوت.",
     "poster": "https://image.tmdb.org/t/p/w500/xmZSu0hdbuwb4mJIrocpKfnVjbZ.jpg",
     "hdUrl": "https://streamtape.com/e/4wv0Ybp9kLUKmre/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6548,6 +6739,7 @@ const globalMoviesData = [
 },
     {
     "title": "Spider-Man 3",
+    "year": "2007",
     "desc": "كيانٌ أسود غريب من عالمٍ آخر يرتبط ببيتر باركر، مُسبباً له اضطراباً داخلياً بينما يُواجه أشراراً جدداً، وإغراءات، ورغبةً في الانتقام.",
     "poster": "https://image.tmdb.org/t/p/w500/6nlLQ5IzxsRgOJsdSfgfh9N6Ccl.jpg",
     "hdUrl": "https://streamtape.com/e/LvlP0yvB3rhRzaL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6580,6 +6772,7 @@ const globalMoviesData = [
 },
     {
     "title": "Spider-Man 2",
+    "year": "2004",
     "desc": "يُعاني بيتر باركر من مشاكل في حياته الشخصية المتداعية، بينما يُواجه عالماً لامعاً سابقاً يُدعى أوتو أوكتافيوس.",
     "poster": "https://image.tmdb.org/t/p/w500/oUolSpUruuojKcL5E6blI2TTf9b.jpg",
     "hdUrl": "https://streamtape.com/e/41p9xrqW1XuykW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6612,6 +6805,7 @@ const globalMoviesData = [
 },
     {
     "title": "Spider-Man",
+    "year": "2002",
     "desc": "يتعرض مراهق خجول للدغة عنكبوت معدل وراثيًا، فيستغل قدراته الجديدة الشبيهة بالعنكبوت لمحاربة الظلم كبطل خارق مقنع.",
     "poster": "https://image.tmdb.org/t/p/w500/hmOhNnyV0F1e3lhVO2jDS8tJfc6.jpg",
     "hdUrl": "https://streamtape.com/e/ga2Kw8Lay0iG9G/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6644,6 +6838,7 @@ const globalMoviesData = [
 },
     {
     "title": "Last Christmas",
+    "year": "2019",
     "desc": "كايت سيدة شابة، حياتها سلسلة متعاقبة لا تنتهي من القرارات السيئة، وتضطر ﻷن تقبل العمل جنية لبابا نويل من أجل موسم الكريسماس في أحد المحال، وإذا بها تقابل توم هناك، وتتخذ حياتها منحى جديد كلية.",
     "poster": "https://image.tmdb.org/t/p/w500/kDEjffiKgjuGo2DRzsqfjvW0CQh.jpg",
     "hdUrl": "https://streamtape.com/e/MaqBMJ2ebKiejK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6676,6 +6871,7 @@ const globalMoviesData = [
 },
     {
     "title": "مدبلجOnward",
+    "year": "2020",
     "desc": "يبدأ سعيهم.  في عالم خيالي في الضواحي ، يشرع شقيقان مراهقان من الأقزام في مهمة غير عادية لاكتشاف ما إذا كان لا يزال هناك القليل من السحر المتبقي هناك.",
     "poster": "https://image.tmdb.org/t/p/w500/6lEII9r4WX0Xy9Yq6ZnPPiEEFOi.jpg",
     "hdUrl": "https://streamtape.com/e/Zj26vJ6m3RSqW99/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6708,6 +6904,7 @@ const globalMoviesData = [
 },
     {
     "title": "مدبلجRaya and the Last Dragon",
+    "year": "2021",
     "desc": "السعي لإنقاذ عالمها.\r منذ فترة طويلة ، في عالم كوماندرا الخيالي ، عاش البشر والتنانين معا في وئام. ولكن عندما هددت قوة شريرة الأرض ، ضحت التنانين بنفسها لإنقاذ البشرية. الآن ، بعد 500 عام ، عاد هذا الشر نفسه والأمر متروك لمحارب وحيد ، رايا ، لتعقب التنين الأخير الأسطوري لاستعادة الأرض الممزقة وشعبها المنقسم.",
     "poster": "https://image.tmdb.org/t/p/w500/xXdFRWa9StuMy34hqf3E33cMMvx.jpg",
     "hdUrl": "https://streamtape.com/e/X17GWZrGrDcA9P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6740,6 +6937,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Fast and the Furious: Tokyo Drift",
+    "year": "2006",
     "desc": "من أجل تجنب عقوبة السجن ، يتوجه شون بوسويل إلى طوكيو للعيش مع والده العسكري.  في منطقة منخفضة الإيجار من المدينة ، تنشغل شون في عالم سباقات الانجراف تحت الأرض",
     "poster": "https://image.tmdb.org/t/p/w500/46xqGOwHbh2TH2avWSw3SMXph4E.jpg",
     "hdUrl": "https://streamtape.com/e/kbeRX8Qwr1cPwQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6772,6 +6970,7 @@ const globalMoviesData = [
 },
     {
     "title": "Fast & Furious Presents: Hobbs & Shaw",
+    "year": "2019",
     "desc": "منذ أن تواجه وكيل خدمة الأمن الدبلوماسي الأمريكي - هوبز- و المنبوذ - شاو - ، قاما فقط بتبادل الضربات والكلمات السيئة.",
     "poster": "https://image.tmdb.org/t/p/w500/2196YzqbaWDGaXyBjsC67ZFcZT0.jpg",
     "hdUrl": "https://streamtape.com/e/bpA31G2LKvFPkBx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6804,6 +7003,7 @@ const globalMoviesData = [
 },
     {
     "title": "Eternal Sunshine of the Spotless Mind",
+    "year": "2004",
     "desc": "جويل باريش ، حزين القلب لأن صديقته خضعت لإجراء لمحوه من ذاكرتها ، يقرر أن يفعل الشيء نفسه. ومع ذلك ، وبينما كان يشاهد ذكرياتها تتلاشى ، يدرك أنه لا يزال يحبها ، وربما يكون قد فات الأوان لتصحيح خطأه.",
     "poster": "https://image.tmdb.org/t/p/w500/oCLYCxt6zpK3WosAdZ4zBdw05cY.jpg",
     "hdUrl": "https://streamtape.com/e/QDymlDX1rOs03J3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6836,6 +7036,7 @@ const globalMoviesData = [
 },
     {
     "title": "Enola Holmes 3",
+    "year": "2025",
     "desc": "تتوجه المحققة 'إينولا هولمز' إلى 'مالطا' استعدادًا لبدء فصل جديد من حياتها، لكن اختفاء 'شيرلوك' يقلب خططها للزواج رأسًا على عقب ويجرّها إلى مغامرة غامضة محفوفة بالمخاطر.",
     "poster": "https://image.tmdb.org/t/p/w500/xUzszXAQOcFhVmVfR1GMqfJg2L4.jpg",
     "hdUrl": "https://streamtape.com/e/6Rdla10yzeC9mzj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6868,6 +7069,7 @@ const globalMoviesData = [
 },
     {
     "title": "Enola Holmes 2",
+    "year": "2022",
     "desc": "تتولّى 'إينولا' أوّل قضية رسمية لها كمحققة، ولكن لحلّ اللغز الكامن وراء اختفاء فتاة، ستحتاج إلى مساعدة من أصدقائها... ومن أخيها 'شيرلوك'، بالطبع.",
     "poster": "https://image.tmdb.org/t/p/w500/dYFIJSGCpZ88Ic7zC14txbQnGX0.jpg",
     "hdUrl": "https://streamtape.com/e/kkaZO1VMWpFOMye/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6900,6 +7102,7 @@ const globalMoviesData = [
 },
     {
     "title": "Enola Holmes",
+    "year": "2020",
     "desc": "أثناء بحثها عن والدتها المفقودة، تستغل المراهقة الجريئة 'إينولا هولمز' مهارتها في التحري للتفوق على أخيها الأكبر 'شيرلوك' ومساعدة لورد هارب.",
     "poster": "https://image.tmdb.org/t/p/w500/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
     "hdUrl": "https://streamtape.com/e/xZkpM7oXP9tkdl3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6932,6 +7135,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Super Mario Bros. Movie",
+    "year": "2023",
     "desc": "يسافر سباك يدعى ماريو عبر متاهة تحت الأرض مع شقيقه لويجي ، في محاولة لإنقاذ أميرة تم أسرها.",
     "poster": "https://image.tmdb.org/t/p/w500/hpYfdZfL5Ht34X7Mk93N9ME5xxo.jpg",
     "hdUrl": "https://streamtape.com/e/vPJd2axKqjF4g4K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6964,6 +7168,7 @@ const globalMoviesData = [
 },
     {
     "title": "Turning Red",
+    "year": "2022",
     "desc": "تعاني مي البالغة من العمر ثلاثة عشر عامًا من الإحراج لكونها مراهقة مع تطور - عندما تكون متحمسة للغاية ، تتحول إلى باندا حمراء عملاقة.",
     "poster": "https://image.tmdb.org/t/p/w500/6dYlPfAD8kjnSZtjaZiVTZebyeu.jpg",
     "hdUrl": "https://streamtape.com/e/1OoOqQOol8UypV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -6996,6 +7201,7 @@ const globalMoviesData = [
 },
     {
     "title": "Elemental",
+    "year": "2023",
     "desc": "الأضداد تتفاعل.  في مدينة يعيش فيها سكان النار والماء والأرض والهواء معا ، ستكتشف شابة نارية ورجل يسير مع التدفق شيئا أساسيا: مقدار القواسم المشتركة بينهما.",
     "poster": "https://image.tmdb.org/t/p/w500/nq8HN4VUNYMvOhsNC6rpBOBoj4D.jpg",
     "hdUrl": "https://streamtape.com/e/Kk27RlG0YOi0e6X/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7028,6 +7234,7 @@ const globalMoviesData = [
 },
     {
     "title": "Onward",
+    "year": "2020",
     "desc": "يبدأ سعيهم.  في عالم خيالي في الضواحي ، يشرع شقيقان مراهقان من الأقزام في مهمة غير عادية لاكتشاف ما إذا كان لا يزال هناك القليل من السحر المتبقي هناك.",
     "poster": "https://image.tmdb.org/t/p/w500/6lEII9r4WX0Xy9Yq6ZnPPiEEFOi.jpg",
     "hdUrl": "https://streamtape.com/e/d7Jrggg2jpCkdrd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7060,6 +7267,7 @@ const globalMoviesData = [
 },
     {
     "title": "Arco",
+    "year": "2025",
     "desc": "أركو فتى يبلغ من العمر عشر سنوات في عام ٢٩٣٢، في مستقبل مثالي حيث يعيش البشر في السحاب ويسافرون عبر الزمن باستخدام بدلات طيران بألوان قوس قزح أركو ، لصغر سنه وعدم قدرته على الطيران، يسرق عباءة أخته للسفر عبر الزمن وحجرها الكريم ليلاً، ويحاول السفر إلى الماضي البعيد لرؤية الديناصورات.",
     "poster": "https://image.tmdb.org/t/p/w500/rWvbMnqLTpyTHmNii4TrnmgzpcS.jpg",
     "hdUrl": "https://streamtape.com/e/qyYAKJw3BeuzB1m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7092,6 +7300,7 @@ const globalMoviesData = [
 },
     {
     "title": "Fast Five",
+    "year": "2011",
     "desc": "يخطط دومينيك توريتو وطاقمه من المتسابقين في الشوارع لسرقة هائلة لشراء حريتهم بينما هم في طليعة سيد مخدرات برازيلي قوي ووكيل اتحادي خطير.",
     "poster": "https://image.tmdb.org/t/p/w500/gEfQjjQwY7fh5bI4GlG0RrBu7Pz.jpg",
     "hdUrl": "https://streamtape.com/e/DkJ8d7DBY7SVBv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7124,6 +7333,7 @@ const globalMoviesData = [
 },
     {
     "title": "Spider-Man: Into the Spider-Verse",
+    "year": "2018",
     "desc": "مايلز موراليس يحاول موازنة حياته بين كونه طالب في المدرسة الثانوية وكونه سبايدرمان. ومع ذلك، فعندما يستخدم ويلسون فيسك مصادما مغناطيسيا ضخم، يأتي سبايدرمان من بُعد آخر، بيتر باركر، ويصطدم في بعد مايلز.",
     "poster": "https://image.tmdb.org/t/p/w500/lN14sq6Yd4nCcr4OliN7OX8QsiI.jpg",
     "hdUrl": "https://streamtape.com/e/YK3PJ9xAO9TOM0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7156,6 +7366,7 @@ const globalMoviesData = [
 },
     {
     "title": "Fast X",
+    "year": "2023",
     "desc": "تدور احداث الفيلم حيث ينطلق (دانتي) - ابن زعيم الجريمة (هيرنان رييس) - الذي قُتل قبل عشر سنوات للانتقام من البطل (دوم توريتو) وعائلته وشركائه بعد التسبب في مقتل والده وسرقة أمواله.",
     "poster": "https://image.tmdb.org/t/p/w500/mgBcSHJt8fcRfXn8LcWusrCt0Kw.jpg",
     "hdUrl": "https://streamtape.com/e/YK3PJ9xAO9TOM0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7188,6 +7399,7 @@ const globalMoviesData = [
 },
     {
     "title": "Ant-Man and the Wasp",
+    "year": "2018",
     "desc": "بينما يوازن سكوت لانغ بين كونه بطلاً خارقاً وأباً، تُقدّم هوب فان داين والدكتور هانك بيم مهمةً جديدةً عاجلةً يجد فيها الرجل النملة نفسه يقاتل جنباً إلى جنب مع الدبور لكشف أسرار من ماضيهما.",
     "poster": "https://image.tmdb.org/t/p/w500/yFcXy5i8tFU8kxia69WaLL93k0Z.jpg",
     "hdUrl": "https://streamtape.com/e/3rkkyBzmWaSdO38/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7220,6 +7432,7 @@ const globalMoviesData = [
 },
     {
     "title": "The Amazing Spider-Man",
+    "year": "2012",
     "desc": "يجد بيتر باركر دليلًا قد يساعده في فهم سبب اختفاء والديه عندما كان صغيرًا. ويأخذه طريقه إلى التصادم مع الدكتور كيرت كونرز، شريك والده السابق.",
     "poster": "https://image.tmdb.org/t/p/w500/as7Ls1ngpJDu3XB3X5vCkWH6iAn.jpg",
     "hdUrl": "https://streamtape.com/e/Lv96LbRXkXIR0XV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -7252,6 +7465,7 @@ const globalMoviesData = [
 },
     {
     "title": "Spider-Man: No Way Home",
+    "year": "2021",
     "desc": "بعد أن كُشِفَت هوية سبايدرمان، يطلب بيتر المساعدة من دكتور سترينج. وعندما تسوء الأمور بسبب تعويذة، يبدأ أعداء خطرون من عوالم أخرى بالظهور.",
     "poster": "https://image.tmdb.org/t/p/w500/2maUA8Y4kxJ9UtLHYDhf9FSTd7u.jpg",
     "hdUrl": "https://streamtape.com/e/wkYQogkZ8bfJz7B/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
