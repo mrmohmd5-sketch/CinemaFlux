@@ -1297,15 +1297,13 @@
         function createMovieCard(item) {
             const card = document.createElement('div');
             card.className = 'movie-card';
-            // إضافة السنة بجانب الاسم
-            const displayTitle = item.title + (item.year ? ' (' + item.year + ')' : '');
             card.innerHTML = `
                 <div class="poster-wrapper">
                     <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
                     <div class="poster-play-icon">▶</div>
                 </div>
                 <div class="movie-info">
-                    <p class="movie-name">${displayTitle}</p>
+                    <p class="movie-name">${item.title}</p>
                     <div class="movie-meta">
                         <span class="imdb-badge">${item.rating || 'N/A'}</span>
                         <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
@@ -1413,12 +1411,10 @@
             newestItems.forEach(item => {
                 const slide = document.createElement('div');
                 slide.className = 'slide-item';
-                // إضافة السنة بجانب الاسم في السلايدر
-                const displayTitle = item.title + (item.year ? ' (' + item.year + ')' : '');
                 slide.innerHTML = `
                     <img class="slide-img" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
                     <div class="slide-details">
-                        <div class="slide-title">${displayTitle}</div>
+                        <div class="slide-title">${item.title}</div>
                         <button class="slide-btn">▶ <span class="lbl-watch-now">${langPack[currentLang].watchNow}</span></button>
                     </div>
                 `;
@@ -1500,9 +1496,7 @@
                 document.getElementById('btnSD').classList.remove('active');
             }
 
-            // إضافة السنة بجانب العنوان في صفحة التفاصيل
-            const displayTitle = item.title + (item.year ? ' (' + item.year + ')' : '');
-            document.getElementById('currentTitle').innerText = displayTitle;
+            document.getElementById('currentTitle').innerText = item.title;
             document.getElementById('currentRating').innerText = item.rating || "0.0";
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
@@ -1712,11 +1706,10 @@
                 matches.forEach(item => {
                     const row = document.createElement('div');
                     row.className = 'search-item-row';
-                    const displayTitle = item.title + (item.year ? ' (' + item.year + ')' : '');
                     row.innerHTML = `
                         <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
                         <div class="search-item-details">
-                            <h4 class="search-item-title">${displayTitle}</h4>
+                            <h4 class="search-item-title">${item.title}</h4>
                             <div class="search-item-meta">${item.year || ''} • ★ ${item.rating || '0.0'}</div>
                         </div>
                     `;
@@ -1752,11 +1745,10 @@
                 row.className = 'search-item-row';
 
                 if (matchedItem) {
-                    const displayTitle = matchedItem.title + (matchedItem.year ? ' (' + matchedItem.year + ')' : '');
                     row.innerHTML = `
                         <img class="search-item-poster" src="${matchedItem.poster}" loading="lazy">
                         <div class="search-item-details">
-                            <h4 class="search-item-title">${displayTitle}</h4>
+                            <h4 class="search-item-title">${matchedItem.title}</h4>
                             <div class="search-item-meta">${matchedItem.year || ''} • ★ ${matchedItem.rating || '0.0'}</div>
                         </div>
                         <span class="remove-search-btn" onclick="event.stopPropagation(); removeSearchTerm(${index})">×</span>
@@ -1819,11 +1811,10 @@
             watchHistory.forEach((hist) => {
                 const row = document.createElement('div');
                 row.className = 'search-item-row';
-                const displayTitle = hist.title + (hist.year ? ' (' + hist.year + ')' : '');
                 row.innerHTML = `
                     <img class="search-item-poster" src="${hist.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy">
                     <div class="search-item-details">
-                        <h4 class="search-item-title">${displayTitle}</h4>
+                        <h4 class="search-item-title">${hist.title}</h4>
                         <div class="search-item-meta">${hist.year || ''} • ★ ${hist.rating || '0.0'}</div>
                     </div>
                 `;
