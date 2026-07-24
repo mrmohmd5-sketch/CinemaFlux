@@ -546,7 +546,7 @@
             const genresMap = {};
             allMoviesData.forEach(item => {
                 if (item.genre) {
-                    const genresList = item.genre.trim().split(/\s+/).map(g => g.trim());
+                    const genresList = item.genre.trim().split(/,|،/).map(g => g.trim()).filter(Boolean);
                     genresList.forEach(genre => {
                         if (!genresMap[genre]) genresMap[genre] = [];
                         genresMap[genre].push(item);
@@ -750,7 +750,7 @@
                 const targetMap = isSeries ? seriesGenresMap : moviesGenresMap;
 
                 if (item.genre) {
-                    const genresList = item.genre.trim().split(/\s+/).map(g => g.trim());
+                    const genresList = item.genre.trim().split(/,|،/).map(g => g.trim()).filter(Boolean);
                     genresList.forEach(genre => {
                         if (!targetMap[genre]) targetMap[genre] = [];
                         targetMap[genre].push(item);
