@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "year": "2007",
+    "desc": "بعد أن استُهزئ بتحذيرهما من عودة لورد فولدمورت، أصبح هاري ودامبلدور هدفًا لسلطات السحرة، بينما يستولي بيروقراطي متسلط تدريجيًا على السلطة في هوجورتس.",
+    "poster": "https://image.tmdb.org/t/p/w500/sKSS1sbCKPNqItHSY2RLz9orJ6x.jpg",
+    "hdUrl": "https://streamtape.com/e/eV0A3pDQM9IY3RQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eV0A3pDQM9IY3RQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Imelda Staunton",
+            "image": "https://image.tmdb.org/t/p/w185/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
+        },
+        {
+            "name": "Helena Bonham Carter",
+            "image": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter 20th Anniversary: Return to Hogwarts",
     "year": "2022",
     "desc": "عمل وثائقي، حيث يجتمع أعضاء فريق العمل من جميع أفلام (هاري بوتر) في عرض خاص بأثر رجعي للاحتفال بالذكرى السنوية للفيلم الأول ، بما في ذلك المقابلات والمحادثات.",
