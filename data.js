@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "year": "2004",
+    "desc": "يعود هاري بوتر ورون وهيرميون إلى مدرسة هوجورتس للسحر والشعوذة لبدء عامهم الدراسي الثالث، حيث يخوضون غمار لغز سجين هارب يُشكّل خطرًا جسيمًا على الساحر الشاب.",
+    "poster": "https://image.tmdb.org/t/p/w500/cjkm4EKCT3SF11wUnJ4dwPqcJfk.jpg",
+    "hdUrl": "https://streamtape.com/e/1BjZx0aGdlCemM1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1BjZx0aGdlCemM1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Robbie Coltrane",
+            "image": "https://image.tmdb.org/t/p/w185/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg"
+        },
+        {
+            "name": "Michael Gambon",
+            "image": "https://image.tmdb.org/t/p/w185/3jdWkDKf4IODbG4JKTeaC7AzxZH.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter and the Chamber of Secrets",
     "year": "2002",
     "desc": "يعيش هاري بوتر عامه الثاني في هوجورتس مع رون وهيرميون، حين تُعلن رسالة على الجدار عن فتح حجرة الأسرار الأسطورية. سرعان ما يُدرك الثلاثة أن إنقاذ المدرسة يتطلب شجاعةً كبيرة.",
