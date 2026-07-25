@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": "2001",
+    "desc": "يجب على الهوبيت الصغير فرودو باجينز ، بعد أن ورث خاتمًا غامضًا من عمه بيلبو ، مغادرة منزله لمنعه من الوقوع في أيدي خالقه الشرير. على طول الطريق ، يتم تشكيل زمالة لحماية حامل الحلقة والتأكد من وصول الحلقة إلى وجهتها النهائية: جبل. الموت المكان الوحيد الذي يمكن تدميره فيه.",
+    "poster": "https://image.tmdb.org/t/p/w500/syPhku8ijNFvxuMXPCztTsRVNzE.jpg",
+    "hdUrl": "https://streamtape.com/e/grr8J2VyB0hq2OO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/grr8J2VyB0hq2OO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.4",
+    "genre": "مغامرة فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Elijah Wood",
+            "image": "https://image.tmdb.org/t/p/w185/7UKRbJBNG7mxBl2QQc5XsAh6F8B.jpg"
+        },
+        {
+            "name": "Ian McKellen",
+            "image": "https://image.tmdb.org/t/p/w185/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg"
+        },
+        {
+            "name": "Viggo Mortensen",
+            "image": "https://image.tmdb.org/t/p/w185/vH5gVSpHAMhDaFWfh0Q7BG61O1y.jpg"
+        },
+        {
+            "name": "Sean Astin",
+            "image": "https://image.tmdb.org/t/p/w185/As3ctGUtBYmG4zj4Ifyrcqd71HP.jpg"
+        },
+        {
+            "name": "Ian Holm",
+            "image": "https://image.tmdb.org/t/p/w185/cOJDgvgj4nMec6Inzj1H5nugTO5.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter and the Order of the Phoenix",
     "year": "2007",
     "desc": "بعد أن استُهزئ بتحذيرهما من عودة لورد فولدمورت، أصبح هاري ودامبلدور هدفًا لسلطات السحرة، بينما يستولي بيروقراطي متسلط تدريجيًا على السلطة في هوجورتس.",
