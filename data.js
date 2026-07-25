@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Godfather",
+    "year": "1972",
+    "desc": "يمتد من عام 1945 إلى عام 1955 ، وهو سرد تاريخي لعائلة جريمة كورليوني الإيطالية الأمريكية الخيالية. عندما ينجو مؤسس عائلة الجريمة المنظمة ، فيتو كورليوني ، بالكاد من محاولة اغتيال ، يتدخل ابنه الأصغر مايكل لرعاية القتلة المحتملين ، ويطلق حملة انتقامية دموية",
+    "poster": "https://image.tmdb.org/t/p/w500/9764PSirXx3CWbm2RETYUBuxZZ0.jpg",
+    "hdUrl": "https://streamtape.com/e/Q0KzGajKeYf0oRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Q0KzGajKeYf0oRy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.7",
+    "genre": "دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Marlon Brando",
+            "image": "https://image.tmdb.org/t/p/w185/fuTEPMsBtV1zE98ujPONbKiYDc2.jpg"
+        },
+        {
+            "name": "Al Pacino",
+            "image": "https://image.tmdb.org/t/p/w185/m8HAAjq1T75JypKk0v1FFQn4ysZ.jpg"
+        },
+        {
+            "name": "James Caan",
+            "image": "https://image.tmdb.org/t/p/w185/z2Lz3rtxZ7aJjzBUkCnExvo8stn.jpg"
+        },
+        {
+            "name": "Robert Duvall",
+            "image": "https://image.tmdb.org/t/p/w185/3tcKxC5Sc3DJ6XPDKKC2EAomEWn.jpg"
+        },
+        {
+            "name": "Richard S. Castellano",
+            "image": "https://image.tmdb.org/t/p/w185/1vr75BdHWret81vuSJ3ugiCBkxw.jpg"
+        }
+    ]
+},
+    {
     "title": "The Shawshank Redemption",
     "year": "1994",
     "desc": "في أربعينيات القرن الماضي، يُدان المصرفي آندي دوفرين بجريمة قتل زوجته وعشيقها ويُزجّ به في سجن شاوشانك. داخل هذا العالم القاسي، يجد نفسه يعمل لصالح مدير فاسد مستغلًا مهاراته في المحاسبة. ومع مرور السنوات، يفرض آندي حضوره بين السجناء، ويكسب احترامهم — خصوصًا السجين رِد — بفضل ثباته ونزاهته وإصراره على التمسك بالأمل مهما اشتدت الظروف.",
