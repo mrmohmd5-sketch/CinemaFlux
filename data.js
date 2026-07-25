@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter and the Deathly Hallows: Part 2",
+    "year": "2011",
+    "desc": "ينطلق هاري ورون وهيرميون في رحلة للقضاء على الهوركروكسات المتبقية. في المقابل، يجب على الطلاب والمعلمين التكاتف للدفاع عن هوجورتس ضد اللورد فولدمورت وجيشه.",
+    "poster": "https://image.tmdb.org/t/p/w500/rOR7C5KhvwzR1r6ZGvMe3TKB5RK.jpg",
+    "hdUrl": "https://streamtape.com/e/b2R18WeKoxTPra7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/b2R18WeKoxTPra7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.1",
+    "genre": "مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Ralph Fiennes",
+            "image": "https://image.tmdb.org/t/p/w185/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
+        },
+        {
+            "name": "Alan Rickman",
+            "image": "https://image.tmdb.org/t/p/w185/7tADZs4ILE93oJ5pAh6mKQFEq2m.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter and the Goblet of Fire",
     "year": "2005",
     "desc": "يجد هاري بوتر نفسه منخرطًا في بطولة خطيرة بين مدارس السحر المتنافسة، لكن الكوابيس المتكررة تشتت انتباهه.",
