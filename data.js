@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "year": "2009",
+    "desc": "مع بداية عامه السادس في هوجورتس، يكتشف هاري بوتر كتابًا قديمًا يحمل علامة 'ملكية الأمير الهجين'، ويبدأ في التعرف أكثر على ماضي اللورد فولدمورت المظلم.",
+    "poster": "https://image.tmdb.org/t/p/w500/2pCog7BAV7omYwmmYOSuFZzDbM1.jpg",
+    "hdUrl": "https://streamtape.com/e/JvZkkov01Kijzyg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/JvZkkov01Kijzyg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Jim Broadbent",
+            "image": "https://image.tmdb.org/t/p/w185/s7lXYfrsJoGA4vKmyv61SPgABmR.jpg"
+        },
+        {
+            "name": "Michael Gambon",
+            "image": "https://image.tmdb.org/t/p/w185/3jdWkDKf4IODbG4JKTeaC7AzxZH.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter and the Deathly Hallows: Part 2",
     "year": "2011",
     "desc": "ينطلق هاري ورون وهيرميون في رحلة للقضاء على الهوركروكسات المتبقية. في المقابل، يجب على الطلاب والمعلمين التكاتف للدفاع عن هوجورتس ضد اللورد فولدمورت وجيشه.",
