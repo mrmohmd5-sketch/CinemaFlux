@@ -4009,7 +4009,7 @@ const globalMoviesData = [
                 },
                 {
                     "episode_number": 2,
-                    "url": "https://streamtape.com/e/Aq7dbRyQkwfXk2L/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    "url": "https://streamtape.com/e/zwdVqORjKRuY0OO/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>"
                 },
                 {
                     "episode_number": 3,
