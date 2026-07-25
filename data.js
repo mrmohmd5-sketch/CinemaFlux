@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "El Camino: A Breaking Bad Movie",
+    "year": "2019",
+    "desc": "تدور الأحداث حول الهارب 'جيسي بينكمن' وهو يحاول تجاوز ماضيه...",
+    "poster": "https://image.tmdb.org/t/p/w500/65hvEkM2ro1nKlN3dQ7p4Kw9KaI.jpg",
+    "hdUrl": "https://streamtape.com/e/2bOK7PDya4hZv8G/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/2bOK7PDya4hZv8G/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "جريمة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Aaron Paul",
+            "image": "https://image.tmdb.org/t/p/w185/8Ac9uuoYwZoYVAIJfRLzzLsGGJn.jpg"
+        },
+        {
+            "name": "Jesse Plemons",
+            "image": "https://image.tmdb.org/t/p/w185/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+        },
+        {
+            "name": "Charles Baker",
+            "image": "https://image.tmdb.org/t/p/w185/l2plWtvYRcLX4CXf8azXIyANq.jpg"
+        },
+        {
+            "name": "Matt Jones",
+            "image": "https://image.tmdb.org/t/p/w185/x13vFDaJHY1CxNvSPWujYe12bMc.jpg"
+        },
+        {
+            "name": "Scott MacArthur",
+            "image": "https://image.tmdb.org/t/p/w185/rGTPhDMQYR7mmtcOwPMK7R4SDgV.jpg"
+        }
+    ]
+},
+    {
     "title": "The Godfather Part II",
     "year": "1974",
     "desc": "في الجزء الثاني من ملحمة عائلة كورليوني الإجرامية، نتابع قصة فيتو كورليوني في شبابه، حيث نشأ في صقلية ثم انتقل إلى نيويورك خلال العقد الثاني من القرن العشرين.  وفي خمسينيات القرن الماضي، يسعى مايكل كورليوني إلى توسيع نفوذ وأعمال العائلة لتشمل لاس فيغاس وهوليوود وكوبا.",
