@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Godfather Part II",
+    "year": "1974",
+    "desc": "في الجزء الثاني من ملحمة عائلة كورليوني الإجرامية، نتابع قصة فيتو كورليوني في شبابه، حيث نشأ في صقلية ثم انتقل إلى نيويورك خلال العقد الثاني من القرن العشرين.  وفي خمسينيات القرن الماضي، يسعى مايكل كورليوني إلى توسيع نفوذ وأعمال العائلة لتشمل لاس فيغاس وهوليوود وكوبا.",
+    "poster": "https://image.tmdb.org/t/p/w500/lLAMPTG6H4tXOA8Eb59zUnfGQi5.jpg",
+    "hdUrl": "https://streamtape.com/e/zXopZDxk8jtYMqk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zXopZDxk8jtYMqk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.6",
+    "genre": "دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Al Pacino",
+            "image": "https://image.tmdb.org/t/p/w185/m8HAAjq1T75JypKk0v1FFQn4ysZ.jpg"
+        },
+        {
+            "name": "Robert Duvall",
+            "image": "https://image.tmdb.org/t/p/w185/3tcKxC5Sc3DJ6XPDKKC2EAomEWn.jpg"
+        },
+        {
+            "name": "Diane Keaton",
+            "image": "https://image.tmdb.org/t/p/w185/A8B3BsFgbmw2WEmJuQX38qeU9eR.jpg"
+        },
+        {
+            "name": "Robert De Niro",
+            "image": "https://image.tmdb.org/t/p/w185/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg"
+        },
+        {
+            "name": "John Cazale",
+            "image": "https://image.tmdb.org/t/p/w185/7uKBc2BVbLlAiHuSdfioe1OUnCX.jpg"
+        }
+    ]
+},
+    {
     "title": "The Godfather",
     "year": "1972",
     "desc": "يمتد من عام 1945 إلى عام 1955 ، وهو سرد تاريخي لعائلة جريمة كورليوني الإيطالية الأمريكية الخيالية. عندما ينجو مؤسس عائلة الجريمة المنظمة ، فيتو كورليوني ، بالكاد من محاولة اغتيال ، يتدخل ابنه الأصغر مايكل لرعاية القتلة المحتملين ، ويطلق حملة انتقامية دموية",
