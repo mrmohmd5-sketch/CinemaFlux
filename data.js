@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "year": "2002",
+    "desc": "يعيش هاري بوتر عامه الثاني في هوجورتس مع رون وهيرميون، حين تُعلن رسالة على الجدار عن فتح حجرة الأسرار الأسطورية. سرعان ما يُدرك الثلاثة أن إنقاذ المدرسة يتطلب شجاعةً كبيرة.",
+    "poster": "https://image.tmdb.org/t/p/w500/dVtYvgvHrA1E8TWyxtOBx4i6tMm.jpg",
+    "hdUrl": "https://streamtape.com/e/DQxGDvLJV1ukekY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DQxGDvLJV1ukekY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Kenneth Branagh",
+            "image": "https://image.tmdb.org/t/p/w185/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
+        },
+        {
+            "name": "Toby Jones",
+            "image": "https://image.tmdb.org/t/p/w185/y6kLmjLgZ1sceaE4Zi1fwF0YsvZ.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter and the Philosopher's Stone",
     "year": "2001",
     "desc": "يلتحق صبي يتيم بمدرسة للسحر، حيث يكتشف حقيقة نفسه وعائلته والشر الرهيب الذي يطارد عالم السحر.",
