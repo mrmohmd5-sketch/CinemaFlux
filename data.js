@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter and the Deathly Hallows: Part 1",
+    "year": "2010",
+    "desc": "يُكلَّف هاري بوتر بمهمة خطيرة تبدو مستحيلة، ألا وهي تحديد مكان الهوركروكسات المتبقية لفولدمورت وتدميرها. يجب على هاري الاعتماد على رون وهيرميون أكثر من أي وقت مضى، لكن قوى الظلام تُهدد بتفريقهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/jswRLBRYSEP1B8EgCLEy5OkyxE3.jpg",
+    "hdUrl": "https://streamtape.com/e/GG96BegPwRi1Kzq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GG96BegPwRi1Kzq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Toby Jones",
+            "image": "https://image.tmdb.org/t/p/w185/y6kLmjLgZ1sceaE4Zi1fwF0YsvZ.jpg"
+        },
+        {
+            "name": "Helena Bonham Carter",
+            "image": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter and the Half-Blood Prince",
     "year": "2009",
     "desc": "مع بداية عامه السادس في هوجورتس، يكتشف هاري بوتر كتابًا قديمًا يحمل علامة 'ملكية الأمير الهجين'، ويبدأ في التعرف أكثر على ماضي اللورد فولدمورت المظلم.",
