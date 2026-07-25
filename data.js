@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Harry Potter 20th Anniversary: Return to Hogwarts",
+    "year": "2022",
+    "desc": "عمل وثائقي، حيث يجتمع أعضاء فريق العمل من جميع أفلام (هاري بوتر) في عرض خاص بأثر رجعي للاحتفال بالذكرى السنوية للفيلم الأول ، بما في ذلك المقابلات والمحادثات.",
+    "poster": "https://image.tmdb.org/t/p/w500/jntLBq0MLR3hrwKaTQswxACRPMs.jpg",
+    "hdUrl": "https://streamtape.com/e/aPva3Q0zm2fxVLV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/aPva3Q0zm2fxVLV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "وثائقي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Radcliffe",
+            "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+            "name": "Rupert Grint",
+            "image": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Bonnie Wright",
+            "image": "https://image.tmdb.org/t/p/w185/1O3bVJp2geFCqlDkOCJuTeSuqx.jpg"
+        },
+        {
+            "name": "Matthew Lewis",
+            "image": "https://image.tmdb.org/t/p/w185/aPQCLK2gxWOallsFoEwjb1p9lWE.jpg"
+        }
+    ]
+},
+    {
     "title": "Harry Potter and the Deathly Hallows: Part 1",
     "year": "2010",
     "desc": "يُكلَّف هاري بوتر بمهمة خطيرة تبدو مستحيلة، ألا وهي تحديد مكان الهوركروكسات المتبقية لفولدمورت وتدميرها. يجب على هاري الاعتماد على رون وهيرميون أكثر من أي وقت مضى، لكن قوى الظلام تُهدد بتفريقهما.",
