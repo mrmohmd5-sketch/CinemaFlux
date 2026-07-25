@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "desc": "في أربعينيات القرن الماضي، يُدان المصرفي آندي دوفرين بجريمة قتل زوجته وعشيقها ويُزجّ به في سجن شاوشانك. داخل هذا العالم القاسي، يجد نفسه يعمل لصالح مدير فاسد مستغلًا مهاراته في المحاسبة. ومع مرور السنوات، يفرض آندي حضوره بين السجناء، ويكسب احترامهم — خصوصًا السجين رِد — بفضل ثباته ونزاهته وإصراره على التمسك بالأمل مهما اشتدت الظروف.",
+    "poster": "https://image.tmdb.org/t/p/w500/KBUq6m4mWjNymPgNiflyKogSWS.jpg",
+    "hdUrl": "https://streamtape.com/e/bqYbm7OyydfPamY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bqYbm7OyydfPamY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.7",
+    "genre": "دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tim Robbins",
+            "image": "https://image.tmdb.org/t/p/w185/3FfJMIVwXgsIXbAT8ECBSZJAncR.jpg"
+        },
+        {
+            "name": "Morgan Freeman",
+            "image": "https://image.tmdb.org/t/p/w185/905k0RFzH0Kd6gx8oSxRdnr6FL.jpg"
+        },
+        {
+            "name": "Bob Gunton",
+            "image": "https://image.tmdb.org/t/p/w185/ulbVvuBToBN3aCGcV028hwO0MOP.jpg"
+        },
+        {
+            "name": "William Sadler",
+            "image": "https://image.tmdb.org/t/p/w185/rWeb2kjYCA7V9MC9kRwRpm57YoY.jpg"
+        },
+        {
+            "name": "Clancy Brown",
+            "image": "https://image.tmdb.org/t/p/w185/1JeBRNG7VS7r64V9lOvej9bZXW5.jpg"
+        }
+    ]
+},
+    {
     "title": "The Lord of the Rings: The Fellowship of the Ring",
     "year": "2001",
     "desc": "يجب على الهوبيت الصغير فرودو باجينز ، بعد أن ورث خاتمًا غامضًا من عمه بيلبو ، مغادرة منزله لمنعه من الوقوع في أيدي خالقه الشرير. على طول الطريق ، يتم تشكيل زمالة لحماية حامل الحلقة والتأكد من وصول الحلقة إلى وجهتها النهائية: جبل. الموت المكان الوحيد الذي يمكن تدميره فيه.",
