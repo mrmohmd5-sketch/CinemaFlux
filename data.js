@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Love in Slow Motion",
+    "title": "أحبك من زمان",
     "year": "2026",
     "desc": "تدور الأحداث حول 'هيا' التي تكتشف حقيقة مشاعرها تجاه صديقها المقرب 'جواد' بعد إعلان خطوبته، لتبدأ رحلة من التساؤلات حول الحدود الفاصلة بين الصداقة والحب.",
     "poster": "https://image.tmdb.org/t/p/w500/cj3uvHPlfEmdy8veYczXs7ibHah.jpg",
