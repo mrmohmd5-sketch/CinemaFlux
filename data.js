@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Justice League",
+    "year": "2017",
+    "desc": "يبدأ (بروس واين) في استعادة ثقته بالإنسانية، ويعزم على تجميع فريق العدالة للدفاع عن الأرض، ويطلب من حليفته الجديدة (الأميرة ديانا) مساعدته في مواجهة أكبر عدو على الإطلاق، وتجنيد فريق العدالة للوقوف ضد هذا التهديد، ويهب (باتمان)، (المرأة العجيبة)، (أكوامان)، (سايبورج)، (الفلاش) لإنقاذ كوكب الأرض.",
+    "poster": "https://image.tmdb.org/t/p/w500/l3basv0R1idHdo7Nk343jFZEHsY.jpg",
+    "hdUrl": "https://streamtape.com/e/YDXYBQAKPPuebM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YDXYBQAKPPuebM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.1",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Affleck",
+            "image": "https://image.tmdb.org/t/p/w185/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg"
+        },
+        {
+            "name": "Henry Cavill",
+            "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+        },
+        {
+            "name": "Amy Adams",
+            "image": "https://image.tmdb.org/t/p/w185/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+        },
+        {
+            "name": "Gal Gadot",
+            "image": "https://image.tmdb.org/t/p/w185/qCJB1ACi5VjtY4ypXuv3hjAvbSu.jpg"
+        },
+        {
+            "name": "Ezra Miller",
+            "image": "https://image.tmdb.org/t/p/w185/6wmTpbYpmhthaxzM5ss3377F9IV.jpg"
+        }
+    ]
+},
+    {
     "title": "Atomic Blonde",
     "year": "2017",
     "desc": "تم إرسال عميل سري من طراز MI6 إلى برلين خلال الحرب الباردة للتحقيق في مقتل عميل زميل واستعادة قائمة مفقودة من العملاء المزدوجين.",
