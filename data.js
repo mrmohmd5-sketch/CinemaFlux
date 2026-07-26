@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Love in Slow Motion",
+    "year": "2026",
+    "desc": "تدور الأحداث حول 'هيا' التي تكتشف حقيقة مشاعرها تجاه صديقها المقرب 'جواد' بعد إعلان خطوبته، لتبدأ رحلة من التساؤلات حول الحدود الفاصلة بين الصداقة والحب.",
+    "poster": "https://image.tmdb.org/t/p/w500/cj3uvHPlfEmdy8veYczXs7ibHah.jpg",
+    "hdUrl": "https://streamtape.com/e/3kBj0jZK8vId7ea/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3kBj0jZK8vId7ea/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "4.4",
+    "genre": "رومنسية كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nour Al-Ghandour",
+            "image": "https://image.tmdb.org/t/p/w185/fM3zwd5GOQzSW2n5EYx026jGW7U.jpg"
+        },
+        {
+            "name": "Ali Kakule",
+            "image": "https://image.tmdb.org/t/p/w185/265QihorXYicVuPdgd2TlGjt9UF.jpg"
+        },
+        {
+            "name": "Fatma Al Sherif",
+            "image": "https://image.tmdb.org/t/p/w185/2rei2lWaoUxdxsHlyi0FoDRb9zl.jpg"
+        },
+        {
+            "name": "Shoug Al-Hadi",
+            "image": "https://image.tmdb.org/t/p/w185/8UGdH16YEjhaFnmXAgbPgUS6PiU.jpg"
+        },
+        {
+            "name": "Noha Nabil",
+            "image": "https://image.tmdb.org/t/p/w185/kn50Bci8F5XThGLIEsckussOpBe.jpg"
+        }
+    ]
+},
+    {
     "title": "Companion",
     "year": "2025",
     "desc": "يدور العمل حول رجل جذاب ومضطرب نفسيًا يتقابل مع امرأة تمر بالعديد من المتاعب والألاعيب، فتحمل لهما الأحداث الكثير من الأمور المشوقة.",
