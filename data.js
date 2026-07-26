@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Atomic Blonde",
+    "year": "2017",
+    "desc": "تم إرسال عميل سري من طراز MI6 إلى برلين خلال الحرب الباردة للتحقيق في مقتل عميل زميل واستعادة قائمة مفقودة من العملاء المزدوجين.",
+    "poster": "https://image.tmdb.org/t/p/w500/kV9R5h0Yct1kR8Hf8sJ1nX0Vz4x.jpg",
+    "hdUrl": "https://streamtape.com/e/YwbBWzWpmPfvJOY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YwbBWzWpmPfvJOY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Charlize Theron",
+            "image": "https://image.tmdb.org/t/p/w185/gd7ShD0yt4bsR2STeQ19KQ6hvXL.jpg"
+        },
+        {
+            "name": "James McAvoy",
+            "image": "https://image.tmdb.org/t/p/w185/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg"
+        },
+        {
+            "name": "Eddie Marsan",
+            "image": "https://image.tmdb.org/t/p/w185/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
+        },
+        {
+            "name": "John Goodman",
+            "image": "https://image.tmdb.org/t/p/w185/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
+        },
+        {
+            "name": "Toby Jones",
+            "image": "https://image.tmdb.org/t/p/w185/y6kLmjLgZ1sceaE4Zi1fwF0YsvZ.jpg"
+        }
+    ]
+},
+    {
     "title": "Black Panther: Wakanda Forever",
     "year": "2022",
     "desc": "يُقاتل شعب واكاندا لحماية وطنهم من تدخل القوى العالمية، وهم يُعانون من حزنٍ عميق على وفاة الملك تشالا.",
