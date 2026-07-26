@@ -31,9 +31,10 @@
             --gold: #D4A017;
         }
 
+        /* ===== إصلاح التمرير: منع تمرير الصفحة الرئيسية وجعل كل صفحة مستقلة ===== */
         html, body {
-            max-width: 100%;
-            overflow-x: hidden;
+            height: 100%;
+            overflow: hidden;
             margin: 0;
             padding: 0;
             background-color: var(--bg-main);
@@ -41,7 +42,38 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             transition: background-color 0.3s, color 0.3s;
         }
-        body { padding-bottom: calc(75px + var(--safe-bottom)); box-sizing: border-box; }
+
+        #mainContainer {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .app-view {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-bottom: calc(75px + var(--safe-bottom));
+            box-sizing: border-box;
+            display: none;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.28s ease, transform 0.28s ease;
+            pointer-events: none;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+        }
+        .app-view.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
 
         /* ===== الهيدر واللوجو الاحترافي ===== */
         header {
@@ -52,6 +84,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            z-index: 10;
         }
 
         .logo-container {
@@ -184,19 +218,7 @@
         .nav-icon { font-size: 20px; }
 
         /* ===== واجهات التطبيق ===== */
-        .app-view {
-            display: none;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.28s ease, transform 0.28s ease;
-            pointer-events: none;
-        }
-        .app-view.active {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
+        /* تم نقلها إلى الأعلى ضمن .app-view */
 
         /* ===== السلايدر العلوي ===== */
         .slider-container { margin: 15px 0; position: relative; width: 100%; }
@@ -1468,32 +1490,44 @@
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
 
+            let viewId;
             if (target === 'home') {
                 document.getElementById('navHome').classList.add('active');
-                document.getElementById('viewHome').classList.add('active');
+                viewId = 'viewHome';
                 if (!homeInitialized) renderHomeDOM();
                 scheduleProgressiveCategoryRendering();
             } else if (target === 'allMovies') {
                 document.getElementById('navAllMovies').classList.add('active');
-                document.getElementById('viewAllMovies').classList.add('active');
+                viewId = 'viewAllMovies';
                 renderAllMoviesView();
             } else if (target === 'allSeries') {
                 document.getElementById('navAllSeries').classList.add('active');
-                document.getElementById('viewAllSeries').classList.add('active');
+                viewId = 'viewAllSeries';
                 renderAllSeriesView();
             } else if (target === 'search') {
                 document.getElementById('navSearch').classList.add('active');
-                document.getElementById('viewSearch').classList.add('active');
+                viewId = 'viewSearch';
                 renderSearchHistoryUI();
             } else if (target === 'profile') {
                 document.getElementById('navProfile').classList.add('active');
-                document.getElementById('viewProfile').classList.add('active');
+                viewId = 'viewProfile';
+            }
+
+            const viewEl = document.getElementById(viewId);
+            if (viewEl) {
+                viewEl.classList.add('active');
+                // إعادة تعيين موضع التمرير إلى الأعلى عند التبديل
+                viewEl.scrollTop = 0;
             }
         }
 
         function switchView(viewId) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
-            document.getElementById(viewId).classList.add('active');
+            const viewEl = document.getElementById(viewId);
+            if (viewEl) {
+                viewEl.classList.add('active');
+                viewEl.scrollTop = 0;
+            }
             if(viewId === 'viewHistory') {
                 renderWatchHistoryUI();
             }
@@ -1532,7 +1566,6 @@
         // ===== فتح وإغلاق صفحة التصنيف الكامل =====
         function openCategoryPage(genreName, items) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
-            document.getElementById('viewCategoryDetail')?.classList.add('active');
             let catView = document.getElementById('viewCategoryDetail');
             if (!catView) {
                 const container = document.getElementById('mainContainer');
@@ -1550,6 +1583,7 @@
                 catView = newView;
             }
             catView.classList.add('active');
+            catView.scrollTop = 0;
 
             document.getElementById('currentCategoryTitle').innerText = genreName;
             const gridContainer = document.getElementById('categoryGridItems');
@@ -1564,7 +1598,10 @@
 
         function closeCategoryPage() {
             const catView = document.getElementById('viewCategoryDetail');
-            if (catView) catView.classList.remove('active');
+            if (catView) {
+                catView.classList.remove('active');
+                catView.scrollTop = 0;
+            }
             switchNav('home');
         }
 
@@ -1574,7 +1611,9 @@
             localStorage.setItem('cf_active_movie', JSON.stringify(item));
 
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
-            document.getElementById('viewMovieDetail').classList.add('active');
+            const movieView = document.getElementById('viewMovieDetail');
+            movieView.classList.add('active');
+            movieView.scrollTop = 0;
 
             const iframe = document.getElementById('mainIframe');
             const seriesContainer = document.getElementById('seriesStructureContainer');
