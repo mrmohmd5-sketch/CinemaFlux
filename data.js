@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Chappie",
+    "year": "2015",
+    "desc": "في مجتمع مستقبلي حيث تُسيطر قوّة لا تُقهر من الشرطة الآليّة على الجريمة بقبضة من حديد، يتطوّر آليّ منعزل إلى مستوى أعلى من الذكاء الاصطناعي.",
+    "poster": "https://image.tmdb.org/t/p/w500/uuDUpzlMFomdSfNWlpEPS9nVZWV.jpg",
+    "hdUrl": "https://streamtape.com/e/xlbMk4gP7aCkJkA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/xlbMk4gP7aCkJkA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "جريمة حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sharlto Copley",
+            "image": "https://image.tmdb.org/t/p/w185/em89OJJvBRX7kNJJPASmNKQujsC.jpg"
+        },
+        {
+            "name": "Dev Patel",
+            "image": "https://image.tmdb.org/t/p/w185/byAo6xoleVSG5O9YpGrQ5YuCRX7.jpg"
+        },
+        {
+            "name": "Hugh Jackman",
+            "image": "https://image.tmdb.org/t/p/w185/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+        },
+        {
+            "name": "Ninja",
+            "image": "https://image.tmdb.org/t/p/w185/qDd7x2sRQq32DV8wBuPsVq2DTGZ.jpg"
+        },
+        {
+            "name": "Yo-Landi Visser",
+            "image": "https://image.tmdb.org/t/p/w185/qwsY5XM5mIJQzZyReBLHlHJx9n0.jpg"
+        }
+    ]
+},
+    {
     "title": "Justice League",
     "year": "2017",
     "desc": "يبدأ (بروس واين) في استعادة ثقته بالإنسانية، ويعزم على تجميع فريق العدالة للدفاع عن الأرض، ويطلب من حليفته الجديدة (الأميرة ديانا) مساعدته في مواجهة أكبر عدو على الإطلاق، وتجنيد فريق العدالة للوقوف ضد هذا التهديد، ويهب (باتمان)، (المرأة العجيبة)، (أكوامان)، (سايبورج)، (الفلاش) لإنقاذ كوكب الأرض.",
