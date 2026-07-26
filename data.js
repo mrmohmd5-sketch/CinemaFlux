@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Companion",
+    "year": "2025",
+    "desc": "يدور العمل حول رجل جذاب ومضطرب نفسيًا يتقابل مع امرأة تمر بالعديد من المتاعب والألاعيب، فتحمل لهما الأحداث الكثير من الأمور المشوقة.",
+    "poster": "https://image.tmdb.org/t/p/w500/hw3s8kgGK6311eSKi10oXOyOz29.jpg",
+    "hdUrl": "https://streamtape.com/e/meYW8GXmq3iGOl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/meYW8GXmq3iGOl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رعب خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sophie Thatcher",
+            "image": "https://image.tmdb.org/t/p/w185/lQfSgP34VWtZXuyvULsA6ZZl3qE.jpg"
+        },
+        {
+            "name": "Jack Quaid",
+            "image": "https://image.tmdb.org/t/p/w185/320qW5yEbxpmyxQ3evmClJbtKag.jpg"
+        },
+        {
+            "name": "Lukas Gage",
+            "image": "https://image.tmdb.org/t/p/w185/xXknCnXtRBmqg38TkMuPFtugt5s.jpg"
+        },
+        {
+            "name": "Megan Suri",
+            "image": "https://image.tmdb.org/t/p/w185/krZBtMPTqVvteqYFXbAU6nnQShy.jpg"
+        },
+        {
+            "name": "Harvey Guillén",
+            "image": "https://image.tmdb.org/t/p/w185/yiNBonobPwqMVweB02JWufzp2l9.jpg"
+        }
+    ]
+},
+    {
     "title": "Chappie",
     "year": "2015",
     "desc": "في مجتمع مستقبلي حيث تُسيطر قوّة لا تُقهر من الشرطة الآليّة على الجريمة بقبضة من حديد، يتطوّر آليّ منعزل إلى مستوى أعلى من الذكاء الاصطناعي.",
