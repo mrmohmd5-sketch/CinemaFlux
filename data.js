@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Black Panther: Wakanda Forever",
+    "year": "2022",
+    "desc": "يُقاتل شعب واكاندا لحماية وطنهم من تدخل القوى العالمية، وهم يُعانون من حزنٍ عميق على وفاة الملك تشالا.",
+    "poster": "https://image.tmdb.org/t/p/w500/l6M5yhxJ9gIPXK3Pf9Yehj6RBZa.jpg",
+    "hdUrl": "https://streamtape.com/e/yj40lZdVrPU1V3p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yj40lZdVrPU1V3p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Letitia Wright",
+            "image": "https://image.tmdb.org/t/p/w185/f7PevpEeBqwzACPhoZ8K3ktrKvE.jpg"
+        },
+        {
+            "name": "Tenoch Huerta Mejía",
+            "image": "https://image.tmdb.org/t/p/w185/x0Wy85CZu887ZQMWrjj4vVulczM.jpg"
+        },
+        {
+            "name": "Lupita Nyong'o",
+            "image": "https://image.tmdb.org/t/p/w185/y40Wu1T742kynOqtwXASc5Qgm49.jpg"
+        },
+        {
+            "name": "Danai Gurira",
+            "image": "https://image.tmdb.org/t/p/w185/z7H7QeQvr24vskGlANQhG43vozQ.jpg"
+        },
+        {
+            "name": "Winston Duke",
+            "image": "https://image.tmdb.org/t/p/w185/MhBiZbryibwuoEtPL9Ns8pYHC1.jpg"
+        }
+    ]
+},
+    {
     "title": "El Camino: A Breaking Bad Movie",
     "year": "2019",
     "desc": "تدور الأحداث حول الهارب 'جيسي بينكمن' وهو يحاول تجاوز ماضيه...",
