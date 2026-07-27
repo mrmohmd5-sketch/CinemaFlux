@@ -7,7 +7,7 @@ const globalMoviesData = [
     "hdUrl": "",
     "sdUrl": "",
     "rating": "7.8",
-    "genre": "دراما خيال علمي وفانتازيا",
+    "genre": "دراما خيال علمي فانتازيا",
     "type": "series",
     "cast": [
         {
