@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "The Secret Life of Pets",
+    "title": "The Secret Life of Pets مدبلج",
     "year": "2016",
     "desc": "بعد أن ينتهي الحال بكلبَين أليفين متخاصمين في العالم الخارجي، يجدان هدفًا مشتركًا للوقوف في وجه عصابة من المخلوقات المشردة التي تخطط للانتقام من البشر.",
     "poster": "https://image.tmdb.org/t/p/w500/vJvNQCxiXtWnEojJUOSp1XCD87D.jpg",
