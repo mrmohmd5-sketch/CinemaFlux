@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Hotel Transylvania 2",
+    "year": "2015",
+    "desc": "عندما يصل مصاص الدماء القديم إلى الفندق للقاء عائلي مرتجل ، يكون فندق ترانسيلفانيا في تصادم بين المدرسة القديمة الخارقة للطبيعة وبرودة العصر الحديث.",
+    "poster": "https://image.tmdb.org/t/p/w500/jg6EYfNrU3Nm0ouEjBcLqQRcFNS.jpg",
+    "hdUrl": "https://streamtape.com/e/pV3jWz74yKureZ8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pV3jWz74yKureZ8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Adam Sandler",
+            "image": "https://image.tmdb.org/t/p/w185/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg"
+        },
+        {
+            "name": "Selena Gomez",
+            "image": "https://image.tmdb.org/t/p/w185/wAeEHiyCkiW1SME9CCfkCtjb6ni.jpg"
+        },
+        {
+            "name": "Andy Samberg",
+            "image": "https://image.tmdb.org/t/p/w185/jMXU5oG3i93SH1yhkpbBGskFiJl.jpg"
+        },
+        {
+            "name": "Kevin James",
+            "image": "https://image.tmdb.org/t/p/w185/3WPW5duZyQcjveefxwLULgIyhM0.jpg"
+        },
+        {
+            "name": "Steve Buscemi",
+            "image": "https://image.tmdb.org/t/p/w185/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+        }
+    ]
+},
+    {
     "title": "Hotel Transylvania مدبلج",
     "year": "2012",
     "desc": "يمتلك (دراكولا) منتجعًا راقيًا بعيدًا عن أعين البشر، وهو ما يسمح له بتنشئة ابنته في مناخ آمن، وقدرة رفقائه من الوحوش على الاستجمام مع عائلاتهم في منتجعه، فماذا يفعل عندما يكتشف أن هناك صبي يُدعى (جوناثان) يستكشف منتجعه، ويقع في غرام ابنته المراهقة؟",
