@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Warcraft",
+    "year": "2016",
+    "desc": "يقف عالم أزيروث الهادئ على حافة الحرب حيث تواجه حضارته سلالة مخيفة من الغزاة: المحاربون المهجرون يفرون من منزلهم المحتضر لاستعمار بلد آخر. كما تفتح بوابة لربط العالمين ، يواجه أحد الجيش الدمار والآخر يواجه خطر الانقراض. من جانبين متعارضين ، يتم تعيين اثنين من الأبطال في مسار تصادمي سيحدد مصير عائلتهم وشعبهم ومنزلهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/eGi5aoxaZveqNLtE7BZJCuWwR3G.jpg",
+    "hdUrl": "https://streamtape.com/e/bRRBqRZ8qeiPyGZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bRRBqRZ8qeiPyGZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "حركة مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Travis Fimmel",
+            "image": "https://image.tmdb.org/t/p/w185/kuTSw3I2hqb5N1QqYrXPX8zd8EA.jpg"
+        },
+        {
+            "name": "Paula Patton",
+            "image": "https://image.tmdb.org/t/p/w185/afEkMmwkHkmBsOHeor2vZKWzeGf.jpg"
+        },
+        {
+            "name": "Ben Foster",
+            "image": "https://image.tmdb.org/t/p/w185/p5FlM9OOStD9I0Nm3GGlhaiAC5r.jpg"
+        },
+        {
+            "name": "Dominic Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/wFPdARerxpaAaHucYGTSNqViWpn.jpg"
+        },
+        {
+            "name": "Ben Schnetzer",
+            "image": "https://image.tmdb.org/t/p/w185/drpFFDyWj2jeoX5I1D1WhUfcCCx.jpg"
+        }
+    ]
+},
+    {
     "title": "All the Bright Places",
     "year": "2020",
     "desc": "يشكّل مراهقان يواجهان صراعات شخصية رابطًا قويًا أثناء شروعهما في رحلة علاجية، فيستكشفان من خلالها معالم 'إنديانا' المذهلة",
