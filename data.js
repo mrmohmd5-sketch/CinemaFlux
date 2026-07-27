@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Hotel Transylvania 3: Summer Vacation",
+    "year": "2018",
+    "desc": "دراكولا ومافيس وجوني وبقية أفراد مجموعة دراكولا يقضون إجازة على متن سفينة سياحية فاخرة، حيث يقع دراكولا في حب قائدة السفينة، إريكا، التي تنحدر سراً من سلالة أبراهام فان هيلسينج، قاتل الوحوش سيئ السمعة.",
+    "poster": "https://image.tmdb.org/t/p/w500/vajDZ9wjf0GXVFohiZiCxiueRGv.jpg",
+    "hdUrl": "https://streamtape.com/e/3VmoX8R9d3SdwmX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3VmoX8R9d3SdwmX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Adam Sandler",
+            "image": "https://image.tmdb.org/t/p/w185/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg"
+        },
+        {
+            "name": "Kathryn Hahn",
+            "image": "https://image.tmdb.org/t/p/w185/9sVllAKfEls3SJD3GoPm2JEZoa5.jpg"
+        },
+        {
+            "name": "Selena Gomez",
+            "image": "https://image.tmdb.org/t/p/w185/wAeEHiyCkiW1SME9CCfkCtjb6ni.jpg"
+        },
+        {
+            "name": "Jim Gaffigan",
+            "image": "https://image.tmdb.org/t/p/w185/dhguhHxIrb26jvPznBt8y25Fb2U.jpg"
+        },
+        {
+            "name": "Andy Samberg",
+            "image": "https://image.tmdb.org/t/p/w185/jMXU5oG3i93SH1yhkpbBGskFiJl.jpg"
+        }
+    ]
+},
+    {
     "title": "Hotel Transylvania 2",
     "year": "2015",
     "desc": "عندما يصل مصاص الدماء القديم إلى الفندق للقاء عائلي مرتجل ، يكون فندق ترانسيلفانيا في تصادم بين المدرسة القديمة الخارقة للطبيعة وبرودة العصر الحديث.",
