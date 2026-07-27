@@ -134,7 +134,7 @@ const globalMoviesData = [
     {
     "title": "Band Aid",
     "year": "2017",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول زوجين يعانيان من خلافات مستمرة ومشاكل زوجية متكررة فيقرران تحويل شجاراتهما اليومية إلى أغاني روك وتأسيس فرقة موسيقية كطريقة مبتكرة لإنقاذ علاقتهما وإعادة الدفء لحياتهما.",
     "poster": "https://image.tmdb.org/t/p/w500/hDYKhDkmvvPnYESr1yNG3K5oMZT.jpg",
     "hdUrl": "https://streamtape.com/e/qgOpRy8oJocz2DY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/qgOpRy8oJocz2DY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
