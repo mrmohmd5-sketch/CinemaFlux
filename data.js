@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Band Aid",
+    "year": "2017",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/hDYKhDkmvvPnYESr1yNG3K5oMZT.jpg",
+    "hdUrl": "https://streamtape.com/e/qgOpRy8oJocz2DY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/qgOpRy8oJocz2DY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "كوميديا دراما موسيقى",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Zoe Lister-Jones",
+            "image": "https://image.tmdb.org/t/p/w185/hiuMwG45QCg0eUzhO15jyAFzx1i.jpg"
+        },
+        {
+            "name": "Adam Pally",
+            "image": "https://image.tmdb.org/t/p/w185/yY13PEaVbPoXT5MkitVxTfdAZnU.jpg"
+        },
+        {
+            "name": "Fred Armisen",
+            "image": "https://image.tmdb.org/t/p/w185/rhPN8Zx6nrtNiQN2JwPkJ3ZFJ9z.jpg"
+        },
+        {
+            "name": "Susie Essman",
+            "image": "https://image.tmdb.org/t/p/w185/xeVB4LdahB3dvia0WqThHKoqwtH.jpg"
+        },
+        {
+            "name": "Retta",
+            "image": "https://image.tmdb.org/t/p/w185/bIo8tjdn48wIPEdcJ0UCqqTzClV.jpg"
+        }
+    ]
+},
+    {
     "title": "X-Men: Days of Future Past",
     "year": "2014",
     "desc": "لإنقاذ المستقبل ، يجب عليهم تغيير الماضي.  تخوض فرقة X-Men النهائية حربا من أجل بقاء الأنواع عبر فترتين زمنيتين حيث يوحدون قواهم مع أنفسهم الأصغر سنا في معركة ملحمية يجب أن تغير الماضي - لإنقاذ مستقبلنا.",
