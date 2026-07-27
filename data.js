@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "The Secret Life of Pets 2",
+    "title": "The Secret Life of Pets 2 مدبلج",
     "year": "2019",
     "desc": "يلتقي الكلبان 'ديوك' و'ماكس' بطفل بشري جديد ينضمّ للعائلة ويتأقلمان مع حياة المزرعة، فيما يواجه رفاقهما من الحيوانات أزمات جديدة في المدينة.",
     "poster": "https://image.tmdb.org/t/p/w500/s3Uk16RriBDrtUl11DMHmKt5vZ8.jpg",
