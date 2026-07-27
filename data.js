@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "2 Guns",
+    "year": "2013",
+    "desc": "تدور قصة الفيلم حول عميل تابع لإدارة مكافحة المخدرات يدعى بوبي (دينزل واشنطون)، وآخر تابع للمخابرات البحرية الأمريكية يدعى ستاجمان (مارك ويلبرج). ينجحان في سرقة بنك مكسيكي، كلا لحساب منظمته وبعد نجاح المهمة يكتشفان خداع قادتهما فيتعاونان للخروج معا بسلام دون أن يعرف أحدهما هوية الآخر،",
+    "poster": "https://image.tmdb.org/t/p/w500/ptURGAFktibhk7DEAbMazlmNqWa.jpg",
+    "hdUrl": "https://streamtape.com/e/GGG8KG7rp1t1GM4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GGG8KG7rp1t1GM4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة كوميديا جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Denzel Washington",
+            "image": "https://image.tmdb.org/t/p/w185/393wX9AGWpseVqojQDPLy3bTBia.jpg"
+        },
+        {
+            "name": "Mark Wahlberg",
+            "image": "https://image.tmdb.org/t/p/w185/1Oc3XSLyb8hxmjmlgFENu582Kqw.jpg"
+        },
+        {
+            "name": "Paula Patton",
+            "image": "https://image.tmdb.org/t/p/w185/afEkMmwkHkmBsOHeor2vZKWzeGf.jpg"
+        },
+        {
+            "name": "Edward James Olmos",
+            "image": "https://image.tmdb.org/t/p/w185/mXnilUrQBIMLHSQkPjQk99mX70x.jpg"
+        },
+        {
+            "name": "Bill Paxton",
+            "image": "https://image.tmdb.org/t/p/w185/aLdNe6mt1cSi2zWlUYRregzfis5.jpg"
+        }
+    ]
+},
+    {
     "title": "Hello, My Name Is Doris",
     "year": "2015",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
