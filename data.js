@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Martian",
+    "year": "2015",
+    "desc": "أحضره إلى المنزل  خلال مهمة مأهولة إلى المريخ ، يفترض أن رائد الفضاء مارك واتني قد مات بعد عاصفة عاتية وتركه طاقمه. لكن واتني نجا ووجد نفسه عالقا وحيدا على الكوكب المعادي. مع الإمدادات الضئيلة فقط ، يجب عليه الاعتماد على براعته وذكائه وروحه للبقاء وإيجاد طريقة للإشارة إلى الأرض بأنه على قيد الحياة.",
+    "poster": "https://image.tmdb.org/t/p/w500/q4wc9Y6HRzdUkXITn60AliXNBZ0.jpg",
+    "hdUrl": "https://streamtape.com/e/r36ZaozD3qIbDyd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/r36ZaozD3qIbDyd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "خيال علمي دراما مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matt Damon",
+            "image": "https://image.tmdb.org/t/p/w185/aCvBXTAR9B1qRjIRzMBYhhbm1fR.jpg"
+        },
+        {
+            "name": "Jessica Chastain",
+            "image": "https://image.tmdb.org/t/p/w185/eQKnihReJeB9vQEa5gySzAlKfZt.jpg"
+        },
+        {
+            "name": "Kristen Wiig",
+            "image": "https://image.tmdb.org/t/p/w185/6U6UGztBwk7c4lg8n5BS5QOByot.jpg"
+        },
+        {
+            "name": "Jeff Daniels",
+            "image": "https://image.tmdb.org/t/p/w185/r0mkZJZnTSJO3HJRsMW5HtszxE8.jpg"
+        },
+        {
+            "name": "Michael Peña",
+            "image": "https://image.tmdb.org/t/p/w185/afs4PCiwn8LR93a10drULLVeVLo.jpg"
+        }
+    ]
+},
+    {
     "title": "Supergirl",
     "year": "2026",
     "desc": "عندما يوجّه عدوّ قاسٍ ولا يرحم ضربة مؤلمة تمسّ حياتها بشكل شخصي، تجد 'كارا زور-إل'، المعروفة باسم سوبرجيرل، نفسها مضطرة للتعاون مع رفيق غير متوقع. وتنطلق معه في رحلة ملحمية عبر الفضاء، تسعى خلالها إلى الانتقام وتحقيق العدالة.",
