@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "HIM",
     "year": "2025",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول لاعب كرة قدم أمريكية شاب وواعد يتلقى دعوة للتدريب في المقر المعزول لأسطورة الرياضة المعتزل فيجد نفسه يخوض تجربة غامضة ومظلمة تتحول إلى كابوس نفسي مرعب .",
     "poster": "https://image.tmdb.org/t/p/w500/qPJzcYR2f1O1uynYBCVPPJuOiAH.jpg",
     "hdUrl": "https://streamtape.com/e/oWwW9lLdwJUJQ6Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/oWwW9lLdwJUJQ6Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
