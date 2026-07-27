@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Past Lives",
+    "year": "2023",
+    "desc": "بعد أن فرقهما القدر قاربة الـ٢٠ عامًا، تجتمع 'نورا' و'هاي سونغ' الصديقان المقربان منذ طفولتهما من جديد، ويجدان أنفسهما خلال أسبوع مصيري يواجهان خلاله مفاهيم الحب والقدر.",
+    "poster": "https://image.tmdb.org/t/p/w500/kZLxIN4tiCRmwxamKamvCRxd6Yf.jpg",
+    "hdUrl": "https://streamtape.com/e/Wg7KR6qJ6AuWjp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Wg7KR6qJ6AuWjp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Greta Lee",
+            "image": "https://image.tmdb.org/t/p/w185/6SydTis4XUcovlwIGskT59JowLX.jpg"
+        },
+        {
+            "name": "Teo Yoo",
+            "image": "https://image.tmdb.org/t/p/w185/vuzKCKo2kIskjbDEcl2EMLv6uhO.jpg"
+        },
+        {
+            "name": "John Magaro",
+            "image": "https://image.tmdb.org/t/p/w185/ah4Jm4Lmrgab9xdHwRId80S4REd.jpg"
+        },
+        {
+            "name": "Moon Seung-ah",
+            "image": "https://image.tmdb.org/t/p/w185/pMWmxsuKpOH7npeZNYCxJmZt993.jpg"
+        },
+        {
+            "name": "Leem Seung-min",
+            "image": "https://image.tmdb.org/t/p/w185/3UtRGgLaH5BQTAlXRHw3n0hl5zl.jpg"
+        }
+    ]
+},
+    {
     "title": "Hotel Transylvania 2",
     "year": "2015",
     "desc": "عندما يصل مصاص الدماء القديم إلى الفندق للقاء عائلي مرتجل ، يكون فندق ترانسيلفانيا في تصادم بين المدرسة القديمة الخارقة للطبيعة وبرودة العصر الحديث.",
