@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Secret Life of Pets",
+    "year": "2016",
+    "desc": "بعد أن ينتهي الحال بكلبَين أليفين متخاصمين في العالم الخارجي، يجدان هدفًا مشتركًا للوقوف في وجه عصابة من المخلوقات المشردة التي تخطط للانتقام من البشر.",
+    "poster": "https://image.tmdb.org/t/p/w500/vJvNQCxiXtWnEojJUOSp1XCD87D.jpg",
+    "hdUrl": "https://streamtape.com/e/Pkardwkb8VU0mOX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Pkardwkb8VU0mOX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "رسوم متحركة كوميديا عائلي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Louis C.K.",
+            "image": "https://image.tmdb.org/t/p/w185/1ii770zdeX62UFGawTmNr2vddYb.jpg"
+        },
+        {
+            "name": "Eric Stonestreet",
+            "image": "https://image.tmdb.org/t/p/w185/lz0m88IjLZ8OcEHU2jhPvubcr7k.jpg"
+        },
+        {
+            "name": "Kevin Hart",
+            "image": "https://image.tmdb.org/t/p/w185/byiNydUlM6oP8diA7WMvYbNM7a1.jpg"
+        },
+        {
+            "name": "Jenny Slate",
+            "image": "https://image.tmdb.org/t/p/w185/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
+        },
+        {
+            "name": "Ellie Kemper",
+            "image": "https://image.tmdb.org/t/p/w185/2PmzhjJTr8zme7VuTIE1Nc1n5YL.jpg"
+        }
+    ]
+},
+    {
     "title": "The Secret Life of Pets 2 مدبلج",
     "year": "2019",
     "desc": "يلتقي الكلبان 'ديوك' و'ماكس' بطفل بشري جديد ينضمّ للعائلة ويتأقلمان مع حياة المزرعة، فيما يواجه رفاقهما من الحيوانات أزمات جديدة في المدينة.",
