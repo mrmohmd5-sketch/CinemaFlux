@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Hotel Transylvania: Transformania",
+    "year": "2022",
+    "desc": "بسبب الماكينة الجديدة التي ابتكرها فان هلسينج، يتحول دارك وعصبته من الوحوش إلى بشر، أما جوني فعلى العكس يصير وحشًا، وعلى أفراد العصبة أن يعودوا لسابق عهدهم قبل فوات اﻷوان.",
+    "poster": "https://image.tmdb.org/t/p/w500/cLijY9VlDJ0568xrAxLxEQmBAUY.jpg",
+    "hdUrl": "https://streamtape.com/e/7XJVr8Pr7yCJMa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7XJVr8Pr7yCJMa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رسوم متحركة كوميديا عائلي مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Andy Samberg",
+            "image": "https://image.tmdb.org/t/p/w185/jMXU5oG3i93SH1yhkpbBGskFiJl.jpg"
+        },
+        {
+            "name": "Selena Gomez",
+            "image": "https://image.tmdb.org/t/p/w185/wAeEHiyCkiW1SME9CCfkCtjb6ni.jpg"
+        },
+        {
+            "name": "Kathryn Hahn",
+            "image": "https://image.tmdb.org/t/p/w185/9sVllAKfEls3SJD3GoPm2JEZoa5.jpg"
+        },
+        {
+            "name": "Jim Gaffigan",
+            "image": "https://image.tmdb.org/t/p/w185/dhguhHxIrb26jvPznBt8y25Fb2U.jpg"
+        },
+        {
+            "name": "Steve Buscemi",
+            "image": "https://image.tmdb.org/t/p/w185/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+        }
+    ]
+},
+    {
     "title": "Monster Pets: A Hotel Transylvania Short",
     "year": "2021",
     "desc": "يجرّب 'دراك' بعض الحيوانات الأليفة الوحشية الجديدة للمساعدة في احتلال 'تينكلز' أثناء اللعب.",
