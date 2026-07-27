@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Sonic the Hedgehog 3",
+    "year": "2024",
+    "desc": "تعود احداث الفيلم من جديد في هذا الجزء يظهر شبيه القنفذ الأزرق (سونيك)، وهو قنفذ آخر ملقب بـ(شادو)، ويبدأ في استخدام أساليب ماكرة، معتمدًا على ذكاءه الشديد، مما يدفع (سونيك) و(ناكلز) و(تايلز) للاتحاد في سبيل التصدي له.",
+    "poster": "https://image.tmdb.org/t/p/w500/nvcJk4l2FW17tFe7cj5MSDywTLa.jpg",
+    "hdUrl": "https://streamtape.com/e/W90yZKj1L0cbwRg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/W90yZKj1L0cbwRg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "حركة خيال علمي كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Schwartz",
+            "image": "https://image.tmdb.org/t/p/w185/hWEQe66jXUAGVhbU5dy8s0IrrAQ.jpg"
+        },
+        {
+            "name": "Jim Carrey",
+            "image": "https://image.tmdb.org/t/p/w185/y3U9QfPN6sJaGl6l68xjwWj28ig.jpg"
+        },
+        {
+            "name": "Keanu Reeves",
+            "image": "https://image.tmdb.org/t/p/w185/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        },
+        {
+            "name": "Idris Elba",
+            "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        },
+        {
+            "name": "Colleen O'Shaughnessey",
+            "image": "https://image.tmdb.org/t/p/w185/y3Kl5tCX1XD6uyL9wefTRbEXTwj.jpg"
+        }
+    ]
+},
+    {
     "title": "Sonic the Hedgehog 2",
     "year": "2022",
     "desc": "بعد الاستقرار في جرين هيلز ، يتوق سونيك إلى إثبات أن لديه ما يلزم ليكون بطلا حقيقيا. يأتي اختباره عندما يعود الدكتور روبوتنيك ، هذه المرة مع شريك جديد ، المفاصل، بحثا عن الزمرد الذي لديه القدرة على تدمير الحضارات. يتعاون سونيك مع صديقه ، تايلز ، ويشرعون معا في رحلة حول العالم للعثور على الزمرد قبل أن يقع في الأيدي الخطأ",
