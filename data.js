@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Hello, My Name Is Doris",
+    "year": "2015",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/tV7MKM6xFGzO3zhYTC7rDmx5B4Y.jpg",
+    "hdUrl": "https://streamtape.com/e/6bYMaarV7LH9RGQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/6bYMaarV7LH9RGQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sally Field",
+            "image": "https://image.tmdb.org/t/p/w185/iMeq1j9Xwvaf6PbTJ0FQz69fpuA.jpg"
+        },
+        {
+            "name": "Max Greenfield",
+            "image": "https://image.tmdb.org/t/p/w185/79w2mSZT8JwYv5ZwjJMDYQbzptE.jpg"
+        },
+        {
+            "name": "Beth Behrs",
+            "image": "https://image.tmdb.org/t/p/w185/ruiarln4ZdBXgtE5ACgiByrYv7N.jpg"
+        },
+        {
+            "name": "Stephen Root",
+            "image": "https://image.tmdb.org/t/p/w185/2Zwi6AydqQQ9InVdhjYcfJXNzkp.jpg"
+        },
+        {
+            "name": "Natasha Lyonne",
+            "image": "https://image.tmdb.org/t/p/w185/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
+        }
+    ]
+},
+    {
     "title": "Band Aid",
     "year": "2017",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
