@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Sonic the Hedgehog",
+    "year": "2020",
+    "desc": "سرعة جديدة تماما للبطل. مدعوما بسرعة لا تصدق ، يحتضن سونيك القنفذ  منزله الجديد على الأرض. هذا هو ، حتى يثير سونيك انتباه عبقري الشر فائق البرودة الدكتور روبوتنيك. الآن أصبح الشرير الخارق مقابل الصوت الخارق في سباق شامل في جميع أنحاء العالم لمنع روبوتنيك من استخدام قوة صوت  الفريدة للسيطرة على العالم.",
+    "poster": "https://image.tmdb.org/t/p/w500/zciCdx1vuni0OdQlP54fZJbsXg0.jpg",
+    "hdUrl": "https://streamtape.com/e/D2eaWwRz1eI6eb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/D2eaWwRz1eI6eb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة خيال علمي كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Schwartz",
+            "image": "https://image.tmdb.org/t/p/w185/hWEQe66jXUAGVhbU5dy8s0IrrAQ.jpg"
+        },
+        {
+            "name": "James Marsden",
+            "image": "https://image.tmdb.org/t/p/w185/lf7OnfKZnMgNh9b98764tqSocGK.jpg"
+        },
+        {
+            "name": "Tika Sumpter",
+            "image": "https://image.tmdb.org/t/p/w185/1zTXufyuQFPXVthryH7KVoZAfb7.jpg"
+        },
+        {
+            "name": "Jim Carrey",
+            "image": "https://image.tmdb.org/t/p/w185/y3U9QfPN6sJaGl6l68xjwWj28ig.jpg"
+        },
+        {
+            "name": "Natasha Rothwell",
+            "image": "https://image.tmdb.org/t/p/w185/x5KdL3QoS4YuozVpfuPsu3MLwwf.jpg"
+        }
+    ]
+},
+    {
     "title": "أحبك من زمان",
     "year": "2026",
     "desc": "تدور الأحداث حول 'هيا' التي تكتشف حقيقة مشاعرها تجاه صديقها المقرب 'جواد' بعد إعلان خطوبته، لتبدأ رحلة من التساؤلات حول الحدود الفاصلة بين الصداقة والحب.",
