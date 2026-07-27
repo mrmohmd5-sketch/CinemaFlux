@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Hotel Transylvania 3: Summer Vacation",
+    "title": "Hotel Transylvania 3: Summer Vacation مدبلج",
     "year": "2018",
     "desc": "دراكولا ومافيس وجوني وبقية أفراد مجموعة دراكولا يقضون إجازة على متن سفينة سياحية فاخرة، حيث يقع دراكولا في حب قائدة السفينة، إريكا، التي تنحدر سراً من سلالة أبراهام فان هيلسينج، قاتل الوحوش سيئ السمعة.",
     "poster": "https://image.tmdb.org/t/p/w500/vajDZ9wjf0GXVFohiZiCxiueRGv.jpg",
@@ -33,7 +33,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Hotel Transylvania 2",
+    "title": "Hotel Transylvania 2 مدبلج",
     "year": "2015",
     "desc": "عندما يصل مصاص الدماء القديم إلى الفندق للقاء عائلي مرتجل ، يكون فندق ترانسيلفانيا في تصادم بين المدرسة القديمة الخارقة للطبيعة وبرودة العصر الحديث.",
     "poster": "https://image.tmdb.org/t/p/w500/jg6EYfNrU3Nm0ouEjBcLqQRcFNS.jpg",
