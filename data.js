@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Hotel Transylvania",
+    "year": "2012",
+    "desc": "يمتلك (دراكولا) منتجعًا راقيًا بعيدًا عن أعين البشر، وهو ما يسمح له بتنشئة ابنته في مناخ آمن، وقدرة رفقائه من الوحوش على الاستجمام مع عائلاتهم في منتجعه، فماذا يفعل عندما يكتشف أن هناك صبي يُدعى (جوناثان) يستكشف منتجعه، ويقع في غرام ابنته المراهقة؟",
+    "poster": "https://image.tmdb.org/t/p/w500/laJ53fk8X28zZKlCMpxzJqMu577.jpg",
+    "hdUrl": "https://streamtape.com/e/3rDZPvbW83sdQJy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3rDZPvbW83sdQJy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Selena Gomez",
+            "image": "https://image.tmdb.org/t/p/w185/wAeEHiyCkiW1SME9CCfkCtjb6ni.jpg"
+        },
+        {
+            "name": "Adam Sandler",
+            "image": "https://image.tmdb.org/t/p/w185/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg"
+        },
+        {
+            "name": "Andy Samberg",
+            "image": "https://image.tmdb.org/t/p/w185/jMXU5oG3i93SH1yhkpbBGskFiJl.jpg"
+        },
+        {
+            "name": "Kevin James",
+            "image": "https://image.tmdb.org/t/p/w185/3WPW5duZyQcjveefxwLULgIyhM0.jpg"
+        },
+        {
+            "name": "Fran Drescher",
+            "image": "https://image.tmdb.org/t/p/w185/6IQlygYDyxuIRD5j9lPluknYoJp.jpg"
+        }
+    ]
+},
+    {
     "title": "The Secret Life of Pets 2",
     "year": "2019",
     "desc": "يلتقي الكلبان 'ديوك' و'ماكس' بطفل بشري جديد ينضمّ للعائلة ويتأقلمان مع حياة المزرعة، فيما يواجه رفاقهما من الحيوانات أزمات جديدة في المدينة.",
