@@ -101,7 +101,7 @@ const globalMoviesData = [
     {
     "title": "Hello, My Name Is Doris",
     "year": "2015",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول امرأة غريبة الأطوار في الستينات من عمرها تقع في حب زميلها الشاب في العمل بعد حضورها دورة للتطوير الذاتي فتحاول التقرب منه وتغيير نمط حياتها بطرق طريفة ومختلفة .",
     "poster": "https://image.tmdb.org/t/p/w500/tV7MKM6xFGzO3zhYTC7rDmx5B4Y.jpg",
     "hdUrl": "https://streamtape.com/e/6bYMaarV7LH9RGQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/6bYMaarV7LH9RGQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
