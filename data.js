@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "72 HOURS",
+    "year": "2026",
+    "desc": "في محاولة لإنقاذ مسيرته المهنية، ينضم مسؤول تنفيذي أربعيني إلى مجموعة من الشبان في رحلة صاخبة لتوديع العزوبية في 'ميامي' بعد أن أضافوه إلى دردشتهم الجماعية عن طريق الخطأ.",
+    "poster": "https://image.tmdb.org/t/p/w500/9Bu1PW2R1XayqRqnl0aDOgMcrdS.jpg",
+    "hdUrl": "https://streamtape.com/e/VO99vVa2mRuKLGG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/VO99vVa2mRuKLGG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "كوميديا جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kevin Hart",
+            "image": "https://image.tmdb.org/t/p/w185/byiNydUlM6oP8diA7WMvYbNM7a1.jpg"
+        },
+        {
+            "name": "Marcello Hernández",
+            "image": "https://image.tmdb.org/t/p/w185/1HwInMPGpJ9Ne2eHe1Zirk6IDSN.jpg"
+        },
+        {
+            "name": "Mason Gooding",
+            "image": "https://image.tmdb.org/t/p/w185/bmlry1xqBzNgv8Chm783ss93Cvg.jpg"
+        },
+        {
+            "name": "Kam Patterson",
+            "image": "https://image.tmdb.org/t/p/w185/tosIntCEGwZNC3tvpUXJq39GY1q.jpg"
+        },
+        {
+            "name": "Ben Marshall",
+            "image": "https://image.tmdb.org/t/p/w185/kLUG2GlueUOoSrKHlqhuS3yUnDc.jpg"
+        }
+    ]
+},
+    {
     "title": "Sonic the Hedgehog 3",
     "year": "2024",
     "desc": "تعود احداث الفيلم من جديد في هذا الجزء يظهر شبيه القنفذ الأزرق (سونيك)، وهو قنفذ آخر ملقب بـ(شادو)، ويبدأ في استخدام أساليب ماكرة، معتمدًا على ذكاءه الشديد، مما يدفع (سونيك) و(ناكلز) و(تايلز) للاتحاد في سبيل التصدي له.",
