@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "All the Bright Places",
+    "year": "2020",
+    "desc": "يشكّل مراهقان يواجهان صراعات شخصية رابطًا قويًا أثناء شروعهما في رحلة علاجية، فيستكشفان من خلالها معالم 'إنديانا' المذهلة",
+    "poster": "https://image.tmdb.org/t/p/w500/4SafxuMKQiw4reBiWKVZJpJn80I.jpg",
+    "hdUrl": "https://streamtape.com/e/gLX6wDgBR8h9A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/gLX6wDgBR8h9A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Elle Fanning",
+            "image": "https://image.tmdb.org/t/p/w185/ucC5faqfEYVhoC25M6Hi3znZmab.jpg"
+        },
+        {
+            "name": "Justice Smith",
+            "image": "https://image.tmdb.org/t/p/w185/htJrcOzYkLVcnF4ExT4O1bDN5e5.jpg"
+        },
+        {
+            "name": "Alexandra Shipp",
+            "image": "https://image.tmdb.org/t/p/w185/98AfO5NSqWnlhIxjSg08gGYdxUG.jpg"
+        },
+        {
+            "name": "Kelli O'Hara",
+            "image": "https://image.tmdb.org/t/p/w185/jfAayOimEN3W7OTcB1vjySISpDc.jpg"
+        },
+        {
+            "name": "Lamar Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/4IEsKiSsyckleKsPsiIVtAh6QDy.jpg"
+        }
+    ]
+},
+    {
     "title": "HIM",
     "year": "2025",
     "desc": "تدور أحداث الفيلم حول لاعب كرة قدم أمريكية شاب وواعد يتلقى دعوة للتدريب في المقر المعزول لأسطورة الرياضة المعتزل فيجد نفسه يخوض تجربة غامضة ومظلمة تتحول إلى كابوس نفسي مرعب .",
