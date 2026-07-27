@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Monster Pets: A Hotel Transylvania Short",
+    "year": "2021",
+    "desc": "يجرّب 'دراك' بعض الحيوانات الأليفة الوحشية الجديدة للمساعدة في احتلال 'تينكلز' أثناء اللعب.",
+    "poster": "https://image.tmdb.org/t/p/w500/5sYgAUheUUz1ENgG3qQ70tQ8TSa.jpg",
+    "hdUrl": "https://streamtape.com/e/7zeWpOAWzMfA9yK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7zeWpOAWzMfA9yK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "رسوم متحركة كوميديا فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brian Hull",
+            "image": "https://image.tmdb.org/t/p/w185/mLq5C8100kjFad6AMLNUXX3kcPf.jpg"
+        },
+        {
+            "name": "Jennifer Kluska",
+            "image": "https://image.tmdb.org/t/p/w185/nTMgpEqRRt3hPG4KjlKdkX8z1Bj.jpg"
+        },
+        {
+            "name": "Derek Drymon",
+            "image": "https://image.tmdb.org/t/p/w185/1ZdPd2JaiigVDB7hPxy29RAx9GY.jpg"
+        },
+        {
+            "name": "Genndy Tartakovsky",
+            "image": "https://image.tmdb.org/t/p/w185/neLR8ws82ezlbhOyUvhtLXwQZWL.jpg"
+        },
+        {
+            "name": "Jon Olson",
+            "image": "https://image.tmdb.org/t/p/w185/crkYY5wcjoDn04BFlkF5WiR3d1A.jpg"
+        }
+    ]
+},
+    {
     "title": "Hotel Transylvania 3 مدبلج",
     "year": "2018",
     "desc": "دراكولا ومافيس وجوني وبقية أفراد مجموعة دراكولا يقضون إجازة على متن سفينة سياحية فاخرة، حيث يقع دراكولا في حب قائدة السفينة، إريكا، التي تنحدر سراً من سلالة أبراهام فان هيلسينج، قاتل الوحوش سيئ السمعة.",
