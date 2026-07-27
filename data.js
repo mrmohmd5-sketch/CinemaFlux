@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Gorge",
+    "year": "2025",
+    "desc": "عميلان رفيعا التدريب يتقاربان عن بعد عند إرسالهما لحراسة الجانبين المتقابلين من أخدود غامض. عندما يظهر شيء شرير من الأسفل، يجب أن يتعاونا للنجاة مما يكمن بداخله.",
+    "poster": "https://image.tmdb.org/t/p/w500/7iMBZzVZtG0oBug4TfqDb9ZxAOa.jpg",
+    "hdUrl": "https://streamtape.com/e/7GMB0Jr1XxC86A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7GMB0Jr1XxC86A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "رومنسية خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Miles Teller",
+            "image": "https://image.tmdb.org/t/p/w185/kDf3sW3USjEBDQ3Ua7lbwOfwty6.jpg"
+        },
+        {
+            "name": "Anya Taylor-Joy",
+            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+            "name": "Sigourney Weaver",
+            "image": "https://image.tmdb.org/t/p/w185/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+        },
+        {
+            "name": "Ṣọpẹ́ Dìrísù",
+            "image": "https://image.tmdb.org/t/p/w185/xcHaI7IOGxWhArkE6iWPCYhx9HD.jpg"
+        },
+        {
+            "name": "William Houston",
+            "image": "https://image.tmdb.org/t/p/w185/4J4TG1dbyJcSs78hP9fU2x8jrJs.jpg"
+        }
+    ]
+},
+    {
     "title": "72 HOURS",
     "year": "2026",
     "desc": "في محاولة لإنقاذ مسيرته المهنية، ينضم مسؤول تنفيذي أربعيني إلى مجموعة من الشبان في رحلة صاخبة لتوديع العزوبية في 'ميامي' بعد أن أضافوه إلى دردشتهم الجماعية عن طريق الخطأ.",
