@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "X-Men: Days of Future Past",
+    "year": "2014",
+    "desc": "لإنقاذ المستقبل ، يجب عليهم تغيير الماضي.  تخوض فرقة X-Men النهائية حربا من أجل بقاء الأنواع عبر فترتين زمنيتين حيث يوحدون قواهم مع أنفسهم الأصغر سنا في معركة ملحمية يجب أن تغير الماضي - لإنقاذ مستقبلنا.",
+    "poster": "https://image.tmdb.org/t/p/w500/tYfijzolzgoMOtegh1Y7j2Enorg.jpg",
+    "hdUrl": "https://streamtape.com/e/LJOm3zpOP6hepV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LJOm3zpOP6hepV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hugh Jackman",
+            "image": "https://image.tmdb.org/t/p/w185/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+        },
+        {
+            "name": "James McAvoy",
+            "image": "https://image.tmdb.org/t/p/w185/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg"
+        },
+        {
+            "name": "Michael Fassbender",
+            "image": "https://image.tmdb.org/t/p/w185/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
+        },
+        {
+            "name": "Patrick Stewart",
+            "image": "https://image.tmdb.org/t/p/w185/ufqtnLh3JJjPbEgxEag3MM5nZyv.jpg"
+        },
+        {
+            "name": "Ian McKellen",
+            "image": "https://image.tmdb.org/t/p/w185/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg"
+        }
+    ]
+},
+    {
     "title": "The Gorge",
     "year": "2025",
     "desc": "عميلان رفيعا التدريب يتقاربان عن بعد عند إرسالهما لحراسة الجانبين المتقابلين من أخدود غامض. عندما يظهر شيء شرير من الأسفل، يجب أن يتعاونا للنجاة مما يكمن بداخله.",
