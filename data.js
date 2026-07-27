@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Sonic the Hedgehog 2",
+    "year": "2022",
+    "desc": "بعد الاستقرار في جرين هيلز ، يتوق سونيك إلى إثبات أن لديه ما يلزم ليكون بطلا حقيقيا. يأتي اختباره عندما يعود الدكتور روبوتنيك ، هذه المرة مع شريك جديد ، المفاصل، بحثا عن الزمرد الذي لديه القدرة على تدمير الحضارات. يتعاون سونيك مع صديقه ، تايلز ، ويشرعون معا في رحلة حول العالم للعثور على الزمرد قبل أن يقع في الأيدي الخطأ",
+    "poster": "https://image.tmdb.org/t/p/w500/uOp0OZzFP1StHSsMGvsL61Wu1NH.jpg",
+    "hdUrl": "https://streamtape.com/e/MAvq09WZWGimvj3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/MAvq09WZWGimvj3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة مغامرة عائلي كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Schwartz",
+            "image": "https://image.tmdb.org/t/p/w185/hWEQe66jXUAGVhbU5dy8s0IrrAQ.jpg"
+        },
+        {
+            "name": "James Marsden",
+            "image": "https://image.tmdb.org/t/p/w185/lf7OnfKZnMgNh9b98764tqSocGK.jpg"
+        },
+        {
+            "name": "Tika Sumpter",
+            "image": "https://image.tmdb.org/t/p/w185/1zTXufyuQFPXVthryH7KVoZAfb7.jpg"
+        },
+        {
+            "name": "Colleen O'Shaughnessey",
+            "image": "https://image.tmdb.org/t/p/w185/y3Kl5tCX1XD6uyL9wefTRbEXTwj.jpg"
+        },
+        {
+            "name": "Idris Elba",
+            "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        }
+    ]
+},
+    {
     "title": "Sonic the Hedgehog",
     "year": "2020",
     "desc": "سرعة جديدة تماما للبطل. مدعوما بسرعة لا تصدق ، يحتضن سونيك القنفذ  منزله الجديد على الأرض. هذا هو ، حتى يثير سونيك انتباه عبقري الشر فائق البرودة الدكتور روبوتنيك. الآن أصبح الشرير الخارق مقابل الصوت الخارق في سباق شامل في جميع أنحاء العالم لمنع روبوتنيك من استخدام قوة صوت  الفريدة للسيطرة على العالم.",
