@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "HIM",
+    "year": "2025",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/qPJzcYR2f1O1uynYBCVPPJuOiAH.jpg",
+    "hdUrl": "https://streamtape.com/e/oWwW9lLdwJUJQ6Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oWwW9lLdwJUJQ6Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.7",
+    "genre": "رعب غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tyriq Withers",
+            "image": "https://image.tmdb.org/t/p/w185/ilDZHfT8mlXWlvLCaWDhL0OlLSh.jpg"
+        },
+        {
+            "name": "Marlon Wayans",
+            "image": "https://image.tmdb.org/t/p/w185/7LYnX3vluHFBs1WCRKUjSIEDEkn.jpg"
+        },
+        {
+            "name": "Julia Fox",
+            "image": "https://image.tmdb.org/t/p/w185/cuRGm9ySxto57ifv3tSAYhOLAYA.jpg"
+        },
+        {
+            "name": "Tim Heidecker",
+            "image": "https://image.tmdb.org/t/p/w185/mj9huol5uyggzejRYTEHPVztRQg.jpg"
+        },
+        {
+            "name": "Jim Jefferies",
+            "image": "https://image.tmdb.org/t/p/w185/nUt41YMX6tHcyrHHlH6UMs2tZ9n.jpg"
+        }
+    ]
+},
+    {
     "title": "Jungle Cruise",
     "year": "2021",
     "desc": "تستعين الدكتورة ليلي هوتون بمساعدة الربان الحكيم فرانك وولف لأخذها إلى أسفل الأمازون في قاربه المتداعي. معا ، يبحثون عن شجرة قديمة تمتلك القدرة على الشفاء - اكتشاف سيغير مستقبل الطب.",
