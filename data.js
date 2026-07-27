@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Jungle Cruise",
+    "year": "2021",
+    "desc": "تستعين الدكتورة ليلي هوتون بمساعدة الربان الحكيم فرانك وولف لأخذها إلى أسفل الأمازون في قاربه المتداعي. معا ، يبحثون عن شجرة قديمة تمتلك القدرة على الشفاء - اكتشاف سيغير مستقبل الطب.",
+    "poster": "https://image.tmdb.org/t/p/w500/r5Hc8aAbALrf8bY3nS8epWMXwnm.jpg",
+    "hdUrl": "https://streamtape.com/e/QePDPzW07yswyw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QePDPzW07yswyw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "فانتازيا كوميديا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Emily Blunt",
+            "image": "https://image.tmdb.org/t/p/w185/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+        },
+        {
+            "name": "Edgar Ramírez",
+            "image": "https://image.tmdb.org/t/p/w185/o9xJcedad1BwpMcgDGtW5dVgzH.jpg"
+        },
+        {
+            "name": "Jack Whitehall",
+            "image": "https://image.tmdb.org/t/p/w185/qBHLpjH3Dad9ZoZsrcMplIPwkHC.jpg"
+        },
+        {
+            "name": "Jesse Plemons",
+            "image": "https://image.tmdb.org/t/p/w185/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+        }
+    ]
+},
+    {
     "title": "2 Guns",
     "year": "2013",
     "desc": "تدور قصة الفيلم حول عميل تابع لإدارة مكافحة المخدرات يدعى بوبي (دينزل واشنطون)، وآخر تابع للمخابرات البحرية الأمريكية يدعى ستاجمان (مارك ويلبرج). ينجحان في سرقة بنك مكسيكي، كلا لحساب منظمته وبعد نجاح المهمة يكتشفان خداع قادتهما فيتعاونان للخروج معا بسلام دون أن يعرف أحدهما هوية الآخر،",
