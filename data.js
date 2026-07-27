@@ -1,5 +1,77 @@
 const globalMoviesData = [
     {
+    "title": "11.22.63",
+    "year": "2016",
+    "desc": "تعيد القصة المشاهدين إلى عالم الستينات في تكساس حيث يكتشف جيك الغموض المحيط بالقاتل المزعوم لي هارفي أوزولد. ولكن مهمته مهددة من قبل أوزولد ووقوعه في الحب ومن قبل الماضي نفسه... الذي لا يريد أن يتغير.",
+    "poster": "https://image.tmdb.org/t/p/w500/vtqHRPXuHIoMxvq2TJvkYXQDGHK.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.8",
+    "genre": "دراما خيال علمي وفانتازيا",
+    "type": "series",
+    "cast": [
+        {
+            "name": "James Franco",
+            "image": "https://image.tmdb.org/t/p/w185/bjmAntHGiibLZixH8nTNVBzaFQn.jpg"
+        },
+        {
+            "name": "Sarah Gadon",
+            "image": "https://image.tmdb.org/t/p/w185/bLug6qeRHu9weD78IWWSVGIEH2M.jpg"
+        },
+        {
+            "name": "Chris Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/j0sQDzaDlnNAdaYhy6HRRAFi22.jpg"
+        },
+        {
+            "name": "Daniel Webber",
+            "image": "https://image.tmdb.org/t/p/w185/ldOZipwbPQP7AXoQTQHXQymwu9q.jpg"
+        },
+        {
+            "name": "Lucy Fry",
+            "image": "https://image.tmdb.org/t/p/w185/lCVsNdEhjmzRij5T2tRkjgktKOW.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/rgJr77JKBpTg2Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/8XP7yGB24MIobje/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/JodxPP77zdHjl3k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/QgrrP09DqlH0YMM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/YwQ3e1rYv0fvXmW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/m9vOvaAWxOhbK3x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/mrp0apQxbaUBGW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/brjgOdwBBKuPARD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Hotel Transylvania: Transformania",
     "year": "2022",
     "desc": "بسبب الماكينة الجديدة التي ابتكرها فان هلسينج، يتحول دارك وعصبته من الوحوش إلى بشر، أما جوني فعلى العكس يصير وحشًا، وعلى أفراد العصبة أن يعودوا لسابق عهدهم قبل فوات اﻷوان.",
