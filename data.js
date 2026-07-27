@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Supergirl",
+    "year": "2026",
+    "desc": "عندما يوجّه عدوّ قاسٍ ولا يرحم ضربة مؤلمة تمسّ حياتها بشكل شخصي، تجد 'كارا زور-إل'، المعروفة باسم سوبرجيرل، نفسها مضطرة للتعاون مع رفيق غير متوقع. وتنطلق معه في رحلة ملحمية عبر الفضاء، تسعى خلالها إلى الانتقام وتحقيق العدالة.",
+    "poster": "https://image.tmdb.org/t/p/w500/qdSh923DHzTh9vWz4pGTbYpkXIy.jpg",
+    "hdUrl": "https://streamtape.com/e/QJq1vQzoJDt0lGx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QJq1vQzoJDt0lGx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Milly Alcock",
+            "image": "https://image.tmdb.org/t/p/w185/cpcNqIORhZlpie8U2wSInhv0Hjf.jpg"
+        },
+        {
+            "name": "Eve Ridley",
+            "image": "https://image.tmdb.org/t/p/w185/vmEfK4PO6rUvTJnN8bbUZrSDgII.jpg"
+        },
+        {
+            "name": "Matthias Schoenaerts",
+            "image": "https://image.tmdb.org/t/p/w185/9mRssCj4si6f6IF3nJ2RB5w0J7g.jpg"
+        },
+        {
+            "name": "Jason Momoa",
+            "image": "https://image.tmdb.org/t/p/w185/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+        },
+        {
+            "name": "David Krumholtz",
+            "image": "https://image.tmdb.org/t/p/w185/2vaimzfyPQVxZGHbQS5M3z3tZw0.jpg"
+        }
+    ]
+},
+    {
     "title": "Warcraft",
     "year": "2016",
     "desc": "يقف عالم أزيروث الهادئ على حافة الحرب حيث تواجه حضارته سلالة مخيفة من الغزاة: المحاربون المهجرون يفرون من منزلهم المحتضر لاستعمار بلد آخر. كما تفتح بوابة لربط العالمين ، يواجه أحد الجيش الدمار والآخر يواجه خطر الانقراض. من جانبين متعارضين ، يتم تعيين اثنين من الأبطال في مسار تصادمي سيحدد مصير عائلتهم وشعبهم ومنزلهم.",
