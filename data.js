@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl مدبلج",
     "year": "2003",
     "desc": "الاستعداد ليتم تفجيرها من الماء.  جاك سبارو ، قرصان حر من القرن 18th ، يتشاجر مع قرصان منافس عازم على نهب بورت رويال. عندما يتم اختطاف ابنة الحاكم ، يقرر سبارو مساعدة حب الفتاة في إنقاذها.",
     "poster": "https://image.tmdb.org/t/p/w500/p25EmvIYLnVaorWVG7Qfb0KMxD7.jpg",
