@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Thunderbolts*",
+    "year": "2025",
+    "desc": "بعد أن وجدوا أنفسهم محاصرين في فخ الموت، يجب على سبعة من المنبوذين المحبطين الشروع في مهمة خطيرة ستجبرهم على مواجهة أظلم زوايا ماضيهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/j7roy1LJdx9hK3Jh8s2F1inqoqL.jpg",
+    "hdUrl": "https://streamtape.com/e/j62bgjDMMMFz1Gy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/j62bgjDMMMFz1Gy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Florence Pugh",
+            "image": "https://image.tmdb.org/t/p/w185/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+        },
+        {
+            "name": "Sebastian Stan",
+            "image": "https://image.tmdb.org/t/p/w185/v20RLWst39klatsqUgSrwHxhwee.jpg"
+        },
+        {
+            "name": "Julia Louis-Dreyfus",
+            "image": "https://image.tmdb.org/t/p/w185/iEfHQNrVbVFesDPjdySom9nqsFg.jpg"
+        },
+        {
+            "name": "Lewis Pullman",
+            "image": "https://image.tmdb.org/t/p/w185/i2wJQ2eaVuTPaA84jzxNtxs54mO.jpg"
+        },
+        {
+            "name": "David Harbour",
+            "image": "https://image.tmdb.org/t/p/w185/qMFtMWlYVtFVyBoBhX5IoA5sN5a.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: Dead Men Tell No Tales مدبلج",
     "year": "2017",
     "desc": "انطلق في مغامرة جديدة تمامًا ، حيث يشعر الكابتن جاك سبارو بأن رياح سوء الحظ تهب بقوة أكبر عندما يهرب البحارة الأشباح بقيادة عدوه القديم ، النقيب الشرير سالازار ، من مثلث الشيطان. يكمن أمل جاك الوحيد في البقاء في البحث عن ترايدنت بوسيدون الأسطوري ، ولكن للعثور عليه ، يجب عليه تشكيل تحالف غير مستقر مع عالم فلك لامع وجميل وشاب عنيد في البحرية البريطانية.",
