@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "title": "Pirates of the Caribbean: On Stranger Tides مدبلج",
     "year": "2011",
     "desc": "في جوء مليء بالمغامرات يلتقي (جاك سبارو) بفتاة غامضة تٌدعى (أنجيليكا). تتوالى الأحداث بينهما عقب أن تجبره على الركوب على متن الباخرة (كوينز آن ريفنج)، وهي باخرة القرصان الشرير (اللحية السوداء) فيجد نفسه في مغامرة محفوفة بالمفاجآت، وبات محتاراً لا يدري إن كان عليه أن يخشى القرصان الشرير أو (آنجيليكا).",
     "poster": "https://image.tmdb.org/t/p/w500/keGfSvCmYj7CvdRx36OdVrAEibE.jpg",
