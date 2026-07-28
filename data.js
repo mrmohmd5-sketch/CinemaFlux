@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Carry-On",
+    "year": "2024",
+    "desc": "يهرع ضابط يعمل في أمن المطار لإفساد مخطط مسافر غامض يجبره على السماح بنقل غرض خطير خلال رحلة جوية عشية عيد الميلاد المجيد.",
+    "poster": "https://image.tmdb.org/t/p/w500/u1ONLkgudUyUVaF22tXAXM8LiVE.jpg",
+    "hdUrl": "https://streamtape.com/e/vYB3k1qZp9s4gKQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vYB3k1qZp9s4gKQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "إثارة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Taron Egerton",
+            "image": "https://image.tmdb.org/t/p/w185/uCaPhyKAQIfEzAWWCYIrO2004CB.jpg"
+        },
+        {
+            "name": "Jason Bateman",
+            "image": "https://image.tmdb.org/t/p/w185/wS22fofYtUf4aGXACFwhkTjUk6a.jpg"
+        },
+        {
+            "name": "Sofia Carson",
+            "image": "https://image.tmdb.org/t/p/w185/aQudxuIAd2UEGQD1YWsdrHH11Kc.jpg"
+        },
+        {
+            "name": "Danielle Deadwyler",
+            "image": "https://image.tmdb.org/t/p/w185/9XIVrT3xzmEnovPiM5ZV7n89c2b.jpg"
+        },
+        {
+            "name": "Theo Rossi",
+            "image": "https://image.tmdb.org/t/p/w185/344QE41Jileu4OE41cmYgBxc5BF.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bourne Legacy",
     "year": "2012",
     "desc": "يواجه العميل الجديد في وكالة المخابرات المركزية ' آرون كروس ' مخاطر الحياة أو الموت التي أثارتها الإجراءات السابقة لجيسون بورن.",
