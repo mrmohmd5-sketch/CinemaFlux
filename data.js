@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Black Phone",
+    "year": "2022",
+    "desc": "لا تتحدث أبدا مع الغرباء.\r فيني بليك ، صبي خجول ولكنه ذكي يبلغ من العمر 13 عاما ، يختطفه قاتل سادي ومحاصر في قبو عازل للصوت حيث الصراخ قليل الفائدة. عندما يبدأ هاتف غير متصل على الحائط في الرنين ، يكتشف فيني أنه يستطيع سماع أصوات ضحايا القاتل السابقين. وهم مصممون على التأكد من أن ما حدث لهم لا يحدث لفيني.",
+    "poster": "https://image.tmdb.org/t/p/w500/cVS9bAvGM0HiyDfiOErwrUB2Iab.jpg",
+    "hdUrl": "https://streamtape.com/e/mwYbMVRGXYcbLQ6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mwYbMVRGXYcbLQ6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mason Thames",
+            "image": "https://image.tmdb.org/t/p/w185/kgEYHw8bblVtwRTkR9TLMOpx5WO.jpg"
+        },
+        {
+            "name": "Madeleine McGraw",
+            "image": "https://image.tmdb.org/t/p/w185/6pCrbeTe4evCfn08sOeukWs6xg9.jpg"
+        },
+        {
+            "name": "Ethan Hawke",
+            "image": "https://image.tmdb.org/t/p/w185/oojD9jSshvUT4t6AUySsBxoekHk.jpg"
+        },
+        {
+            "name": "Jeremy Davies",
+            "image": "https://image.tmdb.org/t/p/w185/tNtcpQnMxzl0OqVDsyA63oAgPbI.jpg"
+        },
+        {
+            "name": "E. Roger Mitchell",
+            "image": "https://image.tmdb.org/t/p/w185/tKvwSO725HZ6cHdL2FzYCobPDzu.jpg"
+        }
+    ]
+},
+    {
     "title": "11.22.63",
     "year": "2016",
     "desc": "تعيد القصة المشاهدين إلى عالم الستينات في تكساس حيث يكتشف جيك الغموض المحيط بالقاتل المزعوم لي هارفي أوزولد. ولكن مهمته مهددة من قبل أوزولد ووقوعه في الحب ومن قبل الماضي نفسه... الذي لا يريد أن يتغير.",
