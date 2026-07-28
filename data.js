@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "year": "2006",
+    "desc": "يشق الكابتن جاك سبارو طريقه للخروج من دين الدم مع الشبحي ديفي جونز لتجنب اللعن الأبدي.",
+    "poster": "https://image.tmdb.org/t/p/w500/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg",
+    "hdUrl": "https://streamtape.com/e/0DreALaxJ6Smz0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/0DreALaxJ6Smz0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "مغامرة فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Johnny Depp",
+            "image": "https://image.tmdb.org/t/p/w185/k2xt6EUxQDwYRKIyI4IBdZxfs8n.jpg"
+        },
+        {
+            "name": "Orlando Bloom",
+            "image": "https://image.tmdb.org/t/p/w185/lwQoA0qJTCZ6l2FH6PjmhRQjiaB.jpg"
+        },
+        {
+            "name": "Keira Knightley",
+            "image": "https://image.tmdb.org/t/p/w185/k69IOXdz8PAvaegAI8WYvQvyyUJ.jpg"
+        },
+        {
+            "name": "Jack Davenport",
+            "image": "https://image.tmdb.org/t/p/w185/shGH0YWJBfiJznidS0f2ZfN056c.jpg"
+        },
+        {
+            "name": "Bill Nighy",
+            "image": "https://image.tmdb.org/t/p/w185/ixFI2YCGNGJfwlpI8iyhvVZRg8C.jpg"
+        }
+    ]
+},
+    {
     "title": "Thunderbolts*",
     "year": "2025",
     "desc": "بعد أن وجدوا أنفسهم محاصرين في فخ الموت، يجب على سبعة من المنبوذين المحبطين الشروع في مهمة خطيرة ستجبرهم على مواجهة أظلم زوايا ماضيهم.",
