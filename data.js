@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Where the Crawdads Sing",
+    "year": "2022",
+    "desc": "في إطار من الدراما والغموض، يتناول العمل قصة امرأة ترعرعت في مستنقعات وأعماق الجنوب، حيث تصبح المشتبه به الرئيسي في جريمة قتل رجل كانت تعرفه يومًا ما.",
+    "poster": "https://image.tmdb.org/t/p/w500/n1el846gLDXfhOvrRCsyvaAOQWv.jpg",
+    "hdUrl": "https://streamtape.com/e/BQozeewJaQHyYGw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BQozeewJaQHyYGw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "دراما غموض رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daisy Edgar-Jones",
+            "image": "https://image.tmdb.org/t/p/w185/4Fdc3VSoVhkkEZNx5Zpz3AU6DYz.jpg"
+        },
+        {
+            "name": "Taylor John Smith",
+            "image": "https://image.tmdb.org/t/p/w185/6dXZRf8ePa1oxQN9a5hFGEjDoI0.jpg"
+        },
+        {
+            "name": "Harris Dickinson",
+            "image": "https://image.tmdb.org/t/p/w185/pqqnYWWHa3Va80EXofXrVlRqIDM.jpg"
+        },
+        {
+            "name": "David Strathairn",
+            "image": "https://image.tmdb.org/t/p/w185/w5YM2cGefPnkoyIXCi2UrCQW53r.jpg"
+        },
+        {
+            "name": "Michael Hyatt",
+            "image": "https://image.tmdb.org/t/p/w185/zXJ1mV2NlZuWYgTj8eTuUFhCgp5.jpg"
+        }
+    ]
+},
+    {
     "title": "Roommates",
     "year": "2026",
     "desc": "عندما تطلب 'ديفون'، الطالبة الخجولة في السنة الجامعية الأولى، من 'سيليست' المرحة أن تكون زميلتها في السكن، سرعان ما تنقلب صداقتهما الوليدة إلى صراع خفي.",
