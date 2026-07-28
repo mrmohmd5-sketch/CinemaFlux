@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Pirates of the Caribbean: At World's End",
+    "title": "Pirates of the Caribbean: At World's End مدبلج",
     "year": "2007",
     "desc": "عاد الكابتن باربوسا ، الذي كان يعتقد منذ فترة طويلة أنه قد مات ، إلى الحياة ويتجه إلى حافة الأرض مع ويل تيرنر وإليزابيث سوان. لكن لا شيء كما يبدو.",
     "poster": "https://image.tmdb.org/t/p/w500/jGWpG4YhpQwVmjyHEGkxEkeRf0S.jpg",
