@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Jumanji",
+    "year": "1995",
+    "desc": "عندما يكتشف الأشقاء جودي وبيتر لعبة لوحية ساحرة تفتح الباب أمام عالم سحري ، فإنهم يدعون آلان عن غير قصد - وهو شخص بالغ محاصر داخل اللعبة لمدة 26 عامًا - إلى غرفة المعيشة. أمل آلان الوحيد في الحرية هو إنهاء اللعبة ، الأمر الذي يثبت أنه محفوف بالمخاطر لأن الثلاثة يجدون أنفسهم يهربون من وحيد القرن العملاق والقرود الشريرة ومخلوقات مرعبة أخرى.",
+    "poster": "https://image.tmdb.org/t/p/w500/bdHG5Mo83VPobeZZdlSz0Y7HQHB.jpg",
+    "hdUrl": "https://streamtape.com/e/xZwmmXrmdKTkB3X/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/xZwmmXrmdKTkB3X/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "مغامرة فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Robin Williams",
+            "image": "https://image.tmdb.org/t/p/w185/iYdeP6K0qz44Wg2Nw9LPJGMBkQ5.jpg"
+        },
+        {
+            "name": "Kirsten Dunst",
+            "image": "https://image.tmdb.org/t/p/w185/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg"
+        },
+        {
+            "name": "Bradley Pierce",
+            "image": "https://image.tmdb.org/t/p/w185/j6iW0vVA23GQniAPSYI6mi4hiEW.jpg"
+        },
+        {
+            "name": "Bonnie Hunt",
+            "image": "https://image.tmdb.org/t/p/w185/tT9C6uLztgN8OxJULq6F9iEzqlA.jpg"
+        },
+        {
+            "name": "Jonathan Hyde",
+            "image": "https://image.tmdb.org/t/p/w185/1uhT5uzPkBRCb57RtR6C9MvgteC.jpg"
+        }
+    ]
+},
+    {
     "title": "طلقني",
     "year": "2025",
     "desc": "تتوتر العلاقة بين زوجين وتنتهي بالطلاق، لكن يواجه الزوج أزمة مالية حادّة تدفعه إلى طلب مساعدة طليقته لإنقاذه من السجن، فيخوضان معًا رحلة مليئة بالتحديات والمواقف الطريفة، ويكتشفان خلالها مشاعرهما الحقيقية.",
