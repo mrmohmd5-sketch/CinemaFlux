@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Angry Birds Movie 2",
+    "year": "2019",
+    "desc": "تأخذ الطيور الغاضبة التي لا تطير والخنازير الخضراء المخططة لحومها إلى المستوى التالي في فيلم الطيور الغاضبة 2 ! عندما يظهر تهديد جديد يعرض كلاً من جزيرة الطيور والخنازير للخطر ، يقوم أحمر  و تشوك و قنبلة و النسر العظيم  بتجنيد أخت تشوك الفضية  والفريق مع الخنازير ليونارد  ومساعده كورتني  وتيكبيغ جاري  للتوصل إلى هدنة غير مستقرة وتشكيل فريق فائق غير محتمل لإنقاذ منازلهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/btjbONdMaFfqnExZAAy2pHc9DUE.jpg",
+    "hdUrl": "https://streamtape.com/e/zD06z67gj7CYPl9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zD06z67gj7CYPl9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رسوم متحركة مغامرة كوميديا عائلي حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Sudeikis",
+            "image": "https://image.tmdb.org/t/p/w185/uuacnP9DOHMsmj8FhBi0cWWDgrn.jpg"
+        },
+        {
+            "name": "Josh Gad",
+            "image": "https://image.tmdb.org/t/p/w185/p9hWNRwrVEBpl8We2bxLMHkk5Mj.jpg"
+        },
+        {
+            "name": "Danny McBride",
+            "image": "https://image.tmdb.org/t/p/w185/sVFPzl2t5QlGudQKWAszIWZCXZv.jpg"
+        },
+        {
+            "name": "Leslie Jones",
+            "image": "https://image.tmdb.org/t/p/w185/1rBpNNijHRg4Ha3PxlpOjcbPVeN.jpg"
+        },
+        {
+            "name": "Bill Hader",
+            "image": "https://image.tmdb.org/t/p/w185/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg"
+        }
+    ]
+},
+    {
     "title": "Me Before You",
     "year": "2016",
     "desc": "فتاة بلدة صغيرة عالقة بين وظائف مسدودة. يصبح رجل ناجح رفيع المستوى مقيدًا على كرسي متحرك بعد وقوع حادث. يقرر الرجل أن حياته لا تستحق العيش حتى يتم تعيين الفتاة لمدة ستة أشهر لتكون القائم بأعماله الجديدة. عالمان منفصلان ومحاصران بسبب الظروف ، بدأ الاثنان بداية صعبة. لكن الفتاة مصممة على أن تثبت للرجل أن الحياة تستحق العيش ، وبينما يشرعان في سلسلة من المغامرات معًا ، يجد كل منهما عالمه يتغير بطرق لا يمكن لأي منهما أن يتخيلها.",
