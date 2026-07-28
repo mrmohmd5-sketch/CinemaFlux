@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Life List",
+    "year": "2025",
+    "desc": "حين ترسلها والدتها في مهمة لإنهاء قائمة أمنياتٍ دوّنتها وهي في مرحلة المراهقة، تكشف امرأة شابة عن أسرار العائلة وتعثر على الحب والرومانسية... وتعيد اكتشاف ذاتها.",
+    "poster": "https://image.tmdb.org/t/p/w500/5fg98cVo7da7OIK45csdLSd4NaU.jpg",
+    "hdUrl": "https://streamtape.com/e/4qA1ab74PLTK4GG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4qA1ab74PLTK4GG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رومنسية كوميديا دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sofia Carson",
+            "image": "https://image.tmdb.org/t/p/w185/aQudxuIAd2UEGQD1YWsdrHH11Kc.jpg"
+        },
+        {
+            "name": "Kyle Allen",
+            "image": "https://image.tmdb.org/t/p/w185/utHUARepKhbw4JyDVZLhcJyKYxj.jpg"
+        },
+        {
+            "name": "Sebastian de Souza",
+            "image": "https://image.tmdb.org/t/p/w185/aueQZSQghquLSZ4qjRQPO4GGAMS.jpg"
+        },
+        {
+            "name": "Connie Britton",
+            "image": "https://image.tmdb.org/t/p/w185/lxfHf4tTx5NukbemcJjmgqqFAiV.jpg"
+        },
+        {
+            "name": "José Zúñiga",
+            "image": "https://image.tmdb.org/t/p/w185/r6nFkJkMHP9tFDohwfav9Bf2rCR.jpg"
+        }
+    ]
+},
+    {
     "title": "Thrash",
     "year": "2026",
     "desc": "عندما يضرب إعصار مدمر بلدة ساحلية، يجد السكان أنفسهم في صراع للنجاة من أمواج المياه المتصاعدة، التي تعجّ بأسماك القرش الجائعة.",
