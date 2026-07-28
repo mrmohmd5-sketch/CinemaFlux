@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Bourne Legacy",
+    "year": "2012",
+    "desc": "يواجه العميل الجديد في وكالة المخابرات المركزية ' آرون كروس ' مخاطر الحياة أو الموت التي أثارتها الإجراءات السابقة لجيسون بورن.",
+    "poster": "https://image.tmdb.org/t/p/w500/1aExL5DTGHj25ZfIC3dDwS84RWi.jpg",
+    "hdUrl": "https://streamtape.com/e/akYBozDmpmFWm2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/akYBozDmpmFWm2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jeremy Renner",
+            "image": "https://image.tmdb.org/t/p/w185/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+        },
+        {
+            "name": "Rachel Weisz",
+            "image": "https://image.tmdb.org/t/p/w185/9tfHL5tholha1YF6bSKt422ETPM.jpg"
+        },
+        {
+            "name": "Edward Norton",
+            "image": "https://image.tmdb.org/t/p/w185/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg"
+        },
+        {
+            "name": "Stacy Keach",
+            "image": "https://image.tmdb.org/t/p/w185/gtYepb7Vu9bXcdZ62PXm56KalNl.jpg"
+        },
+        {
+            "name": "Dennis Boutsikaris",
+            "image": "https://image.tmdb.org/t/p/w185/eholEaSnVKzse1l7ph6hDsfTTi7.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bourne Supremacy",
     "year": "2004",
     "desc": "بعد إجبار قاتل محترف 'جيسون بورن' على الخروج من مخبئه، يجد نفسه مقحمًا في تحالفات سرية، ومكائد وإطلاق نيران في هذا الجزء الجاذب للانتباه.",
