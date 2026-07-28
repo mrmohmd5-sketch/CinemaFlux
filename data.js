@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "title": "Pirates of the Caribbean: Dead Men Tell No Tales مدبلج",
     "year": "2017",
     "desc": "انطلق في مغامرة جديدة تمامًا ، حيث يشعر الكابتن جاك سبارو بأن رياح سوء الحظ تهب بقوة أكبر عندما يهرب البحارة الأشباح بقيادة عدوه القديم ، النقيب الشرير سالازار ، من مثلث الشيطان. يكمن أمل جاك الوحيد في البقاء في البحث عن ترايدنت بوسيدون الأسطوري ، ولكن للعثور عليه ، يجب عليه تشكيل تحالف غير مستقر مع عالم فلك لامع وجميل وشاب عنيد في البحرية البريطانية.",
     "poster": "https://image.tmdb.org/t/p/w500/6lAPOAFYFWIO3SQRemEY2wInQMC.jpg",
