@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Hating Game",
+    "year": "2021",
+    "desc": "عاقدة العزم على تحقيق النجاح المهني دون المساس بأخلاقياتها، تشرع لوسي في لعبة قاسية من الحنكة الواحدة ضد العدو البارد والفعال جوشوا، وهو تنافس معقد بسبب انجذابها المتزايد إليه.",
+    "poster": "https://image.tmdb.org/t/p/w500/prbZxJxGcy07y60eq8lCGMciTYz.jpg",
+    "hdUrl": "https://streamtape.com/e/L34Pzzmpr7SR1z3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/L34Pzzmpr7SR1z3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "دراما كوميديا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lucy Hale",
+            "image": "https://image.tmdb.org/t/p/w185/v8R89A0INFJmh87SwIofadFiSCa.jpg"
+        },
+        {
+            "name": "Austin Stowell",
+            "image": "https://image.tmdb.org/t/p/w185/At09XQpVXnChgedNsxu4ceR5W9i.jpg"
+        },
+        {
+            "name": "Corbin Bernsen",
+            "image": "https://image.tmdb.org/t/p/w185/zkftLlEO5fmKmcKienRKw9Gx0U9.jpg"
+        },
+        {
+            "name": "Sakina Jaffrey",
+            "image": "https://image.tmdb.org/t/p/w185/9U6vixMcwkj8aEffy64UqsklHd.jpg"
+        },
+        {
+            "name": "Damon Daunno",
+            "image": "https://image.tmdb.org/t/p/w185/74IUBae1or44g9dRDXV9auVqzvW.jpg"
+        }
+    ]
+},
+    {
     "title": "P.S. I Love You",
     "year": "2007",
     "desc": "تدور أحداث الفيلم حول أرملة شابة تعاني من ألم الفقد بعد وفاة زوجها لتكتشف أنه ترك لها مجموعة من الرسائل الملهمة لمساعدتها في تجاوز حزنها وبدء حياة جديدة .",
