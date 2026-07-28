@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "TRON: Ares",
+    "year": "2025",
+    "desc": "برنامجٌ متطوّرٌ للغاية يُدعى 'آريس' يُرسَل من العالم الرقمي إلى العالم الحقيقي في مهمةٍ خطيرة، ليمثل أولَ اتصالٍ للبشرية مع كائناتٍ ذكيةٍ اصطناعية.",
+    "poster": "https://image.tmdb.org/t/p/w500/ird8cun3DvW33ruCWmuz18xWdAl.jpg",
+    "hdUrl": "https://streamtape.com/e/PLdx0lyamrs0ja3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/PLdx0lyamrs0ja3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "خيال علمي مغامرة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jared Leto",
+            "image": "https://image.tmdb.org/t/p/w185/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg"
+        },
+        {
+            "name": "Greta Lee",
+            "image": "https://image.tmdb.org/t/p/w185/6SydTis4XUcovlwIGskT59JowLX.jpg"
+        },
+        {
+            "name": "Evan Peters",
+            "image": "https://image.tmdb.org/t/p/w185/m9okq20ca2Md38i2ekJeKs3vTwa.jpg"
+        },
+        {
+            "name": "Gillian Anderson",
+            "image": "https://image.tmdb.org/t/p/w185/3Ny8ZYahb33vpqNEPNCE2IOXPew.jpg"
+        },
+        {
+            "name": "Jodie Turner-Smith",
+            "image": "https://image.tmdb.org/t/p/w185/801hOIFSiYfakVDkX0U3vEAHAMt.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: Dead Man's Chest مدبلج",
     "year": "2006",
     "desc": "يشق الكابتن جاك سبارو طريقه للخروج من دين الدم مع الشبحي ديفي جونز لتجنب اللعن الأبدي.",
