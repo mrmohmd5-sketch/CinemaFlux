@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "P.S. I Love You",
+    "year": "2007",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/x6M9nlTpgpI4AOw0tMkOAVbhL5z.jpg",
+    "hdUrl": "https://streamtape.com/e/RDZ12RK8VxIdRZy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/RDZ12RK8VxIdRZy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hilary Swank",
+            "image": "https://image.tmdb.org/t/p/w185/uin6aAehUGpPCiJCaSjZG8B7M7d.jpg"
+        },
+        {
+            "name": "Gerard Butler",
+            "image": "https://image.tmdb.org/t/p/w185/i54XoxYieuff2w6MwyfwVUBvmR0.jpg"
+        },
+        {
+            "name": "Lisa Kudrow",
+            "image": "https://image.tmdb.org/t/p/w185/ziatnwJRiBJIcc8jlk6xoClhfOy.jpg"
+        },
+        {
+            "name": "Harry Connick Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/cMagjJsa0nSZzEueihV721dgxNn.jpg"
+        },
+        {
+            "name": "Gina Gershon",
+            "image": "https://image.tmdb.org/t/p/w185/khuZCNBmgNJ5jC4ejCkcsc8k79p.jpg"
+        }
+    ]
+},
+    {
     "title": "Purple Hearts",
     "year": "2022",
     "desc": "توافق المغنية وكاتبة الأغاني المكافحة 'كاسي' ('صوفيا كارسون') وجندي البحرية المضطرب 'لوك' ('نيكولاس غاليتزين') على الزواج من أجل مصالح عسكرية فقط، على الرغم من الاختلافات المتعدّدة بينهما. ولكن حين تحلّ المأساة عليهما، يتلاشى الخطّ الفاصل ما بين حقيقتهما وما يُظهرانه.",
