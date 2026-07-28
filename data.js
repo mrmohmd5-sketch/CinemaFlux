@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Angry Birds Movie",
+    "year": "2016",
+    "desc": "بعد الحكم عليه بدروس السيطرة على الغضب، يصبح 'ريد' المشاكس بطلًا يدرّب زملاءه الطيور للتنفيس عن غضبها الداخلي فور اجتياح الخنازير لجزيرتها.",
+    "poster": "https://image.tmdb.org/t/p/w500/7voZwYQUD8qrFJzkbYRrep3e2IW.jpg",
+    "hdUrl": "https://streamtape.com/e/4BMMXlR611uKwAA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4BMMXlR611uKwAA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "رسوم متحركة مغامرة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Sudeikis",
+            "image": "https://image.tmdb.org/t/p/w185/uuacnP9DOHMsmj8FhBi0cWWDgrn.jpg"
+        },
+        {
+            "name": "Josh Gad",
+            "image": "https://image.tmdb.org/t/p/w185/p9hWNRwrVEBpl8We2bxLMHkk5Mj.jpg"
+        },
+        {
+            "name": "Danny McBride",
+            "image": "https://image.tmdb.org/t/p/w185/sVFPzl2t5QlGudQKWAszIWZCXZv.jpg"
+        },
+        {
+            "name": "Maya Rudolph",
+            "image": "https://image.tmdb.org/t/p/w185/bpEVMFMyHEQ8wLdii9WKB279w8p.jpg"
+        },
+        {
+            "name": "Bill Hader",
+            "image": "https://image.tmdb.org/t/p/w185/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: On Stranger Tides",
     "year": "2011",
     "desc": "في جوء مليء بالمغامرات يلتقي (جاك سبارو) بفتاة غامضة تٌدعى (أنجيليكا). تتوالى الأحداث بينهما عقب أن تجبره على الركوب على متن الباخرة (كوينز آن ريفنج)، وهي باخرة القرصان الشرير (اللحية السوداء) فيجد نفسه في مغامرة محفوفة بالمفاجآت، وبات محتاراً لا يدري إن كان عليه أن يخشى القرصان الشرير أو (آنجيليكا).",
