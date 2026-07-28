@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Thrash",
+    "year": "2026",
+    "desc": "عندما يضرب إعصار مدمر بلدة ساحلية، يجد السكان أنفسهم في صراع للنجاة من أمواج المياه المتصاعدة، التي تعجّ بأسماك القرش الجائعة.",
+    "poster": "https://image.tmdb.org/t/p/w500/j4tXlCZgpc7GEwpffxf2jmfZtH5.jpg",
+    "hdUrl": "https://streamtape.com/e/lPXmroRLVdH7JKZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/lPXmroRLVdH7JKZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.1",
+    "genre": "رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Phoebe Dynevor",
+            "image": "https://image.tmdb.org/t/p/w185/gvriCFuwIvOoZyYph5YkYGZyFR9.jpg"
+        },
+        {
+            "name": "Whitney Peak",
+            "image": "https://image.tmdb.org/t/p/w185/4m7VqGrpiMk4w5KN2I7OVbT7ppn.jpg"
+        },
+        {
+            "name": "Djimon Hounsou",
+            "image": "https://image.tmdb.org/t/p/w185/tpvtxxvCx2Mb5DV632hmuYlHoiY.jpg"
+        },
+        {
+            "name": "Alyla Browne",
+            "image": "https://image.tmdb.org/t/p/w185/1aAyhOWIP1tnIZwmoMpENvpyQff.jpg"
+        },
+        {
+            "name": "Stacy Clausen",
+            "image": "https://image.tmdb.org/t/p/w185/8zwuEGXi26Yg9FQ29MntI5tWRk2.jpg"
+        }
+    ]
+},
+    {
     "title": "Hansel & Gretel: Witch Hunters",
     "year": "2013",
     "desc": "تدور أحداث الفيلم بعد حوالى 15 عامًا على الحادثة المرعبة بمنزل (جينجير بيرد)، حيث الآن أصبح كلا من الشقيقين (هانسيل) و(جريتيل) يشكلان فريق قوي لصيد الساحرات، حيث يتم تعقبهم، والتخلص منهم في جميع أنحاء العالم، بالطبع مع كثير من المغامرات والمطاردات والرعب أحيانًا.",
