@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Jumanji: The Next Level",
+    "year": "2019",
+    "desc": "جومانجي: المستوى التالي\r 2019 | كوميديا, أكشن\r في جومانجي: المستوى التالي ، عادت العصابة لكن اللعبة تغيرت. عندما يعودون إلى جومانجي لإنقاذ أحدهم ، يكتشفون أنه لا يوجد شيء كما يتوقعون. سيتعين على اللاعبين شجاعة الأجزاء المجهولة وغير المكتشفة ، من الصحاري القاحلة إلى الجبال الثلجية ، من أجل الهروب من أخطر لعبة في العالم.",
+    "poster": "https://image.tmdb.org/t/p/w500/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg",
+    "hdUrl": "https://streamtape.com/e/e0bOl37YvLCYR8j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/e0bOl37YvLCYR8j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "مغامرة كوميديا فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Kevin Hart",
+            "image": "https://image.tmdb.org/t/p/w185/byiNydUlM6oP8diA7WMvYbNM7a1.jpg"
+        },
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Karen Gillan",
+            "image": "https://image.tmdb.org/t/p/w185/qYx8CflXVq48nGKX1IJsDrAj0sT.jpg"
+        },
+        {
+            "name": "Awkwafina",
+            "image": "https://image.tmdb.org/t/p/w185/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+        }
+    ]
+},
+    {
     "title": "Jumanji",
     "year": "1995",
     "desc": "عندما يكتشف الأشقاء جودي وبيتر لعبة لوحية ساحرة تفتح الباب أمام عالم سحري ، فإنهم يدعون آلان عن غير قصد - وهو شخص بالغ محاصر داخل اللعبة لمدة 26 عامًا - إلى غرفة المعيشة. أمل آلان الوحيد في الحرية هو إنهاء اللعبة ، الأمر الذي يثبت أنه محفوف بالمخاطر لأن الثلاثة يجدون أنفسهم يهربون من وحيد القرن العملاق والقرود الشريرة ومخلوقات مرعبة أخرى.",
