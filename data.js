@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Roommates",
+    "year": "2026",
+    "desc": "عندما تطلب 'ديفون'، الطالبة الخجولة في السنة الجامعية الأولى، من 'سيليست' المرحة أن تكون زميلتها في السكن، سرعان ما تنقلب صداقتهما الوليدة إلى صراع خفي.",
+    "poster": "https://image.tmdb.org/t/p/w500/eW1s6omXIfVkTlmKVe9y9Dwwt4u.jpg",
+    "hdUrl": "https://streamtape.com/e/kP3yZVxXBXCOKOW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/kP3yZVxXBXCOKOW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sadie Sandler",
+            "image": "https://image.tmdb.org/t/p/w185/kpAxORM360IVpMNOhCUEwGX4bQ7.jpg"
+        },
+        {
+            "name": "Chloe East",
+            "image": "https://image.tmdb.org/t/p/w185/dttzTZRYI84kW98NH16Z101czCe.jpg"
+        },
+        {
+            "name": "Billy Bryk",
+            "image": "https://image.tmdb.org/t/p/w185/aMJx13CGtBxfAaHE8G2BqY15sou.jpg"
+        },
+        {
+            "name": "Sarah Sherman",
+            "image": "https://image.tmdb.org/t/p/w185/5BwGUREK2H6acSH5Inqmy2hFpGY.jpg"
+        },
+        {
+            "name": "Martin Herlihy",
+            "image": "https://image.tmdb.org/t/p/w185/3SxAueQPPc27P7zJoUmj0QMYdOK.jpg"
+        }
+    ]
+},
+    {
     "title": "Carry-On",
     "year": "2024",
     "desc": "يهرع ضابط يعمل في أمن المطار لإفساد مخطط مسافر غامض يجبره على السماح بنقل غرض خطير خلال رحلة جوية عشية عيد الميلاد المجيد.",
