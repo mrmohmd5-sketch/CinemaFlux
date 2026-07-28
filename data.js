@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Bourne Supremacy",
+    "year": "2004",
+    "desc": "بعد إجبار قاتل محترف 'جيسون بورن' على الخروج من مخبئه، يجد نفسه مقحمًا في تحالفات سرية، ومكائد وإطلاق نيران في هذا الجزء الجاذب للانتباه.",
+    "poster": "https://image.tmdb.org/t/p/w500/jupG9sFT64YwM8PSkwkUD2wHcYD.jpg",
+    "hdUrl": "https://streamtape.com/e/Q3MKo2Z4r8c0xL1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Q3MKo2Z4r8c0xL1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matt Damon",
+            "image": "https://image.tmdb.org/t/p/w185/aCvBXTAR9B1qRjIRzMBYhhbm1fR.jpg"
+        },
+        {
+            "name": "Franka Potente",
+            "image": "https://image.tmdb.org/t/p/w185/aU6f9UemZsTkqKEG4l77zf6masg.jpg"
+        },
+        {
+            "name": "Brian Cox",
+            "image": "https://image.tmdb.org/t/p/w185/scSjbFCTRngXlkJRoKptM5kQGw7.jpg"
+        },
+        {
+            "name": "Julia Stiles",
+            "image": "https://image.tmdb.org/t/p/w185/okcblz7pqeapHorLvxtxd3iNNic.jpg"
+        },
+        {
+            "name": "Karl Urban",
+            "image": "https://image.tmdb.org/t/p/w185/7Y96dAfg0HcFrcLjlD5eD9N0uj4.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bourne Identity",
     "year": "2002",
     "desc": "يتم إنقاذ فاقد الذاكرة من قبل طاقم قارب صيد إيطالي عندما يطفو في البحر. ليس لديه هوية ولا ماضٍ ، لكنه يمتلك سلسلة من المواهب الاستثنائية في الفنون اللغوية والعسكرية والدفاع عن النفس التي تشير إلى وجود مهنة تنطوي على مخاطر. وهو مرتبك ومربك ، يجري بحثًا محمومًا لاكتشاف هويته ولماذا اتخذت حياته منعطفًا خطيرًا.",
