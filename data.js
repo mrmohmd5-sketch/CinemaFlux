@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "P.S. I Love You",
     "year": "2007",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول أرملة شابة تعاني من ألم الفقد بعد وفاة زوجها لتكتشف أنه ترك لها مجموعة من الرسائل الملهمة لمساعدتها في تجاوز حزنها وبدء حياة جديدة .",
     "poster": "https://image.tmdb.org/t/p/w500/x6M9nlTpgpI4AOw0tMkOAVbhL5z.jpg",
     "hdUrl": "https://streamtape.com/e/RDZ12RK8VxIdRZy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/RDZ12RK8VxIdRZy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
