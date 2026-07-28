@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "My Oxford Year",
+    "year": "2025",
+    "desc": "تحقق شابة أمريكية طموحة حلم الالتحاق بجامعة 'أكسفورد'، وهناك تقع في حب بريطاني جذاب يُخفي سرًا قد يقلب مخططات حياتها المثالية رأسًا على عقب.",
+    "poster": "https://image.tmdb.org/t/p/w500/jrhXbIOFingzdLjkccjg9vZnqIp.jpg",
+    "hdUrl": "https://streamtape.com/e/BbmyYj413OtybOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BbmyYj413OtybOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رومنسية كوميديا دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sofia Carson",
+            "image": "https://image.tmdb.org/t/p/w185/aQudxuIAd2UEGQD1YWsdrHH11Kc.jpg"
+        },
+        {
+            "name": "Corey Mylchreest",
+            "image": "https://image.tmdb.org/t/p/w185/nP7HMr5VLNLbHqKj0Sn0g9rIL4H.jpg"
+        },
+        {
+            "name": "Esmé Kingdom",
+            "image": "https://image.tmdb.org/t/p/w185/2rRLuJXKOJ3ONlwa2rUwzbplHWt.jpg"
+        },
+        {
+            "name": "Harry Trevaldwyn",
+            "image": "https://image.tmdb.org/t/p/w185/uYHekOiCHZoob1tW11vTceplA2e.jpg"
+        },
+        {
+            "name": "Dougray Scott",
+            "image": "https://image.tmdb.org/t/p/w185/3zkotNLAUzfT2GOQM2BMIfI3yTb.jpg"
+        }
+    ]
+},
+    {
     "title": "The Angry Birds Movie 2",
     "year": "2019",
     "desc": "تأخذ الطيور الغاضبة التي لا تطير والخنازير الخضراء المخططة لحومها إلى المستوى التالي في فيلم الطيور الغاضبة 2 ! عندما يظهر تهديد جديد يعرض كلاً من جزيرة الطيور والخنازير للخطر ، يقوم أحمر  و تشوك و قنبلة و النسر العظيم  بتجنيد أخت تشوك الفضية  والفريق مع الخنازير ليونارد  ومساعده كورتني  وتيكبيغ جاري  للتوصل إلى هدنة غير مستقرة وتشكيل فريق فائق غير محتمل لإنقاذ منازلهم.",
