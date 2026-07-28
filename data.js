@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Purple Hearts",
+    "year": "2022",
+    "desc": "توافق المغنية وكاتبة الأغاني المكافحة 'كاسي' ('صوفيا كارسون') وجندي البحرية المضطرب 'لوك' ('نيكولاس غاليتزين') على الزواج من أجل مصالح عسكرية فقط، على الرغم من الاختلافات المتعدّدة بينهما. ولكن حين تحلّ المأساة عليهما، يتلاشى الخطّ الفاصل ما بين حقيقتهما وما يُظهرانه.",
+    "poster": "https://image.tmdb.org/t/p/w500/lROoLTtbt6QkYLnvccBpigCf4Yn.jpg",
+    "hdUrl": "https://streamtape.com/e/eo1qGpG3QgIYbWG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eo1qGpG3QgIYbWG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sofia Carson",
+            "image": "https://image.tmdb.org/t/p/w185/aQudxuIAd2UEGQD1YWsdrHH11Kc.jpg"
+        },
+        {
+            "name": "Nicholas Galitzine",
+            "image": "https://image.tmdb.org/t/p/w185/hG4rH7eBMs117746bBOd8fUa4PA.jpg"
+        },
+        {
+            "name": "John Harlan Kim",
+            "image": "https://image.tmdb.org/t/p/w185/hnGA5MwUfNJzzqk1korHzXTILWN.jpg"
+        },
+        {
+            "name": "Chosen Jacobs",
+            "image": "https://image.tmdb.org/t/p/w185/y7Aho0JOSIyT6SH7nyhheRibPCf.jpg"
+        },
+        {
+            "name": "Anthony Ippolito",
+            "image": "https://image.tmdb.org/t/p/w185/jtcr1ln5QcNWwLvVNlHYOM6zGGN.jpg"
+        }
+    ]
+},
+    {
     "title": "Where the Crawdads Sing",
     "year": "2022",
     "desc": "في إطار من الدراما والغموض، يتناول العمل قصة امرأة ترعرعت في مستنقعات وأعماق الجنوب، حيث تصبح المشتبه به الرئيسي في جريمة قتل رجل كانت تعرفه يومًا ما.",
