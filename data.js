@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Gone Girl",
+    "year": "2014",
+    "desc": "أنت لا تعرف ما لديك 'حتى ...  بعد أن أصبح اختفاء زوجته محور سيرك إعلامي مكثف ، يرى الرجل أن الأضواء تتجه إليه عندما يشتبه في أنه قد لا يكون بريئا.",
+    "poster": "https://image.tmdb.org/t/p/w500/9RVcjrS946kkIGYRNdmIbwQcrkt.jpg",
+    "hdUrl": "https://streamtape.com/e/MYPQDwqGQmH1kp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/MYPQDwqGQmH1kp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "غموض إثارة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Affleck",
+            "image": "https://image.tmdb.org/t/p/w185/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg"
+        },
+        {
+            "name": "Rosamund Pike",
+            "image": "https://image.tmdb.org/t/p/w185/8ObNklHDi2hjdz0ayzJFB9jtqzm.jpg"
+        },
+        {
+            "name": "Neil Patrick Harris",
+            "image": "https://image.tmdb.org/t/p/w185/r2twLWLwDpKJ7JyhWsD1YsL7rJV.jpg"
+        },
+        {
+            "name": "Tyler Perry",
+            "image": "https://image.tmdb.org/t/p/w185/8KU0OizemVLrERXt5HJIa0PAkIN.jpg"
+        },
+        {
+            "name": "Carrie Coon",
+            "image": "https://image.tmdb.org/t/p/w185/vWChiHhXFjZVKC6HbACyyRFmdW4.jpg"
+        }
+    ]
+},
+    {
     "title": "The Life List",
     "year": "2025",
     "desc": "حين ترسلها والدتها في مهمة لإنهاء قائمة أمنياتٍ دوّنتها وهي في مرحلة المراهقة، تكشف امرأة شابة عن أسرار العائلة وتعثر على الحب والرومانسية... وتعيد اكتشاف ذاتها.",
