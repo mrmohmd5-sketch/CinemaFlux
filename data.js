@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Pirates of the Caribbean: At World's End",
+    "year": "2007",
+    "desc": "عاد الكابتن باربوسا ، الذي كان يعتقد منذ فترة طويلة أنه قد مات ، إلى الحياة ويتجه إلى حافة الأرض مع ويل تيرنر وإليزابيث سوان. لكن لا شيء كما يبدو.",
+    "poster": "https://image.tmdb.org/t/p/w500/jGWpG4YhpQwVmjyHEGkxEkeRf0S.jpg",
+    "hdUrl": "https://streamtape.com/e/DXblgVAGplCk04q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DXblgVAGplCk04q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "مغامرة فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Johnny Depp",
+            "image": "https://image.tmdb.org/t/p/w185/k2xt6EUxQDwYRKIyI4IBdZxfs8n.jpg"
+        },
+        {
+            "name": "Geoffrey Rush",
+            "image": "https://image.tmdb.org/t/p/w185/npXFjaFQzBNroCEPllGPTZ5IisA.jpg"
+        },
+        {
+            "name": "Orlando Bloom",
+            "image": "https://image.tmdb.org/t/p/w185/lwQoA0qJTCZ6l2FH6PjmhRQjiaB.jpg"
+        },
+        {
+            "name": "Keira Knightley",
+            "image": "https://image.tmdb.org/t/p/w185/k69IOXdz8PAvaegAI8WYvQvyyUJ.jpg"
+        },
+        {
+            "name": "Jack Davenport",
+            "image": "https://image.tmdb.org/t/p/w185/shGH0YWJBfiJznidS0f2ZfN056c.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: Dead Man's Chest",
     "year": "2006",
     "desc": "يشق الكابتن جاك سبارو طريقه للخروج من دين الدم مع الشبحي ديفي جونز لتجنب اللعن الأبدي.",
