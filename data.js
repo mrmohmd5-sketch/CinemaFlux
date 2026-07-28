@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "The Angry Birds Movie",
+    "title": "The Angry Birds Movie مدبلج",
     "year": "2016",
     "desc": "بعد الحكم عليه بدروس السيطرة على الغضب، يصبح 'ريد' المشاكس بطلًا يدرّب زملاءه الطيور للتنفيس عن غضبها الداخلي فور اجتياح الخنازير لجزيرتها.",
     "poster": "https://image.tmdb.org/t/p/w500/7voZwYQUD8qrFJzkbYRrep3e2IW.jpg",
