@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Men in Black 3",
+    "year": "2012",
+    "desc": "عاد الوكلاء J و K ... في الوقت المناسب.  لقد رأى J بعض الأشياء التي لا يمكن تفسيرها خلال 15 عامًا مع Men in Black ، لكن لا شيء ، ولا حتى الفضائيين ، يحيره بقدر ما يحير شريكه الساخر والمتحفظ.  ولكن عندما تتعرض حياة K ومصير الكوكب للخطر ، سيتعين على العميل J العودة في الوقت المناسب لوضع الأمور في نصابها الصحيح.  يكتشف J أن هناك أسرارًا للكون لم يخبره بها K أبدًا - أسرار ستكشف عن نفسها عندما يتعاون مع العميل K الشاب لإنقاذ شريكه والوكالة ومستقبل البشرية.",
+    "poster": "https://image.tmdb.org/t/p/w500/90DdoEStzeObs96fsYf4GG544iN.jpg",
+    "hdUrl": "https://streamtape.com/e/wY13PkY8v1iJ9BL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wY13PkY8v1iJ9BL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة كوميديا خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Will Smith",
+            "image": "https://image.tmdb.org/t/p/w185/8Hbr3ndKeGX8OjSW1SjUbJpbfzh.jpg"
+        },
+        {
+            "name": "Tommy Lee Jones",
+            "image": "https://image.tmdb.org/t/p/w185/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg"
+        },
+        {
+            "name": "Josh Brolin",
+            "image": "https://image.tmdb.org/t/p/w185/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+            "name": "Jemaine Clement",
+            "image": "https://image.tmdb.org/t/p/w185/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg"
+        },
+        {
+            "name": "Emma Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/zQ0hWHh3tzaOOziPbABQI8s9WCu.jpg"
+        }
+    ]
+},
+    {
     "title": "The Black Phone",
     "year": "2022",
     "desc": "لا تتحدث أبدا مع الغرباء.\r فيني بليك ، صبي خجول ولكنه ذكي يبلغ من العمر 13 عاما ، يختطفه قاتل سادي ومحاصر في قبو عازل للصوت حيث الصراخ قليل الفائدة. عندما يبدأ هاتف غير متصل على الحائط في الرنين ، يكتشف فيني أنه يستطيع سماع أصوات ضحايا القاتل السابقين. وهم مصممون على التأكد من أن ما حدث لهم لا يحدث لفيني.",
