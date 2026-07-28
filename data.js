@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Divorce Me",
+    "year": "2025",
+    "desc": "تتوتر العلاقة بين زوجين وتنتهي بالطلاق، لكن يواجه الزوج أزمة مالية حادّة تدفعه إلى طلب مساعدة طليقته لإنقاذه من السجن، فيخوضان معًا رحلة مليئة بالتحديات والمواقف الطريفة، ويكتشفان خلالها مشاعرهما الحقيقية.",
+    "poster": "https://image.tmdb.org/t/p/w500/uDPVi84WZrtj0MHjWjleEuyYSJu.jpg",
+    "hdUrl": "https://www.themoviedb.org/movie/58-pirates-of-the-caribbean-dead-man-s-chest",
+    "sdUrl": "https://www.themoviedb.org/movie/58-pirates-of-the-caribbean-dead-man-s-chest",
+    "rating": "1.3",
+    "genre": "دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Karim Mahmoud Abdel Aziz",
+            "image": "https://image.tmdb.org/t/p/w185/lIIiYr9DUWFoBIMVwX10gM7XpuV.jpg"
+        },
+        {
+            "name": "Dina El Sherbiny",
+            "image": "https://image.tmdb.org/t/p/w185/yKIdQwGzMtYN7j75gSQOYQOwVXz.jpg"
+        },
+        {
+            "name": "Hatim Salah",
+            "image": "https://image.tmdb.org/t/p/w185/4nK9HwqU6GuMWKXPJ6DAipBDdKX.jpg"
+        },
+        {
+            "name": "Hanaa ElShorbagi",
+            "image": "https://image.tmdb.org/t/p/w185/8ROuHPttds8mdqEVRQEi6YbwWN6.jpg"
+        },
+        {
+            "name": "Donia Maher",
+            "image": "https://image.tmdb.org/t/p/w185/y4lVAb0EBl5M1sCIeATftZzbi2G.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: Dead Man's Chest",
     "year": "2006",
     "desc": "يشق الكابتن جاك سبارو طريقه للخروج من دين الدم مع الشبحي ديفي جونز لتجنب اللعن الأبدي.",
