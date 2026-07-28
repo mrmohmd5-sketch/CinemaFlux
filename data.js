@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "year": "2011",
+    "desc": "في جوء مليء بالمغامرات يلتقي (جاك سبارو) بفتاة غامضة تٌدعى (أنجيليكا). تتوالى الأحداث بينهما عقب أن تجبره على الركوب على متن الباخرة (كوينز آن ريفنج)، وهي باخرة القرصان الشرير (اللحية السوداء) فيجد نفسه في مغامرة محفوفة بالمفاجآت، وبات محتاراً لا يدري إن كان عليه أن يخشى القرصان الشرير أو (آنجيليكا).",
+    "poster": "https://image.tmdb.org/t/p/w500/keGfSvCmYj7CvdRx36OdVrAEibE.jpg",
+    "hdUrl": "https://streamtape.com/e/ayydlQdLaMU0AP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ayydlQdLaMU0AP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "مغامرة حركة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Johnny Depp",
+            "image": "https://image.tmdb.org/t/p/w185/k2xt6EUxQDwYRKIyI4IBdZxfs8n.jpg"
+        },
+        {
+            "name": "Penélope Cruz",
+            "image": "https://image.tmdb.org/t/p/w185/n5SFgmvJSENQt8poE4qYacUnKOi.jpg"
+        },
+        {
+            "name": "Geoffrey Rush",
+            "image": "https://image.tmdb.org/t/p/w185/npXFjaFQzBNroCEPllGPTZ5IisA.jpg"
+        },
+        {
+            "name": "Ian McShane",
+            "image": "https://image.tmdb.org/t/p/w185/qh9RTLbnr128TZLdGuXwUH9mdBM.jpg"
+        },
+        {
+            "name": "Kevin McNally",
+            "image": "https://image.tmdb.org/t/p/w185/1QvG7MbfeWxb4LlZrlR4OtwvB8v.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
     "year": "2017",
     "desc": "انطلق في مغامرة جديدة تمامًا ، حيث يشعر الكابتن جاك سبارو بأن رياح سوء الحظ تهب بقوة أكبر عندما يهرب البحارة الأشباح بقيادة عدوه القديم ، النقيب الشرير سالازار ، من مثلث الشيطان. يكمن أمل جاك الوحيد في البقاء في البحث عن ترايدنت بوسيدون الأسطوري ، ولكن للعثور عليه ، يجب عليه تشكيل تحالف غير مستقر مع عالم فلك لامع وجميل وشاب عنيد في البحرية البريطانية.",
