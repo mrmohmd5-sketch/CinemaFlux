@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Balls Up",
+    "year": "2026",
+    "desc": "يُقدم مديرا التسويق براد (مارك والبيرغ) وإيليا (بول والتر هاوزر) عرضاً جريئًا لرعاية الواقي الذكري خلال كأس العالم. بعد احتفالهما الصاخب في البرازيل الذي أشعل فضيحة عالمية، يجدان نفسيهما مُضطرين إلى الفرار من الجماهير الغاضبة والمجرمين والمسؤولين المتعطشين للسلطة لإنقاذ مسيرتهما المهنية والعودة إلى ديارهما سالمين.",
+    "poster": "https://image.tmdb.org/t/p/w500/5EDhgV2VTZ259y9kGsQhiHcNefA.jpg",
+    "hdUrl": "https://streamtape.com/e/QgJeW38wyxtrkO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QgJeW38wyxtrkO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.8",
+    "genre": "كوميديا حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mark Wahlberg",
+            "image": "https://image.tmdb.org/t/p/w185/1Oc3XSLyb8hxmjmlgFENu582Kqw.jpg"
+        },
+        {
+            "name": "Paul Walter Hauser",
+            "image": "https://image.tmdb.org/t/p/w185/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg"
+        },
+        {
+            "name": "Sacha Baron Cohen",
+            "image": "https://image.tmdb.org/t/p/w185/bGzXHu8zwWqUY5gEExSh3deQd2j.jpg"
+        },
+        {
+            "name": "Benjamin Bratt",
+            "image": "https://image.tmdb.org/t/p/w185/hBenHPT4iJEG2kt5z2TOGnkRZwh.jpg"
+        },
+        {
+            "name": "Luciano Szafir",
+            "image": "https://image.tmdb.org/t/p/w185/k3TkQpOS9jmtfGyOJYMHSIRoa5F.jpg"
+        }
+    ]
+},
+    {
     "title": "The Hating Game",
     "year": "2021",
     "desc": "عاقدة العزم على تحقيق النجاح المهني دون المساس بأخلاقياتها، تشرع لوسي في لعبة قاسية من الحنكة الواحدة ضد العدو البارد والفعال جوشوا، وهو تنافس معقد بسبب انجذابها المتزايد إليه.",
