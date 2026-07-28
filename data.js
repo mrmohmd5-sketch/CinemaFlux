@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Old Guard 2",
+    "year": "2025",
+    "desc": "تقاتل 'آندي' وفريقها من المحاربين الخالدين بحماسة متجددة أثناء مواجهتهم عدوًا قويًا يهدد مهمتهم في حماية الإنسانية.",
+    "poster": "https://image.tmdb.org/t/p/w500/lArzDeYZsuifgVhh98y72XJNNWR.jpg",
+    "hdUrl": "https://streamtape.com/e/dr2yL6kLeJHkdrr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/dr2yL6kLeJHkdrr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.9",
+    "genre": "حركة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Charlize Theron",
+            "image": "https://image.tmdb.org/t/p/w185/gd7ShD0yt4bsR2STeQ19KQ6hvXL.jpg"
+        },
+        {
+            "name": "KiKi Layne",
+            "image": "https://image.tmdb.org/t/p/w185/nwLS3A1NGXbYWUPLE9Sj6yPBbhW.jpg"
+        },
+        {
+            "name": "Matthias Schoenaerts",
+            "image": "https://image.tmdb.org/t/p/w185/9mRssCj4si6f6IF3nJ2RB5w0J7g.jpg"
+        },
+        {
+            "name": "Marwan Kenzari",
+            "image": "https://image.tmdb.org/t/p/w185/66903sgNtyzHN0Mi3D88UYgbH86.jpg"
+        },
+        {
+            "name": "Luca Marinelli",
+            "image": "https://image.tmdb.org/t/p/w185/9Tmzfhp9hY6Zouo8KtHcyzuKfdf.jpg"
+        }
+    ]
+},
+    {
     "title": "The Old Guard",
     "year": "2020",
     "desc": "يُستهدَف أربعة محاربين خالدين، اعتادوا حماية البشر سرًّا على مدى قرون، لحيازتهم قوًى غامضة... وأثناء ذلك، يكتشفون وجود شابّة خالدة جديدة.",
