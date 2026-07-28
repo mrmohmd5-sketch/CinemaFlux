@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Old Guard",
+    "year": "2020",
+    "desc": "يُستهدَف أربعة محاربين خالدين، اعتادوا حماية البشر سرًّا على مدى قرون، لحيازتهم قوًى غامضة... وأثناء ذلك، يكتشفون وجود شابّة خالدة جديدة.",
+    "poster": "https://image.tmdb.org/t/p/w500/cjr4NWURcVN3gW5FlHeabgBHLrY.jpg",
+    "hdUrl": "https://streamtape.com/e/YywxyB239Jcvv0K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YywxyB239Jcvv0K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "حركة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Charlize Theron",
+            "image": "https://image.tmdb.org/t/p/w185/gd7ShD0yt4bsR2STeQ19KQ6hvXL.jpg"
+        },
+        {
+            "name": "KiKi Layne",
+            "image": "https://image.tmdb.org/t/p/w185/nwLS3A1NGXbYWUPLE9Sj6yPBbhW.jpg"
+        },
+        {
+            "name": "Veronica Ngô",
+            "image": "https://image.tmdb.org/t/p/w185/scpUnMH2Rll9CD9lXQH9TaOOHTO.jpg"
+        },
+        {
+            "name": "Matthias Schoenaerts",
+            "image": "https://image.tmdb.org/t/p/w185/9mRssCj4si6f6IF3nJ2RB5w0J7g.jpg"
+        },
+        {
+            "name": "Marwan Kenzari",
+            "image": "https://image.tmdb.org/t/p/w185/66903sgNtyzHN0Mi3D88UYgbH86.jpg"
+        }
+    ]
+},
+    {
     "title": "Balls Up",
     "year": "2026",
     "desc": "يُقدم مديرا التسويق براد (مارك والبيرغ) وإيليا (بول والتر هاوزر) عرضاً جريئًا لرعاية الواقي الذكري خلال كأس العالم. بعد احتفالهما الصاخب في البرازيل الذي أشعل فضيحة عالمية، يجدان نفسيهما مُضطرين إلى الفرار من الجماهير الغاضبة والمجرمين والمسؤولين المتعطشين للسلطة لإنقاذ مسيرتهما المهنية والعودة إلى ديارهما سالمين.",
