@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Me Before You",
+    "year": "2016",
+    "desc": "فتاة بلدة صغيرة عالقة بين وظائف مسدودة. يصبح رجل ناجح رفيع المستوى مقيدًا على كرسي متحرك بعد وقوع حادث. يقرر الرجل أن حياته لا تستحق العيش حتى يتم تعيين الفتاة لمدة ستة أشهر لتكون القائم بأعماله الجديدة. عالمان منفصلان ومحاصران بسبب الظروف ، بدأ الاثنان بداية صعبة. لكن الفتاة مصممة على أن تثبت للرجل أن الحياة تستحق العيش ، وبينما يشرعان في سلسلة من المغامرات معًا ، يجد كل منهما عالمه يتغير بطرق لا يمكن لأي منهما أن يتخيلها.",
+    "poster": "https://image.tmdb.org/t/p/w500/Ia3dzj5LnCj1ZBdlVeJrbKJQxG.jpg",
+    "hdUrl": "https://streamtape.com/e/drBJm03Kgohk40y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/drBJm03Kgohk40y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Emilia Clarke",
+            "image": "https://image.tmdb.org/t/p/w185/iFY6t7Ux9r70WB7Sp0TTVz6eGtm.jpg"
+        },
+        {
+            "name": "Sam Claflin",
+            "image": "https://image.tmdb.org/t/p/w185/e5CU4tjCNZFfm7ITmZfzjZse2Bb.jpg"
+        },
+        {
+            "name": "Janet McTeer",
+            "image": "https://image.tmdb.org/t/p/w185/qOKAI6aunD4J5MXiwwomAhI3jI2.jpg"
+        },
+        {
+            "name": "Charles Dance",
+            "image": "https://image.tmdb.org/t/p/w185/3xHwq5lchAI6mfW0aGQOEijexv6.jpg"
+        },
+        {
+            "name": "Brendan Coyle",
+            "image": "https://image.tmdb.org/t/p/w185/x62gQenNH3fVHfDkTL0UDyVFHgo.jpg"
+        }
+    ]
+},
+    {
     "title": "Saturday Night",
     "year": "2024",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
