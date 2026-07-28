@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Jumanji: Welcome to the Jungle",
+    "year": "2017",
+    "desc": "أربعة طلاب بالمدرسة الثانوية يكتشفون لعبة قديمة تقحمهم داخل الغابة المرتبطة بإعدادات اللعبة ووحدة تحكمها، حرفيًا اللعبة تتجسد في اختياراتهم التي تقف عليها أنشطتهم، ليدركوا مع الوقت أن (جومانجي) ليست مجرد لعبة، بل تحدي للبقاء على قيد الحياة.",
+    "poster": "https://image.tmdb.org/t/p/w500/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg",
+    "hdUrl": "https://streamtape.com/e/9BqWD98p23SaQ6k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9BqWD98p23SaQ6k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "مغامرة كوميديا فانتازيا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Kevin Hart",
+            "image": "https://image.tmdb.org/t/p/w185/byiNydUlM6oP8diA7WMvYbNM7a1.jpg"
+        },
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Karen Gillan",
+            "image": "https://image.tmdb.org/t/p/w185/qYx8CflXVq48nGKX1IJsDrAj0sT.jpg"
+        },
+        {
+            "name": "Rhys Darby",
+            "image": "https://image.tmdb.org/t/p/w185/65Zy72IsUjopCkRt0s55Tk68GIm.jpg"
+        }
+    ]
+},
+    {
     "title": "Jumanji: The Next Level",
     "year": "2019",
     "desc": "جومانجي: المستوى التالي\r 2019 | كوميديا, أكشن\r في جومانجي: المستوى التالي ، عادت العصابة لكن اللعبة تغيرت. عندما يعودون إلى جومانجي لإنقاذ أحدهم ، يكتشفون أنه لا يوجد شيء كما يتوقعون. سيتعين على اللاعبين شجاعة الأجزاء المجهولة وغير المكتشفة ، من الصحاري القاحلة إلى الجبال الثلجية ، من أجل الهروب من أخطر لعبة في العالم.",
