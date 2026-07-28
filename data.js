@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Major",
+    "year": "2022",
+    "desc": "في إطار من الدراما والحركة، يتناول العمل السيرة الذاتية للرائد سانديب أونيكريشنان، والذي استشهد خلال أحداث مومباي في نوفمبر عام 2008، وحصد الجائزة الهندية الكبرى في السلام عام 2009.",
+    "poster": "https://image.tmdb.org/t/p/w500/sJOfJuyQVZPwNQ8g21Qv0lojQhC.jpg",
+    "hdUrl": "https://streamtape.com/e/m7DDZyLoljibrgb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/m7DDZyLoljibrgb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة تاريخ دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Adivi Sesh",
+            "image": "https://image.tmdb.org/t/p/w185/vWvU1qlpGGrCsdox0pAJ6Gns4Bp.jpg"
+        },
+        {
+            "name": "Saiee Manjrekar",
+            "image": "https://image.tmdb.org/t/p/w185/yYZr9uwGoD5cGZHsYf4Ra9Cumvo.jpg"
+        },
+        {
+            "name": "Sobhita Dhulipala",
+            "image": "https://image.tmdb.org/t/p/w185/cV5JtQKtkOyv3SVMhsv0Db7zYGI.jpg"
+        },
+        {
+            "name": "Murali Sharma",
+            "image": "https://image.tmdb.org/t/p/w185/8m4L7L9lK4Z2YK4Jg97pMbA0Le5.jpg"
+        },
+        {
+            "name": "Prakash Raj",
+            "image": "https://image.tmdb.org/t/p/w185/dJvFZOXmZdkYCOUcKTXQAhBcAoH.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bourne Ultimatum",
     "year": "2007",
     "desc": "تم إخراج بورن من مخبأه مرة أخرى بواسطة المراسل سيمون روس الذي يحاول الكشف عن عملية Blackbriar ، وهي ترقية لمشروع Treadstone ، في سلسلة من الأعمدة الصحفية. تثير المعلومات الواردة من المراسل مجموعة جديدة من الذكريات ، ويجب على بورن أخيرًا الكشف عن ماضيه المظلم بينما يتفادى أفضل جهود الشركة للقضاء عليه.",
