@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Fantastic 4: First Steps",
+    "year": "2025",
+    "desc": "في قلب عالمٍ يمزج بين سحر الستينات وتكنولوجيا المستقبل، تجد عائلة مارفل الأولى نفسها في مواجهة الاختبار الأصعب. بينما يسعون جاهدين للحفاظ على روابطهم العائلية، يبرز تهديدٌ كوني مرعب: (غالاكتوس) ملتهم العوالم، يسبقه تابعه الغامض (سيلفر سيرفر). هل ستصمد قوة العائلة أمام فناء الأرض؟",
+    "poster": "https://image.tmdb.org/t/p/w500/llX0QL1cHz5hcZuDTpOICVyjrrE.jpg",
+    "hdUrl": "https://streamtape.com/e/Dl28p7jdPBhkpz1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Dl28p7jdPBhkpz1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "خيال علمي مغامرة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Pedro Pascal",
+            "image": "https://image.tmdb.org/t/p/w185/oKcMbVn0NJTNzQt0ClKKvVXkm60.jpg"
+        },
+        {
+            "name": "Vanessa Kirby",
+            "image": "https://image.tmdb.org/t/p/w185/tViEEsjvbhrJxWsOipUqIYjdHEb.jpg"
+        },
+        {
+            "name": "Ebon Moss-Bachrach",
+            "image": "https://image.tmdb.org/t/p/w185/xD8GVNayMpiTZxLfahy2DseYcQq.jpg"
+        },
+        {
+            "name": "Joseph Quinn",
+            "image": "https://image.tmdb.org/t/p/w185/zshhuioZaH8S5ZKdMcojzWi1ntl.jpg"
+        },
+        {
+            "name": "Ralph Ineson",
+            "image": "https://image.tmdb.org/t/p/w185/sn3ONJw2pJxMHiCqPwvkaiWr5mc.jpg"
+        }
+    ]
+},
+    {
     "title": "The Angry Birds Movie 2",
     "year": "2019",
     "desc": "تأخذ الطيور الغاضبة التي لا تطير والخنازير الخضراء المخططة لحومها إلى المستوى التالي في فيلم الطيور الغاضبة 2 ! عندما يظهر تهديد جديد يعرض كلاً من جزيرة الطيور والخنازير للخطر ، يقوم أحمر  و تشوك و قنبلة و النسر العظيم  بتجنيد أخت تشوك الفضية  والفريق مع الخنازير ليونارد  ومساعده كورتني  وتيكبيغ جاري  للتوصل إلى هدنة غير مستقرة وتشكيل فريق فائق غير محتمل لإنقاذ منازلهم.",
