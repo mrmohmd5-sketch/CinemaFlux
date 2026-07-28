@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Atonement",
+    "year": "2007",
+    "desc": "ككاتبة ناشئة تبلغ من العمر 13 عامًا ، تغيرت بريوني تاليس بشكل لا رجعة فيه مسار العديد من الحياة عندما تتهم عشيق أختها الكبرى بجريمة لم يرتكبها.",
+    "poster": "https://image.tmdb.org/t/p/w500/i6xXINRm5zTJURIYRULzfFlAc72.jpg",
+    "hdUrl": "https://streamtape.com/e/zwpAbr40BYTYrV7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zwpAbr40BYTYrV7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "James McAvoy",
+            "image": "https://image.tmdb.org/t/p/w185/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg"
+        },
+        {
+            "name": "Keira Knightley",
+            "image": "https://image.tmdb.org/t/p/w185/k69IOXdz8PAvaegAI8WYvQvyyUJ.jpg"
+        },
+        {
+            "name": "Saoirse Ronan",
+            "image": "https://image.tmdb.org/t/p/w185/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg"
+        },
+        {
+            "name": "Romola Garai",
+            "image": "https://image.tmdb.org/t/p/w185/ywRx2yXWjkJAVbyEVQNXziSwVLu.jpg"
+        },
+        {
+            "name": "Vanessa Redgrave",
+            "image": "https://image.tmdb.org/t/p/w185/hBsjc7cW1DA0V6APwe3A7ESH3Lv.jpg"
+        }
+    ]
+},
+    {
     "title": "Gone Girl",
     "year": "2014",
     "desc": "أنت لا تعرف ما لديك 'حتى ...  بعد أن أصبح اختفاء زوجته محور سيرك إعلامي مكثف ، يرى الرجل أن الأضواء تتجه إليه عندما يشتبه في أنه قد لا يكون بريئا.",
