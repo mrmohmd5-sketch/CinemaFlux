@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Red Notice",
+    "year": "2021",
+    "desc": "إيجابيات وسلبيات.\r النشرة الحمراء التي أصدرها الإنتربول هي تنبيه عالمي لمطاردة والقبض على أكثر المطلوبين في العالم. ولكن عندما تجمع عملية سرقة جريئة بين كبار الشخصيات في مكتب التحقيقات الفيدرالي واثنين من المجرمين المتنافسين ، فلا يوجد ما يخبرنا بما سيحدث.",
+    "poster": "https://image.tmdb.org/t/p/w500/jSkyQLBxPQeaWRLEUD3RiyFEt2Z.jpg",
+    "hdUrl": "https://streamtape.com/e/2Bydp8GbqvHZd3j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/2Bydp8GbqvHZd3j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "حركة كوميديا جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Ryan Reynolds",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Gal Gadot",
+            "image": "https://image.tmdb.org/t/p/w185/qCJB1ACi5VjtY4ypXuv3hjAvbSu.jpg"
+        },
+        {
+            "name": "Ritu Arya",
+            "image": "https://image.tmdb.org/t/p/w185/bBRGCBAW0wNS7fQeGQroOeA60yw.jpg"
+        },
+        {
+            "name": "Chris Diamantopoulos",
+            "image": "https://image.tmdb.org/t/p/w185/oenBtpk0RTId4wacQKYU4cPcq8Z.jpg"
+        }
+    ]
+},
+    {
     "title": "Major",
     "year": "2022",
     "desc": "في إطار من الدراما والحركة، يتناول العمل السيرة الذاتية للرائد سانديب أونيكريشنان، والذي استشهد خلال أحداث مومباي في نوفمبر عام 2008، وحصد الجائزة الهندية الكبرى في السلام عام 2009.",
