@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "year": "2017",
+    "desc": "انطلق في مغامرة جديدة تمامًا ، حيث يشعر الكابتن جاك سبارو بأن رياح سوء الحظ تهب بقوة أكبر عندما يهرب البحارة الأشباح بقيادة عدوه القديم ، النقيب الشرير سالازار ، من مثلث الشيطان. يكمن أمل جاك الوحيد في البقاء في البحث عن ترايدنت بوسيدون الأسطوري ، ولكن للعثور عليه ، يجب عليه تشكيل تحالف غير مستقر مع عالم فلك لامع وجميل وشاب عنيد في البحرية البريطانية.",
+    "poster": "https://image.tmdb.org/t/p/w500/6lAPOAFYFWIO3SQRemEY2wInQMC.jpg",
+    "hdUrl": "https://streamtape.com/e/KzQagRo7bDI0Qw6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KzQagRo7bDI0Qw6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "مغامرة حركة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Johnny Depp",
+            "image": "https://image.tmdb.org/t/p/w185/k2xt6EUxQDwYRKIyI4IBdZxfs8n.jpg"
+        },
+        {
+            "name": "Javier Bardem",
+            "image": "https://image.tmdb.org/t/p/w185/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+        },
+        {
+            "name": "Geoffrey Rush",
+            "image": "https://image.tmdb.org/t/p/w185/npXFjaFQzBNroCEPllGPTZ5IisA.jpg"
+        },
+        {
+            "name": "Brenton Thwaites",
+            "image": "https://image.tmdb.org/t/p/w185/4jrtVjdIGJpmgevEPRuIIU9HWcO.jpg"
+        },
+        {
+            "name": "Kaya Scodelario",
+            "image": "https://image.tmdb.org/t/p/w185/uVp7VarM5GX08hfCEGt63OM5c5c.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: At World's End مدبلج",
     "year": "2007",
     "desc": "عاد الكابتن باربوسا ، الذي كان يعتقد منذ فترة طويلة أنه قد مات ، إلى الحياة ويتجه إلى حافة الأرض مع ويل تيرنر وإليزابيث سوان. لكن لا شيء كما يبدو.",
