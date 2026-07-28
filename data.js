@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Tinker Bell and the Pirate Fairy",
+    "year": "2014",
+    "desc": "جنية تُدعى زارينا (كريستينا هيندريكس) تقوم بسرقة الغبار الأزرق الخاص ببيكسي هولو، وتنضم لقوات القراصنة في سكال روك؛ حيث يتم تعيينها كقائدة لهم؛ لذلك تقوم تينكر بيل (ماي ويتمان) بخوض مغامرة شيقة بمساعدة أصدقائها من أجل استعادة ما تم سرقته. في أثناء مطاردة زارينا تنقلب حياة تينكر بيل رأسًا على عقب، ويتعين عليها مصارعة الوقت من أجل استعادة غبار بيكسي والعودة إلى الوطن سالمة.",
+    "poster": "https://image.tmdb.org/t/p/w500/4PwTLfsH95lBL8VR9uk9y2ixnpn.jpg",
+    "hdUrl": "https://streamtape.com/e/4qqglOOqoYUKe99/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4qqglOOqoYUKe99/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رسوم متحركة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mae Whitman",
+            "image": "https://image.tmdb.org/t/p/w185/y7fg9R5zvqDCZCUt3uwcyOoCOFp.jpg"
+        },
+        {
+            "name": "Christina Hendricks",
+            "image": "https://image.tmdb.org/t/p/w185/nwSh3NXQtUT3joHbCVwLvOoBxJG.jpg"
+        },
+        {
+            "name": "Tom Hiddleston",
+            "image": "https://image.tmdb.org/t/p/w185/mclHxMm8aPlCPKptP67257F5GPo.jpg"
+        },
+        {
+            "name": "Lucy Liu",
+            "image": "https://image.tmdb.org/t/p/w185/9nbtjqsx3De7hO2XDtrBQ7M9VCH.jpg"
+        },
+        {
+            "name": "Raven-Symoné",
+            "image": "https://image.tmdb.org/t/p/w185/vIEKG0JH3DFnhswCL8bYejfxfRi.jpg"
+        }
+    ]
+},
+    {
     "title": "The Angry Birds Movie مدبلج",
     "year": "2016",
     "desc": "بعد الحكم عليه بدروس السيطرة على الغضب، يصبح 'ريد' المشاكس بطلًا يدرّب زملاءه الطيور للتنفيس عن غضبها الداخلي فور اجتياح الخنازير لجزيرتها.",
