@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Hansel & Gretel: Witch Hunters",
+    "year": "2013",
+    "desc": "تدور أحداث الفيلم بعد حوالى 15 عامًا على الحادثة المرعبة بمنزل (جينجير بيرد)، حيث الآن أصبح كلا من الشقيقين (هانسيل) و(جريتيل) يشكلان فريق قوي لصيد الساحرات، حيث يتم تعقبهم، والتخلص منهم في جميع أنحاء العالم، بالطبع مع كثير من المغامرات والمطاردات والرعب أحيانًا.",
+    "poster": "https://image.tmdb.org/t/p/w500/j343Rpj3WeNvP0SV80zveve70io.jpg",
+    "hdUrl": "https://streamtape.com/e/l7AdGeqLeYuBwG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/l7AdGeqLeYuBwG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.1",
+    "genre": "فانتازيا رعب حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jeremy Renner",
+            "image": "https://image.tmdb.org/t/p/w185/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+        },
+        {
+            "name": "Gemma Arterton",
+            "image": "https://image.tmdb.org/t/p/w185/dbBjz1EC9SqoudIaJ75NOB56bbh.jpg"
+        },
+        {
+            "name": "Famke Janssen",
+            "image": "https://image.tmdb.org/t/p/w185/uvZGwNsLqe9NyA57Qlt46IkO8Bd.jpg"
+        },
+        {
+            "name": "Pihla Viitala",
+            "image": "https://image.tmdb.org/t/p/w185/4arJbR42gQfEdWOrnZKIJTuLCLF.jpg"
+        },
+        {
+            "name": "Derek Mears",
+            "image": "https://image.tmdb.org/t/p/w185/2ckpSGUa4EDKWS1KMP0hLtFUWi.jpg"
+        }
+    ]
+},
+    {
     "title": "Red Notice",
     "year": "2021",
     "desc": "إيجابيات وسلبيات.\r النشرة الحمراء التي أصدرها الإنتربول هي تنبيه عالمي لمطاردة والقبض على أكثر المطلوبين في العالم. ولكن عندما تجمع عملية سرقة جريئة بين كبار الشخصيات في مكتب التحقيقات الفيدرالي واثنين من المجرمين المتنافسين ، فلا يوجد ما يخبرنا بما سيحدث.",
