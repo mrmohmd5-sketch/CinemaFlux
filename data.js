@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Angry Birds Movie",
+    "year": "2016",
+    "desc": "بعد الحكم عليه بدروس السيطرة على الغضب، يصبح 'ريد' المشاكس بطلًا يدرّب زملاءه الطيور للتنفيس عن غضبها الداخلي فور اجتياح الخنازير لجزيرتها.",
+    "poster": "https://image.tmdb.org/t/p/w500/7voZwYQUD8qrFJzkbYRrep3e2IW.jpg",
+    "hdUrl": "https://streamtape.com/e/dK3bwPQLYxUgoD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/dK3bwPQLYxUgoD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "رسوم متحركة مغامرة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Sudeikis",
+            "image": "https://image.tmdb.org/t/p/w185/uuacnP9DOHMsmj8FhBi0cWWDgrn.jpg"
+        },
+        {
+            "name": "Josh Gad",
+            "image": "https://image.tmdb.org/t/p/w185/p9hWNRwrVEBpl8We2bxLMHkk5Mj.jpg"
+        },
+        {
+            "name": "Danny McBride",
+            "image": "https://image.tmdb.org/t/p/w185/sVFPzl2t5QlGudQKWAszIWZCXZv.jpg"
+        },
+        {
+            "name": "Maya Rudolph",
+            "image": "https://image.tmdb.org/t/p/w185/bpEVMFMyHEQ8wLdii9WKB279w8p.jpg"
+        },
+        {
+            "name": "Bill Hader",
+            "image": "https://image.tmdb.org/t/p/w185/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg"
+        }
+    ]
+},
+    {
     "title": "The Fantastic 4: First Steps",
     "year": "2025",
     "desc": "في قلب عالمٍ يمزج بين سحر الستينات وتكنولوجيا المستقبل، تجد عائلة مارفل الأولى نفسها في مواجهة الاختبار الأصعب. بينما يسعون جاهدين للحفاظ على روابطهم العائلية، يبرز تهديدٌ كوني مرعب: (غالاكتوس) ملتهم العوالم، يسبقه تابعه الغامض (سيلفر سيرفر). هل ستصمد قوة العائلة أمام فناء الأرض؟",
