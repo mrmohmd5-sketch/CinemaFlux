@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Angry Birds Movie 2",
+    "year": "2019",
+    "desc": "تأخذ الطيور الغاضبة التي لا تطير والخنازير الخضراء المخططة لحومها إلى المستوى التالي في فيلم الطيور الغاضبة 2 ! عندما يظهر تهديد جديد يعرض كلاً من جزيرة الطيور والخنازير للخطر ، يقوم أحمر  و تشوك و قنبلة و النسر العظيم  بتجنيد أخت تشوك الفضية  والفريق مع الخنازير ليونارد  ومساعده كورتني  وتيكبيغ جاري  للتوصل إلى هدنة غير مستقرة وتشكيل فريق فائق غير محتمل لإنقاذ منازلهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/btjbONdMaFfqnExZAAy2pHc9DUE.jpg",
+    "hdUrl": "https://streamtape.com/e/LLxWzgJ99vtaBY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LLxWzgJ99vtaBY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "رسوم متحركة مغامرة كوميديا عائلي حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Sudeikis",
+            "image": "https://image.tmdb.org/t/p/w185/uuacnP9DOHMsmj8FhBi0cWWDgrn.jpg"
+        },
+        {
+            "name": "Josh Gad",
+            "image": "https://image.tmdb.org/t/p/w185/p9hWNRwrVEBpl8We2bxLMHkk5Mj.jpg"
+        },
+        {
+            "name": "Danny McBride",
+            "image": "https://image.tmdb.org/t/p/w185/sVFPzl2t5QlGudQKWAszIWZCXZv.jpg"
+        },
+        {
+            "name": "Leslie Jones",
+            "image": "https://image.tmdb.org/t/p/w185/1rBpNNijHRg4Ha3PxlpOjcbPVeN.jpg"
+        },
+        {
+            "name": "Bill Hader",
+            "image": "https://image.tmdb.org/t/p/w185/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg"
+        }
+    ]
+},
+    {
     "title": "Pirates of the Caribbean: The Curse of the Black Pearl مدبلج",
     "year": "2003",
     "desc": "الاستعداد ليتم تفجيرها من الماء.  جاك سبارو ، قرصان حر من القرن 18th ، يتشاجر مع قرصان منافس عازم على نهب بورت رويال. عندما يتم اختطاف ابنة الحاكم ، يقرر سبارو مساعدة حب الفتاة في إنقاذها.",
