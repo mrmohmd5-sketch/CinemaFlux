@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Bourne Identity",
+    "year": "2002",
+    "desc": "يتم إنقاذ فاقد الذاكرة من قبل طاقم قارب صيد إيطالي عندما يطفو في البحر. ليس لديه هوية ولا ماضٍ ، لكنه يمتلك سلسلة من المواهب الاستثنائية في الفنون اللغوية والعسكرية والدفاع عن النفس التي تشير إلى وجود مهنة تنطوي على مخاطر. وهو مرتبك ومربك ، يجري بحثًا محمومًا لاكتشاف هويته ولماذا اتخذت حياته منعطفًا خطيرًا.",
+    "poster": "https://image.tmdb.org/t/p/w500/9dw031qqvJVkT3ix8KUZViEvvhz.jpg",
+    "hdUrl": "https://streamtape.com/e/gjlzKDL8gkSq0mD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/gjlzKDL8gkSq0mD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة غموض إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matt Damon",
+            "image": "https://image.tmdb.org/t/p/w185/aCvBXTAR9B1qRjIRzMBYhhbm1fR.jpg"
+        },
+        {
+            "name": "Franka Potente",
+            "image": "https://image.tmdb.org/t/p/w185/aU6f9UemZsTkqKEG4l77zf6masg.jpg"
+        },
+        {
+            "name": "Chris Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/j0sQDzaDlnNAdaYhy6HRRAFi22.jpg"
+        },
+        {
+            "name": "Clive Owen",
+            "image": "https://image.tmdb.org/t/p/w185/xlWpuLgwxMnZEVgV9OID1TkUNtP.jpg"
+        },
+        {
+            "name": "Brian Cox",
+            "image": "https://image.tmdb.org/t/p/w185/scSjbFCTRngXlkJRoKptM5kQGw7.jpg"
+        }
+    ]
+},
+    {
     "title": "Atonement",
     "year": "2007",
     "desc": "ككاتبة ناشئة تبلغ من العمر 13 عامًا ، تغيرت بريوني تاليس بشكل لا رجعة فيه مسار العديد من الحياة عندما تتهم عشيق أختها الكبرى بجريمة لم يرتكبها.",
