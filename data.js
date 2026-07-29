@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "A Monster Calls",
+    "year": "2016",
+    "desc": "يعاني (كونر) بشكل مستمر في المدرسة وفي المنزل، خاصة مع وجود أم مريضة في المنزل، فيكافح (كونر) من أجل التغلب على شعوره بالذنب والغضب ومواجهة من يقوم بالاعتداء عليه من أقرانه، لكنه يواجه مشكلة أكبر وهي القدرة على إخبار الحقيقة والاعتراف بالمشكلات، وهنا يبرز وحش متنكر في شكل شجرة ويصير صديقًا له.",
+    "poster": "https://image.tmdb.org/t/p/w500/vNzWJwVqjszWwXrA7ZfsrJmhgV9.jpg",
+    "hdUrl": "https://streamtape.com/e/4PGzq9P80GtryX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4PGzq9P80GtryX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "فانتازيا مغامرة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lewis MacDougall",
+            "image": "https://image.tmdb.org/t/p/w185/ukwaI1yS14VEoGcCOGZfU53hfJ4.jpg"
+        },
+        {
+            "name": "Sigourney Weaver",
+            "image": "https://image.tmdb.org/t/p/w185/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+        },
+        {
+            "name": "Felicity Jones",
+            "image": "https://image.tmdb.org/t/p/w185/AdlEOEjEI9jS9WgshUisCOGeaSd.jpg"
+        },
+        {
+            "name": "Toby Kebbell",
+            "image": "https://image.tmdb.org/t/p/w185/mlYytYJvoEHmhDH2enLtES1098Q.jpg"
+        },
+        {
+            "name": "Ben Moor",
+            "image": "https://image.tmdb.org/t/p/w185/jHMCearTgErqlvNy5oU8pHkZMlZ.jpg"
+        }
+    ]
+},
+    {
     "title": "TRON: Ares",
     "year": "2025",
     "desc": "برنامجٌ متطوّرٌ للغاية يُدعى 'آريس' يُرسَل من العالم الرقمي إلى العالم الحقيقي في مهمةٍ خطيرة، ليمثل أولَ اتصالٍ للبشرية مع كائناتٍ ذكيةٍ اصطناعية.",
