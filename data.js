@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Ne Zha",
+    "year": "2019",
+    "desc": "صبي يولد بقدرات خارقة وغير عادية، ويجرى تجنيده من أجل محاربة الشياطين وإنقاذ مجتمعه الذين يخافون من خطر أولئك الشياطين.",
+    "poster": "https://image.tmdb.org/t/p/w500/5tQOEf89zRFKaJ9vNVkyDxiO2Cw.jpg",
+    "hdUrl": "https://streamtape.com/e/er08141wdbSYvWv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/er08141wdbSYvWv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "رسوم متحركة فانتازيا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lu Yanting",
+            "image": "https://image.tmdb.org/t/p/w185/vKpOzPutTaPf03rWXiLuK8R2K3B.jpg"
+        },
+        {
+            "name": "Joseph",
+            "image": "https://image.tmdb.org/t/p/w185/1TgCL0mlekWivRNo1voCwUZ8I5s.jpg"
+        },
+        {
+            "name": "Han Mo",
+            "image": "https://image.tmdb.org/t/p/w185/6Ueom0Y4pjIG9B6zjQlfIbgcGhH.jpg"
+        },
+        {
+            "name": "Chen Hao",
+            "image": "https://image.tmdb.org/t/p/w185/eBZJW1NCBFDh3U3xImf0vCCnDpy.jpg"
+        },
+        {
+            "name": "Lu Qi",
+            "image": "https://image.tmdb.org/t/p/w185/eGoSeaM1c6KCLiRIqM8LJq5S5L5.jpg"
+        }
+    ]
+},
+    {
     "title": "Almost Famous",
     "year": "2000",
     "desc": "في عام 1973 ، حب ويليام ميلر البالغ من العمر 15 عامًا للموسيقى بلا خجل وطموحه في أن يصبح صحفيًا في موسيقى الروك ، منحه مهمة من مجلة رولينج ستون لإجراء مقابلة وجولة مع فرقة ستيلووتر الصاعدة - أمام الغيتار الرئيسي راسل هاموند ، والمغني الرئيسي جيف بيبي.",
