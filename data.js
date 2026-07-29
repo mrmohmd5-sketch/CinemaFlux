@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Ne Zha 2",
+    "year": "2025",
+    "desc": "بعد تعرض ناچا (Nezha) وآوْبِينْغ (Ao Bing) لصاعقة سماوية، تحوَّلت أجسادهما إلى أرواح معرضة للزوال. يخطط المعلم تَايِي (Taiyi) لإعادة بناء أجسادهما باستخدام زهرة اللوتس المقدسة، إلا أنَّ العملية تواجه عقبات عديدة. فما مصيرُ نِيْتْشَا وآوْبِينْغ في ظلِّ هذه التحديات؟",
+    "poster": "https://image.tmdb.org/t/p/w500/8LTz0cFC4rlrkvxvnhniRtJvGug.jpg",
+    "hdUrl": "https://streamtape.com/e/zr4DA61lBytGQw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zr4DA61lBytGQw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "رسوم متحركة حركة فانتازيا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lu Yanting",
+            "image": "https://image.tmdb.org/t/p/w185/vKpOzPutTaPf03rWXiLuK8R2K3B.jpg"
+        },
+        {
+            "name": "Joseph",
+            "image": "https://image.tmdb.org/t/p/w185/1TgCL0mlekWivRNo1voCwUZ8I5s.jpg"
+        },
+        {
+            "name": "Han Mo",
+            "image": "https://image.tmdb.org/t/p/w185/6Ueom0Y4pjIG9B6zjQlfIbgcGhH.jpg"
+        },
+        {
+            "name": "Chen Hao",
+            "image": "https://image.tmdb.org/t/p/w185/eBZJW1NCBFDh3U3xImf0vCCnDpy.jpg"
+        },
+        {
+            "name": "Lu Qi",
+            "image": "https://image.tmdb.org/t/p/w185/eGoSeaM1c6KCLiRIqM8LJq5S5L5.jpg"
+        }
+    ]
+},
+    {
     "title": "Glass",
     "year": "2019",
     "desc": "ڠلاس يجد ديفيد كون وهو يلاحق احدى شخصيات كيفين ويندل - ذا بيست -  في سلسلة من المواجهات، في حين ظهور إيلايجا برايس كمتحكم بالاحداث وهو يحمل أسرارًا خطيره عن كلا الرجلين.",
