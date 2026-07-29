@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Blades of the Guardians",
+    "year": "2026",
+    "desc": "تدور أحداث الفيلم في صحراء الغرب، حيث تتصارع قوى متعددة، من حماة القوافل والسلطات إلى العائلات النافذة، وسط مؤامرات وصراعات خفية. يقبل دوو ما، أحد أخطر المطلوبين، مهمة مرافقة غامضة إلى العاصمة تشانغآن، لكنه يكتشف أن الشخص الذي يحميه هو المطلوب الأول في البلاد. ومع انتشار الخبر، تتسابق القوى المتنافسة للاستيلاء على القافلة، لتندلع معارك دامية تكشف أسرارًا قد تغيّر مصير الجميع.",
+    "poster": "https://image.tmdb.org/t/p/w500/lMAes7L7GRMVs7VJgf7YN2fKCDP.jpg",
+    "hdUrl": "https://streamtape.com/e/KWgxyXRryMT0qjZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KWgxyXRryMT0qjZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Wu Jing",
+            "image": "https://image.tmdb.org/t/p/w185/cFuATO6PnffJXtsYF7BRqhCXlwe.jpg"
+        },
+        {
+            "name": "Nicholas Tse Ting-Fung",
+            "image": "https://image.tmdb.org/t/p/w185/2oqpaOhEoKLdM4dePxOHJrI45n.jpg"
+        },
+        {
+            "name": "Chen Lijun",
+            "image": "https://image.tmdb.org/t/p/w185/wD9Y9ZXtaUI8ISJW3Q1YgJy3Gkk.jpg"
+        },
+        {
+            "name": "Yu Shi",
+            "image": "https://image.tmdb.org/t/p/w185/xIzHhuScL4wbm2zmHxtnfpBFqcs.jpg"
+        },
+        {
+            "name": "Sun Yizhou",
+            "image": "https://image.tmdb.org/t/p/w185/7LrjgcfjklPW6AyC4sxaNx6z089.jpg"
+        }
+    ]
+},
+    {
     "title": "Happy Gilmore",
     "year": "1996",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
