@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Glass",
+    "year": "2019",
+    "desc": "ڠلاس يجد ديفيد كون وهو يلاحق احدى شخصيات كيفين ويندل - ذا بيست -  في سلسلة من المواجهات، في حين ظهور إيلايجا برايس كمتحكم بالاحداث وهو يحمل أسرارًا خطيره عن كلا الرجلين.",
+    "poster": "https://image.tmdb.org/t/p/w500/i4RPC09wB6sADI5qqrUU9guexd4.jpg",
+    "hdUrl": "https://streamtape.com/e/m1d8GGxZwqtbPvq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/m1d8GGxZwqtbPvq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "إثارة دراما خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "James McAvoy",
+            "image": "https://image.tmdb.org/t/p/w185/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg"
+        },
+        {
+            "name": "Bruce Willis",
+            "image": "https://image.tmdb.org/t/p/w185/w3aXr1e7gQCn8MSp1vW4sXHn99P.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+        },
+        {
+            "name": "Sarah Paulson",
+            "image": "https://image.tmdb.org/t/p/w185/tJnhBV516yrekR3hTDUw15UMbxS.jpg"
+        },
+        {
+            "name": "Anya Taylor-Joy",
+            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        }
+    ]
+},
+    {
     "title": "Ne Zha",
     "year": "2019",
     "desc": "صبي يولد بقدرات خارقة وغير عادية، ويجرى تجنيده من أجل محاربة الشياطين وإنقاذ مجتمعه الذين يخافون من خطر أولئك الشياطين.",
