@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "How to Train Your Dragon",
+    "year": "2025",
+    "desc": "يحاول فتى شاب ينتمي لشعب الفايكنج شق طريقه في عالم صيد التنانين وإثبات جدارته وسط شعبه وعائلته، ولكن تتسبب صدفه بحتة في بداية صداقة قوية بينه وبين تنين صغير.",
+    "poster": "https://image.tmdb.org/t/p/w500/gVcEL1xUFsaYkL32tZ6m4cqeKRh.jpg",
+    "hdUrl": "https://streamtape.com/e/mkza1VWBWmIbL3m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mkza1VWBWmIbL3m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "فانتازيا عائلي حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mason Thames",
+            "image": "https://image.tmdb.org/t/p/w185/kgEYHw8bblVtwRTkR9TLMOpx5WO.jpg"
+        },
+        {
+            "name": "Nico Parker",
+            "image": "https://image.tmdb.org/t/p/w185/gt0NJClVSCPCEfcPgcLj3f85uLa.jpg"
+        },
+        {
+            "name": "Gerard Butler",
+            "image": "https://image.tmdb.org/t/p/w185/i54XoxYieuff2w6MwyfwVUBvmR0.jpg"
+        },
+        {
+            "name": "Nick Frost",
+            "image": "https://image.tmdb.org/t/p/w185/2CHS4t6miNGLgMQAjhFqb4fFuKS.jpg"
+        },
+        {
+            "name": "Gabriel Howell",
+            "image": "https://image.tmdb.org/t/p/w185/u3PTI9FlrpGFZVMoHXZZBiYWMCl.jpg"
+        }
+    ]
+},
+    {
     "title": "Dark Waters",
     "year": "2019",
     "desc": "يكشف محامٍ عنيد سرًا غامضًا يربط عددًا متزايدًا من الوفيات غير المبررة بإحدى أكبر الشركات في العالم. في هذه العملية ، يخاطر بكل شيء - مستقبله وعائلته وحياته - لفضح الحقيقة.",
