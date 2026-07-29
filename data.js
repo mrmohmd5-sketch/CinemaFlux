@@ -1,5 +1,98 @@
 const globalMoviesData = [
     {
+    "title": "Loki",
+    "year": "2021",
+    "desc": "بعد سرقة الـ'تيسراكت' خلال أحداث“المنتقمون: نهاية اللعبة” ، يتم نقل نسخة بديلة من لوكي إلى هيئة التباين الزمني، وهي منظمة بيروقراطية غامضة تقع خارج الزمان والمكان وتراقب الخط الزمني. تعرض عليه الهيئة خيارًا: إما مواجهة الإزالة من الوجود باعتباره “متغيرًا زمنيًا”، أو المساعدة في إصلاح الخط الزمني والتصدي لتهديد أكبر.",
+    "poster": "https://image.tmdb.org/t/p/w500/yKsCXibdrkB9NOE7urQ1f3HEvHe.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "8.2",
+    "genre": "دراما خيال علمي وفانتازيا",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Tom Hiddleston",
+            "image": "https://image.tmdb.org/t/p/w185/mclHxMm8aPlCPKptP67257F5GPo.jpg"
+        },
+        {
+            "name": "Sophia Di Martino",
+            "image": "https://image.tmdb.org/t/p/w185/qZdFp18btpQJfDoknxr7DgfRpcB.jpg"
+        },
+        {
+            "name": "Wunmi Mosaku",
+            "image": "https://image.tmdb.org/t/p/w185/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg"
+        },
+        {
+            "name": "Eugene Cordero",
+            "image": "https://image.tmdb.org/t/p/w185/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
+        },
+        {
+            "name": "Ke Huy Quan",
+            "image": "https://image.tmdb.org/t/p/w185/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/9qWPeZdQPxTa89l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/zxw3aZDB37CQZx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/j6GkKZ4gerhz3yw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/PJpYZPxGOATRVO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/Deg4dWbXZ0ck16d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/2zllDoY3Jkhz7a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        },
+        {
+            "season_number": 2,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/VWeAw3yRgBtKKbB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/r4V2bAz9wDIbzgl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/RqejY734WWHBeG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/xqbXqVL0zYikMoy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/V7bDBYWPrxfK71g/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/er9gMrkzP2fY3d8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Novocaine",
     "year": "2025",
     "desc": "عندما تُختَطف فتاة أحلامه، يحوّل رجلٌ عاجز عن الشعور بالألم الجسدي حالته النادرة إلى ميزة غير متوقعة في صراعه لإنقاذها.",
