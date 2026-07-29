@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Happy Gilmore",
+    "year": "1996",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/4RnCeRzvI1xk5tuNWjpDKzSnJDk.jpg",
+    "hdUrl": "https://streamtape.com/e/vl7Op1vKraU4e7O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vl7Op1vKraU4e7O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Adam Sandler",
+            "image": "https://image.tmdb.org/t/p/w185/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg"
+        },
+        {
+            "name": "Christopher McDonald",
+            "image": "https://image.tmdb.org/t/p/w185/gK1XhbfD9Xd8s3VXRPpgDCluyZp.jpg"
+        },
+        {
+            "name": "Julie Bowen",
+            "image": "https://image.tmdb.org/t/p/w185/5ewqnbPAY0EzZObGHIKU4VsCanD.jpg"
+        },
+        {
+            "name": "Frances Bay",
+            "image": "https://image.tmdb.org/t/p/w185/1mtcINBBbvb7E4ySgOr86u34XLJ.jpg"
+        },
+        {
+            "name": "Carl Weathers",
+            "image": "https://image.tmdb.org/t/p/w185/oUwtC5hEbcIZv53WPerZ9HhlSJR.jpg"
+        }
+    ]
+},
+    {
     "title": "Glass Onion: A Knives Out Mystery",
     "year": "2022",
     "desc": "يتوجّه المحقّق المشهور عالميًّا 'بينوا بلون' إلى 'اليونان' لإزاحة الستار عن ملابسات لغز يرتبط برجل ثريّ في مجال التكنولوجيا وفريقه الانتقائي من الأصدقاء.",
