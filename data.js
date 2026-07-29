@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Dark Waters",
+    "year": "2019",
+    "desc": "يكشف محامٍ عنيد سرًا غامضًا يربط عددًا متزايدًا من الوفيات غير المبررة بإحدى أكبر الشركات في العالم. في هذه العملية ، يخاطر بكل شيء - مستقبله وعائلته وحياته - لفضح الحقيقة.",
+    "poster": "https://image.tmdb.org/t/p/w500/bzvzaHqKBSuGIIWhinTQPHvT0zf.jpg",
+    "hdUrl": "https://streamtape.com/e/Vr9ywMXB9otKlBa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Vr9ywMXB9otKlBa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mark Ruffalo",
+            "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+            "name": "Anne Hathaway",
+            "image": "https://image.tmdb.org/t/p/w185/g2ozigjyCoSZmMnwo4fyhhJjslM.jpg"
+        },
+        {
+            "name": "Tim Robbins",
+            "image": "https://image.tmdb.org/t/p/w185/3FfJMIVwXgsIXbAT8ECBSZJAncR.jpg"
+        },
+        {
+            "name": "Bill Pullman",
+            "image": "https://image.tmdb.org/t/p/w185/AlLhgmcX5zh3frPT82OSPY9gqXO.jpg"
+        },
+        {
+            "name": "Bill Camp",
+            "image": "https://image.tmdb.org/t/p/w185/wxYyJSltCHwU0MTg838SllOlvNT.jpg"
+        }
+    ]
+},
+    {
     "title": "A Minecraft Movie",
     "year": "2025",
     "desc": "ينطلق التنين الشرير (إيندر) في طريقه لتدمير كل شيء، فيدفع الأمر فتاة صغيرة وفريقها من المغامرين للتعاون معًا في سبيل إنقاذ العالم من الدمار المحتمل.",
