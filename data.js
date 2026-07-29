@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Happy Gilmore 2",
+    "year": "2025",
+    "desc": "لم تنتهِ مسيرة 'هابي غيلمور' في الغولف بعد، ولا يزال في جعبته الكثير. إذ يسعى الأسطورة 'آدم ساندلر' سريع الغضب إلى عودة قوية من أجل تحقيق حلم ابنته.",
+    "poster": "https://image.tmdb.org/t/p/w500/cjoxRBMajRi0Ic1MejbmudKzdbf.jpg",
+    "hdUrl": "https://streamtape.com/e/M6D1qbY9oOC07a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/M6D1qbY9oOC07a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Adam Sandler",
+            "image": "https://image.tmdb.org/t/p/w185/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg"
+        },
+        {
+            "name": "Julie Bowen",
+            "image": "https://image.tmdb.org/t/p/w185/5ewqnbPAY0EzZObGHIKU4VsCanD.jpg"
+        },
+        {
+            "name": "Christopher McDonald",
+            "image": "https://image.tmdb.org/t/p/w185/gK1XhbfD9Xd8s3VXRPpgDCluyZp.jpg"
+        },
+        {
+            "name": "Benny Safdie",
+            "image": "https://image.tmdb.org/t/p/w185/u10A5DpUYRB1zMF7YoGYcyvhois.jpg"
+        },
+        {
+            "name": "Ben Stiller",
+            "image": "https://image.tmdb.org/t/p/w185/scgpxhI05JpdNXXfmpK6z0rPOWN.jpg"
+        }
+    ]
+},
+    {
     "title": "KPop Demon Hunters",
     "year": "2025",
     "desc": "حينما يهدأ هدير الجماهير في الملاعب، يوظّف نجوم البوب الكوري، 'رومي' و'ميرا' و'زوي'، قواهم الخارقة السرية لحماية معجبيهم من مخاطر دائمة خارقة للطبيعة.",
