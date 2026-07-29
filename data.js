@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Almost Famous",
+    "year": "2000",
+    "desc": "في عام 1973 ، حب ويليام ميلر البالغ من العمر 15 عامًا للموسيقى بلا خجل وطموحه في أن يصبح صحفيًا في موسيقى الروك ، منحه مهمة من مجلة رولينج ستون لإجراء مقابلة وجولة مع فرقة ستيلووتر الصاعدة - أمام الغيتار الرئيسي راسل هاموند ، والمغني الرئيسي جيف بيبي.",
+    "poster": "https://image.tmdb.org/t/p/w500/3rrkyLYbgLj84AYvjhdcJot4JPx.jpg",
+    "hdUrl": "https://streamtape.com/e/Z13gzgAzo6CqpWq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Z13gzgAzo6CqpWq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "دراما موسيقى",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Billy Crudup",
+            "image": "https://image.tmdb.org/t/p/w185/4kHvUUVFMW8GJTHJtoAiskqhcyO.jpg"
+        },
+        {
+            "name": "Frances McDormand",
+            "image": "https://image.tmdb.org/t/p/w185/gBkoteKZshmQXEyEoyT6WE7N0tF.jpg"
+        },
+        {
+            "name": "Kate Hudson",
+            "image": "https://image.tmdb.org/t/p/w185/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg"
+        },
+        {
+            "name": "Jason Lee",
+            "image": "https://image.tmdb.org/t/p/w185/3duPl6Ve8RnvcouOaXoMCdJf5ln.jpg"
+        },
+        {
+            "name": "Patrick Fugit",
+            "image": "https://image.tmdb.org/t/p/w185/bsONcodcqRKV97p1Oo1jcPkEnDA.jpg"
+        }
+    ]
+},
+    {
     "title": "Happy Gilmore 2",
     "year": "2025",
     "desc": "لم تنتهِ مسيرة 'هابي غيلمور' في الغولف بعد، ولا يزال في جعبته الكثير. إذ يسعى الأسطورة 'آدم ساندلر' سريع الغضب إلى عودة قوية من أجل تحقيق حلم ابنته.",
