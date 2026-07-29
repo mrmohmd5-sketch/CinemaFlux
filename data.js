@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "KPop Demon Hunters",
+    "year": "2025",
+    "desc": "حينما يهدأ هدير الجماهير في الملاعب، يوظّف نجوم البوب الكوري، 'رومي' و'ميرا' و'زوي'، قواهم الخارقة السرية لحماية معجبيهم من مخاطر دائمة خارقة للطبيعة.",
+    "poster": "https://image.tmdb.org/t/p/w500/xe2SWgpp4fdfh80hbRxqwdGBAH9.jpg",
+    "hdUrl": "https://streamtape.com/e/W13187Gzgjt0kA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/W13187Gzgjt0kA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "فانتازيا موسيقى كوميديا رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Arden Cho",
+            "image": "https://image.tmdb.org/t/p/w185/uXXUOCkqhfijNZYgmzjnfs7jQMw.jpg"
+        },
+        {
+            "name": "May Hong",
+            "image": "https://image.tmdb.org/t/p/w185/md6XxnB2yU4K7qgfpeRPVEnOGyG.jpg"
+        },
+        {
+            "name": "Ji-young Yoo",
+            "image": "https://image.tmdb.org/t/p/w185/4jgtqpNWhMx8XOKQ9qQJvDdzbxG.jpg"
+        },
+        {
+            "name": "Ahn Hyo-seop",
+            "image": "https://image.tmdb.org/t/p/w185/oLS5jvS5cZ7SaXNctA8VYXPp6ax.jpg"
+        },
+        {
+            "name": "Yunjin Kim",
+            "image": "https://image.tmdb.org/t/p/w185/xS7eco56mUiZGJGWDZ0pwzrUAei.jpg"
+        }
+    ]
+},
+    {
     "title": "A Monster Calls",
     "year": "2016",
     "desc": "يعاني (كونر) بشكل مستمر في المدرسة وفي المنزل، خاصة مع وجود أم مريضة في المنزل، فيكافح (كونر) من أجل التغلب على شعوره بالذنب والغضب ومواجهة من يقوم بالاعتداء عليه من أقرانه، لكنه يواجه مشكلة أكبر وهي القدرة على إخبار الحقيقة والاعتراف بالمشكلات، وهنا يبرز وحش متنكر في شكل شجرة ويصير صديقًا له.",
