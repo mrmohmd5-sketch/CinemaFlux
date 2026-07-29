@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Novocaine",
+    "year": "2025",
+    "desc": "عندما تُختَطف فتاة أحلامه، يحوّل رجلٌ عاجز عن الشعور بالألم الجسدي حالته النادرة إلى ميزة غير متوقعة في صراعه لإنقاذها.",
+    "poster": "https://image.tmdb.org/t/p/w500/6njXDRYBfYGBFKn7Di8GF6q7MFy.jpg",
+    "hdUrl": "https://streamtape.com/e/XdLmDvdxwaTDaWw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/XdLmDvdxwaTDaWw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "حركة كوميديا إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jack Quaid",
+            "image": "https://image.tmdb.org/t/p/w185/320qW5yEbxpmyxQ3evmClJbtKag.jpg"
+        },
+        {
+            "name": "Amber Midthunder",
+            "image": "https://image.tmdb.org/t/p/w185/f8VWGyaIS38NkDIzQ2hapXKt0N5.jpg"
+        },
+        {
+            "name": "Ray Nicholson",
+            "image": "https://image.tmdb.org/t/p/w185/f0MRbGIyTEJLJgHedJS8pRFhGn4.jpg"
+        },
+        {
+            "name": "Betty Gabriel",
+            "image": "https://image.tmdb.org/t/p/w185/n67i3H3VM5quDQfcS591EbotPby.jpg"
+        },
+        {
+            "name": "Matt Walsh",
+            "image": "https://image.tmdb.org/t/p/w185/fp1JsNbZyhJ3PHpwZJVDYRz1RGF.jpg"
+        }
+    ]
+},
+    {
     "title": "How to Train Your Dragon",
     "year": "2025",
     "desc": "يحاول فتى شاب ينتمي لشعب الفايكنج شق طريقه في عالم صيد التنانين وإثبات جدارته وسط شعبه وعائلته، ولكن تتسبب صدفه بحتة في بداية صداقة قوية بينه وبين تنين صغير.",
