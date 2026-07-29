@@ -1248,7 +1248,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "title": "Pirates of the Caribbean: Dead Man's Chest مدبلج",
     "year": "2006",
     "desc": "يشق الكابتن جاك سبارو طريقه للخروج من دين الدم مع الشبحي ديفي جونز لتجنب اللعن الأبدي.",
     "poster": "https://image.tmdb.org/t/p/w500/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg",
