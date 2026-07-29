@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Glass Onion: A Knives Out Mystery",
+    "year": "2022",
+    "desc": "يتوجّه المحقّق المشهور عالميًّا 'بينوا بلون' إلى 'اليونان' لإزاحة الستار عن ملابسات لغز يرتبط برجل ثريّ في مجال التكنولوجيا وفريقه الانتقائي من الأصدقاء.",
+    "poster": "https://image.tmdb.org/t/p/w500/lPpcYZugh82cn5ilYNEBorrXMIS.jpg",
+    "hdUrl": "https://streamtape.com/e/J93Vb2yOXVsj3lJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/J93Vb2yOXVsj3lJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "كوميديا جريمة غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Daniel Craig",
+            "image": "https://image.tmdb.org/t/p/w185/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg"
+        },
+        {
+            "name": "Edward Norton",
+            "image": "https://image.tmdb.org/t/p/w185/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg"
+        },
+        {
+            "name": "Janelle Monáe",
+            "image": "https://image.tmdb.org/t/p/w185/axTIbPz6ZbqlcCwkNBgD59gY3lx.jpg"
+        },
+        {
+            "name": "Kathryn Hahn",
+            "image": "https://image.tmdb.org/t/p/w185/9sVllAKfEls3SJD3GoPm2JEZoa5.jpg"
+        },
+        {
+            "name": "Leslie Odom Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/pDA11JMNAGQGJo7nRpZHp7pdp9N.jpg"
+        }
+    ]
+},
+    {
     "title": "Ne Zha 2",
     "year": "2025",
     "desc": "بعد تعرض ناچا (Nezha) وآوْبِينْغ (Ao Bing) لصاعقة سماوية، تحوَّلت أجسادهما إلى أرواح معرضة للزوال. يخطط المعلم تَايِي (Taiyi) لإعادة بناء أجسادهما باستخدام زهرة اللوتس المقدسة، إلا أنَّ العملية تواجه عقبات عديدة. فما مصيرُ نِيْتْشَا وآوْبِينْغ في ظلِّ هذه التحديات؟",
