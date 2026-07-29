@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "A Minecraft Movie",
+    "year": "2025",
+    "desc": "ينطلق التنين الشرير (إيندر) في طريقه لتدمير كل شيء، فيدفع الأمر فتاة صغيرة وفريقها من المغامرين للتعاون معًا في سبيل إنقاذ العالم من الدمار المحتمل.",
+    "poster": "https://image.tmdb.org/t/p/w500/dERZcS2xzBxrYNhSAF2TXDz8DNI.jpg",
+    "hdUrl": "https://streamtape.com/e/kKMpGpWw7bSOvDz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/kKMpGpWw7bSOvDz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "عائلي فانتازيا كوميديا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Momoa",
+            "image": "https://image.tmdb.org/t/p/w185/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+        },
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Sebastian Eugene Hansen",
+            "image": "https://image.tmdb.org/t/p/w185/40HNkoB3RKPMPgLhTyKQU6kG0sc.jpg"
+        },
+        {
+            "name": "Emma Myers",
+            "image": "https://image.tmdb.org/t/p/w185/v1Y8RP39135ZOary9M4MbkrCAdn.jpg"
+        },
+        {
+            "name": "Danielle Brooks",
+            "image": "https://image.tmdb.org/t/p/w185/hwrMFbcALcqrV7S2pRP9C5BXrU0.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bluff",
     "year": "2026",
     "desc": "عندما تتحطم حياتها الهادئة على جزيرة نائية بعودة قائدها السابق المنتقم، يتعين على قرصانة سابقة ماهرة مواجهة ماضيها الدموي وإطلاق العنان لمواهبها القاتلة لإنقاذ عائلتها من حصار لا يرحم.",
