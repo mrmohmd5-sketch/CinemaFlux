@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "The Bad Guys",
+    "title": "The Bad Guys مدبلج",
     "year": "2022",
     "desc": "عندما يتم القبض أخيرا على الأشرار ، وهم طاقم من الحيوانات الإجرامية ، بعد سنوات من السطو وكونهم أكثر الأشرار المطلوبين في العالم ، يتوسط السيد وولف في صفقة لإنقاذهم جميعا من السجن",
     "poster": "https://image.tmdb.org/t/p/w500/qQJaq2oLCcvcnrQth3U5XMLSD9Q.jpg",
