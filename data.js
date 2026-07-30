@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Hangover",
+    "year": "2009",
+    "desc": "عندما يأتي ثلاثة أصدقاء أخيرًا بعد ليلة صاخبة من صخب حفلة توديع العزوبية ، يجدون طفلًا في الخزانة ونمرًا في الحمام. لكن يبدو أنهم لا يستطيعون تحديد مكان أفضل صديق لهم ، دوغ - الذي من المفترض أن يكون هو الذي يربط العقدة. يبدأ الثلاثي بحثًا محمومًا عن دوج ، ويثابر على مخلفاتهم السيئة لمحاولة الوصول إلى الكنيسة في الوقت المحدد.",
+    "poster": "https://image.tmdb.org/t/p/w500/xFnmtKrQgOZZUjI6F6Fl7vauOHu.jpg",
+    "hdUrl": "https://streamtape.com/e/9Pmkpoq6BpFal3Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9Pmkpoq6BpFal3Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Bradley Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
+        },
+        {
+            "name": "Ed Helms",
+            "image": "https://image.tmdb.org/t/p/w185/gPZ8tZaNQGAc3KZRIPp9rgGbEnN.jpg"
+        },
+        {
+            "name": "Zach Galifianakis",
+            "image": "https://image.tmdb.org/t/p/w185/ncBSLoNUufKpg7vzx1gCtjhst8i.jpg"
+        },
+        {
+            "name": "Justin Bartha",
+            "image": "https://image.tmdb.org/t/p/w185/AalKjN8nR8RZ8g6ZdWV2smnQq4d.jpg"
+        },
+        {
+            "name": "Heather Graham",
+            "image": "https://image.tmdb.org/t/p/w185/avYdNkeg1oTvmrNJbFDcTlBCkKs.jpg"
+        }
+    ]
+},
+    {
     "title": "The Hangover Part II",
     "year": "2011",
     "desc": "عندما تلتقي المجموعة في تايلاند لحضور حفل زفاف 'ستو'، فإذا بهم يستيقظون ذات صباح في فندق سيئ السمعة ولا يعرفون كيف وصلوا إليه!",
