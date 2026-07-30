@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Avatar Aang: The Last Airbender",
+    "year": "2026",
+    "desc": "ينغمس أفتار انغ آخر مسخّر هواء في العالم، في اكتشاف قوة قديمة يمكنها إنقاذ ثقافته من الانقراض. وبمساعدة أصدقائه، ينطلق في رحلة حول العالم للعثور عليها قبل أن تقع في الأيدي الخطأ، حيث قد تهدد بقلب السلام الذي ضحّوا بكل شيء لتحقيقه",
+    "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+    "hdUrl": "https://streamtape.com/e/KgDwJ7qzJdtolM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KgDwJ7qzJdtolM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "9.4",
+    "genre": "رسوم متحركة حركة مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Eric Nam",
+            "image": "https://image.tmdb.org/t/p/w185/gEH0b5q9tupL49dmUFkjm9dnxP2.jpg"
+        },
+        {
+            "name": "Dave Bautista",
+            "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        },
+        {
+            "name": "Jessica Matten",
+            "image": "https://image.tmdb.org/t/p/w185/EQsPxsav8AZmaeT3mpU3Evilee.jpg"
+        },
+        {
+            "name": "Román Zaragoza",
+            "image": "https://image.tmdb.org/t/p/w185/uWkOkSLqj2POMqkeLk5E5UJzebv.jpg"
+        },
+        {
+            "name": "Steven Yeun",
+            "image": "https://image.tmdb.org/t/p/w185/fOMFO2Xx4duzpNgS9Q5ytO44yGb.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bad Guys 2",
     "year": "2025",
     "desc": "يحاول الأشرار السابقون الذين أصبحوا صالحين الآن (بجهدٍ بالغ، بالغٍ جدًا) أن يكونوا طيبين، لكنهم يجدون أنفسهم فجأة متورطين في عملية سرقة عالمية محفوفة بالمخاطر، خططت لها ببراعة عصابة جديدة من المجرمات لم يتوقعوا ظهورها قط: الفتيات الشريرات.",
