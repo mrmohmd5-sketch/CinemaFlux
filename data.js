@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Night at the Museum: Battle of the Smithsonian",
+    "year": "2009",
+    "desc": "يعود لاري حارس المتحف في الجزء الثاني لينقذ متحف السميثسونيون الشهير الذي وقع تحت سحر حجر أثري فرعوني يحي جميع المعروضات بالمتحف من بعد غروب الشمس. يقع لاري في مغامرات طريفة و هو يحاول استرجاع هذا الحجر من الملك الشرير بمساعدة اصدقائه آينشتين، نابليون، والرئيس روزفيلت، والمزيد من الشخصيات التاريخية.",
+    "poster": "https://image.tmdb.org/t/p/w500/l9yAQn6TyrA3gv5xZZkiMMoZsiw.jpg",
+    "hdUrl": "https://streamtape.com/e/eVpap9JRyWhYryV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eVpap9JRyWhYryV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "مغامرة فانتازيا حركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Stiller",
+            "image": "https://image.tmdb.org/t/p/w185/scgpxhI05JpdNXXfmpK6z0rPOWN.jpg"
+        },
+        {
+            "name": "Amy Adams",
+            "image": "https://image.tmdb.org/t/p/w185/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+        },
+        {
+            "name": "Owen Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/5A46lNOwmpX77jAdhyKxU7e2Hub.jpg"
+        },
+        {
+            "name": "Hank Azaria",
+            "image": "https://image.tmdb.org/t/p/w185/uON3TWSySIy8wbDhkSzmFTDM6XO.jpg"
+        },
+        {
+            "name": "Robin Williams",
+            "image": "https://image.tmdb.org/t/p/w185/iYdeP6K0qz44Wg2Nw9LPJGMBkQ5.jpg"
+        }
+    ]
+},
+    {
     "title": "Night at the Museum: Secret of the Tomb",
     "year": "2014",
     "desc": "في إطار درامي كوميدي ممزوج بالتشويق والإثارة تدور أحداث الفيلم ، حول لاري (بين ستيلر) حارس المتحف الذي يترك (نيويورك) ، ويذهب في رحلة حول الكرة الأرضية من أجل توحيد بعض الشخصيات الجديدة ، والمفضلة من خلال ملحمة تسعى لإنقاذ السحر قبل أن ينتهي إلى الأبد ، ويساعده في ذلك جميع أصدقائه بالمتحف .",
