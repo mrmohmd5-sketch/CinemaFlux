@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Hangover Part III",
+    "year": "2013",
+    "desc": "يعود 'قطيع الذئاب' إلى لاس فيغاس مُحاولين مساعدة 'ألن'، ثم ينتهي بهم المقام في مغامرة طائشة مع السيد 'تشاو' وزعيم العصابة 'مارشال'.",
+    "poster": "https://image.tmdb.org/t/p/w500/vtxuPWkdllLNLVyGjKYa267ntuH.jpg",
+    "hdUrl": "https://streamtape.com/e/GA2oQQ6XkPF1gXV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GA2oQQ6XkPF1gXV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Bradley Cooper",
+            "image": "https://image.tmdb.org/t/p/w185/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
+        },
+        {
+            "name": "Ed Helms",
+            "image": "https://image.tmdb.org/t/p/w185/gPZ8tZaNQGAc3KZRIPp9rgGbEnN.jpg"
+        },
+        {
+            "name": "Zach Galifianakis",
+            "image": "https://image.tmdb.org/t/p/w185/ncBSLoNUufKpg7vzx1gCtjhst8i.jpg"
+        },
+        {
+            "name": "Justin Bartha",
+            "image": "https://image.tmdb.org/t/p/w185/AalKjN8nR8RZ8g6ZdWV2smnQq4d.jpg"
+        },
+        {
+            "name": "Ken Jeong",
+            "image": "https://image.tmdb.org/t/p/w185/dfuDZ2m2A8nBb0TdyeqmlPOobJA.jpg"
+        }
+    ]
+},
+    {
     "title": "Night at the Museum: Battle of the Smithsonian",
     "year": "2009",
     "desc": "يعود لاري حارس المتحف في الجزء الثاني لينقذ متحف السميثسونيون الشهير الذي وقع تحت سحر حجر أثري فرعوني يحي جميع المعروضات بالمتحف من بعد غروب الشمس. يقع لاري في مغامرات طريفة و هو يحاول استرجاع هذا الحجر من الملك الشرير بمساعدة اصدقائه آينشتين، نابليون، والرئيس روزفيلت، والمزيد من الشخصيات التاريخية.",
