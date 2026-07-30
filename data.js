@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Night at the Museum: Secret of the Tomb",
+    "year": "2014",
+    "desc": "في إطار درامي كوميدي ممزوج بالتشويق والإثارة تدور أحداث الفيلم ، حول لاري (بين ستيلر) حارس المتحف الذي يترك (نيويورك) ، ويذهب في رحلة حول الكرة الأرضية من أجل توحيد بعض الشخصيات الجديدة ، والمفضلة من خلال ملحمة تسعى لإنقاذ السحر قبل أن ينتهي إلى الأبد ، ويساعده في ذلك جميع أصدقائه بالمتحف .",
+    "poster": "https://image.tmdb.org/t/p/w500/xwgy305K6qDs3D20xUO4OZu1HPY.jpg",
+    "hdUrl": "https://streamtape.com/e/GJVDxyY9oaH1XDW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GJVDxyY9oaH1XDW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "مغامرة كوميديا فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Stiller",
+            "image": "https://image.tmdb.org/t/p/w185/scgpxhI05JpdNXXfmpK6z0rPOWN.jpg"
+        },
+        {
+            "name": "Robin Williams",
+            "image": "https://image.tmdb.org/t/p/w185/iYdeP6K0qz44Wg2Nw9LPJGMBkQ5.jpg"
+        },
+        {
+            "name": "Owen Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/5A46lNOwmpX77jAdhyKxU7e2Hub.jpg"
+        },
+        {
+            "name": "Steve Coogan",
+            "image": "https://image.tmdb.org/t/p/w185/tT7OXc2qA6hlREHXdwGLp0XihzA.jpg"
+        },
+        {
+            "name": "Ricky Gervais",
+            "image": "https://image.tmdb.org/t/p/w185/z293wonhuF0aYQtg1ROOSl1LObf.jpg"
+        }
+    ]
+},
+    {
     "title": "Night at the Museum",
     "year": "2006",
     "desc": "تسود الفوضى في متحف التاريخ الطبيعي عندما يثير الحارس الليلي لاري دالي عن طريق الخطأ لعنة قديمة ، ويوقظ أتيلا الهون وجيشًا من المصارعين وديناصور ريكس ومعروضات أخرى.",
