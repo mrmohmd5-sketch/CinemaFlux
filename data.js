@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Night at the Museum",
+    "year": "2006",
+    "desc": "تسود الفوضى في متحف التاريخ الطبيعي عندما يثير الحارس الليلي لاري دالي عن طريق الخطأ لعنة قديمة ، ويوقظ أتيلا الهون وجيشًا من المصارعين وديناصور ريكس ومعروضات أخرى.",
+    "poster": "https://image.tmdb.org/t/p/w500/pDsAAYf6Zn0yiAGJ6lYGs6hoZ4E.jpg",
+    "hdUrl": "https://streamtape.com/e/JDJBKg8KokTjd1a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/JDJBKg8KokTjd1a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "فانتازيا عائلي كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ben Stiller",
+            "image": "https://image.tmdb.org/t/p/w185/scgpxhI05JpdNXXfmpK6z0rPOWN.jpg"
+        },
+        {
+            "name": "Carla Gugino",
+            "image": "https://image.tmdb.org/t/p/w185/dAqGOsHSzlP6RhaUURX2NrwITaq.jpg"
+        },
+        {
+            "name": "Dick Van Dyke",
+            "image": "https://image.tmdb.org/t/p/w185/jXAeNx7mYdirzMHcqPyj5VXxcXi.jpg"
+        },
+        {
+            "name": "Mickey Rooney",
+            "image": "https://image.tmdb.org/t/p/w185/eYuayEC3xhXQf3Z1Cy6AVMEcgZb.jpg"
+        },
+        {
+            "name": "Bill Cobbs",
+            "image": "https://image.tmdb.org/t/p/w185/xRBrI4rPkZuMBMDh8GPke20ZgUv.jpg"
+        }
+    ]
+},
+    {
     "title": "Loki",
     "year": "2021",
     "desc": "بعد سرقة الـ'تيسراكت' خلال أحداث“المنتقمون: نهاية اللعبة” ، يتم نقل نسخة بديلة من لوكي إلى هيئة التباين الزمني، وهي منظمة بيروقراطية غامضة تقع خارج الزمان والمكان وتراقب الخط الزمني. تعرض عليه الهيئة خيارًا: إما مواجهة الإزالة من الوجود باعتباره “متغيرًا زمنيًا”، أو المساعدة في إصلاح الخط الزمني والتصدي لتهديد أكبر.",
