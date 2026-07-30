@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Bad Guys 2",
+    "year": "2025",
+    "desc": "يحاول الأشرار السابقون الذين أصبحوا صالحين الآن (بجهدٍ بالغ، بالغٍ جدًا) أن يكونوا طيبين، لكنهم يجدون أنفسهم فجأة متورطين في عملية سرقة عالمية محفوفة بالمخاطر، خططت لها ببراعة عصابة جديدة من المجرمات لم يتوقعوا ظهورها قط: الفتيات الشريرات.",
+    "poster": "https://image.tmdb.org/t/p/w500/5kPBoixwBx2WBZPd14umvXfU3ib.jpg",
+    "hdUrl": "https://streamtape.com/e/yxWgOWKZmjt1Ajl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yxWgOWKZmjt1Ajl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "عائلي كوميديا جريمة مغامرة رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sam Rockwell",
+            "image": "https://image.tmdb.org/t/p/w185/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg"
+        },
+        {
+            "name": "Marc Maron",
+            "image": "https://image.tmdb.org/t/p/w185/xzRBK8hR6693VQWmr3Wx2UVoA5P.jpg"
+        },
+        {
+            "name": "Awkwafina",
+            "image": "https://image.tmdb.org/t/p/w185/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+        },
+        {
+            "name": "Craig Robinson",
+            "image": "https://image.tmdb.org/t/p/w185/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg"
+        },
+        {
+            "name": "Anthony Ramos",
+            "image": "https://image.tmdb.org/t/p/w185/gCeRfH3aetIpZwKxe8Wl4ZYcQg5.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bad Guys مدبلج",
     "year": "2022",
     "desc": "عندما يتم القبض أخيرا على الأشرار ، وهم طاقم من الحيوانات الإجرامية ، بعد سنوات من السطو وكونهم أكثر الأشرار المطلوبين في العالم ، يتوسط السيد وولف في صفقة لإنقاذهم جميعا من السجن",
