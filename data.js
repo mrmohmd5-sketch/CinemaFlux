@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Bad Guys",
+    "year": "2022",
+    "desc": "عندما يتم القبض أخيرا على الأشرار ، وهم طاقم من الحيوانات الإجرامية ، بعد سنوات من السطو وكونهم أكثر الأشرار المطلوبين في العالم ، يتوسط السيد وولف في صفقة لإنقاذهم جميعا من السجن",
+    "poster": "https://image.tmdb.org/t/p/w500/qQJaq2oLCcvcnrQth3U5XMLSD9Q.jpg",
+    "hdUrl": "https://streamtape.com/e/QbQpPyqPVaF01Wz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QbQpPyqPVaF01Wz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة رسوم متحركة كوميديا جريمة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sam Rockwell",
+            "image": "https://image.tmdb.org/t/p/w185/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg"
+        },
+        {
+            "name": "Marc Maron",
+            "image": "https://image.tmdb.org/t/p/w185/xzRBK8hR6693VQWmr3Wx2UVoA5P.jpg"
+        },
+        {
+            "name": "Awkwafina",
+            "image": "https://image.tmdb.org/t/p/w185/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+        },
+        {
+            "name": "Craig Robinson",
+            "image": "https://image.tmdb.org/t/p/w185/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg"
+        },
+        {
+            "name": "Anthony Ramos",
+            "image": "https://image.tmdb.org/t/p/w185/gCeRfH3aetIpZwKxe8Wl4ZYcQg5.jpg"
+        }
+    ]
+},
+    {
     "title": "The Hangover",
     "year": "2009",
     "desc": "عندما يأتي ثلاثة أصدقاء أخيرًا بعد ليلة صاخبة من صخب حفلة توديع العزوبية ، يجدون طفلًا في الخزانة ونمرًا في الحمام. لكن يبدو أنهم لا يستطيعون تحديد مكان أفضل صديق لهم ، دوغ - الذي من المفترض أن يكون هو الذي يربط العقدة. يبدأ الثلاثي بحثًا محمومًا عن دوج ، ويثابر على مخلفاتهم السيئة لمحاولة الوصول إلى الكنيسة في الوقت المحدد.",
