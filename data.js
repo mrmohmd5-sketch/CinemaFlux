@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Ballerina",
+    "year": "2016",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/qBxMhcmNnFniuDAZTKEHcSgKtsn.jpg",
+    "hdUrl": "https://streamtape.com/e/MJOpaz6KeaImmp8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/MJOpaz6KeaImmp8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "رسوم متحركة مغامرة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Elle Fanning",
+            "image": "https://image.tmdb.org/t/p/w185/ucC5faqfEYVhoC25M6Hi3znZmab.jpg"
+        },
+        {
+            "name": "Dane DeHaan",
+            "image": "https://image.tmdb.org/t/p/w185/8asHTI9I2Xz0ki018r7b0LuLWf4.jpg"
+        },
+        {
+            "name": "Nat Wolff",
+            "image": "https://image.tmdb.org/t/p/w185/g9noCweddwSb3VBSRpX3vo7TbuP.jpg"
+        },
+        {
+            "name": "Carly Rae Jepsen",
+            "image": "https://image.tmdb.org/t/p/w185/3G3D8ivfTRJ9t9JrYCT7CtyVYXA.jpg"
+        },
+        {
+            "name": "Maddie Ziegler",
+            "image": "https://image.tmdb.org/t/p/w185/hDzdA0IvoPpx5nmwL5Uu75rdfYh.jpg"
+        }
+    ]
+},
+    {
     "title": "The Actress الممثلة مدبلج",
     "year": "2023",
     "desc": "تدور أحداث المسلسل حول ممثلة شهيرة تعيش حياة مزدوجة بين أضواء الشهرة والنجومية وبين ملاحقة وتصفية المجرمين في الخفاء .",
