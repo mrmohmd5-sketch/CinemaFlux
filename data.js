@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "The Actress الممثلة مدبلج",
     "year": "2023",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث المسلسل حول ممثلة شهيرة تعيش حياة مزدوجة بين أضواء الشهرة والنجومية وبين ملاحقة وتصفية المجرمين في الخفاء .",
     "poster": "https://image.tmdb.org/t/p/w500/2q42KuJvCu5CVwRRIRizFikwEay.jpg",
     "hdUrl": "",
     "sdUrl": "",
