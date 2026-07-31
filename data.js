@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Pinocchio",
+    "year": "2022",
+    "desc": "الكلاسيكية الخالدة.\r تشرع دمية خشبية في مغامرة مثيرة لتصبح فتى حقيقيا.",
+    "poster": "https://image.tmdb.org/t/p/w500/9PYnkQRz9OgeQPA8Upxkwr0imEC.jpg",
+    "hdUrl": "https://streamtape.com/e/9kq0rGb6x3Iaa78/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9kq0rGb6x3Iaa78/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "فانتازيا مغامرة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Joseph Gordon-Levitt",
+            "image": "https://image.tmdb.org/t/p/w185/z2FA8js799xqtfiFjBTicFYdfk.jpg"
+        },
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Benjamin Evan Ainsworth",
+            "image": "https://image.tmdb.org/t/p/w185/7KkGM3pED3mJmiuolmkGcGn4HPE.jpg"
+        },
+        {
+            "name": "Angus Wright",
+            "image": "https://image.tmdb.org/t/p/w185/7VOW55b8WF0eyFJiCjiBXSRA5mG.jpg"
+        },
+        {
+            "name": "Cynthia Erivo",
+            "image": "https://image.tmdb.org/t/p/w185/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg"
+        }
+    ]
+},
+    {
     "title": "The Actress",
     "year": "2023",
     "desc": "تدور أحداث المسلسل حول ممثلة شهيرة تعيش حياة مزدوجة بين أضواء الشهرة والنجومية وبين ملاحقة وتصفية المجرمين في الخفاء .",
