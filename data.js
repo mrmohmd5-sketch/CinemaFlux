@@ -1257,7 +1257,7 @@ const globalMoviesData = [
     "title": "Happy Gilmore 2",
     "year": "2025",
     "desc": "لم تنتهِ مسيرة 'هابي غيلمور' في الغولف بعد، ولا يزال في جعبته الكثير. إذ يسعى الأسطورة 'آدم ساندلر' سريع الغضب إلى عودة قوية من أجل تحقيق حلم ابنته.",
-    "poster": "https://image.tmdb.org/t/p/w500/cjoxRBMajRi0Ic1MejbmudKzdbf.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/ynT06XivgBDkg7AtbDbX1dJeBGY.jpg",
     "hdUrl": "https://streamtape.com/e/M6D1qbY9oOC07a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/M6D1qbY9oOC07a/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.5",
