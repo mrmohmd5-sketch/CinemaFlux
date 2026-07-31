@@ -2,6 +2,78 @@ const globalMoviesData = [
     {
     "title": "The Actress",
     "year": "2023",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/2q42KuJvCu5CVwRRIRizFikwEay.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "5.9",
+    "genre": "دراما جريمة",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Pınar Deniz",
+            "image": "https://image.tmdb.org/t/p/w185/zZj5nq9dP3otwFBmEgvSHiBaNqO.jpg"
+        },
+        {
+            "name": "Uraz Kaygılaroğlu",
+            "image": "https://image.tmdb.org/t/p/w185/7rdov56gMxgsBhOMeqdwv1cgOiW.jpg"
+        },
+        {
+            "name": "İpek Çiçek",
+            "image": "https://image.tmdb.org/t/p/w185/7pggyJuTo2z72hdJZIjwRULA62I.jpg"
+        },
+        {
+            "name": "Şebnem Hassanisoughi",
+            "image": "https://image.tmdb.org/t/p/w185/wbpzmUI1ya9G0Yzq2GnSe4aJC2r.jpg"
+        },
+        {
+            "name": "Serhat Kılıç",
+            "image": "https://image.tmdb.org/t/p/w185/mhqfAxuR7DPOP3FRiI2SQKaSRn6.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/MP34RabqWDhdPx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/XYODDPLOGVFDaeO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/zlq6KqqmpoHYryj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/vQO9ZLb9DlfDq4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/0L13Y1gKG9S03X/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/JvR3wpypxlSG8b/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/oD4BMam0pPsKYX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/Y1Z1Wz4bK1CvmLz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
+    "title": "The Actress",
+    "year": "2023",
     "desc": "تدور أحداث المسلسل حول ممثلة شهيرة تعيش حياة مزدوجة بين أضواء الشهرة والنجومية وبين ملاحقة وتصفية المجرمين في الخفاء .",
     "poster": "https://image.tmdb.org/t/p/w500/2q42KuJvCu5CVwRRIRizFikwEay.jpg",
     "hdUrl": "",
