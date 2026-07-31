@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Puss in Boots: The Last Wish",
+    "year": "2022",
+    "desc": "يكتشف بوس أن شغفه بالمغامرة قد تسبب في خسائر فادحة وذلك لأنه قضى على ثمانية من حياته التسع . فينطلق بوس في رحلة ملحمية للعثور على آخر أمنية أسطورية واستعادة حياته التسعة.",
+    "poster": "https://image.tmdb.org/t/p/w500/tevlzPwtzc5KYPONsS2sGqYQoPG.jpg",
+    "hdUrl": "https://streamtape.com/e/0Bvb3pXRw8HLyQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/0Bvb3pXRw8HLyQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "رسوم متحركة مغامرة فانتازيا كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Antonio Banderas",
+            "image": "https://image.tmdb.org/t/p/w185/fce7zl6elUzsv7wudHFc7RgFtjD.jpg"
+        },
+        {
+            "name": "Salma Hayek Pinault",
+            "image": "https://image.tmdb.org/t/p/w185/1qfYF7NGRObmeKR7IVXUFVIC0CN.jpg"
+        },
+        {
+            "name": "Harvey Guillén",
+            "image": "https://image.tmdb.org/t/p/w185/yiNBonobPwqMVweB02JWufzp2l9.jpg"
+        },
+        {
+            "name": "Wagner Moura",
+            "image": "https://image.tmdb.org/t/p/w185/53IbAed4t1dOWxY3iygbRYZBBnm.jpg"
+        },
+        {
+            "name": "Florence Pugh",
+            "image": "https://image.tmdb.org/t/p/w185/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+        }
+    ]
+},
+    {
     "title": "The Little Mermaid",
     "year": "2023",
     "desc": "أصغر بنات الملك تريتون ، والأكثر تحديا ، يتوق أرييل لمعرفة المزيد عن العالم وراء البحر ، وأثناء زيارته للسطح ، يقع في حب الأمير إريك المحطم. مع منع حوريات البحر من التفاعل مع البشر ، تعقد آرييل صفقة مع ساحرة البحر الشريرة ، أورسولا ، مما يمنحها فرصة لتجربة الحياة على الأرض ، لكنه في النهاية يعرض حياتها - وتاج والدها - للخطر.",
