@@ -72,7 +72,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Pinocchio",
+    "title": "Pinocchio بينوكيو مدبلج",
     "year": "2022",
     "desc": "الكلاسيكية الخالدة.\r تشرع دمية خشبية في مغامرة مثيرة لتصبح فتى حقيقيا.",
     "poster": "https://image.tmdb.org/t/p/w500/9PYnkQRz9OgeQPA8Upxkwr0imEC.jpg",
