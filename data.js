@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
+    "year": "2024",
+    "desc": "حين تُجرف 'قاع الهامور' من المحيط، تستعد السنجابة العالِمة 'ساندي أمور' وصديقها 'سبونج بوب سكوير بانتس' لخوض غمار رحلة إلى 'تكساس' لإنقاذ بلدتهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/azjBayNa9endky6D5ImbKwEROr8.jpg",
+    "hdUrl": "https://streamtape.com/e/pjWWA43vLRUr6e4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pjWWA43vLRUr6e4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.1",
+    "genre": "عائلي كوميديا مغامرة رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Carolyn Lawrence",
+            "image": "https://image.tmdb.org/t/p/w185/vHycxQTs8EuyFdFJNww15xXB5lT.jpg"
+        },
+        {
+            "name": "Tom Kenny",
+            "image": "https://image.tmdb.org/t/p/w185/dKOxpGnRkIMaPkZSHKIns99WxQa.jpg"
+        },
+        {
+            "name": "Clancy Brown",
+            "image": "https://image.tmdb.org/t/p/w185/1JeBRNG7VS7r64V9lOvej9bZXW5.jpg"
+        },
+        {
+            "name": "Bill Fagerbakke",
+            "image": "https://image.tmdb.org/t/p/w185/zntKKc1uT53BnIihmzbq601eWKZ.jpg"
+        },
+        {
+            "name": "Mr. Lawrence",
+            "image": "https://image.tmdb.org/t/p/w185/gWFgxlREzbaPPdWsQZSCdjrFozy.jpg"
+        }
+    ]
+},
+    {
     "title": "Wish",
     "year": "2023",
     "desc": "في إطار من المغامرات والرسوم المتحركة، يدور العمل حول فتاة شابة تُدعى آشا تتمنى أمنية في أحد الليالي، وبمرور الوقت تواجه العديد من المتاعب في مواجهة ملك شرير يسعى لفرض قبضته على مدينتها.",
