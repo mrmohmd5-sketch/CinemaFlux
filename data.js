@@ -1,5 +1,77 @@
 const globalMoviesData = [
     {
+    "title": "The Actress",
+    "year": "2023",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/2q42KuJvCu5CVwRRIRizFikwEay.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "5.9",
+    "genre": "دراما جريمة",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Pınar Deniz",
+            "image": "https://image.tmdb.org/t/p/w185/zZj5nq9dP3otwFBmEgvSHiBaNqO.jpg"
+        },
+        {
+            "name": "Uraz Kaygılaroğlu",
+            "image": "https://image.tmdb.org/t/p/w185/7rdov56gMxgsBhOMeqdwv1cgOiW.jpg"
+        },
+        {
+            "name": "İpek Çiçek",
+            "image": "https://image.tmdb.org/t/p/w185/7pggyJuTo2z72hdJZIjwRULA62I.jpg"
+        },
+        {
+            "name": "Şebnem Hassanisoughi",
+            "image": "https://image.tmdb.org/t/p/w185/wbpzmUI1ya9G0Yzq2GnSe4aJC2r.jpg"
+        },
+        {
+            "name": "Serhat Kılıç",
+            "image": "https://image.tmdb.org/t/p/w185/mhqfAxuR7DPOP3FRiI2SQKaSRn6.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/aYQ7yMWbjvhxjzR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/k3pV2lj81qiDLX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>\\"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/86Rwd4B86vCJRd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/BzLGGQM8oluy1bv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/4xRyYPLPj2FKqew/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/ajyMLk0oVMhxqpo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/yP4BVYb3xZi14M2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/YW68qz8qGqivXPl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Pinocchio",
     "year": "2022",
     "desc": "الكلاسيكية الخالدة.\r تشرع دمية خشبية في مغامرة مثيرة لتصبح فتى حقيقيا.",
