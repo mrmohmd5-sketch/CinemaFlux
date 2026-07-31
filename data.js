@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Spellbound",
+    "title": "Spellbound مهمة سحرية مدبلج",
     "year": "2024",
     "desc": "عندما تحوّل تعويذة قوية والديها إلى وحشين عملاقين، يتعين على أميرة مراهقة أن تخوض مغامرة في البرية لإبطال هذه اللعنة قبل فوات الأوان.",
     "poster": "https://image.tmdb.org/t/p/w500/1ewaWdHMMortZZzSjidXWaA28Mp.jpg",
