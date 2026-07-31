@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Migration",
+    "year": "2023",
+    "desc": "تدور احداث الفيلم عن كوميديا العصر الحديث تتبع عائلة من البط الذين يقنعون والدهم المفرط في الحماية بالذهاب في إجازة العمر أثناء محاولتهم الهجرة من نيو إنجلاند ، عبر مدينة نيويورك ، وفي النهاية إلى جزر البهاما.",
+    "poster": "https://image.tmdb.org/t/p/w500/iX3Yw6awJlBp48S6chYR6N30Qh5.jpg",
+    "hdUrl": "https://streamtape.com/e/vQ8Ao6A7Qkf2Pm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vQ8Ao6A7Qkf2Pm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "عائلي كوميديا مغامرة رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kumail Nanjiani",
+            "image": "https://image.tmdb.org/t/p/w185/9EyrK1Cv7ey1h1GgmsVAOn45w6G.jpg"
+        },
+        {
+            "name": "Elizabeth Banks",
+            "image": "https://image.tmdb.org/t/p/w185/zrkI1dYucpTM8Qydtrtro9MgQPb.jpg"
+        },
+        {
+            "name": "Caspar Jennings",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Tresi Gazal",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Awkwafina",
+            "image": "https://image.tmdb.org/t/p/w185/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+        }
+    ]
+},
+    {
     "title": "Aladdin",
     "year": "2019",
     "desc": "اختر بحكمة.\r يشرع قنفذ شارع طيب القلب يدعى علاء الدين في مغامرة سحرية بعد العثور على مصباح يطلق جنيا حكيما بينما يتنافس الصدر الأعظم المتعطش للسلطة على نفس المصباح الذي لديه القدرة على تحقيق أعمق رغباتهم.",
