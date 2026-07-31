@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Luck",
+    "title": "Luck حظ مدبلج",
     "year": "2022",
     "desc": "'سام غرينفيلد' هي الأسوأ حظاً في العالم! تجد نفسها فجأة في أرض الحظ التي لم ترها من قبل، وتصبح مضطرة لتتعاون مع المخلوقات السحرية هناك لتغير حظها.",
     "poster": "https://image.tmdb.org/t/p/w500/xX1gGhCinQrPeWmU3JHkes8Ot7h.jpg",
@@ -33,7 +33,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "The Sea Beast",
+    "title": "The Sea Beast وحش البحار مدبلج",
     "year": "2022",
     "desc": "حين تختبئ فتاة شابّة على متن سفينة صائد وحوش بحرية أسطوري، ينطلقان في رحلة ملحمية عبر بحار مجهولة... ولا يكتفيان بذلك بل يصنعان التاريخ معًا.",
     "poster": "https://image.tmdb.org/t/p/w500/oxbnQ7wuZwOma0Z55wxtWtEk1ut.jpg",
@@ -66,7 +66,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Puss in Boots: The Last Wish",
+    "title": "Puss in Boots: The Last Wish القط ذو الحذاء مدبلج",
     "year": "2022",
     "desc": "يكتشف بوس أن شغفه بالمغامرة قد تسبب في خسائر فادحة وذلك لأنه قضى على ثمانية من حياته التسع . فينطلق بوس في رحلة ملحمية للعثور على آخر أمنية أسطورية واستعادة حياته التسعة.",
     "poster": "https://image.tmdb.org/t/p/w500/tevlzPwtzc5KYPONsS2sGqYQoPG.jpg",
@@ -99,7 +99,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "The Little Mermaid",
+    "title": "The Little Mermaid الحورية الصغيرة مدبلج",
     "year": "2023",
     "desc": "أصغر بنات الملك تريتون ، والأكثر تحديا ، يتوق أرييل لمعرفة المزيد عن العالم وراء البحر ، وأثناء زيارته للسطح ، يقع في حب الأمير إريك المحطم. مع منع حوريات البحر من التفاعل مع البشر ، تعقد آرييل صفقة مع ساحرة البحر الشريرة ، أورسولا ، مما يمنحها فرصة لتجربة الحياة على الأرض ، لكنه في النهاية يعرض حياتها - وتاج والدها - للخطر.",
     "poster": "https://image.tmdb.org/t/p/w500/fHWkJmEIwGaPvcFYGs6T1Hxv7rh.jpg",
