@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Wish",
+    "year": "2023",
+    "desc": "في إطار من المغامرات والرسوم المتحركة، يدور العمل حول فتاة شابة تُدعى آشا تتمنى أمنية في أحد الليالي، وبمرور الوقت تواجه العديد من المتاعب في مواجهة ملك شرير يسعى لفرض قبضته على مدينتها.",
+    "poster": "https://image.tmdb.org/t/p/w500/xwctSr1vJ9yaf9QR7lRKWrLMYw4.jpg",
+    "hdUrl": "https://streamtape.com/e/JwdlA4Z9wjtjqr9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/JwdlA4Z9wjtjqr9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "رسوم متحركة عائلي فانتازيا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ariana DeBose",
+            "image": "https://image.tmdb.org/t/p/w185/sPJo4F7NxllcPD1oSi6uh9OpAyj.jpg"
+        },
+        {
+            "name": "Chris Pine",
+            "image": "https://image.tmdb.org/t/p/w185/vSe6sIsdtcoqBhuWRXynahFg8Vf.jpg"
+        },
+        {
+            "name": "Alan Tudyk",
+            "image": "https://image.tmdb.org/t/p/w185/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg"
+        },
+        {
+            "name": "Angelique Cabral",
+            "image": "https://image.tmdb.org/t/p/w185/v2N5mPDiUxScgJnNVOgYLvjs39a.jpg"
+        },
+        {
+            "name": "Victor Garber",
+            "image": "https://image.tmdb.org/t/p/w185/FdhXl8qxsKgj22Ip99SRM9jUx1.jpg"
+        }
+    ]
+},
+    {
     "title": "Migration",
     "year": "2023",
     "desc": "تدور احداث الفيلم عن كوميديا العصر الحديث تتبع عائلة من البط الذين يقنعون والدهم المفرط في الحماية بالذهاب في إجازة العمر أثناء محاولتهم الهجرة من نيو إنجلاند ، عبر مدينة نيويورك ، وفي النهاية إلى جزر البهاما.",
