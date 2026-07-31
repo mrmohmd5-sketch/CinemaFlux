@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
+    "title": "انقاذ قاع الهامور فلم ساندي امور مدبلج",
     "year": "2024",
     "desc": "حين تُجرف 'قاع الهامور' من المحيط، تستعد السنجابة العالِمة 'ساندي أمور' وصديقها 'سبونج بوب سكوير بانتس' لخوض غمار رحلة إلى 'تكساس' لإنقاذ بلدتهما.",
     "poster": "https://image.tmdb.org/t/p/w500/azjBayNa9endky6D5ImbKwEROr8.jpg",
@@ -33,7 +33,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Wish",
+    "title": "امنية مدبلج wish",
     "year": "2023",
     "desc": "في إطار من المغامرات والرسوم المتحركة، يدور العمل حول فتاة شابة تُدعى آشا تتمنى أمنية في أحد الليالي، وبمرور الوقت تواجه العديد من المتاعب في مواجهة ملك شرير يسعى لفرض قبضته على مدينتها.",
     "poster": "https://image.tmdb.org/t/p/w500/xwctSr1vJ9yaf9QR7lRKWrLMYw4.jpg",
@@ -66,7 +66,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Migration",
+    "title": "Migration مدبلج هجرة",
     "year": "2023",
     "desc": "تدور احداث الفيلم عن كوميديا العصر الحديث تتبع عائلة من البط الذين يقنعون والدهم المفرط في الحماية بالذهاب في إجازة العمر أثناء محاولتهم الهجرة من نيو إنجلاند ، عبر مدينة نيويورك ، وفي النهاية إلى جزر البهاما.",
     "poster": "https://image.tmdb.org/t/p/w500/iX3Yw6awJlBp48S6chYR6N30Qh5.jpg",
