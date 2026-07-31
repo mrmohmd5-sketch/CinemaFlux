@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Luck",
+    "year": "2022",
+    "desc": "'سام غرينفيلد' هي الأسوأ حظاً في العالم! تجد نفسها فجأة في أرض الحظ التي لم ترها من قبل، وتصبح مضطرة لتتعاون مع المخلوقات السحرية هناك لتغير حظها.",
+    "poster": "https://image.tmdb.org/t/p/w500/xX1gGhCinQrPeWmU3JHkes8Ot7h.jpg",
+    "hdUrl": "https://streamtape.com/e/e3GwXOPe7WUZ68/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/e3GwXOPe7WUZ68/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة مغامرة كوميديا فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Eva Noblezada",
+            "image": "https://image.tmdb.org/t/p/w185/70MN7sFDDGdCczZ4sTgiV6W7CrL.jpg"
+        },
+        {
+            "name": "Simon Pegg",
+            "image": "https://image.tmdb.org/t/p/w185/jw8bEEoTOithyNf0qxu4Zt1yaKp.jpg"
+        },
+        {
+            "name": "Jane Fonda",
+            "image": "https://image.tmdb.org/t/p/w185/5Yb3nmRWXXZAxNhfhEuOMdfyVNN.jpg"
+        },
+        {
+            "name": "Whoopi Goldberg",
+            "image": "https://image.tmdb.org/t/p/w185/78LZMMzNUJVfLI1MObxejScwZz5.jpg"
+        },
+        {
+            "name": "Colin O'Donoghue",
+            "image": "https://image.tmdb.org/t/p/w185/8YF6zgCt1KUQ2VEx2RFP1P2CXCJ.jpg"
+        }
+    ]
+},
+    {
     "title": "The Sea Beast",
     "year": "2022",
     "desc": "حين تختبئ فتاة شابّة على متن سفينة صائد وحوش بحرية أسطوري، ينطلقان في رحلة ملحمية عبر بحار مجهولة... ولا يكتفيان بذلك بل يصنعان التاريخ معًا.",
