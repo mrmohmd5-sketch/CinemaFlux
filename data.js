@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "The Actress",
+    "title": "The Actress الممثلة مدبلج",
     "year": "2023",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
     "poster": "https://image.tmdb.org/t/p/w500/2q42KuJvCu5CVwRRIRizFikwEay.jpg",
