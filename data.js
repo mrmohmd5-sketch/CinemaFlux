@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Sea Beast",
+    "year": "2022",
+    "desc": "حين تختبئ فتاة شابّة على متن سفينة صائد وحوش بحرية أسطوري، ينطلقان في رحلة ملحمية عبر بحار مجهولة... ولا يكتفيان بذلك بل يصنعان التاريخ معًا.",
+    "poster": "https://image.tmdb.org/t/p/w500/oxbnQ7wuZwOma0Z55wxtWtEk1ut.jpg",
+    "hdUrl": "https://streamtape.com/e/2DZk1k8Zz3iZ9Y3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/2DZk1k8Zz3iZ9Y3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "رسوم متحركة مغامرة حركة عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Karl Urban",
+            "image": "https://image.tmdb.org/t/p/w185/7Y96dAfg0HcFrcLjlD5eD9N0uj4.jpg"
+        },
+        {
+            "name": "Zaris-Angel Hator",
+            "image": "https://image.tmdb.org/t/p/w185/9dqaoHGVcKg2B8ziq9mucFnTQiQ.jpg"
+        },
+        {
+            "name": "Jared Harris",
+            "image": "https://image.tmdb.org/t/p/w185/jAyPWkmge3BqXtgxIG9MfXBzOGj.jpg"
+        },
+        {
+            "name": "Marianne Jean-Baptiste",
+            "image": "https://image.tmdb.org/t/p/w185/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg"
+        },
+        {
+            "name": "Benjamin Plessala",
+            "image": "https://image.tmdb.org/t/p/w185/z0MzRPtYwviecYYx8zVIoXrxDII.jpg"
+        }
+    ]
+},
+    {
     "title": "Puss in Boots: The Last Wish",
     "year": "2022",
     "desc": "يكتشف بوس أن شغفه بالمغامرة قد تسبب في خسائر فادحة وذلك لأنه قضى على ثمانية من حياته التسع . فينطلق بوس في رحلة ملحمية للعثور على آخر أمنية أسطورية واستعادة حياته التسعة.",
