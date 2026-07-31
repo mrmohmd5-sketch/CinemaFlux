@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Croods",
+    "year": "2013",
+    "desc": "تعيش عائلة كرودز من عصور ما قبل التاريخ في لحظة عصيبة. يجمع البطريرك 'غروغ' ورفيقته 'أوغا' وابنته المراهقة 'إيب' وابنه 'ثونك' و'غران' المشاكسة، الطعام نهارًا ويجتمعون معًا في كهف ليلًا. عندما يصل رجل كهف أكثر تطورًا يُدعى جاي إلى مكان الحادث، يشعر جروج بعدم الثقة، ولكن سرعان ما يتضح أن جاي على حق بشأن التدمير الوشيك لعالمهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/bUR55k03iDQPv7lz8qSS0q3nSe3.jpg",
+    "hdUrl": "https://streamtape.com/e/YVqyyGpmLmUvD6r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YVqyyGpmLmUvD6r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "رسوم متحركة مغامرة عائلي كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nicolas Cage",
+            "image": "https://image.tmdb.org/t/p/w185/y1RtezurZYveYkVNRht7CwEgSYY.jpg"
+        },
+        {
+            "name": "Emma Stone",
+            "image": "https://image.tmdb.org/t/p/w185/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg"
+        },
+        {
+            "name": "Ryan Reynolds",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Catherine Keener",
+            "image": "https://image.tmdb.org/t/p/w185/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg"
+        },
+        {
+            "name": "Cloris Leachman",
+            "image": "https://image.tmdb.org/t/p/w185/o8pnV9urjuHZDAR2u4UjPy2CR1u.jpg"
+        }
+    ]
+},
+    {
     "title": "Spellbound مهمة سحرية مدبلج",
     "year": "2024",
     "desc": "عندما تحوّل تعويذة قوية والديها إلى وحشين عملاقين، يتعين على أميرة مراهقة أن تخوض مغامرة في البرية لإبطال هذه اللعنة قبل فوات الأوان.",
