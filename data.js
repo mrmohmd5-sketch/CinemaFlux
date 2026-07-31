@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Aladdin",
+    "year": "2019",
+    "desc": "اختر بحكمة.\r يشرع قنفذ شارع طيب القلب يدعى علاء الدين في مغامرة سحرية بعد العثور على مصباح يطلق جنيا حكيما بينما يتنافس الصدر الأعظم المتعطش للسلطة على نفس المصباح الذي لديه القدرة على تحقيق أعمق رغباتهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/okgdgWF8YD2ttck9D1FOro7j81E.jpg",
+    "hdUrl": "https://streamtape.com/e/w42zpv03e8sorl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/w42zpv03e8sorl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "مغامرة فانتازيا رومنسية عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Will Smith",
+            "image": "https://image.tmdb.org/t/p/w185/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg"
+        },
+        {
+            "name": "Mena Massoud",
+            "image": "https://image.tmdb.org/t/p/w185/3Ng1Cxcln1tAMcgBY8L6aXNgGdV.jpg"
+        },
+        {
+            "name": "Naomi Scott",
+            "image": "https://image.tmdb.org/t/p/w185/knSGMaEaH6CZaYw7GQpvxyJcsz7.jpg"
+        },
+        {
+            "name": "Marwan Kenzari",
+            "image": "https://image.tmdb.org/t/p/w185/66903sgNtyzHN0Mi3D88UYgbH86.jpg"
+        },
+        {
+            "name": "Navid Negahban",
+            "image": "https://image.tmdb.org/t/p/w185/pWi5tINf4mDvTYbNKZDJPODYKra.jpg"
+        }
+    ]
+},
+    {
     "title": "Avatar Aang: The Last Airbender",
     "year": "2026",
     "desc": "ينغمس أفتار انغ آخر مسخّر هواء في العالم، في اكتشاف قوة قديمة يمكنها إنقاذ ثقافته من الانقراض. وبمساعدة أصدقائه، ينطلق في رحلة حول العالم للعثور عليها قبل أن تقع في الأيدي الخطأ، حيث قد تهدد بقلب السلام الذي ضحّوا بكل شيء لتحقيقه",
