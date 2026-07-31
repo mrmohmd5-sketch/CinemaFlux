@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Spellbound",
+    "year": "2024",
+    "desc": "عندما تحوّل تعويذة قوية والديها إلى وحشين عملاقين، يتعين على أميرة مراهقة أن تخوض مغامرة في البرية لإبطال هذه اللعنة قبل فوات الأوان.",
+    "poster": "https://image.tmdb.org/t/p/w500/1ewaWdHMMortZZzSjidXWaA28Mp.jpg",
+    "hdUrl": "https://streamtape.com/e/wDZAqb0Q03iJvzV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wDZAqb0Q03iJvzV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "رسوم متحركة فانتازيا عائلي مغامرة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Rachel Zegler",
+            "image": "https://image.tmdb.org/t/p/w185/hoaBlsu1mghrk7aefZcJ3i0v5Bh.jpg"
+        },
+        {
+            "name": "Miguel Bernardeau",
+            "image": "https://image.tmdb.org/t/p/w185/dFA8oHPaFseIqlpCFKtsDwzhrz1.jpg"
+        },
+        {
+            "name": "Giovanna Bush",
+            "image": "https://image.tmdb.org/t/p/w185/obJI79C7qbzhHPuDPKgxS2jjYR2.jpg"
+        },
+        {
+            "name": "Dennis Stowe",
+            "image": "https://image.tmdb.org/t/p/w185/7WGuWaPnqKJdnjjY7oZaZPOqWHf.jpg"
+        },
+        {
+            "name": "Jenifer Lewis",
+            "image": "https://image.tmdb.org/t/p/w185/htrTYcoJQQpSYo6BrRehe3h46vo.jpg"
+        }
+    ]
+},
+    {
     "title": "انقاذ قاع الهامور فلم ساندي امور مدبلج",
     "year": "2024",
     "desc": "حين تُجرف 'قاع الهامور' من المحيط، تستعد السنجابة العالِمة 'ساندي أمور' وصديقها 'سبونج بوب سكوير بانتس' لخوض غمار رحلة إلى 'تكساس' لإنقاذ بلدتهما.",
