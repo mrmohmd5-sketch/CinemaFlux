@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Little Mermaid",
+    "year": "2023",
+    "desc": "أصغر بنات الملك تريتون ، والأكثر تحديا ، يتوق أرييل لمعرفة المزيد عن العالم وراء البحر ، وأثناء زيارته للسطح ، يقع في حب الأمير إريك المحطم. مع منع حوريات البحر من التفاعل مع البشر ، تعقد آرييل صفقة مع ساحرة البحر الشريرة ، أورسولا ، مما يمنحها فرصة لتجربة الحياة على الأرض ، لكنه في النهاية يعرض حياتها - وتاج والدها - للخطر.",
+    "poster": "https://image.tmdb.org/t/p/w500/fHWkJmEIwGaPvcFYGs6T1Hxv7rh.jpg",
+    "hdUrl": "https://streamtape.com/e/LOzB4VKKMaceLW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LOzB4VKKMaceLW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "مغامرة عائلي فانتازيا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Halle Bailey",
+            "image": "https://image.tmdb.org/t/p/w185/1Gjdlx81P7xTeVwHNIDgjgmzZq5.jpg"
+        },
+        {
+            "name": "Jonah Hauer-King",
+            "image": "https://image.tmdb.org/t/p/w185/yXGsk9UtOV9tprU5ZSuhwdFtaBB.jpg"
+        },
+        {
+            "name": "Melissa McCarthy",
+            "image": "https://image.tmdb.org/t/p/w185/yl0qva0O4u92fvtItakdvKmKrW9.jpg"
+        },
+        {
+            "name": "Javier Bardem",
+            "image": "https://image.tmdb.org/t/p/w185/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+        },
+        {
+            "name": "Noma Dumezweni",
+            "image": "https://image.tmdb.org/t/p/w185/fDEOIZfAQoOZKH1o4xn7qgOoTyM.jpg"
+        }
+    ]
+},
+    {
     "title": "The Croods عائلة كروود مدبلج",
     "year": "2013",
     "desc": "تعيش عائلة كرودز من عصور ما قبل التاريخ في لحظة عصيبة. يجمع البطريرك 'غروغ' ورفيقته 'أوغا' وابنته المراهقة 'إيب' وابنه 'ثونك' و'غران' المشاكسة، الطعام نهارًا ويجتمعون معًا في كهف ليلًا. عندما يصل رجل كهف أكثر تطورًا يُدعى جاي إلى مكان الحادث، يشعر جروج بعدم الثقة، ولكن سرعان ما يتضح أن جاي على حق بشأن التدمير الوشيك لعالمهم.",
