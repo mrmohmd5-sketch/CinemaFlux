@@ -857,15 +857,31 @@
         let allMoviesData = [];
         let currentLang = 'ar';
         let currentTheme = 'dark';
-        let currentUser = JSON.parse(localStorage.getItem('cf_user')) || null;
+        let currentUser = null;
+        try {
+            currentUser = JSON.parse(localStorage.getItem('cf_user')) || null;
+        } catch(e) { currentUser = null; }
 
         // ===== بيانات المستخدمين =====
-        let usersDB = JSON.parse(localStorage.getItem('cf_users')) || {}; // { username: password }
+        let usersDB = {};
+        try {
+            usersDB = JSON.parse(localStorage.getItem('cf_users')) || {};
+        } catch(e) { usersDB = {}; }
         // ===== سجل المشاهدة لكل مستخدم =====
-        let userWatchHistories = JSON.parse(localStorage.getItem('cf_user_watch_histories')) || {}; // { username: [history] }
+        let userWatchHistories = {};
+        try {
+            userWatchHistories = JSON.parse(localStorage.getItem('cf_user_watch_histories')) || {};
+        } catch(e) { userWatchHistories = {}; }
 
-        let searchHistory = JSON.parse(localStorage.getItem('cf_search_history')) || [];
-        let commentsDB = JSON.parse(localStorage.getItem('cf_comments')) || {};
+        let searchHistory = [];
+        try {
+            searchHistory = JSON.parse(localStorage.getItem('cf_search_history')) || [];
+        } catch(e) { searchHistory = []; }
+
+        let commentsDB = {};
+        try {
+            commentsDB = JSON.parse(localStorage.getItem('cf_comments')) || {};
+        } catch(e) { commentsDB = {}; }
 
         let activeMovieItem = null;
         let currentHD = "", currentSD = "";
@@ -879,6 +895,9 @@
         const HOME_CATS_BATCH = 3;
         let homeCategoriesIndex = 0;
         let homeAllGenresList = [];
+
+        // ===== متغير لتخزين آخر صفحة قبل فتح الفيلم =====
+        let lastViewBeforeMovie = 'home';
 
         // ===== حزمة الترجمة =====
         const langPack = {
@@ -927,7 +946,8 @@
                 logoutConfirm: "هل تريد تسجيل الخروج؟",
                 logoutSuccess: "تم تسجيل الخروج بنجاح.",
                 historyEmpty: "سجل المشاهدة فارغ حالياً 🎬",
-                loginRequired: "يرجى تسجيل الدخول أولاً لمشاهدة سجل المشاهدة."
+                loginRequired: "يرجى تسجيل الدخول أولاً لمشاهدة سجل المشاهدة.",
+                passwordTooShort: "كلمة المرور يجب أن تكون 6 أحرف على الأقل"
             },
             en: {
                 logo: "🎬 CinemaFlux",
@@ -974,7 +994,8 @@
                 logoutConfirm: "Do you want to log out?",
                 logoutSuccess: "Logged out successfully.",
                 historyEmpty: "Your watch history is currently empty 🎬",
-                loginRequired: "Please log in first to view watch history."
+                loginRequired: "Please log in first to view watch history.",
+                passwordTooShort: "Password must be at least 6 characters"
             }
         };
 
@@ -1044,6 +1065,16 @@
                     localStorage.removeItem('cf_active_movie');
                     localStorage.removeItem('cf_active_episode');
                 }
+            }
+
+            // ===== تفعيل زر الرجوع =====
+            window.addEventListener('popstate', function(e) {
+                e.preventDefault();
+                handleAndroidBack();
+            });
+            // إضافة حالة أولية للتاريخ
+            if (window.history && window.history.pushState) {
+                window.history.pushState({ page: 'initial' }, '', window.location.href);
             }
         });
 
@@ -1226,6 +1257,30 @@
                     </div>
                 </div>
             `;
+
+            // ===== تحسين: تطبيق IntersectionObserver على الصور في كل مكان =====
+            observeImages();
+        }
+
+        // ===== دالة لمراقبة تحميل الصور باستخدام IntersectionObserver =====
+        function observeImages() {
+            const images = document.querySelectorAll('.movie-poster, .search-item-poster, .cast-avatar, .slide-img');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            }, { rootMargin: '50px' });
+            images.forEach(img => {
+                if (img.complete && img.naturalWidth > 0) {
+                    img.classList.add('loaded');
+                } else {
+                    observer.observe(img);
+                }
+            });
         }
 
         // ===== دوال التحميل التدريجي =====
@@ -1374,6 +1429,23 @@
                                 card.setAttribute('data-movie-title', item.title);
                                 moviesSlider.appendChild(card);
                                 sliderInfo.loadedIndices.add(index);
+                                // تطبيق المراقب على الصورة الجديدة
+                                const img = card.querySelector('.movie-poster');
+                                if (img) {
+                                    const observer = new IntersectionObserver((entries) => {
+                                        entries.forEach(entry => {
+                                            if (entry.isIntersecting) {
+                                                img.classList.add('loaded');
+                                                observer.disconnect();
+                                            }
+                                        });
+                                    }, { rootMargin: '50px' });
+                                    if (img.complete && img.naturalWidth > 0) {
+                                        img.classList.add('loaded');
+                                    } else {
+                                        observer.observe(img);
+                                    }
+                                }
                             }
                         });
                     }
@@ -1397,6 +1469,7 @@
                     </div>
                 </div>
             `;
+            // مراقبة الصورة
             const img = card.querySelector('.movie-poster');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -1405,8 +1478,12 @@
                         observer.disconnect();
                     }
                 });
-            }, { rootMargin: '100px' });
-            observer.observe(img);
+            }, { rootMargin: '50px' });
+            if (img.complete && img.naturalWidth > 0) {
+                img.classList.add('loaded');
+            } else {
+                observer.observe(img);
+            }
 
             card.addEventListener('click', function(e) {
                 const ripple = document.createElement('span');
@@ -1438,6 +1515,7 @@
                 card.style.maxWidth = '100%';
                 grid.appendChild(card);
             });
+            observeImages(); // إعادة مراقبة الصور الجديدة
         }
 
         function renderAllSeriesView() {
@@ -1454,11 +1532,14 @@
                 card.style.maxWidth = '100%';
                 grid.appendChild(card);
             });
+            observeImages();
         }
 
         // ===== دوال التنقل =====
         function switchNav(target) {
             if (activeMovieItem && target !== 'home') {
+                // حفظ الصفحة السابقة قبل إغلاق الفيلم
+                lastViewBeforeMovie = target;
                 activeMovieItem = null;
                 localStorage.removeItem('cf_active_movie');
                 localStorage.removeItem('cf_active_episode');
@@ -1473,21 +1554,26 @@
                 document.getElementById('viewHome').classList.add('active');
                 if (!homeInitialized) renderHomeDOM();
                 scheduleProgressiveCategoryRendering();
+                lastViewBeforeMovie = 'home';
             } else if (target === 'allMovies') {
                 document.getElementById('navAllMovies').classList.add('active');
                 document.getElementById('viewAllMovies').classList.add('active');
                 renderAllMoviesView();
+                lastViewBeforeMovie = 'allMovies';
             } else if (target === 'allSeries') {
                 document.getElementById('navAllSeries').classList.add('active');
                 document.getElementById('viewAllSeries').classList.add('active');
                 renderAllSeriesView();
+                lastViewBeforeMovie = 'allSeries';
             } else if (target === 'search') {
                 document.getElementById('navSearch').classList.add('active');
                 document.getElementById('viewSearch').classList.add('active');
                 renderSearchHistoryUI();
+                lastViewBeforeMovie = 'search';
             } else if (target === 'profile') {
                 document.getElementById('navProfile').classList.add('active');
                 document.getElementById('viewProfile').classList.add('active');
+                lastViewBeforeMovie = 'profile';
             }
         }
 
@@ -1496,6 +1582,10 @@
             document.getElementById(viewId).classList.add('active');
             if(viewId === 'viewHistory') {
                 renderWatchHistoryUI();
+            }
+            // تذكر الصفحة الحالية للمساعدة في الرجوع
+            if (viewId === 'viewSettings' || viewId === 'viewHistory') {
+                lastViewBeforeMovie = viewId;
             }
         }
 
@@ -1517,10 +1607,19 @@
                     </div>
                 `;
                 const img = slide.querySelector('.slide-img');
-                img.onload = () => img.classList.add('loaded');
-                img.onerror = () => img.classList.add('loaded');
-                if (img.complete) {
+                // مراقبة تحميل الصورة
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            img.classList.add('loaded');
+                            observer.disconnect();
+                        }
+                    });
+                }, { rootMargin: '50px' });
+                if (img.complete && img.naturalWidth > 0) {
                     img.classList.add('loaded');
+                } else {
+                    observer.observe(img);
                 }
                 slide.onclick = () => openMoviePage(item);
                 featuredSlider.appendChild(slide);
@@ -1532,7 +1631,6 @@
         // ===== فتح وإغلاق صفحة التصنيف الكامل =====
         function openCategoryPage(genreName, items) {
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
-            document.getElementById('viewCategoryDetail')?.classList.add('active');
             let catView = document.getElementById('viewCategoryDetail');
             if (!catView) {
                 const container = document.getElementById('mainContainer');
@@ -1560,18 +1658,47 @@
                 card.style.maxWidth = '100%';
                 gridContainer.appendChild(card);
             });
+            observeImages();
         }
 
         function closeCategoryPage() {
             const catView = document.getElementById('viewCategoryDetail');
             if (catView) catView.classList.remove('active');
-            switchNav('home');
+            // العودة إلى الصفحة السابقة أو الرئيسية
+            if (lastViewBeforeMovie && lastViewBeforeMovie !== 'viewCategoryDetail') {
+                // إذا كانت الصفحة السابقة معروفة، ننتقل إليها
+                if (lastViewBeforeMovie === 'home') switchNav('home');
+                else if (lastViewBeforeMovie === 'allMovies') switchNav('allMovies');
+                else if (lastViewBeforeMovie === 'allSeries') switchNav('allSeries');
+                else if (lastViewBeforeMovie === 'search') switchNav('search');
+                else if (lastViewBeforeMovie === 'profile') switchNav('profile');
+                else switchNav('home');
+            } else {
+                switchNav('home');
+            }
         }
 
         // ===== فتح صفحة الفيلم =====
         function openMoviePage(item, isRestore = false) {
             activeMovieItem = item;
             localStorage.setItem('cf_active_movie', JSON.stringify(item));
+
+            // حفظ الصفحة الحالية قبل فتح الفيلم (إذا لم تكن مستعادة)
+            if (!isRestore) {
+                // تحديد الصفحة النشطة حالياً
+                const activeViews = document.querySelectorAll('.app-view.active');
+                if (activeViews.length > 0) {
+                    const id = activeViews[0].id;
+                    if (id === 'viewHome') lastViewBeforeMovie = 'home';
+                    else if (id === 'viewAllMovies') lastViewBeforeMovie = 'allMovies';
+                    else if (id === 'viewAllSeries') lastViewBeforeMovie = 'allSeries';
+                    else if (id === 'viewSearch') lastViewBeforeMovie = 'search';
+                    else if (id === 'viewProfile') lastViewBeforeMovie = 'profile';
+                    else if (id === 'viewSettings') lastViewBeforeMovie = 'viewSettings';
+                    else if (id === 'viewHistory') lastViewBeforeMovie = 'viewHistory';
+                    else if (id === 'viewCategoryDetail') lastViewBeforeMovie = 'viewCategoryDetail';
+                }
+            }
 
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewMovieDetail').classList.add('active');
@@ -1618,10 +1745,18 @@
                         <div class="cast-name">${person.name || 'مجهول'}</div>
                     `;
                     const img = castCard.querySelector('.cast-avatar');
-                    img.onload = () => img.classList.add('loaded');
-                    img.onerror = () => img.classList.add('loaded');
-                    if (img.complete) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                img.classList.add('loaded');
+                                observer.disconnect();
+                            }
+                        });
+                    }, { rootMargin: '50px' });
+                    if (img.complete && img.naturalWidth > 0) {
                         img.classList.add('loaded');
+                    } else {
+                        observer.observe(img);
                     }
                     sliderCast.appendChild(castCard);
                 });
@@ -1673,7 +1808,8 @@
                 }
 
                 epListContainer.innerHTML = season.episodes.map(ep => {
-                    let safeUrl = btoa(unescape(encodeURIComponent(ep.url)));
+                    // تشفير الرابط بشكل آمن دون استخدام unescape/escape
+                    let safeUrl = btoa(encodeURIComponent(ep.url));
                     return `
                         <button onclick="playEpisode('${safeUrl}')" style="background:var(--bg-main); color:var(--text-main); border:1px solid var(--border-color); padding:10px; border-radius:6px; cursor:pointer; font-weight:bold; transition:all 0.2s;" onmouseover="this.style.background='var(--accent)'; this.style.color='#fff'; this.style.borderColor='var(--accent)';" onmouseout="this.style.background='var(--bg-main)'; this.style.color='var(--text-main)'; this.style.borderColor='var(--border-color)';">
                             ${ep.episode_number}
@@ -1693,7 +1829,12 @@
             const playerControls = document.getElementById('mainPlayerControls');
             const iframe = document.getElementById('mainIframe');
 
-            let decodedUrlStr = decodeURIComponent(escape(atob(encodedUrl)));
+            let decodedUrlStr;
+            try {
+                decodedUrlStr = decodeURIComponent(atob(encodedUrl));
+            } catch(e) {
+                decodedUrlStr = atob(encodedUrl); // fallback
+            }
 
             if (decodedUrlStr.includes('<iframe')) {
                 const srcMatch = decodedUrlStr.match(/src=["']([^"']+)["']/);
@@ -1718,7 +1859,23 @@
             localStorage.removeItem('cf_active_movie');
             localStorage.removeItem('cf_active_episode');
             document.getElementById('mainIframe').src = "";
-            switchNav('home');
+            // العودة إلى الصفحة السابقة أو الرئيسية
+            if (lastViewBeforeMovie && lastViewBeforeMovie !== 'viewMovieDetail') {
+                if (lastViewBeforeMovie === 'home') switchNav('home');
+                else if (lastViewBeforeMovie === 'allMovies') switchNav('allMovies');
+                else if (lastViewBeforeMovie === 'allSeries') switchNav('allSeries');
+                else if (lastViewBeforeMovie === 'search') switchNav('search');
+                else if (lastViewBeforeMovie === 'profile') switchNav('profile');
+                else if (lastViewBeforeMovie === 'viewSettings') switchView('viewSettings');
+                else if (lastViewBeforeMovie === 'viewHistory') switchView('viewHistory');
+                else if (lastViewBeforeMovie === 'viewCategoryDetail') {
+                    // محاولة العودة للتصنيف، لكننا لا نعرف البيانات، لذا نغلق الصفحة
+                    closeCategoryPage();
+                }
+                else switchNav('home');
+            } else {
+                switchNav('home');
+            }
         }
 
         function changeServer(type) {
@@ -1751,7 +1908,9 @@
                 timestamp: Date.now()
             });
 
-            localStorage.setItem('cf_comments', JSON.stringify(commentsDB));
+            try {
+                localStorage.setItem('cf_comments', JSON.stringify(commentsDB));
+            } catch(e) {}
 
             renderComments(movieTitle);
             input.value = "";
@@ -1824,10 +1983,18 @@
                         </div>
                     `;
                     const img = row.querySelector('.search-item-poster');
-                    img.onload = () => img.classList.add('loaded');
-                    img.onerror = () => img.classList.add('loaded');
-                    if (img.complete) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                img.classList.add('loaded');
+                                observer.disconnect();
+                            }
+                        });
+                    }, { rootMargin: '50px' });
+                    if (img.complete && img.naturalWidth > 0) {
                         img.classList.add('loaded');
+                    } else {
+                        observer.observe(img);
                     }
                     row.onclick = () => {
                         saveToSearchHistory(item.title);
@@ -1842,7 +2009,9 @@
             searchHistory = searchHistory.filter(x => x !== term);
             searchHistory.unshift(term);
             if(searchHistory.length > 10) searchHistory.pop();
-            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+            try {
+                localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+            } catch(e) {}
         }
 
         function renderSearchHistoryUI() {
@@ -1870,10 +2039,18 @@
                         <span class="remove-search-btn" onclick="event.stopPropagation(); removeSearchTerm(${index})">×</span>
                     `;
                     const img = row.querySelector('.search-item-poster');
-                    img.onload = () => img.classList.add('loaded');
-                    img.onerror = () => img.classList.add('loaded');
-                    if (img.complete) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                img.classList.add('loaded');
+                                observer.disconnect();
+                            }
+                        });
+                    }, { rootMargin: '50px' });
+                    if (img.complete && img.naturalWidth > 0) {
                         img.classList.add('loaded');
+                    } else {
+                        observer.observe(img);
                     }
                     row.onclick = () => openMoviePage(matchedItem);
                 } else {
@@ -1894,14 +2071,18 @@
 
         function removeSearchTerm(index) {
             searchHistory.splice(index, 1);
-            localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+            try {
+                localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+            } catch(e) {}
             renderSearchHistoryUI();
         }
 
         function clearSearchHistoryAction() {
             if(confirm(currentLang === 'ar' ? "هل أنت متأكد من مسح سجل البحث كاملاً؟" : "Are you sure you want to clear search history?")) {
                 searchHistory = [];
-                localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+                try {
+                    localStorage.setItem('cf_search_history', JSON.stringify(searchHistory));
+                } catch(e) {}
                 renderSearchHistoryUI();
                 alert(currentLang === 'ar' ? "تم مسح سجل البحث." : "Search history cleared.");
             }
@@ -1909,7 +2090,6 @@
 
         // ===== سجل المشاهدة (لكل مستخدم) =====
         function addToWatchHistory(item) {
-            // إذا لم يكن هناك مستخدم مسجل، لا نحفظ السجل
             if (!currentUser) return;
 
             const username = currentUser.username;
@@ -1929,7 +2109,9 @@
             if (history.length > 20) history.pop();
             userWatchHistories[username] = history;
 
-            localStorage.setItem('cf_user_watch_histories', JSON.stringify(userWatchHistories));
+            try {
+                localStorage.setItem('cf_user_watch_histories', JSON.stringify(userWatchHistories));
+            } catch(e) {}
         }
 
         function renderWatchHistoryUI() {
@@ -1962,10 +2144,18 @@
                     </div>
                 `;
                 const img = row.querySelector('.search-item-poster');
-                img.onload = () => img.classList.add('loaded');
-                img.onerror = () => img.classList.add('loaded');
-                if (img.complete) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            img.classList.add('loaded');
+                            observer.disconnect();
+                        }
+                    });
+                }, { rootMargin: '50px' });
+                if (img.complete && img.naturalWidth > 0) {
                     img.classList.add('loaded');
+                } else {
+                    observer.observe(img);
                 }
                 row.onclick = () => {
                     const originalItem = allMoviesData.find(x => x.title === hist.title);
@@ -1986,7 +2176,9 @@
                 if (userWatchHistories[username]) {
                     userWatchHistories[username] = [];
                 }
-                localStorage.setItem('cf_user_watch_histories', JSON.stringify(userWatchHistories));
+                try {
+                    localStorage.setItem('cf_user_watch_histories', JSON.stringify(userWatchHistories));
+                } catch(e) {}
                 renderWatchHistoryUI();
                 alert(currentLang === 'ar' ? "تم مسح سجل المشاهدة." : "Watch history cleared.");
             }
@@ -2084,12 +2276,10 @@
         // ===== نظام العضوية (محسن) =====
         function openAuthModal() {
             if (currentUser) {
-                // تسجيل الخروج
                 if(confirm(langPack[currentLang].logoutConfirm)) {
                     currentUser = null;
                     localStorage.removeItem('cf_user');
                     updateUserUI();
-                    // إعادة تحميل سجل المشاهدة إذا كانت صفحة التاريخ مفتوحة
                     if (document.getElementById('viewHistory').classList.contains('active')) {
                         renderWatchHistoryUI();
                     }
@@ -2136,17 +2326,19 @@
             }
 
             // تحميل قاعدة المستخدمين من localStorage
-            usersDB = JSON.parse(localStorage.getItem('cf_users')) || {};
+            try {
+                usersDB = JSON.parse(localStorage.getItem('cf_users')) || {};
+            } catch(e) { usersDB = {}; }
 
             if (authMode === 'login') {
-                // تسجيل الدخول: تحقق من وجود المستخدم وكلمة المرور
                 if (usersDB[user] && usersDB[user] === pass) {
                     currentUser = { username: user };
-                    localStorage.setItem('cf_user', JSON.stringify(currentUser));
+                    try {
+                        localStorage.setItem('cf_user', JSON.stringify(currentUser));
+                    } catch(e) {}
                     alert(isAr ? `مرحباً بك مجدداً، ${user} ✨` : `Welcome back, ${user} ✨`);
                     closeAuthModal();
                     updateUserUI();
-                    // تحديث سجل المشاهدة إذا كانت الصفحة مفتوحة
                     if (document.getElementById('viewHistory').classList.contains('active')) {
                         renderWatchHistoryUI();
                     }
@@ -2154,17 +2346,23 @@
                     alert(dict.loginFail);
                 }
             } else {
-                // التسجيل: تحقق من عدم وجود المستخدم
                 if (usersDB[user]) {
                     alert(dict.userExists);
                     return;
                 }
-                // إنشاء حساب جديد
+                // التحقق من طول كلمة المرور
+                if (pass.length < 6) {
+                    alert(dict.passwordTooShort);
+                    return;
+                }
                 usersDB[user] = pass;
-                localStorage.setItem('cf_users', JSON.stringify(usersDB));
-                // تسجيل الدخول تلقائياً
+                try {
+                    localStorage.setItem('cf_users', JSON.stringify(usersDB));
+                } catch(e) {}
                 currentUser = { username: user };
-                localStorage.setItem('cf_user', JSON.stringify(currentUser));
+                try {
+                    localStorage.setItem('cf_user', JSON.stringify(currentUser));
+                } catch(e) {}
                 alert(dict.registerSuccess);
                 closeAuthModal();
                 updateUserUI();
@@ -2173,7 +2371,6 @@
                 }
             }
 
-            // تنظيف الحقول
             document.getElementById('authUsername').value = "";
             document.getElementById('authPassword').value = "";
         }
@@ -2223,6 +2420,8 @@
 
             const viewMovieDetail = document.getElementById('viewMovieDetail');
             if (viewMovieDetail.classList.contains('active')) {
+                // لا نغلق صفحة الفيلم إذا كان هناك فيلم نشط (لأن الإعلانات قد تتداخل)
+                // لكننا نستدعي closeMoviePage التي تعود للصفحة السابقة
                 closeMoviePage();
                 return 'handled';
             }
