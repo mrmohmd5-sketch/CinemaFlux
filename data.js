@@ -101,7 +101,7 @@ const globalMoviesData = [
     {
     "title": "Ballerina",
     "year": "2016",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول فتاة يتيمة تحلم بأن تصبح راقصة باليه فتسافر إلى باريس برفقة صديقها المخترع لتحقيق حلمها والانضمام إلى دار أوبرا باريس الشهيرة .",
     "poster": "https://image.tmdb.org/t/p/w500/qBxMhcmNnFniuDAZTKEHcSgKtsn.jpg",
     "hdUrl": "https://streamtape.com/e/MJOpaz6KeaImmp8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/MJOpaz6KeaImmp8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
