@@ -1,5 +1,77 @@
 const globalMoviesData = [
     {
+    "title": "Reminder",
+    "year": "2025",
+    "desc": "يلتقي محترفان مفطورا القلب - مهندس معماري ومحرر - صدفةً بعد انتهاء علاقتهما. تجمعهما رسالة هاتفية غامضة، فتبدأ رحلة رومانسية غير متوقعة وشفاء.",
+    "poster": "https://image.tmdb.org/t/p/w500/aID893ooBbZ4fxy2rQvb7MYIlv8.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.9",
+    "genre": "دراما كوميديا",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Hande Erçel",
+            "image": "https://image.tmdb.org/t/p/w185/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg"
+        },
+        {
+            "name": "Barış Arduç",
+            "image": "https://image.tmdb.org/t/p/w185/dmBfLOO1Rp1zakhi8iVUzKQp84.jpg"
+        },
+        {
+            "name": "Begüm Akkaya",
+            "image": "https://image.tmdb.org/t/p/w185/5JqzpYhyio17y0ievgDGEDiacBg.jpg"
+        },
+        {
+            "name": "Başak Gümülcinelioğlu",
+            "image": "https://image.tmdb.org/t/p/w185/rWU4boVXkQTzTTYhUybAp6qCOj8.jpg"
+        },
+        {
+            "name": "Feyyaz Şerifoğlu",
+            "image": "https://image.tmdb.org/t/p/w185/hYAFXucoIGXl0B0srkGqHskxCQw.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/9pJV9aB668FaxxW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/BjrvvrlYkxhy4eb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/VOoAOVkKyqtKVV2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/O78JJxzeMzUZl1e/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/jW9ZvAXke7hzZGZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/AJ8APo9MymSXd3A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/yDDZ2e4XggF1qgO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/PbgQ1Q6rYXs0J1L/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Ballerina",
     "year": "2023",
     "desc": "تنطلق الحارسة الشخصية السابقة 'أوك جو'، المكلومة بفقد صديقة مقرّبة لم تتمكن من حمايتها، لتحقيق آخر أمنية لصديقتها العزيزة، تتمثل في انتقام يشفي الغليل.",
