@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Bluff",
+    "year": "2026",
+    "desc": "عندما تتحطم حياتها الهادئة على جزيرة نائية بعودة قائدها السابق المنتقم، يتعين على قرصانة سابقة ماهرة مواجهة ماضيها الدموي وإطلاق العنان لمواهبها القاتلة لإنقاذ عائلتها من حصار لا يرحم.",
+    "poster": "https://image.tmdb.org/t/p/w500/w6CAnmfqrOog1J2ZXoWSRaoggdy.jpg",
+    "hdUrl": "https://streamtape.com/e/aVK1vgqMxQtxX2g/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/aVK1vgqMxQtxX2g/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "دراما حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Priyanka Chopra Jonas",
+            "image": "https://image.tmdb.org/t/p/w185/hh48u9scic0nITGtzi9b6rJeAtT.jpg"
+        },
+        {
+            "name": "Karl Urban",
+            "image": "https://image.tmdb.org/t/p/w185/7Y96dAfg0HcFrcLjlD5eD9N0uj4.jpg"
+        },
+        {
+            "name": "Safia Oakley-Green",
+            "image": "https://image.tmdb.org/t/p/w185/k4JrjdSIfwWF1Qd5KHChDfnXpF2.jpg"
+        },
+        {
+            "name": "Ismael Cruz Cordova",
+            "image": "https://image.tmdb.org/t/p/w185/oXcrsQGndk60iFkNB8qFnMHlNzL.jpg"
+        },
+        {
+            "name": "Temuera Morrison",
+            "image": "https://image.tmdb.org/t/p/w185/AvtSC0f9QW7fMyFFNXEWDeQyfUk.jpg"
+        }
+    ]
+},
+    {
     "title": "Ballerina",
     "year": "2016",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
