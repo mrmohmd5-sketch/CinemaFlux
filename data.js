@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "The Bluff",
+    "title": "The Bluff الخدعة مدبلج",
     "year": "2026",
     "desc": "عندما تتحطم حياتها الهادئة على جزيرة نائية بعودة قائدها السابق المنتقم، يتعين على قرصانة سابقة ماهرة مواجهة ماضيها الدموي وإطلاق العنان لمواهبها القاتلة لإنقاذ عائلتها من حصار لا يرحم.",
     "poster": "https://image.tmdb.org/t/p/w500/w6CAnmfqrOog1J2ZXoWSRaoggdy.jpg",
