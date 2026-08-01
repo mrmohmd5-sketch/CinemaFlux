@@ -563,6 +563,18 @@
         .cast-avatar.loaded { opacity: 1; }
         .cast-name { font-size: 11px; font-weight: 500; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 75px; margin: 0 auto; }
 
+        /* ===== اقتراحات مشابهة ===== */
+        .similar-container { margin-top: 30px; }
+        .similar-slider {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        .similar-slider::-webkit-scrollbar { height: 4px; }
+        .similar-slider::-webkit-scrollbar-thumb { background-color: var(--border-color); border-radius: 10px; }
+
         .comments-section { margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px; }
         .comments-list { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
         .comment-item { background-color: var(--bg-surface); border: 1px solid var(--border-color); padding: 12px; border-radius: 8px; }
@@ -899,6 +911,9 @@
         // ===== متغير لتخزين آخر صفحة قبل فتح الفيلم =====
         let lastViewBeforeMovie = 'home';
 
+        // ===== متغير لمنع تكرار مراقبة الصور =====
+        let imagesObserved = false;
+
         // ===== حزمة الترجمة =====
         const langPack = {
             ar: {
@@ -947,7 +962,8 @@
                 logoutSuccess: "تم تسجيل الخروج بنجاح.",
                 historyEmpty: "سجل المشاهدة فارغ حالياً 🎬",
                 loginRequired: "يرجى تسجيل الدخول أولاً لمشاهدة سجل المشاهدة.",
-                passwordTooShort: "كلمة المرور يجب أن تكون 6 أحرف على الأقل"
+                passwordTooShort: "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+                similarTitle: "اقتراحات مشابهة 🎯"
             },
             en: {
                 logo: "🎬 CinemaFlux",
@@ -995,7 +1011,8 @@
                 logoutSuccess: "Logged out successfully.",
                 historyEmpty: "Your watch history is currently empty 🎬",
                 loginRequired: "Please log in first to view watch history.",
-                passwordTooShort: "Password must be at least 6 characters"
+                passwordTooShort: "Password must be at least 6 characters",
+                similarTitle: "Similar Suggestions 🎯"
             }
         };
 
@@ -1076,6 +1093,14 @@
             if (window.history && window.history.pushState) {
                 window.history.pushState({ page: 'initial' }, '', window.location.href);
             }
+
+            // ===== تحسين سرعة التحميل: تأخير العمليات الثقيلة =====
+            requestAnimationFrame(() => {
+                // مراقبة الصور بعد تحميل DOM بالكامل
+                observeImages();
+                // تحميل التصنيفات بشكل تدريجي
+                scheduleProgressiveCategoryRendering();
+            });
         });
 
         // ===== دالة إعادة ضبط وتصيير الصفحة الرئيسية =====
@@ -1097,6 +1122,11 @@
             setTimeout(() => {
                 scheduleProgressiveCategoryRendering();
             }, 150);
+        }
+
+        // ===== دالة للتمرير للأعلى =====
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // ===== بناء واجهة التطبيق =====
@@ -1246,6 +1276,12 @@
                             <div class="cast-slider" id="castListSlider"></div>
                         </div>
 
+                        <!-- ===== اقتراحات مشابهة ===== -->
+                        <div class="similar-container" id="similarContainer">
+                            <div class="row-title" style="font-size: 14px; margin-bottom: 10px; padding: 0;" id="txtSimilarTitle">اقتراحات مشابهة 🎯</div>
+                            <div class="similar-slider" id="similarSlider"></div>
+                        </div>
+
                         <div class="comments-section">
                             <div class="row-title" style="font-size: 14px; padding: 0;" id="txtCommentsTitle">آراء وتعليقات المشاهدين</div>
                             <div class="comments-list" id="commentsListContainer"></div>
@@ -1258,12 +1294,15 @@
                 </div>
             `;
 
-            // ===== تحسين: تطبيق IntersectionObserver على الصور في كل مكان =====
+            // ===== تحسين: تطبيق IntersectionObserver على الصور في كل مكان (مرة واحدة) =====
             observeImages();
         }
 
         // ===== دالة لمراقبة تحميل الصور باستخدام IntersectionObserver =====
         function observeImages() {
+            if (imagesObserved) return; // منع التكرار
+            imagesObserved = true;
+
             const images = document.querySelectorAll('.movie-poster, .search-item-poster, .cast-avatar, .slide-img');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -1515,7 +1554,8 @@
                 card.style.maxWidth = '100%';
                 grid.appendChild(card);
             });
-            observeImages(); // إعادة مراقبة الصور الجديدة
+            // إعادة مراقبة الصور الجديدة (لن تتكرر بسبب imagesObserved)
+            observeImages();
         }
 
         function renderAllSeriesView() {
@@ -1553,7 +1593,7 @@
                 document.getElementById('navHome').classList.add('active');
                 document.getElementById('viewHome').classList.add('active');
                 if (!homeInitialized) renderHomeDOM();
-                scheduleProgressiveCategoryRendering();
+                // لا نستدعي scheduleProgressiveCategoryRendering هنا لأنه سيتم استدعاؤها من التهيئة أو من resetAndRenderHome
                 lastViewBeforeMovie = 'home';
             } else if (target === 'allMovies') {
                 document.getElementById('navAllMovies').classList.add('active');
@@ -1575,6 +1615,9 @@
                 document.getElementById('viewProfile').classList.add('active');
                 lastViewBeforeMovie = 'profile';
             }
+
+            // التمرير للأعلى بعد التبديل
+            scrollToTop();
         }
 
         function switchView(viewId) {
@@ -1587,6 +1630,7 @@
             if (viewId === 'viewSettings' || viewId === 'viewHistory') {
                 lastViewBeforeMovie = viewId;
             }
+            scrollToTop();
         }
 
         // ===== دالة بناء الصفحة الرئيسية (السلايدر العلوي) =====
@@ -1659,6 +1703,7 @@
                 gridContainer.appendChild(card);
             });
             observeImages();
+            scrollToTop();
         }
 
         function closeCategoryPage() {
@@ -1676,6 +1721,40 @@
             } else {
                 switchNav('home');
             }
+        }
+
+        // ===== دالة استخراج الأفلام المشابهة =====
+        function getSimilarMovies(currentItem, limit = 10) {
+            if (!currentItem) return [];
+            const all = allMoviesData.filter(item => item.title !== currentItem.title);
+            // حساب درجة التشابه بناءً على التصنيف والوصف والتقييم
+            const scored = all.map(item => {
+                let score = 0;
+                // تشابه التصنيف (نسبة)
+                if (item.genre && currentItem.genre) {
+                    const g1 = item.genre.split(/[\s,،]+/).filter(Boolean);
+                    const g2 = currentItem.genre.split(/[\s,،]+/).filter(Boolean);
+                    const common = g1.filter(g => g2.includes(g)).length;
+                    const total = Math.max(g1.length, g2.length);
+                    score += total > 0 ? (common / total) * 0.5 : 0;
+                }
+                // تشابه الوصف (كلمات مشتركة)
+                if (item.desc && currentItem.desc) {
+                    const words1 = item.desc.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+                    const words2 = currentItem.desc.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+                    const common = words1.filter(w => words2.includes(w)).length;
+                    const total = Math.max(words1.length, words2.length);
+                    score += total > 0 ? (common / total) * 0.3 : 0;
+                }
+                // تشابه التقييم (فرق بسيط)
+                const r1 = parseFloat(item.rating) || 0;
+                const r2 = parseFloat(currentItem.rating) || 0;
+                const diff = Math.abs(r1 - r2);
+                score += Math.max(0, (1 - diff / 10)) * 0.2;
+                return { item, score };
+            });
+            scored.sort((a, b) => b.score - a.score);
+            return scored.slice(0, limit).map(s => s.item);
         }
 
         // ===== فتح صفحة الفيلم =====
@@ -1732,6 +1811,7 @@
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
 
+            // عرض طاقم التمثيل
             const sliderCast = document.getElementById('castListSlider');
             sliderCast.innerHTML = '';
             if (item.cast && item.cast.length > 0) {
@@ -1764,11 +1844,28 @@
                 document.getElementById('castContainerBlock').style.display = 'none';
             }
 
+            // ===== عرض الاقتراحات المشابهة =====
+            const similarItems = getSimilarMovies(item, 10);
+            const similarSlider = document.getElementById('similarSlider');
+            similarSlider.innerHTML = '';
+            if (similarItems.length > 0) {
+                document.getElementById('similarContainer').style.display = 'block';
+                similarItems.forEach(simItem => {
+                    const card = createMovieCard(simItem);
+                    card.style.minWidth = '115px';
+                    card.style.maxWidth = '115px';
+                    similarSlider.appendChild(card);
+                });
+            } else {
+                document.getElementById('similarContainer').style.display = 'none';
+            }
+
             renderComments(item.title);
 
             if (!isRestore) {
                 addToWatchHistory(item);
             }
+            scrollToTop();
         }
 
         // ===== دوال المسلسلات =====
@@ -2257,6 +2354,7 @@
             document.getElementById('btnSD').innerText = dict.sdServer;
             document.getElementById('btnCast').innerText = dict.castBtn;
             document.getElementById('txtCastTitle').innerText = dict.castTitle;
+            document.getElementById('txtSimilarTitle').innerText = dict.similarTitle;
 
             document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = dict.watchNow);
         }
@@ -2420,8 +2518,7 @@
 
             const viewMovieDetail = document.getElementById('viewMovieDetail');
             if (viewMovieDetail.classList.contains('active')) {
-                // لا نغلق صفحة الفيلم إذا كان هناك فيلم نشط (لأن الإعلانات قد تتداخل)
-                // لكننا نستدعي closeMoviePage التي تعود للصفحة السابقة
+                // العودة للصفحة السابقة
                 closeMoviePage();
                 return 'handled';
             }
