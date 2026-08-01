@@ -1131,7 +1131,7 @@ const globalMoviesData = [
     "title": "The Bluff",
     "year": "2026",
     "desc": "عندما تتحطم حياتها الهادئة على جزيرة نائية بعودة قائدها السابق المنتقم، يتعين على قرصانة سابقة ماهرة مواجهة ماضيها الدموي وإطلاق العنان لمواهبها القاتلة لإنقاذ عائلتها من حصار لا يرحم.",
-    "poster": "https://image.tmdb.org/t/p/w500/w6CAnmfqrOog1J2ZXoWSRaoggdy.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/dl1cA7wdwePc9QU2Rc24EPqlcyJ.jpg",
     "hdUrl": "https://streamtape.com/e/Wo48qAkxBKSb2Bd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/Wo48qAkxBKSb2Bd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.7",
