@@ -1,5 +1,77 @@
 const globalMoviesData = [
     {
+    "title": "Reminder",
+    "year": "2025",
+    "desc": "يلتقي محترفان مفطورا القلب - مهندس معماري ومحرر - صدفةً بعد انتهاء علاقتهما. تجمعهما رسالة هاتفية غامضة، فتبدأ رحلة رومانسية غير متوقعة وشفاء.",
+    "poster": "https://image.tmdb.org/t/p/w500/aID893ooBbZ4fxy2rQvb7MYIlv8.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.9",
+    "genre": "دراما كوميديا",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Hande Erçel",
+            "image": "https://image.tmdb.org/t/p/w185/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg"
+        },
+        {
+            "name": "Barış Arduç",
+            "image": "https://image.tmdb.org/t/p/w185/dmBfLOO1Rp1zakhi8iVUzKQp84.jpg"
+        },
+        {
+            "name": "Begüm Akkaya",
+            "image": "https://image.tmdb.org/t/p/w185/5JqzpYhyio17y0ievgDGEDiacBg.jpg"
+        },
+        {
+            "name": "Başak Gümülcinelioğlu",
+            "image": "https://image.tmdb.org/t/p/w185/rWU4boVXkQTzTTYhUybAp6qCOj8.jpg"
+        },
+        {
+            "name": "Feyyaz Şerifoğlu",
+            "image": "https://image.tmdb.org/t/p/w185/hYAFXucoIGXl0B0srkGqHskxCQw.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/Xyp2Jbbp0dFD9Xg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></ifhttps://streamtape.com/e/OPgLoo1kZatZ2lA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>rame>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/4qmpLVBJ49sddw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/gPgrYkLXx8T9Qw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/DqXp9Vr2J9tkMlA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/r8dzDG8m66tb2be/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/d7yRdJQAbrikJX2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/Jv7XY2OVxPFJo3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/Xyp2Jbbp0dFD9Xg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></ifhttps://streamtape.com/e/OPgLoo1kZatZ2lA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>rame>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "تذكر الحب aski hatirla",
     "year": "2025",
     "desc": "يلتقي محترفان مفطورا القلب - مهندس معماري ومحرر - صدفةً بعد انتهاء علاقتهما. تجمعهما رسالة هاتفية غامضة، فتبدأ رحلة رومانسية غير متوقعة وشفاء.",
