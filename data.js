@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "aski hatirla تذكر الحب مدبلج",
+    "title": "تذكر الحب مدبلج",
     "year": "2025",
     "desc": "يلتقي محترفان مفطورا القلب - مهندس معماري ومحرر - صدفةً بعد انتهاء علاقتهما. تجمعهما رسالة هاتفية غامضة، فتبدأ رحلة رومانسية غير متوقعة وشفاء.",
     "poster": "https://image.tmdb.org/t/p/original/aID893ooBbZ4fxy2rQvb7MYIlv8.jpg",
