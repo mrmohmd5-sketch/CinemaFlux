@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Pretty Lethal",
+    "year": "2026",
+    "desc": "فيلم إثارة مليء بالأحداث حيث تجد خمس راقصات باليه أنفسهن عالقات في غابة نائية في طريقهن إلى مسابقة رقص، فيلجأن إلى نُزل مريب على جانب الطريق تديره ديفورا كاشيمير، ويجب عليهن تسخير تدريبهن النخبوي للبقاء على قيد الحياة.",
+    "poster": "https://image.tmdb.org/t/p/w500/koxKOXIPFyaLYm89PrkVqIfm54k.jpg",
+    "hdUrl": "https://streamtape.com/e/q6B0AL08qxczXBW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/q6B0AL08qxczXBW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "حركة إثارة رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Maddie Ziegler",
+            "image": "https://image.tmdb.org/t/p/w185/hDzdA0IvoPpx5nmwL5Uu75rdfYh.jpg"
+        },
+        {
+            "name": "Lana Condor",
+            "image": "https://image.tmdb.org/t/p/w185/vWn27Fk2GLwH7o9fBG9hBWZI6OR.jpg"
+        },
+        {
+            "name": "Iris Apatow",
+            "image": "https://image.tmdb.org/t/p/w185/5RgL4nUBPkAk8jcJqu6R42ixE0j.jpg"
+        },
+        {
+            "name": "Millicent Simmonds",
+            "image": "https://image.tmdb.org/t/p/w185/clNmG7JlsI5qZTVjYoXiGZ3Pvbq.jpg"
+        },
+        {
+            "name": "Avantika",
+            "image": "https://image.tmdb.org/t/p/w185/4kASmotHYtrwkIMGmyArKLvaQOz.jpg"
+        }
+    ]
+},
+    {
     "title": "The Bluff الخدعة مدبلج",
     "year": "2026",
     "desc": "عندما تتحطم حياتها الهادئة على جزيرة نائية بعودة قائدها السابق المنتقم، يتعين على قرصانة سابقة ماهرة مواجهة ماضيها الدموي وإطلاق العنان لمواهبها القاتلة لإنقاذ عائلتها من حصار لا يرحم.",
