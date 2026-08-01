@@ -558,7 +558,8 @@
         }
         .cast-slider::-webkit-scrollbar { height: 4px; }
         .cast-slider::-webkit-scrollbar-thumb { background-color: var(--border-color); border-radius: 4px; }
-        .cast-card { min-width: 70px; text-align: center; }
+        .cast-card { min-width: 70px; text-align: center; cursor: pointer; transition: transform 0.2s; }
+        .cast-card:hover { transform: scale(1.08); }
         .cast-avatar { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); margin-bottom: 5px; display: block; margin-left: auto; margin-right: auto; opacity: 0; transition: opacity 0.2s ease; }
         .cast-avatar.loaded { opacity: 1; }
         .cast-name { font-size: 11px; font-weight: 500; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 75px; margin: 0 auto; }
@@ -605,6 +606,69 @@
             transition: all 0.2s;
         }
         .comment-submit-btn:hover { background-color: #ff0a1f; transform: scale(1.05); box-shadow: 0 8px 25px rgba(229, 9, 20, 0.4); }
+
+        /* ===== نافذة منبثقة لأفلام الممثل ===== */
+        .actor-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.85);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            padding: 20px;
+            backdrop-filter: blur(4px);
+        }
+        .actor-overlay.active {
+            display: flex;
+        }
+        .actor-box {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 700px;
+            max-height: 90vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            overflow-y: auto;
+        }
+        .actor-box::-webkit-scrollbar { width: 4px; }
+        .actor-box::-webkit-scrollbar-thumb { background-color: var(--border-color); border-radius: 4px; }
+        .actor-box h3 {
+            margin-top: 0;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: var(--text-main);
+        }
+        .actor-close-btn {
+            position: absolute;
+            top: 12px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-sub);
+            transition: all 0.2s;
+            background: none;
+            border: none;
+        }
+        .actor-close-btn:hover { transform: rotate(90deg) scale(1.2); color: #fff; }
+        html[dir="rtl"] .actor-close-btn { left: 15px; }
+        html[dir="ltr"] .actor-close-btn { right: 15px; }
+        .actor-movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .actor-movies-grid .movie-card {
+            min-width: auto;
+            max-width: 100%;
+        }
 
         /* ===== نافذة تسجيل الدخول ===== */
         .auth-overlay {
@@ -852,6 +916,15 @@
         </div>
     </div>
 
+    <!-- ===== نافذة منبثقة لأفلام الممثل ===== -->
+    <div class="actor-overlay" id="actorOverlay" onclick="if(event.target===this) closeActorOverlay()">
+        <div class="actor-box">
+            <button class="actor-close-btn" onclick="closeActorOverlay()">✕</button>
+            <h3 id="actorOverlayTitle">أفلام الممثل</h3>
+            <div class="actor-movies-grid" id="actorMoviesGrid"></div>
+        </div>
+    </div>
+
     <!-- ===== نافذة تسجيل الدخول ===== -->
     <div class="auth-overlay" id="authModal">
         <div class="auth-box">
@@ -923,7 +996,7 @@
                 navAllSeries: "كل المسلسلات",
                 navSearch: "بحث",
                 navProfile: "الحساب",
-                searchPlaceholder: "ابحث عن اسم الفيلم أو المسلسل...",
+                searchPlaceholder: "ابحث عن اسم الفيلم أو الممثل أو وصف...",
                 recentSearches: "عمليات البحث الأخيرة",
                 searchResultsTitle: "نتائج البحث",
                 noResults: "عذراً لا توجد نتائج ، قم بإدخال كلمات مختلفة 🔍",
@@ -963,7 +1036,8 @@
                 historyEmpty: "سجل المشاهدة فارغ حالياً 🎬",
                 loginRequired: "يرجى تسجيل الدخول أولاً لمشاهدة سجل المشاهدة.",
                 passwordTooShort: "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
-                similarTitle: "اقتراحات مشابهة 🎯"
+                similarTitle: "اقتراحات مشابهة 🎯",
+                actorMoviesTitle: "أفلام الممثل"
             },
             en: {
                 logo: "🎬 CinemaFlux",
@@ -972,7 +1046,7 @@
                 navAllSeries: "All Series",
                 navSearch: "Search",
                 navProfile: "Profile",
-                searchPlaceholder: "Search for movie or series name...",
+                searchPlaceholder: "Search by movie, actor, or description...",
                 recentSearches: "Recent Searches",
                 searchResultsTitle: "Search Results",
                 noResults: "Sorry, no results found. Enter different words 🔍",
@@ -1012,7 +1086,8 @@
                 historyEmpty: "Your watch history is currently empty 🎬",
                 loginRequired: "Please log in first to view watch history.",
                 passwordTooShort: "Password must be at least 6 characters",
-                similarTitle: "Similar Suggestions 🎯"
+                similarTitle: "Similar Suggestions 🎯",
+                actorMoviesTitle: "Actor's Movies"
             }
         };
 
@@ -1166,7 +1241,7 @@
                     <div class="search-container">
                         <div class="search-bar-wrapper">
                             <span class="voice-icon">🎤</span>
-                            <input type="text" id="searchInput" placeholder="ابحث عن اسم الفيلم أو المسلسل..." oninput="handleSearchSearch()">
+                            <input type="text" id="searchInput" placeholder="ابحث عن اسم الفيلم أو الممثل أو وصف..." oninput="handleSearchSearch()">
                         </div>
 
                         <div id="searchHistoryBlock">
@@ -1811,7 +1886,7 @@
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
 
-            // عرض طاقم التمثيل
+            // عرض طاقم التمثيل مع إمكانية النقر
             const sliderCast = document.getElementById('castListSlider');
             sliderCast.innerHTML = '';
             if (item.cast && item.cast.length > 0) {
@@ -1838,6 +1913,11 @@
                     } else {
                         observer.observe(img);
                     }
+                    // إضافة حدث النقر لفتح أفلام الممثل
+                    castCard.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        showActorMovies(person.name);
+                    });
                     sliderCast.appendChild(castCard);
                 });
             } else {
@@ -1866,6 +1946,43 @@
                 addToWatchHistory(item);
             }
             scrollToTop();
+        }
+
+        // ===== دالة عرض أفلام الممثل =====
+        function showActorMovies(actorName) {
+            if (!actorName) return;
+            const overlay = document.getElementById('actorOverlay');
+            const titleEl = document.getElementById('actorOverlayTitle');
+            const grid = document.getElementById('actorMoviesGrid');
+            grid.innerHTML = '';
+
+            const dict = langPack[currentLang];
+            titleEl.innerText = `${dict.actorMoviesTitle}: ${actorName}`;
+
+            // البحث في جميع البيانات عن أفلام تحتوي على هذا الممثل
+            const movies = allMoviesData.filter(item => {
+                if (!item.cast) return false;
+                return item.cast.some(c => c.name && c.name.toLowerCase() === actorName.toLowerCase());
+            });
+
+            if (movies.length === 0) {
+                grid.innerHTML = `<p style="text-align:center; color:var(--text-sub); padding:20px;">${currentLang === 'ar' ? 'لا توجد أفلام متوفرة لهذا الممثل' : 'No movies available for this actor'}</p>`;
+            } else {
+                movies.forEach(item => {
+                    const card = createMovieCard(item);
+                    card.style.maxWidth = '100%';
+                    card.style.minWidth = '120px';
+                    grid.appendChild(card);
+                });
+                // مراقبة الصور الجديدة
+                observeImages();
+            }
+
+            overlay.classList.add('active');
+        }
+
+        function closeActorOverlay() {
+            document.getElementById('actorOverlay').classList.remove('active');
         }
 
         // ===== دوال المسلسلات =====
@@ -2041,7 +2158,7 @@
             }
         }
 
-        // ===== نظام البحث =====
+        // ===== نظام البحث المحسن =====
         function handleSearchSearch() {
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
             const historyBlock = document.getElementById('searchHistoryBlock');
@@ -2057,10 +2174,17 @@
             }
 
             historyBlock.style.display = 'none';
-            const matches = allMoviesData.filter(item =>
-                item.title.toLowerCase().includes(query) ||
-                (item.genre && item.genre.toLowerCase().includes(query))
-            );
+            const matches = allMoviesData.filter(item => {
+                // البحث في العنوان
+                if (item.title.toLowerCase().includes(query)) return true;
+                // البحث في التصنيف
+                if (item.genre && item.genre.toLowerCase().includes(query)) return true;
+                // البحث في الوصف
+                if (item.desc && item.desc.toLowerCase().includes(query)) return true;
+                // البحث في أسماء الممثلين
+                if (item.cast && item.cast.some(c => c.name && c.name.toLowerCase().includes(query))) return true;
+                return false;
+            });
 
             resultsList.innerHTML = '';
             if (matches.length === 0) {
@@ -2556,7 +2680,7 @@
 
         // ===== تأثير الـ Ripple العام =====
         function addGlobalRippleEffect() {
-            const clickableElements = document.querySelectorAll('button, .nav-item, .menu-item, .profile-btn, .slide-btn, .server-btn, .cast-btn, .back-nav-btn, .load-more-btn, .toggle-btn, .comment-submit-btn, .auth-toggle-link, .close-auth, .remove-search-btn, .movie-card, .search-item-row, .row-title, .voice-icon, .slide-item, .auth-box button');
+            const clickableElements = document.querySelectorAll('button, .nav-item, .menu-item, .profile-btn, .slide-btn, .server-btn, .cast-btn, .back-nav-btn, .load-more-btn, .toggle-btn, .comment-submit-btn, .auth-toggle-link, .close-auth, .remove-search-btn, .movie-card, .search-item-row, .row-title, .voice-icon, .slide-item, .auth-box button, .cast-card');
             clickableElements.forEach(el => {
                 if (el.dataset.rippleAdded) return;
                 el.dataset.rippleAdded = 'true';
