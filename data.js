@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Ballerina",
+    "year": "2023",
+    "desc": "تنطلق الحارسة الشخصية السابقة 'أوك جو'، المكلومة بفقد صديقة مقرّبة لم تتمكن من حمايتها، لتحقيق آخر أمنية لصديقتها العزيزة، تتمثل في انتقام يشفي الغليل.",
+    "poster": "https://image.tmdb.org/t/p/w500/91UCyD5BGjnQQrp9C61BqN0RZXQ.jpg",
+    "hdUrl": "https://streamtape.com/e/Lp9pMKOodWi4K1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Lp9pMKOodWi4K1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jeon Jong-seo",
+            "image": "https://image.tmdb.org/t/p/w185/13mReqKdJFy3NjbqAFzVBLiyF9d.jpg"
+        },
+        {
+            "name": "Kim Ji-hoon",
+            "image": "https://image.tmdb.org/t/p/w185/k9Uq26mNkRzoPMu5jGfVoxS3M2V.jpg"
+        },
+        {
+            "name": "Park Yu-rim",
+            "image": "https://image.tmdb.org/t/p/w185/1cVKz3v0zY1FTwjR1oFMYgf3Rmx.jpg"
+        },
+        {
+            "name": "Shin Se-hwi",
+            "image": "https://image.tmdb.org/t/p/w185/4Cseml8tpyYkkvupb4yG04NiX7A.jpg"
+        },
+        {
+            "name": "Park Hyoung-soo",
+            "image": "https://image.tmdb.org/t/p/w185/zIID8SaTRzQnfWUOHCeYSS7vIQS.jpg"
+        }
+    ]
+},
+    {
     "title": "Pretty Lethal",
     "year": "2026",
     "desc": "فيلم إثارة مليء بالأحداث حيث تجد خمس راقصات باليه أنفسهن عالقات في غابة نائية في طريقهن إلى مسابقة رقص، فيلجأن إلى نُزل مريب على جانب الطريق تديره ديفورا كاشيمير، ويجب عليهن تسخير تدريبهن النخبوي للبقاء على قيد الحياة.",
