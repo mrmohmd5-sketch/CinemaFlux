@@ -1093,19 +1093,6 @@
 
         let authMode = 'login';
 
-        // ===== دالة لتحديث عنوان URL =====
-        function updateURL(movieTitle, episodeEncoded) {
-            let url = window.location.pathname;
-            if (movieTitle) {
-                url += '?movie=' + encodeURIComponent(movieTitle);
-                if (episodeEncoded) {
-                    url += '&episode=' + encodeURIComponent(episodeEncoded);
-                }
-            }
-            // استخدم pushState لتحديث الرابط دون إعادة تحميل الصفحة
-            history.pushState({}, '', url);
-        }
-
         // ===== التهيئة =====
         window.addEventListener('DOMContentLoaded', async () => {
             // عرض مؤشر التحميل
@@ -1189,25 +1176,6 @@
                 // تحميل التصنيفات بشكل تدريجي
                 scheduleProgressiveCategoryRendering();
             });
-
-            // ===== معالجة روابط المشاركة (URL parameters) =====
-            const params = new URLSearchParams(window.location.search);
-            const movieTitle = params.get('movie');
-            const episodeEncoded = params.get('episode');
-            if (movieTitle) {
-                const decodedTitle = decodeURIComponent(movieTitle);
-                const movieItem = allMoviesData.find(item => item.title === decodedTitle);
-                if (movieItem) {
-                    // نفتح الفيلم
-                    openMoviePage(movieItem, true);
-                    if (episodeEncoded) {
-                        // ننتظر قليلاً حتى يتم تحميل واجهة المسلسل
-                        setTimeout(() => {
-                            playEpisode(episodeEncoded);
-                        }, 400);
-                    }
-                }
-            }
         });
 
         // ===== دالة إعادة ضبط وتصيير الصفحة الرئيسية =====
@@ -1691,8 +1659,6 @@
                 localStorage.removeItem('cf_active_movie');
                 localStorage.removeItem('cf_active_episode');
                 document.getElementById('mainIframe').src = "";
-                // إزالة معاملات URL
-                updateURL(null, null);
             }
 
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
@@ -1887,9 +1853,6 @@
                     else if (id === 'viewCategoryDetail') lastViewBeforeMovie = 'viewCategoryDetail';
                 }
             }
-
-            // تحديث عنوان URL
-            updateURL(item.title, null);
 
             document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
             document.getElementById('viewMovieDetail').classList.add('active');
@@ -2103,11 +2066,6 @@
 
             document.getElementById('btnHD').classList.add('active');
             document.getElementById('btnSD').classList.remove('active');
-
-            // تحديث الرابط مع معامل الحلقة
-            if (activeMovieItem) {
-                updateURL(activeMovieItem.title, encodedUrl);
-            }
         }
 
         function closeMoviePage() {
@@ -2115,8 +2073,6 @@
             localStorage.removeItem('cf_active_movie');
             localStorage.removeItem('cf_active_episode');
             document.getElementById('mainIframe').src = "";
-            // إزالة معاملات URL
-            updateURL(null, null);
             // العودة إلى الصفحة السابقة أو الرئيسية
             if (lastViewBeforeMovie && lastViewBeforeMovie !== 'viewMovieDetail') {
                 if (lastViewBeforeMovie === 'home') switchNav('home');
