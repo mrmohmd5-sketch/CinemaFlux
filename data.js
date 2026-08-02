@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Peter Pan",
+    "year": "2003",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/6QdU3TZZrIvXFzoHOwafZAynFjB.jpg",
+    "hdUrl": "https://streamtape.com/e/WD3aDbOQgwFb3g8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/WD3aDbOQgwFb3g8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "مغامرة فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jeremy Sumpter",
+            "image": "https://image.tmdb.org/t/p/w185/FFajhzfQJy7KyZ9JJdXQrk9IL3.jpg"
+        },
+        {
+            "name": "Jason Isaacs",
+            "image": "https://image.tmdb.org/t/p/w185/s6XRFjqUsrDJfDQuXPOoExAYPmb.jpg"
+        },
+        {
+            "name": "Rachel Hurd-Wood",
+            "image": "https://image.tmdb.org/t/p/w185/9OMWHFdFAk45dF00BgZR4BcjANI.jpg"
+        },
+        {
+            "name": "Ludivine Sagnier",
+            "image": "https://image.tmdb.org/t/p/w185/hd4fLjgtgNEidJOjuLNGfK1sOhm.jpg"
+        },
+        {
+            "name": "Olivia Williams",
+            "image": "https://image.tmdb.org/t/p/w185/94bnuQXo3LoxNvcFXeAoVvIIm3N.jpg"
+        }
+    ]
+},
+    {
     "title": "Alice in Wonderland",
     "year": "2010",
     "desc": "تعود 'أليس'، البالغة من العمر 19 عامًا الآن، إلى العالم العجيب الذي دخلته لأول مرة وهي طفلة، وتخوض رحلة لاكتشاف مصيرها الحقيقي.",
