@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Other Woman",
+    "year": "2014",
+    "desc": "أغرب الأصدقاء على وشك الحصول على حتى\r بعد اكتشاف أن صديقها متزوج ، سرعان ما تلتقي كارلي بالزوجة التي كان يخونها. وعندما يتم اكتشاف علاقة غرامية أخرى ، تتعاون النساء الثلاث للانتقام المتبادل من SOB ثلاثي التوقيتات.",
+    "poster": "https://image.tmdb.org/t/p/w500/yHnbb6z8REuFIyBLT2Nj3MX54dY.jpg",
+    "hdUrl": "https://streamtape.com/e/jrYr0Be69qIqL0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jrYr0Be69qIqL0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "كوميديا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Cameron Diaz",
+            "image": "https://image.tmdb.org/t/p/w185/tTpQSKwdLrR6xBGHCqg8VcVQZzH.jpg"
+        },
+        {
+            "name": "Leslie Mann",
+            "image": "https://image.tmdb.org/t/p/w185/x3OS9RL3qsv50kzRtpR2OhbuTkr.jpg"
+        },
+        {
+            "name": "Kate Upton",
+            "image": "https://image.tmdb.org/t/p/w185/g2jEEc3TbMo0W9t1DTQHn5qyY7X.jpg"
+        },
+        {
+            "name": "Nikolaj Coster-Waldau",
+            "image": "https://image.tmdb.org/t/p/w185/rpFOERbHkj7GWxkinUNiQ76sSGk.jpg"
+        },
+        {
+            "name": "Don Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/6s6oav541p7xspCG6PvXut7knkP.jpg"
+        }
+    ]
+},
+    {
     "title": "Vanilla Sky",
     "year": "2001",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
