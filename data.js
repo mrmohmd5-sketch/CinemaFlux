@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Crazy About Her",
+    "year": "2021",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/mVcOR5f1bKhqSWWxViOfmOJ7aqc.jpg",
+    "hdUrl": "https://streamtape.com/e/Rj499JPo4Ltjrx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Rj499JPo4Ltjrx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "كوميديا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Álvaro Cervantes",
+            "image": "https://image.tmdb.org/t/p/w185/6RAiI4SXIMxLRM1RejLJzMPK7wa.jpg"
+        },
+        {
+            "name": "Susana Abaitua",
+            "image": "https://image.tmdb.org/t/p/w185/v9BA3YRPkEBpfL3ogKkn2Phag6m.jpg"
+        },
+        {
+            "name": "Luis Zahera",
+            "image": "https://image.tmdb.org/t/p/w185/4WEGXd6pOWHkAUcffJrg42BFPI3.jpg"
+        },
+        {
+            "name": "Aixa Villagrán",
+            "image": "https://image.tmdb.org/t/p/w185/zJV1yUMWT5sTjhhkk1SazyrCMB1.jpg"
+        },
+        {
+            "name": "Txell Aixendri",
+            "image": "https://image.tmdb.org/t/p/w185/zuTFfG65xExUYLpnfI5ndSVTgFQ.jpg"
+        }
+    ]
+},
+    {
     "title": "Dear Zindagi",
     "year": "2016",
     "desc": "تدرك مصورة فوتوغرافية شابة تفتقر إلى التعاطف وينتظرها مستقبل مهني مشرق وواعد، أهمية الموازنة بين الطموح والإنسانية.",
