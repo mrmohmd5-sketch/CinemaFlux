@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Peter Rabbit",
+    "year": "2018",
+    "desc": "فلوبسي وموبسي وكوتن تيل وبنجامين مجموعة من اﻷرانب الذين يستمتعون بأيامهم في مزرعة السيد ماك جريجور للخضروات، وعندما يموت ماك جريجور، تصير المزرعة بأكملها لهم حثى يرثها أحد أقرباء ماك جريجور الذي يصير في معركة مع اﻷرانب المتواجدة، لكن مشاعره تبدأ في التبدل بعد وقوعه في حب بيا المحبة للطبيعة.",
+    "poster": "https://image.tmdb.org/t/p/w500/lugOvdaNpbVGQK9TyMRDiUbLtY6.jpg",
+    "hdUrl": "https://streamtape.com/e/go0kyXpXqrtqdAX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/go0kyXpXqrtqdAX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "رسوم متحركة مغامرة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "James Corden",
+            "image": "https://image.tmdb.org/t/p/w185/xGB0gfZ48M27gQjjL7inJIh1Pqj.jpg"
+        },
+        {
+            "name": "Rose Byrne",
+            "image": "https://image.tmdb.org/t/p/w185/wR8YZlrewVW2FixRBrJcxaXU3R1.jpg"
+        },
+        {
+            "name": "Domhnall Gleeson",
+            "image": "https://image.tmdb.org/t/p/w185/a63BgOBKzJ9XPaLFyu7u5Ge3REG.jpg"
+        },
+        {
+            "name": "Margot Robbie",
+            "image": "https://image.tmdb.org/t/p/w185/3mq2fhZ6IkiQnhx430EuS5wHJvI.jpg"
+        },
+        {
+            "name": "Elizabeth Debicki",
+            "image": "https://image.tmdb.org/t/p/w185/sJxj44aKdY0pjSIgnxBgMWLrQmw.jpg"
+        }
+    ]
+},
+    {
     "title": "Room",
     "year": "2015",
     "desc": "محتجزًا لمدة 7 سنوات في مكان مغلق ، اكتسبت امرأة وابنها الصغير حريتهما أخيرًا ، مما سمح للصبي بتجربة العالم الخارجي لأول مرة.",
