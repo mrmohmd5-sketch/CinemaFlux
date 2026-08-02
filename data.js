@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "The Other Woman",
     "year": "2014",
-    "desc": "أغرب الأصدقاء على وشك الحصول على حتى\r بعد اكتشاف أن صديقها متزوج ، سرعان ما تلتقي كارلي بالزوجة التي كان يخونها. وعندما يتم اكتشاف علاقة غرامية أخرى ، تتعاون النساء الثلاث للانتقام المتبادل من SOB ثلاثي التوقيتات.",
+    "desc": "تدور أحداث الفيلم حول امرأة تكتشف أن حبيبها متزوج فتنشأ بينها وبين زوجته صداقة غير متوقعة وتزداد الأمور تعقيدا عندما تكتشفان وجود امرأة ثالثة في حياته فيقررن الاتحاد معا للانتقام منه بطرق كوميدية ومبتكرة .",
     "poster": "https://image.tmdb.org/t/p/w500/yHnbb6z8REuFIyBLT2Nj3MX54dY.jpg",
     "hdUrl": "https://streamtape.com/e/jrYr0Be69qIqL0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/jrYr0Be69qIqL0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
