@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Vanilla Sky",
+    "year": "2001",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+    "hdUrl": "https://streamtape.com/e/Z1QM9KJa6BUqJ8Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Z1QM9KJa6BUqJ8Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "غموض رومنسية خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Cruise",
+            "image": "https://image.tmdb.org/t/p/w185/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
+        },
+        {
+            "name": "Penélope Cruz",
+            "image": "https://image.tmdb.org/t/p/w185/n5SFgmvJSENQt8poE4qYacUnKOi.jpg"
+        },
+        {
+            "name": "Cameron Diaz",
+            "image": "https://image.tmdb.org/t/p/w185/tTpQSKwdLrR6xBGHCqg8VcVQZzH.jpg"
+        },
+        {
+            "name": "Kurt Russell",
+            "image": "https://image.tmdb.org/t/p/w185/6g1d98oH4miG4k0ZiZWmF3Dt0bO.jpg"
+        },
+        {
+            "name": "Jason Lee",
+            "image": "https://image.tmdb.org/t/p/w185/3duPl6Ve8RnvcouOaXoMCdJf5ln.jpg"
+        }
+    ]
+},
+    {
     "title": "The Wrecking Crew",
     "year": "2026",
     "desc": "في فيلم طاقم التدمير، يجتمع الأخان غير الشقيقين جوني وجيمس بعد وفاة والدهما الغامضة. وبينما يبحثان عن الحقيقة، تكشف أسرار مدفونة عن مؤامرة تهدد بتفكيك عائلتهما. تدور أحداث الفيلم في هاواي، وهو من إخراج أنخيل مانويل سوتو، وبطولة كلايس بانغ وجاكوب باتالون وستيفن روت ومورينا باكارين.",
