@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Kung Fu Panda 3",
+    "year": "2016",
+    "desc": "بينما يزور 'بو' ووالده قرية سرّية للباندا، تهدد روح شريرة بلاد 'الصين' بكاملها وتدفع 'بو' إلى تشكيل جيش غير منظم للمقاومة والقتال.",
+    "poster": "https://image.tmdb.org/t/p/w500/nHKgwhO8MNpiLmpCyOckdchyF6T.jpg",
+    "hdUrl": "https://streamtape.com/e/QXJVAkakYbs03XL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QXJVAkakYbs03XL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "رسوم متحركة حركة مغامرة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Bryan Cranston",
+            "image": "https://image.tmdb.org/t/p/w185/npIIZJGSrcJIJ6yHdmbqO6Jzo5I.jpg"
+        },
+        {
+            "name": "Dustin Hoffman",
+            "image": "https://image.tmdb.org/t/p/w185/yFjTzJHE6AFbwQifOlnNDzmiwlq.jpg"
+        },
+        {
+            "name": "Angelina Jolie",
+            "image": "https://image.tmdb.org/t/p/w185/bXNxIKcJ5cNNW8QFrBPWcfTSu9x.jpg"
+        },
+        {
+            "name": "J.K. Simmons",
+            "image": "https://image.tmdb.org/t/p/w185/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg"
+        }
+    ]
+},
+    {
     "title": "Kung Fu Panda",
     "year": "2008",
     "desc": "في وادي السلام، يجد (بو) الباندا نفسه قد اختير كمحارب التنين على الرغم من حقيقة أنه يعاني من السمنة والخمول، وكونه مبتدئ في فنون الدفاع عن النفس، ويحاول أن يثبت جدارته بهذا الاختيار أمام المعلم (شيفو) والغاضبين الخمسة.",
