@@ -35,7 +35,7 @@ const globalMoviesData = [
     {
     "title": "Vanilla Sky",
     "year": "2001",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول شاب غني ووسيم تتغير حياته المثالية تماما بعد تعرضه لحادث سيارة مروع يتركه بحروق في وجهه ليدخل في دوامة بين الواقع والأوهام والتجارب الطبية المعقدة.",
     "poster": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
     "hdUrl": "https://streamtape.com/e/Z1QM9KJa6BUqJ8Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/Z1QM9KJa6BUqJ8Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
