@@ -5,7 +5,7 @@ const globalMoviesData = [
     "desc": "تتورط مهاجرة صينية مسنة في مغامرة مجنونة، حينما تكتشف أنها وحدها من يستطيع إنقاذ العالم من خلال اكتشاف العوالم الأخرى الموازية لعالمها.",
     "poster": "https://image.tmdb.org/t/p/w500/HGRePgXtUJH8MvgFRsGFMmnNHJ.jpg",
     "hdUrl": "https://streamtape.com/e/066YG4ODX4HZyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/066YG4ODX4HZyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mrkZ7PRpYvu2yR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.7",
     "genre": "حركة مغامرة خيال علمي",
     "type": "movie",
