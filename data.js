@@ -36,7 +36,7 @@ const globalMoviesData = [
     "title": "The Wrecking Crew",
     "year": "2026",
     "desc": "في فيلم طاقم التدمير، يجتمع الأخان غير الشقيقين جوني وجيمس بعد وفاة والدهما الغامضة. وبينما يبحثان عن الحقيقة، تكشف أسرار مدفونة عن مؤامرة تهدد بتفكيك عائلتهما. تدور أحداث الفيلم في هاواي، وهو من إخراج أنخيل مانويل سوتو، وبطولة كلايس بانغ وجاكوب باتالون وستيفن روت ومورينا باكارين.",
-    "poster": "https://image.tmdb.org/t/p/w500/n1q20Rof03gEQMI550C2PXbBixO.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
     "hdUrl": "https://streamtape.com/e/09RO03by2osbqrz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/09RO03by2osbqrz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.1",
