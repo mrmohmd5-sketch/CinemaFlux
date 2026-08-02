@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Peter Rabbit 2: The Runaway",
+    "year": "2021",
+    "desc": "يهرب بيتر رابيت من عائلته البشرية عندما يعلم أنهم سيصورونه في صورة سيئة في كتابهم. سرعان ما يعبر المسارات مع أرنب أكبر سنا يربطه في سرقة.",
+    "poster": "https://image.tmdb.org/t/p/w500/cycDz68DtTjJrDJ1fV8EBq2Xdpb.jpg",
+    "hdUrl": "https://streamtape.com/e/L3P21PLQGWHRL76/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/L3P21PLQGWHRL76/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "كوميديا عائلي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "James Corden",
+            "image": "https://image.tmdb.org/t/p/w185/xGB0gfZ48M27gQjjL7inJIh1Pqj.jpg"
+        },
+        {
+            "name": "Rose Byrne",
+            "image": "https://image.tmdb.org/t/p/w185/wR8YZlrewVW2FixRBrJcxaXU3R1.jpg"
+        },
+        {
+            "name": "Domhnall Gleeson",
+            "image": "https://image.tmdb.org/t/p/w185/a63BgOBKzJ9XPaLFyu7u5Ge3REG.jpg"
+        },
+        {
+            "name": "David Oyelowo",
+            "image": "https://image.tmdb.org/t/p/w185/7UZHRwOKe2cYxj8SeNUklyPYkns.jpg"
+        },
+        {
+            "name": "Margot Robbie",
+            "image": "https://image.tmdb.org/t/p/w185/3mq2fhZ6IkiQnhx430EuS5wHJvI.jpg"
+        }
+    ]
+},
+    {
     "title": "Peter Rabbit",
     "year": "2018",
     "desc": "فلوبسي وموبسي وكوتن تيل وبنجامين مجموعة من اﻷرانب الذين يستمتعون بأيامهم في مزرعة السيد ماك جريجور للخضروات، وعندما يموت ماك جريجور، تصير المزرعة بأكملها لهم حثى يرثها أحد أقرباء ماك جريجور الذي يصير في معركة مع اﻷرانب المتواجدة، لكن مشاعره تبدأ في التبدل بعد وقوعه في حب بيا المحبة للطبيعة.",
