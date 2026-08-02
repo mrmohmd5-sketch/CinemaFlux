@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Jumper",
+    "year": "2008",
+    "desc": "ديفيد رايس هو رجل لا يعرف الحدود ، قفز ، ولد بقدرة خارقة على الانتقال الفوري إلى أي مكان على الأرض. عندما يكتشف ديفيد آخرين مثله ، يُدفع إلى حرب خطيرة ومتعطشة للدماء بينما تطارده مجموعة شريرة وحازمة من المتعصبين الذين أقسموا على تدمير جميع القفزات. الآن ، قد تكون هدية ديفيد غير العادية هي أمله الوحيد في البقاء!",
+    "poster": "https://image.tmdb.org/t/p/w500/3pPZ9JhNz3VMmASVir5SMHvTDUU.jpg",
+    "hdUrl": "https://streamtape.com/e/VdKl1pR3mdcK7DJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/VdKl1pR3mdcK7DJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hayden Christensen",
+            "image": "https://image.tmdb.org/t/p/w185/RuwAecNK9VDeTrfw6LUE4q4rIt.jpg"
+        },
+        {
+            "name": "Jamie Bell",
+            "image": "https://image.tmdb.org/t/p/w185/xAfNYOJYOy5ee9PHbBF8Y6xzZ9I.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+        },
+        {
+            "name": "Rachel Bilson",
+            "image": "https://image.tmdb.org/t/p/w185/jlacH60rFke82EfuvFqgjcxPIx0.jpg"
+        },
+        {
+            "name": "Michael Rooker",
+            "image": "https://image.tmdb.org/t/p/w185/ngOuHNIAGrKyY1O7F0f9C5Q9ONg.jpg"
+        }
+    ]
+},
+    {
     "title": "Rain Man",
     "year": "1988",
     "desc": "ترك والد الميول الأناني تشارلي بابيت ثروة لأخيه المخلص ريموند ومبلغ زهيد لتشارلي ؛ يسافرون عبر البلاد.",
