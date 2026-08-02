@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Peter Pan & Wendy",
+    "year": "2023",
+    "desc": "مقتبس من قصة جي إم باري الكلاسيكية عن صبي لن يكبر ويجند ثلاثة أشقاء صغار في لندن للانضمام إليه في مغامرة سحرية إلى جزيرة نيفرلاند المسحورة.",
+    "poster": "https://image.tmdb.org/t/p/w500/jRKlrVOonUrLsTcKWTSIsYSAU4R.jpg",
+    "hdUrl": "https://streamtape.com/e/KJbJLW66xzi03b1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KJbJLW66xzi03b1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.4",
+    "genre": "عائلي فانتازيا حركة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Alexander Molony",
+            "image": "https://image.tmdb.org/t/p/w185/e1Q7P5FnGLmaUlbq97o4K90EwC6.jpg"
+        },
+        {
+            "name": "Ever Anderson",
+            "image": "https://image.tmdb.org/t/p/w185/uyf2YlKOyrbfxyw0K5EJbzorF72.jpg"
+        },
+        {
+            "name": "Jude Law",
+            "image": "https://image.tmdb.org/t/p/w185/6UadpSbfC39WMChAcdnNunzwDxv.jpg"
+        },
+        {
+            "name": "Yara Shahidi",
+            "image": "https://image.tmdb.org/t/p/w185/nHKugvMsEVZO2htlhdUIHpWTHPN.jpg"
+        },
+        {
+            "name": "Alyssa Wapanatâhk",
+            "image": "https://image.tmdb.org/t/p/w185/hH4AOVwTciISEh880WkzrM3UrSH.jpg"
+        }
+    ]
+},
+    {
     "title": "Thelma the Unicorn",
     "year": "2024",
     "desc": "تتسبب لحظة مصيرية نادرة في تحقيق رغبة المهرة (ثيلما) في أن تصبح وحيدة قرن، وسرعان ما ترتقي إلى عالم الشهرة، لكن حياتها الجديدة تصطدم بأحداث غير متوقعة.",
