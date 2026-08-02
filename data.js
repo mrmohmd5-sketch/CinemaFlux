@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Thelma the Unicorn",
+    "year": "2024",
+    "desc": "تتسبب لحظة مصيرية نادرة في تحقيق رغبة المهرة (ثيلما) في أن تصبح وحيدة قرن، وسرعان ما ترتقي إلى عالم الشهرة، لكن حياتها الجديدة تصطدم بأحداث غير متوقعة.",
+    "poster": "https://image.tmdb.org/t/p/w500/pSfCWFi9QIpqlerkitAw2cF3ZZW.jpg",
+    "hdUrl": "https://streamtape.com/e/3Oggx0ARZJIdJoG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3Oggx0ARZJIdJoG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "رسوم متحركة فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brittany Howard",
+            "image": "https://image.tmdb.org/t/p/w185/cPpRCCxSS5blyWq5RmrHteaNX8z.jpg"
+        },
+        {
+            "name": "Will Forte",
+            "image": "https://image.tmdb.org/t/p/w185/4VEzbkL3HwHTUZAPA5PyypFG2U.jpg"
+        },
+        {
+            "name": "Jemaine Clement",
+            "image": "https://image.tmdb.org/t/p/w185/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg"
+        },
+        {
+            "name": "Edi Patterson",
+            "image": "https://image.tmdb.org/t/p/w185/ecVF2n0OrZcbDlPEkNnrAUyWQuH.jpg"
+        },
+        {
+            "name": "Maliaka Mitchell",
+            "image": "https://image.tmdb.org/t/p/w185/zjUPsPdnOMzteXuHxlryPfAxU8W.jpg"
+        }
+    ]
+},
+    {
     "title": "The Garfield Movie",
     "year": "2024",
     "desc": "غارفيلد، القط الداخلي الشهير عالميًا، والذي يكره يوم الاثنين ويحب اللازانيا، على وشك خوض مغامرة برية في الهواء الطلق! بعد لقاء غير متوقع مع والده المفقود منذ فترة طويلة - قط الشوارع الرث فيك - يُجبر غارفيلد وصديقه الكلب أودي على ترك حياتهم المدللة تمامًا للانضمام إلى فيك في عملية سرقة مرحة وعالية المخاطر.",
