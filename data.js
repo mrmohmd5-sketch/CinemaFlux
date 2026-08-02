@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Orion and the Dark",
+    "year": "2024",
+    "desc": "يواجه صبي، ذو خيال خصب، مخاوفه في رحلة لا تُنسى، يخوضها ليلًا مع صديقه الجديد، وهو مخلوق عملاق بشوش يُدعى 'الظلام'.",
+    "poster": "https://image.tmdb.org/t/p/w500/vMz7ojnQPV7EQTGkP07yw5qPugr.jpg",
+    "hdUrl": "https://streamtape.com/e/1AQ7VWP0JGtdDy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1AQ7VWP0JGtdDy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "رسوم متحركة عائلي كوميديا فانتازيا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jacob Tremblay",
+            "image": "https://image.tmdb.org/t/p/w185/h8CXDp86Y36CUENF4SXJq5ZRTsf.jpg"
+        },
+        {
+            "name": "Paul Walter Hauser",
+            "image": "https://image.tmdb.org/t/p/w185/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg"
+        },
+        {
+            "name": "Angela Bassett",
+            "image": "https://image.tmdb.org/t/p/w185/tKnuviliyeKNGlo26IU5gIrJAtd.jpg"
+        },
+        {
+            "name": "Colin Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/iljyDSiJRcwJL8QXQZ2WTyU1wh5.jpg"
+        },
+        {
+            "name": "Natasia Demetriou",
+            "image": "https://image.tmdb.org/t/p/w185/65aNRTM520iUaBUoSyfyXHXY8xH.jpg"
+        }
+    ]
+},
+    {
     "title": "Rabbit Hole",
     "year": "2010",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
