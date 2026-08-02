@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Incoming",
+    "year": "2024",
+    "desc": "في أسبوعهم الأول في المدرسة الثانوية وأثناء أكبر حفل يقام في العام، يرتكب أربعة أولاد مراهقين الأخطاء خلال ليلة تضجّ بالفوضى والإغراءات.",
+    "poster": "https://image.tmdb.org/t/p/w500/k2ySukuAiAarLns0yttKS3jg85Y.jpg",
+    "hdUrl": "https://streamtape.com/e/JywogmVRDzSj4pV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/JywogmVRDzSj4pV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mason Thames",
+            "image": "https://image.tmdb.org/t/p/w185/kgEYHw8bblVtwRTkR9TLMOpx5WO.jpg"
+        },
+        {
+            "name": "Ramon Reed",
+            "image": "https://image.tmdb.org/t/p/w185/uY46y3Eko5qPVZBB1vW3yGzortp.jpg"
+        },
+        {
+            "name": "Raphael Alejandro",
+            "image": "https://image.tmdb.org/t/p/w185/cBS5Sin0fATnHWS4ofYIYQG8suH.jpg"
+        },
+        {
+            "name": "Isabella Ferreira",
+            "image": "https://image.tmdb.org/t/p/w185/8r87nJRJGPt8GLbRxJRuj9nCiyp.jpg"
+        },
+        {
+            "name": "Bardia Seiri",
+            "image": "https://image.tmdb.org/t/p/w185/xNJY25SrX4fTzg5aobu4NINJSVF.jpg"
+        }
+    ]
+},
+    {
     "title": "Toy Story 5",
     "year": "2026",
     "desc": "عندما تحصل 'بوني' على جهاز 'ليلي باد' اللوحي كهدية وتنجذب إليه بشكلٍ كبير، يجد 'وودي' و'باز' و'جيسي' وبقية الألعاب أنفسهم أمام تحدٍ غير مسبوق، إذ تصبح مهمتهم في لفت انتباهها أصعب من أي وقت مضى، بينما يواجهون تهديدًا جديدًا يهدد عالم اللعب الذي اعتادوا عليه.",
