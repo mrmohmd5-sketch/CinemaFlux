@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Peter Pan",
+    "year": "1953",
+    "desc": "كل ليلة تحكي وندي لشقيقها الصغيرين مايكل وجون قصة من مغامرات الفتى المغامر بيتر بان الذي يعيش في 'نيفرلاند'، الأرض التي لا يكبر فيها الأطفال أبدا. ولم تعتقد وندي يوما أن يأتي إليها بيتر بان الذي يدخل غرفتها بصحبة الجنية الصغيرة 'تينكر بيل' وإذا بها تجد كل ما كانت تحكيها من خيال حقيقة وتعيش مع بيتر بان مغامراته ضد القرصان هوك.",
+    "poster": "https://image.tmdb.org/t/p/w500/nnGozTzydVka7w076EZewaR6nSl.jpg",
+    "hdUrl": "https://streamtape.com/e/vPJeB6d6deU40pD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vPJeB6d6deU40pD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "رسوم متحركة عائلي مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Bobby Driscoll",
+            "image": "https://image.tmdb.org/t/p/w185/9eLGaM1C4pAfTODHlHupHmEVCX3.jpg"
+        },
+        {
+            "name": "Kathryn Beaumont",
+            "image": "https://image.tmdb.org/t/p/w185/dHQ51n2i2vjdt4bdgAYXWvJQips.jpg"
+        },
+        {
+            "name": "Hans Conried",
+            "image": "https://image.tmdb.org/t/p/w185/rftuT9tTEqVoEDqqJZEQicnXHVH.jpg"
+        },
+        {
+            "name": "Bill Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/4l8jV6jZ9k06B62MH1rdtCho3Ag.jpg"
+        },
+        {
+            "name": "Heather Angel",
+            "image": "https://image.tmdb.org/t/p/w185/aL4rV0rDtnNjHocXITevohuj9e2.jpg"
+        }
+    ]
+},
+    {
     "title": "Kung Fu Panda 4",
     "year": "2024",
     "desc": "المغامرات الإضافية لبو واسع العينين في الصين القديمة ، الذي لا يضاهي حبه للكونغ فو سوى شهية لا تشبع.",
