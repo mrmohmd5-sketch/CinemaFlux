@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Garfield Movie",
+    "year": "2024",
+    "desc": "غارفيلد، القط الداخلي الشهير عالميًا، والذي يكره يوم الاثنين ويحب اللازانيا، على وشك خوض مغامرة برية في الهواء الطلق! بعد لقاء غير متوقع مع والده المفقود منذ فترة طويلة - قط الشوارع الرث فيك - يُجبر غارفيلد وصديقه الكلب أودي على ترك حياتهم المدللة تمامًا للانضمام إلى فيك في عملية سرقة مرحة وعالية المخاطر.",
+    "poster": "https://image.tmdb.org/t/p/w500/cuAwBpC7iwJoxOUE5J0FPRVBE1K.jpg",
+    "hdUrl": "https://streamtape.com/e/djVB92bz2RukqeZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/djVB92bz2RukqeZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "مغامرة رسوم متحركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Pratt",
+            "image": "https://image.tmdb.org/t/p/w185/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+        },
+        {
+            "name": "Hannah Waddingham",
+            "image": "https://image.tmdb.org/t/p/w185/eHAICyhvjiRZCgzKyJCk9hWnnjr.jpg"
+        },
+        {
+            "name": "Ving Rhames",
+            "image": "https://image.tmdb.org/t/p/w185/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
+        },
+        {
+            "name": "Nicholas Hoult",
+            "image": "https://image.tmdb.org/t/p/w185/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg"
+        }
+    ]
+},
+    {
     "title": "Jumper",
     "year": "2008",
     "desc": "ديفيد رايس هو رجل لا يعرف الحدود ، قفز ، ولد بقدرة خارقة على الانتقال الفوري إلى أي مكان على الأرض. عندما يكتشف ديفيد آخرين مثله ، يُدفع إلى حرب خطيرة ومتعطشة للدماء بينما تطارده مجموعة شريرة وحازمة من المتعصبين الذين أقسموا على تدمير جميع القفزات. الآن ، قد تكون هدية ديفيد غير العادية هي أمله الوحيد في البقاء!",
