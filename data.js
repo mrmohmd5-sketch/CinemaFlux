@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Jojo Rabbit",
+    "year": "2019",
+    "desc": "تدور أحداث الفيلم حول الحرب العالمية الثانية، حيث يكتشف الفتى (جوجو) والذي يخدم في جيش (هتلر) أن والدته (روزي) تُخبئ فتاة يهودية في منزلهم، ويسعى (جوجو) لإخفاء الأمر عن الجميع.",
+    "poster": "https://image.tmdb.org/t/p/w500/zhOMiWQnATDVh6WPCrznDfmeKbt.jpg",
+    "hdUrl": "https://streamtape.com/e/AkqBr37mbWuXM83/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/AkqBr37mbWuXM83/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "كوميديا حرب دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Roman Griffin Davis",
+            "image": "https://image.tmdb.org/t/p/w185/jEox6Bq4TlINrnp5EUjqSlDK3eP.jpg"
+        },
+        {
+            "name": "Thomasin McKenzie",
+            "image": "https://image.tmdb.org/t/p/w185/WOpnEFG5Q8LWxP81MtUrskmVox.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+            "name": "Taika Waititi",
+            "image": "https://image.tmdb.org/t/p/w185/ww6L2ksfJNMbuiIdDuvVKndUHsv.jpg"
+        },
+        {
+            "name": "Sam Rockwell",
+            "image": "https://image.tmdb.org/t/p/w185/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg"
+        }
+    ]
+},
+    {
     "title": "Boy Kills World",
     "year": "2024",
     "desc": "يدور العمل حول قصة شاب أصم يتمتع بخيال جامح يتعرض والداه للقتل، ويستغل رجل الأمر في تحويل الشاب إلى أداة للقتل، وتتوالى الأحداث.",
