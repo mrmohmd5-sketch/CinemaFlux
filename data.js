@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Rain Man",
+    "year": "1988",
+    "desc": "ترك والد الميول الأناني تشارلي بابيت ثروة لأخيه المخلص ريموند ومبلغ زهيد لتشارلي ؛ يسافرون عبر البلاد.",
+    "poster": "https://image.tmdb.org/t/p/w500/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
+    "hdUrl": "https://streamtape.com/e/og9oJ8b40DuJL4Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/og9oJ8b40DuJL4Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dustin Hoffman",
+            "image": "https://image.tmdb.org/t/p/w185/yFjTzJHE6AFbwQifOlnNDzmiwlq.jpg"
+        },
+        {
+            "name": "Tom Cruise",
+            "image": "https://image.tmdb.org/t/p/w185/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
+        },
+        {
+            "name": "Valeria Golino",
+            "image": "https://image.tmdb.org/t/p/w185/bLw0lNPEhICtbTLtnTswamefN7C.jpg"
+        },
+        {
+            "name": "Gerald R. Molen",
+            "image": "https://image.tmdb.org/t/p/w185/m1C2E9MWClm3ITzxQzUxmE1qphL.jpg"
+        },
+        {
+            "name": "Jack Murdock",
+            "image": "https://image.tmdb.org/t/p/w185/1NJNRsutn8djjkvNOtk0HYq24lQ.jpg"
+        }
+    ]
+},
+    {
     "title": "Rush Hour 3",
     "year": "2007",
     "desc": "بعد محاولة اغتيال فاشلة ، يجد الثنائي غير المتطابق نفسيهما في باريس ، يكافحان لاستعادة قائمة أسماء ثمينة ، بينما يبذل أتباع نقابة الجريمة القاتلة قصارى جهدهم لمنعهم.  مرة أخرى ، يجب على 'لي' و 'كارتر' أن يشقوا طريقهم وسط عصابات خطرة.  ومع ذلك ، هذه المرة ، عاد الماضي ليطارد لي.  هل سينجز الأولاد المهمة مرة واحدة وإلى الأبد؟",
