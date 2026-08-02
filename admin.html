@@ -168,21 +168,50 @@
                 if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
 
-                // 3. جلب طاقم التمثيل بشكل صحيح مع منع تكرار الصورة
-                logStatus("⏳ جاري جلب أسماء وصور الممثلين من TMDB بشكل مستقل...");
+                // 3. جلب طاقم التمثيل (10 ممثلين) مع الشخصية
+                logStatus("⏳ جاري جلب أسماء وصور الممثلين مع أدوارهم من TMDB...");
                 const creditsRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits?api_key=${tmdbKey}`);
                 let castData = [];
                 if(creditsRes.ok) {
                     const creditsData = await creditsRes.json();
-                    castData = creditsData.cast.slice(0, 5).map(actor => {
+                    // نأخذ أول 10 ممثلين (أو أقل إن وجدوا)
+                    const maxCast = 10;
+                    castData = creditsData.cast.slice(0, maxCast).map(actor => {
                         return {
                             name: actor.name,
+                            character: actor.character || "دور غير معروف",
                             image: actor.profile_path ? `https://image.tmdb.org/t/p/w185${actor.profile_path}` : "https://via.placeholder.com/185x278?text=No+Image"
                         };
                     });
                 }
 
-                // 4. استخراج سنة الإنتاج (المطلوب إضافتها)
+                // 4. جلب التصنيف العمري (Age Rating)
+                logStatus("⏳ جاري جلب التصنيف العمري من TMDB...");
+                let ageRating = "غير محدد";
+                if (type === "movie") {
+                    // استخدام release_dates
+                    const releaseRes = await fetch(`https://api.themoviedb.org/3/movie/${id}/release_dates?api_key=${tmdbKey}`);
+                    if(releaseRes.ok) {
+                        const releaseData = await releaseRes.json();
+                        // نبحث عن تصنيف الولايات المتحدة الأمريكية (US) أو أي تصنيف متاح
+                        const usRelease = releaseData.results.find(r => r.iso_3166_1 === "US");
+                        if(usRelease && usRelease.release_dates && usRelease.release_dates.length > 0) {
+                            const cert = usRelease.release_dates[0].certification;
+                            if(cert) ageRating = cert;
+                        }
+                    }
+                } else if (type === "tv") {
+                    // استخدام content_ratings
+                    const contentRes = await fetch(`https://api.themoviedb.org/3/tv/${id}/content_ratings?api_key=${tmdbKey}`);
+                    if(contentRes.ok) {
+                        const contentData = await contentRes.json();
+                        // نبحث عن تصنيف الولايات المتحدة (US)
+                        const usRating = contentData.results.find(r => r.iso_3166_1 === "US");
+                        if(usRating && usRating.rating) ageRating = usRating.rating;
+                    }
+                }
+
+                // 5. استخراج سنة الإنتاج
                 let year = "";
                 if (dataAr.release_date) {
                     year = dataAr.release_date.substring(0,4);
@@ -191,7 +220,6 @@
                 } else if (dataAr.air_date) {
                     year = dataAr.air_date.substring(0,4);
                 }
-                // إذا لم توجد، نتركها فارغة
 
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
@@ -200,10 +228,11 @@
                 const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
-                // إنشاء كائن المحتوى الأساسي مع إضافة السنة
+                // إنشاء كائن المحتوى الأساسي مع إضافة السنة والتصنيف العمري
                 const newMediaObject = {
                     title: titleText,
-                    year: year,          // <-- تمت الإضافة
+                    year: year,
+                    ageRating: ageRating,   // <-- تمت الإضافة
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
                     poster: posterUrl,
                     hdUrl: finalType === "movie" ? linksArray[0] : "",
