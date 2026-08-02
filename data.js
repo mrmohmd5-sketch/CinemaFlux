@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Rush Hour 2",
+    "year": "2001",
+    "desc": "حان وقت الإجازة بالنسبة لكارتر حيث يجد نفسه جنبًا إلى جنب مع لي في هونغ كونغ ويتمنى المزيد من الإثارة.  بينما يريد كارتر الاحتفال والسيدات ، يخرج لي لتعقب زعيم عصابة ثالوث قد يكون مسؤولاً عن قتل رجلين في السفارة الأمريكية.  تتعقد الأمور مع تعثر الزوج في مؤامرة مزيفة.  سرعان ما يصل الأولاد إلى أعناقهم في معارك بالأيدي والمواقف التي تهدد حياتهم.  قد تقدم رحلة العودة إلى الولايات المتحدة إجابات حول التفجير والتزوير والولاء الحقيقي لعاملة الجمارك المثيرة إيزابيلا.",
+    "poster": "https://image.tmdb.org/t/p/w500/aBQf2vMiCINeVC9v6BGVYKXurTh.jpg",
+    "hdUrl": "https://streamtape.com/e/7qXamv7M8oTA0Rz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7qXamv7M8oTA0Rz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "حركة كوميديا جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jackie Chan",
+            "image": "https://image.tmdb.org/t/p/w185/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg"
+        },
+        {
+            "name": "Chris Tucker",
+            "image": "https://image.tmdb.org/t/p/w185/rE5OaSWp45pNpMm2TYbAwLgYoCn.jpg"
+        },
+        {
+            "name": "John Lone",
+            "image": "https://image.tmdb.org/t/p/w185/cO62O0mZGCvR0y5zM5oI2rUDhto.jpg"
+        },
+        {
+            "name": "Roselyn Sánchez",
+            "image": "https://image.tmdb.org/t/p/w185/srU7Oi0P5F3IuEEk14gKZwzzMWu.jpg"
+        },
+        {
+            "name": "Zhang Ziyi",
+            "image": "https://image.tmdb.org/t/p/w185/AeM8e72StFIoEe7wcPQgnQsHtyf.jpg"
+        }
+    ]
+},
+    {
     "title": "Rush Hour",
     "year": "1998",
     "desc": "عندما يتم استدعاء مفتش هونغ كونغ لي إلى لوس أنجلوس للتحقيق في عملية اختطاف ، لا يريد مكتب التحقيقات الفيدرالي أي مساعدة خارجية ويكلف المحقق جيمس كارتر المغرور في شرطة لوس أنجلوس بإلهاء لي عن القضية.  لا يكتفي 'لي' و 'كارتر' بمشاهدة الحدث من الخطوط الجانبية ، حيث يشكلان شراكة غير محتملة ويتحققان في القضية بأنفسهما.",
