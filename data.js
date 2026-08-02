@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Room",
+    "year": "2015",
+    "desc": "محتجزًا لمدة 7 سنوات في مكان مغلق ، اكتسبت امرأة وابنها الصغير حريتهما أخيرًا ، مما سمح للصبي بتجربة العالم الخارجي لأول مرة.",
+    "poster": "https://image.tmdb.org/t/p/w500/2LEdwJdLoufoXbFEik6CopAMTND.jpg",
+    "hdUrl": "https://streamtape.com/e/k3ybgwZgpLTOK1X/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/k3ybgwZgpLTOK1X/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brie Larson",
+            "image": "https://image.tmdb.org/t/p/w185/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+        },
+        {
+            "name": "Jacob Tremblay",
+            "image": "https://image.tmdb.org/t/p/w185/h8CXDp86Y36CUENF4SXJq5ZRTsf.jpg"
+        },
+        {
+            "name": "Joan Allen",
+            "image": "https://image.tmdb.org/t/p/w185/aLYQFv11lb8hyBuP7ewkuxWbK8q.jpg"
+        },
+        {
+            "name": "Sean Bridgers",
+            "image": "https://image.tmdb.org/t/p/w185/iUxN34HqjjUMgtETexAvrocY0e1.jpg"
+        },
+        {
+            "name": "Tom McCamus",
+            "image": "https://image.tmdb.org/t/p/w185/t9OjLyV9i0LilORn3kBp1YXwMYD.jpg"
+        }
+    ]
+},
+    {
     "title": "Kung Fu Panda 2",
     "year": "2011",
     "desc": "يعيش بو الآن حلمه كمحارب التنين ، ويحمي وادي السلام جنبا إلى جنب مع أصدقائه وزملائه أساتذة الكونغ فو ، الخمسة الغاضبون - النمره و كركي و السرعوف و الافعي و القرد . لكن حياة بو الجديدة من الذهول مهددة بظهور شرير هائل ، يخطط لاستخدام سلاح سري لا يمكن إيقافه لغزو الصين وتدمير الكونغ فو. الأمر متروك لبو والخمسة الغاضبون  للسفر عبر الصين لمواجهة هذا التهديد وقهره. ولكن كيف يمكن لبو أن يوقف سلاحا يمكنه إيقاف الكونغ فو؟ يجب أن ينظر إلى ماضيه ويكشف أسرار أصوله الغامضة. عندها فقط سيكون قادرا على إطلاق العنان للقوة التي يحتاجها للنجاح.",
