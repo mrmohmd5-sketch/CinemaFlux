@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Ruby Gillman, Teenage Kraken",
+    "title": "Ruby Gillman, Teenage Kraken روبي جيلمان الكراكن المراهقة مدبلج ",
     "year": "2023",
     "desc": "يتناول العمل قصة فتاة مراهقة خجولة تكتشف أن أصولها تعود إلى عائلة ملكية تنتمي لمخلوقات أسطورية شهيرة تعيش بالبحار، وأن القدر يحمل لها الكثير بالمستقبل.",
     "poster": "https://image.tmdb.org/t/p/w500/fvFulUOEXmZux7c2Zzt44eVcViV.jpg",
