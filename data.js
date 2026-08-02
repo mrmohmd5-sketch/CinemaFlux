@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Toy Story 5",
+    "year": "2026",
+    "desc": "عندما تحصل 'بوني' على جهاز 'ليلي باد' اللوحي كهدية وتنجذب إليه بشكلٍ كبير، يجد 'وودي' و'باز' و'جيسي' وبقية الألعاب أنفسهم أمام تحدٍ غير مسبوق، إذ تصبح مهمتهم في لفت انتباهها أصعب من أي وقت مضى، بينما يواجهون تهديدًا جديدًا يهدد عالم اللعب الذي اعتادوا عليه.",
+    "poster": "https://image.tmdb.org/t/p/w500/b9yODva86tl5Em8cOoKSQQzzAy4.jpg",
+    "hdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "رسوم متحركة عائلي كوميديا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hanks",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Tim Allen",
+            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+            "name": "Joan Cusack",
+            "image": "https://image.tmdb.org/t/p/w185/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
+        },
+        {
+            "name": "Greta Lee",
+            "image": "https://image.tmdb.org/t/p/w185/6SydTis4XUcovlwIGskT59JowLX.jpg"
+        },
+        {
+            "name": "Conan O'Brien",
+            "image": "https://image.tmdb.org/t/p/w185/deRbViPut0t80miscBpP2DhBJU5.jpg"
+        }
+    ]
+},
+    {
     "title": "Don't Look Up",
     "year": "2021",
     "desc": "ينطلق عالِما فلك في جولة إعلامية لتحذير البشرية من مذنّب يتّجه بسرعة نحو الأرض سيدمّر الكوكب... ولكن لا حياة لمن تنادي في هذا العالم المُشتّت!",
