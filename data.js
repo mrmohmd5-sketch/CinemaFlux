@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Peter Pan's Neverland Nightmare",
+    "year": "2025",
+    "desc": "تسعى (ويندي دارلينج) لإنقاذ شقيقها (مايكل) من براثن (بيتر بان) الشرير، وتصطحب في طريقها (تينكر بيل) في مغامرة مرعبة عبر أراضي نيفرلاند.",
+    "poster": "https://image.tmdb.org/t/p/w500/rhTG3gMlJa0nFlOS7WNKUJ2EDro.jpg",
+    "hdUrl": "https://streamtape.com/e/q7koWAqd0Atz2OQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/q7koWAqd0Atz2OQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.7",
+    "genre": "رعب إثارة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Megan Placito",
+            "image": "https://image.tmdb.org/t/p/w185/ynDhmYaZHWtYz8lokgMav2JBd2J.jpg"
+        },
+        {
+            "name": "Martin Portlock",
+            "image": "https://image.tmdb.org/t/p/w185/81rSjMYtWNusmHO4lomgs4HAHt1.jpg"
+        },
+        {
+            "name": "Kit Green",
+            "image": "https://image.tmdb.org/t/p/w185/iyR9PeiPsghR23uY2QHtvF71B8v.jpg"
+        },
+        {
+            "name": "Peter DeSouza-Feighoney",
+            "image": "https://image.tmdb.org/t/p/w185/reYy9iCjdmOEdKpTkhxD4quNNMP.jpg"
+        },
+        {
+            "name": "Teresa Banham",
+            "image": "https://image.tmdb.org/t/p/w185/aKAjrsZm7KtJ4WYPkvbkOXQnvBG.jpg"
+        }
+    ]
+},
+    {
     "title": "Kung Fu Panda 4",
     "year": "2024",
     "desc": "المغامرات الإضافية لبو واسع العينين في الصين القديمة ، الذي لا يضاهي حبه للكونغ فو سوى شهية لا تشبع.",
