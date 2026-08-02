@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "How to Be Single",
+    "year": "2016",
+    "desc": "يعتقد البعض بوجود طريقة صحيحة لتكون عازبًا وطريقة أخرى خاطئة لتكون عازبًا في مدينة (نيويورك) المليئة بوحيدي القلوب الذين يسعون للوصول إلى شريك ملائم لهم، سواء كانت علاقة تقوم على الحب، أو مجرد لقاءات ودية، أو شيء في المنتصف. وما بين علاقات برامج الدردشة، أو علاقات الليلة الواحدة، يجب على كل الوحيدين أن يتعلموا كيف يكونون عُزَّابًا بشكل صحيح، حيث أن النوم في مدينة لا تنام تجربة غير مبهجة، وهو ما نشهده مع أليس وروبن ولوسي وميج وتوم ودافيد.",
+    "poster": "https://image.tmdb.org/t/p/w500/a4Ce3qHqIyHM3QfGsiVTAu3YADJ.jpg",
+    "hdUrl": "https://streamtape.com/e/eGBbQZglLbSYWdv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eGBbQZglLbSYWdv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "كوميديا رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dakota Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/jI8GITDOV0xatWvkDNHjXYwNkxw.jpg"
+        },
+        {
+            "name": "Rebel Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/yuyRg1WaY616Uux3vP9ONsUjQTS.jpg"
+        },
+        {
+            "name": "Leslie Mann",
+            "image": "https://image.tmdb.org/t/p/w185/x3OS9RL3qsv50kzRtpR2OhbuTkr.jpg"
+        },
+        {
+            "name": "Alison Brie",
+            "image": "https://image.tmdb.org/t/p/w185/smqYVStfIHDYKTu8T1BA2LnhdF9.jpg"
+        },
+        {
+            "name": "Damon Wayans Jr.",
+            "image": "https://image.tmdb.org/t/p/w185/f6gNg71Js9XqCiXUtyFyXXbJ9ni.jpg"
+        }
+    ]
+},
+    {
     "title": "17 Again",
     "year": "2009",
     "desc": "يتخلى (مايك) النجم الصاعد في مدرسته عن كل أحلامه ليشارك حياته مع صديقته (سكارليت)، ولكن بعد مرور عشرين سنة تقريبًا من ذلك الوقت تصبح حياته كئيبة ومليئة بالمشاكل، إلى أن تفتح أمامه فرصة جديدة عندما يعود بشكل عجيب إلى عمر السابعة عشر، لذا يقرر أن يعود ليجدد أحلامه التي ذهبت في السابق.",
