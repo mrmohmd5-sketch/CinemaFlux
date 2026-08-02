@@ -36,7 +36,7 @@ const globalMoviesData = [
     "title": "Last Night in Soho",
     "year": "2021",
     "desc": "في فيلم الإثارة النفسية للمخرج إدغار رايت ، تمكنت Eloise ، مصممة أزياء طموحة ، بشكل غامض من دخول الستينيات حيث واجهت المغنية الرائعة ساندي. لكن البريق ليس كل ما يبدو عليه وأحلام الماضي تبدأ في التصدع والانقسام إلى شيء أكثر قتامة.",
-    "poster": "https://image.tmdb.org/t/p/w500/mu8yBc86pumK5iZZFhg3LIOJoxr.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/hHn8AMQ2PomEkUyEVfk9l2iKlUx.jpg",
     "hdUrl": "https://streamtape.com/e/OABOd8VVbGtZOpx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/OABOd8VVbGtZOpx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.3",
