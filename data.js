@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Rush Hour 3",
+    "year": "2007",
+    "desc": "بعد محاولة اغتيال فاشلة ، يجد الثنائي غير المتطابق نفسيهما في باريس ، يكافحان لاستعادة قائمة أسماء ثمينة ، بينما يبذل أتباع نقابة الجريمة القاتلة قصارى جهدهم لمنعهم.  مرة أخرى ، يجب على 'لي' و 'كارتر' أن يشقوا طريقهم وسط عصابات خطرة.  ومع ذلك ، هذه المرة ، عاد الماضي ليطارد لي.  هل سينجز الأولاد المهمة مرة واحدة وإلى الأبد؟",
+    "poster": "https://image.tmdb.org/t/p/w500/ny86KhaeBbuZOrQYpnN0npBfkG6.jpg",
+    "hdUrl": "https://streamtape.com/e/bpAKeXPj8aFP319/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bpAKeXPj8aFP319/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة كوميديا جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jackie Chan",
+            "image": "https://image.tmdb.org/t/p/w185/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg"
+        },
+        {
+            "name": "Chris Tucker",
+            "image": "https://image.tmdb.org/t/p/w185/rE5OaSWp45pNpMm2TYbAwLgYoCn.jpg"
+        },
+        {
+            "name": "Hiroyuki Sanada",
+            "image": "https://image.tmdb.org/t/p/w185/SOwDxhGnRccP2lAtssQ7TxCzOe.jpg"
+        },
+        {
+            "name": "Max von Sydow",
+            "image": "https://image.tmdb.org/t/p/w185/u16BsGyT6v9yuO7wWAF62NayDth.jpg"
+        },
+        {
+            "name": "Yvan Attal",
+            "image": "https://image.tmdb.org/t/p/w185/2VaxsiFuad8uHHWTM6Fc71wtNCx.jpg"
+        }
+    ]
+},
+    {
     "title": "Rush Hour 2",
     "year": "2001",
     "desc": "حان وقت الإجازة بالنسبة لكارتر حيث يجد نفسه جنبًا إلى جنب مع لي في هونغ كونغ ويتمنى المزيد من الإثارة.  بينما يريد كارتر الاحتفال والسيدات ، يخرج لي لتعقب زعيم عصابة ثالوث قد يكون مسؤولاً عن قتل رجلين في السفارة الأمريكية.  تتعقد الأمور مع تعثر الزوج في مؤامرة مزيفة.  سرعان ما يصل الأولاد إلى أعناقهم في معارك بالأيدي والمواقف التي تهدد حياتهم.  قد تقدم رحلة العودة إلى الولايات المتحدة إجابات حول التفجير والتزوير والولاء الحقيقي لعاملة الجمارك المثيرة إيزابيلا.",
