@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Last Night in Soho",
+    "year": "2021",
+    "desc": "في فيلم الإثارة النفسية للمخرج إدغار رايت ، تمكنت Eloise ، مصممة أزياء طموحة ، بشكل غامض من دخول الستينيات حيث واجهت المغنية الرائعة ساندي. لكن البريق ليس كل ما يبدو عليه وأحلام الماضي تبدأ في التصدع والانقسام إلى شيء أكثر قتامة.",
+    "poster": "https://image.tmdb.org/t/p/w500/mu8yBc86pumK5iZZFhg3LIOJoxr.jpg",
+    "hdUrl": "https://streamtape.com/e/OABOd8VVbGtZOpx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/OABOd8VVbGtZOpx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "رعب غموض دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Thomasin McKenzie",
+            "image": "https://image.tmdb.org/t/p/w185/WOpnEFG5Q8LWxP81MtUrskmVox.jpg"
+        },
+        {
+            "name": "Anya Taylor-Joy",
+            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+            "name": "Matt Smith",
+            "image": "https://image.tmdb.org/t/p/w185/wxMdHj4UA6LgIU5MiA7CKySZeVU.jpg"
+        },
+        {
+            "name": "Rita Tushingham",
+            "image": "https://image.tmdb.org/t/p/w185/sEI6flS4X82MdzIBTwOXjVXuoFK.jpg"
+        },
+        {
+            "name": "Michael Ajao",
+            "image": "https://image.tmdb.org/t/p/w185/9Ve5mHMWzAoHdIzGO7N4eFhfOJ2.jpg"
+        }
+    ]
+},
+    {
     "title": "Peter Rabbit 2: The Runaway",
     "year": "2021",
     "desc": "يهرب بيتر رابيت من عائلته البشرية عندما يعلم أنهم سيصورونه في صورة سيئة في كتابهم. سرعان ما يعبر المسارات مع أرنب أكبر سنا يربطه في سرقة.",
