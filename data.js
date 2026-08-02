@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Kung Fu Panda",
+    "year": "2008",
+    "desc": "في وادي السلام، يجد (بو) الباندا نفسه قد اختير كمحارب التنين على الرغم من حقيقة أنه يعاني من السمنة والخمول، وكونه مبتدئ في فنون الدفاع عن النفس، ويحاول أن يثبت جدارته بهذا الاختيار أمام المعلم (شيفو) والغاضبين الخمسة.",
+    "poster": "https://image.tmdb.org/t/p/w500/32yHSZ1akPIRWyDhNwSRBnGDOhl.jpg",
+    "hdUrl": "https://streamtape.com/e/4v4wbvg11euKPkP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4v4wbvg11euKPkP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة رسوم متحركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Dustin Hoffman",
+            "image": "https://image.tmdb.org/t/p/w185/yFjTzJHE6AFbwQifOlnNDzmiwlq.jpg"
+        },
+        {
+            "name": "Angelina Jolie",
+            "image": "https://image.tmdb.org/t/p/w185/bXNxIKcJ5cNNW8QFrBPWcfTSu9x.jpg"
+        },
+        {
+            "name": "Ian McShane",
+            "image": "https://image.tmdb.org/t/p/w185/rteBJYNgD1yGsHg2HGZAIrYHz1t.jpg"
+        },
+        {
+            "name": "Seth Rogen",
+            "image": "https://image.tmdb.org/t/p/w185/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+        }
+    ]
+},
+    {
     "title": "Peter Pan's Neverland Nightmare",
     "year": "2025",
     "desc": "تسعى (ويندي دارلينج) لإنقاذ شقيقها (مايكل) من براثن (بيتر بان) الشرير، وتصطحب في طريقها (تينكر بيل) في مغامرة مرعبة عبر أراضي نيفرلاند.",
