@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Kung Fu Panda 4",
+    "year": "2024",
+    "desc": "المغامرات الإضافية لبو واسع العينين في الصين القديمة ، الذي لا يضاهي حبه للكونغ فو سوى شهية لا تشبع.",
+    "poster": "https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
+    "hdUrl": "https://streamtape.com/e/BvwXxvp6eGhGZW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BvwXxvp6eGhGZW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة مغامرة رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Awkwafina",
+            "image": "https://image.tmdb.org/t/p/w185/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+        },
+        {
+            "name": "Viola Davis",
+            "image": "https://image.tmdb.org/t/p/w185/xDssw6vpYNRjsybvMPRE30e0dPN.jpg"
+        },
+        {
+            "name": "Dustin Hoffman",
+            "image": "https://image.tmdb.org/t/p/w185/yFjTzJHE6AFbwQifOlnNDzmiwlq.jpg"
+        },
+        {
+            "name": "Bryan Cranston",
+            "image": "https://image.tmdb.org/t/p/w185/npIIZJGSrcJIJ6yHdmbqO6Jzo5I.jpg"
+        }
+    ]
+},
+    {
     "title": "Peter Pan",
     "year": "2003",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
