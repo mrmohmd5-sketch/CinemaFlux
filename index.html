@@ -971,15 +971,19 @@
         let activeMovieItem = null;
         let currentHD = "", currentSD = "";
 
-        // ===== متغيرات التحميل التدريجي =====
+        // ===== متغيرات التحميل التدريجي (تم تعديلها) =====
         let genresCache = null;
         let categoriesRendered = {};
         let homeInitialized = false;
         let sliderListeners = {};
 
-        const HOME_CATS_BATCH = 3;
+        const HOME_CATS_BATCH = 3;        // عدد التصنيفات التي تحمل في كل دفعة
+        const MOVIES_PER_CATEGORY_INITIAL = 10; // عدد الأفلام الأولي لكل تصنيف (بدلاً من 5)
         let homeCategoriesIndex = 0;
         let homeAllGenresList = [];
+
+        // ===== ذاكرة تخزين مؤقت للمحتوى المحمل (لن يتم حذفه إلا عند مغادرة الصفحة) =====
+        let loadedCategoriesCache = {};    // مفتاح: اسم التصنيف، قيمة: مصفوفة من عناصر HTML لبطاقات الأفلام (المحمولة بالكامل)
 
         // ===== متغير لتخزين آخر صفحة قبل فتح الفيلم =====
         let lastViewBeforeMovie = 'home';
@@ -1397,7 +1401,7 @@
             });
         }
 
-        // ===== دوال التحميل التدريجي =====
+        // ===== دوال التحميل التدريجي (المعدلة) =====
         function buildGenresCache() {
             if (genresCache) return genresCache;
 
@@ -1497,76 +1501,7 @@
             }
         }
 
-        function renderSingleCategory(genre, items, parentContainer) {
-            if (items.length === 0) return;
-
-            const categorySection = document.createElement('div');
-            categorySection.style.marginBottom = '25px';
-
-            const rowHeader = document.createElement('div');
-            rowHeader.className = 'row-header';
-            rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
-            rowHeader.querySelector('.row-title').onclick = () => openCategoryPage(genre, items);
-            categorySection.appendChild(rowHeader);
-
-            const moviesSlider = document.createElement('div');
-            moviesSlider.className = 'movies-slider';
-            const sliderId = `slider-${Date.now()}-${Math.random()}`;
-            moviesSlider.id = sliderId;
-
-            const itemsToShow = items.slice(0, 5);
-            const remainingItems = items.slice(5);
-
-            itemsToShow.forEach(item => {
-                moviesSlider.appendChild(createMovieCard(item));
-            });
-
-            categorySection.appendChild(moviesSlider);
-            parentContainer.appendChild(categorySection);
-
-            if (remainingItems.length > 0) {
-                sliderListeners[sliderId] = {
-                    slider: moviesSlider,
-                    remainingItems: remainingItems,
-                    hasListener: false,
-                    loadedIndices: new Set()
-                };
-
-                const sliderInfo = sliderListeners[sliderId];
-
-                moviesSlider.addEventListener('scroll', () => {
-                    const scrollPercentage = (moviesSlider.scrollLeft / (moviesSlider.scrollWidth - moviesSlider.clientWidth)) * 100;
-                    if (scrollPercentage > 70) {
-                        sliderInfo.remainingItems.forEach((item, index) => {
-                            if (!sliderInfo.loadedIndices.has(index) && !moviesSlider.querySelector(`[data-movie-title="${item.title}"]`)) {
-                                const card = createMovieCard(item);
-                                card.setAttribute('data-movie-title', item.title);
-                                moviesSlider.appendChild(card);
-                                sliderInfo.loadedIndices.add(index);
-                                // تطبيق المراقب على الصورة الجديدة
-                                const img = card.querySelector('.movie-poster');
-                                if (img) {
-                                    const observer = new IntersectionObserver((entries) => {
-                                        entries.forEach(entry => {
-                                            if (entry.isIntersecting) {
-                                                img.classList.add('loaded');
-                                                observer.disconnect();
-                                            }
-                                        });
-                                    }, { rootMargin: '50px' });
-                                    if (img.complete && img.naturalWidth > 0) {
-                                        img.classList.add('loaded');
-                                    } else {
-                                        observer.observe(img);
-                                    }
-                                }
-                            }
-                        });
-                    }
-                });
-            }
-        }
-
+        // ===== دالة إنشاء بطاقة فيلم (مكررة ولكنها مستقلة) =====
         function createMovieCard(item) {
             const card = document.createElement('div');
             card.className = 'movie-card';
@@ -1612,6 +1547,113 @@
                 openMoviePage(item);
             });
             return card;
+        }
+
+        // ===== دالة عرض تصنيف واحد مع تحميل 10 أفلام مبدئياً والبقية عند التمرير (مع التخزين المؤقت) =====
+        function renderSingleCategory(genre, items, parentContainer) {
+            if (items.length === 0) return;
+
+            // التحقق من وجود التصنيف في الكاش مسبقاً
+            if (loadedCategoriesCache[genre]) {
+                // استعادة المحتوى المخزن مؤقتاً
+                const cachedSection = loadedCategoriesCache[genre];
+                // نسخ عميق لعناصر DOM لإعادة استخدامها (لأنه قد يتم إلحاقها بحاوية جديدة)
+                const clonedSection = cachedSection.cloneNode(true);
+                // إعادة ربط الأحداث (الاستماع) للبطاقات لأن النسخ العميق لا ينقل المستمعين
+                const cards = clonedSection.querySelectorAll('.movie-card');
+                cards.forEach(card => {
+                    const itemData = items.find(it => it.title === card.querySelector('.movie-name')?.innerText);
+                    if (itemData) {
+                        card.addEventListener('click', function(e) {
+                            const ripple = document.createElement('span');
+                            ripple.className = 'ripple-effect';
+                            const rect = card.getBoundingClientRect();
+                            const size = Math.max(rect.width, rect.height);
+                            ripple.style.width = ripple.style.height = size + 'px';
+                            ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+                            ripple.style.top  = (e.clientY - rect.top  - size / 2) + 'px';
+                            card.querySelector('.poster-wrapper').appendChild(ripple);
+                            setTimeout(() => ripple.remove(), 500);
+                            openMoviePage(itemData);
+                        });
+                    }
+                });
+                parentContainer.appendChild(clonedSection);
+                return;
+            }
+
+            // بناء التصنيف من الصفر
+            const categorySection = document.createElement('div');
+            categorySection.style.marginBottom = '25px';
+
+            const rowHeader = document.createElement('div');
+            rowHeader.className = 'row-header';
+            rowHeader.innerHTML = `<div class="row-title">${genre}</div>`;
+            rowHeader.querySelector('.row-title').onclick = () => openCategoryPage(genre, items);
+            categorySection.appendChild(rowHeader);
+
+            const moviesSlider = document.createElement('div');
+            moviesSlider.className = 'movies-slider';
+            const sliderId = `slider-${Date.now()}-${Math.random()}`;
+            moviesSlider.id = sliderId;
+
+            // تحميل 10 أفلام مبدئياً (أو كل العناصر إذا كانت أقل)
+            const initialCount = Math.min(MOVIES_PER_CATEGORY_INITIAL, items.length);
+            const initialItems = items.slice(0, initialCount);
+            const remainingItems = items.slice(initialCount);
+
+            initialItems.forEach(item => {
+                moviesSlider.appendChild(createMovieCard(item));
+            });
+
+            categorySection.appendChild(moviesSlider);
+            parentContainer.appendChild(categorySection);
+
+            // تخزين نسخة من القسم في الكاش (لإعادة استخدامها)
+            loadedCategoriesCache[genre] = categorySection.cloneNode(true);
+
+            // إعداد التحميل التدريجي عند التمرير للعناصر المتبقية
+            if (remainingItems.length > 0) {
+                sliderListeners[sliderId] = {
+                    slider: moviesSlider,
+                    remainingItems: remainingItems,
+                    hasListener: false,
+                    loadedIndices: new Set()
+                };
+
+                const sliderInfo = sliderListeners[sliderId];
+
+                moviesSlider.addEventListener('scroll', () => {
+                    const scrollPercentage = (moviesSlider.scrollLeft / (moviesSlider.scrollWidth - moviesSlider.clientWidth)) * 100;
+                    if (scrollPercentage > 70) {
+                        sliderInfo.remainingItems.forEach((item, index) => {
+                            if (!sliderInfo.loadedIndices.has(index) && !moviesSlider.querySelector(`[data-movie-title="${item.title}"]`)) {
+                                const card = createMovieCard(item);
+                                card.setAttribute('data-movie-title', item.title);
+                                moviesSlider.appendChild(card);
+                                sliderInfo.loadedIndices.add(index);
+                                // تطبيق المراقب على الصورة الجديدة
+                                const img = card.querySelector('.movie-poster');
+                                if (img) {
+                                    const observer = new IntersectionObserver((entries) => {
+                                        entries.forEach(entry => {
+                                            if (entry.isIntersecting) {
+                                                img.classList.add('loaded');
+                                                observer.disconnect();
+                                            }
+                                        });
+                                    }, { rootMargin: '50px' });
+                                    if (img.complete && img.naturalWidth > 0) {
+                                        img.classList.add('loaded');
+                                    } else {
+                                        observer.observe(img);
+                                    }
+                                }
+                            }
+                        });
+                    }
+                });
+            }
         }
 
         // ===== دوال عرض كل الأفلام وكل المسلسلات =====
@@ -1786,7 +1828,6 @@
             if (catView) catView.classList.remove('active');
             // العودة إلى الصفحة السابقة أو الرئيسية
             if (lastViewBeforeMovie && lastViewBeforeMovie !== 'viewCategoryDetail') {
-                // إذا كانت الصفحة السابقة معروفة، ننتقل إليها
                 if (lastViewBeforeMovie === 'home') switchNav('home');
                 else if (lastViewBeforeMovie === 'allMovies') switchNav('allMovies');
                 else if (lastViewBeforeMovie === 'allSeries') switchNav('allSeries');
@@ -2022,7 +2063,6 @@
                 }
 
                 epListContainer.innerHTML = season.episodes.map(ep => {
-                    // تشفير الرابط بشكل آمن دون استخدام unescape/escape
                     let safeUrl = btoa(encodeURIComponent(ep.url));
                     return `
                         <button onclick="playEpisode('${safeUrl}')" style="background:var(--bg-main); color:var(--text-main); border:1px solid var(--border-color); padding:10px; border-radius:6px; cursor:pointer; font-weight:bold; transition:all 0.2s;" onmouseover="this.style.background='var(--accent)'; this.style.color='#fff'; this.style.borderColor='var(--accent)';" onmouseout="this.style.background='var(--bg-main)'; this.style.color='var(--text-main)'; this.style.borderColor='var(--border-color)';">
@@ -2047,7 +2087,7 @@
             try {
                 decodedUrlStr = decodeURIComponent(atob(encodedUrl));
             } catch(e) {
-                decodedUrlStr = atob(encodedUrl); // fallback
+                decodedUrlStr = atob(encodedUrl);
             }
 
             if (decodedUrlStr.includes('<iframe')) {
@@ -2083,7 +2123,6 @@
                 else if (lastViewBeforeMovie === 'viewSettings') switchView('viewSettings');
                 else if (lastViewBeforeMovie === 'viewHistory') switchView('viewHistory');
                 else if (lastViewBeforeMovie === 'viewCategoryDetail') {
-                    // محاولة العودة للتصنيف، لكننا لا نعرف البيانات، لذا نغلق الصفحة
                     closeCategoryPage();
                 }
                 else switchNav('home');
@@ -2175,13 +2214,9 @@
 
             historyBlock.style.display = 'none';
             const matches = allMoviesData.filter(item => {
-                // البحث في العنوان
                 if (item.title.toLowerCase().includes(query)) return true;
-                // البحث في التصنيف
                 if (item.genre && item.genre.toLowerCase().includes(query)) return true;
-                // البحث في الوصف
                 if (item.desc && item.desc.toLowerCase().includes(query)) return true;
-                // البحث في أسماء الممثلين
                 if (item.cast && item.cast.some(c => c.name && c.name.toLowerCase().includes(query))) return true;
                 return false;
             });
@@ -2547,7 +2582,6 @@
                 return;
             }
 
-            // تحميل قاعدة المستخدمين من localStorage
             try {
                 usersDB = JSON.parse(localStorage.getItem('cf_users')) || {};
             } catch(e) { usersDB = {}; }
@@ -2572,7 +2606,6 @@
                     alert(dict.userExists);
                     return;
                 }
-                // التحقق من طول كلمة المرور
                 if (pass.length < 6) {
                     alert(dict.passwordTooShort);
                     return;
@@ -2642,7 +2675,6 @@
 
             const viewMovieDetail = document.getElementById('viewMovieDetail');
             if (viewMovieDetail.classList.contains('active')) {
-                // العودة للصفحة السابقة
                 closeMoviePage();
                 return 'handled';
             }
