@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Bad Guys: A Very Bad Holiday",
+    "year": "2023",
+    "desc": "من أجل إنجاح أقوى سطو في أهم عطلة في السنة، سيتعين على السيد 'وولف' وفريقه من الحيوانات الخارجة على القانون إعادة فرحة عيد الميلاد للمدينة بأكملها… وبأقصى سرعة!",
+    "poster": "https://image.tmdb.org/t/p/w500/er0Gth3Tr279hFq1xeKdYxhcleO.jpg",
+    "hdUrl": "https://streamtape.com/e/LM91WGvpgZHRLq0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LM91WGvpgZHRLq0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "رسوم متحركة كوميديا عائلي حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Michael Godere",
+            "image": "https://image.tmdb.org/t/p/w185/cwC5R5ErDsP81Dwo6154Ld5uves.jpg"
+        },
+        {
+            "name": "Ezekiel Ajeigbe",
+            "image": "https://image.tmdb.org/t/p/w185/uU6UCcQlyyXZ0hbergglsyVxlUm.jpg"
+        },
+        {
+            "name": "Raul Ceballos",
+            "image": "https://image.tmdb.org/t/p/w185/8Pq2Igpm0x7XmkokP4yfGi3GdVr.jpg"
+        },
+        {
+            "name": "Chris Diamantopoulos",
+            "image": "https://image.tmdb.org/t/p/w185/oenBtpk0RTId4wacQKYU4cPcq8Z.jpg"
+        },
+        {
+            "name": "Mallory Low",
+            "image": "https://image.tmdb.org/t/p/w185/amS893X6E4w2n3Go73HkbuYZjI9.jpg"
+        }
+    ]
+},
+    {
     "title": "Coco",
     "year": "2017",
     "desc": "الاحتفال بالعمر\r على الرغم من الحظر المحير الذي فرضته عائلته منذ أجيال على الموسيقى ، يحلم ميغيل بأن يصبح موسيقيا بارعا مثل معبوده إرنستو دي لا كروز. في محاولة يائسة لإثبات موهبته ، يجد ميغيل نفسه في أرض الموتى المذهلة والملونة بعد سلسلة غامضة من الأحداث. على طول الطريق ، يلتقي المحتال الساحر هيكتور ، وينطلقان معا في رحلة غير عادية لفتح القصة الحقيقية وراء تاريخ عائلة ميغيل.",
