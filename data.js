@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Furious",
+    "year": "2026",
+    "desc": "بعد أن خُطفت ابنته من الشارع، يبدأ صاحب متجر (شيه مياو) في تتبع شبكة إجرامية معقدة، مستخدماً كل الطرق والوسائل الممكنة لاستعادة ابنته.  حليفه الوحيد في هذه الرحلة هو صحفي (جو تاسليم)؛ حيث يتعين على هذين الشخصين القادمين من خلفيات مختلفة تماماً أن يتعلما كيف يثقا ببعضهما ويتعاونا معاً، مستغلين مهارات قتالية منحتها لهما أسرار ماضيهما الغامض.",
+    "poster": "https://image.tmdb.org/t/p/w500/twehTxCQx3zBbrGiZjWfcLAuajt.jpg",
+    "hdUrl": "https://streamtape.com/e/WeroQPBP11he1M/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/WeroQPBP11he1M/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Xie Miao",
+            "image": "https://image.tmdb.org/t/p/w185/xdXmp28jBrv0r9FwLEKYTC36dnM.jpg"
+        },
+        {
+            "name": "Joe Taslim",
+            "image": "https://image.tmdb.org/t/p/w185/bk2j6Oa8T02KtvpD4qOXXGJe4Vy.jpg"
+        },
+        {
+            "name": "Yang Enyou",
+            "image": "https://image.tmdb.org/t/p/w185/dlQ4aZ418hBtDkEP58qMKBjRf0a.jpg"
+        },
+        {
+            "name": "Yayan Ruhian",
+            "image": "https://image.tmdb.org/t/p/w185/y8ZLh6FZMuLFw8PhqDxcEsyozjJ.jpg"
+        },
+        {
+            "name": "JeeJa Yanin",
+            "image": "https://image.tmdb.org/t/p/w185/73xhAKFbeNSlJTwUCsQCAtryLYS.jpg"
+        }
+    ]
+},
+    {
     "title": "The Other Woman",
     "year": "2014",
     "desc": "تدور أحداث الفيلم حول امرأة تكتشف أن حبيبها متزوج فتنشأ بينها وبين زوجته صداقة غير متوقعة وتزداد الأمور تعقيدا عندما تكتشفان وجود امرأة ثالثة في حياته فيقررن الاتحاد معا للانتقام منه بطرق كوميدية ومبتكرة .",
