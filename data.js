@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Crew",
+    "year": "2024",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/7aYI3oubXqbqI9IZ2OedNieVzi5.jpg",
+    "hdUrl": "https://streamtape.com/e/Qg4YezQBlBt0OLA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Qg4YezQBlBt0OLA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tabu",
+            "image": "https://image.tmdb.org/t/p/w185/cvt5nvCHr1ICf5u8A2mlzLQ8LsV.jpg"
+        },
+        {
+            "name": "Kareena Kapoor Khan",
+            "image": "https://image.tmdb.org/t/p/w185/kp9xnwDALUt6nuPBGuJHlvnxGnM.jpg"
+        },
+        {
+            "name": "Kriti Sanon",
+            "image": "https://image.tmdb.org/t/p/w185/go8GUz7poytTvm9P9HNHQ3T84N1.jpg"
+        },
+        {
+            "name": "Diljit Dosanjh",
+            "image": "https://image.tmdb.org/t/p/w185/xB57LAMYa1q3CaS0TZjgf4d2OaS.jpg"
+        },
+        {
+            "name": "Rajesh Sharma",
+            "image": "https://image.tmdb.org/t/p/w185/cBmZY1EICMD1q16Fx7GqpHkc6A1.jpg"
+        }
+    ]
+},
+    {
     "title": "How to Be Single",
     "year": "2016",
     "desc": "يعتقد البعض بوجود طريقة صحيحة لتكون عازبًا وطريقة أخرى خاطئة لتكون عازبًا في مدينة (نيويورك) المليئة بوحيدي القلوب الذين يسعون للوصول إلى شريك ملائم لهم، سواء كانت علاقة تقوم على الحب، أو مجرد لقاءات ودية، أو شيء في المنتصف. وما بين علاقات برامج الدردشة، أو علاقات الليلة الواحدة، يجب على كل الوحيدين أن يتعلموا كيف يكونون عُزَّابًا بشكل صحيح، حيث أن النوم في مدينة لا تنام تجربة غير مبهجة، وهو ما نشهده مع أليس وروبن ولوسي وميج وتوم ودافيد.",
