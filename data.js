@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Boy Kills World",
+    "year": "2024",
+    "desc": "يدور العمل حول قصة شاب أصم يتمتع بخيال جامح يتعرض والداه للقتل، ويستغل رجل الأمر في تحويل الشاب إلى أداة للقتل، وتتوالى الأحداث.",
+    "poster": "https://image.tmdb.org/t/p/w500/25JskXmchcYwj3jHRmcPm738MpB.jpg",
+    "hdUrl": "https://streamtape.com/e/Jp1rXvd76LToz8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Jp1rXvd76LToz8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "جريمة إثارة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Bill Skarsgård",
+            "image": "https://image.tmdb.org/t/p/w185/yGML6E9OtHQ5PFSvxoIj901tvsL.jpg"
+        },
+        {
+            "name": "Jessica Rothe",
+            "image": "https://image.tmdb.org/t/p/w185/lJdHeTxiE0bvPhl8IrBskoaKmfN.jpg"
+        },
+        {
+            "name": "H. Jon Benjamin",
+            "image": "https://image.tmdb.org/t/p/w185/yZgBHrH8D9Jjo15fuQKnWV3U2OC.jpg"
+        },
+        {
+            "name": "Michelle Dockery",
+            "image": "https://image.tmdb.org/t/p/w185/pgPJGf2wAPgoC6Bp5PBJYQV7IVt.jpg"
+        },
+        {
+            "name": "Brett Gelman",
+            "image": "https://image.tmdb.org/t/p/w185/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
+        }
+    ]
+},
+    {
     "title": "Everything Everywhere All at Once",
     "year": "2022",
     "desc": "تتورط مهاجرة صينية مسنة في مغامرة مجنونة، حينما تكتشف أنها وحدها من يستطيع إنقاذ العالم من خلال اكتشاف العوالم الأخرى الموازية لعالمها.",
