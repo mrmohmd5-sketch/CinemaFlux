@@ -3,7 +3,7 @@ const globalMoviesData = [
     "title": "Crew",
     "year": "2024",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
-    "poster": "https://image.tmdb.org/t/p/w500/7aYI3oubXqbqI9IZ2OedNieVzi5.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/8mnCtQngfhYt0W0BmkrCePutmvy.jpg",
     "hdUrl": "https://streamtape.com/e/Qg4YezQBlBt0OLA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/Qg4YezQBlBt0OLA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.7",
