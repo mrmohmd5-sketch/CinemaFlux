@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Don't Look Up",
+    "year": "2021",
+    "desc": "ينطلق عالِما فلك في جولة إعلامية لتحذير البشرية من مذنّب يتّجه بسرعة نحو الأرض سيدمّر الكوكب... ولكن لا حياة لمن تنادي في هذا العالم المُشتّت!",
+    "poster": "https://image.tmdb.org/t/p/w500/iZETKt9Vp5ZDNXJFUum2lndfetw.jpg",
+    "hdUrl": "https://streamtape.com/e/Q1LAoYx9r4IrM3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Q1LAoYx9r4IrM3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "كوميديا خيال علمي دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Leonardo DiCaprio",
+            "image": "https://image.tmdb.org/t/p/w185/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
+        },
+        {
+            "name": "Jennifer Lawrence",
+            "image": "https://image.tmdb.org/t/p/w185/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg"
+        },
+        {
+            "name": "Meryl Streep",
+            "image": "https://image.tmdb.org/t/p/w185/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg"
+        },
+        {
+            "name": "Cate Blanchett",
+            "image": "https://image.tmdb.org/t/p/w185/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg"
+        },
+        {
+            "name": "Rob Morgan",
+            "image": "https://image.tmdb.org/t/p/w185/ps6wR3JZnk6MY9tbtOLORgadqs6.jpg"
+        }
+    ]
+},
+    {
     "title": "Jojo Rabbit",
     "year": "2019",
     "desc": "تدور أحداث الفيلم حول الحرب العالمية الثانية، حيث يكتشف الفتى (جوجو) والذي يخدم في جيش (هتلر) أن والدته (روزي) تُخبئ فتاة يهودية في منزلهم، ويسعى (جوجو) لإخفاء الأمر عن الجميع.",
