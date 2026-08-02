@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Rabbit Hole",
+    "year": "2010",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/zTUQXwMn4ndt5AAcDvJCi14ZY2B.jpg",
+    "hdUrl": "https://streamtape.com/e/YV62qJ7eq7UvQwL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YV62qJ7eq7UvQwL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nicole Kidman",
+            "image": "https://image.tmdb.org/t/p/w185/4KSQDodyBtTDMaREYgMdWD1LbH1.jpg"
+        },
+        {
+            "name": "Aaron Eckhart",
+            "image": "https://image.tmdb.org/t/p/w185/u5JjnRMr9zKEVvOP7k3F6gdcwT6.jpg"
+        },
+        {
+            "name": "Dianne Wiest",
+            "image": "https://image.tmdb.org/t/p/w185/p9mfzY68FtEbedOMNB5X4eBShhx.jpg"
+        },
+        {
+            "name": "Miles Teller",
+            "image": "https://image.tmdb.org/t/p/w185/kDf3sW3USjEBDQ3Ua7lbwOfwty6.jpg"
+        },
+        {
+            "name": "Tammy Blanchard",
+            "image": "https://image.tmdb.org/t/p/w185/ztbtRXEBJaOiQevIn0xNKAzu9MU.jpg"
+        }
+    ]
+},
+    {
     "title": "Last Night in Soho",
     "year": "2021",
     "desc": "في فيلم الإثارة النفسية للمخرج إدغار رايت ، تمكنت Eloise ، مصممة أزياء طموحة ، بشكل غامض من دخول الستينيات حيث واجهت المغنية الرائعة ساندي. لكن البريق ليس كل ما يبدو عليه وأحلام الماضي تبدأ في التصدع والانقسام إلى شيء أكثر قتامة.",
