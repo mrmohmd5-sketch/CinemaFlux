@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Rush Hour",
+    "year": "1998",
+    "desc": "عندما يتم استدعاء مفتش هونغ كونغ لي إلى لوس أنجلوس للتحقيق في عملية اختطاف ، لا يريد مكتب التحقيقات الفيدرالي أي مساعدة خارجية ويكلف المحقق جيمس كارتر المغرور في شرطة لوس أنجلوس بإلهاء لي عن القضية.  لا يكتفي 'لي' و 'كارتر' بمشاهدة الحدث من الخطوط الجانبية ، حيث يشكلان شراكة غير محتملة ويتحققان في القضية بأنفسهما.",
+    "poster": "https://image.tmdb.org/t/p/w500/noZXr14lMFabr2gITrQSfZLVKlM.jpg",
+    "hdUrl": "https://streamtape.com/e/DP0ZPr9KM7ikzvk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DP0ZPr9KM7ikzvk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "حركة كوميديا جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jackie Chan",
+            "image": "https://image.tmdb.org/t/p/w185/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg"
+        },
+        {
+            "name": "Chris Tucker",
+            "image": "https://image.tmdb.org/t/p/w185/rE5OaSWp45pNpMm2TYbAwLgYoCn.jpg"
+        },
+        {
+            "name": "Tom Wilkinson",
+            "image": "https://image.tmdb.org/t/p/w185/d5yLk0PK8q7EKR3E3G2txO758IW.jpg"
+        },
+        {
+            "name": "Philip Baker Hall",
+            "image": "https://image.tmdb.org/t/p/w185/ef7M9soBIv6iGnGEiCdsQ6ppjFl.jpg"
+        },
+        {
+            "name": "Elizabeth Peña",
+            "image": "https://image.tmdb.org/t/p/w185/uyUrPmtbwiGFOq8pIfYVQYgmBmK.jpg"
+        }
+    ]
+},
+    {
     "title": "حب 101 مدبلج",
     "year": "2020",
     "desc": "خلال سعيهم لإيقاع معلّمتهم في حبّ مدرّب كرة السلّة، يكتشف أربعة مشاغبين وطالبة مثاليّة معنى الصداقة والحبّ والشجاعة وهم يبحثون عن ذاتهم.",
