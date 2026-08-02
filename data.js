@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Kung Fu Panda 2",
+    "year": "2011",
+    "desc": "يعيش بو الآن حلمه كمحارب التنين ، ويحمي وادي السلام جنبا إلى جنب مع أصدقائه وزملائه أساتذة الكونغ فو ، الخمسة الغاضبون - النمره و كركي و السرعوف و الافعي و القرد . لكن حياة بو الجديدة من الذهول مهددة بظهور شرير هائل ، يخطط لاستخدام سلاح سري لا يمكن إيقافه لغزو الصين وتدمير الكونغ فو. الأمر متروك لبو والخمسة الغاضبون  للسفر عبر الصين لمواجهة هذا التهديد وقهره. ولكن كيف يمكن لبو أن يوقف سلاحا يمكنه إيقاف الكونغ فو؟ يجب أن ينظر إلى ماضيه ويكشف أسرار أصوله الغامضة. عندها فقط سيكون قادرا على إطلاق العنان للقوة التي يحتاجها للنجاح.",
+    "poster": "https://image.tmdb.org/t/p/w500/jge4QE4HnhW0UIHUxzJJZ95LiU.jpg",
+    "hdUrl": "https://streamtape.com/e/4B4JkKAaLxUKlae/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4B4JkKAaLxUKlae/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "رسوم متحركة عائلي كوميديا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Angelina Jolie",
+            "image": "https://image.tmdb.org/t/p/w185/bXNxIKcJ5cNNW8QFrBPWcfTSu9x.jpg"
+        },
+        {
+            "name": "Dustin Hoffman",
+            "image": "https://image.tmdb.org/t/p/w185/yFjTzJHE6AFbwQifOlnNDzmiwlq.jpg"
+        },
+        {
+            "name": "Gary Oldman",
+            "image": "https://image.tmdb.org/t/p/w185/yhaSM5habNNI1Tf4ALRwRk3VvSZ.jpg"
+        },
+        {
+            "name": "Jackie Chan",
+            "image": "https://image.tmdb.org/t/p/w185/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg"
+        }
+    ]
+},
+    {
     "title": "Peter Pan",
     "year": "1953",
     "desc": "كل ليلة تحكي وندي لشقيقها الصغيرين مايكل وجون قصة من مغامرات الفتى المغامر بيتر بان الذي يعيش في 'نيفرلاند'، الأرض التي لا يكبر فيها الأطفال أبدا. ولم تعتقد وندي يوما أن يأتي إليها بيتر بان الذي يدخل غرفتها بصحبة الجنية الصغيرة 'تينكر بيل' وإذا بها تجد كل ما كانت تحكيها من خيال حقيقة وتعيش مع بيتر بان مغامراته ضد القرصان هوك.",
