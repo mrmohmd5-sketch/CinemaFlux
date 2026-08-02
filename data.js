@@ -33,7 +33,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Thelma the Unicorn",
+    "title": "Thelma the Unicorn مدبلج",
     "year": "2024",
     "desc": "تتسبب لحظة مصيرية نادرة في تحقيق رغبة المهرة (ثيلما) في أن تصبح وحيدة قرن، وسرعان ما ترتقي إلى عالم الشهرة، لكن حياتها الجديدة تصطدم بأحداث غير متوقعة.",
     "poster": "https://image.tmdb.org/t/p/w500/pSfCWFi9QIpqlerkitAw2cF3ZZW.jpg",
