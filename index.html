@@ -1968,7 +1968,7 @@
             document.getElementById('currentRating').innerText = item.rating || "0.0";
             // عرض التصنيف العمري
             const ageRatingEl = document.getElementById('currentAgeRating');
-            if (item.ageRating) {
+            if (item.ageRating && item.ageRating !== "غير محدد") {
                 ageRatingEl.innerText = item.ageRating;
                 ageRatingEl.style.display = 'inline-block';
             } else {
