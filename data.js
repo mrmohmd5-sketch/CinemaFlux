@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Alice in Wonderland",
+    "year": "2010",
+    "desc": "تعود 'أليس'، البالغة من العمر 19 عامًا الآن، إلى العالم العجيب الذي دخلته لأول مرة وهي طفلة، وتخوض رحلة لاكتشاف مصيرها الحقيقي.",
+    "poster": "https://image.tmdb.org/t/p/w500/woPmwNpRYE3blvuO4ncmH8CaCrZ.jpg",
+    "hdUrl": "https://streamtape.com/e/pkB0XZDKYBtGq0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pkB0XZDKYBtGq0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "عائلي فانتازيا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mia Wasikowska",
+            "image": "https://image.tmdb.org/t/p/w185/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg"
+        },
+        {
+            "name": "Johnny Depp",
+            "image": "https://image.tmdb.org/t/p/w185/k2xt6EUxQDwYRKIyI4IBdZxfs8n.jpg"
+        },
+        {
+            "name": "Anne Hathaway",
+            "image": "https://image.tmdb.org/t/p/w185/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+            "name": "Helena Bonham Carter",
+            "image": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        },
+        {
+            "name": "Crispin Glover",
+            "image": "https://image.tmdb.org/t/p/w185/imBnLpSXvg61qDDdEfvL6R4ITKt.jpg"
+        }
+    ]
+},
+    {
     "title": "Predator: Badlands",
     "year": "2025",
     "desc": "بعد أن نُبذ من قبيلته، يسعى صيّاد فضائي لإثبات نفسه واستعادة مكانته، فيتحالف مع رفيق غير متوقّع وينطلقان معًا في رحلة خطرة، بحثًا عن الخصم الأعظم... ذاك الذي قد يمنحه النصر عليه شرفًا مفقودًا، أو يُخلّد سقوطه إلى الأبد.",
