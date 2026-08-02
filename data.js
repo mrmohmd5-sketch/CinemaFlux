@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Coco",
+    "year": "2017",
+    "desc": "الاحتفال بالعمر\r على الرغم من الحظر المحير الذي فرضته عائلته منذ أجيال على الموسيقى ، يحلم ميغيل بأن يصبح موسيقيا بارعا مثل معبوده إرنستو دي لا كروز. في محاولة يائسة لإثبات موهبته ، يجد ميغيل نفسه في أرض الموتى المذهلة والملونة بعد سلسلة غامضة من الأحداث. على طول الطريق ، يلتقي المحتال الساحر هيكتور ، وينطلقان معا في رحلة غير عادية لفتح القصة الحقيقية وراء تاريخ عائلة ميغيل.",
+    "poster": "https://image.tmdb.org/t/p/w500/SImOPMuE5fIbEziSd35VyUfHus.jpg",
+    "hdUrl": "https://streamtape.com/e/J2pZoxxvOBHjmzQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/J2pZoxxvOBHjmzQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.2",
+    "genre": "عائلي رسوم متحركة موسيقى مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Anthony Gonzalez",
+            "image": "https://image.tmdb.org/t/p/w185/WF7bn6t0LkxwBWyDMWvomVujn7.jpg"
+        },
+        {
+            "name": "Gael García Bernal",
+            "image": "https://image.tmdb.org/t/p/w185/7uEO29wtdyY9bjt2JN43gVpE6vt.jpg"
+        },
+        {
+            "name": "Benjamin Bratt",
+            "image": "https://image.tmdb.org/t/p/w185/hBenHPT4iJEG2kt5z2TOGnkRZwh.jpg"
+        },
+        {
+            "name": "Alanna Ubach",
+            "image": "https://image.tmdb.org/t/p/w185/p2sIpgftEIkhPrrpgu8wW8XEpDg.jpg"
+        },
+        {
+            "name": "Renée Victor",
+            "image": "https://image.tmdb.org/t/p/w185/wAVDqwFhQsRQgO6VIYq6T9Wbbx8.jpg"
+        }
+    ]
+},
+    {
     "title": "Moana موانا مدبلج",
     "year": "2026",
     "desc": "تستجيب موانا المراهقة لنداء المحيط، ولأول مرة، تبحر إلى ما وراء الشعاب المرجانية لجزيرتها موتوني مع نصف الإله سيئ السمعة ماوي في رحلة لا تُنسى لاستعادة الازدهار لشعبها",
