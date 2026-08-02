@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Kung Fu Panda",
+    "year": "2008",
+    "desc": "في وادي السلام، يجد (بو) الباندا نفسه قد اختير كمحارب التنين على الرغم من حقيقة أنه يعاني من السمنة والخمول، وكونه مبتدئ في فنون الدفاع عن النفس، ويحاول أن يثبت جدارته بهذا الاختيار أمام المعلم (شيفو) والغاضبين الخمسة.",
+    "poster": "https://image.tmdb.org/t/p/w500/32yHSZ1akPIRWyDhNwSRBnGDOhl.jpg",
+    "hdUrl": "https://streamtape.com/e/Kyvq1ZpKpmU0x4A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Kyvq1ZpKpmU0x4A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة رسوم متحركة كوميديا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jack Black",
+            "image": "https://image.tmdb.org/t/p/w185/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+            "name": "Dustin Hoffman",
+            "image": "https://image.tmdb.org/t/p/w185/yFjTzJHE6AFbwQifOlnNDzmiwlq.jpg"
+        },
+        {
+            "name": "Angelina Jolie",
+            "image": "https://image.tmdb.org/t/p/w185/bXNxIKcJ5cNNW8QFrBPWcfTSu9x.jpg"
+        },
+        {
+            "name": "Ian McShane",
+            "image": "https://image.tmdb.org/t/p/w185/rteBJYNgD1yGsHg2HGZAIrYHz1t.jpg"
+        },
+        {
+            "name": "Seth Rogen",
+            "image": "https://image.tmdb.org/t/p/w185/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+        }
+    ]
+},
+    {
     "title": "Kung Fu Panda 2",
     "year": "2011",
     "desc": "يعيش بو الآن حلمه كمحارب التنين ، ويحمي وادي السلام جنبا إلى جنب مع أصدقائه وزملائه أساتذة الكونغ فو ، الخمسة الغاضبون - النمره و كركي و السرعوف و الافعي و القرد . لكن حياة بو الجديدة من الذهول مهددة بظهور شرير هائل ، يخطط لاستخدام سلاح سري لا يمكن إيقافه لغزو الصين وتدمير الكونغ فو. الأمر متروك لبو والخمسة الغاضبون  للسفر عبر الصين لمواجهة هذا التهديد وقهره. ولكن كيف يمكن لبو أن يوقف سلاحا يمكنه إيقاف الكونغ فو؟ يجب أن ينظر إلى ماضيه ويكشف أسرار أصوله الغامضة. عندها فقط سيكون قادرا على إطلاق العنان للقوة التي يحتاجها للنجاح.",
