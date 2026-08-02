@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "No Retreat, No Surrender",
+    "year": "2010",
+    "desc": "تلجأ الشرطة الى 'حزلقوم' (أحمد مكى) ليحل محل 'أدهم' الذراع اليمنى ل 'عزام' (عزت ابو عوف) أحد أكبر تجار المخدرات فى مصر للايقاع به , استغلالا للتشابه الكبير بينهما. يتابع المهمة 'المقدم سراج ' (ماجد الكدوانى) , و تعاونه 'جيرمين' (دنيا سمير غانم) سكرتيرة عزام , حتى يكتشف عزام الخطة و تتوالى الاحداث.",
+    "poster": "https://image.tmdb.org/t/p/w500/b7gFI5L2thZy3TzXHRU54wgS8Zu.jpg",
+    "hdUrl": "https://streamtape.com/e/Bb8LwmoegQiyk1G/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Bb8LwmoegQiyk1G/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "كوميديا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ahmed Mekky",
+            "image": "https://image.tmdb.org/t/p/w185/9uK9EhWwhB2mepg73CB3wN64DlU.jpg"
+        },
+        {
+            "name": "Donia Samir Ghanem",
+            "image": "https://image.tmdb.org/t/p/w185/kNXX9aE5XpW2igRuEzAlbJ0r1yL.jpg"
+        },
+        {
+            "name": "Maged El Kedwany",
+            "image": "https://image.tmdb.org/t/p/w185/iBOBl5XrufQr67yqUU7YOUXoY54.jpg"
+        },
+        {
+            "name": "Ezzat Abu Ouf",
+            "image": "https://image.tmdb.org/t/p/w185/b4YIsca9urhYbAUWf1ftW440gcd.jpg"
+        },
+        {
+            "name": "Mohamed Shaheen",
+            "image": "https://image.tmdb.org/t/p/w185/yvtb7nS52zr26MJIg6IVDkxzNKF.jpg"
+        }
+    ]
+},
+    {
     "title": "تذكر الحب مدبلج",
     "year": "2025",
     "desc": "يلتقي محترفان مفطورا القلب - مهندس معماري ومحرر - صدفةً بعد انتهاء علاقتهما. تجمعهما رسالة هاتفية غامضة، فتبدأ رحلة رومانسية غير متوقعة وشفاء.",
