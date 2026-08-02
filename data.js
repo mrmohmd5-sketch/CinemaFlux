@@ -33,7 +33,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Peter Pan & Wendy",
+    "title": "Peter Pan & Wendy بيتر بان و ويندي مدبلج",
     "year": "2023",
     "desc": "مقتبس من قصة جي إم باري الكلاسيكية عن صبي لن يكبر ويجند ثلاثة أشقاء صغار في لندن للانضمام إليه في مغامرة سحرية إلى جزيرة نيفرلاند المسحورة.",
     "poster": "https://image.tmdb.org/t/p/w500/jRKlrVOonUrLsTcKWTSIsYSAU4R.jpg",
