@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Predator: Badlands",
+    "year": "2025",
+    "desc": "بعد أن نُبذ من قبيلته، يسعى صيّاد فضائي لإثبات نفسه واستعادة مكانته، فيتحالف مع رفيق غير متوقّع وينطلقان معًا في رحلة خطرة، بحثًا عن الخصم الأعظم... ذاك الذي قد يمنحه النصر عليه شرفًا مفقودًا، أو يُخلّد سقوطه إلى الأبد.",
+    "poster": "https://image.tmdb.org/t/p/w500/6guUtmn3SCjwVDtXqOBMDtF2csH.jpg",
+    "hdUrl": "https://streamtape.com/e/3dR0r69jBridBaQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3dR0r69jBridBaQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "حركة خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Elle Fanning",
+            "image": "https://image.tmdb.org/t/p/w185/ucC5faqfEYVhoC25M6Hi3znZmab.jpg"
+        },
+        {
+            "name": "Dimitrius Schuster-Koloamatangi",
+            "image": "https://image.tmdb.org/t/p/w185/rmIZTT1AZK3C9fYhEOtGKtSrF8E.jpg"
+        },
+        {
+            "name": "Ravi Narayan",
+            "image": "https://image.tmdb.org/t/p/w185/iM9dr3AjXTt7IGpRzZlQVG7hINa.jpg"
+        },
+        {
+            "name": "Michael Homick",
+            "image": "https://image.tmdb.org/t/p/w185/a7IFYVtmNvBMJ7c20BVMc0LX6PT.jpg"
+        },
+        {
+            "name": "Stefan Grube",
+            "image": "https://image.tmdb.org/t/p/w185/7SJ13Np7xL20YJjPiUbM7PshdYA.jpg"
+        }
+    ]
+},
+    {
     "title": "Orion and the Dark اورايون و الظلام مدبلج",
     "year": "2024",
     "desc": "يواجه صبي، ذو خيال خصب، مخاوفه في رحلة لا تُنسى، يخوضها ليلًا مع صديقه الجديد، وهو مخلوق عملاق بشوش يُدعى 'الظلام'.",
