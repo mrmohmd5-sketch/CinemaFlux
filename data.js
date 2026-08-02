@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Moana",
+    "year": "2026",
+    "desc": "تستجيب موانا المراهقة لنداء المحيط، ولأول مرة، تبحر إلى ما وراء الشعاب المرجانية لجزيرتها موتوني مع نصف الإله سيئ السمعة ماوي في رحلة لا تُنسى لاستعادة الازدهار لشعبها",
+    "poster": "https://image.tmdb.org/t/p/w500/wL0fAAvNd2Uk7Sok620oVaaItIS.jpg",
+    "hdUrl": "https://streamtape.com/e/1pP9qP0zG8ce37k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1pP9qP0zG8ce37k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.9",
+    "genre": "عائلي فانتازيا كوميديا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Catherine Lagaʻaia",
+            "image": "https://image.tmdb.org/t/p/w185/2KRIRDwy1CtY7Bge3aqVZrORelc.jpg"
+        },
+        {
+            "name": "Dwayne Johnson",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Rena Owen",
+            "image": "https://image.tmdb.org/t/p/w185/648ZdDBmlx6OFDFRmgAbh6q5LBo.jpg"
+        },
+        {
+            "name": "John Tui",
+            "image": "https://image.tmdb.org/t/p/w185/2jIc9M5kl2GmK8fZtbtUr2s1jkS.jpg"
+        },
+        {
+            "name": "Frankie Adams",
+            "image": "https://image.tmdb.org/t/p/w185/aAUHUSf0lh3OBRoaiCRL9ep8lfL.jpg"
+        }
+    ]
+},
+    {
     "title": "Ruby Gillman, Teenage Kraken روبي جيلمان الكراكن المراهقة مدبلج ",
     "year": "2023",
     "desc": "يتناول العمل قصة فتاة مراهقة خجولة تكتشف أن أصولها تعود إلى عائلة ملكية تنتمي لمخلوقات أسطورية شهيرة تعيش بالبحار، وأن القدر يحمل لها الكثير بالمستقبل.",
