@@ -168,7 +168,7 @@
                 if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
 
-                // 3. جلب طاقم التمثيل (10 ممثلين) مع اسم الشخصية
+                // 3. جلب طاقم التمثيل (10 ممثلين) مع الشخصية
                 logStatus("⏳ جاري جلب أسماء وصور الممثلين مع أدوارهم من TMDB...");
                 const creditsRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits?api_key=${tmdbKey}`);
                 let castData = [];
