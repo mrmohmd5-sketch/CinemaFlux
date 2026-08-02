@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Love 101",
+    "title": "حب 101 مدبلج",
     "year": "2020",
     "desc": "خلال سعيهم لإيقاع معلّمتهم في حبّ مدرّب كرة السلّة، يكتشف أربعة مشاغبين وطالبة مثاليّة معنى الصداقة والحبّ والشجاعة وهم يبحثون عن ذاتهم.",
     "poster": "https://image.tmdb.org/t/p/w500/2tg3X5N3vtr7UJnaKWMxJoICrz7.jpg",
