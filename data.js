@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Furiosa: A Mad Max Saga",
+    "year": "2024",
+    "desc": "مع سقوط العالم، يتم اختطاف فيوريوسا الصغيرة وتقع في أيدي حشد كبير من راكبي الدراجات النارية بقيادة أمير الحرب ديمنتوس. ويجب على فيوريوسا أن تنجو من العديد من المصاعب وأن تجد طريقها إلى المنزل.",
+    "poster": "https://image.tmdb.org/t/p/w500/sln8KBlJDTE67sSpx7Aiswa5Lti.jpg",
+    "hdUrl": "https://streamtape.com/e/bzdM11mgQyCDOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bzdM11mgQyCDOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Anya Taylor-Joy",
+            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+            "name": "Chris Hemsworth",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Tom Burke",
+            "image": "https://image.tmdb.org/t/p/w185/4IHlAZ9bJ82VAd6HUOWFgo81SDq.jpg"
+        },
+        {
+            "name": "Alyla Browne",
+            "image": "https://image.tmdb.org/t/p/w185/1aAyhOWIP1tnIZwmoMpENvpyQff.jpg"
+        },
+        {
+            "name": "George Shevtsov",
+            "image": "https://image.tmdb.org/t/p/w185/cuOoCZShfvNrOvrWqH2dPyBfrZS.jpg"
+        }
+    ]
+},
+    {
     "title": "The Furious",
     "year": "2026",
     "desc": "بعد أن خُطفت ابنته من الشارع، يبدأ صاحب متجر (شيه مياو) في تتبع شبكة إجرامية معقدة، مستخدماً كل الطرق والوسائل الممكنة لاستعادة ابنته.  حليفه الوحيد في هذه الرحلة هو صحفي (جو تاسليم)؛ حيث يتعين على هذين الشخصين القادمين من خلفيات مختلفة تماماً أن يتعلما كيف يثقا ببعضهما ويتعاونا معاً، مستغلين مهارات قتالية منحتها لهما أسرار ماضيهما الغامض.",
