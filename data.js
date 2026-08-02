@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Moana",
+    "title": "Moana موانا مدبلج",
     "year": "2026",
     "desc": "تستجيب موانا المراهقة لنداء المحيط، ولأول مرة، تبحر إلى ما وراء الشعاب المرجانية لجزيرتها موتوني مع نصف الإله سيئ السمعة ماوي في رحلة لا تُنسى لاستعادة الازدهار لشعبها",
     "poster": "https://image.tmdb.org/t/p/w500/wL0fAAvNd2Uk7Sok620oVaaItIS.jpg",
