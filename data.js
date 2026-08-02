@@ -104,7 +104,7 @@ const globalMoviesData = [
     "desc": "مقتبس من قصة جي إم باري الكلاسيكية عن صبي لن يكبر ويجند ثلاثة أشقاء صغار في لندن للانضمام إليه في مغامرة سحرية إلى جزيرة نيفرلاند المسحورة.",
     "poster": "https://image.tmdb.org/t/p/w500/jRKlrVOonUrLsTcKWTSIsYSAU4R.jpg",
     "hdUrl": "https://streamtape.com/e/KJbJLW66xzi03b1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/vB4pd9LWpJh226\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vB4pd9LWpJh226/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "5.4",
     "genre": "عائلي فانتازيا حركة مغامرة",
     "type": "movie",
