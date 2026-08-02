@@ -4,6 +4,39 @@ const globalMoviesData = [
     "year": "2009",
     "desc": "يتخلى (مايك) النجم الصاعد في مدرسته عن كل أحلامه ليشارك حياته مع صديقته (سكارليت)، ولكن بعد مرور عشرين سنة تقريبًا من ذلك الوقت تصبح حياته كئيبة ومليئة بالمشاكل، إلى أن تفتح أمامه فرصة جديدة عندما يعود بشكل عجيب إلى عمر السابعة عشر، لذا يقرر أن يعود ليجدد أحلامه التي ذهبت في السابق.",
     "poster": "https://image.tmdb.org/t/p/w500/yEcfFXEWpuXcfsR9nKESVCFneqV.jpg",
+    "hdUrl": "https://streamtape.com/e/BPDAjJYyoZUybXk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BPDAjJYyoZUybXk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "كوميديا فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Zac Efron",
+            "image": "https://image.tmdb.org/t/p/w185/pdWXP7XG6qqOoxoLid1DWYwmaMY.jpg"
+        },
+        {
+            "name": "Leslie Mann",
+            "image": "https://image.tmdb.org/t/p/w185/x3OS9RL3qsv50kzRtpR2OhbuTkr.jpg"
+        },
+        {
+            "name": "Thomas Lennon",
+            "image": "https://image.tmdb.org/t/p/w185/s8pw7BfuMxN7P0p5XJ9POfod7zW.jpg"
+        },
+        {
+            "name": "Michelle Trachtenberg",
+            "image": "https://image.tmdb.org/t/p/w185/bEGPyRINNJ6YkrLAaVguwkJXOfO.jpg"
+        },
+        {
+            "name": "Sterling Knight",
+            "image": "https://image.tmdb.org/t/p/w185/dwYZPuMMDT2nfG6Sr12uP2ZcDrq.jpg"
+        }
+    ]
+},
+    {
+    "title": "17 Again",
+    "year": "2009",
+    "desc": "يتخلى (مايك) النجم الصاعد في مدرسته عن كل أحلامه ليشارك حياته مع صديقته (سكارليت)، ولكن بعد مرور عشرين سنة تقريبًا من ذلك الوقت تصبح حياته كئيبة ومليئة بالمشاكل، إلى أن تفتح أمامه فرصة جديدة عندما يعود بشكل عجيب إلى عمر السابعة عشر، لذا يقرر أن يعود ليجدد أحلامه التي ذهبت في السابق.",
+    "poster": "https://image.tmdb.org/t/p/w500/yEcfFXEWpuXcfsR9nKESVCFneqV.jpg",
     "hdUrl": "https://streamtape.com/e/VG7Kw1VGB4s34K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/VG7Kw1VGB4s34K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.3",
