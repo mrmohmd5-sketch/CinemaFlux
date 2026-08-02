@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Dear Zindagi",
+    "year": "2016",
+    "desc": "تدرك مصورة فوتوغرافية شابة تفتقر إلى التعاطف وينتظرها مستقبل مهني مشرق وواعد، أهمية الموازنة بين الطموح والإنسانية.",
+    "poster": "https://image.tmdb.org/t/p/w500/oUg0N2isgZ5rrxdXnsemcKolfKZ.jpg",
+    "hdUrl": "https://streamtape.com/e/Rp6yg0Zy3pTd1eM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Rp6yg0Zy3pTd1eM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Alia Bhatt",
+            "image": "https://image.tmdb.org/t/p/w185/suudEC5cdE3g5kB1BjCPfvfeQZY.jpg"
+        },
+        {
+            "name": "Shah Rukh Khan",
+            "image": "https://image.tmdb.org/t/p/w185/d8jQehnCiGuLhZbs1DyB2uDu5BA.jpg"
+        },
+        {
+            "name": "Kunal Kapoor",
+            "image": "https://image.tmdb.org/t/p/w185/i6NhU7lFjT5BIO8Bb014xnx9W62.jpg"
+        },
+        {
+            "name": "Angad Bedi",
+            "image": "https://image.tmdb.org/t/p/w185/ejv7eALY9SMa39aKuQdG7frlKtm.jpg"
+        },
+        {
+            "name": "Ali Zafar",
+            "image": "https://image.tmdb.org/t/p/w185/91pjZ3g2QHfWaEIcHsFyQ6MJX9q.jpg"
+        }
+    ]
+},
+    {
     "title": "Kung Fu Panda كونج فو باندا مدبلج",
     "year": "2008",
     "desc": "في وادي السلام، يجد (بو) الباندا نفسه قد اختير كمحارب التنين على الرغم من حقيقة أنه يعاني من السمنة والخمول، وكونه مبتدئ في فنون الدفاع عن النفس، ويحاول أن يثبت جدارته بهذا الاختيار أمام المعلم (شيفو) والغاضبين الخمسة.",
