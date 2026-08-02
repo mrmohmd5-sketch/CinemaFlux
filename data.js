@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Orion and the Dark",
+    "title": "Orion and the Dark اورايون و الظلام مدبلج",
     "year": "2024",
     "desc": "يواجه صبي، ذو خيال خصب، مخاوفه في رحلة لا تُنسى، يخوضها ليلًا مع صديقه الجديد، وهو مخلوق عملاق بشوش يُدعى 'الظلام'.",
     "poster": "https://image.tmdb.org/t/p/w500/vMz7ojnQPV7EQTGkP07yw5qPugr.jpg",
