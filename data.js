@@ -1,8 +1,8 @@
 const globalMoviesData = [
     {
-    "title": "Crew",
+    "title": "Crew طاقم الطائرة",
     "year": "2024",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول ثلاث مضيفات طيران يعانين من أزمات مالية بسبب تعثر شركتهن فيجدن أنفسهن متورطات في مغامرة غير متوقعة لتهريب الذهب وتتوالى الأحداث في إطار كوميدي ومشوق.",
     "poster": "https://image.tmdb.org/t/p/original/8mnCtQngfhYt0W0BmkrCePutmvy.jpg",
     "hdUrl": "https://streamtape.com/e/Qg4YezQBlBt0OLA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/Qg4YezQBlBt0OLA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
