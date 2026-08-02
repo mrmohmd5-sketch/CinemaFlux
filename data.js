@@ -1,5 +1,114 @@
 const globalMoviesData = [
     {
+    "title": "Love 101",
+    "year": "2020",
+    "desc": "خلال سعيهم لإيقاع معلّمتهم في حبّ مدرّب كرة السلّة، يكتشف أربعة مشاغبين وطالبة مثاليّة معنى الصداقة والحبّ والشجاعة وهم يبحثون عن ذاتهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/2tg3X5N3vtr7UJnaKWMxJoICrz7.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.7",
+    "genre": "كوميديا دراما",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Alina Boz",
+            "image": "https://image.tmdb.org/t/p/w185/xoqBSBsIs6WtvvJ8i6Y5btyo3MM.jpg"
+        },
+        {
+            "name": "Mert Yazıcıoğlu",
+            "image": "https://image.tmdb.org/t/p/w185/9QoscT7oKcuRJRIr2SKUza3qr6x.jpg"
+        },
+        {
+            "name": "Kubilay Aka",
+            "image": "https://image.tmdb.org/t/p/w185/mSk2nqlDcdEJDbWKdSUk3B2GpWV.jpg"
+        },
+        {
+            "name": "Selahattin Paşalı",
+            "image": "https://image.tmdb.org/t/p/w185/u6jUB3BpDj6BCXafGyPHAMxWNsZ.jpg"
+        },
+        {
+            "name": "İpek Filiz Yazıcı",
+            "image": "https://image.tmdb.org/t/p/w185/Aajgi89hMwBBnHNvNbCC0SYbjKP.jpg"
+        }
+    ],
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/7KpLbwJ9mAtAKxk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/o98QOJ1v9rTJ4zz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/yBWxYGAbk8fmY6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/1Ork3P2RA2Heqkd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/MoWbXgmZbbhGev/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/Zk1ZQ0ovYMtgdr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/Ry3236lj7VHdA0R/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/3aBldW2R6jhA7Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        },
+        {
+            "season_number": 2,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/0A8Ar6jMrRFbXOy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/yMrqQmeW1XH1Me8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/PJqxZVX6x0t0JZD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/kPKZkBZJm3uP6P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/7wRkvdYWwDSA3L8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/J9Amjelx8KiVWz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/3DBwwPvD6kcdQ9D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/apvY4ZM0PxIxVqV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "لا تراجع و لا أستسلام",
     "year": "2010",
     "desc": "تلجأ الشرطة الى 'حزلقوم' (أحمد مكى) ليحل محل 'أدهم' الذراع اليمنى ل 'عزام' (عزت ابو عوف) أحد أكبر تجار المخدرات فى مصر للايقاع به , استغلالا للتشابه الكبير بينهما. يتابع المهمة 'المقدم سراج ' (ماجد الكدوانى) , و تعاونه 'جيرمين' (دنيا سمير غانم) سكرتيرة عزام , حتى يكتشف عزام الخطة و تتوالى الاحداث.",
