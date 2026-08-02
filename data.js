@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "The Wrecking Crew",
+    "year": "2026",
+    "desc": "في فيلم طاقم التدمير، يجتمع الأخان غير الشقيقين جوني وجيمس بعد وفاة والدهما الغامضة. وبينما يبحثان عن الحقيقة، تكشف أسرار مدفونة عن مؤامرة تهدد بتفكيك عائلتهما. تدور أحداث الفيلم في هاواي، وهو من إخراج أنخيل مانويل سوتو، وبطولة كلايس بانغ وجاكوب باتالون وستيفن روت ومورينا باكارين.",
+    "poster": "https://image.tmdb.org/t/p/w500/n1q20Rof03gEQMI550C2PXbBixO.jpg",
+    "hdUrl": "https://streamtape.com/e/vYm3pKQBrlS4ej8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vYm3pKQBrlS4ej8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "حركة كوميديا جريمة غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dave Bautista",
+            "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        },
+        {
+            "name": "Jason Momoa",
+            "image": "https://image.tmdb.org/t/p/w185/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+        },
+        {
+            "name": "Temuera Morrison",
+            "image": "https://image.tmdb.org/t/p/w185/AvtSC0f9QW7fMyFFNXEWDeQyfUk.jpg"
+        },
+        {
+            "name": "Morena Baccarin",
+            "image": "https://image.tmdb.org/t/p/w185/4gyHyg6FJ1oFczOm5pmMkdEEo2J.jpg"
+        },
+        {
+            "name": "Roimata Fox",
+            "image": "https://image.tmdb.org/t/p/w185/iTNBvtrI8R5UofzJZjsVnyEGz9D.jpg"
+        }
+    ]
+},
+    {
     "title": "Kung Fu Panda 3 كونغ فو باندا مدبلج",
     "year": "2016",
     "desc": "بينما يزور 'بو' ووالده قرية سرّية للباندا، تهدد روح شريرة بلاد 'الصين' بكاملها وتدفع 'بو' إلى تشكيل جيش غير منظم للمقاومة والقتال.",
