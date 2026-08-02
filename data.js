@@ -99,7 +99,7 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Kung Fu Panda 4",
+    "title": "Kung Fu Panda 4 كونج فو باندا مدبلج",
     "year": "2024",
     "desc": "المغامرات الإضافية لبو واسع العينين في الصين القديمة ، الذي لا يضاهي حبه للكونغ فو سوى شهية لا تشبع.",
     "poster": "https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
