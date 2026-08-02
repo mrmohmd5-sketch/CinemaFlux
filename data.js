@@ -1,5 +1,38 @@
 const globalMoviesData = [
     {
+    "title": "Ruby Gillman, Teenage Kraken",
+    "year": "2023",
+    "desc": "يتناول العمل قصة فتاة مراهقة خجولة تكتشف أن أصولها تعود إلى عائلة ملكية تنتمي لمخلوقات أسطورية شهيرة تعيش بالبحار، وأن القدر يحمل لها الكثير بالمستقبل.",
+    "poster": "https://image.tmdb.org/t/p/w500/fvFulUOEXmZux7c2Zzt44eVcViV.jpg",
+    "hdUrl": "https://streamtape.com/e/Wg3QOgG1Z9UbBvO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Wg3QOgG1Z9UbBvO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "رسوم متحركة عائلي فانتازيا كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Lana Condor",
+            "image": "https://image.tmdb.org/t/p/w185/vWn27Fk2GLwH7o9fBG9hBWZI6OR.jpg"
+        },
+        {
+            "name": "Toni Collette",
+            "image": "https://image.tmdb.org/t/p/w185/lzXRh16qe4HHeBN6tMyw0DHvaMn.jpg"
+        },
+        {
+            "name": "Annie Murphy",
+            "image": "https://image.tmdb.org/t/p/w185/1cQ9Piq6kcTzmzJ9I4oGd7oFEdS.jpg"
+        },
+        {
+            "name": "Sam Richardson",
+            "image": "https://image.tmdb.org/t/p/w185/hUN7IIbegvL7aSqQI5KRWoqqJLm.jpg"
+        },
+        {
+            "name": "Liza Koshy",
+            "image": "https://image.tmdb.org/t/p/w185/uXOXVzWHWZAEQBsRB6jaAPBjPLM.jpg"
+        }
+    ]
+},
+    {
     "title": "Crazy About Her",
     "year": "2021",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
