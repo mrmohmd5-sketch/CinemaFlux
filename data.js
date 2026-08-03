@@ -1,5 +1,68 @@
 const globalMoviesData = [
     {
+    "title": "Mom Is 17 Again",
+    "year": "2024",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/zkXypMK3iCECIpHo2NJZLX5pbgn.jpg",
+    "hdUrl": "https://streamtape.com/e/W3zPyG2jx3FbDGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/W3zPyG2jx3FbDGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "كوميديا فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Svetlana Khodchenkova",
+            "character": "Olga",
+            "image": "https://image.tmdb.org/t/p/w185/xldEh62hTjgxcmJPAyDeBnwKFCg.jpg"
+        },
+        {
+            "name": "Konstantin Kryukov",
+            "character": "Lastochkin",
+            "image": "https://image.tmdb.org/t/p/w185/vy8GWSZJElpqpPmMiZJUb4iEUW0.jpg"
+        },
+        {
+            "name": "Oleg Savostyuk",
+            "character": "Ivan",
+            "image": "https://image.tmdb.org/t/p/w185/6KpMLRVDJhrGNpeWGtbSDUL7PLV.jpg"
+        },
+        {
+            "name": "Sergey Zharkov",
+            "character": "Military commissar",
+            "image": "https://image.tmdb.org/t/p/w185/71yJKeA4a4HVZ8u4jeBOrvrStC4.jpg"
+        },
+        {
+            "name": "Anton Shavrin",
+            "character": "Android",
+            "image": "https://image.tmdb.org/t/p/w185/hrXBEussJODT2NHyX3V5k6Up4vz.jpg"
+        },
+        {
+            "name": "Elena Muravyova",
+            "character": "Zagnobina",
+            "image": "https://image.tmdb.org/t/p/w185/cGXY72ZwbvOogregl1Uv7Wv6q7d.jpg"
+        },
+        {
+            "name": "Anatoly Kot",
+            "character": "Vladygin",
+            "image": "https://image.tmdb.org/t/p/w185/2kgiMT9bsOCigYLNaQl3MHO2mc2.jpg"
+        },
+        {
+            "name": "Era Ziganshina",
+            "character": "Voodoo doctor",
+            "image": "https://image.tmdb.org/t/p/w185/o6Gf32IHEeqyE8rgMUstOON4qTt.jpg"
+        },
+        {
+            "name": "Anastasiia Obzhigina",
+            "character": "Tropinkina",
+            "image": "https://image.tmdb.org/t/p/w185/4rmeirzkdjRsKx8YYGqNy2D6HeW.jpg"
+        },
+        {
+            "name": "Gleb Shevnin",
+            "character": "Mertsalov",
+            "image": "https://image.tmdb.org/t/p/w185/6aRDxLW8x9H120oIlOG4i8tdCVq.jpg"
+        }
+    ]
+},
+    {
     "title": "Into the Wild",
     "year": "2007",
     "desc": "بعد التخرج من جامعة إيموري في عام 1992 ، تخلى الطالب والرياضي كريستوفر ماكاندلس عن ممتلكاته ، وقدم كامل حساب التوفير البالغ 24000 دولار للجمعيات الخيرية ، وركوب الخيل في ألاسكا للعيش في البرية.",
