@@ -1,8 +1,8 @@
 const globalMoviesData = [
     {
-    "title": "Moana",
+    "title": "Moana موانا مدبلج",
     "year": "2016",
-    "desc": "تنطلق 'موانا' مع 'ماوي' في رحلة عبر المحيط لإنقاذ العالم",
+    "desc": "تدور أحداث الفيلم حول فتاة شجاعة تبحر في مغامرة خطيرة عبر المحيط لإنقاذ شعبها بمساعدة النصف إله ماوي لإعادة قلب الآلهة وتنسيق التوازن في الطبيعة",
     "poster": "https://image.tmdb.org/t/p/w500/lEQSWIyc8wbtszrwG9Xx6DG7gGY.jpg",
     "hdUrl": "https://streamtape.com/e/VG72VAdYGLuK7oW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/VG72VAdYGLuK7oW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -40,7 +40,7 @@ const globalMoviesData = [
     {
     "title": "Moana",
     "year": "2016",
-    "desc": "تنطلق 'موانا' مع 'ماوي' في رحلة عبر المحيط لإنقاذ العالم",
+    "desc": "تدور أحداث الفيلم حول فتاة شجاعة تبحر في مغامرة خطيرة عبر المحيط لإنقاذ شعبها بمساعدة النصف إله ماوي لإعادة قلب الآلهة وتنسيق التوازن في الطبيعة",
     "poster": "https://image.tmdb.org/t/p/w500/lEQSWIyc8wbtszrwG9Xx6DG7gGY.jpg",
     "hdUrl": "https://streamtape.com/e/1pP9qP0zG8ce37k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/1pP9qP0zG8ce37k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
