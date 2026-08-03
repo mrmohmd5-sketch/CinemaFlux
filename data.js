@@ -4,6 +4,44 @@ const globalMoviesData = [
     "year": "2016",
     "desc": "تنطلق 'موانا' مع 'ماوي' في رحلة عبر المحيط لإنقاذ العالم",
     "poster": "https://image.tmdb.org/t/p/w500/lEQSWIyc8wbtszrwG9Xx6DG7gGY.jpg",
+    "hdUrl": "https://streamtape.com/e/VG72VAdYGLuK7oW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/VG72VAdYGLuK7oW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "مغامرة كوميديا عائلي رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Auliʻi Cravalho",
+            "character": "Moana (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/vEroqcnM2g6yY7qXDAie7hx2Cyp.jpg"
+        },
+        {
+            "name": "Dwayne Johnson",
+            "character": "Maui (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+        },
+        {
+            "name": "Rachel House",
+            "character": "Gramma Tala (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
+        },
+        {
+            "name": "Temuera Morrison",
+            "character": "Chief Tui (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/AvtSC0f9QW7fMyFFNXEWDeQyfUk.jpg"
+        },
+        {
+            "name": "Jemaine Clement",
+            "character": "Tamatoa (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg"
+        }
+    ]
+},
+    {
+    "title": "Moana",
+    "year": "2016",
+    "desc": "تنطلق 'موانا' مع 'ماوي' في رحلة عبر المحيط لإنقاذ العالم",
+    "poster": "https://image.tmdb.org/t/p/w500/lEQSWIyc8wbtszrwG9Xx6DG7gGY.jpg",
     "hdUrl": "https://streamtape.com/e/1pP9qP0zG8ce37k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/1pP9qP0zG8ce37k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.6",
