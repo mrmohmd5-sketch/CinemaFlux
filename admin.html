@@ -168,8 +168,8 @@
                 if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
 
-                // 3. جلب طاقم التمثيل بشكل صحيح مع منع تكرار الصورة
-                logStatus("⏳ جاري جلب أسماء وصور الممثلين من TMDB بشكل مستقل...");
+                // 3. جلب طاقم التمثيل مع اسم الشخصية (character) واسم الممثل
+                logStatus("⏳ جاري جلب أسماء وصور الممثلين مع شخصياتهم من TMDB...");
                 const creditsRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits?api_key=${tmdbKey}`);
                 let castData = [];
                 if(creditsRes.ok) {
@@ -177,12 +177,13 @@
                     castData = creditsData.cast.slice(0, 5).map(actor => {
                         return {
                             name: actor.name,
+                            character: actor.character || "",  // <-- تمت الإضافة هنا
                             image: actor.profile_path ? `https://image.tmdb.org/t/p/w185${actor.profile_path}` : "https://via.placeholder.com/185x278?text=No+Image"
                         };
                     });
                 }
 
-                // 4. استخراج سنة الإنتاج (المطلوب إضافتها)
+                // 4. استخراج سنة الإنتاج
                 let year = "";
                 if (dataAr.release_date) {
                     year = dataAr.release_date.substring(0,4);
@@ -191,7 +192,6 @@
                 } else if (dataAr.air_date) {
                     year = dataAr.air_date.substring(0,4);
                 }
-                // إذا لم توجد، نتركها فارغة
 
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
@@ -203,7 +203,7 @@
                 // إنشاء كائن المحتوى الأساسي مع إضافة السنة
                 const newMediaObject = {
                     title: titleText,
-                    year: year,          // <-- تمت الإضافة
+                    year: year,
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
                     poster: posterUrl,
                     hdUrl: finalType === "movie" ? linksArray[0] : "",
@@ -218,21 +218,19 @@
                 if (finalType === "series") {
                     logStatus("⏳ تم كشف مسلسل! جاري سحب وهيكلة المواسم والحلقات تلقائياً وتوزيع الروابط المخصصة...");
                     const seasonsArray = [];
-                    let overallEpisodeCounter = 0; // عدّاد لتوزيع الروابط من المصفوفة بالترتيب
+                    let overallEpisodeCounter = 0;
                     
                     if (dataAr.seasons && dataAr.seasons.length > 0) {
                         for (const s of dataAr.seasons) {
-                            if (s.season_number === 0) continue; // تخطي المواسم الخاصة غير الأساسية
+                            if (s.season_number === 0) continue;
                             
                             const epRes = await fetch(`https://api.themoviedb.org/3/tv/${id}/season/${s.season_number}?api_key=${tmdbKey}&language=ar`);
                             if (epRes.ok) {
                                 const epData = await epRes.json();
                                 if (epData && epData.episodes) {
                                     const episodesList = epData.episodes.map(e => {
-                                        // أخذ الرابط المطابق للترتيب الحالي، وإذا انتهت الروابط نضع أول رابط كإجراء احتياطي
                                         const assignedUrl = linksArray[overallEpisodeCounter] || linksArray[0] || "";
                                         overallEpisodeCounter++;
-                                        
                                         return {
                                             episode_number: e.episode_number,
                                             url: assignedUrl
