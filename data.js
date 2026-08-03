@@ -2,8 +2,8 @@ const globalMoviesData = [
     {
     "title": "Pluribus",
     "year": "2025",
-    "desc": "يلزم أتعس شخص على وجه 'الأرض' إنقاذ العالم من السعادة.",
-    "poster": "https://image.tmdb.org/t/p/w500/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "desc": "تدور أحداث المسلسل حول عالم يسيطر عليه مرض غريب يجبر جميع السكان على الابتسام والفرح الدائم بينما تحاول امرأة تعيسة التأقلم مع هذا الواقع المريب وكشف حقيقته .",
+    "poster": "https://image.tmdb.org/t/p/original/e5pMlqRaQ7kYObbtPTgE9Cijl3i.jpg",
     "hdUrl": "",
     "sdUrl": "",
     "rating": "7.9",
@@ -73,7 +73,7 @@ const globalMoviesData = [
     {
     "title": "Mom Is 17 Again",
     "year": "2024",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول امرأة أربعينية تعرضت لحادث يعيد ذاكرتها إلى سن السابعة عشرة فتجد نفسها مجبرة على التعامل مع حياتها كبالغة وأم لسن مراهق بروح وتفكير فتاة مراهقة .",
     "poster": "https://image.tmdb.org/t/p/w500/zkXypMK3iCECIpHo2NJZLX5pbgn.jpg",
     "hdUrl": "https://streamtape.com/e/W3zPyG2jx3FbDGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/W3zPyG2jx3FbDGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -993,7 +993,7 @@ const globalMoviesData = [
     {
     "title": "Crazy About Her",
     "year": "2021",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول شاب يقضي ليلة ساحرة مع امرأة غامضة فيكتشف أنها تعالج في مصحة نفسية فيقرر إدخال نفسه إلى المصحة طواعية ليكون بجانبها ويكسب قلبها وتتوالى الأحداث في إطار كوميدي ورومانسي .",
     "poster": "https://image.tmdb.org/t/p/w500/mVcOR5f1bKhqSWWxViOfmOJ7aqc.jpg",
     "hdUrl": "https://streamtape.com/e/Rj499JPo4Ltjrx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/Rj499JPo4Ltjrx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
