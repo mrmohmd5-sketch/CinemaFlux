@@ -168,13 +168,13 @@
                 if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
 
-                // 3. جلب طاقم التمثيل مع اسم الشخصية (character) واسم الممثل (تم التعديل لجلب 10 ممثلين)
+                // 3. جلب طاقم التمثيل مع اسم الشخصية (character) واسم الممثل (جلب 10 ممثلين)
                 logStatus("⏳ جاري جلب أسماء وصور الممثلين مع شخصياتهم من TMDB (10 ممثلين)...");
                 const creditsRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits?api_key=${tmdbKey}`);
                 let castData = [];
                 if(creditsRes.ok) {
                     const creditsData = await creditsRes.json();
-                    castData = creditsData.cast.slice(0, 10).map(actor => {   // <-- تغيير 5 إلى 10
+                    castData = creditsData.cast.slice(0, 10).map(actor => {
                         return {
                             name: actor.name,
                             character: actor.character || "",
@@ -266,13 +266,27 @@
                 logStatus("⏳ جاري دمج وتحديث قاعدة البيانات بأمان دون حذف المواد السابقة...");
 
                 let updatedContentText = "";
-                
-                if (currentContentText.indexOf("[") !== -1) {
-                    const bracketIndex = currentContentText.indexOf("[");
+
+                // === التعديل المحسن للدمج ===
+                // البحث عن بداية المصفوفة بعد const globalMoviesData = [
+                const match = currentContentText.match(/const\s+globalMoviesData\s*=\s*\[/);
+                if (match) {
+                    // موضع [ في النص
+                    const bracketIndex = match.index + match[0].length - 1;
                     const stringToObject = JSON.stringify(newMediaObject, null, 4);
-                    
-                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
+
+                    // نأخذ الجزء بعد [ مع إزالة المسافات الزائدة
+                    const afterBracket = currentContentText.slice(bracketIndex + 1).trim();
+
+                    if (afterBracket.startsWith(']')) {
+                        // المصفوفة فارغة: نضيف الكائن بدون فاصلة
+                        updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "\n" + currentContentText.slice(bracketIndex + 1);
+                    } else {
+                        // المصفوفة غير فارغة: نضيف الكائن مع فاصلة بعده (ليكون في البداية)
+                        updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
+                    }
                 } else {
+                    // إذا لم نجد النمط، نعيد بناء الملف كاملاً (حالة نادرة)
                     updatedContentText = `const globalMoviesData = [\n    ${JSON.stringify(newMediaObject, null, 4)}\n];`;
                 }
 
