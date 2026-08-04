@@ -1789,10 +1789,14 @@
                     const parts = item.genre.split(/[\s,،]+/).filter(part => part.trim().length > 0);
                     parts.forEach(part => {
                         let clean = part.trim();
-                        // استبعاد التصنيفات التي تبدأ بحرف "و" (مثل "وفنتازيا"، "ومغامرة"، "وفيلم")
-                        if (clean.startsWith('و')) {
-                            // نستبعد هذا التصنيف
-                            return;
+                        // تحويل التصنيفات حسب المطلوب
+                        if (clean === 'تلفازي') {
+                            return; // تجاهل تلفازي
+                        }
+                        if (clean.includes('خيال') || clean.includes('علمي')) {
+                            clean = 'خيال علمي';
+                        } else if (clean.includes('رسوم') || clean.includes('متحركة')) {
+                            clean = 'رسوم متحركة';
                         }
                         genresSet.add(clean);
                     });
@@ -1847,16 +1851,20 @@
 
                 // تصفية المحتوى
                 let filtered = [];
-                if (selected === 'مدبلج') {
-                    // البحث عن كلمة "مدبلج" في العنوان
-                    filtered = allMoviesData.filter(item => item.title.includes('مدبلج'));
-                } else {
-                    // البحث في حقل التصنيف (genre) عن وجود النص المختار كجزء من النص (بدون تقسيم)
+                if (selected === 'خيال علمي') {
                     filtered = allMoviesData.filter(item => {
                         if (!item.genre) return false;
-                        // نبحث عن النص الكامل في genre
-                        return item.genre.includes(selected);
+                        return item.genre.includes('خيال') || item.genre.includes('علمي');
                     });
+                } else if (selected === 'رسوم متحركة') {
+                    filtered = allMoviesData.filter(item => {
+                        if (!item.genre) return false;
+                        return item.genre.includes('رسوم') || item.genre.includes('متحركة');
+                    });
+                } else if (selected === 'مدبلج') {
+                    filtered = allMoviesData.filter(item => item.title.includes('مدبلج'));
+                } else {
+                    filtered = allMoviesData.filter(item => item.genre && item.genre.includes(selected));
                 }
 
                 // عرض النتائج
