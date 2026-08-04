@@ -31,6 +31,7 @@
         #statusOutput { margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #000; font-family: monospace; font-size: 12px; color: #00ff00; border: 1px solid #1c252d; min-height: 40px; white-space: pre-wrap; }
         #authBlock { text-align: center; }
         .hint { font-size: 11px; color: #e50914; margin-top: 2px; }
+        .hint-success { color: #28a745; }
     </style>
 </head>
 <body>
@@ -77,6 +78,11 @@
                     <label>روابط تشغيل الفيديو (للفيلم ضع رابط واحد | للمسلسل ضع كل رابط في سطر منفصل بالترتيب)</label>
                     <textarea id="mogoUrlInput" placeholder="للفيلم: رابط واحد فقط&#10;للمسلسلات:&#10;رابط الحلقة 1&#10;رابط الحلقة 2&#10;رابط الحلقة 3"></textarea>
                     <span class="hint">* ملحوظة للمسلسلات: يرجى وضع روابط الحلقات مرتبة (كل رابط في سطر)، وسيقوم الأدمن بتوزيعها تلقائياً على أرقام الحلقات المستخرجة من TMDB.</span>
+                </div>
+                <div class="input-group">
+                    <label>رابط إعلان YouTube (اختياري، يمكنك وضع رابط الفيديو أو كود تضمين iframe)</label>
+                    <input type="text" id="youtubeAdInput" placeholder="https://www.youtube.com/embed/xxxxx أو رابط آخر">
+                    <span class="hint-success">سيتم عرض هذا الإعلان في صفحة المادة أسفل الوصف وقبل طاقم التمثيل.</span>
                 </div>
             </div>
 
@@ -135,6 +141,7 @@
             const tmdbKey = document.getElementById('tmdbApiKey').value.trim();
             const tmdbUrl = document.getElementById('tmdbUrlInput').value.trim();
             const mediaUrlRaw = document.getElementById('mogoUrlInput').value.trim();
+            const youtubeAd = document.getElementById('youtubeAdInput').value.trim();
 
             if(!ghUser || !ghRepo || !ghToken || !tmdbKey || !tmdbUrl || !mediaUrlRaw) {
                 alert("برجاء ملء جميع الحقول المطلوبة!");
@@ -200,7 +207,7 @@
                 const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
-                // إنشاء كائن المحتوى الأساسي مع إضافة السنة
+                // إنشاء كائن المحتوى الأساسي مع إضافة السنة والإعلان
                 const newMediaObject = {
                     title: titleText,
                     year: year,
@@ -211,7 +218,8 @@
                     rating: ratingValue,
                     genre: genresArray,
                     type: finalType,
-                    cast: castData
+                    cast: castData,
+                    adUrl: youtubeAd || ""  // إضافة حقل الإعلان
                 };
 
                 // إذا كانت المادة مسلسلاً، نقوم بجلب المواسم والحلقات وتوزيع الروابط بالترتيب
@@ -299,7 +307,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية ذكية ومباشرة للمادة: ${titleText} مع روابط الحلقات المرتبة`,
+                        message: `إضافة تلقائية ذكية ومباشرة للمادة: ${titleText} مع روابط الحلقات المرتبة وإعلان YouTube`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -307,9 +315,10 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وتوزيع روابط الحلقات الفردية تلقائياً لكل حلقة!`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح مع الإعلان المرفق وتوزيع روابط الحلقات الفردية تلقائياً لكل حلقة!`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
+                document.getElementById('youtubeAdInput').value = "";
 
             } catch (err) {
                 logStatus("❌ خطأ: " + err.message, true);
