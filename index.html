@@ -52,6 +52,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .logo-container {
@@ -145,6 +147,47 @@
         @keyframes lineShimmer {
             0% { background-position: 0% 0%; }
             100% { background-position: 200% 0%; }
+        }
+
+        /* ===== القائمة المنسدلة للتصنيفات (معدلة) ===== */
+        .genre-select-wrapper {
+            flex-shrink: 0;
+            margin-right: auto; /* في RTL يكون على اليسار */
+        }
+        html[dir="ltr"] .genre-select-wrapper {
+            margin-right: 0;
+            margin-left: auto;
+        }
+        #genreSelect {
+            background-color: var(--bg-card);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 6px 16px 6px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.2s ease;
+            min-width: 140px;
+            max-width: 200px;
+            appearance: auto;
+            -webkit-appearance: auto;
+            background-image: none;
+        }
+        #genreSelect:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 12px rgba(229, 9, 20, 0.2);
+        }
+        #genreSelect:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.25);
+        }
+        #genreSelect option {
+            background-color: var(--bg-surface);
+            color: var(--text-main);
+            padding: 6px 12px;
+            font-size: 13px;
         }
 
         /* ===== الحاوية العامة ===== */
@@ -986,6 +1029,10 @@
             </div>
             <span class="logo-glow-line"></span>
         </div>
+        <!-- القائمة المنسدلة للتصنيفات -->
+        <div class="genre-select-wrapper">
+            <select id="genreSelect" style="display: none;"></select>
+        </div>
     </header>
 
     <div class="container" id="mainContainer">
@@ -1304,13 +1351,7 @@
                     <div class="slider-container">
                         <div class="featured-slider" id="featuredSlider"></div>
                     </div>
-                    <!-- قائمة منسدلة للتصنيفات (سيتم ملؤها ديناميكياً) -->
-                    <div style="margin: 15px 0;">
-                        <select id="genreSelect" style="width:100%; padding:10px; background:var(--bg-card); color:var(--text-main); border:1px solid var(--border-color); border-radius:8px; font-size:14px; cursor:pointer; outline:none;">
-                            <option value="">-- اختر التصنيف --</option>
-                        </select>
-                    </div>
-                    <!-- حاوية نتائج التصنيف -->
+                    <!-- حاوية نتائج التصنيف (اختفى الـ select القديم) -->
                     <div id="genreResultsContainer" style="display:none; margin-bottom:20px;">
                         <div class="row-header"><div class="row-title" id="genreResultsTitle">نتائج التصنيف</div></div>
                         <div class="category-grid" id="genreResultsGrid"></div>
@@ -1517,6 +1558,11 @@
                     <div class="category-grid compact-grid" id="topSeriesListGrid"></div>
                 </div>
             `;
+
+            // ===== إظهار الـ select في الهيدر =====
+            const selectElement = document.getElementById('genreSelect');
+            selectElement.style.display = 'block';
+            populateGenreDropdown();
 
             // ===== تحسين: مراقبة الصور =====
             observeImages();
@@ -1734,19 +1780,28 @@
             switchNav('home');
         }
 
-        // استخراج التصنيفات الفريدة من البيانات (كلمات مفردة)
+        // ===== دالة استخراج التصنيفات (معدلة) =====
         function getUniqueGenres() {
             const genresSet = new Set();
             allMoviesData.forEach(item => {
                 if (item.genre) {
-                    const parts = item.genre.split(/[\s,،]+/).map(g => g.trim()).filter(g => g.length > 0);
-                    parts.forEach(g => genresSet.add(g));
+                    // تقسيم على الفواصل (، و,) مع الاحتفاظ بالمسافات
+                    const parts = item.genre.split(/[\s,،]+/).filter(part => part.trim().length > 0);
+                    parts.forEach(part => {
+                        let clean = part.trim();
+                        // استبعاد التصنيفات التي تبدأ بحرف "و" (مثل "وفنتازيا"، "ومغامرة"، "وفيلم")
+                        if (clean.startsWith('و')) {
+                            // نستبعد هذا التصنيف
+                            return;
+                        }
+                        genresSet.add(clean);
+                    });
                 }
             });
             return Array.from(genresSet);
         }
 
-        // تعبئة القائمة المنسدلة للتصنيفات ديناميكياً من البيانات
+        // ===== تعبئة القائمة المنسدلة للتصنيفات =====
         function populateGenreDropdown() {
             const select = document.getElementById('genreSelect');
             if (!select) return;
@@ -1796,11 +1851,11 @@
                     // البحث عن كلمة "مدبلج" في العنوان
                     filtered = allMoviesData.filter(item => item.title.includes('مدبلج'));
                 } else {
-                    // البحث في حقل التصنيف (genre) عن وجود الكلمة المختارة كجزء من النص
+                    // البحث في حقل التصنيف (genre) عن وجود النص المختار كجزء من النص (بدون تقسيم)
                     filtered = allMoviesData.filter(item => {
                         if (!item.genre) return false;
-                        const genresList = item.genre.split(/[\s,،]+/).map(g => g.trim());
-                        return genresList.some(g => g.toLowerCase() === selected.toLowerCase());
+                        // نبحث عن النص الكامل في genre
+                        return item.genre.includes(selected);
                     });
                 }
 
@@ -1820,6 +1875,11 @@
                 observeImages();
                 scrollToTop();
             };
+
+            // إعادة تعيين القيمة الافتراضية (فارغة)
+            select.value = '';
+            // إظهار الـ select
+            select.style.display = 'block';
         }
 
         // دالة رئيسية لعرض الصفحة الرئيسية
@@ -1828,6 +1888,7 @@
             renderFeaturedMoviesSection();
             renderTopMovies();
             renderTopSeries();
+            // إعادة تعبئة القائمة المنسدلة (لضمان الترجمة والبيانات)
             populateGenreDropdown();
             // إظهار الأقسام
             document.getElementById('featuredMoviesSection').style.display = 'block';
@@ -2711,6 +2772,12 @@
             document.getElementById('txtCastTitle').innerText = dict.castTitle;
             document.getElementById('txtSimilarTitle').innerText = dict.similarTitle;
             document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = dict.watchNow);
+            // تحديث الترجمة في قائمة التصنيفات
+            const select = document.getElementById('genreSelect');
+            if (select) {
+                const defaultOption = select.querySelector('option[value=""]');
+                if (defaultOption) defaultOption.innerText = dict.genreSelectLabel;
+            }
         }
 
         // ===== نظام العضوية =====
