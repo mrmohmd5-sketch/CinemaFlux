@@ -356,6 +356,11 @@
             gap: 15px;
             margin-top: 15px;
         }
+        /* شبكة مدمجة للقوائم الكاملة */
+        .compact-grid {
+            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+            gap: 12px;
+        }
 
         /* ===== البحث ===== */
         .search-container { padding: 15px 0; }
@@ -844,6 +849,28 @@
         }
         .load-more-btn:active { transform: scale(0.96); }
 
+        /* زر عرض الكل (صغير وأنيق) */
+        .view-all-btn {
+            background-color: var(--accent);
+            color: #FFD700;
+            border: 1px solid #FFD700;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            letter-spacing: 0.3px;
+        }
+        .view-all-btn:hover {
+            background-color: #FFD700;
+            color: var(--accent);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+        .view-all-btn:active { transform: scale(0.96); }
+
         /* ===== تأثير الـ Ripple العام ===== */
         .ripple-target { position: relative; overflow: hidden; }
         .ripple-effect-global {
@@ -869,7 +896,7 @@
 
         /* ===== تحسينات عامة ===== */
         button, .nav-item, .menu-item, .profile-btn, .slide-btn, .server-btn, .cast-btn,
-        .back-nav-btn, .load-more-btn, .toggle-btn, .comment-submit-btn,
+        .back-nav-btn, .load-more-btn, .view-all-btn, .toggle-btn, .comment-submit-btn,
         .auth-toggle-link, .close-auth, .remove-search-btn, .movie-card, .search-item-row,
         .row-title, .voice-icon, .slide-item, .auth-box button, .auth-box input,
         .comment-input-box input, .search-bar-wrapper input {
@@ -1277,7 +1304,7 @@
                     <div class="slider-container">
                         <div class="featured-slider" id="featuredSlider"></div>
                     </div>
-                    <!-- قائمة منسدلة للتصنيفات -->
+                    <!-- قائمة منسدلة للتصنيفات (سيتم ملؤها ديناميكياً) -->
                     <div style="margin: 15px 0;">
                         <select id="genreSelect" style="width:100%; padding:10px; background:var(--bg-card); color:var(--text-main); border:1px solid var(--border-color); border-radius:8px; font-size:14px; cursor:pointer; outline:none;">
                             <option value="">-- اختر التصنيف --</option>
@@ -1299,7 +1326,7 @@
                     <div id="topMoviesSection">
                         <div class="row-header">
                             <div class="row-title" id="topMoviesTitle" style="cursor:pointer;">أفضل 100 فيلم تقيماً</div>
-                            <button class="load-more-btn" id="loadMoreTopMoviesBtn" style="display:inline-block; width:auto; padding:6px 16px; margin:0; font-size:12px;">عرض الكل</button>
+                            <button class="view-all-btn" id="loadMoreTopMoviesBtn">عرض الكل</button>
                         </div>
                         <div class="movies-slider" id="topMoviesSlider"></div>
                     </div>
@@ -1307,7 +1334,7 @@
                     <div id="topSeriesSection">
                         <div class="row-header">
                             <div class="row-title" id="topSeriesTitle" style="cursor:pointer;">أفضل المسلسلات</div>
-                            <button class="load-more-btn" id="loadMoreTopSeriesBtn" style="display:inline-block; width:auto; padding:6px 16px; margin:0; font-size:12px;">عرض الكل</button>
+                            <button class="view-all-btn" id="loadMoreTopSeriesBtn">عرض الكل</button>
                         </div>
                         <div class="movies-slider" id="topSeriesSlider"></div>
                     </div>
@@ -1473,21 +1500,21 @@
                 <div id="viewFeaturedMovies" class="app-view">
                     <button class="back-nav-btn" onclick="closeListView('viewFeaturedMovies')">➔ <span id="txtBackToMainFromFeatured">الرئيسية</span></button>
                     <div class="row-header"><div class="row-title" id="featuredListTitle" style="cursor:default;">أفلام مميزة</div></div>
-                    <div class="category-grid" id="featuredListGrid"></div>
+                    <div class="category-grid compact-grid" id="featuredListGrid"></div>
                 </div>
 
                 <!-- صفحة أفضل 100 فيلم -->
                 <div id="viewTopMovies" class="app-view">
                     <button class="back-nav-btn" onclick="closeListView('viewTopMovies')">➔ <span id="txtBackToMainFromTopMovies">الرئيسية</span></button>
                     <div class="row-header"><div class="row-title" id="topMoviesListTitle" style="cursor:default;">أفضل 100 فيلم تقيماً</div></div>
-                    <div class="category-grid" id="topMoviesListGrid"></div>
+                    <div class="category-grid compact-grid" id="topMoviesListGrid"></div>
                 </div>
 
                 <!-- صفحة أفضل المسلسلات -->
                 <div id="viewTopSeries" class="app-view">
                     <button class="back-nav-btn" onclick="closeListView('viewTopSeries')">➔ <span id="txtBackToMainFromTopSeries">الرئيسية</span></button>
                     <div class="row-header"><div class="row-title" id="topSeriesListTitle" style="cursor:default;">أفضل المسلسلات</div></div>
-                    <div class="category-grid" id="topSeriesListGrid"></div>
+                    <div class="category-grid compact-grid" id="topSeriesListGrid"></div>
                 </div>
             `;
 
@@ -1707,20 +1734,43 @@
             switchNav('home');
         }
 
-        // تعبئة القائمة المنسدلة للتصنيفات
+        // استخراج التصنيفات الفريدة من البيانات (كلمات مفردة)
+        function getUniqueGenres() {
+            const genresSet = new Set();
+            allMoviesData.forEach(item => {
+                if (item.genre) {
+                    const parts = item.genre.split(/[\s,،]+/).map(g => g.trim()).filter(g => g.length > 0);
+                    parts.forEach(g => genresSet.add(g));
+                }
+            });
+            return Array.from(genresSet);
+        }
+
+        // تعبئة القائمة المنسدلة للتصنيفات ديناميكياً من البيانات
         function populateGenreDropdown() {
             const select = document.getElementById('genreSelect');
             if (!select) return;
-            // التصنيفات المطلوبة
-            const genres = ["أكشن", "دراما", "خيال علمي", "كوميدي", "عائلي", "مغامرة", "جريمة", "رومانسي", "إثارة", "سيرة ذاتية", "رعب", "رسوم متحركة", "تاريخ", "غنائي", "مدبلج", "حياة الغرب"];
+
+            const uniqueGenres = getUniqueGenres();
+            // نرتب القائمة أبجدياً
+            uniqueGenres.sort((a, b) => a.localeCompare(b));
+
+            // بناء الخيارات
             select.innerHTML = `<option value="">${langPack[currentLang].genreSelectLabel}</option>`;
-            genres.forEach(g => {
+            uniqueGenres.forEach(g => {
                 const opt = document.createElement('option');
                 opt.value = g;
                 opt.textContent = g;
                 select.appendChild(opt);
             });
 
+            // إضافة خيار خاص لـ "مدبلج" (يبحث في العنوان)
+            const optDub = document.createElement('option');
+            optDub.value = 'مدبلج';
+            optDub.textContent = 'مدبلج';
+            select.appendChild(optDub);
+
+            // معالج التغيير
             select.onchange = function() {
                 const selected = this.value;
                 const resultsContainer = document.getElementById('genreResultsContainer');
@@ -1729,7 +1779,6 @@
 
                 if (!selected) {
                     resultsContainer.style.display = 'none';
-                    // إظهار الأقسام الأخرى
                     document.getElementById('featuredMoviesSection').style.display = 'block';
                     document.getElementById('topMoviesSection').style.display = 'block';
                     document.getElementById('topSeriesSection').style.display = 'block';
@@ -1747,7 +1796,7 @@
                     // البحث عن كلمة "مدبلج" في العنوان
                     filtered = allMoviesData.filter(item => item.title.includes('مدبلج'));
                 } else {
-                    // البحث في حقل التصنيف (genre)
+                    // البحث في حقل التصنيف (genre) عن وجود الكلمة المختارة كجزء من النص
                     filtered = allMoviesData.filter(item => {
                         if (!item.genre) return false;
                         const genresList = item.genre.split(/[\s,،]+/).map(g => g.trim());
@@ -2857,7 +2906,7 @@
 
         // ===== تأثير الـ Ripple =====
         function addGlobalRippleEffect() {
-            const clickableElements = document.querySelectorAll('button, .nav-item, .menu-item, .profile-btn, .slide-btn, .server-btn, .cast-btn, .back-nav-btn, .load-more-btn, .toggle-btn, .comment-submit-btn, .auth-toggle-link, .close-auth, .remove-search-btn, .movie-card, .search-item-row, .row-title, .voice-icon, .slide-item, .auth-box button, .cast-card');
+            const clickableElements = document.querySelectorAll('button, .nav-item, .menu-item, .profile-btn, .slide-btn, .server-btn, .cast-btn, .back-nav-btn, .load-more-btn, .view-all-btn, .toggle-btn, .comment-submit-btn, .auth-toggle-link, .close-auth, .remove-search-btn, .movie-card, .search-item-row, .row-title, .voice-icon, .slide-item, .auth-box button, .cast-card');
             clickableElements.forEach(el => {
                 if (el.dataset.rippleAdded) return;
                 el.dataset.rippleAdded = 'true';
