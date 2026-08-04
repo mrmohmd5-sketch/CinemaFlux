@@ -1,5 +1,4 @@
 const globalMoviesData = [
-},
     {
     "title": "Pluribus",
     "year": "2025",
