@@ -189,6 +189,70 @@ const globalMoviesData = [
             "image": "https://image.tmdb.org/t/p/w185/pLABX1wyaVE4CcEZVmoM2Y5XbQU.jpg"
         }
     ],
+    "trailerKey": "ZxKDnpiJaVc"
+},
+    {
+    "title": "Taken",
+    "year": "2008",
+    "desc": "أخذوا ابنته. سوف يأخذ حياتهم.\r أثناء إجازتها مع صديق في باريس ، يتم اختطاف فتاة أمريكية من قبل عصابة من المتاجرين بالبشر عازمين على بيعها في الدعارة القسرية. العمل ضد عقارب الساعة ، يجب على والدها الجاسوس السابق سحب كل المحطات لإنقاذها. ولكن مع أفضل سنواته التي ربما تكون وراءه ، قد تكون الوظيفة أكثر مما يمكنه التعامل معه.",
+    "poster": "https://image.tmdb.org/t/p/w500/ognkaUSNgJe1a2pjB4UNdzEo5jT.jpg",
+    "hdUrl": "https://streamtape.com/e/2Dw7eLQoeMhZl3P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/2Dw7eLQoeMhZl3P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Liam Neeson",
+            "character": "Bryan Mills",
+            "image": "https://image.tmdb.org/t/p/w185/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+        },
+        {
+            "name": "Maggie Grace",
+            "character": "Kim Mills",
+            "image": "https://image.tmdb.org/t/p/w185/fEZSGno4ooPgFjuGzE7ogsWEHsh.jpg"
+        },
+        {
+            "name": "Famke Janssen",
+            "character": "Lenore St. John",
+            "image": "https://image.tmdb.org/t/p/w185/uvZGwNsLqe9NyA57Qlt46IkO8Bd.jpg"
+        },
+        {
+            "name": "Olivier Rabourdin",
+            "character": "Jean-Claude Pitrel",
+            "image": "https://image.tmdb.org/t/p/w185/r15C7VnXnyMJk8JyNQOJGaauiKA.jpg"
+        },
+        {
+            "name": "Katie Cassidy",
+            "character": "Amanda",
+            "image": "https://image.tmdb.org/t/p/w185/v7cs7RFcfoiL8W1YRkZK5lBc57H.jpg"
+        },
+        {
+            "name": "Nicolas Giraud",
+            "character": "Peter",
+            "image": "https://image.tmdb.org/t/p/w185/ow7oY9iTl4aJNWO6R72a1xW3IkX.jpg"
+        },
+        {
+            "name": "Leland Orser",
+            "character": "Sam Gilroy",
+            "image": "https://image.tmdb.org/t/p/w185/vvVcWhActW8k2gQz95UatVP4Duf.jpg"
+        },
+        {
+            "name": "Jon Gries",
+            "character": "Mark Casey",
+            "image": "https://image.tmdb.org/t/p/w185/nX69eyOvpmJ0YEpm2Qz2ZISngqw.jpg"
+        },
+        {
+            "name": "Holly Valance",
+            "character": "Sheerah",
+            "image": "https://image.tmdb.org/t/p/w185/ej0B7odLeZ6KPriKfCnlA58cvtW.jpg"
+        },
+        {
+            "name": "David Warshofsky",
+            "character": "Bernie Harris",
+            "image": "https://image.tmdb.org/t/p/w185/pLABX1wyaVE4CcEZVmoM2Y5XbQU.jpg"
+        }
+    ],
     "trailerKey": ""
 },
     {
