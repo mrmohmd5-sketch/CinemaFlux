@@ -130,10 +130,10 @@ const globalMoviesData = [
                     "episode_number": 9,
                     "url": "https://streamtape.com/e/AA0lm1MLr0cXpQx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
                 }
-            ],
-            "trailerKey": "a6lzvWby9UE"
+            ]
         }
-    ] 
+    ],
+    "trailerKey": "a6lzvWby9UE"
 },
     {
     "title": "Mom Is 17 Again",
