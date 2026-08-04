@@ -46,23 +46,26 @@
         /* ===== الهيدر واللوجو الاحترافي ===== */
         header {
             background-color: var(--bg-surface);
-            padding: 15px;
-            padding-top: calc(15px + var(--safe-top));
+            padding: 10px 15px;
+            padding-top: calc(10px + var(--safe-top));
             border-bottom: 1px solid var(--border-color);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             cursor: default;
             transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             position: relative;
             text-decoration: none;
             padding: 4px 0;
+            flex-shrink: 0;
         }
         .logo-container:hover {
             transform: scale(1.04) rotate(-1deg);
@@ -76,7 +79,7 @@
         }
 
         .logo-c {
-            font-size: 48px;
+            font-size: 40px;
             font-weight: 900;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to bottom, #FFD700 48%, #E50914 52%);
@@ -98,7 +101,7 @@
         }
 
         .logo-main {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 900;
             letter-spacing: 0.5px;
             background: linear-gradient(135deg, #E50914, #FF4D6D, #E50914);
@@ -116,7 +119,7 @@
         }
 
         .logo-sub {
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 400;
             color: var(--text-sub);
             -webkit-text-fill-color: var(--text-sub);
@@ -145,6 +148,60 @@
         @keyframes lineShimmer {
             0% { background-position: 0% 0%; }
             100% { background-position: 200% 0%; }
+        }
+
+        /* ===== قائمة التصنيفات المنسدلة في الهيدر ===== */
+        .genre-dropdown-wrapper {
+            position: relative;
+            flex-shrink: 0;
+            margin-right: auto;
+        }
+        html[dir="rtl"] .genre-dropdown-wrapper {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        #genreSelect {
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 4px 28px 4px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.25s ease;
+            font-family: inherit;
+            min-width: 100px;
+            max-width: 160px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%239aa6b1'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: left 10px center;
+            padding-left: 30px;
+            padding-right: 14px;
+        }
+        html[dir="rtl"] #genreSelect {
+            background-position: right 10px center;
+            padding-right: 30px;
+            padding-left: 14px;
+        }
+        #genreSelect:hover {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.15);
+            transform: scale(1.02);
+        }
+        #genreSelect:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+        }
+        #genreSelect option {
+            background-color: var(--bg-surface);
+            color: var(--text-main);
+            padding: 6px 10px;
+            font-size: 13px;
         }
 
         /* ===== الحاوية العامة ===== */
@@ -986,6 +1043,12 @@
             </div>
             <span class="logo-glow-line"></span>
         </div>
+        <!-- قائمة التصنيفات المنسدلة (في الهيدر) -->
+        <div class="genre-dropdown-wrapper">
+            <select id="genreSelect" aria-label="اختر التصنيف">
+                <option value="">-- اختر التصنيف --</option>
+            </select>
+        </div>
     </header>
 
     <div class="container" id="mainContainer">
@@ -1304,13 +1367,7 @@
                     <div class="slider-container">
                         <div class="featured-slider" id="featuredSlider"></div>
                     </div>
-                    <!-- قائمة منسدلة للتصنيفات (سيتم ملؤها ديناميكياً) -->
-                    <div style="margin: 15px 0;">
-                        <select id="genreSelect" style="width:100%; padding:10px; background:var(--bg-card); color:var(--text-main); border:1px solid var(--border-color); border-radius:8px; font-size:14px; cursor:pointer; outline:none;">
-                            <option value="">-- اختر التصنيف --</option>
-                        </select>
-                    </div>
-                    <!-- حاوية نتائج التصنيف -->
+                    <!-- حاوية نتائج التصنيف (لم تعد تحتوي على القائمة المنسدلة) -->
                     <div id="genreResultsContainer" style="display:none; margin-bottom:20px;">
                         <div class="row-header"><div class="row-title" id="genreResultsTitle">نتائج التصنيف</div></div>
                         <div class="category-grid" id="genreResultsGrid"></div>
@@ -1734,16 +1791,60 @@
             switchNav('home');
         }
 
-        // استخراج التصنيفات الفريدة من البيانات (كلمات مفردة)
+        // ===== استخراج التصنيفات الذكي =====
+        function extractCleanGenres(genreText) {
+            if (!genreText) return [];
+            // استبدال "و" التي تسبق كلمة بمسافة ثم حذفها
+            let cleaned = genreText.replace(/و(?=\S)/g, ' ').replace(/،/g, ' ').trim();
+            // التعامل مع الكلمات المركبة: نستبدل المسافات في "خيال علمي" و"رسوم متحركة" و"سيرة ذاتية" و"خيال علمي" و"رسوم متحركة"
+            // لكن نريد الحفاظ عليها كوحدة واحدة، لذا نستخرجها أولاً
+            const compoundPatterns = ['خيال علمي', 'رسوم متحركة', 'سيرة ذاتية', 'خيال علمي', 'رسوم متحركة'];
+            let parts = [];
+            let remaining = cleaned;
+            // نبحث عن الكلمات المركبة ونستخرجها
+            compoundPatterns.forEach(pattern => {
+                const regex = new RegExp(pattern, 'gi');
+                let match;
+                while ((match = regex.exec(remaining)) !== null) {
+                    parts.push(match[0]);
+                    // نزيلها من النص المتبقي
+                    remaining = remaining.replace(match[0], '');
+                }
+            });
+            // نضيف باقي الكلمات (المفردة) بعد تنظيفها من المسافات الزائدة
+            const singleWords = remaining.split(/\s+/).filter(w => w.trim().length > 0);
+            parts = parts.concat(singleWords);
+            // نعيد المصفوفة مع إزالة التكرارات والكلمات غير المرغوب فيها
+            const unwanted = ['فيلم', 'تلفازي', 'وثائقي', 'تاريخ', 'غنائي', 'سيرة', 'ذاتية', 'حياة', 'غرب'];
+            const unique = [...new Set(parts)];
+            return unique.filter(w => {
+                const trimmed = w.trim();
+                // تجاهل الكلمات التي تبدأ بحرف "و" لوحدها (أو التي هي مجرد "و")
+                if (trimmed === 'و' || trimmed.length < 2) return false;
+                // تجاهل الكلمات غير المرغوب فيها تماماً (إذا كانت تطابق أي من unwanted)
+                if (unwanted.some(bad => trimmed.includes(bad))) return false;
+                // تجاهل الكلمات التي هي مجرد "و" مع شيء آخر (مثل "وفنتازيا" تم تنظيفها مسبقاً)
+                return true;
+            });
+        }
+
+        // استخراج التصنيفات الفريدة من البيانات باستخدام extractCleanGenres
         function getUniqueGenres() {
             const genresSet = new Set();
             allMoviesData.forEach(item => {
                 if (item.genre) {
-                    const parts = item.genre.split(/[\s,،]+/).map(g => g.trim()).filter(g => g.length > 0);
-                    parts.forEach(g => genresSet.add(g));
+                    const parts = extractCleanGenres(item.genre);
+                    parts.forEach(g => {
+                        // تجاهل الكلمات التي تبدأ بـ "و" أو التي هي "و" فقط
+                        const trimmed = g.trim();
+                        if (trimmed && trimmed !== 'و' && !trimmed.startsWith('و')) {
+                            genresSet.add(trimmed);
+                        }
+                    });
                 }
             });
-            return Array.from(genresSet);
+            // إزالة العناصر المكررة والفرز
+            return Array.from(genresSet).sort((a, b) => a.localeCompare(b));
         }
 
         // تعبئة القائمة المنسدلة للتصنيفات ديناميكياً من البيانات
@@ -1753,7 +1854,6 @@
 
             const uniqueGenres = getUniqueGenres();
             // نرتب القائمة أبجدياً
-            uniqueGenres.sort((a, b) => a.localeCompare(b));
 
             // بناء الخيارات
             select.innerHTML = `<option value="">${langPack[currentLang].genreSelectLabel}</option>`;
@@ -1796,11 +1896,11 @@
                     // البحث عن كلمة "مدبلج" في العنوان
                     filtered = allMoviesData.filter(item => item.title.includes('مدبلج'));
                 } else {
-                    // البحث في حقل التصنيف (genre) عن وجود الكلمة المختارة كجزء من النص
+                    // البحث في حقل التصنيف (genre) عن وجود الكلمة المختارة كجزء من النص (بعد تنظيفها)
                     filtered = allMoviesData.filter(item => {
                         if (!item.genre) return false;
-                        const genresList = item.genre.split(/[\s,،]+/).map(g => g.trim());
-                        return genresList.some(g => g.toLowerCase() === selected.toLowerCase());
+                        const cleanParts = extractCleanGenres(item.genre);
+                        return cleanParts.some(g => g.toLowerCase() === selected.toLowerCase());
                     });
                 }
 
@@ -2481,8 +2581,8 @@
             const scored = all.map(item => {
                 let score = 0;
                 if (item.genre && currentItem.genre) {
-                    const g1 = item.genre.split(/[\s,،]+/).filter(Boolean);
-                    const g2 = currentItem.genre.split(/[\s,،]+/).filter(Boolean);
+                    const g1 = extractCleanGenres(item.genre);
+                    const g2 = extractCleanGenres(currentItem.genre);
                     const common = g1.filter(g => g2.includes(g)).length;
                     const total = Math.max(g1.length, g2.length);
                     score += total > 0 ? (common / total) * 0.5 : 0;
