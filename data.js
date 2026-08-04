@@ -196,7 +196,8 @@ const globalMoviesData = [
             "character": "Mertsalov",
             "image": "https://image.tmdb.org/t/p/w185/6aRDxLW8x9H120oIlOG4i8tdCVq.jpg"
         }
-    ]
+    ],
+    "trailerKey": "0IRxfKsrprU"
 },
     {
     "title": "Into the Wild",
@@ -259,7 +260,8 @@ const globalMoviesData = [
             "character": "Mads",
             "image": "https://image.tmdb.org/t/p/w185/lDkRe6dlQoiehjay8pEP2WLU4qG.jpg"
         }
-    ]
+    ],
+    "trailerKey": "g7ArZ7VD-QQ"
 },
     {
     "title": "Moana 2",
