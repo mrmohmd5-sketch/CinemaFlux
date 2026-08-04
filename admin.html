@@ -65,6 +65,10 @@
                     <label>مفتاح الـ API الخاص بـ TMDB</label>
                     <input type="password" id="tmdbApiKey" placeholder="ضع هنا TMDB API Key">
                 </div>
+                <div class="input-group">
+                    <label>مفتاح الـ API الخاص بـ YouTube (لجلب الإعلانات)</label>
+                    <input type="password" id="youtubeApiKey" placeholder="AIzaSy...">
+                </div>
             </div>
 
             <h3>2️⃣ إضافة محتوى جديد (فيلم أو مسلسل)</h3>
@@ -113,13 +117,15 @@
             if(localStorage.getItem('gh_repo')) document.getElementById('ghRepo').value = localStorage.getItem('gh_repo');
             if(localStorage.getItem('gh_token')) document.getElementById('ghToken').value = localStorage.getItem('gh_token');
             if(localStorage.getItem('tmdb_key')) document.getElementById('tmdbApiKey').value = localStorage.getItem('tmdb_key');
+            if(localStorage.getItem('youtube_key')) document.getElementById('youtubeApiKey').value = localStorage.getItem('youtube_key');
         }
 
-        function saveSettings(user, repo, token, tmdb) {
+        function saveSettings(user, repo, token, tmdb, youtube) {
             localStorage.setItem('gh_user', user);
             localStorage.setItem('gh_repo', repo);
             localStorage.setItem('gh_token', token);
             localStorage.setItem('tmdb_key', tmdb);
+            localStorage.setItem('youtube_key', youtube);
         }
 
         function logStatus(msg, isError = false) {
@@ -129,44 +135,57 @@
         }
 
         /**
-         * دالة لجلب مفتاح الإعلان من TMDB (جميع الفيديوهات بدون فلتر لغة)
-         * @param {string} type - 'movie' أو 'tv'
-         * @param {string|number} id - معرف المادة
-         * @param {string} apiKey - مفتاح TMDB API
-         * @returns {Promise<string>} - مفتاح الفيديو أو سلسلة فارغة
+         * دالة لجلب مفتاح الإعلان من YouTube باستخدام اسم الفيلم/المسلسل وسنة الإنتاج
+         * @param {string} title - اسم الفيلم أو المسلسل (بالإنجليزية)
+         * @param {string} year - سنة الإنتاج
+         * @param {string} youtubeApiKey - مفتاح YouTube API
+         * @returns {Promise<string>} - مفتاح فيديو YouTube أو سلسلة فارغة
          */
-        async function fetchTrailerKey(type, id, apiKey) {
-            logStatus("⏳ جلب جميع الفيديوهات من TMDB للبحث عن إعلان...");
-            const url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}`;
-            
-            try {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    logStatus("⚠️ تعذر جلب الفيديوهات من TMDB", true);
+        async function fetchTrailerKeyFromYouTube(title, year, youtubeApiKey) {
+            if (!title) {
+                logStatus("⚠️ لا يوجد عنوان للبحث!", true);
+                return "";
+            }
+
+            // بناء استعلام البحث: اسم الفيلم + سنة + "official trailer"
+            const searchQuery = `${title} ${year} official trailer`;
+            logStatus(`🔍 البحث عن إعلان على YouTube: "${searchQuery}"`);
+
+            if (youtubeApiKey && youtubeApiKey.length > 10) {
+                try {
+                    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(searchQuery)}&type=video&maxResults=5&key=${youtubeApiKey}`;
+                    const response = await fetch(url);
+                    if (!response.ok) {
+                        logStatus("⚠️ YouTube API طلب غير ناجح، جاري استخدام الطريقة البديلة...", true);
+                        return "";
+                    }
+                    const data = await response.json();
+                    if (data.items && data.items.length > 0) {
+                        // نبحث عن فيديو يحوي كلمة "trailer" في العنوان أو الوصف
+                        for (const item of data.items) {
+                            const snippet = item.snippet;
+                            const videoTitle = snippet.title.toLowerCase();
+                            const description = snippet.description ? snippet.description.toLowerCase() : "";
+                            if (videoTitle.includes('trailer') || description.includes('trailer')) {
+                                const videoId = item.id.videoId;
+                                logStatus(`✅ تم العثور على إعلان من YouTube: ${videoId}`);
+                                return videoId;
+                            }
+                        }
+                        // إذا لم نجد ما يحتوي "trailer"، نأخذ أول فيديو
+                        const firstVideoId = data.items[0].id.videoId;
+                        logStatus(`⚠️ لم يتم العثور على إعلان صريح، سيتم استخدام أول فيديو: ${firstVideoId}`);
+                        return firstVideoId;
+                    } else {
+                        logStatus("⚠️ لا توجد نتائج من YouTube API.", true);
+                        return "";
+                    }
+                } catch (err) {
+                    logStatus("❌ خطأ في YouTube API: " + err.message, true);
                     return "";
                 }
-                const data = await response.json();
-                const videos = data.results || [];
-
-                if (videos.length === 0) {
-                    logStatus("⚠️ لا توجد فيديوهات لهذه المادة.", true);
-                    return "";
-                }
-
-                // 1. البحث عن Trailer أو Teaser
-                let trailer = videos.find(v => v.type === "Trailer" || v.type === "Teaser");
-                if (trailer) {
-                    logStatus(`✅ تم العثور على إعلان (${trailer.type}): ${trailer.key}`);
-                    return trailer.key;
-                }
-
-                // 2. إذا لم يوجد Trailer، نأخذ أول فيديو متاح (Clip, Featurette, إلخ)
-                const anyVideo = videos[0];
-                logStatus(`⚠️ لم يتم العثور على إعلان، سيتم استخدام فيديو من نوع "${anyVideo.type}": ${anyVideo.key}`);
-                return anyVideo.key;
-
-            } catch (err) {
-                logStatus("❌ خطأ أثناء جلب الفيديوهات: " + err.message, true);
+            } else {
+                logStatus("⚠️ مفتاح YouTube API غير صالح أو مفقود، لا يمكن جلب الإعلان.", true);
                 return "";
             }
         }
@@ -176,6 +195,7 @@
             const ghRepo = document.getElementById('ghRepo').value.trim();
             const ghToken = document.getElementById('ghToken').value.trim();
             const tmdbKey = document.getElementById('tmdbApiKey').value.trim();
+            const youtubeKey = document.getElementById('youtubeApiKey').value.trim();
             const tmdbUrl = document.getElementById('tmdbUrlInput').value.trim();
             const mediaUrlRaw = document.getElementById('mogoUrlInput').value.trim();
 
@@ -184,7 +204,7 @@
                 return;
             }
 
-            saveSettings(ghUser, ghRepo, ghToken, tmdbKey);
+            saveSettings(ghUser, ghRepo, ghToken, tmdbKey, youtubeKey);
             logStatus("⏳ جاري جلب البيانات وترجمة القصة للعربية مع حفظ الاسم الإنجليزي...");
 
             let id = tmdbUrl;
@@ -226,10 +246,7 @@
                     });
                 }
 
-                // 4. جلب مفتاح الإعلان باستخدام الدالة الجديدة
-                const trailerKey = await fetchTrailerKey(type, id, tmdbKey);
-
-                // 5. استخراج سنة الإنتاج
+                // 4. استخراج سنة الإنتاج
                 let year = "";
                 if (dataAr.release_date) {
                     year = dataAr.release_date.substring(0,4);
@@ -238,6 +255,10 @@
                 } else if (dataAr.air_date) {
                     year = dataAr.air_date.substring(0,4);
                 }
+
+                // 5. جلب الإعلان من YouTube باستخدام الاسم الإنجليزي والسنة
+                const englishTitle = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "";
+                const trailerKey = await fetchTrailerKeyFromYouTube(englishTitle, year, youtubeKey);
 
                 const genresArray = dataAr.genres ? dataAr.genres.map(g => g.name).join(' ') : "غير مصنف";
                 const titleText = dataEn.title || dataEn.name || dataAr.title || dataAr.name || "Untitled";
