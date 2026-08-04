@@ -1118,7 +1118,8 @@
                 topSeries: "أفضل المسلسلات",
                 genreSelectLabel: "-- اختر التصنيف --",
                 genreResultsTitle: "نتائج التصنيف",
-                loadMore: "تحميل المزيد"
+                loadMore: "تحميل المزيد",
+                viewAll: "عرض الكل"
             },
             en: {
                 logo: "🎬 CinemaFlux",
@@ -1175,7 +1176,8 @@
                 topSeries: "Top Series",
                 genreSelectLabel: "-- Select Genre --",
                 genreResultsTitle: "Genre Results",
-                loadMore: "Load More"
+                loadMore: "Load More",
+                viewAll: "View All"
             }
         };
 
@@ -1286,21 +1288,28 @@
                         <div class="row-header"><div class="row-title" id="genreResultsTitle">نتائج التصنيف</div></div>
                         <div class="category-grid" id="genreResultsGrid"></div>
                     </div>
-                    <!-- أفلام مميزة -->
+                    <!-- أفلام مميزة (سلايدر) -->
                     <div id="featuredMoviesSection">
-                        <div class="row-header"><div class="row-title" id="featuredMoviesTitle">أفلام مميزة</div></div>
+                        <div class="row-header">
+                            <div class="row-title" id="featuredMoviesTitle" style="cursor:pointer;">أفلام مميزة</div>
+                        </div>
                         <div class="movies-slider" id="featuredMoviesSlider"></div>
                     </div>
-                    <!-- أفضل 100 فيلم -->
+                    <!-- أفضل 100 فيلم (سلايدر) -->
                     <div id="topMoviesSection">
-                        <div class="row-header"><div class="row-title" id="topMoviesTitle">أفضل 100 فيلم تقيماً</div></div>
-                        <div class="category-grid" id="topMoviesGrid"></div>
-                        <button class="load-more-btn" id="loadMoreTopMovies" style="display:none;">تحميل المزيد</button>
+                        <div class="row-header">
+                            <div class="row-title" id="topMoviesTitle" style="cursor:pointer;">أفضل 100 فيلم تقيماً</div>
+                            <button class="load-more-btn" id="loadMoreTopMoviesBtn" style="display:inline-block; width:auto; padding:6px 16px; margin:0; font-size:12px;">عرض الكل</button>
+                        </div>
+                        <div class="movies-slider" id="topMoviesSlider"></div>
                     </div>
-                    <!-- أفضل المسلسلات -->
+                    <!-- أفضل المسلسلات (سلايدر) -->
                     <div id="topSeriesSection">
-                        <div class="row-header"><div class="row-title" id="topSeriesTitle">أفضل المسلسلات</div></div>
-                        <div class="category-grid" id="topSeriesGrid"></div>
+                        <div class="row-header">
+                            <div class="row-title" id="topSeriesTitle" style="cursor:pointer;">أفضل المسلسلات</div>
+                            <button class="load-more-btn" id="loadMoreTopSeriesBtn" style="display:inline-block; width:auto; padding:6px 16px; margin:0; font-size:12px;">عرض الكل</button>
+                        </div>
+                        <div class="movies-slider" id="topSeriesSlider"></div>
                     </div>
                 </div>
 
@@ -1458,6 +1467,28 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ================= صفحة عرض القوائم الكاملة ================= -->
+                <!-- صفحة الأفلام المميزة -->
+                <div id="viewFeaturedMovies" class="app-view">
+                    <button class="back-nav-btn" onclick="closeListView('viewFeaturedMovies')">➔ <span id="txtBackToMainFromFeatured">الرئيسية</span></button>
+                    <div class="row-header"><div class="row-title" id="featuredListTitle" style="cursor:default;">أفلام مميزة</div></div>
+                    <div class="category-grid" id="featuredListGrid"></div>
+                </div>
+
+                <!-- صفحة أفضل 100 فيلم -->
+                <div id="viewTopMovies" class="app-view">
+                    <button class="back-nav-btn" onclick="closeListView('viewTopMovies')">➔ <span id="txtBackToMainFromTopMovies">الرئيسية</span></button>
+                    <div class="row-header"><div class="row-title" id="topMoviesListTitle" style="cursor:default;">أفضل 100 فيلم تقيماً</div></div>
+                    <div class="category-grid" id="topMoviesListGrid"></div>
+                </div>
+
+                <!-- صفحة أفضل المسلسلات -->
+                <div id="viewTopSeries" class="app-view">
+                    <button class="back-nav-btn" onclick="closeListView('viewTopSeries')">➔ <span id="txtBackToMainFromTopSeries">الرئيسية</span></button>
+                    <div class="row-header"><div class="row-title" id="topSeriesListTitle" style="cursor:default;">أفضل المسلسلات</div></div>
+                    <div class="category-grid" id="topSeriesListGrid"></div>
+                </div>
             `;
 
             // ===== تحسين: مراقبة الصور =====
@@ -1498,8 +1529,14 @@
             return parseFloat(item.rating) || 0;
         }
 
-        // جلب الأفلام المميزة (من القائمة المحفوظة)
+        // جلب الأفلام المميزة (تعتمد على خاصية featured في البيانات أولاً)
         function getFeaturedMovies() {
+            // البحث عن العناصر التي تحمل featured: true
+            const featuredFromData = allMoviesData.filter(item => item.featured === true);
+            if (featuredFromData.length > 0) {
+                return featuredFromData;
+            }
+            // خيار احتياطي باستخدام localStorage (للتوافق مع الإصدارات السابقة)
             return allMoviesData.filter(item => featuredMoviesList.includes(item.title));
         }
 
@@ -1549,70 +1586,125 @@
             });
         }
 
-        // عرض قسم "أفلام مميزة" (أفضل 10)
+        // عرض قسم "أفلام مميزة" (سلايدر) وجعل العنوان قابلاً للنقر
         function renderFeaturedMoviesSection() {
             const container = document.getElementById('featuredMoviesSlider');
             if (!container) return;
             container.innerHTML = '';
 
-            const topMovies = sortByScore(allMoviesData).slice(0, 10);
-            topMovies.forEach(item => {
+            const featured = getFeaturedMovies();
+            // نعرض أول 10 أفلام مميزة في السلايدر
+            const topFeatured = sortByScore(featured).slice(0, 10);
+            topFeatured.forEach(item => {
                 const card = createMovieCard(item);
                 container.appendChild(card);
             });
             observeImages();
+
+            // جعل العنوان قابلاً للنقر لفتح صفحة القائمة الكاملة
+            const titleEl = document.getElementById('featuredMoviesTitle');
+            titleEl.style.cursor = 'pointer';
+            titleEl.onclick = () => openListView('viewFeaturedMovies', 'featuredListGrid', getFeaturedMovies, 'featuredListTitle', 'أفلام مميزة');
         }
 
-        // عرض أفضل 100 فيلم (مع تحميل تدريجي)
-        let topMoviesCurrentPage = 0;
-        const TOP_MOVIES_PER_PAGE = 20;
-        let topMoviesSorted = [];
+        // عرض أفضل 100 فيلم كسلايدر (أول 20) مع زر عرض الكل
+        function renderTopMovies() {
+            const slider = document.getElementById('topMoviesSlider');
+            if (!slider) return;
+            slider.innerHTML = '';
 
-        function renderTopMovies(loadMore = false) {
-            const grid = document.getElementById('topMoviesGrid');
-            const loadMoreBtn = document.getElementById('loadMoreTopMovies');
-            if (!grid) return;
+            // ترتيب جميع الأفلام حسب التقييم وأخذ أول 100 فقط
+            const allMovies = allMoviesData.filter(item => item.type !== 'series');
+            const sorted = sortByScore(allMovies);
+            const top100 = sorted.slice(0, 100);
 
-            if (!loadMore) {
-                topMoviesCurrentPage = 0;
-                topMoviesSorted = sortByScore(allMoviesData.filter(item => item.type !== 'series'));
-                grid.innerHTML = '';
-            }
-
-            const start = topMoviesCurrentPage * TOP_MOVIES_PER_PAGE;
-            const end = Math.min(start + TOP_MOVIES_PER_PAGE, topMoviesSorted.length);
-            const pageItems = topMoviesSorted.slice(start, end);
-
-            pageItems.forEach(item => {
+            // عرض أول 20 في السلايدر
+            const first20 = top100.slice(0, 20);
+            first20.forEach(item => {
                 const card = createMovieCard(item);
-                card.style.maxWidth = '100%';
-                grid.appendChild(card);
+                slider.appendChild(card);
             });
-
-            topMoviesCurrentPage++;
-            if (end < topMoviesSorted.length) {
-                loadMoreBtn.style.display = 'block';
-                loadMoreBtn.innerText = langPack[currentLang].loadMore;
-                loadMoreBtn.onclick = () => renderTopMovies(true);
-            } else {
-                loadMoreBtn.style.display = 'none';
-            }
             observeImages();
+
+            // زر عرض الكل
+            const btn = document.getElementById('loadMoreTopMoviesBtn');
+            btn.onclick = () => openListView('viewTopMovies', 'topMoviesListGrid', () => top100, 'topMoviesListTitle', 'أفضل 100 فيلم تقيماً');
+
+            // جعل العنوان قابلاً للنقر أيضاً
+            const titleEl = document.getElementById('topMoviesTitle');
+            titleEl.style.cursor = 'pointer';
+            titleEl.onclick = btn.onclick;
         }
 
-        // عرض أفضل المسلسلات
+        // عرض أفضل المسلسلات كسلايدر (أول 20) مع زر عرض الكل
         function renderTopSeries() {
-            const grid = document.getElementById('topSeriesGrid');
+            const slider = document.getElementById('topSeriesSlider');
+            if (!slider) return;
+            slider.innerHTML = '';
+
+            const series = allMoviesData.filter(item => item.type === 'series');
+            const sorted = sortByScore(series);
+
+            // عرض أول 20 في السلايدر
+            const first20 = sorted.slice(0, 20);
+            first20.forEach(item => {
+                const card = createMovieCard(item);
+                slider.appendChild(card);
+            });
+            observeImages();
+
+            // زر عرض الكل
+            const btn = document.getElementById('loadMoreTopSeriesBtn');
+            btn.onclick = () => openListView('viewTopSeries', 'topSeriesListGrid', () => sorted, 'topSeriesListTitle', 'أفضل المسلسلات');
+
+            // جعل العنوان قابلاً للنقر أيضاً
+            const titleEl = document.getElementById('topSeriesTitle');
+            titleEl.style.cursor = 'pointer';
+            titleEl.onclick = btn.onclick;
+        }
+
+        // دالة عامة لفتح صفحة قائمة كاملة (شبكة)
+        function openListView(viewId, gridId, dataProvider, titleId, defaultTitle) {
+            // إخفاء جميع الصفحات
+            document.querySelectorAll('.app-view').forEach(el => el.classList.remove('active'));
+            const targetView = document.getElementById(viewId);
+            if (!targetView) return;
+            targetView.classList.add('active');
+
+            const grid = document.getElementById(gridId);
             if (!grid) return;
             grid.innerHTML = '';
 
-            const series = sortByScore(allMoviesData.filter(item => item.type === 'series'));
-            series.forEach(item => {
+            const items = typeof dataProvider === 'function' ? dataProvider() : dataProvider;
+            if (items.length === 0) {
+                grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:30px; color:var(--text-sub);">${currentLang === 'ar' ? 'لا توجد عناصر لعرضها' : 'No items to display'}</div>`;
+                return;
+            }
+
+            items.forEach(item => {
                 const card = createMovieCard(item);
                 card.style.maxWidth = '100%';
                 grid.appendChild(card);
             });
             observeImages();
+
+            // ترجمة العنوان
+            const titleEl = document.getElementById(titleId);
+            if (titleEl) {
+                const dict = langPack[currentLang];
+                // نستخدم الترجمة من القاموس إن وجدت
+                if (viewId === 'viewFeaturedMovies') titleEl.innerText = dict.featuredMovies;
+                else if (viewId === 'viewTopMovies') titleEl.innerText = dict.top100Movies;
+                else if (viewId === 'viewTopSeries') titleEl.innerText = dict.topSeries;
+                else titleEl.innerText = defaultTitle;
+            }
+            scrollToTop();
+        }
+
+        // دالة لإغلاق صفحة القائمة والعودة للرئيسية
+        function closeListView(viewId) {
+            document.getElementById(viewId).classList.remove('active');
+            switchNav('home');
         }
 
         // تعبئة القائمة المنسدلة للتصنيفات
@@ -1621,8 +1713,6 @@
             if (!select) return;
             // التصنيفات المطلوبة
             const genres = ["أكشن", "دراما", "خيال علمي", "كوميدي", "عائلي", "مغامرة", "جريمة", "رومانسي", "إثارة", "سيرة ذاتية", "رعب", "رسوم متحركة", "تاريخ", "غنائي", "مدبلج", "حياة الغرب"];
-            // نضيف أيضاً تصنيفات أخرى موجودة في البيانات ولكن ليست في القائمة (اختياري)
-            // لكن نكتفي بالقائمة المطلوبة
             select.innerHTML = `<option value="">${langPack[currentLang].genreSelectLabel}</option>`;
             genres.forEach(g => {
                 const opt = document.createElement('option');
@@ -1660,7 +1750,6 @@
                     // البحث في حقل التصنيف (genre)
                     filtered = allMoviesData.filter(item => {
                         if (!item.genre) return false;
-                        // تقسيم التصنيفات بفواصل أو مسافات
                         const genresList = item.genre.split(/[\s,،]+/).map(g => g.trim());
                         return genresList.some(g => g.toLowerCase() === selected.toLowerCase());
                     });
@@ -1709,13 +1798,12 @@
             document.getElementById('topSeriesTitle').innerText = dict.topSeries;
             const select = document.getElementById('genreSelect');
             if (select) {
-                // نغير فقط النص الافتراضي، الخيارات ثابتة
                 const defaultOption = select.querySelector('option[value=""]');
                 if (defaultOption) defaultOption.innerText = dict.genreSelectLabel;
             }
             document.getElementById('genreResultsTitle').innerText = dict.genreResultsTitle;
-            const loadMoreBtn = document.getElementById('loadMoreTopMovies');
-            if (loadMoreBtn) loadMoreBtn.innerText = dict.loadMore;
+            document.getElementById('loadMoreTopMoviesBtn').innerText = dict.viewAll;
+            document.getElementById('loadMoreTopSeriesBtn').innerText = dict.viewAll;
         }
 
         // ===== دوال التنقل =====
@@ -1874,6 +1962,9 @@
                     else if (id === 'viewSettings') lastViewBeforeMovie = 'viewSettings';
                     else if (id === 'viewHistory') lastViewBeforeMovie = 'viewHistory';
                     else if (id === 'viewCategoryDetail') lastViewBeforeMovie = 'viewCategoryDetail';
+                    else if (id === 'viewFeaturedMovies') lastViewBeforeMovie = 'viewFeaturedMovies';
+                    else if (id === 'viewTopMovies') lastViewBeforeMovie = 'viewTopMovies';
+                    else if (id === 'viewTopSeries') lastViewBeforeMovie = 'viewTopSeries';
                 }
             }
 
@@ -2008,6 +2099,10 @@
                 else if (lastViewBeforeMovie === 'viewHistory') switchView('viewHistory');
                 else if (lastViewBeforeMovie === 'viewCategoryDetail') {
                     closeCategoryPage();
+                }
+                else if (lastViewBeforeMovie === 'viewFeaturedMovies' || lastViewBeforeMovie === 'viewTopMovies' || lastViewBeforeMovie === 'viewTopSeries') {
+                    // نعود للرئيسية
+                    switchNav('home');
                 }
                 else switchNav('home');
             } else {
@@ -2734,6 +2829,22 @@
             if (navSearch.classList.contains('active') || navProfile.classList.contains('active') ||
                 navAllMovies.classList.contains('active') || navAllSeries.classList.contains('active')) {
                 switchNav('home');
+                return 'handled';
+            }
+            // إضافة معالجة للصفحات الجديدة
+            const featuredView = document.getElementById('viewFeaturedMovies');
+            const topMoviesView = document.getElementById('viewTopMovies');
+            const topSeriesView = document.getElementById('viewTopSeries');
+            if (featuredView && featuredView.classList.contains('active')) {
+                closeListView('viewFeaturedMovies');
+                return 'handled';
+            }
+            if (topMoviesView && topMoviesView.classList.contains('active')) {
+                closeListView('viewTopMovies');
+                return 'handled';
+            }
+            if (topSeriesView && topSeriesView.classList.contains('active')) {
+                closeListView('viewTopSeries');
                 return 'handled';
             }
             return 'default';
