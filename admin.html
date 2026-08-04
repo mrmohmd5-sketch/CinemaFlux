@@ -129,47 +129,61 @@
         }
 
         /**
-         * دالة لجلب مفتاح الإعلان من TMDB مع الأولوية للغات المحددة
+         * دالة لجلب مفتاح الإعلان من TMDB مع الأولوية للغات المحددة ثم أي لغة
          * @param {string} type - 'movie' أو 'tv'
          * @param {string|number} id - معرف المادة
          * @param {string} apiKey - مفتاح TMDB API
          * @returns {Promise<string>} - مفتاح الفيديو أو سلسلة فارغة
          */
         async function fetchTrailerKey(type, id, apiKey) {
-            // 1. محاولة جلب الإعلان باللغة العربية أولاً
+            // 1. محاولة جلب الفيديوهات باللغة العربية
             logStatus("⏳ البحث عن إعلان باللغة العربية...");
-            let url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=ar&include_video_language=ar`;
+            let url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=ar`;
             let response = await fetch(url);
             let data = await response.json();
-            let trailer = data.results?.find(v => v.type === "Trailer" || v.type === "Teaser");
-            if (trailer?.key) {
+            let videos = data.results || [];
+
+            // البحث عن Trailer أو Teaser بالعربية
+            let trailer = videos.find(v => v.type === "Trailer" || v.type === "Teaser");
+            if (trailer && trailer.key) {
                 logStatus(`✅ تم العثور على إعلان بالعربية: ${trailer.key}`);
                 return trailer.key;
             }
 
-            // 2. محاولة جلب الإعلان باللغة الإنجليزية
+            // 2. محاولة جلب الفيديوهات باللغة الإنجليزية
             logStatus("⏳ لم يتم العثور على إعلان عربي، جاري البحث باللغة الإنجليزية...");
-            url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=en&include_video_language=en`;
+            url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=en`;
             response = await fetch(url);
             data = await response.json();
-            trailer = data.results?.find(v => v.type === "Trailer" || v.type === "Teaser");
-            if (trailer?.key) {
+            videos = data.results || [];
+
+            trailer = videos.find(v => v.type === "Trailer" || v.type === "Teaser");
+            if (trailer && trailer.key) {
                 logStatus(`✅ تم العثور على إعلان بالإنجليزية: ${trailer.key}`);
                 return trailer.key;
             }
 
-            // 3. محاولة جلب أي إعلان بأي لغة (كحل أخير)
+            // 3. محاولة جلب جميع الفيديوهات بدون تحديد لغة (أي لغة)
             logStatus("⏳ لم يتم العثور على إعلان بالعربية أو الإنجليزية، جاري البحث بأي لغة...");
             url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}`;
             response = await fetch(url);
             data = await response.json();
-            trailer = data.results?.find(v => v.type === "Trailer" || v.type === "Teaser");
-            if (trailer?.key) {
+            videos = data.results || [];
+
+            trailer = videos.find(v => v.type === "Trailer" || v.type === "Teaser");
+            if (trailer && trailer.key) {
                 logStatus(`✅ تم العثور على إعلان بلغة أخرى: ${trailer.key}`);
                 return trailer.key;
             }
 
-            logStatus("⚠️ لم يتم العثور على أي إعلان لهذه المادة.");
+            // 4. كحل أخير: البحث عن أي فيديو (مثل Clip, Featurette, إلخ)
+            if (videos.length > 0) {
+                const anyVideo = videos[0];
+                logStatus(`⚠️ لم يتم العثور على إعلان، سيتم استخدام أول فيديو متاح: ${anyVideo.key}`);
+                return anyVideo.key;
+            }
+
+            logStatus("⚠️ لم يتم العثور على أي فيديو لهذه المادة.");
             return "";
         }
 
