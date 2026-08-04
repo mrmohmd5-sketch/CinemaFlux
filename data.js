@@ -127,6 +127,7 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "ZxKDnpiJaVc"
+    "featured": true
 },
     {
     "title": "Pluribus",
@@ -199,6 +200,7 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "a6lzvWby9UE"
+    "featured": true
 },
     {
     "title": "Mom Is 17 Again",
@@ -263,6 +265,7 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "0IRxfKsrprU"
+    "featured": true
 },
     {
     "title": "Into the Wild",
@@ -327,6 +330,7 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "g7ArZ7VD-QQ"
+    "featured": true
 },
     {
     "title": "Moana 2",
@@ -389,7 +393,8 @@ const globalMoviesData = [
             "character": "Gramma Tala (voice)",
             "image": "https://image.tmdb.org/t/p/w185/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Moana موانا مدبلج",
@@ -460,7 +465,8 @@ const globalMoviesData = [
             "name": "Jemaine Clement",
             "image": "https://image.tmdb.org/t/p/w185/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Incoming",
@@ -493,7 +499,8 @@ const globalMoviesData = [
             "name": "Bardia Seiri",
             "image": "https://image.tmdb.org/t/p/w185/xNJY25SrX4fTzg5aobu4NINJSVF.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Toy Story 5",
@@ -526,7 +533,8 @@ const globalMoviesData = [
             "name": "Conan O'Brien",
             "image": "https://image.tmdb.org/t/p/w185/deRbViPut0t80miscBpP2DhBJU5.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Don't Look Up",
@@ -559,7 +567,8 @@ const globalMoviesData = [
             "name": "Rob Morgan",
             "image": "https://image.tmdb.org/t/p/w185/ps6wR3JZnk6MY9tbtOLORgadqs6.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Jojo Rabbit",
@@ -592,7 +601,8 @@ const globalMoviesData = [
             "name": "Sam Rockwell",
             "image": "https://image.tmdb.org/t/p/w185/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Boy Kills World",
@@ -625,7 +635,8 @@ const globalMoviesData = [
             "name": "Brett Gelman",
             "image": "https://image.tmdb.org/t/p/w185/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Everything Everywhere All at Once",
@@ -658,7 +669,8 @@ const globalMoviesData = [
             "name": "Jamie Lee Curtis",
             "image": "https://image.tmdb.org/t/p/w185/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Furiosa: A Mad Max Saga",
@@ -691,7 +703,8 @@ const globalMoviesData = [
             "name": "George Shevtsov",
             "image": "https://image.tmdb.org/t/p/w185/cuOoCZShfvNrOvrWqH2dPyBfrZS.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "The Furious",
@@ -724,7 +737,8 @@ const globalMoviesData = [
             "name": "JeeJa Yanin",
             "image": "https://image.tmdb.org/t/p/w185/73xhAKFbeNSlJTwUCsQCAtryLYS.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "The Other Woman",
@@ -757,7 +771,8 @@ const globalMoviesData = [
             "name": "Don Johnson",
             "image": "https://image.tmdb.org/t/p/w185/6s6oav541p7xspCG6PvXut7knkP.jpg"
         }
-    ]
+    ],
+    "featured": true
 },
     {
     "title": "Vanilla Sky",
