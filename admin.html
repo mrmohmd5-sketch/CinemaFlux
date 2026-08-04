@@ -128,6 +128,51 @@
             out.style.color = isError ? "#ff3333" : "#00ff00";
         }
 
+        /**
+         * دالة لجلب مفتاح الإعلان من TMDB مع الأولوية للغات المحددة
+         * @param {string} type - 'movie' أو 'tv'
+         * @param {string|number} id - معرف المادة
+         * @param {string} apiKey - مفتاح TMDB API
+         * @returns {Promise<string>} - مفتاح الفيديو أو سلسلة فارغة
+         */
+        async function fetchTrailerKey(type, id, apiKey) {
+            // 1. محاولة جلب الإعلان باللغة العربية أولاً
+            logStatus("⏳ البحث عن إعلان باللغة العربية...");
+            let url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=ar&include_video_language=ar`;
+            let response = await fetch(url);
+            let data = await response.json();
+            let trailer = data.results?.find(v => v.type === "Trailer" || v.type === "Teaser");
+            if (trailer?.key) {
+                logStatus(`✅ تم العثور على إعلان بالعربية: ${trailer.key}`);
+                return trailer.key;
+            }
+
+            // 2. محاولة جلب الإعلان باللغة الإنجليزية
+            logStatus("⏳ لم يتم العثور على إعلان عربي، جاري البحث باللغة الإنجليزية...");
+            url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=en&include_video_language=en`;
+            response = await fetch(url);
+            data = await response.json();
+            trailer = data.results?.find(v => v.type === "Trailer" || v.type === "Teaser");
+            if (trailer?.key) {
+                logStatus(`✅ تم العثور على إعلان بالإنجليزية: ${trailer.key}`);
+                return trailer.key;
+            }
+
+            // 3. محاولة جلب أي إعلان بأي لغة (كحل أخير)
+            logStatus("⏳ لم يتم العثور على إعلان بالعربية أو الإنجليزية، جاري البحث بأي لغة...");
+            url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}`;
+            response = await fetch(url);
+            data = await response.json();
+            trailer = data.results?.find(v => v.type === "Trailer" || v.type === "Teaser");
+            if (trailer?.key) {
+                logStatus(`✅ تم العثور على إعلان بلغة أخرى: ${trailer.key}`);
+                return trailer.key;
+            }
+
+            logStatus("⚠️ لم يتم العثور على أي إعلان لهذه المادة.");
+            return "";
+        }
+
         async function autoFetchAndUpload() {
             const ghUser = document.getElementById('ghUser').value.trim();
             const ghRepo = document.getElementById('ghRepo').value.trim();
@@ -183,27 +228,8 @@
                     });
                 }
 
-                // 4. جلب فيديوهات الإعلان (YouTube Trailer) من TMDB
-                let trailerKey = "";
-                try {
-                    logStatus("⏳ جاري البحث عن إعلان YouTube من TMDB...");
-                    const videosRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${tmdbKey}&language=ar`);
-                    if (videosRes.ok) {
-                        const videosData = await videosRes.json();
-                        // البحث عن فيديو من نوع Trailer أو Teaser
-                        const trailer = videosData.results.find(v => v.type === "Trailer" || v.type === "Teaser");
-                        if (trailer && trailer.key) {
-                            trailerKey = trailer.key;
-                            logStatus(`✅ تم العثور على إعلان YouTube: ${trailerKey}`);
-                        } else {
-                            logStatus("⚠️ لم يتم العثور على إعلان لهذه المادة.");
-                        }
-                    } else {
-                        logStatus("⚠️ تعذر جلب فيديوهات الإعلان.");
-                    }
-                } catch(e) {
-                    logStatus("⚠️ خطأ أثناء جلب الإعلان: " + e.message, true);
-                }
+                // 4. جلب مفتاح الإعلان باستخدام الدالة الجديدة مع الأولوية للغات
+                const trailerKey = await fetchTrailerKey(type, id, tmdbKey);
 
                 // 5. استخراج سنة الإنتاج
                 let year = "";
