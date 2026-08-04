@@ -1,5 +1,44 @@
 const globalMoviesData = [
     {
+    "title": "The Bad Guys: Haunted Heist",
+    "year": "2024",
+    "desc": "يشرع 'الأشرار' الماكرون في عملية سرقة خطيرة في الهالوين للاستحواذ على تميمة ثمينة من قصر مخيف، فما الضرر الذي قد يحدث؟",
+    "poster": "https://image.tmdb.org/t/p/w500/kMtnMUlNTdiTvwqf5zhiUq5QOsM.jpg",
+    "hdUrl": "https://streamtape.com/e/Q1LpdbVlgXSr9P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Q1LpdbVlgXSr9P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "رسوم متحركة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Michael Godere",
+            "character": "Wolf (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cwC5R5ErDsP81Dwo6154Ld5uves.jpg"
+        },
+        {
+            "name": "Ezekiel Ajeigbe",
+            "character": "Shark (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/uU6UCcQlyyXZ0hbergglsyVxlUm.jpg"
+        },
+        {
+            "name": "Raul Ceballos",
+            "character": "Piranha (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/8Pq2Igpm0x7XmkokP4yfGi3GdVr.jpg"
+        },
+        {
+            "name": "Chris Diamantopoulos",
+            "character": "Snake / Reginald E. Scary (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/oenBtpk0RTId4wacQKYU4cPcq8Z.jpg"
+        },
+        {
+            "name": "Mallory Low",
+            "character": "Tarantula (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/amS893X6E4w2n3Go73HkbuYZjI9.jpg"
+        }
+    ],
+    "trailerKey": "GXItzJuSHA0"
+},
+    {
     "title": "Extraction",
     "year": "2020",
     "desc": "عندما يُرسَل قاتل مأجور شديد المراس إلى 'بنغلاديش' لينقذ ابن زعيم عصابة مخدّرات من الاختطاف، تتحوّل مهمته إلى سباق للبحث عن الذات لأجل النجاة.",
