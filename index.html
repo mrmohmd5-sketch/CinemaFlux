@@ -1789,10 +1789,11 @@
                     const parts = item.genre.split(/[\s,،]+/).filter(part => part.trim().length > 0);
                     parts.forEach(part => {
                         let clean = part.trim();
-                        // تحويل التصنيفات حسب المطلوب
-                        if (clean === 'تلفازي') {
-                            return; // تجاهل تلفازي
+                        // استبعاد التصنيفات المطلوب حذفها
+                        if (clean === 'وفنتازيا' || clean === 'ومغامرة' || clean === 'فيلم') {
+                            return;
                         }
+                        // دمج خيال وعلمي
                         if (clean.includes('خيال') || clean.includes('علمي')) {
                             clean = 'خيال علمي';
                         } else if (clean.includes('رسوم') || clean.includes('متحركة')) {
