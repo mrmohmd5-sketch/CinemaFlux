@@ -132,7 +132,8 @@ const globalMoviesData = [
                 }
             ]
         }
-    ]
+    ] 
+    "trailerKey": "a6lzvWby9UE&pp"
 },
     {
     "title": "Mom Is 17 Again",
