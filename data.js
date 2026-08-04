@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "The Bad Guys: Haunted Heist",
+    "title": "The Bad Guys: Haunted Heist الاشرار سرقة و اشباح مدبلج",
     "year": "2024",
     "desc": "يشرع 'الأشرار' الماكرون في عملية سرقة خطيرة في الهالوين للاستحواذ على تميمة ثمينة من قصر مخيف، فما الضرر الذي قد يحدث؟",
     "poster": "https://image.tmdb.org/t/p/w500/kMtnMUlNTdiTvwqf5zhiUq5QOsM.jpg",
