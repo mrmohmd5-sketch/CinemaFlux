@@ -1,70 +1,5 @@
 const globalMoviesData = [
     {
-    "title": "Extraction",
-    "year": "2020",
-    "desc": "عندما يُرسَل قاتل مأجور شديد المراس إلى 'بنغلاديش' لينقذ ابن زعيم عصابة مخدّرات من الاختطاف، تتحوّل مهمته إلى سباق للبحث عن الذات لأجل النجاة.",
-    "poster": "https://image.tmdb.org/t/p/w500/mpc7QPLEBdxH7wdOjM8qxoTCc8q.jpg",
-    "hdUrl": "https://streamtape.com/e/8RexZm47XLF2Lo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/8RexZm47XLF2Lo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "7.3",
-    "genre": "حركة إثارة",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Chris Hemsworth",
-            "character": "Tyler Rake",
-            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
-        },
-        {
-            "name": "Rudhraksh Jaiswal",
-            "character": "Ovi Mahajan",
-            "image": "https://image.tmdb.org/t/p/w185/nIiqv0pbRwKeG7Ar42UrLgEBuYW.jpg"
-        },
-        {
-            "name": "Randeep Hooda",
-            "character": "Saju",
-            "image": "https://image.tmdb.org/t/p/w185/6Raio06bsLalCe4XDsknXxfDamV.jpg"
-        },
-        {
-            "name": "Golshifteh Farahani",
-            "character": "Nik Khan",
-            "image": "https://image.tmdb.org/t/p/w185/lbsd2lAIQq4egOUXDIfjhte12vv.jpg"
-        },
-        {
-            "name": "Pankaj Tripathi",
-            "character": "Ovi Mahajan Sr.",
-            "image": "https://image.tmdb.org/t/p/w185/f3Vxz0QB7PHeyPcXrfJX14Xkxnu.jpg"
-        },
-        {
-            "name": "David Harbour",
-            "character": "Gaspar",
-            "image": "https://image.tmdb.org/t/p/w185/qMFtMWlYVtFVyBoBhX5IoA5sN5a.jpg"
-        },
-        {
-            "name": "Bryon Lerum",
-            "character": "Rake's Son",
-            "image": "https://via.placeholder.com/185x278?text=No+Image"
-        },
-        {
-            "name": "Ryder Lerum",
-            "character": "Rake's Son",
-            "image": "https://via.placeholder.com/185x278?text=No+Image"
-        },
-        {
-            "name": "Shivam Vichare",
-            "character": "Sachin",
-            "image": "https://image.tmdb.org/t/p/w185/qFx7ZuAEUUmZIRKYAFV9omnAHcZ.jpg"
-        },
-        {
-            "name": "Piyush Khati",
-            "character": "Arjun",
-            "image": "https://image.tmdb.org/t/p/w185/9NeuXKK5BFYxZ0n1KOOWyViPloq.jpg"
-        }
-    ],
-    "trailerKey": "L6P3nI6VnlY",
-    "featured": true
-},
-    {
     "title": "Taken",
     "year": "2008",
     "desc": "أخذوا ابنته. سوف يأخذ حياتهم.\r أثناء إجازتها مع صديق في باريس ، يتم اختطاف فتاة أمريكية من قبل عصابة من المتاجرين بالبشر عازمين على بيعها في الدعارة القسرية. العمل ضد عقارب الساعة ، يجب على والدها الجاسوس السابق سحب كل المحطات لإنقاذها. ولكن مع أفضل سنواته التي ربما تكون وراءه ، قد تكون الوظيفة أكثر مما يمكنه التعامل معه.",
@@ -127,7 +62,6 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "ZxKDnpiJaVc"
-    "featured": true
 },
     {
     "title": "Pluribus",
@@ -200,7 +134,6 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "a6lzvWby9UE"
-    "featured": true
 },
     {
     "title": "Mom Is 17 Again",
@@ -265,7 +198,6 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "0IRxfKsrprU"
-    "featured": true
 },
     {
     "title": "Into the Wild",
@@ -330,7 +262,6 @@ const globalMoviesData = [
         }
     ],
     "trailerKey": "g7ArZ7VD-QQ"
-    "featured": true
 },
     {
     "title": "Moana 2",
@@ -393,8 +324,7 @@ const globalMoviesData = [
             "character": "Gramma Tala (voice)",
             "image": "https://image.tmdb.org/t/p/w185/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Moana موانا مدبلج",
@@ -465,8 +395,7 @@ const globalMoviesData = [
             "name": "Jemaine Clement",
             "image": "https://image.tmdb.org/t/p/w185/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Incoming",
@@ -499,8 +428,7 @@ const globalMoviesData = [
             "name": "Bardia Seiri",
             "image": "https://image.tmdb.org/t/p/w185/xNJY25SrX4fTzg5aobu4NINJSVF.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Toy Story 5",
@@ -533,8 +461,7 @@ const globalMoviesData = [
             "name": "Conan O'Brien",
             "image": "https://image.tmdb.org/t/p/w185/deRbViPut0t80miscBpP2DhBJU5.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Don't Look Up",
@@ -567,8 +494,7 @@ const globalMoviesData = [
             "name": "Rob Morgan",
             "image": "https://image.tmdb.org/t/p/w185/ps6wR3JZnk6MY9tbtOLORgadqs6.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Jojo Rabbit",
@@ -601,8 +527,7 @@ const globalMoviesData = [
             "name": "Sam Rockwell",
             "image": "https://image.tmdb.org/t/p/w185/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Boy Kills World",
@@ -635,8 +560,7 @@ const globalMoviesData = [
             "name": "Brett Gelman",
             "image": "https://image.tmdb.org/t/p/w185/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Everything Everywhere All at Once",
@@ -669,8 +593,7 @@ const globalMoviesData = [
             "name": "Jamie Lee Curtis",
             "image": "https://image.tmdb.org/t/p/w185/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Furiosa: A Mad Max Saga",
@@ -703,8 +626,7 @@ const globalMoviesData = [
             "name": "George Shevtsov",
             "image": "https://image.tmdb.org/t/p/w185/cuOoCZShfvNrOvrWqH2dPyBfrZS.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "The Furious",
@@ -737,8 +659,7 @@ const globalMoviesData = [
             "name": "JeeJa Yanin",
             "image": "https://image.tmdb.org/t/p/w185/73xhAKFbeNSlJTwUCsQCAtryLYS.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "The Other Woman",
@@ -771,8 +692,7 @@ const globalMoviesData = [
             "name": "Don Johnson",
             "image": "https://image.tmdb.org/t/p/w185/6s6oav541p7xspCG6PvXut7knkP.jpg"
         }
-    ],
-    "featured": true
+    ]
 },
     {
     "title": "Vanilla Sky",
