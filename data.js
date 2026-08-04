@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Extraction",
+    "year": "2020",
+    "desc": "عندما يُرسَل قاتل مأجور شديد المراس إلى 'بنغلاديش' لينقذ ابن زعيم عصابة مخدّرات من الاختطاف، تتحوّل مهمته إلى سباق للبحث عن الذات لأجل النجاة.",
+    "poster": "https://image.tmdb.org/t/p/w500/mpc7QPLEBdxH7wdOjM8qxoTCc8q.jpg",
+    "hdUrl": "https://streamtape.com/e/8RexZm47XLF2Lo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/8RexZm47XLF2Lo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "character": "Tyler Rake",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Rudhraksh Jaiswal",
+            "character": "Ovi Mahajan",
+            "image": "https://image.tmdb.org/t/p/w185/nIiqv0pbRwKeG7Ar42UrLgEBuYW.jpg"
+        },
+        {
+            "name": "Randeep Hooda",
+            "character": "Saju",
+            "image": "https://image.tmdb.org/t/p/w185/6Raio06bsLalCe4XDsknXxfDamV.jpg"
+        },
+        {
+            "name": "Golshifteh Farahani",
+            "character": "Nik Khan",
+            "image": "https://image.tmdb.org/t/p/w185/lbsd2lAIQq4egOUXDIfjhte12vv.jpg"
+        },
+        {
+            "name": "Pankaj Tripathi",
+            "character": "Ovi Mahajan Sr.",
+            "image": "https://image.tmdb.org/t/p/w185/f3Vxz0QB7PHeyPcXrfJX14Xkxnu.jpg"
+        },
+        {
+            "name": "David Harbour",
+            "character": "Gaspar",
+            "image": "https://image.tmdb.org/t/p/w185/qMFtMWlYVtFVyBoBhX5IoA5sN5a.jpg"
+        },
+        {
+            "name": "Bryon Lerum",
+            "character": "Rake's Son",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Ryder Lerum",
+            "character": "Rake's Son",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Shivam Vichare",
+            "character": "Sachin",
+            "image": "https://image.tmdb.org/t/p/w185/qFx7ZuAEUUmZIRKYAFV9omnAHcZ.jpg"
+        },
+        {
+            "name": "Piyush Khati",
+            "character": "Arjun",
+            "image": "https://image.tmdb.org/t/p/w185/9NeuXKK5BFYxZ0n1KOOWyViPloq.jpg"
+        }
+    ],
+    "trailerKey": "L6P3nI6VnlY",
+    "featured": true
+},
+    {
     "title": "Taken",
     "year": "2008",
     "desc": "أخذوا ابنته. سوف يأخذ حياتهم.\r أثناء إجازتها مع صديق في باريس ، يتم اختطاف فتاة أمريكية من قبل عصابة من المتاجرين بالبشر عازمين على بيعها في الدعارة القسرية. العمل ضد عقارب الساعة ، يجب على والدها الجاسوس السابق سحب كل المحطات لإنقاذها. ولكن مع أفضل سنواته التي ربما تكون وراءه ، قد تكون الوظيفة أكثر مما يمكنه التعامل معه.",
