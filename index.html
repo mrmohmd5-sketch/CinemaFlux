@@ -2012,6 +2012,24 @@
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
 
+            // ===== عرض إعلان YouTube =====
+            const adContainer = document.getElementById('adContainer');
+            if (item.trailerKey && item.trailerKey.length > 0) {
+                adContainer.innerHTML = `
+                    <iframe 
+                        src="https://www.youtube.com/embed/${item.trailerKey}" 
+                        title="YouTube trailer"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                `;
+                adContainer.style.display = 'block';
+            } else {
+                adContainer.innerHTML = `<div class="ad-placeholder">${currentLang === 'ar' ? 'لا يوجد إعلان متاح' : 'No trailer available'}</div>`;
+                adContainer.style.display = 'block';
+            }
+
             // عرض طاقم التمثيل مع إمكانية النقر (تم التعديل لإظهار اسم الشخصية واسم الممثل كاملين)
             const sliderCast = document.getElementById('castListSlider');
             sliderCast.innerHTML = '';
