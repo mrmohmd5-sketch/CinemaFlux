@@ -548,6 +548,34 @@
         .media-meta-row { font-size: 12px; color: var(--text-sub); margin-bottom: 12px; display: flex; gap: 10px; align-items: center; }
         .media-description { font-size: 13px; color: var(--text-sub); line-height: 1.6; margin-bottom: 20px; }
 
+        /* ===== حاوية الإعلان (YouTube Ad) ===== */
+        #adContainer {
+            margin: 15px 0;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 16 / 9;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+        #adContainer iframe,
+        #adContainer img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+        #adContainer .ad-placeholder {
+            color: var(--text-sub);
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+        }
+
         .cast-container { margin-top: 20px; }
         .cast-slider {
             display: flex;
@@ -1394,10 +1422,15 @@
                     <div class="media-info-block">
                         <h1 id="currentTitle" class="media-title-row">-</h1>
                         <div class="media-meta-row">
-                            <span class="imdb-badge" id="currentRating">0.0</span>
+                            <span class="imdb-badge">⭐ <span id="currentRating">0.0</span> IMDb</span>
                             <span id="currentMetaInfo">-</span>
                         </div>
                         <p id="currentDesc" class="media-description">-</p>
+
+                        <!-- ===== حاوية الإعلان (YouTube Ad) ===== -->
+                        <div id="adContainer">
+                            <div class="ad-placeholder">سيتم وضع الإعلان هنا</div>
+                        </div>
 
                         <div class="cast-container" id="castContainerBlock">
                             <div class="row-title" style="font-size: 14px; margin-bottom: 10px; padding: 0;" id="txtCastTitle">الكادر والطاقم</div>
@@ -1554,6 +1587,8 @@
         function createMovieCard(item) {
             const card = document.createElement('div');
             card.className = 'movie-card';
+            // تعديل لعرض التقييم مع علامة IMDb
+            const ratingText = item.rating ? `⭐ ${item.rating} IMDb` : '⭐ N/A IMDb';
             card.innerHTML = `
                 <div class="poster-wrapper">
                     <img class="movie-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy" decoding="async" fetchpriority="low">
@@ -1562,7 +1597,7 @@
                 <div class="movie-info">
                     <p class="movie-name">${item.title}</p>
                     <div class="movie-meta">
-                        <span class="imdb-badge">${item.rating || 'N/A'}</span>
+                        <span class="imdb-badge">${ratingText}</span>
                         <span style="font-size:10px; margin-top:2px;">${item.year || ''}</span>
                     </div>
                 </div>
@@ -1972,6 +2007,7 @@
             }
 
             document.getElementById('currentTitle').innerText = item.title;
+            // تحديث التقييم مع علامة IMDb (تم تعديلها في HTML)
             document.getElementById('currentRating').innerText = item.rating || "0.0";
             document.getElementById('currentMetaInfo').innerText = `${item.year || ''} • ${item.genre || ''}`;
             document.getElementById('currentDesc').innerText = item.desc || "";
@@ -2288,11 +2324,13 @@
                 matches.forEach(item => {
                     const row = document.createElement('div');
                     row.className = 'search-item-row';
+                    // تعديل لعرض التقييم مع IMDb
+                    const ratingText = item.rating ? `⭐ ${item.rating} IMDb` : '⭐ N/A IMDb';
                     row.innerHTML = `
                         <img class="search-item-poster" src="${item.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy" decoding="async" fetchpriority="low">
                         <div class="search-item-details">
                             <h4 class="search-item-title">${item.title}</h4>
-                            <div class="search-item-meta">${item.year || ''} • ★ ${item.rating || '0.0'}</div>
+                            <div class="search-item-meta">${item.year || ''} • ${ratingText}</div>
                         </div>
                     `;
                     const img = row.querySelector('.search-item-poster');
@@ -2343,11 +2381,12 @@
                 row.className = 'search-item-row';
 
                 if (matchedItem) {
+                    const ratingText = matchedItem.rating ? `⭐ ${matchedItem.rating} IMDb` : '⭐ N/A IMDb';
                     row.innerHTML = `
                         <img class="search-item-poster" src="${matchedItem.poster}" loading="lazy" decoding="async" fetchpriority="low">
                         <div class="search-item-details">
                             <h4 class="search-item-title">${matchedItem.title}</h4>
-                            <div class="search-item-meta">${matchedItem.year || ''} • ★ ${matchedItem.rating || '0.0'}</div>
+                            <div class="search-item-meta">${matchedItem.year || ''} • ${ratingText}</div>
                         </div>
                         <span class="remove-search-btn" onclick="event.stopPropagation(); removeSearchTerm(${index})">×</span>
                     `;
@@ -2447,13 +2486,14 @@
             }
 
             history.forEach((hist) => {
+                const ratingText = hist.rating ? `⭐ ${hist.rating} IMDb` : '⭐ N/A IMDb';
                 const row = document.createElement('div');
                 row.className = 'search-item-row';
                 row.innerHTML = `
                     <img class="search-item-poster" src="${hist.poster}" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400'" loading="lazy" decoding="async" fetchpriority="low">
                     <div class="search-item-details">
                         <h4 class="search-item-title">${hist.title}</h4>
-                        <div class="search-item-meta">${hist.year || ''} • ★ ${hist.rating || '0.0'}</div>
+                        <div class="search-item-meta">${hist.year || ''} • ${ratingText}</div>
                     </div>
                 `;
                 const img = row.querySelector('.search-item-poster');
