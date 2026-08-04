@@ -136,9 +136,9 @@
          * @returns {Promise<string>} - مفتاح الفيديو أو سلسلة فارغة
          */
         async function fetchTrailerKey(type, id, apiKey) {
-            // 1. محاولة جلب الفيديوهات باللغة العربية
+            // 1. محاولة جلب الفيديوهات باللغة العربية (مع include_video_language)
             logStatus("⏳ البحث عن إعلان باللغة العربية...");
-            let url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=ar`;
+            let url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=ar&include_video_language=ar`;
             let response = await fetch(url);
             let data = await response.json();
             let videos = data.results || [];
@@ -150,9 +150,9 @@
                 return trailer.key;
             }
 
-            // 2. محاولة جلب الفيديوهات باللغة الإنجليزية
+            // 2. محاولة جلب الفيديوهات باللغة الإنجليزية (مع include_video_language)
             logStatus("⏳ لم يتم العثور على إعلان عربي، جاري البحث باللغة الإنجليزية...");
-            url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=en`;
+            url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=en&include_video_language=en`;
             response = await fetch(url);
             data = await response.json();
             videos = data.results || [];
