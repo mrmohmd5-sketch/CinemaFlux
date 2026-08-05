@@ -1789,8 +1789,8 @@
                     const parts = item.genre.split(/[\s,،]+/).filter(part => part.trim().length > 0);
                     parts.forEach(part => {
                         let clean = part.trim();
-                        // استبعاد التصنيفات المطلوب حذفها (تم حذف فقط "وفنتازيا")
-                        if (clean === 'وفنتازيا') {
+                        // استبعاد التصنيفات المطلوب حذفها
+                        if (clean === 'وفنتازيا' || clean === 'ومغامرة' || clean === 'فيلم' || clean === 'تلفازي') {
                             return;
                         }
                         // دمج خيال وعلمي
