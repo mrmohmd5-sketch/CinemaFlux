@@ -3,7 +3,7 @@ const globalMoviesData = [
     "title": "Everything Everywhere All at Once",
     "year": "2022",
     "desc": "تتورط مهاجرة صينية مسنة في مغامرة مجنونة، حينما تكتشف أنها وحدها من يستطيع إنقاذ العالم من خلال اكتشاف العوالم الأخرى الموازية لعالمها.",
-    "poster": "https://image.tmdb.org/t/p/w500/HGRePgXtUJH8MvgFRsGFMmnNHJ.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
     "hdUrl": "https://streamtape.com/e/066YG4ODX4HZyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/066YG4ODX4HZyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.7",
