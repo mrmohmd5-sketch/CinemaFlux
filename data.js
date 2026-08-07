@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Furiosa: A Mad Max Saga",
+    "year": "2024",
+    "desc": "مع سقوط العالم، يتم اختطاف فيوريوسا الصغيرة وتقع في أيدي حشد كبير من راكبي الدراجات النارية بقيادة أمير الحرب ديمنتوس. ويجب على فيوريوسا أن تنجو من العديد من المصاعب وأن تجد طريقها إلى المنزل.",
+    "poster": "https://image.tmdb.org/t/p/w500/m6ODgYEzw4ETeVyIfW8yQWwtH2S.jpg",
+    "hdUrl": "https://streamtape.com/e/bzdM11mgQyCDOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bzdM11mgQyCDOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Anya Taylor-Joy",
+            "character": "Furiosa",
+            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+            "name": "Chris Hemsworth",
+            "character": "Dementus",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Tom Burke",
+            "character": "Praetorian Jack",
+            "image": "https://image.tmdb.org/t/p/w185/4IHlAZ9bJ82VAd6HUOWFgo81SDq.jpg"
+        },
+        {
+            "name": "Alyla Browne",
+            "character": "Young Furiosa",
+            "image": "https://image.tmdb.org/t/p/w185/1aAyhOWIP1tnIZwmoMpENvpyQff.jpg"
+        },
+        {
+            "name": "George Shevtsov",
+            "character": "The History Man",
+            "image": "https://image.tmdb.org/t/p/w185/cuOoCZShfvNrOvrWqH2dPyBfrZS.jpg"
+        },
+        {
+            "name": "Lachy Hulme",
+            "character": "Immortan Joe / Rizzdale Pell",
+            "image": "https://image.tmdb.org/t/p/w185/z6ZEqpIkh1LYQXgSNMcc8akW3ZR.jpg"
+        },
+        {
+            "name": "John Howard",
+            "character": "The People Eater",
+            "image": "https://image.tmdb.org/t/p/w185/2XwZDmoeoSiLKDjmmXxQK4m5kHM.jpg"
+        },
+        {
+            "name": "Angus Sampson",
+            "character": "Organic Mechanic",
+            "image": "https://image.tmdb.org/t/p/w185/8EX6ul2zyVUg91oDvI3RpYS5szV.jpg"
+        },
+        {
+            "name": "Charlee Fraser",
+            "character": "Mary Jabassa",
+            "image": "https://image.tmdb.org/t/p/w185/lFxpl1F961ORKoNX6F62iEa419m.jpg"
+        },
+        {
+            "name": "Elsa Pataky",
+            "character": "Vuvalini General / Mr Norton",
+            "image": "https://image.tmdb.org/t/p/w185/fsA7hxz70SVvCm8dZuAGvBHtVDF.jpg"
+        }
+    ],
+    "trailerKey": "IBpAAamVZXc",
+    "featured": true
+},
+    {
     "title": "The Maze Runner",
     "year": "2014",
     "desc": "يستيقظ توماس (ديلان أوبراين) ليجد نفسه داخل مصعد غريب ومصاب بفقدان للذاكرة؛ حيث إنه لا يستطيع تذكر اسمه أو عائلته أو منزله. عندما يتم فتح باب المصعد يجد توماس نفسه محاطًا بمجموعة من الصبية يرحبون به في مكانه الجديد في (جلايد). يجد توماس أن جلايد محاطة بجدران ضخمة من الحجارة، والصبية الذين معه لا يعلمون أيضًا كيف أتوا إلى جلايد؟ ولكنهم يعلمون أن وراء تلك الحجارة متاهة غريبة لا يعلم حلها أي صبي، رغم ذلك يعلم الصبية أنهم إذا حلوا تلك المتاهة سيعودون إلى منازلهم.",
