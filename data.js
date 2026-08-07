@@ -667,39 +667,6 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Everything Everywhere All at Once",
-    "year": "2022",
-    "desc": "تتورط مهاجرة صينية مسنة في مغامرة مجنونة، حينما تكتشف أنها وحدها من يستطيع إنقاذ العالم من خلال اكتشاف العوالم الأخرى الموازية لعالمها.",
-    "poster": "https://image.tmdb.org/t/p/original/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
-    "hdUrl": "https://streamtape.com/e/066YG4ODX4HZyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/mrkZ7PRpYvu2yR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "7.7",
-    "genre": "حركة مغامرة خيال علمي",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Michelle Yeoh",
-            "image": "https://image.tmdb.org/t/p/w185/i6fHvGt7Rb8oVyjjdQVV6vEHB94.jpg"
-        },
-        {
-            "name": "Stephanie Hsu",
-            "image": "https://image.tmdb.org/t/p/w185/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg"
-        },
-        {
-            "name": "Ke Huy Quan",
-            "image": "https://image.tmdb.org/t/p/w185/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg"
-        },
-        {
-            "name": "James Hong",
-            "image": "https://image.tmdb.org/t/p/w185/v3lfw5aHOy0paOCx6WHiSnwzbH0.jpg"
-        },
-        {
-            "name": "Jamie Lee Curtis",
-            "image": "https://image.tmdb.org/t/p/w185/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg"
-        }
-    ]
-},
-    {
     "title": "Furiosa: A Mad Max Saga",
     "year": "2024",
     "desc": "مع سقوط العالم، يتم اختطاف فيوريوسا الصغيرة وتقع في أيدي حشد كبير من راكبي الدراجات النارية بقيادة أمير الحرب ديمنتوس. ويجب على فيوريوسا أن تنجو من العديد من المصاعب وأن تجد طريقها إلى المنزل.",
