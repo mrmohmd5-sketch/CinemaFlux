@@ -149,15 +149,51 @@
             100% { background-position: 200% 0%; }
         }
 
-        /* ===== القائمة المنسدلة للتصنيفات (معدلة) ===== */
-        .genre-select-wrapper {
+        /* ===== حاوية الأزرار في الهيدر (زر التحميل والتصنيفات) ===== */
+        .header-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             flex-shrink: 0;
             margin-right: auto; /* في RTL يكون على اليسار */
+            align-items: flex-end;
         }
-        html[dir="ltr"] .genre-select-wrapper {
+        html[dir="ltr"] .header-actions {
             margin-right: 0;
             margin-left: auto;
+            align-items: flex-end;
         }
+
+        /* ===== زر تحميل التطبيق ===== */
+        .download-app-btn {
+            background-color: var(--accent);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px 14px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.25);
+            border: 1px solid var(--accent);
+            width: fit-content;
+        }
+        .download-app-btn:hover {
+            background-color: #ff0a1f;
+            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+            transform: scale(1.05);
+            color: #ffffff;
+        }
+
+        /* ===== القائمة المنسدلة للتصنيفات (معدلة) ===== */
+        .genre-select-wrapper {
+            width: 100%;
+        }
+        
         #genreSelect {
             background-color: var(--bg-card);
             color: var(--text-main);
@@ -942,7 +978,7 @@
         .back-nav-btn, .load-more-btn, .view-all-btn, .toggle-btn, .comment-submit-btn,
         .auth-toggle-link, .close-auth, .remove-search-btn, .movie-card, .search-item-row,
         .row-title, .voice-icon, .slide-item, .auth-box button, .auth-box input,
-        .comment-input-box input, .search-bar-wrapper input {
+        .comment-input-box input, .search-bar-wrapper input, .download-app-btn {
             transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             will-change: transform, background, box-shadow, color;
             position: relative;
@@ -1029,21 +1065,25 @@
             </div>
             <span class="logo-glow-line"></span>
         </div>
-        <!-- القائمة المنسدلة للتصنيفات -->
-        <div class="genre-select-wrapper">
-            <select id="genreSelect" style="display: none;"></select>
+        
+        <div class="header-actions">
+            <a href="https://www.mediafire.com/file/num5eczdf5r8mxn/CinemaFlux_.apk/file" target="_blank" class="download-app-btn">
+                📥 <span id="txtDownloadApp">تحميل التطبيق</span>
+            </a>
+            
+            <div class="genre-select-wrapper">
+                <select id="genreSelect" style="display: none;"></select>
+            </div>
         </div>
     </header>
 
     <div class="container" id="mainContainer">
-        <!-- سيتم عرض المحتوى هنا -->
         <div class="loading-placeholder" id="loadingIndicator">
             <div class="spinner"></div>
             <span>جاري تحميل المكتبة ...</span>
         </div>
     </div>
 
-    <!-- ===== شريط التنقل السفلي (5 أزرار) ===== -->
     <div class="bottom-nav" id="bottomNav" style="display:none;">
         <div class="nav-item active" id="navHome" onclick="switchNav('home')">
             <span class="nav-icon">🏠</span>
@@ -1067,7 +1107,6 @@
         </div>
     </div>
 
-    <!-- ===== نافذة منبثقة لأفلام الممثل ===== -->
     <div class="actor-overlay" id="actorOverlay" onclick="if(event.target===this) closeActorOverlay()">
         <div class="actor-box">
             <button class="actor-close-btn" onclick="closeActorOverlay()">✕</button>
@@ -1076,7 +1115,6 @@
         </div>
     </div>
 
-    <!-- ===== نافذة تسجيل الدخول ===== -->
     <div class="auth-overlay" id="authModal">
         <div class="auth-box">
             <span class="close-auth" onclick="closeAuthModal()">×</span>
@@ -1193,7 +1231,8 @@
                 genreSelectLabel: "-- اختر التصنيف --",
                 genreResultsTitle: "نتائج التصنيف",
                 loadMore: "تحميل المزيد",
-                viewAll: "عرض الكل"
+                viewAll: "عرض الكل",
+                downloadApp: "تحميل التطبيق"
             },
             en: {
                 logo: "🎬 CinemaFlux",
@@ -1251,7 +1290,8 @@
                 genreSelectLabel: "-- Select Genre --",
                 genreResultsTitle: "Genre Results",
                 loadMore: "Load More",
-                viewAll: "View All"
+                viewAll: "View All",
+                downloadApp: "Download App"
             }
         };
 
@@ -1346,24 +1386,20 @@
             if (container.querySelector('.app-view')) return; // تم البناء مسبقاً
 
             container.innerHTML = `
-                <!-- ================= الصفحة الرئيسية ================= -->
                 <div id="viewHome" class="app-view active">
                     <div class="slider-container">
                         <div class="featured-slider" id="featuredSlider"></div>
                     </div>
-                    <!-- حاوية نتائج التصنيف (اختفى الـ select القديم) -->
                     <div id="genreResultsContainer" style="display:none; margin-bottom:20px;">
                         <div class="row-header"><div class="row-title" id="genreResultsTitle">نتائج التصنيف</div></div>
                         <div class="category-grid" id="genreResultsGrid"></div>
                     </div>
-                    <!-- أفلام مميزة (سلايدر) -->
                     <div id="featuredMoviesSection">
                         <div class="row-header">
                             <div class="row-title" id="featuredMoviesTitle" style="cursor:pointer;">أفلام مميزة</div>
                         </div>
                         <div class="movies-slider" id="featuredMoviesSlider"></div>
                     </div>
-                    <!-- أفضل 100 فيلم (سلايدر) -->
                     <div id="topMoviesSection">
                         <div class="row-header">
                             <div class="row-title" id="topMoviesTitle" style="cursor:pointer;">أفضل 100 فيلم تقيماً</div>
@@ -1371,7 +1407,6 @@
                         </div>
                         <div class="movies-slider" id="topMoviesSlider"></div>
                     </div>
-                    <!-- أفضل المسلسلات (سلايدر) -->
                     <div id="topSeriesSection">
                         <div class="row-header">
                             <div class="row-title" id="topSeriesTitle" style="cursor:pointer;">أفضل المسلسلات</div>
@@ -1381,7 +1416,6 @@
                     </div>
                 </div>
 
-                <!-- ================= صفحة كل الأفلام ================= -->
                 <div id="viewAllMovies" class="app-view">
                     <button class="back-nav-btn" onclick="switchNav('home')">➔ <span id="txtBackToMainFromAllMovies">الرئيسية</span></button>
                     <div class="row-header">
@@ -1390,7 +1424,6 @@
                     <div class="category-grid" id="allMoviesGrid"></div>
                 </div>
 
-                <!-- ================= صفحة كل المسلسلات ================= -->
                 <div id="viewAllSeries" class="app-view">
                     <button class="back-nav-btn" onclick="switchNav('home')">➔ <span id="txtBackToMainFromAllSeries">الرئيسية</span></button>
                     <div class="row-header">
@@ -1399,7 +1432,6 @@
                     <div class="category-grid" id="allSeriesGrid"></div>
                 </div>
 
-                <!-- ================= صفحة البحث ================= -->
                 <div id="viewSearch" class="app-view">
                     <div class="search-container">
                         <div class="search-bar-wrapper">
@@ -1421,7 +1453,6 @@
                     </div>
                 </div>
 
-                <!-- ================= صفحة البروفايل ================= -->
                 <div id="viewProfile" class="app-view">
                     <div class="profile-card">
                         <div class="profile-title" id="userDisplayTitle">هل لديك حساب?</div>
@@ -1449,7 +1480,6 @@
                     <div class="elena-credit">تم التطوير من قبل Elena</div>
                 </div>
 
-                <!-- ================= صفحة الإعدادات ================= -->
                 <div id="viewSettings" class="app-view">
                     <button class="back-nav-btn" onclick="switchView('viewProfile')">➔ <span id="txtBackToProfile">رجوع</span></button>
                     <div class="row-header"><div class="row-title" id="txtSettingsTitlePage">الإعدادات العامة</div></div>
@@ -1476,7 +1506,6 @@
                     </div>
                 </div>
 
-                <!-- ================= صفحة سجل المشاهدة ================= -->
                 <div id="viewHistory" class="app-view">
                     <button class="back-nav-btn" onclick="switchView('viewProfile')">➔ <span id="txtBackFromHistory">رجوع</span></button>
                     <div class="row-header">
@@ -1486,7 +1515,6 @@
                     <div class="search-list-vertical" id="fullWatchHistoryList"></div>
                 </div>
 
-                <!-- ================= صفحة تفاصيل الفيلم ================= -->
                 <div id="viewMovieDetail" class="app-view">
                     <button class="back-nav-btn" onclick="closeMoviePage()">➔ <span id="txtBackToMain">الرئيسية</span></button>
 
@@ -1509,7 +1537,6 @@
                         </div>
                         <p id="currentDesc" class="media-description">-</p>
 
-                        <!-- ===== حاوية الإعلان (YouTube Ad) ===== -->
                         <div id="adContainer">
                             <div class="ad-placeholder">سيتم وضع الإعلان هنا</div>
                         </div>
@@ -1519,7 +1546,6 @@
                             <div class="cast-slider" id="castListSlider"></div>
                         </div>
 
-                        <!-- ===== اقتراحات مشابهة ===== -->
                         <div class="similar-container" id="similarContainer">
                             <div class="row-title" style="font-size: 14px; margin-bottom: 10px; padding: 0;" id="txtSimilarTitle">اقتراحات مشابهة 🎯</div>
                             <div class="similar-slider" id="similarSlider"></div>
@@ -1536,22 +1562,18 @@
                     </div>
                 </div>
 
-                <!-- ================= صفحة عرض القوائم الكاملة ================= -->
-                <!-- صفحة الأفلام المميزة -->
                 <div id="viewFeaturedMovies" class="app-view">
                     <button class="back-nav-btn" onclick="closeListView('viewFeaturedMovies')">➔ <span id="txtBackToMainFromFeatured">الرئيسية</span></button>
                     <div class="row-header"><div class="row-title" id="featuredListTitle" style="cursor:default;">أفلام مميزة</div></div>
                     <div class="category-grid compact-grid" id="featuredListGrid"></div>
                 </div>
 
-                <!-- صفحة أفضل 100 فيلم -->
                 <div id="viewTopMovies" class="app-view">
                     <button class="back-nav-btn" onclick="closeListView('viewTopMovies')">➔ <span id="txtBackToMainFromTopMovies">الرئيسية</span></button>
                     <div class="row-header"><div class="row-title" id="topMoviesListTitle" style="cursor:default;">أفضل 100 فيلم تقيماً</div></div>
                     <div class="category-grid compact-grid" id="topMoviesListGrid"></div>
                 </div>
 
-                <!-- صفحة أفضل المسلسلات -->
                 <div id="viewTopSeries" class="app-view">
                     <button class="back-nav-btn" onclick="closeListView('viewTopSeries')">➔ <span id="txtBackToMainFromTopSeries">الرئيسية</span></button>
                     <div class="row-header"><div class="row-title" id="topSeriesListTitle" style="cursor:default;">أفضل المسلسلات</div></div>
@@ -2781,12 +2803,13 @@
             document.getElementById('txtCastTitle').innerText = dict.castTitle;
             document.getElementById('txtSimilarTitle').innerText = dict.similarTitle;
             document.querySelectorAll('.lbl-watch-now').forEach(el => el.innerText = dict.watchNow);
-            // تحديث الترجمة في قائمة التصنيفات
+            // تحديث الترجمة في قائمة التصنيفات وزر التحميل
             const select = document.getElementById('genreSelect');
             if (select) {
                 const defaultOption = select.querySelector('option[value=""]');
                 if (defaultOption) defaultOption.innerText = dict.genreSelectLabel;
             }
+            document.getElementById('txtDownloadApp').innerText = dict.downloadApp;
         }
 
         // ===== نظام العضوية =====
