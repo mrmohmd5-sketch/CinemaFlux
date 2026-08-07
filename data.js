@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Toy Story 5",
+    "year": "2026",
+    "desc": "عندما تحصل 'بوني' على جهاز 'ليلي باد' اللوحي كهدية وتنجذب إليه بشكلٍ كبير، يجد 'وودي' و'باز' و'جيسي' وبقية الألعاب أنفسهم أمام تحدٍ غير مسبوق، إذ تصبح مهمتهم في لفت انتباهها أصعب من أي وقت مضى، بينما يواجهون تهديدًا جديدًا يهدد عالم اللعب الذي اعتادوا عليه.",
+    "poster": "https://image.tmdb.org/t/p/w500/b9yODva86tl5Em8cOoKSQQzzAy4.jpg",
+    "hdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "رسوم متحركة عائلي كوميديا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hanks",
+            "character": "Woody (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+            "name": "Tim Allen",
+            "character": "Buzz Lightyear (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+            "name": "Joan Cusack",
+            "character": "Jessie (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
+        },
+        {
+            "name": "Greta Lee",
+            "character": "Lilypad (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/6SydTis4XUcovlwIGskT59JowLX.jpg"
+        },
+        {
+            "name": "Conan O'Brien",
+            "character": "Smarty Pants (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/deRbViPut0t80miscBpP2DhBJU5.jpg"
+        },
+        {
+            "name": "Craig Robinson",
+            "character": "Atlas (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg"
+        },
+        {
+            "name": "Shelby Rabara",
+            "character": "Snappy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ouMiEKlhCj2LFKEQtI6fGRMDemF.jpg"
+        },
+        {
+            "name": "Tony Hale",
+            "character": "Forky (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ar4uapp4w5wMkThZcqWUNMSTO8z.jpg"
+        },
+        {
+            "name": "Scarlett Spears",
+            "character": "Bonnie (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/h0loJ4v3wbUfUA6dxUYv7B6fET1.jpg"
+        },
+        {
+            "name": "Jay Hernandez",
+            "character": "Bonnie’s Dad (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/rh4pzTAJvy0i84HYV4xZxCXuXgV.jpg"
+        }
+    ],
+    "trailerKey": "jtzvhwiabrA",
+    "featured": true
+},
+    {
     "title": "Don't Look Up",
     "year": "2021",
     "desc": "ينطلق عالِما فلك في جولة إعلامية لتحذير البشرية من مذنّب يتّجه بسرعة نحو الأرض سيدمّر الكوكب... ولكن لا حياة لمن تنادي في هذا العالم المُشتّت!",
