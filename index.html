@@ -155,7 +155,7 @@
             flex-direction: column;
             gap: 10px;
             flex-shrink: 0;
-            margin-right: auto; /* في RTL يكون على اليسار */
+            margin-right: auto;
             align-items: flex-end;
         }
         html[dir="ltr"] .header-actions {
@@ -189,41 +189,79 @@
             color: #ffffff;
         }
 
-        /* ===== القائمة المنسدلة للتصنيفات (معدلة) ===== */
+        /* ===== القائمة المنسدلة للتصنيفات (المحدثة والاحترافية) ===== */
         .genre-select-wrapper {
+            position: relative;
+            display: inline-block;
+            min-width: 140px;
             width: 100%;
         }
         
+        .genre-select-wrapper::after {
+            content: '▼';
+            font-size: 10px;
+            color: var(--text-sub);
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: color 0.3s ease;
+        }
+        
+        html[dir="ltr"] .genre-select-wrapper::after {
+            left: auto;
+            right: 14px;
+        }
+
+        .genre-select-wrapper:hover::after {
+            color: var(--accent);
+        }
+        
         #genreSelect {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
             background-color: var(--bg-card);
             color: var(--text-main);
             border: 1px solid var(--border-color);
             border-radius: 20px;
-            padding: 6px 16px 6px 12px;
-            font-size: 13px;
-            font-weight: 500;
+            padding: 6px 14px 6px 32px; /* مسافة للسهم في اليمين/اليسار */
+            font-size: 12px;
+            font-weight: bold;
             cursor: pointer;
             outline: none;
-            transition: all 0.2s ease;
-            min-width: 140px;
-            max-width: 200px;
-            appearance: auto;
-            -webkit-appearance: auto;
-            background-image: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            width: 100%;
+            font-family: inherit;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
-        #genreSelect:hover {
+        
+        html[dir="ltr"] #genreSelect {
+            padding: 6px 32px 6px 14px;
+        }
+
+        #genreSelect:hover, #genreSelect:focus {
             border-color: var(--accent);
-            box-shadow: 0 0 12px rgba(229, 9, 20, 0.2);
-        }
-        #genreSelect:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.25);
-        }
-        #genreSelect option {
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.25);
             background-color: var(--bg-surface);
+        }
+        
+        #genreSelect option {
+            background-color: var(--bg-card);
             color: var(--text-main);
-            padding: 6px 12px;
+            padding: 8px 12px;
             font-size: 13px;
+            font-weight: 500;
+        }
+        
+        /* تجميل شريط التمرير داخل القائمة المنسدلة */
+        #genreSelect::-webkit-scrollbar {
+            width: 6px;
+        }
+        #genreSelect::-webkit-scrollbar-thumb {
+            background-color: var(--accent);
+            border-radius: 10px;
         }
 
         /* ===== الحاوية العامة ===== */
@@ -2083,9 +2121,7 @@
         }
 
         // ===== دوال صفحة الفيلم (كما هي) =====
-        // ... (سيتم الاحتفاظ بكل الكود الخاص بصفحة الفيلم، والبحث، البروفايل، إلخ)
-        // نظراً لطول الكود، سأضع هنا دوال أساسية مع المحافظة على كل الوظائف.
-
+        
         // ===== دوال فتح وإغلاق صفحة الفيلم =====
         function openMoviePage(item, isRestore = false) {
             activeMovieItem = item;
@@ -2250,9 +2286,6 @@
                 switchNav('home');
             }
         }
-
-        // ===== دوال مساعدة (التعليقات، البحث، البروفايل، إلخ) =====
-        // ... (سيتم الاحتفاظ بكل الكود الأصلي، مع إضافة التعديلات المطلوبة)
 
         // ===== دوال البحث =====
         function handleSearchSearch() {
