@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Don't Look Up",
+    "year": "2021",
+    "desc": "ينطلق عالِما فلك في جولة إعلامية لتحذير البشرية من مذنّب يتّجه بسرعة نحو الأرض سيدمّر الكوكب... ولكن لا حياة لمن تنادي في هذا العالم المُشتّت!",
+    "poster": "https://image.tmdb.org/t/p/w500/iZETKt9Vp5ZDNXJFUum2lndfetw.jpg",
+    "hdUrl": "https://streamtape.com/e/Q1LAoYx9r4IrM3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Q1LAoYx9r4IrM3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "كوميديا خيال علمي دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Leonardo DiCaprio",
+            "character": "Dr. Randall Mindy",
+            "image": "https://image.tmdb.org/t/p/w185/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
+        },
+        {
+            "name": "Jennifer Lawrence",
+            "character": "Kate Dibiasky",
+            "image": "https://image.tmdb.org/t/p/w185/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg"
+        },
+        {
+            "name": "Meryl Streep",
+            "character": "President Orlean",
+            "image": "https://image.tmdb.org/t/p/w185/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg"
+        },
+        {
+            "name": "Cate Blanchett",
+            "character": "Brie Evantee",
+            "image": "https://image.tmdb.org/t/p/w185/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg"
+        },
+        {
+            "name": "Rob Morgan",
+            "character": "Dr. Teddy Oglethorpe",
+            "image": "https://image.tmdb.org/t/p/w185/ps6wR3JZnk6MY9tbtOLORgadqs6.jpg"
+        },
+        {
+            "name": "Jonah Hill",
+            "character": "Jason Orlean",
+            "image": "https://image.tmdb.org/t/p/w185/cymlWttB83MsAGR2EkTgANtjeRH.jpg"
+        },
+        {
+            "name": "Mark Rylance",
+            "character": "Peter Isherwell",
+            "image": "https://image.tmdb.org/t/p/w185/bztEZRyXrvW3Pg1fexNASXlZrq7.jpg"
+        },
+        {
+            "name": "Tyler Perry",
+            "character": "Jack Bremmer",
+            "image": "https://image.tmdb.org/t/p/w185/8KU0OizemVLrERXt5HJIa0PAkIN.jpg"
+        },
+        {
+            "name": "Timothée Chalamet",
+            "character": "Yule",
+            "image": "https://image.tmdb.org/t/p/w185/axENiFIrSz5B7UuWkMT7PDe7CaO.jpg"
+        },
+        {
+            "name": "Ron Perlman",
+            "character": "Benedict Drask",
+            "image": "https://image.tmdb.org/t/p/w185/nfky6J9ueey1gMdWMNU9k9YdfGP.jpg"
+        }
+    ],
+    "trailerKey": "fOivrysBJno",
+    "featured": true
+},
+    {
     "title": "Moana 2",
     "year": "2024",
     "desc": "بعد تلقيها نداء من أسلافها، تسافر 'موانا' و'ماوي' إلى بحار 'أوقيانوسيا' البعيدة.",
