@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "The Maze Runner",
+    "year": "2014",
+    "desc": "يستيقظ توماس (ديلان أوبراين) ليجد نفسه داخل مصعد غريب ومصاب بفقدان للذاكرة؛ حيث إنه لا يستطيع تذكر اسمه أو عائلته أو منزله. عندما يتم فتح باب المصعد يجد توماس نفسه محاطًا بمجموعة من الصبية يرحبون به في مكانه الجديد في (جلايد). يجد توماس أن جلايد محاطة بجدران ضخمة من الحجارة، والصبية الذين معه لا يعلمون أيضًا كيف أتوا إلى جلايد؟ ولكنهم يعلمون أن وراء تلك الحجارة متاهة غريبة لا يعلم حلها أي صبي، رغم ذلك يعلم الصبية أنهم إذا حلوا تلك المتاهة سيعودون إلى منازلهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/mGOxV6zkDTBeeDHeD7JlYzSXbX8.jpg",
+    "hdUrl": "https://streamtape.com/e/q89LDW078atzzZZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/q89LDW078atzzZZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "حركة غموض خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dylan O'Brien",
+            "character": "Thomas",
+            "image": "https://image.tmdb.org/t/p/w185/xN3GdvIlqsR838gDoblhPH0numP.jpg"
+        },
+        {
+            "name": "Kaya Scodelario",
+            "character": "Teresa Agnes",
+            "image": "https://image.tmdb.org/t/p/w185/uVp7VarM5GX08hfCEGt63OM5c5c.jpg"
+        },
+        {
+            "name": "Thomas Brodie-Sangster",
+            "character": "Newt",
+            "image": "https://image.tmdb.org/t/p/w185/tapXeOg3wnezcjm2ENox0lL2b25.jpg"
+        },
+        {
+            "name": "Ki Hong Lee",
+            "character": "Minho",
+            "image": "https://image.tmdb.org/t/p/w185/Ws4cNaHHX4tNddh7mw4zIBZyPb.jpg"
+        },
+        {
+            "name": "Will Poulter",
+            "character": "Gally",
+            "image": "https://image.tmdb.org/t/p/w185/9blYMaj79VGC6BHTLmJp3V5S8r3.jpg"
+        },
+        {
+            "name": "Aml Ameen",
+            "character": "Alby",
+            "image": "https://image.tmdb.org/t/p/w185/46V5p1lIsWu1A1nCiJAFJ5dOiPq.jpg"
+        },
+        {
+            "name": "Patricia Clarkson",
+            "character": "Ava Paige",
+            "image": "https://image.tmdb.org/t/p/w185/rHHM9G83fpBAcFathbSyV4Tot5j.jpg"
+        },
+        {
+            "name": "Blake Cooper",
+            "character": "Chuck",
+            "image": "https://image.tmdb.org/t/p/w185/mFGnJZk83mOEF7duAi4uiaCcYvw.jpg"
+        },
+        {
+            "name": "Dexter Darden",
+            "character": "Frypan",
+            "image": "https://image.tmdb.org/t/p/w185/4Io5JOdl17GtCaXt0ZBv0p6IEEk.jpg"
+        },
+        {
+            "name": "Jacob Latimore",
+            "character": "Jeff",
+            "image": "https://image.tmdb.org/t/p/w185/8bdhpFXGJpXYsOB6Jn8o85VJItz.jpg"
+        }
+    ],
+    "trailerKey": "3b946aGm0zs",
+    "featured": true
+},
+    {
     "title": "Split",
     "year": "2017",
     "desc": "كيفن لديه 23 شخصية متميزة. 24 على وشك أن يطلق العنان.  على الرغم من أن كيفن قد أثبت 23 شخصية لطبيبه النفسي الموثوق به ، الدكتور فليتشر ، إلا أنه لا يزال هناك شخص واحد لا يزال مغمورا من المقرر أن يتجسد ويهيمن على جميع الآخرين. بعد إجباره على اختطاف ثلاث فتيات مراهقات بقيادة كيسي المتعمد والملتزم ، يصل كيفن إلى حرب من أجل البقاء بين جميع من بداخله - وكذلك كل من حوله - حيث تتحطم الجدران بين مقصوراته.",
