@@ -629,69 +629,6 @@ const globalMoviesData = [
     "trailerKey": "g7ArZ7VD-QQ"
 },
     {
-    "title": "Moana 2",
-    "year": "2024",
-    "desc": "بعد تلقيها نداء من أسلافها، تسافر 'موانا' و'ماوي' إلى بحار 'أوقيانوسيا' البعيدة.",
-    "poster": "https://image.tmdb.org/t/p/w500/yhyYzzJOZzdd1pQPDLV6jYulAmC.jpg",
-    "hdUrl": "https://streamtape.com/e/j6L6W71P13izyvd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/j6L6W71P13izyvd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "7.0",
-    "genre": "مغامرة رسوم متحركة كوميديا عائلي فانتازيا",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Auliʻi Cravalho",
-            "character": "Moana (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/vEroqcnM2g6yY7qXDAie7hx2Cyp.jpg"
-        },
-        {
-            "name": "Dwayne Johnson",
-            "character": "Maui (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
-        },
-        {
-            "name": "Hualālai Chung",
-            "character": "Moni (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/x2g5fdHqETY9dZgL4aB0QDP0boR.jpg"
-        },
-        {
-            "name": "Rose Matafeo",
-            "character": "Loto (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/zQa39fMjbOTIsovbh1TBTJVlToz.jpg"
-        },
-        {
-            "name": "David Fane",
-            "character": "Kele (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/tcozyaTgAa8rRmzc5qeht0loni6.jpg"
-        },
-        {
-            "name": "Awhimai Fraser",
-            "character": "Matangi (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/276OUDPl2iIsz772HQw3tiz2JN2.jpg"
-        },
-        {
-            "name": "Khaleesi Lambert-Tsuda",
-            "character": "Simea (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/3LHXDjy9UijbtR7X2EReX5H57kk.jpg"
-        },
-        {
-            "name": "Temuera Morrison",
-            "character": "Chief Tui (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/AvtSC0f9QW7fMyFFNXEWDeQyfUk.jpg"
-        },
-        {
-            "name": "Nicole Scherzinger",
-            "character": "Sina (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/kKG7zJvVReTipBYDD3aqHj4uPBe.jpg"
-        },
-        {
-            "name": "Rachel House",
-            "character": "Gramma Tala (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
-        }
-    ]
-},
-    {
     "title": "Moana موانا مدبلج",
     "year": "2016",
     "desc": "تدور أحداث الفيلم حول فتاة شجاعة تبحر في مغامرة خطيرة عبر المحيط لإنقاذ شعبها بمساعدة النصف إله ماوي لإعادة قلب الآلهة وتنسيق التوازن في الطبيعة",
@@ -796,72 +733,6 @@ const globalMoviesData = [
     ]
 },
     {
-    "title": "Toy Story 5",
-    "year": "2026",
-    "desc": "عندما تحصل 'بوني' على جهاز 'ليلي باد' اللوحي كهدية وتنجذب إليه بشكلٍ كبير، يجد 'وودي' و'باز' و'جيسي' وبقية الألعاب أنفسهم أمام تحدٍ غير مسبوق، إذ تصبح مهمتهم في لفت انتباهها أصعب من أي وقت مضى، بينما يواجهون تهديدًا جديدًا يهدد عالم اللعب الذي اعتادوا عليه.",
-    "poster": "https://image.tmdb.org/t/p/w500/b9yODva86tl5Em8cOoKSQQzzAy4.jpg",
-    "hdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "7.4",
-    "genre": "رسوم متحركة عائلي كوميديا مغامرة",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Tom Hanks",
-            "image": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
-        },
-        {
-            "name": "Tim Allen",
-            "image": "https://image.tmdb.org/t/p/w185/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
-        },
-        {
-            "name": "Joan Cusack",
-            "image": "https://image.tmdb.org/t/p/w185/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
-        },
-        {
-            "name": "Greta Lee",
-            "image": "https://image.tmdb.org/t/p/w185/6SydTis4XUcovlwIGskT59JowLX.jpg"
-        },
-        {
-            "name": "Conan O'Brien",
-            "image": "https://image.tmdb.org/t/p/w185/deRbViPut0t80miscBpP2DhBJU5.jpg"
-        }
-    ]
-},
-    {
-    "title": "Don't Look Up",
-    "year": "2021",
-    "desc": "ينطلق عالِما فلك في جولة إعلامية لتحذير البشرية من مذنّب يتّجه بسرعة نحو الأرض سيدمّر الكوكب... ولكن لا حياة لمن تنادي في هذا العالم المُشتّت!",
-    "poster": "https://image.tmdb.org/t/p/w500/iZETKt9Vp5ZDNXJFUum2lndfetw.jpg",
-    "hdUrl": "https://streamtape.com/e/Q1LAoYx9r4IrM3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/Q1LAoYx9r4IrM3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "7.1",
-    "genre": "كوميديا خيال علمي دراما",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Leonardo DiCaprio",
-            "image": "https://image.tmdb.org/t/p/w185/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
-        },
-        {
-            "name": "Jennifer Lawrence",
-            "image": "https://image.tmdb.org/t/p/w185/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg"
-        },
-        {
-            "name": "Meryl Streep",
-            "image": "https://image.tmdb.org/t/p/w185/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg"
-        },
-        {
-            "name": "Cate Blanchett",
-            "image": "https://image.tmdb.org/t/p/w185/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg"
-        },
-        {
-            "name": "Rob Morgan",
-            "image": "https://image.tmdb.org/t/p/w185/ps6wR3JZnk6MY9tbtOLORgadqs6.jpg"
-        }
-    ]
-},
-    {
     "title": "Jojo Rabbit",
     "year": "2019",
     "desc": "تدور أحداث الفيلم حول الحرب العالمية الثانية، حيث يكتشف الفتى (جوجو) والذي يخدم في جيش (هتلر) أن والدته (روزي) تُخبئ فتاة يهودية في منزلهم، ويسعى (جوجو) لإخفاء الأمر عن الجميع.",
@@ -924,39 +795,6 @@ const globalMoviesData = [
         {
             "name": "Brett Gelman",
             "image": "https://image.tmdb.org/t/p/w185/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
-        }
-    ]
-},
-    {
-    "title": "Furiosa: A Mad Max Saga",
-    "year": "2024",
-    "desc": "مع سقوط العالم، يتم اختطاف فيوريوسا الصغيرة وتقع في أيدي حشد كبير من راكبي الدراجات النارية بقيادة أمير الحرب ديمنتوس. ويجب على فيوريوسا أن تنجو من العديد من المصاعب وأن تجد طريقها إلى المنزل.",
-    "poster": "https://image.tmdb.org/t/p/w500/sln8KBlJDTE67sSpx7Aiswa5Lti.jpg",
-    "hdUrl": "https://streamtape.com/e/bzdM11mgQyCDOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/bzdM11mgQyCDOO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "7.4",
-    "genre": "حركة خيال علمي مغامرة",
-    "type": "movie",
-    "cast": [
-        {
-            "name": "Anya Taylor-Joy",
-            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
-        },
-        {
-            "name": "Chris Hemsworth",
-            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
-        },
-        {
-            "name": "Tom Burke",
-            "image": "https://image.tmdb.org/t/p/w185/4IHlAZ9bJ82VAd6HUOWFgo81SDq.jpg"
-        },
-        {
-            "name": "Alyla Browne",
-            "image": "https://image.tmdb.org/t/p/w185/1aAyhOWIP1tnIZwmoMpENvpyQff.jpg"
-        },
-        {
-            "name": "George Shevtsov",
-            "image": "https://image.tmdb.org/t/p/w185/cuOoCZShfvNrOvrWqH2dPyBfrZS.jpg"
         }
     ]
 },
