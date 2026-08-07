@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "Mom Is 17 Again",
     "year": "2024",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول امرأة أربعينية تعرضت لحادث يعيد ذاكرتها إلى سن السابعة عشرة فتجد نفسها مجبرة على التعامل مع حياتها كبالغة وأم لفتى مراهق بروح وتفكير فتاة مراهقة .",
     "poster": "https://image.tmdb.org/t/p/w500/zkXypMK3iCECIpHo2NJZLX5pbgn.jpg",
     "hdUrl": "https://streamtape.com/e/W3zPyG2jx3FbDGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/W3zPyG2jx3FbDGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
