@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Split",
+    "year": "2017",
+    "desc": "كيفن لديه 23 شخصية متميزة. 24 على وشك أن يطلق العنان.  على الرغم من أن كيفن قد أثبت 23 شخصية لطبيبه النفسي الموثوق به ، الدكتور فليتشر ، إلا أنه لا يزال هناك شخص واحد لا يزال مغمورا من المقرر أن يتجسد ويهيمن على جميع الآخرين. بعد إجباره على اختطاف ثلاث فتيات مراهقات بقيادة كيسي المتعمد والملتزم ، يصل كيفن إلى حرب من أجل البقاء بين جميع من بداخله - وكذلك كل من حوله - حيث تتحطم الجدران بين مقصوراته.",
+    "poster": "https://image.tmdb.org/t/p/w500/v3kPu0l2xoBEyo1VbKiqPrDcVyf.jpg",
+    "hdUrl": "https://streamtape.com/e/K9PZxXe90qU06gv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/K9PZxXe90qU06gv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "James McAvoy",
+            "character": "Dennis / Patricia / Hedwig / The Beast / Kevin Wendell Crumb / Barry / Orwell / Jade",
+            "image": "https://image.tmdb.org/t/p/w185/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg"
+        },
+        {
+            "name": "Anya Taylor-Joy",
+            "character": "Casey Cooke",
+            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+            "name": "Haley Lu Richardson",
+            "character": "Claire Benoit",
+            "image": "https://image.tmdb.org/t/p/w185/iTNWzU5FlKT8s0CBZQyMIvebBPh.jpg"
+        },
+        {
+            "name": "Jessica Sula",
+            "character": "Marcia",
+            "image": "https://image.tmdb.org/t/p/w185/2lLET7EhRy98ad5Mgc9jMk4Sb0S.jpg"
+        },
+        {
+            "name": "Betty Buckley",
+            "character": "Dr. Karen Fletcher",
+            "image": "https://image.tmdb.org/t/p/w185/vgEah6IHjirZGXjuGhTA1Wp9aQT.jpg"
+        },
+        {
+            "name": "Izzie Coffey",
+            "character": "Five-Year-Old Casey",
+            "image": "https://image.tmdb.org/t/p/w185/firnTXo8waxrkGYb642mLuoMGy6.jpg"
+        },
+        {
+            "name": "Brad William Henke",
+            "character": "Uncle John",
+            "image": "https://image.tmdb.org/t/p/w185/ynte6cntUQ87iZcbWMxesf7mD59.jpg"
+        },
+        {
+            "name": "Sebastian Arcelus",
+            "character": "Casey's Father",
+            "image": "https://image.tmdb.org/t/p/w185/6MR2tsCcAgGduB80bIAEBgK4mLj.jpg"
+        },
+        {
+            "name": "Neal Huff",
+            "character": "Mr. Benoit",
+            "image": "https://image.tmdb.org/t/p/w185/iNvUcnFm4O3tESbemiMFdMJH2zp.jpg"
+        },
+        {
+            "name": "Ukee Washington",
+            "character": "News Anchor",
+            "image": "https://image.tmdb.org/t/p/w185/6pgotvcUxf2Ib2bfLgrbasRhXCH.jpg"
+        }
+    ],
+    "trailerKey": "85sUbGzdEn8",
+    "featured": true
+},
+    {
     "title": "Mom Is 17 Again",
     "year": "2024",
     "desc": "تدور أحداث الفيلم حول امرأة أربعينية تعرضت لحادث يعيد ذاكرتها إلى سن السابعة عشرة فتجد نفسها مجبرة على التعامل مع حياتها كبالغة وأم لفتى مراهق بروح وتفكير فتاة مراهقة .",
