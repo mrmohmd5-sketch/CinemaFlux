@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Maze Runner: The Scorch Trials",
+    "year": "2015",
+    "desc": "كانت المتاهة مجرد البداية.  يواجه توماس وزملاؤه غلادرز أكبر تحد لهم حتى الآن: البحث عن أدلة حول المنظمة الغامضة والقوية المعروفة باسم وك دي . تأخذهم رحلتهم إلى حرق ، وهي مناظر طبيعية مقفرة مليئة بالعقبات التي لا يمكن تصورها. بالتعاون مع مقاتلي المقاومة ، يواجه غلادرز قوات وك دي المتفوقة إلى حد كبير ويكشف عن خططه المروعة لهم جميعا.",
+    "poster": "https://image.tmdb.org/t/p/w500/ppq1p593wDFSiKtjxmMH8BQlqet.jpg",
+    "hdUrl": "https://streamtape.com/e/BklMd6BdeatyaaP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BklMd6BdeatyaaP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "خيال علمي حركة إثارة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dylan O'Brien",
+            "character": "Thomas",
+            "image": "https://image.tmdb.org/t/p/w185/xN3GdvIlqsR838gDoblhPH0numP.jpg"
+        },
+        {
+            "name": "Kaya Scodelario",
+            "character": "Teresa Agnes",
+            "image": "https://image.tmdb.org/t/p/w185/uVp7VarM5GX08hfCEGt63OM5c5c.jpg"
+        },
+        {
+            "name": "Thomas Brodie-Sangster",
+            "character": "Newt",
+            "image": "https://image.tmdb.org/t/p/w185/tapXeOg3wnezcjm2ENox0lL2b25.jpg"
+        },
+        {
+            "name": "Giancarlo Esposito",
+            "character": "Jorge",
+            "image": "https://image.tmdb.org/t/p/w185/rcXnr82TwDzU4ZGdBeNXfG0ZQnZ.jpg"
+        },
+        {
+            "name": "Ki Hong Lee",
+            "character": "Minho",
+            "image": "https://image.tmdb.org/t/p/w185/Ws4cNaHHX4tNddh7mw4zIBZyPb.jpg"
+        },
+        {
+            "name": "Dexter Darden",
+            "character": "Frypan",
+            "image": "https://image.tmdb.org/t/p/w185/4Io5JOdl17GtCaXt0ZBv0p6IEEk.jpg"
+        },
+        {
+            "name": "Rosa Salazar",
+            "character": "Brenda",
+            "image": "https://image.tmdb.org/t/p/w185/f8MITeVNUrP9mMiXcPnCEZTIW56.jpg"
+        },
+        {
+            "name": "Patricia Clarkson",
+            "character": "Ava Paige",
+            "image": "https://image.tmdb.org/t/p/w185/rHHM9G83fpBAcFathbSyV4Tot5j.jpg"
+        },
+        {
+            "name": "Aidan Gillen",
+            "character": "Janson",
+            "image": "https://image.tmdb.org/t/p/w185/fWWRgyJEGjOPcx43CaFiUCWMBLo.jpg"
+        },
+        {
+            "name": "Barry Pepper",
+            "character": "Vince",
+            "image": "https://image.tmdb.org/t/p/w185/xBvW4dMoz496rItLQU6TGteYCEP.jpg"
+        }
+    ],
+    "trailerKey": "SDofO3P2HpE"
+},
+    {
     "title": "Ralph Breaks the Internet",
     "year": "2018",
     "desc": "بعد ست سنوات من أحداث 'رالف المدمر' رالف و فيلنوبي الآن أصدقاء، اكتشفوا جهاز الواي فاي في غرفة الاركيد، يقودهم إلى مغامرة جديدة.",
