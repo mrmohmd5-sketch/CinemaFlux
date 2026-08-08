@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Frozen",
+    "year": "2013",
+    "desc": "تحلم الأميرة الشابة آنا من أرينديل بالعثور على الحب الحقيقي في تتويج أختها إلسا. يأخذها القدر في رحلة خطيرة في محاولة لإنهاء الشتاء الأبدي الذي سقط على المملكة. يرافقها رجل توصيل الثلج كريستوف ، الرنة سفين ، ورجل الثلج أولاف. في مغامرة حيث ستكتشف ما تعنيه الصداقة والشجاعة والأسرة والحب الحقيقي حقا.",
+    "poster": "https://image.tmdb.org/t/p/w500/Mj9orZts8X8mZLvOwXjGCP9DTA.jpg",
+    "hdUrl": "https://streamtape.com/e/oLe66PoZkdcJw8l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oLe66PoZkdcJw8l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "رسوم متحركة عائلي مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kristen Bell",
+            "character": "Anna (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/rP74dJXl7EjinGM0shQtUOlH5s2.jpg"
+        },
+        {
+            "name": "Idina Menzel",
+            "character": "Elsa (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/eGsyJmAZNV5tUU4RYy2DIRlFVpW.jpg"
+        },
+        {
+            "name": "Jonathan Groff",
+            "character": "Kristoff (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/3kmnYKAzSc3Lp7iK5pcj97Hx9Cm.jpg"
+        },
+        {
+            "name": "Josh Gad",
+            "character": "Olaf (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/p9hWNRwrVEBpl8We2bxLMHkk5Mj.jpg"
+        },
+        {
+            "name": "Santino Fontana",
+            "character": "Hans (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/3EtNGPVBN5bBamV817n43kFd4MB.jpg"
+        },
+        {
+            "name": "Alan Tudyk",
+            "character": "Duke (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg"
+        },
+        {
+            "name": "Ciarán Hinds",
+            "character": "Pabbie / Grandpa (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg"
+        },
+        {
+            "name": "Chris Williams",
+            "character": "Oaken (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/eE2NDdeKN1DC3XuV6L4xuEbVaS.jpg"
+        },
+        {
+            "name": "Stephen J. Anderson",
+            "character": "Kai (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/csdeskOXUe9iHQBe7OqZwpQ2lRk.jpg"
+        },
+        {
+            "name": "Maia Wilson",
+            "character": "Bulda (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/fqKBpJsMaGFFU5PlOD1TY3ivogK.jpg"
+        }
+    ],
+    "trailerKey": "ssVnSg2jwUw",
+    "featured": true
+},
+    {
     "title": "Darweesh",
     "year": "2025",
     "desc": "تدور الأحداث في فترة الأربعينيات حول رجل محتال ذو شخصية جذابة، يعيش حياة مليئة بالتحديات والمخاطر، ثم يتحول عن طريق الصدفة إلى بطل شعبي، وتنقلب بعدها حياته رأسًا على عقب.",
