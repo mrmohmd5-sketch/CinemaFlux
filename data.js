@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "Blood Machines",
     "year": "2020",
-    "desc": "(هو مسلسل قصير مثلاث حلقات لكن قمنا بدمجه كفلم قصير (تدور أحداث الفيلم حول صيادين في الفضاء يتعقبان سفينة فضائية يسيطر عليها ذكاء اصطناعي وتتحرر روحها لتتحول إلى كائن غامض مما يخلق مطاردة كونية ملحمية في عالم خيالي مليء بالغموض والإثارة.",
+    "desc": "(هو مسلسل قصير من ثلاث حلقات لكن قمنا بدمجه كفلم قصير) تدور أحداث الفيلم حول صيادين في الفضاء يتعقبان سفينة فضائية يسيطر عليها ذكاء اصطناعي وتتحرر روحها لتتحول إلى كائن غامض مما يخلق مطاردة كونية ملحمية في عالم خيالي مليء بالغموض والإثارة.",
     "poster": "https://image.tmdb.org/t/p/w500/nT8cZQCz5pf0NBSnZDTDrfC8Mgn.jpg",
     "hdUrl": "https://streamtape.com/e/LX1Ovb6wqqCRp6y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/LX1Ovb6wqqCRp6y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
