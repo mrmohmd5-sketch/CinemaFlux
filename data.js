@@ -1,5 +1,54 @@
 const globalMoviesData = [
     {
+    "title": "Revenge",
+    "year": "2017",
+    "desc": "تنقطع رحلة جين الرومانسية مع صديقها الثري (المتزوج) عندما يصل أصدقاؤه في رحلة صيد مرتجلة. يتصاعد التوتر في المنزل حتى يصل الوضع إلى ذروته بطريقة غير متوقعة.",
+    "poster": "https://image.tmdb.org/t/p/w500/a1wuUTjXvWhBYuVT21BPZ31YAB2.jpg",
+    "hdUrl": "https://streamtape.com/e/A0oDJ3RzXphXkoe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/A0oDJ3RzXphXkoe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة رعب إثارة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matilda Lutz",
+            "character": "Jen",
+            "image": "https://image.tmdb.org/t/p/w185/yqeYvGgDvrhvn5lP6fuRE1ImQXv.jpg"
+        },
+        {
+            "name": "Kevin Janssens",
+            "character": "Richard",
+            "image": "https://image.tmdb.org/t/p/w185/gzKVkmCYNSvJDvin2B4RPT1WeJT.jpg"
+        },
+        {
+            "name": "Vincent Colombe",
+            "character": "Stan",
+            "image": "https://image.tmdb.org/t/p/w185/gX6p0VVA8PDmh9R1svg0ssky9za.jpg"
+        },
+        {
+            "name": "Guillaume Bouchède",
+            "character": "Dimitri",
+            "image": "https://image.tmdb.org/t/p/w185/nUeHxQwx5nzBdltujc15nqcQU0R.jpg"
+        },
+        {
+            "name": "Jean-Louis Tribes",
+            "character": "Roberto",
+            "image": "https://image.tmdb.org/t/p/w185/6xsrYJr9jigT29dRtPW9OvpwnoW.jpg"
+        },
+        {
+            "name": "Barbara Gateau",
+            "character": "Richard's Wife (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/dzYnf6igxUrFRmRUQIlTpoJnjZo.jpg"
+        },
+        {
+            "name": "Avant Strangel",
+            "character": "TV Soap Opera Actor (voice) (uncredited)",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "Hz1d1zgimlc"
+},
+    {
     "title": "The Proposal",
     "year": "2009",
     "desc": "تلجأ مديرة تحرير بدار نشر لطلب الزواج من موظف تحت قيادتها، لتتمكن من الحفاظ على الإقامة في الولايات المتحدة، فتبدأ في التودد إليه رغم شخصيتها الحازمة.",
