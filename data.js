@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Renegades of Europe",
+    "year": "2022",
+    "desc": "ينطلق ثلاثة توائم من صعيد مصر إلى إسبانيا باحثين عن إرث والدتهم الراحلة، وهناك تقربهم سلسلة من الأحداث الخطرة من فهم جذورهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/y92cTW9pIw3K2AX7l9R6GS1FKZ2.jpg",
+    "hdUrl": "https://streamtape.com/e/6pkllz2d82s9jMa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/6pkllz2d82s9jMa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.7",
+    "genre": "حركة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Haifa Wehbe",
+            "character": "لي لي / هويدا",
+            "image": "https://image.tmdb.org/t/p/w185/ht9N2jOcT9EChL7JWWYQLl93s1w.jpg"
+        },
+        {
+            "name": "Ahmed Al Fishawy",
+            "character": "مارتن / بركات",
+            "image": "https://image.tmdb.org/t/p/w185/4bmLaXHBRZi6Sn6XE1eCAM6KDs0.jpg"
+        },
+        {
+            "name": "Mostafa Khater",
+            "character": "چو / عبودا",
+            "image": "https://image.tmdb.org/t/p/w185/pj5b1XP1iM8BaCKb6QOdZpAD8xW.jpg"
+        },
+        {
+            "name": "Arwa Gouda",
+            "character": "ايڤا",
+            "image": "https://image.tmdb.org/t/p/w185/j4G85Ddx2E0Lr6zXNcviCx9jkFs.jpg"
+        },
+        {
+            "name": "Bassem Samra",
+            "character": "هارون",
+            "image": "https://image.tmdb.org/t/p/w185/tKhneTl9BL6W1jIgTV43o5duFPx.jpg"
+        },
+        {
+            "name": "Abbas Abu Elhassan",
+            "character": "سليم",
+            "image": "https://image.tmdb.org/t/p/w185/wXbXtPndb6EAaIaOBbDweMufjBD.jpg"
+        },
+        {
+            "name": "Hassan El-Adl",
+            "character": "سعيد - سائق ميكروباص",
+            "image": "https://image.tmdb.org/t/p/w185/gZ9a5VNJ55AkIPWuV06ogkzjut1.jpg"
+        },
+        {
+            "name": "Ibrahim El Samman",
+            "character": "أليخاندرو مورتي",
+            "image": "https://image.tmdb.org/t/p/w185/jrD9qURf9J3SDq4MuOnKS2yzPXL.jpg"
+        },
+        {
+            "name": "Moataz El Tony",
+            "character": "زبون الكبدة",
+            "image": "https://image.tmdb.org/t/p/w185/xnRosqFGmcj5AAEFhs7sNoRDP2B.jpg"
+        },
+        {
+            "name": "Yasser El Tobgy",
+            "character": "مدير المطعم",
+            "image": "https://image.tmdb.org/t/p/w185/ibfMXbe2vGjJvdqcSh9NJLZ4wxf.jpg"
+        }
+    ],
+    "trailerKey": "8Nmvqpx4uJk"
+},
+    {
     "title": "Wish Dragon تنين الاماني مدبلج",
     "year": "2021",
     "desc": "يتلهّف 'دين'، المراهق صلب الإرادة، للتواصل مجدّدًا مع صديقة طفولته المقرّبة حين يلتقي بتنّين يحقّق الأمنيات ويُطلعه على سحر عالم الاحتمالات.",
