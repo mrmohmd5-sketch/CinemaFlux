@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "Song Sung Blue",
     "year": "2025",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول زوجين من الموسيقيين المكافحين يقرران تشكيل فرقة موسيقية لتكريم المغني الشهير نيل دايموند فيخوضان رحلة ملهمة تحولهما إلى نجوم محليين وتغير مسار حياتهما.",
     "poster": "https://image.tmdb.org/t/p/w500/xStmzLprgzqjzfvpBI7uTbcRpwQ.jpg",
     "hdUrl": "https://streamtape.com/e/L2OkxR0g8yFRzWX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/L2OkxR0g8yFRzWX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
