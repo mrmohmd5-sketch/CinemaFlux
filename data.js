@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Croods: A New Age",
+    "year": "2020",
+    "desc": "في بحثها عن موطن أكثر أمانًا، تكتشف عائلة كرود من عصور ما قبل التاريخ جنةً مثاليةً محاطةً بالأسوار تُلبي جميع احتياجاتها. ولكن، للأسف، عليهم أيضًا أن يتعلموا العيش مع عائلة بيترمان - وهي عائلةٌ تتفوق عليهم ببضع خطوات في سلم التطور. ومع تصاعد التوترات بين الجيران الجدد، سرعان ما يدفع تهديدٌ جديدٌ كلا العشيرتين إلى مغامرةٍ ملحميةٍ تُجبرهما على تقبّل اختلافاتهما، واستمداد القوة من بعضهما البعض، والبقاء معًا.",
+    "poster": "https://image.tmdb.org/t/p/w500/k6F13uEkqJe0i3eza2NUQZcEdv4.jpg",
+    "hdUrl": "https://streamtape.com/e/6oMwPMWBwyH9yQm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/6oMwPMWBwyH9yQm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "رسوم متحركة عائلي مغامرة فانتازيا كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nicolas Cage",
+            "character": "Grug (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/y1RtezurZYveYkVNRht7CwEgSYY.jpg"
+        },
+        {
+            "name": "Emma Stone",
+            "character": "Eep (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg"
+        },
+        {
+            "name": "Ryan Reynolds",
+            "character": "Guy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Catherine Keener",
+            "character": "Ugga (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg"
+        },
+        {
+            "name": "Cloris Leachman",
+            "character": "Gran (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/o8pnV9urjuHZDAR2u4UjPy2CR1u.jpg"
+        },
+        {
+            "name": "Clark Duke",
+            "character": "Thunk (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qL7x57avA9IupsjtwnpIuJ8p8BD.jpg"
+        },
+        {
+            "name": "Leslie Mann",
+            "character": "Hope Betterman (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/x3OS9RL3qsv50kzRtpR2OhbuTkr.jpg"
+        },
+        {
+            "name": "Peter Dinklage",
+            "character": "Phil Betterman (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/9CAd7wr8QZyIN0E7nm8v1B6WkGn.jpg"
+        },
+        {
+            "name": "Kelly Marie Tran",
+            "character": "Dawn Betterman (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/wmJTR2vxcCWKNMF7XPdNqhmo2rj.jpg"
+        },
+        {
+            "name": "Kailey Crawford",
+            "character": "Sandy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qWRa5Ewo7P6yrUqOWhvzFJpG8I8.jpg"
+        }
+    ],
+    "trailerKey": "hy4vAqF9Ko0"
+},
+    {
     "title": "Encanto",
     "year": "2021",
     "desc": "قصة غير عادية تدور حول 'آل مادريغال' الذين يعيشون في الخفاء على جبال 'كولومبيا' في منزل سحري في بلدة نابضة بالحياة في مكان ساحر عجيب اسمه 'إنكانتو'. سحر 'إنكانتو' بارك كل طفل في العائلة بهبة مميزة بدءاً من القوة الخارقة إلى القدرة على الشفاء باستثناء طفلة واحدة وهي 'ميرابيل'. لكن عندما تكتشف أن السحر المحيط بـ'إنكانتو' في خطر، تقرر بصفتها الوحيدة العادية في العائلة أنها قد تكون بارقة الأمل الأخيرة لعائلتها الاستثنائية.",
