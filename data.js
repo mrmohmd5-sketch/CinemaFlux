@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Taken 3",
+    "year": "2014",
+    "desc": "ينتهي هنا\r يجد الناشط الحكومي السابق بريان ميلز أن حياته محطمة عندما يتهم زورا بجريمة قتل تضرب بالقرب من المنزل. أثناء ملاحقته من قبل مفتش شرطة ذكي ، يوظف ميلز مجموعة مهاراته الخاصة لتتبع القاتل الحقيقي وفرض علامته التجارية الفريدة من العدالة.",
+    "poster": "https://image.tmdb.org/t/p/w500/vzvMXMypMq7ieDofKThsxjHj9hn.jpg",
+    "hdUrl": "https://streamtape.com/e/7Bl6pPQllbTAa4D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7Bl6pPQllbTAa4D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "إثارة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Liam Neeson",
+            "character": "Bryan Mills",
+            "image": "https://image.tmdb.org/t/p/w185/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+        },
+        {
+            "name": "Forest Whitaker",
+            "character": "Inspector Frank Dotzler",
+            "image": "https://image.tmdb.org/t/p/w185/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg"
+        },
+        {
+            "name": "Maggie Grace",
+            "character": "Kim Mills",
+            "image": "https://image.tmdb.org/t/p/w185/fEZSGno4ooPgFjuGzE7ogsWEHsh.jpg"
+        },
+        {
+            "name": "Dougray Scott",
+            "character": "Stuart St. John",
+            "image": "https://image.tmdb.org/t/p/w185/3zkotNLAUzfT2GOQM2BMIfI3yTb.jpg"
+        },
+        {
+            "name": "Famke Janssen",
+            "character": "Lenore St. John",
+            "image": "https://image.tmdb.org/t/p/w185/uvZGwNsLqe9NyA57Qlt46IkO8Bd.jpg"
+        },
+        {
+            "name": "Sam Spruell",
+            "character": "Oleg Malankov",
+            "image": "https://image.tmdb.org/t/p/w185/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
+        },
+        {
+            "name": "Don Harvey",
+            "character": "Garcia",
+            "image": "https://image.tmdb.org/t/p/w185/dc10W0hRNxrO0IcwgKOcsUajtOG.jpg"
+        },
+        {
+            "name": "Dylan Bruno",
+            "character": "Smith",
+            "image": "https://image.tmdb.org/t/p/w185/qXiqadUH3UeOoyZtcbwIIJS8np4.jpg"
+        },
+        {
+            "name": "Leland Orser",
+            "character": "Sam Gilroy",
+            "image": "https://image.tmdb.org/t/p/w185/vvVcWhActW8k2gQz95UatVP4Duf.jpg"
+        },
+        {
+            "name": "David Warshofsky",
+            "character": "Bernie Harris",
+            "image": "https://image.tmdb.org/t/p/w185/pLABX1wyaVE4CcEZVmoM2Y5XbQU.jpg"
+        }
+    ],
+    "trailerKey": "_ZLh4CaXwzM"
+},
+    {
     "title": "Toy Story 5",
     "year": "2026",
     "desc": "عندما تحصل 'بوني' على جهاز 'ليلي باد' اللوحي كهدية وتنجذب إليه بشكلٍ كبير، يجد 'وودي' و'باز' و'جيسي' وبقية الألعاب أنفسهم أمام تحدٍ غير مسبوق، إذ تصبح مهمتهم في لفت انتباهها أصعب من أي وقت مضى، بينما يواجهون تهديدًا جديدًا يهدد عالم اللعب الذي اعتادوا عليه.",
