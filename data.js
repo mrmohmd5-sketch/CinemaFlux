@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Taken 2",
+    "year": "2012",
+    "desc": "أولا أخذوا ابنته. الآن هم قادمون من أجله.\r في اسطنبول ، احتجز عميل وكالة المخابرات المركزية المتقاعد بريان ميلز وزوجته كرهائن من قبل والد الخاطف ميلز الذي قتل أثناء إنقاذ ابنته.",
+    "poster": "https://image.tmdb.org/t/p/w500/yzAlcuJhpnxRPjaj7AHBRbNPQCJ.jpg",
+    "hdUrl": "https://streamtape.com/e/vWVogqJw2ds4VMV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vWVogqJw2ds4VMV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Liam Neeson",
+            "character": "Bryan Mills",
+            "image": "https://image.tmdb.org/t/p/w185/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+        },
+        {
+            "name": "Maggie Grace",
+            "character": "Kim Mills",
+            "image": "https://image.tmdb.org/t/p/w185/fEZSGno4ooPgFjuGzE7ogsWEHsh.jpg"
+        },
+        {
+            "name": "Famke Janssen",
+            "character": "Lenore St. John",
+            "image": "https://image.tmdb.org/t/p/w185/uvZGwNsLqe9NyA57Qlt46IkO8Bd.jpg"
+        },
+        {
+            "name": "Leland Orser",
+            "character": "Sam Gilroy",
+            "image": "https://image.tmdb.org/t/p/w185/vvVcWhActW8k2gQz95UatVP4Duf.jpg"
+        },
+        {
+            "name": "D. B. Sweeney",
+            "character": "Bernie Harris",
+            "image": "https://image.tmdb.org/t/p/w185/enY28APVRWfyHjGAkh6VCkYCWOA.jpg"
+        },
+        {
+            "name": "Jon Gries",
+            "character": "Mark Casey",
+            "image": "https://image.tmdb.org/t/p/w185/nX69eyOvpmJ0YEpm2Qz2ZISngqw.jpg"
+        },
+        {
+            "name": "Rade Šerbedžija",
+            "character": "Murad Krasniqi",
+            "image": "https://image.tmdb.org/t/p/w185/1mJC5oD3pLH1vAS3wJ4sGNxYeqJ.jpg"
+        },
+        {
+            "name": "Luke Grimes",
+            "character": "Jamie",
+            "image": "https://image.tmdb.org/t/p/w185/c547Xiwf9feeDbGfQchfJCkC111.jpg"
+        },
+        {
+            "name": "Kevork Malikyan",
+            "character": "Inspector Durmaz",
+            "image": "https://image.tmdb.org/t/p/w185/6rIgKwXjAFo2x4fEBuqOYC9oFq6.jpg"
+        },
+        {
+            "name": "Alain Figlarz",
+            "character": "Suko",
+            "image": "https://image.tmdb.org/t/p/w185/wqag3Ab0zVl5Gkeet0NPJodpsiG.jpg"
+        }
+    ],
+    "trailerKey": "FL2w9vMzL6g"
+},
+    {
     "title": "Taken 3",
     "year": "2014",
     "desc": "ينتهي هنا\r يجد الناشط الحكومي السابق بريان ميلز أن حياته محطمة عندما يتهم زورا بجريمة قتل تضرب بالقرب من المنزل. أثناء ملاحقته من قبل مفتش شرطة ذكي ، يوظف ميلز مجموعة مهاراته الخاصة لتتبع القاتل الحقيقي وفرض علامته التجارية الفريدة من العدالة.",
