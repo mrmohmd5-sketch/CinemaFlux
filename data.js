@@ -437,7 +437,7 @@ const globalMoviesData = [
     "title": "Renegades of Europe اشباح اوروبا",
     "year": "2022",
     "desc": "ينطلق ثلاثة توائم من صعيد مصر إلى إسبانيا باحثين عن إرث والدتهم الراحلة، وهناك تقربهم سلسلة من الأحداث الخطرة من فهم جذورهم.",
-    "poster": "https://image.tmdb.org/t/p/w500/y92cTW9pIw3K2AX7l9R6GS1FKZ2.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/fIPql2K7K7ok4KFMXPQzzeYqhhW.jpg",
     "hdUrl": "https://streamtape.com/e/6pkllz2d82s9jMa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/6pkllz2d82s9jMa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "5.7",
