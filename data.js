@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Lucky Strike",
+    "year": "2026",
+    "desc": "جندي أمريكي جريح يقاتل من أجل البقاء خلف خطوط العدو خلال معركة الثغرة في الحرب العالمية الثانية ضد الألمان، معتمدًا على غريزته وفنون التجسس وجهاز لاسلكي يدوي للإفلات من الأسر وإيجاد طريقه للعودة إلى وحدته.",
+    "poster": "https://image.tmdb.org/t/p/w500/kzRAd7mj39ZY3FGNrDdZjqx56tn.jpg",
+    "hdUrl": "https://streamtape.com/e/Q2JwKxdWaQI0L0k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Q2JwKxdWaQI0L0k/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "حركة حرب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Scott Eastwood",
+            "character": "Castle",
+            "image": "https://image.tmdb.org/t/p/w185/tKJEy1bFNxvIj7sivsB7Us2ThmY.jpg"
+        },
+        {
+            "name": "Colin Hanks",
+            "character": "Colonel Neale",
+            "image": "https://image.tmdb.org/t/p/w185/iljyDSiJRcwJL8QXQZ2WTyU1wh5.jpg"
+        },
+        {
+            "name": "Aunjanue Ellis-Taylor",
+            "character": "Mrs. Caldwell",
+            "image": "https://image.tmdb.org/t/p/w185/e54DfgDyS67xdtomYODFule6Ofa.jpg"
+        },
+        {
+            "name": "Taylor John Smith",
+            "character": "Bellingham",
+            "image": "https://image.tmdb.org/t/p/w185/6dXZRf8ePa1oxQN9a5hFGEjDoI0.jpg"
+        },
+        {
+            "name": "Lorne MacFadyen",
+            "character": "Major Barrett",
+            "image": "https://image.tmdb.org/t/p/w185/y1cdclslL2nNkFw5RVj64iAHIIb.jpg"
+        },
+        {
+            "name": "Atanas Srebrev",
+            "character": "General Lauer",
+            "image": "https://image.tmdb.org/t/p/w185/aW9keIvjMkH9YAMQDEyJayAs7oy.jpg"
+        },
+        {
+            "name": "Alfie Stewart",
+            "character": "Burt Miller",
+            "image": "https://image.tmdb.org/t/p/w185/2SJ7NrKZ4SDUvBMARPVozFN4Xx0.jpg"
+        },
+        {
+            "name": "Jonathan Yunger",
+            "character": "Cash",
+            "image": "https://image.tmdb.org/t/p/w185/pnn5PwmyTJSBIjK2n8HPJn2GqtK.jpg"
+        },
+        {
+            "name": "Timothy Blore",
+            "character": "Wilhelm",
+            "image": "https://image.tmdb.org/t/p/w185/zavAyjmb1yQ2yinNS84X74unAgu.jpg"
+        },
+        {
+            "name": "Laurent Maurel",
+            "character": "Georges Marsaud",
+            "image": "https://image.tmdb.org/t/p/w185/vEbQJ8VNUyUwy10okhZ8mXjsg9o.jpg"
+        }
+    ],
+    "trailerKey": "vtEnjikCXyA"
+},
+    {
     "title": "Revenge",
     "year": "2017",
     "desc": "تنقطع رحلة جين الرومانسية مع صديقها الثري (المتزوج) عندما يصل أصدقاؤه في رحلة صيد مرتجلة. يتصاعد التوتر في المنزل حتى يصل الوضع إلى ذروته بطريقة غير متوقعة.",
