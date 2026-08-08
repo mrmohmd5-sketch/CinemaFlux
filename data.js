@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Smurfs: The Lost Village",
+    "year": "2017",
+    "desc": "تدور احداث الفيلم  حول العثور على خريطة سرية  تدل على الغابة المحرمة  فتذهب سنفورة فى مغامرة مع اصدقائها السنافر سنفور مفكر وسنفور اخرق وسنفور بدين ، فيذهبوا عبر هذة الغابة  محاولين اكتشاف قرية السنافر الرائعه قبل ان يبلغها عدوهم الساحر الشرير (جارجاميل)",
+    "poster": "https://image.tmdb.org/t/p/w500/sVqyz3cJPi8xk7dgLkZYL1T2xr8.jpg",
+    "hdUrl": "https://streamtape.com/e/arPDv7GMexsxVVe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/arPDv7GMexsxVVe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "عائلي كوميديا مغامرة رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Demi Lovato",
+            "character": "Smurfette (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/hPIhEw4uyh7DQYIsbQCmqFmbTmU.jpg"
+        },
+        {
+            "name": "Rainn Wilson",
+            "character": "Gargamel (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/yRTElSeC3q9nBqBuleI6OODlDMS.jpg"
+        },
+        {
+            "name": "Joe Manganiello",
+            "character": "Hefty (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/mTdACmitdrwor0Nrv5sr0u123vZ.jpg"
+        },
+        {
+            "name": "Jack McBrayer",
+            "character": "Clumsy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cbr26xDPEiOuYQxggtCPbu5xhDU.jpg"
+        },
+        {
+            "name": "Danny Pudi",
+            "character": "Brainy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/w0zT8Y2dQHU8FgV03NJoHJE6tmD.jpg"
+        },
+        {
+            "name": "Mandy Patinkin",
+            "character": "Papa Smurf (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/1PeZ6roZvkcoyZZbvoSIWTgGe3a.jpg"
+        },
+        {
+            "name": "Julia Roberts",
+            "character": "Smurfwillow (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/fQacAdIa1WUNChQ6FgEko13eqOA.jpg"
+        },
+        {
+            "name": "Michelle Rodriguez",
+            "character": "Smurfstorm (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+            "name": "Ellie Kemper",
+            "character": "Smurfblossom (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/2PmzhjJTr8zme7VuTIE1Nc1n5YL.jpg"
+        },
+        {
+            "name": "Ariel Winter",
+            "character": "Smurflily (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/1h0XaXnieP5CdTAeRGuALBJmD4R.jpg"
+        }
+    ],
+    "trailerKey": "RBuMN6ZkbKU"
+},
+    {
     "title": "Maze Runner: The Death Cure",
     "year": "2018",
     "desc": "يقود (توماس) مجموعة المُحاصرين في مهمتهم الأخيرة، حيث يتوجب عليهم اقتحام المدينة الأسطورية الأخيرة لإنقاذ أصدقائهم، حيث يجدون متاهة تسيطر على المدينة بأكملها، وقد تتحول في أي لحظة إلى متاهة دموية تظفر بأرواح الجميع.",
