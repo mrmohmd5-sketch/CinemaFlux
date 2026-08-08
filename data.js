@@ -2,7 +2,7 @@ const globalMoviesData = [
     {
     "title": "Ralph Breaks the Internet",
     "year": "2018",
-    "desc": "بعد ست سنوات من أحداث 'Wreck-It Ralph' رالف و فيلنوبي الآن أصدقاء، اكتشفوا جهاز الواي فاي في عرفة الاركيد، يقودهم إلى مغامرة جديدة.",
+    "desc": "بعد ست سنوات من أحداث 'رالف المدمر' رالف و فيلنوبي الآن أصدقاء، اكتشفوا جهاز الواي فاي في غرفة الاركيد، يقودهم إلى مغامرة جديدة.",
     "poster": "https://image.tmdb.org/t/p/w500/dPjotaHopb6uvm1gRwrQbaYRiJK.jpg",
     "hdUrl": "https://streamtape.com/e/M66zPRYqa1ImPRg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/M66zPRYqa1ImPRg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -64,9 +64,9 @@ const globalMoviesData = [
     "trailerKey": "rttxBrHeU2g"
 },
     {
-    "title": "Ralph Breaks the Internet",
+    "title": "Ralph Breaks the Internet رافل يدمر الانترنت مدبلج",
     "year": "2018",
-    "desc": "بعد ست سنوات من أحداث 'Wreck-It Ralph' رالف و فيلنوبي الآن أصدقاء، اكتشفوا جهاز الواي فاي في عرفة الاركيد، يقودهم إلى مغامرة جديدة.",
+    "desc": "بعد ست سنوات من أحداث 'رالف المدمر' رالف و فيلنوبي الآن أصدقاء، اكتشفوا جهاز الواي فاي في عرفة الاركيد، يقودهم إلى مغامرة جديدة.",
     "poster": "https://image.tmdb.org/t/p/w500/dPjotaHopb6uvm1gRwrQbaYRiJK.jpg",
     "hdUrl": "https://streamtape.com/e/bGR147jmwYcQ9x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/bGR147jmwYcQ9x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
