@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Darweesh",
+    "year": "2025",
+    "desc": "تدور الأحداث في فترة الأربعينيات حول رجل محتال ذو شخصية جذابة، يعيش حياة مليئة بالتحديات والمخاطر، ثم يتحول عن طريق الصدفة إلى بطل شعبي، وتنقلب بعدها حياته رأسًا على عقب.",
+    "poster": "https://image.tmdb.org/t/p/w500/6ZvIorkPSX8Zkf4XLqZllI4NKPq.jpg",
+    "hdUrl": "https://streamtape.com/e/29YJDblVRAfZ30l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/29YJDblVRAfZ30l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.8",
+    "genre": "حركة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Amr Youssef",
+            "character": "Darwish el Masry",
+            "image": "https://image.tmdb.org/t/p/w185/vYyvP5NHlVUNdKmUgX3e7X5sAW.jpg"
+        },
+        {
+            "name": "Dina El Sherbiny",
+            "character": "Zubaida",
+            "image": "https://image.tmdb.org/t/p/w185/yKIdQwGzMtYN7j75gSQOYQOwVXz.jpg"
+        },
+        {
+            "name": "Tara Emad",
+            "character": "Kariman",
+            "image": "https://image.tmdb.org/t/p/w185/oNS3ui8NT6VWPIDERi2igvN82Tf.jpg"
+        },
+        {
+            "name": "Mostafa Ghareb",
+            "character": "Adly",
+            "image": "https://image.tmdb.org/t/p/w185/glzcFTExMpbS6Jnfwtmkv4x2hDR.jpg"
+        },
+        {
+            "name": "Mohamed Shaheen",
+            "character": "El Nabil Emad",
+            "image": "https://image.tmdb.org/t/p/w185/yvtb7nS52zr26MJIg6IVDkxzNKF.jpg"
+        },
+        {
+            "name": "Khaled Kamal",
+            "character": "Talush",
+            "image": "https://image.tmdb.org/t/p/w185/hFLJEGbDpTfly0ffYXPNDAJX4ch.jpg"
+        },
+        {
+            "name": "Ahmed Abd El Wahab",
+            "character": "Roshdy",
+            "image": "https://image.tmdb.org/t/p/w185/sX232SEv0Q0l4Qt8il5x4BsmhjJ.jpg"
+        },
+        {
+            "name": "Islam Hafez",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/bo52M1eCI8EWE6kgCdh6ZStmqwy.jpg"
+        },
+        {
+            "name": "Mahmoud Alsarraj",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/magRiR8FJsjp0n98hZkocl768te.jpg"
+        },
+        {
+            "name": "Ahmed Mohareb",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/4SNfiNDc4rONw7nXip3bjiaTtqe.jpg"
+        }
+    ],
+    "trailerKey": "Jb2DgYizff0"
+},
+    {
     "title": "Ratatouille",
     "year": "2007",
     "desc": "ريمي ، المقيم في باريس ، يقدر الطعام الجيد ولديه حنك متطور. ويرغب بأن  يحب أن يصبح طاهياً ليتمكن من ابتكار روائع الطهي والاستمتاع بها. المشكلة الوحيدة هي أن ريمي فأر. عندما ينتهي به المطاف في المجاري أسفل أحد أرقى المطاعم في باريس ، يجد ذوّاقة القوارض نفسه في وضع مثالي لتحقيق حلمه.",
