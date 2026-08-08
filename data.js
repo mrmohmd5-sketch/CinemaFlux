@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "White House Down",
+    "year": "2013",
+    "desc": "حين يسيطر أفراد من المرتزقة يتصفون بالعنف على البيت الأبيض، ينطلق ضابط شرطة في 'الكابيتول' لإنقاذ ابنته وإيصال الرئيس إلى برّ الأمان.",
+    "poster": "https://image.tmdb.org/t/p/w500/6TeIVKPw7nXXWy2zKmDmlnSwzb7.jpg",
+    "hdUrl": "https://streamtape.com/e/QrWozx4DVmF04Y9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/QrWozx4DVmF04Y9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Channing Tatum",
+            "character": "Cale",
+            "image": "https://image.tmdb.org/t/p/w185/4TpgnS6l8YUXSne9Av9nda6mjxY.jpg"
+        },
+        {
+            "name": "Jamie Foxx",
+            "character": "President Sawyer",
+            "image": "https://image.tmdb.org/t/p/w185/zD8Nsy4Xrghp7WunwpCj5JKBPeU.jpg"
+        },
+        {
+            "name": "Maggie Gyllenhaal",
+            "character": "Finnerty",
+            "image": "https://image.tmdb.org/t/p/w185/vsfkWdYWmA9CpzMHTJzrFxlDnEZ.jpg"
+        },
+        {
+            "name": "Jason Clarke",
+            "character": "Stenz",
+            "image": "https://image.tmdb.org/t/p/w185/quH4y2dto3UAgZOfaM0QriyRLPN.jpg"
+        },
+        {
+            "name": "Richard Jenkins",
+            "character": "Raphelson",
+            "image": "https://image.tmdb.org/t/p/w185/muT3RZG9hiKaKojD751RcQ5tGEy.jpg"
+        },
+        {
+            "name": "Joey King",
+            "character": "Emily",
+            "image": "https://image.tmdb.org/t/p/w185/94c69mPYSK9jFsAEu0OKB7Qs684.jpg"
+        },
+        {
+            "name": "James Woods",
+            "character": "Walker",
+            "image": "https://image.tmdb.org/t/p/w185/tLH7mpH4KqkWL5VgjueTbewGsfK.jpg"
+        },
+        {
+            "name": "Nicolas Wright",
+            "character": "Donnie the Guide",
+            "image": "https://image.tmdb.org/t/p/w185/cYG8YI40q1YtOAsl5oGWqcUPCzJ.jpg"
+        },
+        {
+            "name": "Jimmi Simpson",
+            "character": "Tyler",
+            "image": "https://image.tmdb.org/t/p/w185/gerE8VqXfFyAs3QhbUlwEuZllKq.jpg"
+        },
+        {
+            "name": "Michael Murphy",
+            "character": "Vice President Hammond",
+            "image": "https://image.tmdb.org/t/p/w185/3quWjoqh8vKoSXE9Ll3AC7pgsRh.jpg"
+        }
+    ],
+    "trailerKey": "aVzMUz3coio"
+},
+    {
     "title": "Taken 2",
     "year": "2012",
     "desc": "أولا أخذوا ابنته. الآن هم قادمون من أجله.\r في اسطنبول ، احتجز عميل وكالة المخابرات المركزية المتقاعد بريان ميلز وزوجته كرهائن من قبل والد الخاطف ميلز الذي قتل أثناء إنقاذ ابنته.",
