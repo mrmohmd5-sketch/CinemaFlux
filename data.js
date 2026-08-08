@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Proposal",
+    "year": "2009",
+    "desc": "تلجأ مديرة تحرير بدار نشر لطلب الزواج من موظف تحت قيادتها، لتتمكن من الحفاظ على الإقامة في الولايات المتحدة، فتبدأ في التودد إليه رغم شخصيتها الحازمة.",
+    "poster": "https://image.tmdb.org/t/p/w500/6stnAm1wSek8ZrislwK4xGTyCnt.jpg",
+    "hdUrl": "https://streamtape.com/e/GK4k8AVjwkU9xm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GK4k8AVjwkU9xm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "كوميديا رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sandra Bullock",
+            "character": "Margaret Tate",
+            "image": "https://image.tmdb.org/t/p/w185/4rfjISL3Flx16jfiusXoHbpt87X.jpg"
+        },
+        {
+            "name": "Ryan Reynolds",
+            "character": "Andrew Paxton",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Malin Akerman",
+            "character": "Gertrude",
+            "image": "https://image.tmdb.org/t/p/w185/u38qRcCAiO3SZdFKJKx3fncDyef.jpg"
+        },
+        {
+            "name": "Craig T. Nelson",
+            "character": "Joe Paxton",
+            "image": "https://image.tmdb.org/t/p/w185/rMh8qdexFKmc7mq7oLzsLLvCCjs.jpg"
+        },
+        {
+            "name": "Mary Steenburgen",
+            "character": "Grace Paxton",
+            "image": "https://image.tmdb.org/t/p/w185/yJhfuqS3yXW7kLSyvRU6n3b35mq.jpg"
+        },
+        {
+            "name": "Betty White",
+            "character": "Grandma Annie",
+            "image": "https://image.tmdb.org/t/p/w185/2Vlr5E1EoD4GglLHoSolLztBQWM.jpg"
+        },
+        {
+            "name": "Denis O'Hare",
+            "character": "Mr. Gilbertson",
+            "image": "https://image.tmdb.org/t/p/w185/zMim5sdMnyd2GFfPd9Jh59Vcog3.jpg"
+        },
+        {
+            "name": "Oscar Nuñez",
+            "character": "Ramone",
+            "image": "https://image.tmdb.org/t/p/w185/UBILHiRphJdlshvsyH920QSAhk.jpg"
+        },
+        {
+            "name": "Aasif Mandvi",
+            "character": "Bob Spaulding",
+            "image": "https://image.tmdb.org/t/p/w185/hoBCqgxK2JqV3MOQYncHRMfwu8V.jpg"
+        },
+        {
+            "name": "Michael Nouri",
+            "character": "Chairman Bergen",
+            "image": "https://image.tmdb.org/t/p/w185/cbrDZMRb7DRsiVcuoU0VDbLL6qj.jpg"
+        }
+    ],
+    "trailerKey": "jHraHCjK094"
+},
+    {
     "title": "Song Sung Blue",
     "year": "2025",
     "desc": "تدور أحداث الفيلم حول زوجين من الموسيقيين المكافحين يقرران تشكيل فرقة موسيقية لتكريم المغني الشهير نيل دايموند فيخوضان رحلة ملهمة تحولهما إلى نجوم محليين وتغير مسار حياتهما.",
