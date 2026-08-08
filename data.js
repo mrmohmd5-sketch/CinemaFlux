@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Abo Nasab",
+    "year": "2023",
+    "desc": "تأخذ الأجواء السعيدة منعطف شديد الخطورة بعد خروج والد داليا المجرم داوود من السجن في ذات يوم زفافهما. فيجدعلي نفسه في قلب سلسلة من احداث الانتقام المضحكة بين عصابة حماه وعصابات اخرى ويؤدي ذلك إلى افساد حفل الزواج وشهر العسل المرتقب.",
+    "poster": "https://image.tmdb.org/t/p/w500/64Fd7nDGv7VvwTpc8Olr2cCcefb.jpg",
+    "hdUrl": "https://streamtape.com/e/27z0XxbAxahZvQJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/27z0XxbAxahZvQJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.6",
+    "genre": "كوميديا حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mohamed Emam",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/dYaBJi6ggVZnBbnycJ1IdDsfgR.jpg"
+        },
+        {
+            "name": "Yasmine Sabry",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/gz0vmtCF9uEvw5f1wjLsqfGUjRc.jpg"
+        },
+        {
+            "name": "Maged El Kedwany",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/iBOBl5XrufQr67yqUU7YOUXoY54.jpg"
+        },
+        {
+            "name": "Wafaa Amer",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/dpUrp4IJlujffHZaeIsOIVTIqKd.jpg"
+        },
+        {
+            "name": "Hala Fakher",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/omSAstcoVGK4Cldav56rIa9v15m.jpg"
+        },
+        {
+            "name": "Salah Abdallah",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/dlpv6csuikKoRAhOQQEdkvmZwUX.jpg"
+        },
+        {
+            "name": "Mohammad Lotfi",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/Akh0XZ1gRWeMWAmDz7kbg6xwz4V.jpg"
+        },
+        {
+            "name": "Mohamed Tharwat",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/3uqttDmL1KH7811E3plwINeGtUs.jpg"
+        },
+        {
+            "name": "Mohamed Radwan",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/mTJqlVe8RlcfaHWv5aMXHjJ4vIL.jpg"
+        },
+        {
+            "name": "Alaa Morsy",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/wE5NLHpCy3iJa77wDbZmFKhoHsR.jpg"
+        }
+    ],
+    "trailerKey": "jj41lTKijW8"
+},
+    {
     "title": "Renegades of Europe",
     "year": "2022",
     "desc": "ينطلق ثلاثة توائم من صعيد مصر إلى إسبانيا باحثين عن إرث والدتهم الراحلة، وهناك تقربهم سلسلة من الأحداث الخطرة من فهم جذورهم.",
