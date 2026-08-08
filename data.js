@@ -1,9 +1,9 @@
 const globalMoviesData = [
     {
-    "title": "Tangled",
+    "title": "Tangled ربانزل مدبلج",
     "year": "2010",
     "desc": "المراهقة المشاكسة 'رابونزل'، التي تمتلك شعرًا طويلًا وسحريًا، تحلم برؤية الفوانيس الطائرة في عيد ميلادها الثامن عشر، لكنها محتجزة داخل برج بسبب والدتها شديدة الحماية. تعقد صفقة مع اللص المطلوب والوسيم 'فلين رايدر'، وينطلق الاثنان في مغامرة مليئة بالإثارة والتشويق.",
-    "poster": "https://image.tmdb.org/t/p/w500/8qZIrVzFJkhX9hErfoWrMvdor1F.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/8qZIrVzFJkhX9hErfoWrMvdor1F.jpg",
     "hdUrl": "https://streamtape.com/e/x3pPw0ZAx4TkMyV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/x3pPw0ZAx4TkMyV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.6",
