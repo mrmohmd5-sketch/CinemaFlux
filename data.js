@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Tangled",
+    "year": "2010",
+    "desc": "المراهقة المشاكسة 'رابونزل'، التي تمتلك شعرًا طويلًا وسحريًا، تحلم برؤية الفوانيس الطائرة في عيد ميلادها الثامن عشر، لكنها محتجزة داخل برج بسبب والدتها شديدة الحماية. تعقد صفقة مع اللص المطلوب والوسيم 'فلين رايدر'، وينطلق الاثنان في مغامرة مليئة بالإثارة والتشويق.",
+    "poster": "https://image.tmdb.org/t/p/w500/8qZIrVzFJkhX9hErfoWrMvdor1F.jpg",
+    "hdUrl": "https://streamtape.com/e/x3pPw0ZAx4TkMyV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/x3pPw0ZAx4TkMyV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "رسوم متحركة عائلي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mandy Moore",
+            "character": "Rapunzel (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/2n0rqUGojRNEHrmtPeCEptHREEY.jpg"
+        },
+        {
+            "name": "Zachary Levi",
+            "character": "Flynn Rider (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/1W8L3kEMMPF9umT3ZGaNIiCYKfZ.jpg"
+        },
+        {
+            "name": "Donna Murphy",
+            "character": "Mother Gothel (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/tmre2oZkIHGqnLhWeldpX2Ujgl0.jpg"
+        },
+        {
+            "name": "Ron Perlman",
+            "character": "Stabbington Brother (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nfky6J9ueey1gMdWMNU9k9YdfGP.jpg"
+        },
+        {
+            "name": "M.C. Gainey",
+            "character": "Captain of the Guard (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nM82se0lOFbOhhj3J6tRFcdEydO.jpg"
+        },
+        {
+            "name": "Jeffrey Tambor",
+            "character": "Big Nose Thug (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/e4IkxsEo5O4oUWrIpXlEhWa6lqB.jpg"
+        },
+        {
+            "name": "Brad Garrett",
+            "character": "Hook Hand Thug (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/813ffbpoaoaJRdoe1yrbivboWKp.jpg"
+        },
+        {
+            "name": "Paul F. Tompkins",
+            "character": "Short Thug (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/pL9v2aubEAOSW0lgrWyP0vvGr34.jpg"
+        },
+        {
+            "name": "Richard Kiel",
+            "character": "Vlad (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/wop4KV2ywl6gdYnCUs1OthtGylM.jpg"
+        },
+        {
+            "name": "Delaney Rose Stein",
+            "character": "Young Rapunzel / Little Girl (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/fivjClC0riAPwL9esdOAkAHWdS3.jpg"
+        }
+    ],
+    "trailerKey": "gsYKF8ecC8g"
+},
+    {
     "title": "Family Business",
     "year": "2026",
     "desc": "تكافح عائلة فقيرة من أجل البقاء على قيد الحياة من خلال عمليات سرقة بسيطة، لكن الأب يقرر ابتكار خطة مختلفة تقوم على حصول كل فرد من أفراد العائلة على وظيفة في منزل عائلة ثرية، مع إخفاء صلة قرابتهم ببعضهم البعض. ويواجهون باستمرار التناقض الصارخ بين عالمهم وعالم أصحاب العمل.",
