@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Encanto",
+    "year": "2021",
+    "desc": "قصة غير عادية تدور حول 'آل مادريغال' الذين يعيشون في الخفاء على جبال 'كولومبيا' في منزل سحري في بلدة نابضة بالحياة في مكان ساحر عجيب اسمه 'إنكانتو'. سحر 'إنكانتو' بارك كل طفل في العائلة بهبة مميزة بدءاً من القوة الخارقة إلى القدرة على الشفاء باستثناء طفلة واحدة وهي 'ميرابيل'. لكن عندما تكتشف أن السحر المحيط بـ'إنكانتو' في خطر، تقرر بصفتها الوحيدة العادية في العائلة أنها قد تكون بارقة الأمل الأخيرة لعائلتها الاستثنائية.",
+    "poster": "https://image.tmdb.org/t/p/w500/3Ndm4UkVOmuEYTwRoSJh4BCR9rq.jpg",
+    "hdUrl": "https://streamtape.com/e/vrmZabK9a0s44JV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vrmZabK9a0s44JV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Stephanie Beatriz",
+            "character": "Mirabel Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/7gNPOlsVIdg7QQOv1gRfHjv1Sdb.jpg"
+        },
+        {
+            "name": "María Cecilia Botero",
+            "character": "Abuela Alma Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nH6eBBgv1PI9J6Ftkn01ny1TMt1.jpg"
+        },
+        {
+            "name": "John Leguizamo",
+            "character": "Bruno Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg"
+        },
+        {
+            "name": "Diane Guerrero",
+            "character": "Isabela Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/suyRRuMIjBdAzTxdFM7U9zHMPTv.jpg"
+        },
+        {
+            "name": "Jess Darrow",
+            "character": "Luisa Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/rJojc1ZUasEnUxSk7lL42RxyQbP.jpg"
+        },
+        {
+            "name": "Carolina Gaitán",
+            "character": "Pepa Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/c7UPkmhIXYWmlqaQK250L8GTsPQ.jpg"
+        },
+        {
+            "name": "Angie Cepeda",
+            "character": "Julieta Madrigal  (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/azShCjdzK93jcBBOJSs5lFUd7CH.jpg"
+        },
+        {
+            "name": "Ravi Cabot-Conyers",
+            "character": "Antonio Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/uM5F2LcmFLJeMrguucByChufpbT.jpg"
+        },
+        {
+            "name": "Mauro Castillo",
+            "character": "Félix Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qGNGBRyy9LumdFw32M7elnHP4IJ.jpg"
+        },
+        {
+            "name": "Rhenzy Feliz",
+            "character": "Camilo Madrigal (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/9YPe3GgyWjG4D0GnTx9KzfvnO0L.jpg"
+        }
+    ],
+    "trailerKey": "bjMFebB2Coo"
+},
+    {
     "title": "Zootopia زوتروبوليس مدبلج",
     "year": "2016",
     "desc": "لقد تغير عالم الحيوان: لم يعد منقسما إلى قسمين بين الفرائس الوديعة والحيوانات المفترسة الشرسة، بل أصبح يتعايش بينهما بانسجام. جودي هي أرنبة صغيرة ذات طموحات كبيرة وتحلم بأن تصبح ضابطة شرطة، حيث تم تعليمها أن كل شيء ممكن في هذا العالم الجديد. نيك هو ثعلب يعيش بذكائه في العاصمة زوتروبوليس، حيث تعمل جودي، بعد تدريب شاق في الأكاديمية، كحارسة مرور. وسيكون على عاتقهم، وهم متحدون بشكل غير متوقع، حل لغز الحيوانات الأربعة عشر المفقودة التي تبحث عنها المدينة بأكملها وإحباط خطط أولئك الذين يريدون الاستيلاء على السلطة المحلية، وفقًا لمبدأ فرق تسد القديم.",
