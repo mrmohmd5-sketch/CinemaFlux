@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Family Business",
+    "year": "2026",
+    "desc": "تكافح عائلة فقيرة من أجل البقاء على قيد الحياة من خلال عمليات سرقة بسيطة، لكن الأب يقرر ابتكار خطة مختلفة تقوم على حصول كل فرد من أفراد العائلة على وظيفة في منزل عائلة ثرية، مع إخفاء صلة قرابتهم ببعضهم البعض. ويواجهون باستمرار التناقض الصارخ بين عالمهم وعالم أصحاب العمل.",
+    "poster": "https://image.tmdb.org/t/p/w500/cTkgBDGGDPlUzLJ1zEWmOopoLdV.jpg",
+    "hdUrl": "https://streamtape.com/e/rk8keMzyyLTbwlp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/rk8keMzyyLTbwlp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.8",
+    "genre": "دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mohamed Saad",
+            "character": "دياب الهباش",
+            "image": "https://image.tmdb.org/t/p/w185/zpIK3GYmqDPumneEDf0aqsqxhV1.jpg"
+        },
+        {
+            "name": "Ghada Adel",
+            "character": "نجلاء",
+            "image": "https://image.tmdb.org/t/p/w185/z2bEbhdv3gRKPeZ9aASshDgWDEP.jpg"
+        },
+        {
+            "name": "Donia Sami",
+            "character": "ولاء",
+            "image": "https://image.tmdb.org/t/p/w185/a8ZSmhmj4W7Fld7QcMQTNu2QNDz.jpg"
+        },
+        {
+            "name": "Haidy Karam",
+            "character": "ليلي",
+            "image": "https://image.tmdb.org/t/p/w185/oAKSE5MRo0SwWmgoHbn0t3UnSzE.jpg"
+        },
+        {
+            "name": "Salwa Mohamed Ali",
+            "character": "ميساء - مديرة المنزل",
+            "image": "https://image.tmdb.org/t/p/w185/mIgBQ3gZeP4EX83zlN8f8ISs6Co.jpg"
+        },
+        {
+            "name": "Ahmed Al Rafeay",
+            "character": "أحمد",
+            "image": "https://image.tmdb.org/t/p/w185/4uyrptxopXtz1dpS89L9USV8UId.jpg"
+        },
+        {
+            "name": "Mahmoud Abdel Moghny",
+            "character": "سيحا",
+            "image": "https://image.tmdb.org/t/p/w185/78NvDJqQ2X71GDKXDIpH0kqEdvp.jpg"
+        },
+        {
+            "name": "Yazan Elessawy",
+            "character": "",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Osama El Hady",
+            "character": "كريم",
+            "image": "https://image.tmdb.org/t/p/w185/5D465cAshACC649EO9bGzgqte8Q.jpg"
+        },
+        {
+            "name": "Tasneem Matar",
+            "character": "دينا",
+            "image": "https://image.tmdb.org/t/p/w185/zoj0wTYQOelWxNnPZcRa2MLOIXD.jpg"
+        }
+    ],
+    "trailerKey": "X8lgM7iVvZs"
+},
+    {
     "title": "Smurfs: The Lost Village السنافر القرية المفقودة مدبلج",
     "year": "2017",
     "desc": "تدور احداث الفيلم  حول العثور على خريطة سرية  تدل على الغابة المحرمة  فتذهب سنفورة فى مغامرة مع اصدقائها السنافر سنفور مفكر وسنفور اخرق وسنفور بدين ، فيذهبوا عبر هذة الغابة  محاولين اكتشاف قرية السنافر الرائعه قبل ان يبلغها عدوهم الساحر الشرير (جارجاميل)",
