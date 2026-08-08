@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Ralph Breaks the Internet",
+    "year": "2018",
+    "desc": "بعد ست سنوات من أحداث 'Wreck-It Ralph' رالف و فيلنوبي الآن أصدقاء، اكتشفوا جهاز الواي فاي في عرفة الاركيد، يقودهم إلى مغامرة جديدة.",
+    "poster": "https://image.tmdb.org/t/p/w500/dPjotaHopb6uvm1gRwrQbaYRiJK.jpg",
+    "hdUrl": "https://streamtape.com/e/bGR147jmwYcQ9x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/bGR147jmwYcQ9x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "حركة مغامرة رسوم متحركة كوميديا عائلي خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "John C. Reilly",
+            "character": "Ralph (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/iDQ8w4qcxU3le5ZWoCKpHs1QNok.jpg"
+        },
+        {
+            "name": "Sarah Silverman",
+            "character": "Vanellope (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/g5G711XyVokJm2RoItpkaHa8mkQ.jpg"
+        },
+        {
+            "name": "Gal Gadot",
+            "character": "Shank (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qCJB1ACi5VjtY4ypXuv3hjAvbSu.jpg"
+        },
+        {
+            "name": "Taraji P. Henson",
+            "character": "Yesss (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/jUU2X9mDwJaAniEmJOfvImBS9qb.jpg"
+        },
+        {
+            "name": "Jack McBrayer",
+            "character": "Felix (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cbr26xDPEiOuYQxggtCPbu5xhDU.jpg"
+        },
+        {
+            "name": "Timothy Simons",
+            "character": "Butcher Boy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/upav8HyWsF6ksAkvogEhR9sBlNN.jpg"
+        },
+        {
+            "name": "Phil Johnston",
+            "character": "eBay Bidder / Surge Protector (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/vJyBKru0qi8YKiTPSxaZj08mkOS.jpg"
+        },
+        {
+            "name": "Mandy Moore",
+            "character": "Rapunzel (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/2n0rqUGojRNEHrmtPeCEptHREEY.jpg"
+        },
+        {
+            "name": "Anika Noni Rose",
+            "character": "Tiana (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/d7aLtuNXBqVtqNnZl8wXsFV4ML5.jpg"
+        },
+        {
+            "name": "Irene Bedard",
+            "character": "Pocahontas (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/9q6ad1uihRROKM8FWv2Asb8sj5j.jpg"
+        }
+    ],
+    "trailerKey": "rttxBrHeU2g"
+},
+    {
     "title": "Wreck-It Ralph",
     "year": "2012",
     "desc": "رالف المدمر هو الشرير البالغ طوله متران ونصف  و يزن 300 كيلوقرام، من لعبة فيديو ممرات يدعى فيلكس البنّاء. حيث يقوم بطل اللعبة بإصلاح المباني التي يدمرها رالف. يريد رالف أن يبرهن أنه يمكن أن يكون شخصًا جيدًا وليس مجرد شرير، يهرب من لعبته الى لعبة اخرى، حيث يساعد في معركة البطل ضد الغزاة.",
