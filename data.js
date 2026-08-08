@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Zootopia",
+    "year": "2016",
+    "desc": "لقد تغير عالم الحيوان: لم يعد منقسما إلى قسمين بين الفرائس الوديعة والحيوانات المفترسة الشرسة، بل أصبح يتعايش بينهما بانسجام. جودي هي أرنبة صغيرة ذات طموحات كبيرة وتحلم بأن تصبح ضابطة شرطة، حيث تم تعليمها أن كل شيء ممكن في هذا العالم الجديد. نيك هو ثعلب يعيش بذكائه في العاصمة زوتروبوليس، حيث تعمل جودي، بعد تدريب شاق في الأكاديمية، كحارسة مرور. وسيكون على عاتقهم، وهم متحدون بشكل غير متوقع، حل لغز الحيوانات الأربعة عشر المفقودة التي تبحث عنها المدينة بأكملها وإحباط خطط أولئك الذين يريدون الاستيلاء على السلطة المحلية، وفقًا لمبدأ فرق تسد القديم.",
+    "poster": "https://image.tmdb.org/t/p/w500/gEi9HS7OZwdpiU3Uc8aVIF88Pa6.jpg",
+    "hdUrl": "https://streamtape.com/e/wDmZmwBG9LTVAD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wDmZmwBG9LTVAD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة مغامرة عائلي كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ginnifer Goodwin",
+            "character": "Judy Hopps (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/eByMpalFhQxUYuzA0srCN8rnfOZ.jpg"
+        },
+        {
+            "name": "Jason Bateman",
+            "character": "Nick Wilde (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/wS22fofYtUf4aGXACFwhkTjUk6a.jpg"
+        },
+        {
+            "name": "Idris Elba",
+            "character": "Chief Bogo (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        },
+        {
+            "name": "Jenny Slate",
+            "character": "Bellwether (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
+        },
+        {
+            "name": "Nate Torrence",
+            "character": "Clawhauser (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/yT9o149xPygdY0NsF9sNgiQwuru.jpg"
+        },
+        {
+            "name": "Bonnie Hunt",
+            "character": "Bonnie Hopps (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/tT9C6uLztgN8OxJULq6F9iEzqlA.jpg"
+        },
+        {
+            "name": "Don Lake",
+            "character": "Stu Hopps (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/zVcMF2Jtv1W3mvzYDE3JiFfw2PG.jpg"
+        },
+        {
+            "name": "Tommy Chong",
+            "character": "Yax (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/4jCJpbssCSGc5jhmrBMoGvWNQDf.jpg"
+        },
+        {
+            "name": "J.K. Simmons",
+            "character": "Mayor Lionheart (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg"
+        },
+        {
+            "name": "Octavia Spencer",
+            "character": "Mrs. Otterton (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/zDGydyM1fmvNWzQlTAns9IZjNxT.jpg"
+        }
+    ],
+    "trailerKey": "HOwOwMJcO3M"
+},
+    {
     "title": "Frozen",
     "year": "2013",
     "desc": "تحلم الأميرة الشابة آنا من أرينديل بالعثور على الحب الحقيقي في تتويج أختها إلسا. يأخذها القدر في رحلة خطيرة في محاولة لإنهاء الشتاء الأبدي الذي سقط على المملكة. يرافقها رجل توصيل الثلج كريستوف ، الرنة سفين ، ورجل الثلج أولاف. في مغامرة حيث ستكتشف ما تعنيه الصداقة والشجاعة والأسرة والحب الحقيقي حقا.",
