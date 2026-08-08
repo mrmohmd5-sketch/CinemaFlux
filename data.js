@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Zombie Ala Gamby",
+    "title": "زومبي على جنبي Zombie Ala Gamby",
     "year": "2022",
     "desc": "في إطار كوميدي، تدور الأحداث حول مطرب في فرقة شعبية، يقدم أغاني مهرجانات، وصديقه شاعر غنائي، حيث تمر الفرقة بالعديد من المواقف الطريفة.",
     "poster": "https://image.tmdb.org/t/p/w500/xqoubLur5xjUMLkPMQSr9f2qiBd.jpg",
