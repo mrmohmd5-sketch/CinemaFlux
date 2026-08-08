@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Wish Dragon",
+    "year": "2021",
+    "desc": "يتلهّف 'دين'، المراهق صلب الإرادة، للتواصل مجدّدًا مع صديقة طفولته المقرّبة حين يلتقي بتنّين يحقّق الأمنيات ويُطلعه على سحر عالم الاحتمالات.",
+    "poster": "https://image.tmdb.org/t/p/w500/3tUtThGbyVYlkh0Mr7ZfRIWIU1K.jpg",
+    "hdUrl": "https://streamtape.com/e/7m3DDPv0dbhAXk7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7m3DDPv0dbhAXk7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة عائلي كوميديا فانتازيا رومنسية مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jimmy Wong",
+            "character": "Din (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/4857lISQnBHQewi4sL7aBkJ5sFa.jpg"
+        },
+        {
+            "name": "John Cho",
+            "character": "Long (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/4Lar4uy8gk78cEocq6ERPRFWt3e.jpg"
+        },
+        {
+            "name": "Constance Wu",
+            "character": "Mom (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/dMx2RlHDuCabtk8GHiijWtVOH8h.jpg"
+        },
+        {
+            "name": "Natasha Liu Bordizzo",
+            "character": "Lina (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/tROyGLEDMe8zpFQq09Fdbn42pGl.jpg"
+        },
+        {
+            "name": "Jimmy O. Yang",
+            "character": "Short Goon / Security Guard 2 (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/1QfCVmdNo4AqBdN54kc9DTBx84X.jpg"
+        },
+        {
+            "name": "Aaron Yoo",
+            "character": "Pockets (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/fL5SEE5RSac93swa5fXjhA2Hhw5.jpg"
+        },
+        {
+            "name": "Will Yun Lee",
+            "character": "Dad (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/zR29E2BHrp6PF7bxD6bVq0nDZXm.jpg"
+        },
+        {
+            "name": "Bobby Lee",
+            "character": "Tall Goon (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/90TyhVb7OfyHPmj3ZVX6hEjHGlD.jpg"
+        },
+        {
+            "name": "Nico Santos",
+            "character": "Buckley (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/e96iYbxaqC9zGaFPxZ2fH82MBNu.jpg"
+        },
+        {
+            "name": "Ronny Chieng",
+            "character": "Pipa God (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nn1y0te102CvakOJ0rSJ7rYPLDF.jpg"
+        }
+    ],
+    "trailerKey": "uWIRyU5fuzU"
+},
+    {
     "title": "The Croods: A New Age",
     "year": "2020",
     "desc": "في بحثها عن موطن أكثر أمانًا، تكتشف عائلة كرود من عصور ما قبل التاريخ جنةً مثاليةً محاطةً بالأسوار تُلبي جميع احتياجاتها. ولكن، للأسف، عليهم أيضًا أن يتعلموا العيش مع عائلة بيترمان - وهي عائلةٌ تتفوق عليهم ببضع خطوات في سلم التطور. ومع تصاعد التوترات بين الجيران الجدد، سرعان ما يدفع تهديدٌ جديدٌ كلا العشيرتين إلى مغامرةٍ ملحميةٍ تُجبرهما على تقبّل اختلافاتهما، واستمداد القوة من بعضهما البعض، والبقاء معًا.",
