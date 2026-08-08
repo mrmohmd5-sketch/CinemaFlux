@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Song Sung Blue",
+    "year": "2025",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/xStmzLprgzqjzfvpBI7uTbcRpwQ.jpg",
+    "hdUrl": "https://streamtape.com/e/L2OkxR0g8yFRzWX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/L2OkxR0g8yFRzWX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "موسيقى رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hugh Jackman",
+            "character": "Mike Sardina",
+            "image": "https://image.tmdb.org/t/p/w185/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+        },
+        {
+            "name": "Kate Hudson",
+            "character": "Claire Sardina",
+            "image": "https://image.tmdb.org/t/p/w185/vCSuPFndH3sbCYZdi1pMiKvzRIp.jpg"
+        },
+        {
+            "name": "Michael Imperioli",
+            "character": "Mark Shurilla",
+            "image": "https://image.tmdb.org/t/p/w185/bCDwQGrecRujCibI8rvsxEc91We.jpg"
+        },
+        {
+            "name": "Fisher Stevens",
+            "character": "Dr. Dave Watson",
+            "image": "https://image.tmdb.org/t/p/w185/wWC6wbLV56RJGtyytMmmGvi054t.jpg"
+        },
+        {
+            "name": "Jim Belushi",
+            "character": "Tom D'Amato",
+            "image": "https://image.tmdb.org/t/p/w185/wIvFYH110ER7ukwR0qryQJJDQYH.jpg"
+        },
+        {
+            "name": "Ella Anderson",
+            "character": "Rachel",
+            "image": "https://image.tmdb.org/t/p/w185/b6CizosCCz6kpTkBYNkBqcJyPGe.jpg"
+        },
+        {
+            "name": "King Princess",
+            "character": "Angelina",
+            "image": "https://image.tmdb.org/t/p/w185/hQFDqQj5fmprYGOsKZMVRLCPJFd.jpg"
+        },
+        {
+            "name": "Mustafa Shakir",
+            "character": "Sex Machine",
+            "image": "https://image.tmdb.org/t/p/w185/eeBtCxmlmHguKbeUr2Usx2Jdnj9.jpg"
+        },
+        {
+            "name": "Hudson Hilbert Hensley",
+            "character": "Dayna",
+            "image": "https://image.tmdb.org/t/p/w185/uprOzXwjjwdRqdTkk3BGXgfRS9K.jpg"
+        },
+        {
+            "name": "Shyaporn Theerakulstit",
+            "character": "Somechai",
+            "image": "https://image.tmdb.org/t/p/w185/oTT0xrCatZ6Qqw31gsx9TTiZzUI.jpg"
+        }
+    ],
+    "trailerKey": "Hm12K_cuLWA",
+    "featured": true
+},
+    {
     "title": "My Teacher, My Obsession",
     "year": "2018",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
