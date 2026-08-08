@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Ratatouille",
+    "year": "2007",
+    "desc": "ريمي ، المقيم في باريس ، يقدر الطعام الجيد ولديه حنك متطور. ويرغب بأن  يحب أن يصبح طاهياً ليتمكن من ابتكار روائع الطهي والاستمتاع بها. المشكلة الوحيدة هي أن ريمي فأر. عندما ينتهي به المطاف في المجاري أسفل أحد أرقى المطاعم في باريس ، يجد ذوّاقة القوارض نفسه في وضع مثالي لتحقيق حلمه.",
+    "poster": "https://image.tmdb.org/t/p/w500/lBfftNxNUTvuWyVnhvQuvj2IOnI.jpg",
+    "hdUrl": "https://streamtape.com/e/AAyLR1qa44UXJMg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/AAyLR1qa44UXJMg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Patton Oswalt",
+            "character": "Remy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ljQvjbPmcIAl205Lb2Mu4CW8WO7.jpg"
+        },
+        {
+            "name": "Ian Holm",
+            "character": "Skinner (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cOJDgvgj4nMec6Inzj1H5nugTO5.jpg"
+        },
+        {
+            "name": "Lou Romano",
+            "character": "Linguini (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/1qOuqRzlp5BghzTkYSN3MsaEXgF.jpg"
+        },
+        {
+            "name": "Brian Dennehy",
+            "character": "Django (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cg7CwS1vMJXCzZ0FUm4RbrjAJ2t.jpg"
+        },
+        {
+            "name": "Peter Sohn",
+            "character": "Emile (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/8cQGViF2lXlcsAIvFUMWboXYXIu.jpg"
+        },
+        {
+            "name": "Peter O'Toole",
+            "character": "Anton Ego (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/7HzyrEuRVPpjmyJTeiU5oILd3Cn.jpg"
+        },
+        {
+            "name": "Brad Garrett",
+            "character": "Gusteau (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/813ffbpoaoaJRdoe1yrbivboWKp.jpg"
+        },
+        {
+            "name": "Janeane Garofalo",
+            "character": "Colette (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cdNooT0otUf5QVHDPm9bkGN7gNu.jpg"
+        },
+        {
+            "name": "Will Arnett",
+            "character": "Horst (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cXupYqk2ERP13XBkw816skYdVDO.jpg"
+        },
+        {
+            "name": "Julius Callahan",
+            "character": "Lalo / Francois (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ggEnMBpO6K77TgGiXYVQA32ksQ6.jpg"
+        }
+    ],
+    "trailerKey": "NgsQ8mVkN8w"
+},
+    {
     "title": "Tangled ربانزل مدبلج",
     "year": "2010",
     "desc": "المراهقة المشاكسة 'رابونزل'، التي تمتلك شعرًا طويلًا وسحريًا، تحلم برؤية الفوانيس الطائرة في عيد ميلادها الثامن عشر، لكنها محتجزة داخل برج بسبب والدتها شديدة الحماية. تعقد صفقة مع اللص المطلوب والوسيم 'فلين رايدر'، وينطلق الاثنان في مغامرة مليئة بالإثارة والتشويق.",
