@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Captain America: Brave New World",
+    "year": "2025",
+    "desc": "يجد سام ويلسون، كابتن أمريكا الجديد، نفسه في خضم حادث دولي، وعليه أن يكتشف الدافع وراء خطة عالمية شريرة.",
+    "poster": "https://image.tmdb.org/t/p/w500/xMisbwEVoh099ZwOhZ2io29Bd4m.jpg",
+    "hdUrl": "https://streamtape.com/e/eVjrGv1WAwfY6qy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eVjrGv1WAwfY6qy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.0",
+    "genre": "حركة إثارة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Anthony Mackie",
+            "character": "Sam Wilson / Captain America",
+            "image": "https://image.tmdb.org/t/p/w185/eZSIDrtTzhvabyjrmIITQLsjx8h.jpg"
+        },
+        {
+            "name": "Harrison Ford",
+            "character": "President Thaddeus Ross",
+            "image": "https://image.tmdb.org/t/p/w185/pjBMJVPpcZK23Vt1nzr1zEBTWrP.jpg"
+        },
+        {
+            "name": "Danny Ramirez",
+            "character": "Joaquin Torres",
+            "image": "https://image.tmdb.org/t/p/w185/7ZvcfWA5O5ULiupbHZtGGEPwnpI.jpg"
+        },
+        {
+            "name": "Shira Haas",
+            "character": "Ruth Bat-Seraph",
+            "image": "https://image.tmdb.org/t/p/w185/eZRs79ZMoctjDk0SbPhzMNcs34a.jpg"
+        },
+        {
+            "name": "Tim Blake Nelson",
+            "character": "Samuel Sterns",
+            "image": "https://image.tmdb.org/t/p/w185/rWuTGiAMaaHIJ30eRkQS23LbRSW.jpg"
+        },
+        {
+            "name": "Carl Lumbly",
+            "character": "Isaiah Bradley",
+            "image": "https://image.tmdb.org/t/p/w185/ew1URcenWNl1Uclsz9ADiRb0uBD.jpg"
+        },
+        {
+            "name": "Giancarlo Esposito",
+            "character": "Sidewinder",
+            "image": "https://image.tmdb.org/t/p/w185/rcXnr82TwDzU4ZGdBeNXfG0ZQnZ.jpg"
+        },
+        {
+            "name": "Liv Tyler",
+            "character": "Betty Ross",
+            "image": "https://image.tmdb.org/t/p/w185/aYlqS4wYuNCiN9wmvDwKRAE9BQ9.jpg"
+        },
+        {
+            "name": "Xosha Roquemore",
+            "character": "Leila Taylor",
+            "image": "https://image.tmdb.org/t/p/w185/k596seeX26xKN8bZ3Uir9zFJ2gS.jpg"
+        },
+        {
+            "name": "Jóhannes Haukur Jóhannesson",
+            "character": "Copperhead",
+            "image": "https://image.tmdb.org/t/p/w185/oqZftP0WS1rD5NFpR7vLp6JU52I.jpg"
+        }
+    ],
+    "trailerKey": "SOwJjV6Y_l0"
+},
+    {
     "title": "White House Down",
     "year": "2013",
     "desc": "حين يسيطر أفراد من المرتزقة يتصفون بالعنف على البيت الأبيض، ينطلق ضابط شرطة في 'الكابيتول' لإنقاذ ابنته وإيصال الرئيس إلى برّ الأمان.",
