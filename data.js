@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Zombie Ala Gamby",
+    "year": "2022",
+    "desc": "في إطار كوميدي، تدور الأحداث حول مطرب في فرقة شعبية، يقدم أغاني مهرجانات، وصديقه شاعر غنائي، حيث تمر الفرقة بالعديد من المواقف الطريفة.",
+    "poster": "https://image.tmdb.org/t/p/w500/xqoubLur5xjUMLkPMQSr9f2qiBd.jpg",
+    "hdUrl": "https://streamtape.com/e/GjDkRQlrvWiZjg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GjDkRQlrvWiZjg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "4.2",
+    "genre": "كوميديا مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ali Rabie",
+            "character": "حمادة بطة",
+            "image": "https://image.tmdb.org/t/p/w185/uJHx2Gsa46WMGXFWZEIivKGHZnH.jpg"
+        },
+        {
+            "name": "Hagar Ahmad",
+            "character": "تمارا",
+            "image": "https://image.tmdb.org/t/p/w185/zy8bAGxBy14ktb3d4BsmK71R1XV.jpg"
+        },
+        {
+            "name": "Hamdy Al Merghany",
+            "character": "الحاوي",
+            "image": "https://image.tmdb.org/t/p/w185/sJg1gQuFiGJ2dU7QabKlEpe1rGC.jpg"
+        },
+        {
+            "name": "Karim Afifi",
+            "character": "مرجان",
+            "image": "https://image.tmdb.org/t/p/w185/afQYakbQXoRAh1vP6WuhqxsiD9V.jpg"
+        },
+        {
+            "name": "Mohamed Outaka",
+            "character": "إدريس",
+            "image": "https://image.tmdb.org/t/p/w185/XyVpD2tp4x8wGlMjePtg5dhyGZ.jpg"
+        },
+        {
+            "name": "Dina Mohsen",
+            "character": "أماني",
+            "image": "https://image.tmdb.org/t/p/w185/1kSwB3v1wc1jCBhCAIgqHVrEDwD.jpg"
+        },
+        {
+            "name": "Arefa Abdul Rasoul",
+            "character": "أم بطة",
+            "image": "https://image.tmdb.org/t/p/w185/3RZjDahSEjVwIOVJwhcvtSfxkLf.jpg"
+        },
+        {
+            "name": "Mohamed Mahmoud",
+            "character": "عم سلطان",
+            "image": "https://image.tmdb.org/t/p/w185/h49gpgK9zVsrXOeBxb2mYbf27Pg.jpg"
+        },
+        {
+            "name": "Amr Abdel Gelil",
+            "character": "عبدالرحيم الدهشوري",
+            "image": "https://image.tmdb.org/t/p/w185/5H6iU6KXLvfLPzjPIm3DMkOGtf0.jpg"
+        },
+        {
+            "name": "Sami Maghouri",
+            "character": "شاهين الفقي (أبو تمارا)",
+            "image": "https://image.tmdb.org/t/p/w185/675TmIEoWDqpHYF5BCe0moimtXr.jpg"
+        }
+    ],
+    "trailerKey": "P9j8ey4kWrY"
+},
+    {
     "title": "Captain America: Brave New World",
     "year": "2025",
     "desc": "يجد سام ويلسون، كابتن أمريكا الجديد، نفسه في خضم حادث دولي، وعليه أن يكتشف الدافع وراء خطة عالمية شريرة.",
