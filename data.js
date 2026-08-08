@@ -1,6 +1,6 @@
 const globalMoviesData = [
     {
-    "title": "Monster House",
+    "title": "Monster House البيت المتوحش مدبلج",
     "year": "2006",
     "desc": "يكتشف دي جي هارفارد و، تشاودر وجيني، أن منزل جاره هو في الواقع وحش حي، وهو شرير للغاية. بطبيعة الحال، لا يصدق الكبار هذه القصة إطلاقًا، لذا يقع على عاتق الأصدقاء الثلاثة مهمة إغلاق المنزل قبل سقوط أي ضحايا أبرياء...",
     "poster": "https://image.tmdb.org/t/p/w500/3uoR8Nbe8Q2heM48PZR8Tov6N9j.jpg",
@@ -64,7 +64,7 @@ const globalMoviesData = [
     "trailerKey": "kS8eoP8bols"
 },
     {
-    "title": "Abo Nasab",
+    "title": "Abo Nasab ابو نسب",
     "year": "2023",
     "desc": "تأخذ الأجواء السعيدة منعطف شديد الخطورة بعد خروج والد داليا المجرم داوود من السجن في ذات يوم زفافهما. فيجدعلي نفسه في قلب سلسلة من احداث الانتقام المضحكة بين عصابة حماه وعصابات اخرى ويؤدي ذلك إلى افساد حفل الزواج وشهر العسل المرتقب.",
     "poster": "https://image.tmdb.org/t/p/w500/64Fd7nDGv7VvwTpc8Olr2cCcefb.jpg",
@@ -128,7 +128,7 @@ const globalMoviesData = [
     "trailerKey": "jj41lTKijW8"
 },
     {
-    "title": "Renegades of Europe",
+    "title": "Renegades of Europe اشباح اوروبا",
     "year": "2022",
     "desc": "ينطلق ثلاثة توائم من صعيد مصر إلى إسبانيا باحثين عن إرث والدتهم الراحلة، وهناك تقربهم سلسلة من الأحداث الخطرة من فهم جذورهم.",
     "poster": "https://image.tmdb.org/t/p/w500/y92cTW9pIw3K2AX7l9R6GS1FKZ2.jpg",
