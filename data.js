@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "My Teacher, My Obsession",
+    "year": "2018",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/yh06bjJTNu45xyVgpv0wXuWvkgN.jpg",
+    "hdUrl": "https://streamtape.com/e/q6RoqpGKxAuRe9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/q6RoqpGKxAuRe9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "4.9",
+    "genre": "دراما إثارة فيلم تلفازي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Rusty Joiner",
+            "character": "Chris",
+            "image": "https://image.tmdb.org/t/p/w185/aBKbYXtmPYZJ89z1h91TpnzXyfW.jpg"
+        },
+        {
+            "name": "Lucy Loken",
+            "character": "Kyla",
+            "image": "https://image.tmdb.org/t/p/w185/pqWT1XcgALfTpbSjPQt8UE335F6.jpg"
+        },
+        {
+            "name": "Laura Bilgeri",
+            "character": "Riley",
+            "image": "https://image.tmdb.org/t/p/w185/AjcHvbF6NkzjxH3zxK7OgDFZ3uT.jpg"
+        },
+        {
+            "name": "Jana Lee Hamblin",
+            "character": "Jess",
+            "image": "https://image.tmdb.org/t/p/w185/deOY9RUPBHPJhcNxWHwfqK7Xb2J.jpg"
+        },
+        {
+            "name": "Alexandria DeBerry",
+            "character": "Tricia",
+            "image": "https://image.tmdb.org/t/p/w185/ts7SJoaHRYDeST8EfteBQ8UugBj.jpg"
+        },
+        {
+            "name": "Bruno Rose",
+            "character": "Quentin",
+            "image": "https://image.tmdb.org/t/p/w185/5a47N43XejI8hVCX5SSljkOOBaa.jpg"
+        },
+        {
+            "name": "Lestonja Diaz",
+            "character": "Ellis",
+            "image": "https://image.tmdb.org/t/p/w185/1NoBzZNILnXj9BOilxteY6r5jlK.jpg"
+        },
+        {
+            "name": "David Ditmore",
+            "character": "Janitor",
+            "image": "https://image.tmdb.org/t/p/w185/pN3OhI6rnCUnOSdDrvV1AZzgEFv.jpg"
+        },
+        {
+            "name": "Dakota Bruton",
+            "character": "Student in Chris' Classroom (uncredited)",
+            "image": "https://image.tmdb.org/t/p/w185/ivpP6d6DVzox0NHcGZyng6egvvH.jpg"
+        },
+        {
+            "name": "Vin Morreale Jr",
+            "character": "High-School Principal (uncredited)",
+            "image": "https://image.tmdb.org/t/p/w185/7VTQy35V4OJoe8K41Q3fqQiqy9C.jpg"
+        }
+    ],
+    "trailerKey": "8PWMTSHc8qg"
+},
+    {
     "title": "Monster House البيت المتوحش مدبلج",
     "year": "2006",
     "desc": "يكتشف دي جي هارفارد و، تشاودر وجيني، أن منزل جاره هو في الواقع وحش حي، وهو شرير للغاية. بطبيعة الحال، لا يصدق الكبار هذه القصة إطلاقًا، لذا يقع على عاتق الأصدقاء الثلاثة مهمة إغلاق المنزل قبل سقوط أي ضحايا أبرياء...",
