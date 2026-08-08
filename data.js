@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Maze Runner: The Death Cure",
+    "year": "2018",
+    "desc": "يقود (توماس) مجموعة المُحاصرين في مهمتهم الأخيرة، حيث يتوجب عليهم اقتحام المدينة الأسطورية الأخيرة لإنقاذ أصدقائهم، حيث يجدون متاهة تسيطر على المدينة بأكملها، وقد تتحول في أي لحظة إلى متاهة دموية تظفر بأرواح الجميع.",
+    "poster": "https://image.tmdb.org/t/p/w500/dqckStulfP42K2iY9j6UMxY6Sfp.jpg",
+    "hdUrl": "https://streamtape.com/e/wdVYXZ6GQrSJvXW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wdVYXZ6GQrSJvXW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "خيال علمي حركة مغامرة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Dylan O'Brien",
+            "character": "Thomas",
+            "image": "https://image.tmdb.org/t/p/w185/xN3GdvIlqsR838gDoblhPH0numP.jpg"
+        },
+        {
+            "name": "Kaya Scodelario",
+            "character": "Teresa Agnes",
+            "image": "https://image.tmdb.org/t/p/w185/uVp7VarM5GX08hfCEGt63OM5c5c.jpg"
+        },
+        {
+            "name": "Thomas Brodie-Sangster",
+            "character": "Newt",
+            "image": "https://image.tmdb.org/t/p/w185/tapXeOg3wnezcjm2ENox0lL2b25.jpg"
+        },
+        {
+            "name": "Ki Hong Lee",
+            "character": "Minho",
+            "image": "https://image.tmdb.org/t/p/w185/Ws4cNaHHX4tNddh7mw4zIBZyPb.jpg"
+        },
+        {
+            "name": "Dexter Darden",
+            "character": "Frypan",
+            "image": "https://image.tmdb.org/t/p/w185/4Io5JOdl17GtCaXt0ZBv0p6IEEk.jpg"
+        },
+        {
+            "name": "Rosa Salazar",
+            "character": "Brenda",
+            "image": "https://image.tmdb.org/t/p/w185/f8MITeVNUrP9mMiXcPnCEZTIW56.jpg"
+        },
+        {
+            "name": "Giancarlo Esposito",
+            "character": "Jorge",
+            "image": "https://image.tmdb.org/t/p/w185/rcXnr82TwDzU4ZGdBeNXfG0ZQnZ.jpg"
+        },
+        {
+            "name": "Will Poulter",
+            "character": "Gally",
+            "image": "https://image.tmdb.org/t/p/w185/9blYMaj79VGC6BHTLmJp3V5S8r3.jpg"
+        },
+        {
+            "name": "Aidan Gillen",
+            "character": "Janson",
+            "image": "https://image.tmdb.org/t/p/w185/fWWRgyJEGjOPcx43CaFiUCWMBLo.jpg"
+        },
+        {
+            "name": "Patricia Clarkson",
+            "character": "Ava Paige",
+            "image": "https://image.tmdb.org/t/p/w185/rHHM9G83fpBAcFathbSyV4Tot5j.jpg"
+        }
+    ],
+    "trailerKey": "Th0Tlj8XL1A"
+},
+    {
     "title": "Maze Runner: The Scorch Trials",
     "year": "2015",
     "desc": "كانت المتاهة مجرد البداية.  يواجه توماس وزملاؤه غلادرز أكبر تحد لهم حتى الآن: البحث عن أدلة حول المنظمة الغامضة والقوية المعروفة باسم وك دي . تأخذهم رحلتهم إلى حرق ، وهي مناظر طبيعية مقفرة مليئة بالعقبات التي لا يمكن تصورها. بالتعاون مع مقاتلي المقاومة ، يواجه غلادرز قوات وك دي المتفوقة إلى حد كبير ويكشف عن خططه المروعة لهم جميعا.",
