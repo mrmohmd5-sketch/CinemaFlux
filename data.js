@@ -1,9 +1,9 @@
 const globalMoviesData = [
     {
-    "title": "6 Days",
+    "title": "6 Days ست ايام",
     "year": "2025",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
-    "poster": "https://image.tmdb.org/t/p/w500/uJ3SQdgbLaL0SFd7uN6tBlf2GKE.jpg",
+    "desc": "تدور أحداث الفيلم حول شاب وفتاة يلتقيان مجددا بعد سنوات طويلة من الفراق ليقضيا معا ستة أيام تتكشف خلالها مشاعرهما الدفينة وتنكشف أسرار الماضي وتأثير خياراتهما على حياتهما .",
+    "poster": "https://image.tmdb.org/t/p/original/415aFeLDxllcCM9VHmehmX9wTKt.jpg",
     "hdUrl": "https://streamtape.com/e/YZkDVz2Pg0FodQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/YZkDVz2Pg0FodQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.2",
