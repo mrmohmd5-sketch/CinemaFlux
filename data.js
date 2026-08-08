@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Monster House",
+    "year": "2006",
+    "desc": "يكتشف دي جي هارفارد و، تشاودر وجيني، أن منزل جاره هو في الواقع وحش حي، وهو شرير للغاية. بطبيعة الحال، لا يصدق الكبار هذه القصة إطلاقًا، لذا يقع على عاتق الأصدقاء الثلاثة مهمة إغلاق المنزل قبل سقوط أي ضحايا أبرياء...",
+    "poster": "https://image.tmdb.org/t/p/w500/3uoR8Nbe8Q2heM48PZR8Tov6N9j.jpg",
+    "hdUrl": "https://streamtape.com/e/D4lKyAey8AckooY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/D4lKyAey8AckooY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mitchel Musso",
+            "character": "DJ (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ofaAVYn61scqEMtXmK9G7TIFNhA.jpg"
+        },
+        {
+            "name": "Sam Lerner",
+            "character": "Chowder (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/tHTUqTxciQIEdQYdaKWPorWyRbm.jpg"
+        },
+        {
+            "name": "Spencer Locke",
+            "character": "Jenny (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/2mHfjqDY8e3ZISkFmi1qjrMs7uN.jpg"
+        },
+        {
+            "name": "Steve Buscemi",
+            "character": "Nebbercracker (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+        },
+        {
+            "name": "Maggie Gyllenhaal",
+            "character": "Zee (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/vsfkWdYWmA9CpzMHTJzrFxlDnEZ.jpg"
+        },
+        {
+            "name": "Kevin James",
+            "character": "Officer Landers (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/3WPW5duZyQcjveefxwLULgIyhM0.jpg"
+        },
+        {
+            "name": "Nick Cannon",
+            "character": "Officer Lister (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/u8b5uinYCwdlCu6P3qcKZqeCgQe.jpg"
+        },
+        {
+            "name": "Jon Heder",
+            "character": "Reginald \"Skull\" Skulinski (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/xGLRJEKKmNsDpz6MefPMU4gqQj1.jpg"
+        },
+        {
+            "name": "Jason Lee",
+            "character": "Bones (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/3duPl6Ve8RnvcouOaXoMCdJf5ln.jpg"
+        },
+        {
+            "name": "Catherine O'Hara",
+            "character": "Mom (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/gI2RyymLJ9ZrhEyJSD5EqSvFpCX.jpg"
+        }
+    ],
+    "trailerKey": "kS8eoP8bols"
+},
+    {
     "title": "Abo Nasab",
     "year": "2023",
     "desc": "تأخذ الأجواء السعيدة منعطف شديد الخطورة بعد خروج والد داليا المجرم داوود من السجن في ذات يوم زفافهما. فيجدعلي نفسه في قلب سلسلة من احداث الانتقام المضحكة بين عصابة حماه وعصابات اخرى ويؤدي ذلك إلى افساد حفل الزواج وشهر العسل المرتقب.",
