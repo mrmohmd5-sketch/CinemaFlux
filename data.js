@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Blood Machines",
+    "year": "2020",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/nT8cZQCz5pf0NBSnZDTDrfC8Mgn.jpg",
+    "hdUrl": "https://streamtape.com/e/LX1Ovb6wqqCRp6y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LX1Ovb6wqqCRp6y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.3",
+    "genre": "خيال علمي رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Elisa Lasowski",
+            "character": "Corey",
+            "image": "https://image.tmdb.org/t/p/w185/5OAtZVtaJf38t59Iq4Vt1ouKKx1.jpg"
+        },
+        {
+            "name": "Anders Heinrichsen",
+            "character": "Vascan",
+            "image": "https://image.tmdb.org/t/p/w185/z9bKgT6rLkoeCYEEQVNzdqnmd1i.jpg"
+        },
+        {
+            "name": "Christian Erickson",
+            "character": "Lago",
+            "image": "https://image.tmdb.org/t/p/w185/cpEzQNW1EsRmK8SMj4y5xwevXwM.jpg"
+        },
+        {
+            "name": "Natasha Cashman",
+            "character": "Bald",
+            "image": "https://image.tmdb.org/t/p/w185/eTWXDkOXyrlFEtmiLEyViQMgNMo.jpg"
+        },
+        {
+            "name": "Walter Dickerson",
+            "character": "Galdor",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Joëlle Berckmans",
+            "character": "Mima",
+            "image": "https://image.tmdb.org/t/p/w185/8lENKpQ2I6MnrFlaRm4JXe0k7Kg.jpg"
+        },
+        {
+            "name": "Noémie Stevens",
+            "character": "Tracy",
+            "image": "https://image.tmdb.org/t/p/w185/a6vOKrjldwPMDIoJHfTPZ0veJyx.jpg"
+        },
+        {
+            "name": "Alexandra Flandrin",
+            "character": "Tracy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/wsi7rNBnNrTWHL9TJH6wCOa9GX0.jpg"
+        },
+        {
+            "name": "Marion Levavasseur",
+            "character": "Bulk",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Garance Silve",
+            "character": "",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "pDPojzRXQOI"
+},
+    {
     "title": "Captain America: Brave New World",
     "year": "2025",
     "desc": "يجد سام ويلسون، كابتن أمريكا الجديد، نفسه في خضم حادث دولي، وعليه أن يكتشف الدافع وراء خطة عالمية شريرة.",
