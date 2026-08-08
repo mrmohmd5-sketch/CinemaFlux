@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "6 Days",
+    "year": "2025",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/uJ3SQdgbLaL0SFd7uN6tBlf2GKE.jpg",
+    "hdUrl": "https://streamtape.com/e/YZkDVz2Pg0FodQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/YZkDVz2Pg0FodQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ahmed Malek",
+            "character": "Yousef",
+            "image": "https://image.tmdb.org/t/p/w185/rXLI7Q1Lhf01V5CA870H34NRQnA.jpg"
+        },
+        {
+            "name": "Aya Samaha",
+            "character": "Alya",
+            "image": "https://image.tmdb.org/t/p/w185/93WzP9m0wO0R57vMa0c92oRL5wX.jpg"
+        },
+        {
+            "name": "Malik Emad",
+            "character": "Yousef-child",
+            "image": "https://image.tmdb.org/t/p/w185/1sRyrvc2MkmJcKsCNRfkdCZFKWO.jpg"
+        },
+        {
+            "name": "Sulafa Ghanem",
+            "character": "Alya's Mother",
+            "image": "https://image.tmdb.org/t/p/w185/yJQoYeLkrFpc7Tcs9ZrDjy6A2FZ.jpg"
+        },
+        {
+            "name": "Malak Yasser",
+            "character": "Hind Al-Qadi",
+            "image": "https://image.tmdb.org/t/p/w185/94jGUSeZ3A5VLl5ueBqqwVwAyDG.jpg"
+        },
+        {
+            "name": "Marihan Moaz",
+            "character": "Donia",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Ahmed Ezzat",
+            "character": "Alya's Doctor",
+            "image": "https://image.tmdb.org/t/p/w185/18eIdZf1ORF2OWqvfsjdvJfYXPl.jpg"
+        },
+        {
+            "name": "Fouad Mohsen",
+            "character": "The Cinema's Kid",
+            "image": "https://image.tmdb.org/t/p/w185/1qkXcPfxcPDInwxO8qB2qdXA3xE.jpg"
+        },
+        {
+            "name": "Nany Al Deeb",
+            "character": "The Cinema's Lady",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Mostafa Hosni",
+            "character": "Mobile Phone Seller",
+            "image": "https://image.tmdb.org/t/p/w185/xIMYr0wZKo3DZShHcEcMD1KrO3Y.jpg"
+        }
+    ],
+    "trailerKey": "hSZvUFoCgH8"
+},
+    {
     "title": "زومبي على جنبي Zombie Ala Gamby",
     "year": "2022",
     "desc": "في إطار كوميدي، تدور الأحداث حول مطرب في فرقة شعبية، يقدم أغاني مهرجانات، وصديقه شاعر غنائي، حيث تمر الفرقة بالعديد من المواقف الطريفة.",
