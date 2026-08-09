@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+    "year": "2025",
+    "desc": "بينما كان أعضاء فيلق قاتلي الشياطين و'الهشيرا' يخضعون لبرنامج تدريب جماعي يُعرف بتدريب الهشيرا استعدادًا للمعركة الحاسمة ضد الشياطين، يظهر موزان كيبوتسوجي في قصر عائلة أوبوياشيكي. ومع تعرّض قائد الفيلق للخطر، يندفع تانجيرو والهشيرا إلى المقر الرئيسي، لكنهم يجدون أنفسهم يسقطون في أعماق مكان غامض بفعل يدي موزان. الوجهة التي سقط فيها تانجيرو ورفاقه ليست سوى معقل الشياطين – قلعة اللانهاية. وهكذا، تبدأ ساحة المعركة النهائية بين فيلق قاتلي الشياطين وقوى الشر في الاشتعال.",
+    "poster": "https://image.tmdb.org/t/p/w500/4xdWWzKsO4ua6u7qu6O43HjfthR.jpg",
+    "hdUrl": "https://streamtape.com/e/LDM70ZkZ1vfRrA4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LDM70ZkZ1vfRrA4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.7",
+    "genre": "رسوم متحركة حركة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Natsuki Hanae",
+            "character": "Tanjiro Kamado (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/alTb0DlcPIbcwM08WSmxFai58sd.jpg"
+        },
+        {
+            "name": "Takahiro Sakurai",
+            "character": "Giyu Tomioka (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/8s8owcKmpRAuhzEGjSdRpztthUg.jpg"
+        },
+        {
+            "name": "Akira Ishida",
+            "character": "Akaza (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/jnW2Gn2NlR2uwOCeyOuzypnTmkH.jpg"
+        },
+        {
+            "name": "Hiro Shimono",
+            "character": "Zenitsu Agatsuma (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/yrSDcgFefHtWkFmLnTrcw2t0MV.jpg"
+        },
+        {
+            "name": "Yoshimasa Hosoya",
+            "character": "Kaigaku (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/lUR5oN1LrqGgp25IOcI1qOH1Ud5.jpg"
+        },
+        {
+            "name": "Saori Hayami",
+            "character": "Shinobu Kocho (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/gLv9lO7dlUbIsmyJUvgegqAAXki.jpg"
+        },
+        {
+            "name": "Mamoru Miyano",
+            "character": "Doma (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nuok8ueG7k9hPZ09Tpr8e7Qn0ah.jpg"
+        },
+        {
+            "name": "Reina Ueda",
+            "character": "Kanao Tsuyuri (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg"
+        },
+        {
+            "name": "Yuichi Nakamura",
+            "character": "Keizo (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/wb8behVKjBHX9XXrEydvNINCYwH.jpg"
+        },
+        {
+            "name": "Lynn",
+            "character": "Koyuki (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/eJ2NqgzpnzNbT6Nt9EpDfzqNeZM.jpg"
+        }
+    ],
+    "trailerKey": "rdOrQ2ehUgc"
+},
+    {
     "title": "Children Who Chase Lost Voices",
     "year": "2011",
     "desc": "(واتاسي آسونا)، فتاة يتيمة الأب تعيش مع أمها حياة هادئة، ومن صفاتها أنها تحب الانعزال في إحدى المناطق الجبلية البعيدة. ذات مرة شغلت مذياعها في مكان عزلتها ذاك فالتقطت لحناً غريباً لم تسمع مثله من قبل، وظل ذلك اللحن عالقاً بذهنها وأبى أن يفارقه. تتعرف (آسونا) على شاب غريب قال بأنه قادم من أرض بعيدة اسمها (أغارتا)، ثم تعرف لاحقاً من أستاذها أن تلك الأرض توجد في عالم سفلي يمكن فيه إعادة بعث الأموات وإرجاعهم إلى الحياة من جديد. ولأن الأستاذ كان عازماً على الذهاب إلى تلك الأرض لإعادة شخص عزيز عليه من عالم الموت، فقد قررت (آسونا) مرافقته في هذه الرحلة الشاقة للسبب نفسه.",
