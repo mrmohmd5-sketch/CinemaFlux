@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Kiki's Delivery Service",
+    "year": "1989",
+    "desc": "ساحرة صغيرة تُدعى (كيكي)، تبلغ الىن ثلاثة عشر عامًا من العمر، ولا تزال قليلة الخبرة كثيرة العِند، لكن لها من الخيال والعزم والحيلة كثيرًا، مع قطها المتحدث (جيجي) دومًا بجانبها، نجدها على استعداد لمواجهة العالم بأسره أو على الأقل القرية الساحلية الاوروبية الطريفة التي انتقتها كموطنها الجديد.",
+    "poster": "https://image.tmdb.org/t/p/w500/yxpTnAKu79xpfD8vW8vrOyZnbM0.jpg",
+    "hdUrl": "https://streamtape.com/e/V8JjOmXkBmuKG4J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/V8JjOmXkBmuKG4J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Minami Takayama",
+            "character": "Kiki / Ursula (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/4Gunxt2UWnAX74ZoXKtqK2rI0e.jpg"
+        },
+        {
+            "name": "Rei Sakuma",
+            "character": "Jiji (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/6M6zQtO0reIv97oKUrVT084FUKv.jpg"
+        },
+        {
+            "name": "Kappei Yamaguchi",
+            "character": "Tombo (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/mJyxKRZxLv9D7LH5KcNSkjSKYOB.jpg"
+        },
+        {
+            "name": "Keiko Toda",
+            "character": "Osono (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/jRJIfQLmMyHaNnvlBnnNp3kPx6I.jpg"
+        },
+        {
+            "name": "Mieko Nobusawa",
+            "character": "Kokiri (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/znTqIdwtD6EyRMgMOVN67sKzFZa.jpg"
+        },
+        {
+            "name": "Koichi Miura",
+            "character": "Okino (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/8dUuWI8nhlG5ckrtP9FWOXO6gwB.jpg"
+        },
+        {
+            "name": "Haruko Katō",
+            "character": "Old Lady (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/WyeP5PbPEDeQI83Mq1NYwB87mk.jpg"
+        },
+        {
+            "name": "Hiroko Seki",
+            "character": "Bertha (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qT2lS6TuQIJkjJiReYFziXnpH9L.jpg"
+        },
+        {
+            "name": "Yuriko Fuchizaki",
+            "character": "Ketto (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/15FGHjJ4WbzJFbolJzEnuKkLC3b.jpg"
+        },
+        {
+            "name": "Koichi Yamadera",
+            "character": "Bakery Worker / Policeman (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/biov5jENp2XYfehkcdnRvi796Wi.jpg"
+        }
+    ],
+    "trailerKey": "nu4OX6RKeLY"
+},
+    {
     "title": "Gladiator II",
     "year": "2024",
     "desc": "تدور أحداث العمل حول (لوشيوس)، ابن حبيبة (ماكسيموس) والتي تُعرف باسم (لوسيا)، ذلك في أعقاب وفاة (ماكسيموس) وانقلاب موازين القوة.",
