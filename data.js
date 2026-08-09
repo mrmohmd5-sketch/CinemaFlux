@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Signs",
+    "year": "2002",
+    "desc": "في مقاطعة ميلووكي بولاية بنسلفانيا، تعيش عائلة في إحدي المزارع، وذات يوم يجدوا دوائر غامضة على المحاصيل في حقولهم، الأمر الذي يثير جنون وسائل اﻹعلام، وتبدأ رحلة السعي وراء اكتشاف حقيقة تلك الدوائر.",
+    "poster": "https://image.tmdb.org/t/p/w500/yy1dS1TLJBGpLTmzxJCzaLMJBxT.jpg",
+    "hdUrl": "https://streamtape.com/e/l7oeZxRW1GtOpm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/l7oeZxRW1GtOpm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "إثارة خيال علمي رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mel Gibson",
+            "character": "Graham Hess",
+            "image": "https://image.tmdb.org/t/p/w185/jnqHMaOslt8cef2atSmOpGRvNla.jpg"
+        },
+        {
+            "name": "Joaquin Phoenix",
+            "character": "Merrill Hess",
+            "image": "https://image.tmdb.org/t/p/w185/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg"
+        },
+        {
+            "name": "Rory Culkin",
+            "character": "Morgan Hess",
+            "image": "https://image.tmdb.org/t/p/w185/6SkUiLHFlPEEFtKpLc7VrczaqDx.jpg"
+        },
+        {
+            "name": "Abigail Breslin",
+            "character": "Bo Hess",
+            "image": "https://image.tmdb.org/t/p/w185/1MQMfcb3fuN0lC1egdaOnHcTlm8.jpg"
+        },
+        {
+            "name": "Cherry Jones",
+            "character": "Officer Paski",
+            "image": "https://image.tmdb.org/t/p/w185/cc9h2Tc17gzBw5wGJqC93FEYH0L.jpg"
+        },
+        {
+            "name": "M. Night Shyamalan",
+            "character": "Ray Reddy",
+            "image": "https://image.tmdb.org/t/p/w185/tOhFWjauKvJgjCVLJFnhbBCZuxZ.jpg"
+        },
+        {
+            "name": "Patricia Kalember",
+            "character": "Colleen Hess",
+            "image": "https://image.tmdb.org/t/p/w185/8BIyLGifVjZKpvIXT9UcfWt50Pl.jpg"
+        },
+        {
+            "name": "Ted Sutton",
+            "character": "SFC Cunningham",
+            "image": "https://image.tmdb.org/t/p/w185/wwxNy0lnycAhurje2IfniC3fTat.jpg"
+        },
+        {
+            "name": "Merritt Wever",
+            "character": "Tracey Abernathy",
+            "image": "https://image.tmdb.org/t/p/w185/ldd1WntzQ72DVuNLoko8yMFHH7j.jpg"
+        },
+        {
+            "name": "Lanny Flaherty",
+            "character": "Mr. Nathan",
+            "image": "https://image.tmdb.org/t/p/w185/jZV9UdctUwZOsdZ4OH3wxj4Bvop.jpg"
+        }
+    ],
+    "trailerKey": "T-wgoJv9UAI"
+},
+    {
     "title": "Cherry",
     "year": "2021",
     "desc": "شاب يترك الجامعة ليلتحق بالجيش الأمريكي في العراق كمسعف طبي، مدفوعاً بحبه الوحيد إميلي. ولكن بعد عودته من الحرب يجد نفسه في صراع مع الصدمة التي خلفتها الحرب لديه، فيجد نفسه غارقاُ في مستنقع المخدرات والجريمة وهو يحاول أن يجد مكاناً له في هذا العالم.",
