@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Saved!",
+    "year": "2004",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/nmf2tFTcRJZVEQ9e3mgLH5gAQYs.jpg",
+    "hdUrl": "https://streamtape.com/e/pYx0gXgGWLclLX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pYx0gXgGWLclLX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jena Malone",
+            "character": "Mary Cummings",
+            "image": "https://image.tmdb.org/t/p/w185/kGwV9iLmfUxJ6a73ehr0QvAnc8C.jpg"
+        },
+        {
+            "name": "Mandy Moore",
+            "character": "Hilary Faye",
+            "image": "https://image.tmdb.org/t/p/w185/2n0rqUGojRNEHrmtPeCEptHREEY.jpg"
+        },
+        {
+            "name": "Macaulay Culkin",
+            "character": "Roland",
+            "image": "https://image.tmdb.org/t/p/w185/5We9Y4zUJ5TUnRgfmkzWQx0mLIF.jpg"
+        },
+        {
+            "name": "Patrick Fugit",
+            "character": "Patrick",
+            "image": "https://image.tmdb.org/t/p/w185/bsONcodcqRKV97p1Oo1jcPkEnDA.jpg"
+        },
+        {
+            "name": "Eva Amurri",
+            "character": "Cassandra",
+            "image": "https://image.tmdb.org/t/p/w185/enonhVe1k9CHPtGUy4xdEPoa1Rg.jpg"
+        },
+        {
+            "name": "Heather Matarazzo",
+            "character": "Tia",
+            "image": "https://image.tmdb.org/t/p/w185/afZhMKmsAHZA9jHq7F9tNUFZci6.jpg"
+        },
+        {
+            "name": "Martin Donovan",
+            "character": "Pastor Skip",
+            "image": "https://image.tmdb.org/t/p/w185/wTCmpcmd8mcAbsX6Yc7zFs2J98Q.jpg"
+        },
+        {
+            "name": "Mary-Louise Parker",
+            "character": "Lillian",
+            "image": "https://image.tmdb.org/t/p/w185/ljaNmBF31BbOvrrawms7vCsIqBP.jpg"
+        },
+        {
+            "name": "Chad Faust",
+            "character": "Dean",
+            "image": "https://image.tmdb.org/t/p/w185/9Yy0UOpLVrzLg5u5Gi60R3nJ364.jpg"
+        },
+        {
+            "name": "Elizabeth Thai",
+            "character": "Veronica",
+            "image": "https://image.tmdb.org/t/p/w185/4yHeSZW83qlCrKJC5w8uhoUjj6b.jpg"
+        }
+    ],
+    "trailerKey": "cgWdUumlgUo"
+},
+    {
     "title": "Save Ralph",
     "year": "2021",
     "desc": "تدور أحداث الفيلم القصير حول أرنب يتحدث عن عمله كمختبر لمستحضرات التجميل ويسرد معاناته اليومية في إطار وثائقي لتسليط الضوء على قسوة التجارب على الحيوانات.",
