@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Gladiator II",
+    "year": "2024",
+    "desc": "تدور أحداث العمل حول (لوشيوس)، ابن حبيبة (ماكسيموس) والتي تُعرف باسم (لوسيا)، ذلك في أعقاب وفاة (ماكسيموس) وانقلاب موازين القوة.",
+    "poster": "https://image.tmdb.org/t/p/w500/wCfFdowd6U7BdMRKPpUhTM0E9vQ.jpg",
+    "hdUrl": "https://streamtape.com/e/1L6k4O6kRrIejjr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1L6k4O6kRrIejjr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "حركة مغامرة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Paul Mescal",
+            "character": "Lucius",
+            "image": "https://image.tmdb.org/t/p/w185/hPcyXGZ0qNL9Sm2LKlDzO54Pa8g.jpg"
+        },
+        {
+            "name": "Denzel Washington",
+            "character": "Macrinus",
+            "image": "https://image.tmdb.org/t/p/w185/jj2Gcobpopokal0YstuCQW0ldJ4.jpg"
+        },
+        {
+            "name": "Pedro Pascal",
+            "character": "General Acacius",
+            "image": "https://image.tmdb.org/t/p/w185/oKcMbVn0NJTNzQt0ClKKvVXkm60.jpg"
+        },
+        {
+            "name": "Connie Nielsen",
+            "character": "Lucilla",
+            "image": "https://image.tmdb.org/t/p/w185/gSQ3O3PJ6ly6nT63joOtfZyscFP.jpg"
+        },
+        {
+            "name": "Joseph Quinn",
+            "character": "Emperor Geta",
+            "image": "https://image.tmdb.org/t/p/w185/zshhuioZaH8S5ZKdMcojzWi1ntl.jpg"
+        },
+        {
+            "name": "Fred Hechinger",
+            "character": "Emperor Caracalla",
+            "image": "https://image.tmdb.org/t/p/w185/nxQfwTWev2VzQJDdKHixPvwXiZS.jpg"
+        },
+        {
+            "name": "Lior Raz",
+            "character": "Viggo",
+            "image": "https://image.tmdb.org/t/p/w185/bl3KLFUQ4Q0zC9lCU4qP1Jf4qHS.jpg"
+        },
+        {
+            "name": "Derek Jacobi",
+            "character": "Gracchus",
+            "image": "https://image.tmdb.org/t/p/w185/yHENzHZSVpnNrqsoATuDSMiQflf.jpg"
+        },
+        {
+            "name": "Peter Mensah",
+            "character": "Jugurtha",
+            "image": "https://image.tmdb.org/t/p/w185/72L6LbeF5ZqRdLmhibNqysQNQRg.jpg"
+        },
+        {
+            "name": "Matt Lucas",
+            "character": "Master of Ceremonies",
+            "image": "https://image.tmdb.org/t/p/w185/2OhGLJqiknaWlbTkG2KDwT935km.jpg"
+        }
+    ],
+    "trailerKey": "GVP08BKtS1E",
+    "featured": true
+},
+    {
     "title": "The Last House",
     "year": "2026",
     "desc": "تجد عائلة نفسها محاصرة داخل منزلها في ظروف غامضة، وتضطر إلى التكاتف للبقاء على قيد الحياة في ظل تناقص الموارد ووجود قوة غامضة تمنعها من الفرار.",
