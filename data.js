@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "My Fault",
+    "year": "2023",
+    "desc": "يتعيّن على 'نواه' ترك مدينتها وحبيبها وأصحابها للانتقال إلى قصر زوج أمها الجديد. تلتقي 'نيك' هناك، أخوها من زوج أمها. وتتشابك شخصياتهما في اختلافات منذ البداية. لكن الانجذاب الذي يشعران به نحو الآخر يؤدي بهما إلى علاقة محرّمة حيث طباعهما المتمردة المُعذبة تقلب عالمهما رأساً على عقب وتتسبب بوقوعهما في حب الآخر بجنون.",
+    "poster": "https://image.tmdb.org/t/p/w500/6jIfarQhbySZw1laWUoToNN71Lh.jpg",
+    "hdUrl": "https://streamtape.com/e/m1vQvjgzKoCb8WY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/m1vQvjgzKoCb8WY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.7",
+    "genre": "دراما رومنسية إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nicole Wallace",
+            "character": "Noah Morán",
+            "image": "https://image.tmdb.org/t/p/w185/xlvq6OYCN6yQef4fpJQtwVyQxqr.jpg"
+        },
+        {
+            "name": "Gabriel Guevara",
+            "character": "Nick Leister",
+            "image": "https://image.tmdb.org/t/p/w185/pviRYKEEmoPUfLYwP1VHJ6LQcRg.jpg"
+        },
+        {
+            "name": "Marta Hazas",
+            "character": "Rafaella Leister",
+            "image": "https://image.tmdb.org/t/p/w185/1dbeTFRCbWBt70dIGjYHKVLnpaG.jpg"
+        },
+        {
+            "name": "Iván Sánchez",
+            "character": "William Leister",
+            "image": "https://image.tmdb.org/t/p/w185/woVz8D7t1VUKjFJnsTAdc8tyz5C.jpg"
+        },
+        {
+            "name": "Eva Ruiz",
+            "character": "Jenna",
+            "image": "https://image.tmdb.org/t/p/w185/bcu0nmQvhxwTzh4csc4kuxJsQee.jpg"
+        },
+        {
+            "name": "Víctor Varona",
+            "character": "Lion",
+            "image": "https://image.tmdb.org/t/p/w185/lcwFAjHjhJXkxf59TXGSjGGOlLj.jpg"
+        },
+        {
+            "name": "Fran Berenguer",
+            "character": "Ronnie",
+            "image": "https://image.tmdb.org/t/p/w185/uYi3MOwqtNdfZt82DdvzKCZku50.jpg"
+        },
+        {
+            "name": "Adriana Ubani",
+            "character": "Anna",
+            "image": "https://image.tmdb.org/t/p/w185/7TlpwffkqeTu1mQNZW3OG0IdTFm.jpg"
+        },
+        {
+            "name": "Ivan Massagué",
+            "character": "Jonas",
+            "image": "https://image.tmdb.org/t/p/w185/dmnJo2sGlfFjtKb8FDPlNjRhfyc.jpg"
+        },
+        {
+            "name": "Mariano Venancio",
+            "character": "Martin",
+            "image": "https://image.tmdb.org/t/p/w185/aZT4jP35s7hwOspb4nW1wqKZpmE.jpg"
+        }
+    ],
+    "trailerKey": "xY-qRGC6Yu0"
+},
+    {
     "title": "The Devil's Mouth",
     "year": "2026",
     "desc": "يستكشف خمسة أصدقاء شبكة كهوف 'فم الشيطان' في تايلاند في مغامرة أخيرة قبل أن تبدأ حياتهم في العالم الحقيقي، لكنهم سرعان ما يكتشفون أن هناك شيئاً ما يطاردهم تحت الماء... سريعاً وصامتاً وقاتلاً. وفي الظلام الخانق، تتلاشى الثقة، وينتشر الذعر، ويصبح كل منعطف خطأ صراعاً من أجل البقاء.",
