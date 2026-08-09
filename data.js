@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Cherry",
+    "year": "2021",
+    "desc": "شاب يترك الجامعة ليلتحق بالجيش الأمريكي في العراق كمسعف طبي، مدفوعاً بحبه الوحيد إميلي. ولكن بعد عودته من الحرب يجد نفسه في صراع مع الصدمة التي خلفتها الحرب لديه، فيجد نفسه غارقاُ في مستنقع المخدرات والجريمة وهو يحاول أن يجد مكاناً له في هذا العالم.",
+    "poster": "https://image.tmdb.org/t/p/w500/pwDvkDyaHEU9V7cApQhbcSJMG1w.jpg",
+    "hdUrl": "https://streamtape.com/e/lrwOZADb4du73bq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/lrwOZADb4du73bq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Holland",
+            "character": "Cherry",
+            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+            "name": "Ciara Bravo",
+            "character": "Emily",
+            "image": "https://image.tmdb.org/t/p/w185/m6Mp8Qkq4yWQlJvzhlEgQbtzCrf.jpg"
+        },
+        {
+            "name": "Jack Reynor",
+            "character": "Pills & Coke",
+            "image": "https://image.tmdb.org/t/p/w185/1MSZks6afitwdYttLh617G6MBRQ.jpg"
+        },
+        {
+            "name": "Michael Rispoli",
+            "character": "Tommy",
+            "image": "https://image.tmdb.org/t/p/w185/4rtCKJTtPq9cSHFQqZSbyCLLWCO.jpg"
+        },
+        {
+            "name": "Jeff Wahlberg",
+            "character": "Jimenez",
+            "image": "https://image.tmdb.org/t/p/w185/2l4keQAgLuv0acsPcmfP9SJ28sF.jpg"
+        },
+        {
+            "name": "Forrest Goodluck",
+            "character": "James Lightfoot",
+            "image": "https://image.tmdb.org/t/p/w185/4xjRFmyJqYZRtLODw22baOla2Ub.jpg"
+        },
+        {
+            "name": "Michael Gandolfini",
+            "character": "Cousin Joe",
+            "image": "https://image.tmdb.org/t/p/w185/949lN8eoD3oXx1TmpjzmPQvt2TI.jpg"
+        },
+        {
+            "name": "Suhail Dabbach",
+            "character": "Old Man Fatook",
+            "image": "https://image.tmdb.org/t/p/w185/pBoXG86unmX5OuoA5aKkJfIrFVR.jpg"
+        },
+        {
+            "name": "Daniel R. Hill",
+            "character": "Black",
+            "image": "https://image.tmdb.org/t/p/w185/itqaxSHj43QAe58m4ktf0Xiu7sm.jpg"
+        },
+        {
+            "name": "Fionn O'Shea",
+            "character": "Arnold",
+            "image": "https://image.tmdb.org/t/p/w185/9N6urqHr74JaBVfV227Wj4aDHL6.jpg"
+        }
+    ],
+    "trailerKey": "H5bH6O0bErk"
+},
+    {
     "title": "Chemical Hearts",
     "year": "2020",
     "desc": "طالبة منتقلة من الثانوية تكتشف شغفًا جديدًا عندما تبدأ العمل في صحيفة المدرسة.",
