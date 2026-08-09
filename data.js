@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "War Machine",
+    "year": "2026",
+    "desc": "في مهمة أخيرة شاقة ضمن تدريب قوات الصاعقة في الجيش، يتعين على مهندس قتال أن يقود وحدته في معركة ضد آلة قتل عملاقة من عالم آخر.",
+    "poster": "https://image.tmdb.org/t/p/w500/mrTtZCqr6VKA4q6TUwYKndt1qoC.jpg",
+    "hdUrl": "https://streamtape.com/e/GPwQAxQRmDU17g6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GPwQAxQRmDU17g6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Alan Ritchson",
+            "character": "81",
+            "image": "https://image.tmdb.org/t/p/w185/92YNEEpCyugkTzPprJwZpvVtvuK.jpg"
+        },
+        {
+            "name": "Dennis Quaid",
+            "character": "Army Sgt Maj Sheridan",
+            "image": "https://image.tmdb.org/t/p/w185/lMaDAJHzsKH7U3dln2B3kY3rOhE.jpg"
+        },
+        {
+            "name": "Stephan James",
+            "character": "7",
+            "image": "https://image.tmdb.org/t/p/w185/itWiVFI7uE8s4QQjcQBbVO0hY7K.jpg"
+        },
+        {
+            "name": "Jai Courtney",
+            "character": "Class President",
+            "image": "https://image.tmdb.org/t/p/w185/6vEaNwbOKov6yzQx15CdtrqfK3L.jpg"
+        },
+        {
+            "name": "Esai Morales",
+            "character": "Army Officer Torres",
+            "image": "https://image.tmdb.org/t/p/w185/cNYciYzUzxraGlw0BPql1QePi5H.jpg"
+        },
+        {
+            "name": "Blake Richardson",
+            "character": "15",
+            "image": "https://image.tmdb.org/t/p/w185/58QVBtwjZODn9FGighvL94pgmsH.jpg"
+        },
+        {
+            "name": "Keiynan Lonsdale",
+            "character": "60",
+            "image": "https://image.tmdb.org/t/p/w185/lSIKty1Y8JLIE4aqL6VmZYx0JEB.jpg"
+        },
+        {
+            "name": "Jack Patten",
+            "character": "109",
+            "image": "https://image.tmdb.org/t/p/w185/sIE11wI7czGjYCUOlEKqXguIdsl.jpg"
+        },
+        {
+            "name": "Joshua Diaz",
+            "character": "96",
+            "image": "https://image.tmdb.org/t/p/w185/dhqnloyyBe6iV4wbBiadLBgzgLt.jpg"
+        },
+        {
+            "name": "Heather Burridge",
+            "character": "122",
+            "image": "https://image.tmdb.org/t/p/w185/q7hFhBMsI89FfuZJwTTGjAOCtZs.jpg"
+        }
+    ],
+    "trailerKey": "raAPixqKt1Y"
+},
+    {
     "title": "The Menu",
     "year": "2022",
     "desc": "يسافر زوجان إلى جزيرة ساحلية لتناول الطعام في مطعم حصري حيث أعد الطاهي قائمة طعام فخمة ، مع بعض المفاجآت الصادمة.",
