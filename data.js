@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "I Know What You Did Last Summer",
+    "year": "2025",
+    "desc": "عندما يتسبب خمسة أصدقاء، دون قصد، في حادث سيارة مميت، يُخفون تورطهم ويعقدون اتفاقًا على إبقاء الأمر سرًا بدلًا من مواجهة العواقب. بعد عام، يعود ماضيهم ليطاردهم، ويضطرون لمواجهة حقيقة مروعة: أحدهم يعلم ما فعلوه الصيف الماضي... وهو عازم على الانتقام.",
+    "poster": "https://image.tmdb.org/t/p/w500/aMEkIRuT4Qj0KD8j5dzQN2sPVoR.jpg",
+    "hdUrl": "https://streamtape.com/e/GQwv8YQ0aRc1vG2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GQwv8YQ0aRc1vG2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.6",
+    "genre": "رعب إثارة غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chase Sui Wonders",
+            "character": "Ava Brucks",
+            "image": "https://image.tmdb.org/t/p/w185/7oSUT3Zn1srv0VsGquSaWQ5F8ce.jpg"
+        },
+        {
+            "name": "Madelyn Cline",
+            "character": "Danica Richards",
+            "image": "https://image.tmdb.org/t/p/w185/6bFItWARGJFRrkhBaZtvLJf6VRQ.jpg"
+        },
+        {
+            "name": "Jonah Hauer-King",
+            "character": "Milo Griffin",
+            "image": "https://image.tmdb.org/t/p/w185/yXGsk9UtOV9tprU5ZSuhwdFtaBB.jpg"
+        },
+        {
+            "name": "Tyriq Withers",
+            "character": "Teddy Spencer",
+            "image": "https://image.tmdb.org/t/p/w185/ilDZHfT8mlXWlvLCaWDhL0OlLSh.jpg"
+        },
+        {
+            "name": "Sarah Pidgeon",
+            "character": "Stevie Ward",
+            "image": "https://image.tmdb.org/t/p/w185/qrXV2K7OAT4rArCoSa5Wsitc6W9.jpg"
+        },
+        {
+            "name": "Jennifer Love Hewitt",
+            "character": "Julie James",
+            "image": "https://image.tmdb.org/t/p/w185/acoA8Gm2QVWTOyldWb6ykkWirHZ.jpg"
+        },
+        {
+            "name": "Freddie Prinze Jr.",
+            "character": "Ray Bronson",
+            "image": "https://image.tmdb.org/t/p/w185/8V9yNBjCNRBKROyjCLKLJGcCBdG.jpg"
+        },
+        {
+            "name": "Sarah Michelle Gellar",
+            "character": "Helen Shivers",
+            "image": "https://image.tmdb.org/t/p/w185/xKe52w4tpv61ohz9iz75wNdzcwZ.jpg"
+        },
+        {
+            "name": "Billy Campbell",
+            "character": "Grant Spencer",
+            "image": "https://image.tmdb.org/t/p/w185/hMNmtQK3a6mqIQRyXn9G5bbheJV.jpg"
+        },
+        {
+            "name": "Brandy Norwood",
+            "character": "Karla Wilson",
+            "image": "https://image.tmdb.org/t/p/w185/ie1IH8LQI3aGzke4FoYRbcdHv88.jpg"
+        }
+    ],
+    "trailerKey": "u81hoJak9ZE"
+},
+    {
     "title": "Kiki's Delivery Service",
     "year": "1989",
     "desc": "ساحرة صغيرة تُدعى (كيكي)، تبلغ الىن ثلاثة عشر عامًا من العمر، ولا تزال قليلة الخبرة كثيرة العِند، لكن لها من الخيال والعزم والحيلة كثيرًا، مع قطها المتحدث (جيجي) دومًا بجانبها، نجدها على استعداد لمواجهة العالم بأسره أو على الأقل القرية الساحلية الاوروبية الطريفة التي انتقتها كموطنها الجديد.",
