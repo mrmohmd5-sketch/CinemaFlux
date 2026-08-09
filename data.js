@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "The Housemaid",
+    "year": "2025",
+    "desc": "ميلي كالواي، شابة ذات ماضٍ مضطرب تعمل كخادمة مقيمة لدى عائلة ثرية، غير أنّ حياتهم المثالية على ما يبدو تبدأ في الانهيار عندما تكتشف أن منزلهم يخفي أسرارًا مظلمة خلف المظاهر.",
+    "poster": "https://image.tmdb.org/t/p/w500/xWbrjqGtZn8Dp6uMPzBz6mKvuk3.jpg",
+    "hdUrl": "https://streamtape.com/e/7bRYyvwdMeHAAr6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7bRYyvwdMeHAAr6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "غموض إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sydney Sweeney",
+            "character": "Millie Calloway",
+            "image": "https://image.tmdb.org/t/p/w185/qYiaSl0Eb7G3VaxOg8PxExCFwon.jpg"
+        },
+        {
+            "name": "Amanda Seyfried",
+            "character": "Nina Winchester",
+            "image": "https://image.tmdb.org/t/p/w185/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg"
+        },
+        {
+            "name": "Brandon Sklenar",
+            "character": "Andrew Winchester",
+            "image": "https://image.tmdb.org/t/p/w185/juLH1EhkY1Xx9Zai2H4icvfn4pD.jpg"
+        },
+        {
+            "name": "Michele Morrone",
+            "character": "Enzo",
+            "image": "https://image.tmdb.org/t/p/w185/cOWSjiG2CI2PiCx69bCJiQVHyrD.jpg"
+        },
+        {
+            "name": "Indiana Elle",
+            "character": "Cece Winchester",
+            "image": "https://image.tmdb.org/t/p/w185/d9Bk6BWiPmWIx1Ssx36GqReFjQJ.jpg"
+        },
+        {
+            "name": "Sarah Cooper",
+            "character": "Pam",
+            "image": "https://image.tmdb.org/t/p/w185/85Ys0z9F6LCi0ZloiW2X6WHbZ1i.jpg"
+        },
+        {
+            "name": "Elizabeth Perkins",
+            "character": "Mrs. Winchester",
+            "image": "https://image.tmdb.org/t/p/w185/t9Cfx8R8hxB1Od46s9CXJMwwNTA.jpg"
+        },
+        {
+            "name": "Amanda Joy Erickson",
+            "character": "Suzanne",
+            "image": "https://image.tmdb.org/t/p/w185/3BieG0s7lddZr8wsNF6Rwfrz9Tm.jpg"
+        },
+        {
+            "name": "Megan Ferguson",
+            "character": "Jilliane",
+            "image": "https://image.tmdb.org/t/p/w185/eBhtfrvBa9RyQgf52sf1E3jx524.jpg"
+        },
+        {
+            "name": "Ellen Tamaki",
+            "character": "Patrice",
+            "image": "https://image.tmdb.org/t/p/w185/kQGqxMmGdpGTvBJEy3gWvMf1fKO.jpg"
+        }
+    ],
+    "trailerKey": "M_HwDp-zKBI",
+    "featured": true
+},
+    {
     "title": "The Lost Bus",
     "year": "2025",
     "desc": "يخاطر أب حازم،، بكلّ شيء لإنقاذ معلّمة متفانية،، وطلّابها من حريق غابات مستعر.",
