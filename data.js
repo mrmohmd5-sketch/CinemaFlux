@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Hardcore Henry",
+    "year": "2015",
+    "desc": "هنري ، سايبورغ تم إحياؤه حديثًا والذي يجب أن ينقذ زوجته / خالقه من براثن طاغية ذهني يتمتع بقوة التحريك الذهني ، أكان، وجيشه من المرتزقة. يقاتل جيمي جنبًا إلى جنب مع هنري ، وهو أمل هنري الوحيد في تحقيق النجاح طوال اليوم. المتشددين تجري على مدار يوم واحد ، في موسكو ، روسيا.",
+    "poster": "https://image.tmdb.org/t/p/w500/ik1uZyiMSxF9HqrgRKUNfMCfr3z.jpg",
+    "hdUrl": "https://streamtape.com/e/9RkOJRkVJ8Saz7W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9RkOJRkVJ8Saz7W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Andrey Dementyev",
+            "character": "Henry / Slick Dmitry",
+            "image": "https://image.tmdb.org/t/p/w185/hIRx3Uo1jbENUA5gZXQIVNUXZji.jpg"
+        },
+        {
+            "name": "Sharlto Copley",
+            "character": "Jimmy",
+            "image": "https://image.tmdb.org/t/p/w185/em89OJJvBRX7kNJJPASmNKQujsC.jpg"
+        },
+        {
+            "name": "Danila Kozlovsky",
+            "character": "Akan",
+            "image": "https://image.tmdb.org/t/p/w185/agVuijZjWfDX5klBNmBM1PS9CU0.jpg"
+        },
+        {
+            "name": "Haley Bennett",
+            "character": "Estelle",
+            "image": "https://image.tmdb.org/t/p/w185/c2UpS5JRooWADFVkK8JpDfUewJH.jpg"
+        },
+        {
+            "name": "Tim Roth",
+            "character": "Henry's Father",
+            "image": "https://image.tmdb.org/t/p/w185/qSizF2i9gz6c6DbAC5RoIq8sVqX.jpg"
+        },
+        {
+            "name": "Svetlana Ustinova",
+            "character": "Olga the Dominatrix",
+            "image": "https://image.tmdb.org/t/p/w185/ek5GGEWtpqVotOh4lrT13Ibb01i.jpg"
+        },
+        {
+            "name": "Dasha Charusha",
+            "character": "Katya the Dominatrix",
+            "image": "https://image.tmdb.org/t/p/w185/8ApqL2R78NzT2OPfLwH57mHdFRg.jpg"
+        },
+        {
+            "name": "Oleg Poddubnyy",
+            "character": "Yuri",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Jack Hahn",
+            "character": "Young Bully #1",
+            "image": "https://image.tmdb.org/t/p/w185/kVOuBAUGL9njVdjwvh5di5qHMSp.jpg"
+        },
+        {
+            "name": "Cyrus Arnold",
+            "character": "Young Bully #2",
+            "image": "https://image.tmdb.org/t/p/w185/eFxlR4IiZJLJsmyxsRsuhbvsJkc.jpg"
+        }
+    ],
+    "trailerKey": "4JVgQzBG5Ho"
+},
+    {
     "title": "Your Fault: London",
     "year": "2026",
     "desc": "يواجه نيك ونوح الاختبار الأكبر لحبهما حين تبدأ نوح حياتها الجديدة في جامعة أكسفورد بينما يبقى نيك في لندن يعمل في شركة والده. مفصولان بالمسافة ومحاطان بضغوط متزايدة - الغيرة والطموح وقوى تسعى لتفريقهما - عليهما المخاطرة بكل شيء لإثبات أن رابطهما قادر على النجاة رغم كل الصعاب.",
