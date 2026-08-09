@@ -1,67 +1,67 @@
 const globalMoviesData = [
     {
-    "title": "Wreck-It Ralph",
-    "year": "2012",
-    "desc": "رالف المدمر هو الشرير البالغ طوله متران ونصف  و يزن 300 كيلوقرام، من لعبة فيديو ممرات يدعى فيلكس البنّاء. حيث يقوم بطل اللعبة بإصلاح المباني التي يدمرها رالف. يريد رالف أن يبرهن أنه يمكن أن يكون شخصًا جيدًا وليس مجرد شرير، يهرب من لعبته الى لعبة اخرى، حيث يساعد في معركة البطل ضد الغزاة.",
-    "poster": "https://image.tmdb.org/t/p/w500/v3VRTYl2vHJqMvCu29p6QHPuYsJ.jpg",
+    "title": "Save Ralph",
+    "year": "2021",
+    "desc": "تدور أحداث الفيلم القصير حول أرنب يتحدث عن عمله كمختبر لمستحضرات التجميل ويسرد معاناته اليومية في إطار وثائقي لتسليط الضوء على قسوة التجارب على الحيوانات.",
+    "poster": "https://www.aktenkozmetik.com/upload/data/images/blog/55.jpg",
     "hdUrl": "https://streamtape.com/e/qd4wZjGO8YcZeA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/qd4wZjGO8YcZeA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "rating": "7.4",
-    "genre": "عائلي رسوم متحركة كوميديا مغامرة",
+    "rating": "8.4",
+    "genre": "دراما رسوم متحركة",
     "type": "movie",
     "cast": [
         {
-            "name": "John C. Reilly",
-            "character": "Ralph (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/iDQ8w4qcxU3le5ZWoCKpHs1QNok.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Sarah Silverman",
-            "character": "Vanellope (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/g5G711XyVokJm2RoItpkaHa8mkQ.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Jack McBrayer",
-            "character": "Felix (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/cbr26xDPEiOuYQxggtCPbu5xhDU.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Jane Lynch",
-            "character": "Calhoun (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/nye6D17ZfCHQzr9faYZYyz1CPsZ.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Alan Tudyk",
-            "character": "King Candy (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Rich Moore",
-            "character": "Sour Bill / Zangief (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/oIAmkZf9LuJuMqR8zSchoD3FJT8.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Raymond S. Persi",
-            "character": "Gene / Zombie (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/37HnYfTAHhtAmWdl4NlVAOR7vCW.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Mindy Kaling",
-            "character": "Taffyta Muttonfudge (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/m4veWEp9TEDallTZRobb7MLkd9K.jpg"
+            "name": " ",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Jamie Elman",
-            "character": "Rancis Fluggerbutter (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/4Hk6F52hG8cHpHXn8dGctCEU80i.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         },
         {
-            "name": "Adam Carolla",
-            "character": "Wynnchel (voice)",
-            "image": "https://image.tmdb.org/t/p/w185/47k9w6HRLnGeU0gVtMeTPJs3ief.jpg"
+            "name": "",
+            "character": " (voice)",
+            "image": ""
         }
     ],
-    "trailerKey": "87E6N7ToCxs"
+    "trailerKey": ""
 },
     {
     "title": "Signs",
