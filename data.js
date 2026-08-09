@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "The Last House",
+    "year": "2026",
+    "desc": "تجد عائلة نفسها محاصرة داخل منزلها في ظروف غامضة، وتضطر إلى التكاتف للبقاء على قيد الحياة في ظل تناقص الموارد ووجود قوة غامضة تمنعها من الفرار.",
+    "poster": "https://image.tmdb.org/t/p/w500/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
+    "hdUrl": "https://streamtape.com/e/Ox0069oJQ8Sgl8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Ox0069oJQ8Sgl8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "رعب خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Greta Lee",
+            "character": "Ann",
+            "image": "https://image.tmdb.org/t/p/w185/6SydTis4XUcovlwIGskT59JowLX.jpg"
+        },
+        {
+            "name": "Wagner Moura",
+            "character": "Jason",
+            "image": "https://image.tmdb.org/t/p/w185/53IbAed4t1dOWxY3iygbRYZBBnm.jpg"
+        },
+        {
+            "name": "Riley Chung",
+            "character": "Ruth (8 Years Old)",
+            "image": "https://image.tmdb.org/t/p/w185/9yKaWeYlhnUmit4JN0H2YYgmR50.jpg"
+        },
+        {
+            "name": "Noah Alexander Sosnowski",
+            "character": "Graham (12 Years Old)",
+            "image": "https://image.tmdb.org/t/p/w185/i3s6Rf7QpWvt5QDkYm7XdNP5FY.jpg"
+        },
+        {
+            "name": "Emma Ho",
+            "character": "Ruth (13 Years Old)",
+            "image": "https://image.tmdb.org/t/p/w185/mUVxoj09thSFpHhHD6xzam7XyNm.jpg"
+        },
+        {
+            "name": "Gabriel Barbosa",
+            "character": "Graham (17 Years Old)",
+            "image": "https://image.tmdb.org/t/p/w185/tHWVcUd8tnoSiep76nI4rsquZY5.jpg"
+        },
+        {
+            "name": "Arden Cho",
+            "character": "Adult Ruth",
+            "image": "https://image.tmdb.org/t/p/w185/uXXUOCkqhfijNZYgmzjnfs7jQMw.jpg"
+        },
+        {
+            "name": "Audrey Anderson",
+            "character": "Susan",
+            "image": "https://image.tmdb.org/t/p/w185/aXuOgHcxoeSmhd1qY60nCISUVW9.jpg"
+        },
+        {
+            "name": "Sid Edwards",
+            "character": "Max Richardson",
+            "image": "https://image.tmdb.org/t/p/w185/wvUcpP28vu5gk6UMi5nIIXyqon4.jpg"
+        },
+        {
+            "name": "Eveline Reynolds-Boison",
+            "character": "Marcia Richardson",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "MLxgaz2Zp1k",
+    "featured": true
+},
+    {
     "title": "Fantasy Island",
     "year": "2020",
     "desc": "جزيرة بلوم هاوس الخيالية\r 2020 | تشويق و القصة المثيرة\r في  جزيرة جزيرة بلومهاوس الخيالية ،  يجعل السيد رورك الغامض الأحلام السرية لضيوفه المحظوظين تتحقق في منتجع استوائي فاخر ولكن بعيد. ولكن عندما تتحول التخيلات إلى كوابيس ، يتعين على الضيوف حل لغز الجزيرة من أجل الهروب بحياتهم .",
