@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Play Dirty",
+    "year": "2025",
+    "desc": "ينفّذ لص محترف أكبر عملية سرقة في حياته في فيلم اللعب القذر، فيلم إثارة مليء بالحركة من إخراج 'شين بلاك'. يشارك 'باركر'، الذي يؤدي دوره 'مارك والبيرغ'، إلى جانب 'غروفيلد' الذي يؤدي دوره 'لاكيث ستانفيلد'، و'زين' التي تؤدي دورها 'روزا سالازار'، وفريق ماهر، لتنفيذ سرقة العمر التي اكتشفوها بالصدفة، وتلك تقودهم إلى مواجهة مباشرة مع مافيا 'نيويورك'، في هذه المغامرة الجريئة الذكية والمليئة بالتشويق.",
+    "poster": "https://image.tmdb.org/t/p/w500/ci5p7rzpv5hMZACBPGLDK6P6IaW.jpg",
+    "hdUrl": "https://streamtape.com/e/Jq1zg2Az4kUVZy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Jq1zg2Az4kUVZy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "جريمة حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Mark Wahlberg",
+            "character": "Parker",
+            "image": "https://image.tmdb.org/t/p/w185/1Oc3XSLyb8hxmjmlgFENu582Kqw.jpg"
+        },
+        {
+            "name": "LaKeith Stanfield",
+            "character": "Grofield",
+            "image": "https://image.tmdb.org/t/p/w185/x3k0HCpMNqEtVf2VKQrSCol1ia2.jpg"
+        },
+        {
+            "name": "Rosa Salazar",
+            "character": "Zen",
+            "image": "https://image.tmdb.org/t/p/w185/f8MITeVNUrP9mMiXcPnCEZTIW56.jpg"
+        },
+        {
+            "name": "Keegan-Michael Key",
+            "character": "Ed Mackey",
+            "image": "https://image.tmdb.org/t/p/w185/xmdzYXP9j87a43FSiL138nLesuS.jpg"
+        },
+        {
+            "name": "Chukwudi Iwuji",
+            "character": "Phineas Paul",
+            "image": "https://image.tmdb.org/t/p/w185/5JILtFNmAmA8T4gRQrO5sn8krDv.jpg"
+        },
+        {
+            "name": "Nat Wolff",
+            "character": "Kincaid",
+            "image": "https://image.tmdb.org/t/p/w185/g9noCweddwSb3VBSRpX3vo7TbuP.jpg"
+        },
+        {
+            "name": "Gretchen Mol",
+            "character": "Grace Webb",
+            "image": "https://image.tmdb.org/t/p/w185/e3C1D1I09gtSGy4Ej1ewW2FFoew.jpg"
+        },
+        {
+            "name": "Thomas Jane",
+            "character": "Philly Webb",
+            "image": "https://image.tmdb.org/t/p/w185/9frnlc2zoDcoeqZALB6aeYSQddl.jpg"
+        },
+        {
+            "name": "Tony Shalhoub",
+            "character": "Lozini",
+            "image": "https://image.tmdb.org/t/p/w185/1zfBSuAmOr1xXjNg4WzFWPm5B0Z.jpg"
+        },
+        {
+            "name": "Hemky Madera",
+            "character": "Colonel Ortiz",
+            "image": "https://image.tmdb.org/t/p/w185/net1kEEpSrr9QC9be6YRhLGuM0k.jpg"
+        }
+    ],
+    "trailerKey": "6paP2-ry-QY"
+},
+    {
     "title": "War Machine",
     "year": "2026",
     "desc": "في مهمة أخيرة شاقة ضمن تدريب قوات الصاعقة في الجيش، يتعين على مهندس قتال أن يقود وحدته في معركة ضد آلة قتل عملاقة من عالم آخر.",
