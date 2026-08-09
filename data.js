@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Evil Dead Burn",
+    "year": "2026",
+    "desc": "بعد وفاة زوجها المفاجئة، تلجأ امرأة إلى أهل زوجها طلباً للعزاء. وبينما يتحولون إلى موتى أحياء واحداً تلو الآخر، تكتشف أن العهود التي قطعتها على نفسها في الحياة تبقى قائمة حتى بعد الموت",
+    "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
+    "hdUrl": "https://streamtape.com/e/WqM3LXajeKFbP4d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/WqM3LXajeKFbP4d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Souheila Yacoub",
+            "character": "Alice",
+            "image": "https://image.tmdb.org/t/p/w185/A233BHgXw0dzbeOpvHfJwL9gLy1.jpg"
+        },
+        {
+            "name": "Tandi Wright",
+            "character": "Susan",
+            "image": "https://image.tmdb.org/t/p/w185/zluVB3mzZVlv8D013OgeQLhzNEw.jpg"
+        },
+        {
+            "name": "Hunter Doohan",
+            "character": "Joseph",
+            "image": "https://image.tmdb.org/t/p/w185/ihno5ut6ha8TaubQFgl5Ozco2K1.jpg"
+        },
+        {
+            "name": "Luciane Buchanan",
+            "character": "Thya",
+            "image": "https://image.tmdb.org/t/p/w185/9fTzSU4310StDoO9T0nQyGOLurn.jpg"
+        },
+        {
+            "name": "Erroll Shand",
+            "character": "Edgar",
+            "image": "https://image.tmdb.org/t/p/w185/75nc5lUcp1So9RTNNr08NZ0oQDG.jpg"
+        },
+        {
+            "name": "Maude Davey",
+            "character": "Polly",
+            "image": "https://image.tmdb.org/t/p/w185/gJsnWVfgcyFrTYPVvcJrvIjIH1k.jpg"
+        },
+        {
+            "name": "George Pullar",
+            "character": "Will",
+            "image": "https://image.tmdb.org/t/p/w185/lF86e5h2iMS8IaIuExv1p81mi7R.jpg"
+        },
+        {
+            "name": "Greta van den Brink",
+            "character": "Jessica",
+            "image": "https://image.tmdb.org/t/p/w185/offeicvD1BnhZ4S0yz3C3YwxWZS.jpg"
+        },
+        {
+            "name": "Keanu Karim",
+            "character": "Jared",
+            "image": "https://image.tmdb.org/t/p/w185/dobjH9GFqBRhYJejTUBMaHCqWmH.jpg"
+        },
+        {
+            "name": "Victory Ndukwe",
+            "character": "Leo",
+            "image": "https://image.tmdb.org/t/p/w185/fAIXv88uXtJp1dH5qoMpsZxn8w1.jpg"
+        }
+    ],
+    "trailerKey": "ovO4hNvTIOk",
+    "featured": true
+},
+    {
     "title": "The Housemaid",
     "year": "2025",
     "desc": "ميلي كالواي، شابة ذات ماضٍ مضطرب تعمل كخادمة مقيمة لدى عائلة ثرية، غير أنّ حياتهم المثالية على ما يبدو تبدأ في الانهيار عندما تكتشف أن منزلهم يخفي أسرارًا مظلمة خلف المظاهر.",
