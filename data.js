@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Funhouse",
+    "year": "2019",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/i6zNpDVwOvVxOJ4MhP7WjrXbM0W.jpg",
+    "hdUrl": "https://streamtape.com/e/eggxA84yy8SYPdR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eggxA84yy8SYPdR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.1",
+    "genre": "رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Valter Skarsgård",
+            "character": "Kasper Nordin",
+            "image": "https://image.tmdb.org/t/p/w185/sRWh6TGz3992B6VI7UZzIZ2ZBlF.jpg"
+        },
+        {
+            "name": "Khamisa Wilsher",
+            "character": "Lonni Byrne",
+            "image": "https://image.tmdb.org/t/p/w185/nZbHxTL4j5uGpRWDUBaeRpB08wE.jpg"
+        },
+        {
+            "name": "Gigi Saul Guerrero",
+            "character": "Ximena Torres",
+            "image": "https://image.tmdb.org/t/p/w185/vCNCMd3bGpG9fSOTe7IiTOcTr1j.jpg"
+        },
+        {
+            "name": "Karolina Benefield",
+            "character": "Ula La More",
+            "image": "https://image.tmdb.org/t/p/w185/rVqsGpogohsfKjHGPUUfgZJZbeS.jpg"
+        },
+        {
+            "name": "Amanda Howells",
+            "character": "Cat Zim",
+            "image": "https://image.tmdb.org/t/p/w185/9qzfjMBLgfq426YhsJKzoI8LcRE.jpg"
+        },
+        {
+            "name": "Jerome Velinsky",
+            "character": "Nero / Furcas",
+            "image": "https://image.tmdb.org/t/p/w185/wRIm0ez8ankaZpcO3UncEoaOKfr.jpg"
+        },
+        {
+            "name": "Christopher Gerard",
+            "character": "James 'Headstone' Malone",
+            "image": "https://image.tmdb.org/t/p/w185/gLUMcK4ROVXUEAb3xuCKrOc8psm.jpg"
+        },
+        {
+            "name": "Dayleigh Nelson",
+            "character": "Nevin Evensmith",
+            "image": "https://image.tmdb.org/t/p/w185/PR6WhEiVGr6IUVosJD36yWm0uk.jpg"
+        },
+        {
+            "name": "Kylee Bush",
+            "character": "Darla Drake",
+            "image": "https://image.tmdb.org/t/p/w185/hgZ8l9HreQioqaAEhmD1GyLbBMV.jpg"
+        },
+        {
+            "name": "Mathias Retamal",
+            "character": "Dex 'El Shocker' Souza",
+            "image": "https://image.tmdb.org/t/p/w185/jieAL6NdnOv6Z4xNOCsmoVOmHNN.jpg"
+        }
+    ],
+    "trailerKey": "-jONc_f32Gg"
+},
+    {
     "title": "Lucky Strike",
     "year": "2026",
     "desc": "جندي أمريكي جريح يقاتل من أجل البقاء خلف خطوط العدو خلال معركة الثغرة في الحرب العالمية الثانية ضد الألمان، معتمدًا على غريزته وفنون التجسس وجهاز لاسلكي يدوي للإفلات من الأسر وإيجاد طريقه للعودة إلى وحدته.",
