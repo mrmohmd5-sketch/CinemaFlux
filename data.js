@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Your Fault: London",
+    "year": "2026",
+    "desc": "يواجه نيك ونوح الاختبار الأكبر لحبهما حين تبدأ نوح حياتها الجديدة في جامعة أكسفورد بينما يبقى نيك في لندن يعمل في شركة والده. مفصولان بالمسافة ومحاطان بضغوط متزايدة - الغيرة والطموح وقوى تسعى لتفريقهما - عليهما المخاطرة بكل شيء لإثبات أن رابطهما قادر على النجاة رغم كل الصعاب.",
+    "poster": "https://image.tmdb.org/t/p/w500/bohfgYGHKHRFwQfnHg5HTYmWuDQ.jpg",
+    "hdUrl": "https://streamtape.com/e/GJdbebxqzQf1KWB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/GJdbebxqzQf1KWB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Asha Banks",
+            "character": "Noah",
+            "image": "https://image.tmdb.org/t/p/w185/vZi45Xn17QMaOXmAOvkCEjB3QFr.jpg"
+        },
+        {
+            "name": "Matthew Broome",
+            "character": "Nick",
+            "image": "https://image.tmdb.org/t/p/w185/nSjPuDG5IVQfyMU8TkZl0ZQkLu6.jpg"
+        },
+        {
+            "name": "Louisa Binder",
+            "character": "Sophia",
+            "image": "https://image.tmdb.org/t/p/w185/cE3763PmrLLomSN2uO0WSKx4UzU.jpg"
+        },
+        {
+            "name": "Joel Nankervis",
+            "character": "Michael",
+            "image": "https://image.tmdb.org/t/p/w185/p9gyKYXICMSMf6U7y2m2psQGoLX.jpg"
+        },
+        {
+            "name": "Scarlett Rayner",
+            "character": "Briar",
+            "image": "https://image.tmdb.org/t/p/w185/cKPCR1A20nyg3gKwJqXBLDycoNN.jpg"
+        },
+        {
+            "name": "Orlando Norman",
+            "character": "Cruz",
+            "image": "https://image.tmdb.org/t/p/w185/s1xzQEuIPYlnrRvWWvnmGIUl3dU.jpg"
+        },
+        {
+            "name": "Ray Fearon",
+            "character": "William",
+            "image": "https://image.tmdb.org/t/p/w185/ou2cqhqdhfQoKVEBpIh0P3sKZti.jpg"
+        },
+        {
+            "name": "Enva Lewis",
+            "character": "Jenna",
+            "image": "https://image.tmdb.org/t/p/w185/hFBuqi7NFiFgHho2J2IM43nZcrG.jpg"
+        },
+        {
+            "name": "Eve Macklin",
+            "character": "Ella",
+            "image": "https://image.tmdb.org/t/p/w185/7e1bpd3iTst0PvCk4A7LVfUgNut.jpg"
+        },
+        {
+            "name": "Nicole Ansari-Cox",
+            "character": "Professor Olivia Woodgate",
+            "image": "https://image.tmdb.org/t/p/w185/Qa4zWGLkDEjedoHbNlMG0e9giq.jpg"
+        }
+    ],
+    "trailerKey": "A3ZbjkDxYUs"
+},
+    {
     "title": "My Fault: London",
     "year": "2025",
     "desc": "تنتقل 'نواه' صاحبة الـ18 عامًا من 'أمريكا' إلى 'لندن' مع والدتها التي وقعت مؤخرًا في غرام 'ويليام'، رجل أعمال بريطاني ثري. تلتقي 'نواه' ابن 'ويليام' الشقي 'نيك'، وسرعان ما تشعر بانجذاب بينهما لا يمكن لأي منهما تجنبه. بينما تقضي 'نواه' الصيف محاولةً التأقلم مع حياتها الجديدة، سيلاحقها ماضيها المحطم في حين تقع في الغرام لأول مرة.",
