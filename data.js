@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "This Is the End",
+    "year": "2013",
+    "desc": "أثناء حضور حفلة في منزل جيمس فرانكو ، يواجه Seth Rogen و Jay Baruchel والعديد من المشاهير الآخرين نهاية العالم.",
+    "poster": "https://image.tmdb.org/t/p/w500/tNIW0NhX1hKvUsy6PQ80DOKUhkD.jpg",
+    "hdUrl": "https://streamtape.com/e/A6kRr3AKBJiXKdZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/A6kRr3AKBJiXKdZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "حركة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "James Franco",
+            "character": "James Franco",
+            "image": "https://image.tmdb.org/t/p/w185/bjmAntHGiibLZixH8nTNVBzaFQn.jpg"
+        },
+        {
+            "name": "Jonah Hill",
+            "character": "Jonah Hill",
+            "image": "https://image.tmdb.org/t/p/w185/cymlWttB83MsAGR2EkTgANtjeRH.jpg"
+        },
+        {
+            "name": "Seth Rogen",
+            "character": "Seth Rogen",
+            "image": "https://image.tmdb.org/t/p/w185/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+        },
+        {
+            "name": "Jay Baruchel",
+            "character": "Jay Baruchel",
+            "image": "https://image.tmdb.org/t/p/w185/1GYJeQzPcY9Pfmc3FFsBwClkCv7.jpg"
+        },
+        {
+            "name": "Danny McBride",
+            "character": "Danny McBride",
+            "image": "https://image.tmdb.org/t/p/w185/sVFPzl2t5QlGudQKWAszIWZCXZv.jpg"
+        },
+        {
+            "name": "Craig Robinson",
+            "character": "Craig Robinson",
+            "image": "https://image.tmdb.org/t/p/w185/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg"
+        },
+        {
+            "name": "Michael Cera",
+            "character": "Michael Cera",
+            "image": "https://image.tmdb.org/t/p/w185/qjhNKsw0OLyZQgK4srhelBafcCf.jpg"
+        },
+        {
+            "name": "Emma Watson",
+            "character": "Emma Watson",
+            "image": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+            "name": "Mindy Kaling",
+            "character": "Mindy Kaling",
+            "image": "https://image.tmdb.org/t/p/w185/m4veWEp9TEDallTZRobb7MLkd9K.jpg"
+        },
+        {
+            "name": "David Krumholtz",
+            "character": "David Krumholtz",
+            "image": "https://image.tmdb.org/t/p/w185/2vaimzfyPQVxZGHbQS5M3z3tZw0.jpg"
+        }
+    ],
+    "trailerKey": "kliQSsD_npo"
+},
+    {
     "title": "Funhouse",
     "year": "2019",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
