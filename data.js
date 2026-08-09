@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Black Snake Moan",
+    "year": "2006",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/8Yv7kxsqXSe4ZHl8uJEhmsPjhAP.jpg",
+    "hdUrl": "https://streamtape.com/e/goWAae4J6MsqlRl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/goWAae4J6MsqlRl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Christina Ricci",
+            "character": "Rae",
+            "image": "https://image.tmdb.org/t/p/w185/dzB58d6fNrTEi7nBAU1tySJc2at.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "character": "Lazarus",
+            "image": "https://image.tmdb.org/t/p/w185/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+        },
+        {
+            "name": "Justin Timberlake",
+            "character": "Ronnie Morgan",
+            "image": "https://image.tmdb.org/t/p/w185/6Yk5t9RwkdkAT8Qv45934Eez2CA.jpg"
+        },
+        {
+            "name": "S. Epatha Merkerson",
+            "character": "Angela",
+            "image": "https://image.tmdb.org/t/p/w185/pXCmHxrWzlv1kPZSxJXFM45QgOP.jpg"
+        },
+        {
+            "name": "John Cothran",
+            "character": "Reverend R. L.",
+            "image": "https://image.tmdb.org/t/p/w185/ybpI2PeHD8Dd3LFzLNimsujBq1M.jpg"
+        },
+        {
+            "name": "David Banner",
+            "character": "Tehronne",
+            "image": "https://image.tmdb.org/t/p/w185/jm4BDJT11uHt60VWdadqSb65sdv.jpg"
+        },
+        {
+            "name": "Michael Raymond-James",
+            "character": "Gill",
+            "image": "https://image.tmdb.org/t/p/w185/1rSn1xKAwkJ19uFLyLovW9sN7Jo.jpg"
+        },
+        {
+            "name": "Adriane Lenox",
+            "character": "Rose Woods",
+            "image": "https://image.tmdb.org/t/p/w185/6uwcIdXFMCZntOxpEjiNOZfYbDv.jpg"
+        },
+        {
+            "name": "Kim Richards",
+            "character": "Sandy",
+            "image": "https://image.tmdb.org/t/p/w185/betz2bO9DSpz3cMThwynxKOwQ0r.jpg"
+        },
+        {
+            "name": "Neimus K. Williams",
+            "character": "Lincoln",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "hZR1JL1ySaw"
+},
+    {
     "title": "The Hangover Part III",
     "year": "2013",
     "desc": "يعود 'قطيع الذئاب' إلى لاس فيغاس مُحاولين مساعدة 'ألن'، ثم ينتهي بهم المقام في مغامرة طائشة مع السيد 'تشاو' وزعيم العصابة 'مارشال'.",
