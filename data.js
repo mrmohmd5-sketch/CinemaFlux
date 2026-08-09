@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Wreck-It Ralph",
+    "year": "2012",
+    "desc": "رالف المدمر هو الشرير البالغ طوله متران ونصف  و يزن 300 كيلوقرام، من لعبة فيديو ممرات يدعى فيلكس البنّاء. حيث يقوم بطل اللعبة بإصلاح المباني التي يدمرها رالف. يريد رالف أن يبرهن أنه يمكن أن يكون شخصًا جيدًا وليس مجرد شرير، يهرب من لعبته الى لعبة اخرى، حيث يساعد في معركة البطل ضد الغزاة.",
+    "poster": "https://image.tmdb.org/t/p/w500/v3VRTYl2vHJqMvCu29p6QHPuYsJ.jpg",
+    "hdUrl": "https://streamtape.com/e/qd4wZjGO8YcZeA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/qd4wZjGO8YcZeA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "عائلي رسوم متحركة كوميديا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "John C. Reilly",
+            "character": "Ralph (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/iDQ8w4qcxU3le5ZWoCKpHs1QNok.jpg"
+        },
+        {
+            "name": "Sarah Silverman",
+            "character": "Vanellope (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/g5G711XyVokJm2RoItpkaHa8mkQ.jpg"
+        },
+        {
+            "name": "Jack McBrayer",
+            "character": "Felix (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/cbr26xDPEiOuYQxggtCPbu5xhDU.jpg"
+        },
+        {
+            "name": "Jane Lynch",
+            "character": "Calhoun (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nye6D17ZfCHQzr9faYZYyz1CPsZ.jpg"
+        },
+        {
+            "name": "Alan Tudyk",
+            "character": "King Candy (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg"
+        },
+        {
+            "name": "Rich Moore",
+            "character": "Sour Bill / Zangief (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/oIAmkZf9LuJuMqR8zSchoD3FJT8.jpg"
+        },
+        {
+            "name": "Raymond S. Persi",
+            "character": "Gene / Zombie (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/37HnYfTAHhtAmWdl4NlVAOR7vCW.jpg"
+        },
+        {
+            "name": "Mindy Kaling",
+            "character": "Taffyta Muttonfudge (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/m4veWEp9TEDallTZRobb7MLkd9K.jpg"
+        },
+        {
+            "name": "Jamie Elman",
+            "character": "Rancis Fluggerbutter (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/4Hk6F52hG8cHpHXn8dGctCEU80i.jpg"
+        },
+        {
+            "name": "Adam Carolla",
+            "character": "Wynnchel (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/47k9w6HRLnGeU0gVtMeTPJs3ief.jpg"
+        }
+    ],
+    "trailerKey": "87E6N7ToCxs"
+},
+    {
     "title": "Signs",
     "year": "2002",
     "desc": "في مقاطعة ميلووكي بولاية بنسلفانيا، تعيش عائلة في إحدي المزارع، وذات يوم يجدوا دوائر غامضة على المحاصيل في حقولهم، الأمر الذي يثير جنون وسائل اﻹعلام، وتبدأ رحلة السعي وراء اكتشاف حقيقة تلك الدوائر.",
