@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Hangover",
+    "year": "2009",
+    "desc": "عندما يأتي ثلاثة أصدقاء أخيرًا بعد ليلة صاخبة من صخب حفلة توديع العزوبية ، يجدون طفلًا في الخزانة ونمرًا في الحمام. لكن يبدو أنهم لا يستطيعون تحديد مكان أفضل صديق لهم ، دوغ - الذي من المفترض أن يكون هو الذي يربط العقدة. يبدأ الثلاثي بحثًا محمومًا عن دوج ، ويثابر على مخلفاتهم السيئة لمحاولة الوصول إلى الكنيسة في الوقت المحدد.",
+    "poster": "https://image.tmdb.org/t/p/w500/xFnmtKrQgOZZUjI6F6Fl7vauOHu.jpg",
+    "hdUrl": "https://streamtape.com/e/DaPDwgka3Lsk7QJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DaPDwgka3Lsk7QJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Bradley Cooper",
+            "character": "Phil Wenneck",
+            "image": "https://image.tmdb.org/t/p/w185/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
+        },
+        {
+            "name": "Ed Helms",
+            "character": "Stu Price",
+            "image": "https://image.tmdb.org/t/p/w185/gPZ8tZaNQGAc3KZRIPp9rgGbEnN.jpg"
+        },
+        {
+            "name": "Zach Galifianakis",
+            "character": "Alan Garner",
+            "image": "https://image.tmdb.org/t/p/w185/ncBSLoNUufKpg7vzx1gCtjhst8i.jpg"
+        },
+        {
+            "name": "Justin Bartha",
+            "character": "Doug Billings",
+            "image": "https://image.tmdb.org/t/p/w185/AalKjN8nR8RZ8g6ZdWV2smnQq4d.jpg"
+        },
+        {
+            "name": "Heather Graham",
+            "character": "Jade",
+            "image": "https://image.tmdb.org/t/p/w185/avYdNkeg1oTvmrNJbFDcTlBCkKs.jpg"
+        },
+        {
+            "name": "Sasha Barrese",
+            "character": "Tracy Garner",
+            "image": "https://image.tmdb.org/t/p/w185/4SGcSiC46h86mdChDj0taF5eHSl.jpg"
+        },
+        {
+            "name": "Jeffrey Tambor",
+            "character": "Sid Garner",
+            "image": "https://image.tmdb.org/t/p/w185/e4IkxsEo5O4oUWrIpXlEhWa6lqB.jpg"
+        },
+        {
+            "name": "Ken Jeong",
+            "character": "Mr. Chow",
+            "image": "https://image.tmdb.org/t/p/w185/dfuDZ2m2A8nBb0TdyeqmlPOobJA.jpg"
+        },
+        {
+            "name": "Rachael Harris",
+            "character": "Melissa",
+            "image": "https://image.tmdb.org/t/p/w185/1O0zLB0gMcNIuttpG3omWb4ZAvF.jpg"
+        },
+        {
+            "name": "Mike Tyson",
+            "character": "Mike Tyson",
+            "image": "https://image.tmdb.org/t/p/w185/7eI1WK9985q8XiUgg3rDjOwa3MR.jpg"
+        }
+    ],
+    "trailerKey": "tlize92ffnY"
+},
+    {
     "title": "Hardcore Henry",
     "year": "2015",
     "desc": "هنري ، سايبورغ تم إحياؤه حديثًا والذي يجب أن ينقذ زوجته / خالقه من براثن طاغية ذهني يتمتع بقوة التحريك الذهني ، أكان، وجيشه من المرتزقة. يقاتل جيمي جنبًا إلى جنب مع هنري ، وهو أمل هنري الوحيد في تحقيق النجاح طوال اليوم. المتشددين تجري على مدار يوم واحد ، في موسكو ، روسيا.",
