@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Beast Race",
+    "year": "2026",
+    "desc": "في مدينة ريو دي جانيرو في المستقبل، يتعين على قائد مقاومة شاب أن يخوض سباقاً مميتاً مستوحى من رياضة الباركور لإنقاذ حياة أخته.",
+    "poster": "https://image.tmdb.org/t/p/w500/AjDI3wr8qbOetPFhri4ZsMPmh7v.jpg",
+    "hdUrl": "https://streamtape.com/e/3AGjbvlDoKcdwAq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3AGjbvlDoKcdwAq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.8",
+    "genre": "حركة خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matheus Abreu",
+            "character": "Mano",
+            "image": "https://image.tmdb.org/t/p/w185/puXvuXPGn0xAZhvbszAU7lFS6AA.jpg"
+        },
+        {
+            "name": "Rodrigo Santoro",
+            "character": "Abu",
+            "image": "https://image.tmdb.org/t/p/w185/d3MaF9SPHDn2PMYHuqdnO0Csik6.jpg"
+        },
+        {
+            "name": "Isis Valverde",
+            "character": "Nadine",
+            "image": "https://image.tmdb.org/t/p/w185/3QYulTU0dLFvp0zetmaBcXS4RK7.jpg"
+        },
+        {
+            "name": "Bruno Gagliasso",
+            "character": "Leon",
+            "image": "https://image.tmdb.org/t/p/w185/6TDn2PK9mF2uUKI64rcvq42Yf5R.jpg"
+        },
+        {
+            "name": "Grazi Massafera",
+            "character": "Micaela",
+            "image": "https://image.tmdb.org/t/p/w185/zywWoTxzzaKwHbT0wQyvwH6kgy8.jpg"
+        },
+        {
+            "name": "Seu Jorge",
+            "character": "Baco",
+            "image": "https://image.tmdb.org/t/p/w185/p8VUk0ZSzfAF9uWjWg2jEVpPtTy.jpg"
+        },
+        {
+            "name": "João Guilherme Ávila",
+            "character": "Jonas",
+            "image": "https://image.tmdb.org/t/p/w185/uk1BQNbVRyXlrdHVLUZDYvQGTQX.jpg"
+        },
+        {
+            "name": "Silvero Pereira",
+            "character": "Sinatra",
+            "image": "https://image.tmdb.org/t/p/w185/oqfM8pMF1UmDfW0BTfxzW1BiEIm.jpg"
+        },
+        {
+            "name": "Leandro Firmino",
+            "character": "Medanha",
+            "image": "https://image.tmdb.org/t/p/w185/aEzWJgEzId04EP8C2UFQaF28WTW.jpg"
+        },
+        {
+            "name": "Jade Sassará",
+            "character": "Marisol",
+            "image": "https://image.tmdb.org/t/p/w185/3dLqtPMUSVvdDb0h2hn7O24FYOk.jpg"
+        }
+    ],
+    "trailerKey": "JVVqUrIp05U"
+},
+    {
     "title": "Just Breathe",
     "year": "2025",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
