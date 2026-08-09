@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Lost Bus",
+    "year": "2025",
+    "desc": "يخاطر أب حازم،، بكلّ شيء لإنقاذ معلّمة متفانية،، وطلّابها من حريق غابات مستعر.",
+    "poster": "https://image.tmdb.org/t/p/w500/4IPxzGlE17fJAwUTMul4opMeutA.jpg",
+    "hdUrl": "https://streamtape.com/e/rB1wmgWkkAsb2wL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/rB1wmgWkkAsb2wL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Matthew McConaughey",
+            "character": "Kevin McKay",
+            "image": "https://image.tmdb.org/t/p/w185/lCySuYjhXix3FzQdS4oceDDrXKI.jpg"
+        },
+        {
+            "name": "America Ferrera",
+            "character": "Mary Ludwig",
+            "image": "https://image.tmdb.org/t/p/w185/7q9uUWnaIjveX8DTU2lcA7mA3dp.jpg"
+        },
+        {
+            "name": "Yul Vazquez",
+            "character": "Chief Martinez",
+            "image": "https://image.tmdb.org/t/p/w185/chAxqgeJVoRoQukw7zRYgtlo4KI.jpg"
+        },
+        {
+            "name": "Ashlie Atkinson",
+            "character": "Ruby Bishop",
+            "image": "https://image.tmdb.org/t/p/w185/hM5baaucl7UzeRozzTlTr4fPkw5.jpg"
+        },
+        {
+            "name": "Kimberli Flores",
+            "character": "Linda",
+            "image": "https://image.tmdb.org/t/p/w185/n7KNFY1Y76mStkNEiT4QilJASsL.jpg"
+        },
+        {
+            "name": "Levi McConaughey",
+            "character": "Shaun",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Kay McConaughey",
+            "character": "Sherry",
+            "image": "https://image.tmdb.org/t/p/w185/hXnLntSlUWk3PhiXe3tFmMssHji.jpg"
+        },
+        {
+            "name": "John Messina",
+            "character": "John Messina",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Kate Wharton",
+            "character": "Jen Kissoon",
+            "image": "https://image.tmdb.org/t/p/w185/huQbdrFJLJ42QNAW1ebwR44Gfau.jpg"
+        },
+        {
+            "name": "Danny McCarthy",
+            "character": "Matt McKenzie",
+            "image": "https://image.tmdb.org/t/p/w185/jTYHl6SGo6hrHrezVCNHvEr4a5g.jpg"
+        }
+    ],
+    "trailerKey": "kQFiO88d_gk"
+},
+    {
     "title": "Leave the World Behind",
     "year": "2023",
     "desc": "تستأجر عائلة منزلًا فاخرًا لتقضي فيه عطلتها، إلا أن العطلة تأخذ منعطفًا مشؤومًا عندما يعطل هجوم إلكتروني أجهزتهم، ويطرق غريبان عليهم الباب.",
