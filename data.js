@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Your Fault",
+    "year": "2024",
+    "desc": "في تكملة لفيلم خطأي الذي حقق نجاحاً عالمياً، يبدو أن الحب بين نوا ونيك لا يتزعزع رغم محاولات والديهما التفريق بينهما. لكن عمله الجديد ودخولها إلى الكلية يفتحان حياتهما لعلاقات جديدة تهدد بزعزعة علاقتهما وعائلة ليستر بأكملها. عندما يكون هناك الكثير من الأشخاص المستعدين لتدمير العلاقة، هل يمكن حقاً أن يحظيا بنهاية سعيدة؟",
+    "poster": "https://image.tmdb.org/t/p/w500/vckCpJpgQ7c4KrhqOoRf9Kk4fG9.jpg",
+    "hdUrl": "https://streamtape.com/e/yDakRya8PXH1ZXq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yDakRya8PXH1ZXq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nicole Wallace",
+            "character": "Noah Morán",
+            "image": "https://image.tmdb.org/t/p/w185/xlvq6OYCN6yQef4fpJQtwVyQxqr.jpg"
+        },
+        {
+            "name": "Gabriel Guevara",
+            "character": "Nick Leister",
+            "image": "https://image.tmdb.org/t/p/w185/pviRYKEEmoPUfLYwP1VHJ6LQcRg.jpg"
+        },
+        {
+            "name": "Marta Hazas",
+            "character": "Rafaella Leister",
+            "image": "https://image.tmdb.org/t/p/w185/1dbeTFRCbWBt70dIGjYHKVLnpaG.jpg"
+        },
+        {
+            "name": "Iván Sánchez",
+            "character": "William Leister",
+            "image": "https://image.tmdb.org/t/p/w185/woVz8D7t1VUKjFJnsTAdc8tyz5C.jpg"
+        },
+        {
+            "name": "Eva Ruiz",
+            "character": "Jenna",
+            "image": "https://image.tmdb.org/t/p/w185/bcu0nmQvhxwTzh4csc4kuxJsQee.jpg"
+        },
+        {
+            "name": "Víctor Varona",
+            "character": "Lion",
+            "image": "https://image.tmdb.org/t/p/w185/lcwFAjHjhJXkxf59TXGSjGGOlLj.jpg"
+        },
+        {
+            "name": "Gabriela Andrada",
+            "character": "Sofía Zabala",
+            "image": "https://image.tmdb.org/t/p/w185/h8cAdDqbDK2ayGIuxQQdNCzyCsb.jpg"
+        },
+        {
+            "name": "Alex Bejar",
+            "character": "Briar",
+            "image": "https://image.tmdb.org/t/p/w185/kPeFa6xX57IyhAfoT8dtgfPMgmX.jpg"
+        },
+        {
+            "name": "Goya Toledo",
+            "character": "Anabel",
+            "image": "https://image.tmdb.org/t/p/w185/ygZpmXYB1fDSnpeJx1PadEQLgA5.jpg"
+        },
+        {
+            "name": "Javier Morgade",
+            "character": "Michael",
+            "image": "https://image.tmdb.org/t/p/w185/hcDV10bTZlm1rTi0NRhoGIpdicw.jpg"
+        }
+    ],
+    "trailerKey": "QT5j0Uf-rdM"
+},
+    {
     "title": "My Fault",
     "year": "2023",
     "desc": "يتعيّن على 'نواه' ترك مدينتها وحبيبها وأصحابها للانتقال إلى قصر زوج أمها الجديد. تلتقي 'نيك' هناك، أخوها من زوج أمها. وتتشابك شخصياتهما في اختلافات منذ البداية. لكن الانجذاب الذي يشعران به نحو الآخر يؤدي بهما إلى علاقة محرّمة حيث طباعهما المتمردة المُعذبة تقلب عالمهما رأساً على عقب وتتسبب بوقوعهما في حب الآخر بجنون.",
