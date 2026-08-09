@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Just Breathe",
+    "year": "2025",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/vXtJKt9vJTyMclwCsNKPMD8JC63.jpg",
+    "hdUrl": "https://streamtape.com/e/MA83rDKo4yHmvzQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/MA83rDKo4yHmvzQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kyle Gallner",
+            "character": "Nick Blanco",
+            "image": "https://image.tmdb.org/t/p/w185/wfdywrw6K3ti1uW1IYDWbUtU8se.jpg"
+        },
+        {
+            "name": "Shawn Ashmore",
+            "character": "Chester",
+            "image": "https://image.tmdb.org/t/p/w185/tXA1gFtsp9HWnzlQsaZSoZC8L4r.jpg"
+        },
+        {
+            "name": "William Forsythe",
+            "character": "Tony",
+            "image": "https://image.tmdb.org/t/p/w185/35BXHugSG931iVPbHn6W9SNXNY1.jpg"
+        },
+        {
+            "name": "Emyri Crutchfield",
+            "character": "Mel",
+            "image": "https://image.tmdb.org/t/p/w185/wsdVu6Duu5MjvAc82u1rrNM2AAK.jpg"
+        },
+        {
+            "name": "Phuong Kubacki",
+            "character": "Officer Lee",
+            "image": "https://image.tmdb.org/t/p/w185/uUgZ9EhaUJaxWhHoqPBZp3mGAhz.jpg"
+        },
+        {
+            "name": "Sarah Pribis",
+            "character": "Jamie Lynn",
+            "image": "https://image.tmdb.org/t/p/w185/quSqqTmyueyrNt5yhlAuZAYq9vq.jpg"
+        },
+        {
+            "name": "Harrison Stone",
+            "character": "Busboy",
+            "image": "https://image.tmdb.org/t/p/w185/wQseyyHclVhxSJGjY9rcKGjJefM.jpg"
+        },
+        {
+            "name": "Bryant Carroll",
+            "character": "Danny",
+            "image": "https://image.tmdb.org/t/p/w185/8D6YiRSYdBl4q3JA8a7fnsZ0cpq.jpg"
+        },
+        {
+            "name": "Sewell Whitney",
+            "character": "Therapist",
+            "image": "https://image.tmdb.org/t/p/w185/aF9NquOtzoy7C0nnQs1tuowSUr8.jpg"
+        },
+        {
+            "name": "Robert Oppel",
+            "character": "Ronny",
+            "image": "https://image.tmdb.org/t/p/w185/4K91doFIj8KN9qVAGhSrTWAU2pY.jpg"
+        }
+    ],
+    "trailerKey": "t1xt4mBMKms"
+},
+    {
     "title": "Play Dirty",
     "year": "2025",
     "desc": "ينفّذ لص محترف أكبر عملية سرقة في حياته في فيلم اللعب القذر، فيلم إثارة مليء بالحركة من إخراج 'شين بلاك'. يشارك 'باركر'، الذي يؤدي دوره 'مارك والبيرغ'، إلى جانب 'غروفيلد' الذي يؤدي دوره 'لاكيث ستانفيلد'، و'زين' التي تؤدي دورها 'روزا سالازار'، وفريق ماهر، لتنفيذ سرقة العمر التي اكتشفوها بالصدفة، وتلك تقودهم إلى مواجهة مباشرة مع مافيا 'نيويورك'، في هذه المغامرة الجريئة الذكية والمليئة بالتشويق.",
