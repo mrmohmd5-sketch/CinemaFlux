@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "My Fault: London",
+    "year": "2025",
+    "desc": "تنتقل 'نواه' صاحبة الـ18 عامًا من 'أمريكا' إلى 'لندن' مع والدتها التي وقعت مؤخرًا في غرام 'ويليام'، رجل أعمال بريطاني ثري. تلتقي 'نواه' ابن 'ويليام' الشقي 'نيك'، وسرعان ما تشعر بانجذاب بينهما لا يمكن لأي منهما تجنبه. بينما تقضي 'نواه' الصيف محاولةً التأقلم مع حياتها الجديدة، سيلاحقها ماضيها المحطم في حين تقع في الغرام لأول مرة.",
+    "poster": "https://image.tmdb.org/t/p/w500/ivTjYQchu20z3vJ1wlGZyCayokS.jpg",
+    "hdUrl": "https://streamtape.com/e/jpbQqoDkZkizVAr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jpbQqoDkZkizVAr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Asha Banks",
+            "character": "Noah",
+            "image": "https://image.tmdb.org/t/p/w185/vZi45Xn17QMaOXmAOvkCEjB3QFr.jpg"
+        },
+        {
+            "name": "Matthew Broome",
+            "character": "Nick",
+            "image": "https://image.tmdb.org/t/p/w185/nSjPuDG5IVQfyMU8TkZl0ZQkLu6.jpg"
+        },
+        {
+            "name": "Eve Macklin",
+            "character": "Ella",
+            "image": "https://image.tmdb.org/t/p/w185/7e1bpd3iTst0PvCk4A7LVfUgNut.jpg"
+        },
+        {
+            "name": "Ray Fearon",
+            "character": "William",
+            "image": "https://image.tmdb.org/t/p/w185/ou2cqhqdhfQoKVEBpIh0P3sKZti.jpg"
+        },
+        {
+            "name": "Enva Lewis",
+            "character": "Jenna",
+            "image": "https://image.tmdb.org/t/p/w185/hFBuqi7NFiFgHho2J2IM43nZcrG.jpg"
+        },
+        {
+            "name": "Jason Flemyng",
+            "character": "Travis",
+            "image": "https://image.tmdb.org/t/p/w185/nYl0180ACnLzVlGbaAfuPtdGr9K.jpg"
+        },
+        {
+            "name": "Kerim Hassan",
+            "character": "Lion",
+            "image": "https://image.tmdb.org/t/p/w185/b1LNPysqfX5XmCkF8En67RR3aPI.jpg"
+        },
+        {
+            "name": "Sam Buchanan",
+            "character": "Ronnie",
+            "image": "https://image.tmdb.org/t/p/w185/au5WjiUcUjheDEJ8BEXRFXhsIS8.jpg"
+        },
+        {
+            "name": "Amelia Kenworthy",
+            "character": "Anna",
+            "image": "https://image.tmdb.org/t/p/w185/3QgUXGc7iOEHDlK7MQhTBmkKpP.jpg"
+        },
+        {
+            "name": "Harry Gilby",
+            "character": "Dan",
+            "image": "https://image.tmdb.org/t/p/w185/4rORd6r6Ts4eYWVhbP9iIsE4CEo.jpg"
+        }
+    ],
+    "trailerKey": "14z9L_MwH5s"
+},
+    {
     "title": "Our Fault",
     "year": "2025",
     "desc": "يجمع زفاف 'جينا' و'ليون' أخيراً بين 'نوا' و'نيك' بعد فراق طويل. عدم قدرة 'نيك' على مسامحة 'نوا' يشكّل عائقاً لا يمكن تخطيه. هو وريث إمبراطورية جده التجارية وهي في بداية مسيرتها المهنية. كلاهما يحاول تجاهل الشرارة التي لا تزال مشتعلة. لكن بعدما تقاطعت دروبهما من جديد، هل سيكون الحب أقوى من الضغينة؟",
