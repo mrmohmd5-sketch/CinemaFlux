@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Hangover Part III",
+    "year": "2013",
+    "desc": "يعود 'قطيع الذئاب' إلى لاس فيغاس مُحاولين مساعدة 'ألن'، ثم ينتهي بهم المقام في مغامرة طائشة مع السيد 'تشاو' وزعيم العصابة 'مارشال'.",
+    "poster": "https://image.tmdb.org/t/p/w500/vtxuPWkdllLNLVyGjKYa267ntuH.jpg",
+    "hdUrl": "https://streamtape.com/e/g0xGXebmVkcByK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/g0xGXebmVkcByK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Bradley Cooper",
+            "character": "Phil Wenneck",
+            "image": "https://image.tmdb.org/t/p/w185/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
+        },
+        {
+            "name": "Ed Helms",
+            "character": "Stu Price",
+            "image": "https://image.tmdb.org/t/p/w185/gPZ8tZaNQGAc3KZRIPp9rgGbEnN.jpg"
+        },
+        {
+            "name": "Zach Galifianakis",
+            "character": "Alan Garner",
+            "image": "https://image.tmdb.org/t/p/w185/ncBSLoNUufKpg7vzx1gCtjhst8i.jpg"
+        },
+        {
+            "name": "Justin Bartha",
+            "character": "Doug Billings",
+            "image": "https://image.tmdb.org/t/p/w185/AalKjN8nR8RZ8g6ZdWV2smnQq4d.jpg"
+        },
+        {
+            "name": "Ken Jeong",
+            "character": "Mr. Chow",
+            "image": "https://image.tmdb.org/t/p/w185/dfuDZ2m2A8nBb0TdyeqmlPOobJA.jpg"
+        },
+        {
+            "name": "John Goodman",
+            "character": "Marshall",
+            "image": "https://image.tmdb.org/t/p/w185/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
+        },
+        {
+            "name": "Melissa McCarthy",
+            "character": "Cassie",
+            "image": "https://image.tmdb.org/t/p/w185/yl0qva0O4u92fvtItakdvKmKrW9.jpg"
+        },
+        {
+            "name": "Jeffrey Tambor",
+            "character": "Sid Garner",
+            "image": "https://image.tmdb.org/t/p/w185/e4IkxsEo5O4oUWrIpXlEhWa6lqB.jpg"
+        },
+        {
+            "name": "Heather Graham",
+            "character": "Jade",
+            "image": "https://image.tmdb.org/t/p/w185/avYdNkeg1oTvmrNJbFDcTlBCkKs.jpg"
+        },
+        {
+            "name": "Mike Epps",
+            "character": "Black Doug",
+            "image": "https://image.tmdb.org/t/p/w185/kDI4E3ALm2rVkF38GwhWwXmDq0a.jpg"
+        }
+    ],
+    "trailerKey": "96TelFMZwHc"
+},
+    {
     "title": "The Hangover Part II",
     "year": "2011",
     "desc": "عندما تلتقي المجموعة في تايلاند لحضور حفل زفاف 'ستو'، فإذا بهم يستيقظون ذات صباح في فندق سيئ السمعة ولا يعرفون كيف وصلوا إليه!",
