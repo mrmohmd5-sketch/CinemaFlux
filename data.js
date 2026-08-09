@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Leave the World Behind",
+    "year": "2023",
+    "desc": "تستأجر عائلة منزلًا فاخرًا لتقضي فيه عطلتها، إلا أن العطلة تأخذ منعطفًا مشؤومًا عندما يعطل هجوم إلكتروني أجهزتهم، ويطرق غريبان عليهم الباب.",
+    "poster": "https://image.tmdb.org/t/p/w500/29rhl1xopxA7JlGVVsf1UHfYPvN.jpg",
+    "hdUrl": "https://streamtape.com/e/4DDzx8Xvr3sK6yq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/4DDzx8Xvr3sK6yq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "دراما غموض إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Julia Roberts",
+            "character": "Amanda Sandford",
+            "image": "https://image.tmdb.org/t/p/w185/fQacAdIa1WUNChQ6FgEko13eqOA.jpg"
+        },
+        {
+            "name": "Ethan Hawke",
+            "character": "Clay Sandford",
+            "image": "https://image.tmdb.org/t/p/w185/oojD9jSshvUT4t6AUySsBxoekHk.jpg"
+        },
+        {
+            "name": "Mahershala Ali",
+            "character": "G.H. Scott",
+            "image": "https://image.tmdb.org/t/p/w185/oId1ulmetuWr3lFFsSb81KS5LJS.jpg"
+        },
+        {
+            "name": "Myha'la",
+            "character": "Ruth Scott",
+            "image": "https://image.tmdb.org/t/p/w185/hRc3igngt5dkpM08i0a3z7gkYWa.jpg"
+        },
+        {
+            "name": "Farrah Mackenzie",
+            "character": "Rose Sandford",
+            "image": "https://image.tmdb.org/t/p/w185/A0IxtjlDAiuXGR3kVSf1HunVFnC.jpg"
+        },
+        {
+            "name": "Charlie Evans",
+            "character": "Archie Sandford",
+            "image": "https://image.tmdb.org/t/p/w185/tNyMjCimykWYzq099EarabwYTEY.jpg"
+        },
+        {
+            "name": "Kevin Bacon",
+            "character": "Danny",
+            "image": "https://image.tmdb.org/t/p/w185/rjX2Oz3tCZMfSwOoIAyEhdtXnTE.jpg"
+        },
+        {
+            "name": "Vanessa Aspillaga",
+            "character": "Salvadora",
+            "image": "https://image.tmdb.org/t/p/w185/r6glFQRIQ7USNgJTG7HwJSf18CX.jpg"
+        },
+        {
+            "name": "Orli Gottesman",
+            "character": "Taylor",
+            "image": "https://image.tmdb.org/t/p/w185/ApZXZVnYB7bqyMdVoZ7qrTnnvd8.jpg"
+        },
+        {
+            "name": "Alexis Rae Forlenza",
+            "character": "Danny's Daughter",
+            "image": "https://image.tmdb.org/t/p/w185/lcLnNqlRbBLHPdfkHiVwivuyJnK.jpg"
+        }
+    ],
+    "trailerKey": "xM4ILvKeTxs"
+},
+    {
     "title": "Ambulance",
     "year": "2022",
     "desc": "يطلب المخضرم ويل شارب ، الذي يائس للحصول على المال لتغطية الفواتير الطبية لزوجته ، المساعدة من شقيقه بالتبني داني. داني مجرم مهني يتمتع بشخصية كاريزمية ، وبدلا من ذلك يقدم له نتيجة: أكبر سرقة بنك في تاريخ لوس أنجلوس: 32 مليون دولار.",
