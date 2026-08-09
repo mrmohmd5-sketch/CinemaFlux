@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "The Menu",
+    "year": "2022",
+    "desc": "يسافر زوجان إلى جزيرة ساحلية لتناول الطعام في مطعم حصري حيث أعد الطاهي قائمة طعام فخمة ، مع بعض المفاجآت الصادمة.",
+    "poster": "https://image.tmdb.org/t/p/w500/eYUEaTd53298BBWu2ZcQYnaafw2.jpg",
+    "hdUrl": "https://streamtape.com/e/kbYedxldvMsOXpv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/kbYedxldvMsOXpv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "كوميديا رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Anya Taylor-Joy",
+            "character": "Margot",
+            "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+            "name": "Ralph Fiennes",
+            "character": "Chef Slowik",
+            "image": "https://image.tmdb.org/t/p/w185/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
+        },
+        {
+            "name": "Nicholas Hoult",
+            "character": "Tyler",
+            "image": "https://image.tmdb.org/t/p/w185/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg"
+        },
+        {
+            "name": "Janet McTeer",
+            "character": "Lillian",
+            "image": "https://image.tmdb.org/t/p/w185/qOKAI6aunD4J5MXiwwomAhI3jI2.jpg"
+        },
+        {
+            "name": "Paul Adelstein",
+            "character": "Ted",
+            "image": "https://image.tmdb.org/t/p/w185/9qkGnEWPzGayZg9gaB4xbP8UL4g.jpg"
+        },
+        {
+            "name": "Rob Yang",
+            "character": "Bryce",
+            "image": "https://image.tmdb.org/t/p/w185/rijNHjy45mhXw6TIhLesuDs4BY4.jpg"
+        },
+        {
+            "name": "Aimee Carrero",
+            "character": "Felicity",
+            "image": "https://image.tmdb.org/t/p/w185/jp9L7d3cGMYvPEaFnqfot7Et4Ga.jpg"
+        },
+        {
+            "name": "John Leguizamo",
+            "character": "Movie Star",
+            "image": "https://image.tmdb.org/t/p/w185/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg"
+        },
+        {
+            "name": "Arturo Castro",
+            "character": "Soren",
+            "image": "https://image.tmdb.org/t/p/w185/pbLoDCfjm3fLtGHVqQcnbM2d0cu.jpg"
+        },
+        {
+            "name": "Reed Birney",
+            "character": "Richard",
+            "image": "https://image.tmdb.org/t/p/w185/dfLgNLUt6Xs2MJJTi6B1iWdXjU6.jpg"
+        }
+    ],
+    "trailerKey": "C_uTkUGcHv4",
+    "featured": true
+},
+    {
     "title": "Bullet Train",
     "year": "2022",
     "desc": "على متن قطار فائق السرعة، ينتقل 5 من القتلة المأجورين في رحلة لتنفيذ مهمة دون معرفة أحدهم بالآخر، وسرعان ما يكتشف أن هناك عامل مشترك يجمعهم جميعًا بالمهمة المطلوب إنجازها.",
