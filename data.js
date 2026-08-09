@@ -5,7 +5,7 @@ const globalMoviesData = [
     "desc": "بينما يواصل 'بيتر باركر' حماية المدينة بصفته 'الرجل العنكبوت' في عالمٍ لم يعد يتذكره أحد، يجد نفسه وحيدًا وهو يشاهد أصدقاءه القدامى يمضون في حياتهم من دونه. ومع تصاعد الضغوط، يبدأ بالتغير بطريقة قد تعجز قواه عن كبحها. لكن هذا التحول قد يكون أمله الوحيد لمواجهة تهديدٍ غامض وخطير يلوح في الأفق، عدو يمتلك قوة مرعبة لا يستطيع أحد حتى رؤيته، ويهدد المدينة وكل من يهتم 'بيتر' لأمرهم.",
     "poster": "https://image.tmdb.org/t/p/w500/yskgiN1W74nY2DFky4ncuxPbj2J.jpg",
     "hdUrl": "https://streamtape.com/e/VBqJaYgzWDcKJAy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/VBqJaYgzWDcKJAy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7dexVo3V6GhAX3x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.9",
     "genre": "خيال علمي حركة مغامرة",
     "type": "movie",
