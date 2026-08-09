@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Fantasy Island",
+    "year": "2020",
+    "desc": "جزيرة بلوم هاوس الخيالية\r 2020 | تشويق و القصة المثيرة\r في  جزيرة جزيرة بلومهاوس الخيالية ،  يجعل السيد رورك الغامض الأحلام السرية لضيوفه المحظوظين تتحقق في منتجع استوائي فاخر ولكن بعيد. ولكن عندما تتحول التخيلات إلى كوابيس ، يتعين على الضيوف حل لغز الجزيرة من أجل الهروب بحياتهم .",
+    "poster": "https://image.tmdb.org/t/p/w500/8ZMrZGGW65ePWIgRn1260nA1uUm.jpg",
+    "hdUrl": "https://streamtape.com/e/DM71K1xAZ1tkpPQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/DM71K1xAZ1tkpPQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.8",
+    "genre": "مغامرة فانتازيا رعب غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Michael Peña",
+            "character": "Mr. Roarke",
+            "image": "https://image.tmdb.org/t/p/w185/afs4PCiwn8LR93a10drULLVeVLo.jpg"
+        },
+        {
+            "name": "Maggie Q",
+            "character": "Gwen Olsen",
+            "image": "https://image.tmdb.org/t/p/w185/1Z0A8axunWqZrskGkfANv6W5qCl.jpg"
+        },
+        {
+            "name": "Lucy Hale",
+            "character": "Melanie Cole",
+            "image": "https://image.tmdb.org/t/p/w185/v8R89A0INFJmh87SwIofadFiSCa.jpg"
+        },
+        {
+            "name": "Michael Rooker",
+            "character": "Damon",
+            "image": "https://image.tmdb.org/t/p/w185/ngOuHNIAGrKyY1O7F0f9C5Q9ONg.jpg"
+        },
+        {
+            "name": "Austin Stowell",
+            "character": "Patrick Sullivan",
+            "image": "https://image.tmdb.org/t/p/w185/At09XQpVXnChgedNsxu4ceR5W9i.jpg"
+        },
+        {
+            "name": "Jimmy O. Yang",
+            "character": "Brax Weaver",
+            "image": "https://image.tmdb.org/t/p/w185/1QfCVmdNo4AqBdN54kc9DTBx84X.jpg"
+        },
+        {
+            "name": "Portia Doubleday",
+            "character": "Sloane Maddison",
+            "image": "https://image.tmdb.org/t/p/w185/6lPDPTlxnFcTJF5dzmmPHVmH8ey.jpg"
+        },
+        {
+            "name": "Charlotte McKinney",
+            "character": "Chastity",
+            "image": "https://image.tmdb.org/t/p/w185/kKus50JDqKtrWLqururLUArHhxo.jpg"
+        },
+        {
+            "name": "Ryan Hansen",
+            "character": "J. D. Weaver",
+            "image": "https://image.tmdb.org/t/p/w185/n4d1DiK3KyrQNN3G2QKt4Tos53Q.jpg"
+        },
+        {
+            "name": "Mike Vogel",
+            "character": "Lieutenant Sullivan",
+            "image": "https://image.tmdb.org/t/p/w185/s85Qt8oUJZ3QnUeAmQjh5amq6R6.jpg"
+        }
+    ],
+    "trailerKey": "AuDROG1g6bM"
+},
+    {
     "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
     "year": "2025",
     "desc": "بينما كان أعضاء فيلق قاتلي الشياطين و'الهشيرا' يخضعون لبرنامج تدريب جماعي يُعرف بتدريب الهشيرا استعدادًا للمعركة الحاسمة ضد الشياطين، يظهر موزان كيبوتسوجي في قصر عائلة أوبوياشيكي. ومع تعرّض قائد الفيلق للخطر، يندفع تانجيرو والهشيرا إلى المقر الرئيسي، لكنهم يجدون أنفسهم يسقطون في أعماق مكان غامض بفعل يدي موزان. الوجهة التي سقط فيها تانجيرو ورفاقه ليست سوى معقل الشياطين – قلعة اللانهاية. وهكذا، تبدأ ساحة المعركة النهائية بين فيلق قاتلي الشياطين وقوى الشر في الاشتعال.",
