@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Chemical Hearts",
+    "year": "2020",
+    "desc": "طالبة منتقلة من الثانوية تكتشف شغفًا جديدًا عندما تبدأ العمل في صحيفة المدرسة.",
+    "poster": "https://image.tmdb.org/t/p/w500/q1MNlZYqhoD4U7sd7pjxD6SUf4z.jpg",
+    "hdUrl": "https://streamtape.com/e/zKGRJlgmLpSGKW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/zKGRJlgmLpSGKW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Austin Abrams",
+            "character": "Henry Page",
+            "image": "https://image.tmdb.org/t/p/w185/gG4KsGZDw3tO2R66cn9VdOo8uSu.jpg"
+        },
+        {
+            "name": "Lili Reinhart",
+            "character": "Grace Town",
+            "image": "https://image.tmdb.org/t/p/w185/sJcuQAJdIv3mnh9M9p5sQWhWSRN.jpg"
+        },
+        {
+            "name": "Sarah Jones",
+            "character": "Suds",
+            "image": "https://image.tmdb.org/t/p/w185/1YFh9NStF75XWTLT9CPGG2395HN.jpg"
+        },
+        {
+            "name": "Bruce Altman",
+            "character": "Toby Page",
+            "image": "https://image.tmdb.org/t/p/w185/n5y8Mg572LGT3eHyeZaa9NMMlAN.jpg"
+        },
+        {
+            "name": "Adhir Kalyan",
+            "character": "Kem Sharma",
+            "image": "https://image.tmdb.org/t/p/w185/4AY2qSCB9EtzKwDOPEHS3E1lA8t.jpg"
+        },
+        {
+            "name": "Coral Peña",
+            "character": "Cora Hernandez",
+            "image": "https://image.tmdb.org/t/p/w185/A2EPFe4fW3QQ2TY44JlFwB83jix.jpg"
+        },
+        {
+            "name": "Shannon Walsh",
+            "character": "Miranda",
+            "image": "https://image.tmdb.org/t/p/w185/17EARv5oZyKbo9i2hostrOSeyZK.jpg"
+        },
+        {
+            "name": "Kara Young",
+            "character": "La",
+            "image": "https://image.tmdb.org/t/p/w185/x6a4q3V21TEWg8xsl5W4zM7H442.jpg"
+        },
+        {
+            "name": "Meg Gibson",
+            "character": "Gloria Page",
+            "image": "https://image.tmdb.org/t/p/w185/wFtGCTXzkVhcctPENfWyGGfHVCd.jpg"
+        },
+        {
+            "name": "C.J. Hoff",
+            "character": "Muz",
+            "image": "https://image.tmdb.org/t/p/w185/vt6MAdp3f8PXsku5Cr1dXmqqgDs.jpg"
+        }
+    ],
+    "trailerKey": "GuS5BZTUVJs"
+},
+    {
     "title": "Evil Dead Burn",
     "year": "2026",
     "desc": "بعد وفاة زوجها المفاجئة، تلجأ امرأة إلى أهل زوجها طلباً للعزاء. وبينما يتحولون إلى موتى أحياء واحداً تلو الآخر، تكتشف أن العهود التي قطعتها على نفسها في الحياة تبقى قائمة حتى بعد الموت",
