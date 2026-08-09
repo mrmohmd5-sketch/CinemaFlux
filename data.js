@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Bullet Train",
+    "year": "2022",
+    "desc": "على متن قطار فائق السرعة، ينتقل 5 من القتلة المأجورين في رحلة لتنفيذ مهمة دون معرفة أحدهم بالآخر، وسرعان ما يكتشف أن هناك عامل مشترك يجمعهم جميعًا بالمهمة المطلوب إنجازها.",
+    "poster": "https://image.tmdb.org/t/p/w500/jpqFALGHwz8Jf1GgY6yRF5M4gUF.jpg",
+    "hdUrl": "https://streamtape.com/e/XJ4e10MqvQuDr1r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/XJ4e10MqvQuDr1r/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة كوميديا إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brad Pitt",
+            "character": "Ladybug",
+            "image": "https://image.tmdb.org/t/p/w185/ajNaPmXVVMJFg9GWmu6MJzTaXdV.jpg"
+        },
+        {
+            "name": "Joey King",
+            "character": "Prince",
+            "image": "https://image.tmdb.org/t/p/w185/94c69mPYSK9jFsAEu0OKB7Qs684.jpg"
+        },
+        {
+            "name": "Aaron Taylor-Johnson",
+            "character": "Tangerine",
+            "image": "https://image.tmdb.org/t/p/w185/pFtHhih2XEaFaD3qOFyQW6q83br.jpg"
+        },
+        {
+            "name": "Brian Tyree Henry",
+            "character": "Lemon",
+            "image": "https://image.tmdb.org/t/p/w185/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg"
+        },
+        {
+            "name": "Andrew Koji",
+            "character": "Kimura",
+            "image": "https://image.tmdb.org/t/p/w185/oU53nWLQ6wFHzERwSi1fD53LxZB.jpg"
+        },
+        {
+            "name": "Hiroyuki Sanada",
+            "character": "The Elder",
+            "image": "https://image.tmdb.org/t/p/w185/SOwDxhGnRccP2lAtssQ7TxCzOe.jpg"
+        },
+        {
+            "name": "Michael Shannon",
+            "character": "White Death",
+            "image": "https://image.tmdb.org/t/p/w185/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg"
+        },
+        {
+            "name": "Sandra Bullock",
+            "character": "Maria",
+            "image": "https://image.tmdb.org/t/p/w185/4rfjISL3Flx16jfiusXoHbpt87X.jpg"
+        },
+        {
+            "name": "Bad Bunny",
+            "character": "Wolf",
+            "image": "https://image.tmdb.org/t/p/w185/r70aP80HleYJYVScjDhenNCeeWX.jpg"
+        },
+        {
+            "name": "Logan Lerman",
+            "character": "The Son",
+            "image": "https://image.tmdb.org/t/p/w185/ckcpgSvSWOhi8mvAfR1Cpsakg3S.jpg"
+        }
+    ],
+    "trailerKey": "C4Wgaw8WzaY",
+    "featured": true
+},
+    {
     "title": "I Know What You Did Last Summer",
     "year": "2025",
     "desc": "عندما يتسبب خمسة أصدقاء، دون قصد، في حادث سيارة مميت، يُخفون تورطهم ويعقدون اتفاقًا على إبقاء الأمر سرًا بدلًا من مواجهة العواقب. بعد عام، يعود ماضيهم ليطاردهم، ويضطرون لمواجهة حقيقة مروعة: أحدهم يعلم ما فعلوه الصيف الماضي... وهو عازم على الانتقام.",
