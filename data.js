@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Our Fault",
+    "year": "2025",
+    "desc": "يجمع زفاف 'جينا' و'ليون' أخيراً بين 'نوا' و'نيك' بعد فراق طويل. عدم قدرة 'نيك' على مسامحة 'نوا' يشكّل عائقاً لا يمكن تخطيه. هو وريث إمبراطورية جده التجارية وهي في بداية مسيرتها المهنية. كلاهما يحاول تجاهل الشرارة التي لا تزال مشتعلة. لكن بعدما تقاطعت دروبهما من جديد، هل سيكون الحب أقوى من الضغينة؟",
+    "poster": "https://image.tmdb.org/t/p/w500/9QBCk70cs3gAmLcV0FSVHoPWwFt.jpg",
+    "hdUrl": "https://streamtape.com/e/oLXY1Gdg4VtJmLb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/oLXY1Gdg4VtJmLb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "رومنسية دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nicole Wallace",
+            "character": "Noah Morán",
+            "image": "https://image.tmdb.org/t/p/w185/xlvq6OYCN6yQef4fpJQtwVyQxqr.jpg"
+        },
+        {
+            "name": "Gabriel Guevara",
+            "character": "Nick Leister",
+            "image": "https://image.tmdb.org/t/p/w185/pviRYKEEmoPUfLYwP1VHJ6LQcRg.jpg"
+        },
+        {
+            "name": "Gabriela Andrada",
+            "character": "Sofía Zabala",
+            "image": "https://image.tmdb.org/t/p/w185/h8cAdDqbDK2ayGIuxQQdNCzyCsb.jpg"
+        },
+        {
+            "name": "Marta Hazas",
+            "character": "Rafaella Leister",
+            "image": "https://image.tmdb.org/t/p/w185/1dbeTFRCbWBt70dIGjYHKVLnpaG.jpg"
+        },
+        {
+            "name": "Goya Toledo",
+            "character": "Anabel",
+            "image": "https://image.tmdb.org/t/p/w185/ygZpmXYB1fDSnpeJx1PadEQLgA5.jpg"
+        },
+        {
+            "name": "Iván Sánchez",
+            "character": "William Leister",
+            "image": "https://image.tmdb.org/t/p/w185/woVz8D7t1VUKjFJnsTAdc8tyz5C.jpg"
+        },
+        {
+            "name": "Felipe Londoño",
+            "character": "Luca",
+            "image": "https://image.tmdb.org/t/p/w185/gUKu2bla3ZKtwuzfymMbyzUsobC.jpg"
+        },
+        {
+            "name": "Fran Berenguer",
+            "character": "Ronnie",
+            "image": "https://image.tmdb.org/t/p/w185/uYi3MOwqtNdfZt82DdvzKCZku50.jpg"
+        },
+        {
+            "name": "Alex Bejar",
+            "character": "Briar",
+            "image": "https://image.tmdb.org/t/p/w185/kPeFa6xX57IyhAfoT8dtgfPMgmX.jpg"
+        },
+        {
+            "name": "Javier Morgade",
+            "character": "Michael",
+            "image": "https://image.tmdb.org/t/p/w185/hcDV10bTZlm1rTi0NRhoGIpdicw.jpg"
+        }
+    ],
+    "trailerKey": "4ZDvKct1U4s"
+},
+    {
     "title": "Your Fault",
     "year": "2024",
     "desc": "في تكملة لفيلم خطأي الذي حقق نجاحاً عالمياً، يبدو أن الحب بين نوا ونيك لا يتزعزع رغم محاولات والديهما التفريق بينهما. لكن عمله الجديد ودخولها إلى الكلية يفتحان حياتهما لعلاقات جديدة تهدد بزعزعة علاقتهما وعائلة ليستر بأكملها. عندما يكون هناك الكثير من الأشخاص المستعدين لتدمير العلاقة، هل يمكن حقاً أن يحظيا بنهاية سعيدة؟",
