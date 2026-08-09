@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Children Who Chase Lost Voices",
+    "year": "2011",
+    "desc": "(واتاسي آسونا)، فتاة يتيمة الأب تعيش مع أمها حياة هادئة، ومن صفاتها أنها تحب الانعزال في إحدى المناطق الجبلية البعيدة. ذات مرة شغلت مذياعها في مكان عزلتها ذاك فالتقطت لحناً غريباً لم تسمع مثله من قبل، وظل ذلك اللحن عالقاً بذهنها وأبى أن يفارقه. تتعرف (آسونا) على شاب غريب قال بأنه قادم من أرض بعيدة اسمها (أغارتا)، ثم تعرف لاحقاً من أستاذها أن تلك الأرض توجد في عالم سفلي يمكن فيه إعادة بعث الأموات وإرجاعهم إلى الحياة من جديد. ولأن الأستاذ كان عازماً على الذهاب إلى تلك الأرض لإعادة شخص عزيز عليه من عالم الموت، فقد قررت (آسونا) مرافقته في هذه الرحلة الشاقة للسبب نفسه.",
+    "poster": "https://image.tmdb.org/t/p/w500/xOmruD2cxh39x92Oa4I096nmwns.jpg",
+    "hdUrl": "https://streamtape.com/e/wxJ6gjgBW6hova/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wxJ6gjgBW6hova/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "رسوم متحركة مغامرة فانتازيا عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hisako Kanemoto",
+            "character": "Asuna Watase (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qyJPQaehMc4Sy5jaTfIJLdrll2v.jpg"
+        },
+        {
+            "name": "Kazuhiko Inoue",
+            "character": "Ryuji Morisaki (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/3BpYtYRiLAmTNbCm2LXlXnkMRit.jpg"
+        },
+        {
+            "name": "Miyu Irino",
+            "character": "Shin / Shun (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/8qEEhHUObNvGQr4e6eqLu5z4qTz.jpg"
+        },
+        {
+            "name": "Rina Hidaka",
+            "character": "Mana (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/7JupZGvqcq4dRxiTKpPxzg8NUS4.jpg"
+        },
+        {
+            "name": "Fumiko Orikasa",
+            "character": "Asuna's Mother (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/f5d1J13fksa1hK8u7AS95aO8b9.jpg"
+        },
+        {
+            "name": "Sumi Shimamoto",
+            "character": "Risa (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/iKIDv2VFpAgzJ0uMQi7pzcMHB9i.jpg"
+        },
+        {
+            "name": "Junko Takeuchi",
+            "character": "Mimi (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/zNjrblq3xS1idpCsmSl5P5eTon7.jpg"
+        },
+        {
+            "name": "Kanae Itou",
+            "character": "Seri (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/te4l0fzbfhtKWqNHPYdGZBXMmxt.jpg"
+        },
+        {
+            "name": "Tamio Ohki",
+            "character": "Old Man from Amaurot (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ixEU7F1vWpcm0MGqc04xXNGLpHz.jpg"
+        },
+        {
+            "name": "Aki Kanada",
+            "character": "Student (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/bieLnY3pDp3cK081Bopr9DBqMqA.jpg"
+        }
+    ],
+    "trailerKey": "yxwVJbhqD64"
+},
+    {
     "title": "Black Snake Moan",
     "year": "2006",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
