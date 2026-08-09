@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Ambulance",
+    "year": "2022",
+    "desc": "يطلب المخضرم ويل شارب ، الذي يائس للحصول على المال لتغطية الفواتير الطبية لزوجته ، المساعدة من شقيقه بالتبني داني. داني مجرم مهني يتمتع بشخصية كاريزمية ، وبدلا من ذلك يقدم له نتيجة: أكبر سرقة بنك في تاريخ لوس أنجلوس: 32 مليون دولار.",
+    "poster": "https://image.tmdb.org/t/p/w500/hUbgg3mMSbY9PlpTxBo4IFUVSd6.jpg",
+    "hdUrl": "https://streamtape.com/e/z76MqOAo7kHYdGb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/z76MqOAo7kHYdGb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "إثارة حركة دراما جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jake Gyllenhaal",
+            "character": "Danny Sharp",
+            "image": "https://image.tmdb.org/t/p/w185/ct2Gh2sJSxd4yaMrSsqSt1HpIC3.jpg"
+        },
+        {
+            "name": "Yahya Abdul-Mateen II",
+            "character": "Will Sharp",
+            "image": "https://image.tmdb.org/t/p/w185/79VdVjUoiYGcgjOT9UmE5XIpoZM.jpg"
+        },
+        {
+            "name": "Eiza González",
+            "character": "Cam Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/v8CnaoJqdPwkQhJeGwgJDnESOd6.jpg"
+        },
+        {
+            "name": "Garret Dillahunt",
+            "character": "Captain Monroe",
+            "image": "https://image.tmdb.org/t/p/w185/4L9bdqQIdfrtqR7JQdsIhlF3Fjk.jpg"
+        },
+        {
+            "name": "Keir O'Donnell",
+            "character": "FBI Agent Anson Clark",
+            "image": "https://image.tmdb.org/t/p/w185/1GYWx3q4QNXIIBdwirZPiSHFFfJ.jpg"
+        },
+        {
+            "name": "Jackson White",
+            "character": "Officer Zach",
+            "image": "https://image.tmdb.org/t/p/w185/dXTJFTkti0mpssgsYvMa00W59jB.jpg"
+        },
+        {
+            "name": "Olivia Stambouliah",
+            "character": "Lieutenant Dhazghig",
+            "image": "https://image.tmdb.org/t/p/w185/4hNNG8s8OOgzHo2T3ypLK0qltUV.jpg"
+        },
+        {
+            "name": "Moses Ingram",
+            "character": "Amy Sharp",
+            "image": "https://image.tmdb.org/t/p/w185/u7I5f4Bgz7CI8G7fUOJDbFtd0qf.jpg"
+        },
+        {
+            "name": "Colin Woodell",
+            "character": "EMT Scott",
+            "image": "https://image.tmdb.org/t/p/w185/mh32Sz1K8o7jUNGb4IGO4CRJhkQ.jpg"
+        },
+        {
+            "name": "Cedric Sanders",
+            "character": "Officer Mark",
+            "image": "https://image.tmdb.org/t/p/w185/zTcgbR5wWxgqe5wMLvk8QmLQbBD.jpg"
+        }
+    ],
+    "trailerKey": "tFWOyZNHjX8"
+},
+    {
     "title": "This Is the End",
     "year": "2013",
     "desc": "أثناء حضور حفلة في منزل جيمس فرانكو ، يواجه Seth Rogen و Jay Baruchel والعديد من المشاهير الآخرين نهاية العالم.",
