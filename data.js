@@ -1,5 +1,60 @@
 const globalMoviesData = [
     {
+    "title": "The Devil's Mouth",
+    "year": "2026",
+    "desc": "يستكشف خمسة أصدقاء شبكة كهوف 'فم الشيطان' في تايلاند في مغامرة أخيرة قبل أن تبدأ حياتهم في العالم الحقيقي، لكنهم سرعان ما يكتشفون أن هناك شيئاً ما يطاردهم تحت الماء... سريعاً وصامتاً وقاتلاً. وفي الظلام الخانق، تتلاشى الثقة، وينتشر الذعر، ويصبح كل منعطف خطأ صراعاً من أجل البقاء.",
+    "poster": "https://image.tmdb.org/t/p/w500/dabpn9mw3VQ427DEHEHuKAGQL78.jpg",
+    "hdUrl": "https://streamtape.com/e/meJWa3aBlkibLXx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/meJWa3aBlkibLXx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.6",
+    "genre": "رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kathryn Newton",
+            "character": "Sara",
+            "image": "https://image.tmdb.org/t/p/w185/26OEa0uS8552sVJakaCEHYvqOao.jpg"
+        },
+        {
+            "name": "Lana Condor",
+            "character": "Max",
+            "image": "https://image.tmdb.org/t/p/w185/vWn27Fk2GLwH7o9fBG9hBWZI6OR.jpg"
+        },
+        {
+            "name": "Nico Hiraga",
+            "character": "James",
+            "image": "https://image.tmdb.org/t/p/w185/yd1Hx3C7BTevy3zvyGXUwtwvSft.jpg"
+        },
+        {
+            "name": "Gavin Casalegno",
+            "character": "Greg",
+            "image": "https://image.tmdb.org/t/p/w185/snYCYm31OniXr024HUcomunYpjV.jpg"
+        },
+        {
+            "name": "Tommi Rose",
+            "character": "Adrienne",
+            "image": "https://image.tmdb.org/t/p/w185/ffwnOrSD0D35pRaYjpwsAZB2deQ.jpg"
+        },
+        {
+            "name": "Tayme Thapthimthong",
+            "character": "Wat",
+            "image": "https://image.tmdb.org/t/p/w185/Aq9AHZ7wSRFbdPZnPOupAAAHUnV.jpg"
+        },
+        {
+            "name": "Sahajak Boonthanakit",
+            "character": "Captain",
+            "image": "https://image.tmdb.org/t/p/w185/a36MI02S0f11bJZjBoxkZTsUDAK.jpg"
+        },
+        {
+            "name": "Harrison Luna",
+            "character": "Ryan",
+            "image": "https://image.tmdb.org/t/p/w185/4SapY7LbHDHdNPV46uRUOujQJ2n.jpg"
+        }
+    ],
+    "trailerKey": "2bp4Viru6Xc",
+    "featured": true
+},
+    {
     "title": "Saved!",
     "year": "2004",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
