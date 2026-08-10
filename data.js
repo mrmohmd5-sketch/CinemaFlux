@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Strange Darling",
+    "year": "2024",
+    "desc": "في إطار من الرعب والتشويق، تُصبح امرأة مُطاردة من قبل قاتل متسلسل يسعى لفعل أي شيء للتخلص منها.",
+    "poster": "https://image.tmdb.org/t/p/w500/kWNCRgt3ocv19bYO0sk7TRuZuFY.jpg",
+    "hdUrl": "https://streamtape.com/e/KLzV22gy13t0mLK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KLzV22gy13t0mLK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Willa Fitzgerald",
+            "character": "The Lady",
+            "image": "https://image.tmdb.org/t/p/w185/hXvCqRAtmrfjozHtVNrBgXFzzao.jpg"
+        },
+        {
+            "name": "Kyle Gallner",
+            "character": "The Demon",
+            "image": "https://image.tmdb.org/t/p/w185/wfdywrw6K3ti1uW1IYDWbUtU8se.jpg"
+        },
+        {
+            "name": "Madisen Beaty",
+            "character": "Gale",
+            "image": "https://image.tmdb.org/t/p/w185/918cRrEML3EmKeRnrckcX39p6hU.jpg"
+        },
+        {
+            "name": "Bianca A. Santos",
+            "character": "Tanya",
+            "image": "https://image.tmdb.org/t/p/w185/pXg9qTtbSG5vGSqKZVAMci5zb2T.jpg"
+        },
+        {
+            "name": "Steven Michael Quezada",
+            "character": "Pete",
+            "image": "https://image.tmdb.org/t/p/w185/pVYrDkwI6GWvCNL2kJhpDJfBFyd.jpg"
+        },
+        {
+            "name": "Ed Begley Jr.",
+            "character": "Frederick",
+            "image": "https://image.tmdb.org/t/p/w185/cdS6hZVabhpQ3UdIK0HNvYXj5IM.jpg"
+        },
+        {
+            "name": "Barbara Hershey",
+            "character": "Genevieve",
+            "image": "https://image.tmdb.org/t/p/w185/6swwfge3HlvyBVRSNwroFtMcgNB.jpg"
+        },
+        {
+            "name": "Denise Grayson",
+            "character": "Libby",
+            "image": "https://image.tmdb.org/t/p/w185/m0Zc4BDjLudF2BRZO4Hb18CK1US.jpg"
+        },
+        {
+            "name": "Eugenia Kuzmina",
+            "character": "Beth",
+            "image": "https://image.tmdb.org/t/p/w185/A74eYDRbNe3NpPywXrbtVnERtAY.jpg"
+        },
+        {
+            "name": "Duke Mollner",
+            "character": "Roughneck",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "gRB5FNoRgEk"
+},
+    {
     "title": "Thor: Love and Thunder",
     "year": "2022",
     "desc": "بعد أن تنتهي فترة اعتزال ثــــور بشكل مفاجئ بسبب ظهور جور، جزار الآلهة؛ وهو قاتل مجري يسعى إلى إبادة جميع الآلهة، يطلب ثور مساعدة الملك فالكيري وكورغ وحبيبته السابقة جين فوستر، التي أصبحت الآن تحمل مطرقة ميولنير بصفتها الثور العظيم.\r وينطلق الأربعة في مغامرة كونية شاقة لكشف سر انتقام جزار الآلهة، ومحاولة إيقافه قبل فوات الأوان.",
