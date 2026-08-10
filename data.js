@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Thor: Love and Thunder",
+    "year": "2022",
+    "desc": "بعد أن تنتهي فترة اعتزال ثــــور بشكل مفاجئ بسبب ظهور جور، جزار الآلهة؛ وهو قاتل مجري يسعى إلى إبادة جميع الآلهة، يطلب ثور مساعدة الملك فالكيري وكورغ وحبيبته السابقة جين فوستر، التي أصبحت الآن تحمل مطرقة ميولنير بصفتها الثور العظيم.\r وينطلق الأربعة في مغامرة كونية شاقة لكشف سر انتقام جزار الآلهة، ومحاولة إيقافه قبل فوات الأوان.",
+    "poster": "https://image.tmdb.org/t/p/w500/nmGvUT4BPVVubwUUwKqdWMcFi7p.jpg",
+    "hdUrl": "https://streamtape.com/e/BPq8xoKq88S2pX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BPq8xoKq88S2pX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "فانتازيا حركة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "character": "Thor",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Natalie Portman",
+            "character": "Jane Foster / The Mighty Thor",
+            "image": "https://image.tmdb.org/t/p/w185/edPU5HxncLWa1YkgRPNkSd68ONG.jpg"
+        },
+        {
+            "name": "Christian Bale",
+            "character": "Gorr",
+            "image": "https://image.tmdb.org/t/p/w185/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+        },
+        {
+            "name": "Tessa Thompson",
+            "character": "King Valkyrie",
+            "image": "https://image.tmdb.org/t/p/w185/19ze60jXlb2j7dXc2UpA3MujXA8.jpg"
+        },
+        {
+            "name": "Taika Waititi",
+            "character": "Korg / Old Kronan God (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ww6L2ksfJNMbuiIdDuvVKndUHsv.jpg"
+        },
+        {
+            "name": "Russell Crowe",
+            "character": "Zeus",
+            "image": "https://image.tmdb.org/t/p/w185/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg"
+        },
+        {
+            "name": "Jaimie Alexander",
+            "character": "Sif",
+            "image": "https://image.tmdb.org/t/p/w185/21IQHPAXNUHiqPrpIYr4X8h2wmf.jpg"
+        },
+        {
+            "name": "Idris Elba",
+            "character": "Heimdall",
+            "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        },
+        {
+            "name": "Chris Pratt",
+            "character": "Peter Quill / Star-Lord",
+            "image": "https://image.tmdb.org/t/p/w185/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+            "name": "Dave Bautista",
+            "character": "Drax",
+            "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        }
+    ],
+    "trailerKey": "hRUMPVyoyT4"
+},
+    {
     "title": "The Marvels",
     "year": "2023",
     "desc": "تتشابك قوى كارول دانفرز مع قوى كامالا خان ومونيكا رامبو، مما يجبرهن على العمل معًا لإنقاذ الكون.",
