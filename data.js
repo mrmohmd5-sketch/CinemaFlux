@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Marvels",
+    "year": "2023",
+    "desc": "تتشابك قوى كارول دانفرز مع قوى كامالا خان ومونيكا رامبو، مما يجبرهن على العمل معًا لإنقاذ الكون.",
+    "poster": "https://image.tmdb.org/t/p/w500/qN3zZr4115pYKTWME8BC9VBS7O5.jpg",
+    "hdUrl": "https://streamtape.com/e/BPVyO4bZoAtyx3V/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BPVyO4bZoAtyx3V/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.9",
+    "genre": "خيال علمي مغامرة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Brie Larson",
+            "character": "Carol Danvers / Captain Marvel",
+            "image": "https://image.tmdb.org/t/p/w185/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+        },
+        {
+            "name": "Teyonah Parris",
+            "character": "Monica Rambeau",
+            "image": "https://image.tmdb.org/t/p/w185/iGvBTOi0y2fbBVwgnBRXgY0IXDY.jpg"
+        },
+        {
+            "name": "Iman Vellani",
+            "character": "Kamala Khan / Ms. Marvel",
+            "image": "https://image.tmdb.org/t/p/w185/oBpOjLAH8heYNNJZN1Z5jVQhAKC.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "character": "Nick Fury",
+            "image": "https://image.tmdb.org/t/p/w185/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+        },
+        {
+            "name": "Zawe Ashton",
+            "character": "Dar-Benn",
+            "image": "https://image.tmdb.org/t/p/w185/zbxVfvhPhCfgpgmWTdtHWurNqYu.jpg"
+        },
+        {
+            "name": "Gary Lewis",
+            "character": "Emperor Dro'ge",
+            "image": "https://image.tmdb.org/t/p/w185/cOaibfAluUeWPtcSOjedfGXn9ym.jpg"
+        },
+        {
+            "name": "Park Seo-jun",
+            "character": "Prince Yan",
+            "image": "https://image.tmdb.org/t/p/w185/k1ALgZkOApYt7PIUBkUitmknXQC.jpg"
+        },
+        {
+            "name": "Zenobia Shroff",
+            "character": "Muneeba Khan",
+            "image": "https://image.tmdb.org/t/p/w185/fwU2vIUq9W9eXRKxx9r3papdOkS.jpg"
+        },
+        {
+            "name": "Mohan Kapur",
+            "character": "Yusuf Khan",
+            "image": "https://image.tmdb.org/t/p/w185/lL0J5DBOwN1pwLCvuo7uQ0ApjF.jpg"
+        },
+        {
+            "name": "Saagar Shaikh",
+            "character": "Aamir Khan",
+            "image": "https://image.tmdb.org/t/p/w185/hQsNsaJ8ekAHjJfkxfQPpH0qX5Q.jpg"
+        }
+    ],
+    "trailerKey": "ZaTUatY-UoU"
+},
+    {
     "title": "Ant-Man and the Wasp: Quantumania",
     "year": "2023",
     "desc": "يُجرّ سكوت لانغ وهوب فان داين إلى عالم الكم، برفقة والدي هوب وابنة سكوت، كاسي. عليهم جميعًا إيجاد طريقة للهروب، لكن ما الأسرار التي تخفيها والدة هوب؟ ومن هو كانغ الغامض؟",
