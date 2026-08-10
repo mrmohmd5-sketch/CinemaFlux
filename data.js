@@ -577,7 +577,7 @@ const globalMoviesData = [
     "featured": true
 },
     {
-    "title": "Beast Race",
+    "title": "Beast Race سباق الحيوانات",
     "year": "2026",
     "desc": "في مدينة ريو دي جانيرو في المستقبل، يتعين على قائد مقاومة شاب أن يخوض سباقاً مميتاً مستوحى من رياضة الباركور لإنقاذ حياة أخته.",
     "poster": "https://image.tmdb.org/t/p/w500/AjDI3wr8qbOetPFhri4ZsMPmh7v.jpg",
