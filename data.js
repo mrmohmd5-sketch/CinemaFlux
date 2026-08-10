@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Deadpool & Wolverine",
+    "year": "2024",
+    "desc": "عُرض على ديدبول مكان في عالم مارفل السينمائي من قبل هيئة التباين الزمني، لكنه بدلاً من ذلك قام بتجنيد نسخة معدلة من وولفرين لإنقاذ عالمه من الانقراض.",
+    "poster": "https://image.tmdb.org/t/p/w500/A90rKuB1UP3nH7ZgxwYf3IUt2IW.jpg",
+    "hdUrl": "https://streamtape.com/e/1dQ6W49pkbhemRW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1dQ6W49pkbhemRW/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "حركة كوميديا خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ryan Reynolds",
+            "character": "Wade Wilson / Deadpool / Nicepool",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Hugh Jackman",
+            "character": "Logan / Wolverine",
+            "image": "https://image.tmdb.org/t/p/w185/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+        },
+        {
+            "name": "Emma Corrin",
+            "character": "Cassandra Nova",
+            "image": "https://image.tmdb.org/t/p/w185/miSbXJBlq6S3dVvOr7OoNL4axW6.jpg"
+        },
+        {
+            "name": "Matthew Macfadyen",
+            "character": "Mr. Paradox",
+            "image": "https://image.tmdb.org/t/p/w185/sFaIfkykJdftwrc3BdEfpdg2mYW.jpg"
+        },
+        {
+            "name": "Dafne Keen",
+            "character": "Laura / X-23",
+            "image": "https://image.tmdb.org/t/p/w185/g325OIjIHrFr0te8ewPfhKQ2SKj.jpg"
+        },
+        {
+            "name": "Jon Favreau",
+            "character": "Happy Hogan",
+            "image": "https://image.tmdb.org/t/p/w185/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
+        },
+        {
+            "name": "Morena Baccarin",
+            "character": "Vanessa",
+            "image": "https://image.tmdb.org/t/p/w185/4gyHyg6FJ1oFczOm5pmMkdEEo2J.jpg"
+        },
+        {
+            "name": "Rob Delaney",
+            "character": "Peter",
+            "image": "https://image.tmdb.org/t/p/w185/xirfT1znRkkughLiPemKu3NhkKQ.jpg"
+        },
+        {
+            "name": "Leslie Uggams",
+            "character": "Blind Al",
+            "image": "https://image.tmdb.org/t/p/w185/8zQO5GNWQwJG4we5AYfjopblRFe.jpg"
+        },
+        {
+            "name": "Jennifer Garner",
+            "character": "Elektra",
+            "image": "https://image.tmdb.org/t/p/w185/ftymEXqdTnXfaI6dGd9qrJoFOSE.jpg"
+        }
+    ],
+    "trailerKey": "dyq7hMlF9iY"
+},
+    {
     "title": "Spider-Man: Homecoming",
     "year": "2017",
     "desc": "يحاول بيتر باركر منع أدريان 'النسر' تومز من بيع أسلحة مصنوعة بتقنية تشيتوري المتطورة، بينما يسعى في الوقت نفسه إلى تحقيق التوازن بين حياته كطالب ثانوي عادي.",
