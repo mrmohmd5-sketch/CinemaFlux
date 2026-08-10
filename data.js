@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Guardians of the Galaxy Vol. 3",
+    "year": "2023",
+    "desc": "لا يزال بيتر كويل يعاني من صدمة فقدان غامورا، فيحشد فريقه للدفاع عن الكون وعن أحد أفرادهم - وهي مهمة قد تعني نهاية الحراس إذا لم تنجح.",
+    "poster": "https://image.tmdb.org/t/p/w500/a5WD4e0OKof3ZbiazFskYtn5LWf.jpg",
+    "hdUrl": "https://streamtape.com/e/xXZlZaDgLJikd7p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/xXZlZaDgLJikd7p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.9",
+    "genre": "خيال علمي مغامرة حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Pratt",
+            "character": "Peter Quill / Star-Lord",
+            "image": "https://image.tmdb.org/t/p/w185/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+            "name": "Zoe Saldaña",
+            "character": "Gamora",
+            "image": "https://image.tmdb.org/t/p/w185/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg"
+        },
+        {
+            "name": "Dave Bautista",
+            "character": "Drax",
+            "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        },
+        {
+            "name": "Karen Gillan",
+            "character": "Nebula",
+            "image": "https://image.tmdb.org/t/p/w185/qYx8CflXVq48nGKX1IJsDrAj0sT.jpg"
+        },
+        {
+            "name": "Pom Klementieff",
+            "character": "Mantis",
+            "image": "https://image.tmdb.org/t/p/w185/hfUKAI2kXTMMWjno0i4sLPJud5N.jpg"
+        },
+        {
+            "name": "Vin Diesel",
+            "character": "Groot (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+        },
+        {
+            "name": "Bradley Cooper",
+            "character": "Rocket (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
+        },
+        {
+            "name": "Sean Gunn",
+            "character": "Kraglin / Young Rocket (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/tiolBlPytndQVGHO9vLnBKWWenq.jpg"
+        },
+        {
+            "name": "Chukwudi Iwuji",
+            "character": "The High Evolutionary",
+            "image": "https://image.tmdb.org/t/p/w185/5JILtFNmAmA8T4gRQrO5sn8krDv.jpg"
+        },
+        {
+            "name": "Will Poulter",
+            "character": "Adam Warlock",
+            "image": "https://image.tmdb.org/t/p/w185/9blYMaj79VGC6BHTLmJp3V5S8r3.jpg"
+        }
+    ],
+    "trailerKey": "3RLT34SwtQc"
+},
+    {
     "title": "Deadpool & Wolverine",
     "year": "2024",
     "desc": "عُرض على ديدبول مكان في عالم مارفل السينمائي من قبل هيئة التباين الزمني، لكنه بدلاً من ذلك قام بتجنيد نسخة معدلة من وولفرين لإنقاذ عالمه من الانقراض.",
