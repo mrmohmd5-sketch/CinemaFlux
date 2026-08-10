@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man: Far From Home",
+    "year": "2019",
+    "desc": "يواجه بيتر باركر، البطل الخارق المحبوب سبايدرمان، أربعة وحوش عنصرية مدمرة أثناء عطلته في أوروبا. وسرعان ما يتلقى المساعدة من ميستيريو، بطل آخر ذو أصول غامضة.",
+    "poster": "https://image.tmdb.org/t/p/w500/mlpnjjtdQpOouPOkvO6TBsBwlCO.jpg",
+    "hdUrl": "https://streamtape.com/e/7zWq3ORAooCALR3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7zWq3ORAooCALR3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Holland",
+            "character": "Peter Parker / Spider-Man",
+            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+            "name": "Jake Gyllenhaal",
+            "character": "Quentin Beck / Mysterio",
+            "image": "https://image.tmdb.org/t/p/w185/ct2Gh2sJSxd4yaMrSsqSt1HpIC3.jpg"
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "character": "Nick Fury",
+            "image": "https://image.tmdb.org/t/p/w185/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+        },
+        {
+            "name": "Marisa Tomei",
+            "character": "May Parker",
+            "image": "https://image.tmdb.org/t/p/w185/fj6t3XEXFTfA3mxicQAK3uZDdow.jpg"
+        },
+        {
+            "name": "Jon Favreau",
+            "character": "Happy Hogan",
+            "image": "https://image.tmdb.org/t/p/w185/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
+        },
+        {
+            "name": "Zendaya",
+            "character": "MJ",
+            "image": "https://image.tmdb.org/t/p/w185/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+        },
+        {
+            "name": "Jacob Batalon",
+            "character": "Ned Leeds",
+            "image": "https://image.tmdb.org/t/p/w185/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
+        },
+        {
+            "name": "Tony Revolori",
+            "character": "Flash Thompson",
+            "image": "https://image.tmdb.org/t/p/w185/tSF6XmXDikrKZbFUeoDnafXxKjT.jpg"
+        },
+        {
+            "name": "Angourie Rice",
+            "character": "Betty Brant",
+            "image": "https://image.tmdb.org/t/p/w185/iHZzyhvIYW9CSsMSLnxm9FsJohL.jpg"
+        },
+        {
+            "name": "Remy Hii",
+            "character": "Brad Davis",
+            "image": "https://image.tmdb.org/t/p/w185/nCXWaFzPNgkr5cwoHkmkqIsQsXJ.jpg"
+        }
+    ],
+    "trailerKey": "-HC_GrXAiQE"
+},
+    {
     "title": "Strange Darling",
     "year": "2024",
     "desc": "في إطار من الرعب والتشويق، تُصبح امرأة مُطاردة من قبل قاتل متسلسل يسعى لفعل أي شيء للتخلص منها.",
