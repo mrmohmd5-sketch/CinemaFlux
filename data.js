@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "year": "2023",
+    "desc": "يُجرّ سكوت لانغ وهوب فان داين إلى عالم الكم، برفقة والدي هوب وابنة سكوت، كاسي. عليهم جميعًا إيجاد طريقة للهروب، لكن ما الأسرار التي تخفيها والدة هوب؟ ومن هو كانغ الغامض؟",
+    "poster": "https://image.tmdb.org/t/p/w500/aboS7WLVNpH9HVmMKMcgyXhnjYV.jpg",
+    "hdUrl": "https://streamtape.com/e/BbLmmRO8ARCybG6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BbLmmRO8ARCybG6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Paul Rudd",
+            "character": "Scott Lang / Ant-Man",
+            "image": "https://image.tmdb.org/t/p/w185/6jtwNOLKy0LdsRAKwZqgYMAfd5n.jpg"
+        },
+        {
+            "name": "Evangeline Lilly",
+            "character": "Hope Van Dyne / The Wasp",
+            "image": "https://image.tmdb.org/t/p/w185/zgztLIWTJZm3vjGU7ezhF8GXESJ.jpg"
+        },
+        {
+            "name": "Michael Douglas",
+            "character": "Dr. Hank Pym",
+            "image": "https://image.tmdb.org/t/p/w185/kVYGPIZowzXLEQfAGUNOqKjAbBb.jpg"
+        },
+        {
+            "name": "Michelle Pfeiffer",
+            "character": "Janet Van Dyne",
+            "image": "https://image.tmdb.org/t/p/w185/8qwNMFzmM3BxGKIj1iIqiHHBpx3.jpg"
+        },
+        {
+            "name": "Jonathan Majors",
+            "character": "Kang the Conqueror",
+            "image": "https://image.tmdb.org/t/p/w185/nsxnMbkl9Lpc12AmYwKi9SmsJ7e.jpg"
+        },
+        {
+            "name": "Kathryn Newton",
+            "character": "Cassie Lang",
+            "image": "https://image.tmdb.org/t/p/w185/26OEa0uS8552sVJakaCEHYvqOao.jpg"
+        },
+        {
+            "name": "Corey Stoll",
+            "character": "M.O.D.O.K.",
+            "image": "https://image.tmdb.org/t/p/w185/a5wxOBGmXVwcEqWvEizFk06SDSj.jpg"
+        },
+        {
+            "name": "Bill Murray",
+            "character": "Lord Krylar",
+            "image": "https://image.tmdb.org/t/p/w185/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg"
+        },
+        {
+            "name": "Katy O'Brian",
+            "character": "Jentorra",
+            "image": "https://image.tmdb.org/t/p/w185/b7i6dQrHhCYu4Z9bgaXO5U2hrgP.jpg"
+        },
+        {
+            "name": "William Jackson Harper",
+            "character": "Quaz",
+            "image": "https://image.tmdb.org/t/p/w185/5Oy037YttIweiqNGaErkalNmH0G.jpg"
+        }
+    ],
+    "trailerKey": "UJZx8MayWxk"
+},
+    {
     "title": "Spider-Man: Brand New Day",
     "year": "2026",
     "desc": "بينما يواصل 'بيتر باركر' حماية المدينة بصفته 'الرجل العنكبوت' في عالمٍ لم يعد يتذكره أحد، يجد نفسه وحيدًا وهو يشاهد أصدقاءه القدامى يمضون في حياتهم من دونه. ومع تصاعد الضغوط، يبدأ بالتغير بطريقة قد تعجز قواه عن كبحها. لكن هذا التحول قد يكون أمله الوحيد لمواجهة تهديدٍ غامض وخطير يلوح في الأفق، عدو يمتلك قوة مرعبة لا يستطيع أحد حتى رؤيته، ويهدد المدينة وكل من يهتم 'بيتر' لأمرهم.",
