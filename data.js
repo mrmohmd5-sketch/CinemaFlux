@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Spider-Man: Homecoming",
+    "year": "2017",
+    "desc": "يحاول بيتر باركر منع أدريان 'النسر' تومز من بيع أسلحة مصنوعة بتقنية تشيتوري المتطورة، بينما يسعى في الوقت نفسه إلى تحقيق التوازن بين حياته كطالب ثانوي عادي.",
+    "poster": "https://image.tmdb.org/t/p/w500/6sTSMOw6n5AZc18RNm1s4wOkVIP.jpg",
+    "hdUrl": "https://streamtape.com/e/wrQvPPv62pfJ8eJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/wrQvPPv62pfJ8eJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "حركة مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Holland",
+            "character": "Peter Parker / Spider-Man",
+            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+            "name": "Michael Keaton",
+            "character": "Adrian Toomes / Vulture",
+            "image": "https://image.tmdb.org/t/p/w185/tYSja1KByFnZ4Hkp3stPqkKHnNL.jpg"
+        },
+        {
+            "name": "Robert Downey Jr.",
+            "character": "Tony Stark / Iron Man",
+            "image": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+            "name": "Marisa Tomei",
+            "character": "May Parker",
+            "image": "https://image.tmdb.org/t/p/w185/fj6t3XEXFTfA3mxicQAK3uZDdow.jpg"
+        },
+        {
+            "name": "Jon Favreau",
+            "character": "Happy Hogan",
+            "image": "https://image.tmdb.org/t/p/w185/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
+        },
+        {
+            "name": "Gwyneth Paltrow",
+            "character": "Pepper Potts",
+            "image": "https://image.tmdb.org/t/p/w185/x040uB0CDrHjVAUSONw8bbWMvDC.jpg"
+        },
+        {
+            "name": "Zendaya",
+            "character": "Michelle",
+            "image": "https://image.tmdb.org/t/p/w185/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+        },
+        {
+            "name": "Donald Glover",
+            "character": "Aaron Davis",
+            "image": "https://image.tmdb.org/t/p/w185/jqVkQfeeEmdga1G0jpBwwXXwwSK.jpg"
+        },
+        {
+            "name": "Jacob Batalon",
+            "character": "Ned",
+            "image": "https://image.tmdb.org/t/p/w185/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
+        },
+        {
+            "name": "Laura Harrier",
+            "character": "Liz",
+            "image": "https://image.tmdb.org/t/p/w185/hYS8z1DxP6jvsBNXMRALiSI3nhw.jpg"
+        }
+    ],
+    "trailerKey": "fzMFOare6_Q"
+},
+    {
     "title": "Spider-Man: Far From Home",
     "year": "2019",
     "desc": "يواجه بيتر باركر، البطل الخارق المحبوب سبايدرمان، أربعة وحوش عنصرية مدمرة أثناء عطلته في أوروبا. وسرعان ما يتلقى المساعدة من ميستيريو، بطل آخر ذو أصول غامضة.",
