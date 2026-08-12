@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Ultimate Avengers: The Movie",
+    "year": "2006",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/iMCkGHVrYRdqKROPRPmVaJVSlg3.jpg",
+    "hdUrl": "https://streamtape.com/e/Y1glOy90APiv8ZD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Y1glOy90APiv8ZD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "حركة رسوم متحركة عائلي مغامرة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Justin Gross",
+            "character": "Steve Rogers / Captain America (voice)",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Grey DeLisle",
+            "character": "Janet Pym / The Wasp (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/vrUHaXe1pG56yZkgH7Hs3LGRLTT.jpg"
+        },
+        {
+            "name": "Nolan North",
+            "character": "Hank Pym / Giant Man (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/gb499KZIoBTZnKCGKE4zwzlcfSe.jpg"
+        },
+        {
+            "name": "Olivia D'Abo",
+            "character": "Natalia Romanoff / Black Widow (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/sQTqkjNyUSl25cIDr8xhjmO4DhA.jpg"
+        },
+        {
+            "name": "Marc Worden",
+            "character": "Tony Stark / Iron Man (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/d91IoBbnS5HX2I8lzGosvc39PgS.jpg"
+        },
+        {
+            "name": "Michael Massee",
+            "character": "Bruce Banner (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/swlvVVcDhaJztxr3fgB04YGoX6I.jpg"
+        },
+        {
+            "name": "David Boat",
+            "character": "Thor (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/tuuqOfuwPGLqICofgPhHceIDhOX.jpg"
+        },
+        {
+            "name": "Andre Ware",
+            "character": "Nick Fury (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/ukimnb2sfaZFSax8XqskWyLgoCc.jpg"
+        },
+        {
+            "name": "Fred Tatasciore",
+            "character": "The Hulk / Additional Voices (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/xodxYKRC9mdvgquTdqpmYldliJ3.jpg"
+        },
+        {
+            "name": "Nan McNamara",
+            "character": "Betty Ross (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/9JieLraLMvxSI3o9T5pNjydBzYo.jpg"
+        }
+    ],
+    "trailerKey": "IQ9QjHVaurM"
+},
+    {
     "title": "Porco Rosso",
     "year": "1992",
     "desc": "تدور أحداث القصة حول 'بوركو روسو' أو الخنزير القرمزي، و هو طيار ماهر في فترة بداية صعود الفاشية في إيطاليا مسخ خنزيرا بعد أن عاد من الموت في الحرب. بين كبريائه كطيار و كرهه للقتل و الحرب و للفاشية و حبه المكبوت للمغنية جينا تدور أحداث الفيلم.",
