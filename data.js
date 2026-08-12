@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Porco Rosso",
+    "year": "1992",
+    "desc": "تدور أحداث القصة حول 'بوركو روسو' أو الخنزير القرمزي، و هو طيار ماهر في فترة بداية صعود الفاشية في إيطاليا مسخ خنزيرا بعد أن عاد من الموت في الحرب. بين كبريائه كطيار و كرهه للقتل و الحرب و للفاشية و حبه المكبوت للمغنية جينا تدور أحداث الفيلم.",
+    "poster": "https://image.tmdb.org/t/p/w500/mJKGS082cXQXZ4OTd5M4YsSYFTR.jpg",
+    "hdUrl": "https://streamtape.com/e/9j9oWGJw8LHyXe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/9j9oWGJw8LHyXe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "رسوم متحركة مغامرة فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Shūichirō Moriyama",
+            "character": "Kurenai no Buta (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/dEvbRkdUknnNcjIh2yyXJXm7uIO.jpg"
+        },
+        {
+            "name": "Tokiko Kato",
+            "character": "Jina-sama (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/gEJE4cpBpGS1rq93qIwrmQ5duM8.jpg"
+        },
+        {
+            "name": "Bunshi Katsura VI",
+            "character": "Pikkoro-oyaji (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nndJZXsxHqRPor6K8KZicUjMZgE.jpg"
+        },
+        {
+            "name": "Tsunehiko Kamijô",
+            "character": "Manmayuto no shachô (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/v2poQi0qYEWdTaMf2pVTWmcdwZp.jpg"
+        },
+        {
+            "name": "Akemi Okamura",
+            "character": "Fio Pikkoro (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qEwVfsrA23SCzRZMSlghw2sHctQ.jpg"
+        },
+        {
+            "name": "Akio Otsuka",
+            "character": "Donarudo Kâchisu (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
+        },
+        {
+            "name": "Hiroko Seki",
+            "character": "Bâ-chan (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qT2lS6TuQIJkjJiReYFziXnpH9L.jpg"
+        },
+        {
+            "name": "Reizō Nomoto",
+            "character": "Mamma Aiuto Gang (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/4kdO7dnvRcYGN6ByGpB3esva1fY.jpg"
+        },
+        {
+            "name": "Osamu Saka",
+            "character": "Mamma Aiuto Gang (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/9H4Mr8CuifB8rtah1Psh6RpXE1d.jpg"
+        },
+        {
+            "name": "Yu Shimaka",
+            "character": "Mamma Aiuto Gang (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/u25ATIINFwc2RmrhLFRT1pwFoWV.jpg"
+        }
+    ],
+    "trailerKey": "3LRyNwYg1f8"
+},
+    {
     "title": "Not Without My Daughter",
     "year": "1991",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
