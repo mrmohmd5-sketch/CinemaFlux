@@ -1,5 +1,54 @@
 const globalMoviesData = [
     {
+    "title": "Ip Man: Kung Fu Legend",
+    "year": "2026",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/QcHi4NdJi6FoXeU8DDmJAT71K0.jpg",
+    "hdUrl": "https://streamtape.com/e/1jawPx2M9QsePZm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1jawPx2M9QsePZm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.5",
+    "genre": "حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Philip Condron",
+            "character": "",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Dennis To Yu-Hang",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/xQ4wrXt4L5u9A9yfkN4s8RzPuOJ.jpg"
+        },
+        {
+            "name": "Steven Dasz",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/AeNDnKWIvnPPeeaec7skalmEKoK.jpg"
+        },
+        {
+            "name": "Lee Yiu-King",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/cxT0uwf96a31jUp0bvF6uDZLsVO.jpg"
+        },
+        {
+            "name": "Yan Yanlong",
+            "character": "",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Zhang Tingfei",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/A8pKqfH3C3Qt7zX4LyHKGgpu7qM.jpg"
+        },
+        {
+            "name": "Zhou Xiaofei",
+            "character": "",
+            "image": "https://image.tmdb.org/t/p/w185/eA5ysPj0Bi8JSE0TOXPug6rxwdz.jpg"
+        }
+    ],
+    "trailerKey": "cqlZSRvH7BU"
+},
+    {
     "title": "Castle in the Sky",
     "year": "1986",
     "desc": "يبحث عامل منجم شاب وفتاة غامضة عن جزيرة مفقودة منذ زمن طويل، يُشاع أنها تحتوي على ثروات كثيرة.",
