@@ -2,10 +2,10 @@ const globalMoviesData = [
     {
     "title": "The Invite",
     "year": "2026",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول زوجين يدعوان جيرانهما إلى مأدبة عشاء فتتحول الليلة الهادئة إلى سلسلة من المواقف الكوميدية والمواجهات غير المتوقعة التي تكشف أسرار علاقاتهم .",
     "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
     "hdUrl": "https://streamtape.com/e/x2xLYb9ReatkWlP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/x2xLYb9ReatkWlP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/VzV2zedYg8sYy3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.5",
     "genre": "كوميديا دراما رومنسية",
     "type": "movie",
@@ -314,7 +314,7 @@ const globalMoviesData = [
     {
     "title": "Ip Man: Kung Fu Legend",
     "year": "2026",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول أسطورة الفنون القتالية إيب مان في شبابه حيث يواجه العصابات والظلم لحماية مدينته والدفاع عن الحق باستخدام مهاراته الفائقة في فن الوينج تشون .",
     "poster": "https://image.tmdb.org/t/p/w500/QcHi4NdJi6FoXeU8DDmJAT71K0.jpg",
     "hdUrl": "https://streamtape.com/e/1jawPx2M9QsePZm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/1jawPx2M9QsePZm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -427,7 +427,7 @@ const globalMoviesData = [
     {
     "title": "Ultimate Avengers: The Movie",
     "year": "2006",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول عودة الكابتن أمريكا من التجمد وينضم إلى فريق من الأبطال الخارقين لمواجهة غزو فضائي خطير يهدد البشرية وتتوالى المواجهات الملحمية لتخليص العالم من الخطر .",
     "poster": "https://image.tmdb.org/t/p/w500/iMCkGHVrYRdqKROPRPmVaJVSlg3.jpg",
     "hdUrl": "https://streamtape.com/e/Y1glOy90APiv8ZD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/Y1glOy90APiv8ZD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -555,7 +555,7 @@ const globalMoviesData = [
     {
     "title": "Not Without My Daughter",
     "year": "1991",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول امرأة أمريكية تسافر مع زوجها الإيراني وابنتها إلى إيران في زيارة قصيرة لكن الزوج يرفض عودتهما إلى أمريكا ويحتجزهما هناك فتسعى الأم بشتى الطرق للهروب مع ابنتها عبر الجبال لاستعادة حريتهما .",
     "poster": "https://image.tmdb.org/t/p/w500/aEMncPIHISpaIJmYaIstS0TVnb7.jpg",
     "hdUrl": "https://streamtape.com/e/vrLByJrpKMC4k64/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/vrLByJrpKMC4k64/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -1388,7 +1388,7 @@ const globalMoviesData = [
     {
     "title": "Just Breathe",
     "year": "2025",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "يجد البطل نفسه في مواجهة صراع مصيري يهدد حياته ويجبره على خوض مواجهات معقدة مع بيئته ومخاوفه الداخلية وتتطرق القصة إلى كيفية التغلب على الصدمات النفسية والضغوطات الشديدة التي تعزل الإنسان عن العالم الخارجي فيحاول استعادة السيطرة على حياته .",
     "poster": "https://image.tmdb.org/t/p/w500/vXtJKt9vJTyMclwCsNKPMD8JC63.jpg",
     "hdUrl": "https://streamtape.com/e/MA83rDKo4yHmvzQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/MA83rDKo4yHmvzQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2160,7 +2160,7 @@ const globalMoviesData = [
     {
     "title": "Black Snake Moan",
     "year": "2006",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول عازف بلوز قديم يعثر على فتاة شابة تعاني من أزمات وصدمات نفسية حادة فيقرر احتجازها ورعايتها ومساعدتها على الشفاء وتجاوز آلامها من خلال الموسيقى والعاطفة في إطار درامي مؤثر .",
     "poster": "https://image.tmdb.org/t/p/w500/8Yv7kxsqXSe4ZHl8uJEhmsPjhAP.jpg",
     "hdUrl": "https://streamtape.com/e/goWAae4J6MsqlRl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/goWAae4J6MsqlRl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -2663,7 +2663,7 @@ const globalMoviesData = [
     {
     "title": "Saved!",
     "year": "2004",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول فتاة مراهقة متدينة تكتشف أنها حامل فيتخلى عنها أصدقاؤها المقربون في المدرسة لتجد الدعم لدى مجموعة من الطلاب المنبوذين وتتوالى الأحداث في إطار كوميدي ودرامي ساخر .",
     "poster": "https://image.tmdb.org/t/p/w500/nmf2tFTcRJZVEQ9e3mgLH5gAQYs.jpg",
     "hdUrl": "https://streamtape.com/e/pYx0gXgGWLclLX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/pYx0gXgGWLclLX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3369,7 +3369,7 @@ const globalMoviesData = [
     {
     "title": "Funhouse",
     "year": "2019",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول ثمانية من مشاهير التواصل الاجتماعي يتنافسون في برنامج واقعي عبر الإنترنت ليكتشفوا أن العقاب على الخسارة هو الموت المباشر أمام الجمهور لتتحول اللعبة إلى صراع مرعب من أجل البقاء .",
     "poster": "https://image.tmdb.org/t/p/w500/i6zNpDVwOvVxOJ4MhP7WjrXbM0W.jpg",
     "hdUrl": "https://streamtape.com/e/eggxA84yy8SYPdR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/eggxA84yy8SYPdR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -3675,7 +3675,7 @@ const globalMoviesData = [
     {
     "title": "My Teacher, My Obsession",
     "year": "2018",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول طالبة مراهقة تنتقل إلى مدرسة جديدة وتنشأ علاقة صداقة مع معلمها المعجب بأسلوبها لكن الأمر يتطور إلى هوس مظلم من قبل إحدى الطالبات المعجبات بالمعلم والتي تحاول تدمير حياة الطالبة الجديدة بطرق مرعبة .",
     "poster": "https://image.tmdb.org/t/p/w500/yh06bjJTNu45xyVgpv0wXuWvkgN.jpg",
     "hdUrl": "https://streamtape.com/e/q6RoqpGKxAuRe9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/q6RoqpGKxAuRe9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
