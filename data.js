@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Castle in the Sky",
+    "year": "1986",
+    "desc": "يبحث عامل منجم شاب وفتاة غامضة عن جزيرة مفقودة منذ زمن طويل، يُشاع أنها تحتوي على ثروات كثيرة.",
+    "poster": "https://image.tmdb.org/t/p/w500/sgelm7bXIjcr343zoEdSvVzgVpq.jpg",
+    "hdUrl": "https://streamtape.com/e/z3kpPjXxq4HYMe9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/z3kpPjXxq4HYMe9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.0",
+    "genre": "مغامرة فانتازيا رسوم متحركة حركة عائلي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Keiko Yokozawa",
+            "character": "Sheeta (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/f2xbRCbjvFcCl4ogeXEcHKBxdIZ.jpg"
+        },
+        {
+            "name": "Mayumi Tanaka",
+            "character": "Pazu (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/by4t1tYtEXsfbFj9TvOjozBmQla.jpg"
+        },
+        {
+            "name": "Minori Terada",
+            "character": "Muska (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/sMgy1Gn24zHOyy82ksabfZHaWcv.jpg"
+        },
+        {
+            "name": "Kotoe Hatsui",
+            "character": "Dola (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/iEyc3TccMTUwoVJL4NvEvrycj2D.jpg"
+        },
+        {
+            "name": "Fujio Tokita",
+            "character": "Uncle Pomme (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/2DPIQcwwiv8BtyZIYKAmINUnd5J.jpg"
+        },
+        {
+            "name": "Ichiro Nagai",
+            "character": "Shogun Mouro (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/d5LuqwoIjMIqKvKmEk5y6AZY1Ww.jpg"
+        },
+        {
+            "name": "Hiroshi Ito",
+            "character": "Oyakata (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/8qSWs02WKjJGXuotm2I0vwUzROv.jpg"
+        },
+        {
+            "name": "Machiko Washio",
+            "character": "Okami (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/qJkhSBhyRt1GRNcEuZB5xPTonEK.jpg"
+        },
+        {
+            "name": "Takuzō Kamiyama",
+            "character": "Charles / Shalulu (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nTBwGJHKqSKzJjdunI7PALaRgS9.jpg"
+        },
+        {
+            "name": "Yoshito Yasuhara",
+            "character": "Louis (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/bGSGmvLjs24LjGJqR2Eik1wRnIR.jpg"
+        }
+    ],
+    "trailerKey": "zqwiVs0YLIY"
+},
+    {
     "title": "Ultimate Avengers: The Movie",
     "year": "2006",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
