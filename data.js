@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "In Time",
+    "year": "2011",
+    "desc": "الوقت قوة\r في المستقبل غير البعيد ، تم إيقاف تشغيل جين الشيخوخة. لتجنب الاكتظاظ السكاني ، أصبح الوقت هو العملة والطريقة التي يدفع بها الناس مقابل الكماليات والضروريات. يمكن للأغنياء أن يعيشوا إلى الأبد ، بينما يحاول الباقون التفاوض من أجل خلودهم. شاب فقير يأتي إلى ثروة من الوقت ، على الرغم من فوات الأوان لمساعدة والدته من الموت. ينتهي به الأمر هاربا من قوة شرطة فاسدة تعرف باسم 'حراس الوقت'.",
+    "poster": "https://image.tmdb.org/t/p/w500/3Mwj2sIONQckOZP3YwsUXF7U5I4.jpg",
+    "hdUrl": "https://streamtape.com/e/7Rja8LeAPJIA1K4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7Rja8LeAPJIA1K4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.0",
+    "genre": "حركة إثارة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Amanda Seyfried",
+            "character": "Sylvia Weis",
+            "image": "https://image.tmdb.org/t/p/w185/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg"
+        },
+        {
+            "name": "Justin Timberlake",
+            "character": "Will Salas",
+            "image": "https://image.tmdb.org/t/p/w185/6Yk5t9RwkdkAT8Qv45934Eez2CA.jpg"
+        },
+        {
+            "name": "Cillian Murphy",
+            "character": "Raymond Leon",
+            "image": "https://image.tmdb.org/t/p/w185/2lKs67r7FI4bPu0AXxMUJZxmUXn.jpg"
+        },
+        {
+            "name": "Vincent Kartheiser",
+            "character": "Philippe Weis",
+            "image": "https://image.tmdb.org/t/p/w185/n1kHTSY6cnM4mQXkWQV0jQQXglP.jpg"
+        },
+        {
+            "name": "Olivia Wilde",
+            "character": "Rachel Salas",
+            "image": "https://image.tmdb.org/t/p/w185/eODi1QKamyVa41eSK2SjU20VAZS.jpg"
+        },
+        {
+            "name": "Matt Bomer",
+            "character": "Henry Hamilton",
+            "image": "https://image.tmdb.org/t/p/w185/oxL27Z3XtjoABaOynKazZeg7qKM.jpg"
+        },
+        {
+            "name": "Johnny Galecki",
+            "character": "Borel",
+            "image": "https://image.tmdb.org/t/p/w185/5zTHvvKpR9VUkzHxGnbrdB51Kyc.jpg"
+        },
+        {
+            "name": "Collins Pennie",
+            "character": "Timekeeper Jaeger",
+            "image": "https://image.tmdb.org/t/p/w185/oeZ1uRTGokydrG84zEOY4tUq16U.jpg"
+        },
+        {
+            "name": "Toby Hemingway",
+            "character": "Timekeeper Kors",
+            "image": "https://image.tmdb.org/t/p/w185/h4q4JcxfO3kXUFrqLdNfOLOJYaI.jpg"
+        },
+        {
+            "name": "Brendan Miller",
+            "character": "Kolber",
+            "image": "https://image.tmdb.org/t/p/w185/u7IE43miwP00JCSnIKDq8tHg0zI.jpg"
+        }
+    ],
+    "trailerKey": "xhYUaR5QiUs"
+},
+    {
     "title": "Dunkirk",
     "year": "2017",
     "desc": "يروي تفاصيل الإخلاء الذي حدث بأعجوبة لجنود التحالف من بلجيكا، بريطانيا، كندا وفرنسا، والذين كان الجيش الألماني يحوطهم من الشواطئ والموانئ في دانكيرك في فرنسا خلال الحرب العالمية الثانية.",
