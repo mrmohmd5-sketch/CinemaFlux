@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Dunkirk",
+    "year": "2017",
+    "desc": "يروي تفاصيل الإخلاء الذي حدث بأعجوبة لجنود التحالف من بلجيكا، بريطانيا، كندا وفرنسا، والذين كان الجيش الألماني يحوطهم من الشواطئ والموانئ في دانكيرك في فرنسا خلال الحرب العالمية الثانية.",
+    "poster": "https://image.tmdb.org/t/p/w500/xWVxMHLpCRhb9GVs0e3nK2uhPwW.jpg",
+    "hdUrl": "https://streamtape.com/e/jqZwy9r72LsJZl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/jqZwy9r72LsJZl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حرب حركة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Fionn Whitehead",
+            "character": "Tommy",
+            "image": "https://image.tmdb.org/t/p/w185/2JjRhwG6BEWeF4n9TlvDEDzlP5P.jpg"
+        },
+        {
+            "name": "Tom Hardy",
+            "character": "Farrier",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Mark Rylance",
+            "character": "Mr. Dawson",
+            "image": "https://image.tmdb.org/t/p/w185/bztEZRyXrvW3Pg1fexNASXlZrq7.jpg"
+        },
+        {
+            "name": "Kenneth Branagh",
+            "character": "Commander Bolton",
+            "image": "https://image.tmdb.org/t/p/w185/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
+        },
+        {
+            "name": "Cillian Murphy",
+            "character": "Shivering Soldier",
+            "image": "https://image.tmdb.org/t/p/w185/2lKs67r7FI4bPu0AXxMUJZxmUXn.jpg"
+        },
+        {
+            "name": "Barry Keoghan",
+            "character": "George",
+            "image": "https://image.tmdb.org/t/p/w185/ngoitknM6hw8fffLywyvjzy6Iti.jpg"
+        },
+        {
+            "name": "Harry Styles",
+            "character": "Alex",
+            "image": "https://image.tmdb.org/t/p/w185/9EKjDDD8Naa7dBH76renIjso6CP.jpg"
+        },
+        {
+            "name": "Aneurin Barnard",
+            "character": "Gibson",
+            "image": "https://image.tmdb.org/t/p/w185/aiuFLvyaxmuglNi3nfQ3oL9qW97.jpg"
+        },
+        {
+            "name": "Damien Bonnard",
+            "character": "French Soldier",
+            "image": "https://image.tmdb.org/t/p/w185/jZLowoW3gGxKbrscwZintPBsQR5.jpg"
+        },
+        {
+            "name": "Lee Armstrong",
+            "character": "Grenadier",
+            "image": "https://image.tmdb.org/t/p/w185/Amwo3wNm5keL3l61WF8ccSlVPW0.jpg"
+        }
+    ],
+    "trailerKey": "kvbiVcj4l0c"
+},
+    {
     "title": "Guardians of the Galaxy Vol. 3",
     "year": "2023",
     "desc": "لا يزال بيتر كويل يعاني من صدمة فقدان غامورا، فيحشد فريقه للدفاع عن الكون وعن أحد أفرادهم - وهي مهمة قد تعني نهاية الحراس إذا لم تنجح.",
