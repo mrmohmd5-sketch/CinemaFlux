@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Newborn",
+    "year": "2026",
+    "desc": "بعد أن أمضى سبع سنوات في الحبس الانفرادي، يسعى كريس نيوبورن إلى إعادة بناء حياته واستعادة علاقته بعائلته، لكنه يكتشف أن الحرية نفسها قد تحولت إلى ساحة معركة نفسية مرعبة.",
+    "poster": "https://image.tmdb.org/t/p/w500/g3fTSiQ19uIpYDHVAHLHvgLwzPD.jpg",
+    "hdUrl": "https://streamtape.com/e/eqGAw2OpYVCYzoQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eqGAw2OpYVCYzoQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.4",
+    "genre": "دراما إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "David Oyelowo",
+            "character": "Chris Newborn",
+            "image": "https://image.tmdb.org/t/p/w185/7UZHRwOKe2cYxj8SeNUklyPYkns.jpg"
+        },
+        {
+            "name": "Olivia Washington",
+            "character": "Tara Benton",
+            "image": "https://image.tmdb.org/t/p/w185/jwwnxt3x9SBh3lnPc8vojBptnc6.jpg"
+        },
+        {
+            "name": "Barry Pepper",
+            "character": "Hersh",
+            "image": "https://image.tmdb.org/t/p/w185/xBvW4dMoz496rItLQU6TGteYCEP.jpg"
+        },
+        {
+            "name": "Jimmie Fails",
+            "character": "Keith Newborn",
+            "image": "https://image.tmdb.org/t/p/w185/ffymQQUPR7yD6pzbogE2Ic60LpJ.jpg"
+        },
+        {
+            "name": "Aiden Stoxx",
+            "character": "Jake Benton",
+            "image": "https://image.tmdb.org/t/p/w185/42xffUpYAlk6tHz4ee7Z3rqsbLr.jpg"
+        },
+        {
+            "name": "Rukiya Bernard",
+            "character": "Ella",
+            "image": "https://image.tmdb.org/t/p/w185/1xnSniYd3y84qt6lqLvDIzGT4x0.jpg"
+        },
+        {
+            "name": "Thomas Cadrot",
+            "character": "Derek",
+            "image": "https://image.tmdb.org/t/p/w185/2klFFu6ZSunZPGC51Bg2kSdx7Xg.jpg"
+        },
+        {
+            "name": "Alexander Davis",
+            "character": "Bully",
+            "image": "https://image.tmdb.org/t/p/w185/iqBZyXACrKHN3dDnnl1TdYkK560.jpg"
+        },
+        {
+            "name": "Andres Soto",
+            "character": "Server",
+            "image": "https://image.tmdb.org/t/p/w185/43si5UUvzOYlY7JtyZd49M4EZJ8.jpg"
+        },
+        {
+            "name": "Matthew Mylrea",
+            "character": "Local Patron",
+            "image": "https://image.tmdb.org/t/p/w185/6MZDAm0SV2f52Lg91C8VNYtjY2Z.jpg"
+        }
+    ],
+    "trailerKey": "2svpfCr-_kU"
+},
+    {
     "title": "Uncharted",
     "year": "2022",
     "desc": "تدور الأحداث حول الفتى الشاب ناثان دريك، وعلاقته بفيكتور سوليفان، حيث يخوض الثنائي العديد من المغامرات بحثًا عن الكنوز المفقودة، بينما يسعى دريك لاسترداد إرث عائلته.",
