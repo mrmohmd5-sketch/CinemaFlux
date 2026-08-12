@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Death of Robin Hood",
+    "year": "2026",
+    "desc": "بينما يصارع ماضيه المليء بالجرائم والقتل، يتعرض روبن هود لإصابة خطيرة بعد معركة ظن أنها ستكون الأخيرة في حياته. وبين يدي امرأة غامضة، تُمنح له فرصة جديدة للخلاص والتكفير عما ارتكبه في الماضي.",
+    "poster": "https://image.tmdb.org/t/p/w500/lvrejf8tNqKmOq1OA6zXNqzrx4U.jpg",
+    "hdUrl": "https://streamtape.com/e/aRma9zeRRXuxjV0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/aRma9zeRRXuxjV0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "مغامرة دراما حركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Hugh Jackman",
+            "character": "Robin Hood",
+            "image": "https://image.tmdb.org/t/p/w185/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+        },
+        {
+            "name": "Jodie Comer",
+            "character": "Sister Brigid",
+            "image": "https://image.tmdb.org/t/p/w185/AfsBpnfw0E2h8NZK4zkFcOjYlEb.jpg"
+        },
+        {
+            "name": "Bill Skarsgård",
+            "character": "Little John",
+            "image": "https://image.tmdb.org/t/p/w185/xBXLx1m0uzhXIbY3wN8lmPGeUHl.jpg"
+        },
+        {
+            "name": "Murray Bartlett",
+            "character": "The Leper",
+            "image": "https://image.tmdb.org/t/p/w185/eN20zfcRB2F51bmUbTK9byQCpb9.jpg"
+        },
+        {
+            "name": "Noah Jupe",
+            "character": "Arthur / Godwyn",
+            "image": "https://image.tmdb.org/t/p/w185/cBhJisZrIsZzamiUCVjOZODcqOK.jpg"
+        },
+        {
+            "name": "Jade Croot",
+            "character": "Wainwright",
+            "image": "https://image.tmdb.org/t/p/w185/j4DuuFPDdnEcDWFWCyBUuhhHkxg.jpg"
+        },
+        {
+            "name": "Faith Delaney",
+            "character": "Little Margaret",
+            "image": "https://image.tmdb.org/t/p/w185/jIKjTzr4dCoybQgNhyREahh9Aym.jpg"
+        },
+        {
+            "name": "Tabitha Smyth",
+            "character": "Sarah",
+            "image": "https://image.tmdb.org/t/p/w185/uREVbfIi4rD2W29zWbtzNqIhP4u.jpg"
+        },
+        {
+            "name": "Beau Thompson",
+            "character": "Hob",
+            "image": "https://image.tmdb.org/t/p/w185/9mGiYt7w8YqsqM6TLoGqYV9SvFY.jpg"
+        },
+        {
+            "name": "Alfie Lawless",
+            "character": "Hendrie",
+            "image": "https://image.tmdb.org/t/p/w185/761sH9H88m86M3iUuxMJpLQ2GE2.jpg"
+        }
+    ],
+    "trailerKey": "GSfq5jq7ChQ"
+},
+    {
     "title": "Newborn",
     "year": "2026",
     "desc": "بعد أن أمضى سبع سنوات في الحبس الانفرادي، يسعى كريس نيوبورن إلى إعادة بناء حياته واستعادة علاقته بعائلته، لكنه يكتشف أن الحرية نفسها قد تحولت إلى ساحة معركة نفسية مرعبة.",
