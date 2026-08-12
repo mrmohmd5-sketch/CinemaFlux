@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Not Without My Daughter",
+    "year": "1991",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/aEMncPIHISpaIJmYaIstS0TVnb7.jpg",
+    "hdUrl": "https://streamtape.com/e/vrLByJrpKMC4k64/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/vrLByJrpKMC4k64/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Sally Field",
+            "character": "Betty Mahmoody",
+            "image": "https://image.tmdb.org/t/p/w185/iMeq1j9Xwvaf6PbTJ0FQz69fpuA.jpg"
+        },
+        {
+            "name": "Alfred Molina",
+            "character": "Moody",
+            "image": "https://image.tmdb.org/t/p/w185/nJo91Czesn6z0d0pkfbDoVZY3sg.jpg"
+        },
+        {
+            "name": "Sheila Rosenthal",
+            "character": "Mahtob",
+            "image": "https://image.tmdb.org/t/p/w185/dOr5YblMPHO53xN3zMp6ErwSHYa.jpg"
+        },
+        {
+            "name": "Roshan Seth",
+            "character": "Houssein",
+            "image": "https://image.tmdb.org/t/p/w185/4TbHkaZxPegaTns250cVXr8F91F.jpg"
+        },
+        {
+            "name": "Sarah Badel",
+            "character": "Nicole",
+            "image": "https://image.tmdb.org/t/p/w185/8ZFn8Nx2IehUR6kFbGSGKOUdz0i.jpg"
+        },
+        {
+            "name": "Mony-Rey",
+            "character": "Ameh Bozorg",
+            "image": "https://image.tmdb.org/t/p/w185/iXDUysUyk68pMNHySSuywMzuSf5.jpg"
+        },
+        {
+            "name": "Georges Corraface",
+            "character": "Mohsen",
+            "image": "https://image.tmdb.org/t/p/w185/k23MRaOgBRwODA0Q5Tjec7ZolQp.jpg"
+        },
+        {
+            "name": "Mary Nell Santacroce",
+            "character": "Grandma",
+            "image": "https://image.tmdb.org/t/p/w185/qG5XHkQYpHVIs8Bpe0glSJB5teM.jpg"
+        },
+        {
+            "name": "Ed Grady",
+            "character": "Grandpa",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Marc Gowan",
+            "character": "Doctor",
+            "image": "https://image.tmdb.org/t/p/w185/zVTWac90dtoEyGgVZxGMDneSXof.jpg"
+        }
+    ],
+    "trailerKey": "5rEuC5Mx_gY"
+},
+    {
     "title": "In Time",
     "year": "2011",
     "desc": "الوقت قوة\r في المستقبل غير البعيد ، تم إيقاف تشغيل جين الشيخوخة. لتجنب الاكتظاظ السكاني ، أصبح الوقت هو العملة والطريقة التي يدفع بها الناس مقابل الكماليات والضروريات. يمكن للأغنياء أن يعيشوا إلى الأبد ، بينما يحاول الباقون التفاوض من أجل خلودهم. شاب فقير يأتي إلى ثروة من الوقت ، على الرغم من فوات الأوان لمساعدة والدته من الموت. ينتهي به الأمر هاربا من قوة شرطة فاسدة تعرف باسم 'حراس الوقت'.",
