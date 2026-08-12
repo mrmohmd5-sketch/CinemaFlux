@@ -1,5 +1,60 @@
 const globalMoviesData = [
     {
+    "title": "The Invite",
+    "year": "2026",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+    "hdUrl": "https://streamtape.com/e/x2xLYb9ReatkWlP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/x2xLYb9ReatkWlP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Seth Rogen",
+            "character": "Joe",
+            "image": "https://image.tmdb.org/t/p/w185/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+        },
+        {
+            "name": "Olivia Wilde",
+            "character": "Angela",
+            "image": "https://image.tmdb.org/t/p/w185/eODi1QKamyVa41eSK2SjU20VAZS.jpg"
+        },
+        {
+            "name": "Penélope Cruz",
+            "character": "Piña",
+            "image": "https://image.tmdb.org/t/p/w185/n5SFgmvJSENQt8poE4qYacUnKOi.jpg"
+        },
+        {
+            "name": "Edward Norton",
+            "character": "Hawk",
+            "image": "https://image.tmdb.org/t/p/w185/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg"
+        },
+        {
+            "name": "Skip Howland",
+            "character": "Doorman (uncredited)",
+            "image": "https://image.tmdb.org/t/p/w185/mXgzTq5QFTcWDi5eJe2vFQnaZ47.jpg"
+        },
+        {
+            "name": "Mel Powell",
+            "character": "Bartender (uncredited)",
+            "image": "https://image.tmdb.org/t/p/w185/qu7T2uxliIK6TbCp1JAVY5rWPLl.jpg"
+        },
+        {
+            "name": "Rachel Thurow",
+            "character": "Subway Goer (uncredited)",
+            "image": "https://image.tmdb.org/t/p/w185/cmc9sL0MfauEeeyRPmMFvNDePhK.jpg"
+        },
+        {
+            "name": "Mario Valdez",
+            "character": "Subway Goer (uncredited)",
+            "image": "https://image.tmdb.org/t/p/w185/4CShBxkTX3OLYtHjuAkMbzgKI5y.jpg"
+        }
+    ],
+    "trailerKey": "TXVH-23lkr0",
+    "featured": true
+},
+    {
     "title": "Midnight",
     "year": "2021",
     "desc": "قاتل متسلسل يطارد بلا رحمة امرأة صماء في شوارع كوريا الجنوبية بعد أن شهدت جريمته الوحشية.",
