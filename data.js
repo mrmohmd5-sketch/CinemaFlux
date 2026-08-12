@@ -1,5 +1,94 @@
 const globalMoviesData = [
     {
+    "title": "Love & Death",
+    "year": "2023",
+    "desc": "يتناول العمل السيرة الذاتية لزوجين دائمي التردد على الكنيسة تجمعهما حياة عائلية مميزة في بلدة صغيرة في تكساس، ولكن تأخذ الأمور منعطفًا غير متوقع حينما يلجأ أحدهما إلى العنف.",
+    "poster": "https://image.tmdb.org/t/p/w500/bmLk7UYlWoRevG0J9GYW6ISfiZs.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "7.8",
+    "genre": "جريمة دراما",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Elizabeth Olsen",
+            "character": "Candy Montgomery",
+            "image": "https://image.tmdb.org/t/p/w185/wIU675y4dofIDVuhaNWPizJNtep.jpg"
+        },
+        {
+            "name": "Jesse Plemons",
+            "character": "Allan Gore",
+            "image": "https://image.tmdb.org/t/p/w185/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+        },
+        {
+            "name": "Lily Rabe",
+            "character": "Betty Gore",
+            "image": "https://image.tmdb.org/t/p/w185/mXTAWp502qXwolzFJdCG4rpdaZW.jpg"
+        },
+        {
+            "name": "Patrick Fugit",
+            "character": "Pat Montgomery",
+            "image": "https://image.tmdb.org/t/p/w185/bsONcodcqRKV97p1Oo1jcPkEnDA.jpg"
+        },
+        {
+            "name": "Krysten Ritter",
+            "character": "Sherry Cleckler",
+            "image": "https://image.tmdb.org/t/p/w185/9pfKWfSU5i8N6JJuLlVMKfPCDIN.jpg"
+        },
+        {
+            "name": "Tom Pelphrey",
+            "character": "Don Crowder",
+            "image": "https://image.tmdb.org/t/p/w185/eRmK7HvM5FK1Czx9oQspRERbf0o.jpg"
+        },
+        {
+            "name": "Amelie Dallimore",
+            "character": "Jenny Montgomery",
+            "image": "https://image.tmdb.org/t/p/w185/rEEem3BA655MFgrDs3bz2dpRL3t.jpg"
+        },
+        {
+            "name": "Liam Pileggi",
+            "character": "Ian Montgomery",
+            "image": "https://image.tmdb.org/t/p/w185/tWaC5n41PXwObUAkS4iWlegUMzp.jpg"
+        }
+    ],
+    "trailerKey": "FlbNJJwc4jA",
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/Z14XD2YM7XtqLBb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/1qprGYdwrQueZ3z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/9jv2RoMg2VtaJ0x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/vVDrGP4G8aC4Z7K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/46Rvj73De6TKo6M/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/Pqy9dPVWW0F01yD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/3Dl23ZldROCdyzK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "The Invite",
     "year": "2026",
     "desc": "تدور أحداث الفيلم حول زوجين يدعوان جيرانهما إلى مأدبة عشاء فتتحول الليلة الهادئة إلى سلسلة من المواقف الكوميدية والمواجهات غير المتوقعة التي تكشف أسرار علاقاتهم .",
