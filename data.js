@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Midnight",
+    "year": "2021",
+    "desc": "قاتل متسلسل يطارد بلا رحمة امرأة صماء في شوارع كوريا الجنوبية بعد أن شهدت جريمته الوحشية.",
+    "poster": "https://image.tmdb.org/t/p/w500/oJoLrbgEqupECFC7TwcmSZY2JSn.jpg",
+    "hdUrl": "https://streamtape.com/e/1R69YyqpBDUewRO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1R69YyqpBDUewRO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jin Ki-joo",
+            "character": "Kyung-mi",
+            "image": "https://image.tmdb.org/t/p/w185/xwhR8nrFKxalOjmADxJPTouxE0g.jpg"
+        },
+        {
+            "name": "Wi Ha-jun",
+            "character": "Do-sik",
+            "image": "https://image.tmdb.org/t/p/w185/tEZuIaMESdBw4LfNq3vshGR4VlP.jpg"
+        },
+        {
+            "name": "Park Hoon",
+            "character": "Jong-tak",
+            "image": "https://image.tmdb.org/t/p/w185/vo0sLb0h5vJPr7OIooq64TMExIR.jpg"
+        },
+        {
+            "name": "Kil Hae-yeon",
+            "character": "Kyung-mi's Mother",
+            "image": "https://image.tmdb.org/t/p/w185/2mfEbiYfezKfC2XJ7WXcEARct.jpg"
+        },
+        {
+            "name": "Kim Hye-yoon",
+            "character": "So-jung",
+            "image": "https://image.tmdb.org/t/p/w185/ujFBbc3d0UdS4qeioxvO3xRLkdl.jpg"
+        },
+        {
+            "name": "Park Ji-hoon",
+            "character": "Police Officer",
+            "image": "https://image.tmdb.org/t/p/w185/a1lhJxxIBlJL7roIDY4dOEoRMML.jpg"
+        },
+        {
+            "name": "Jung Won-chang",
+            "character": "Police Officer",
+            "image": "https://image.tmdb.org/t/p/w185/1rmdrN0gbQuLfPrw18BUQarD8o0.jpg"
+        },
+        {
+            "name": "Lee Sang-hee",
+            "character": "Drunk Man",
+            "image": "https://image.tmdb.org/t/p/w185/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
+        },
+        {
+            "name": "Eun-Woo Bae",
+            "character": "Police Officer",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Choi Min-woo",
+            "character": "Office Worker",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "kmnGhMGuquc",
+    "featured": true
+},
+    {
     "title": "The Death of Robin Hood",
     "year": "2026",
     "desc": "بينما يصارع ماضيه المليء بالجرائم والقتل، يتعرض روبن هود لإصابة خطيرة بعد معركة ظن أنها ستكون الأخيرة في حياته. وبين يدي امرأة غامضة، تُمنح له فرصة جديدة للخلاص والتكفير عما ارتكبه في الماضي.",
