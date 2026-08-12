@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Uncharted",
+    "year": "2022",
+    "desc": "تدور الأحداث حول الفتى الشاب ناثان دريك، وعلاقته بفيكتور سوليفان، حيث يخوض الثنائي العديد من المغامرات بحثًا عن الكنوز المفقودة، بينما يسعى دريك لاسترداد إرث عائلته.",
+    "poster": "https://image.tmdb.org/t/p/w500/7XLnBmoSFhH8EonFYH17u6eTTxF.jpg",
+    "hdUrl": "https://streamtape.com/e/V69bo81bDgIZaO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/V69bo81bDgIZaO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "حركة مغامرة غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Holland",
+            "character": "Nathan Drake",
+            "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+            "name": "Mark Wahlberg",
+            "character": "Victor 'Sully' Sullivan",
+            "image": "https://image.tmdb.org/t/p/w185/1Oc3XSLyb8hxmjmlgFENu582Kqw.jpg"
+        },
+        {
+            "name": "Sophia Ali",
+            "character": "Chloe Frazer",
+            "image": "https://image.tmdb.org/t/p/w185/45B39NY2LEYewNUiWtvFb7LrDct.jpg"
+        },
+        {
+            "name": "Tati Gabrielle",
+            "character": "Jo Braddock",
+            "image": "https://image.tmdb.org/t/p/w185/txZTL1HkPVxliTilbjlwR51VIt6.jpg"
+        },
+        {
+            "name": "Antonio Banderas",
+            "character": "Santiago Moncada",
+            "image": "https://image.tmdb.org/t/p/w185/fce7zl6elUzsv7wudHFc7RgFtjD.jpg"
+        },
+        {
+            "name": "Steven Waddington",
+            "character": "The Scotsman",
+            "image": "https://image.tmdb.org/t/p/w185/hTsS9lg5Qi8KeWXmnMn45LfnIAx.jpg"
+        },
+        {
+            "name": "Rudy Pankow",
+            "character": "Young Sam",
+            "image": "https://image.tmdb.org/t/p/w185/204FlvdJL9mLRkJP1tuJpg01Ml8.jpg"
+        },
+        {
+            "name": "Tiernan Jones",
+            "character": "Young Nate",
+            "image": "https://image.tmdb.org/t/p/w185/zCNVm88bV9ZcjwbY63QB9hAgfnB.jpg"
+        },
+        {
+            "name": "Pingi Moli",
+            "character": "Hugo",
+            "image": "https://image.tmdb.org/t/p/w185/r6ODWBrRMz68zdU96JFXksYrxFs.jpg"
+        },
+        {
+            "name": "Jesús Evita",
+            "character": "Guard at Museum",
+            "image": "https://image.tmdb.org/t/p/w185/uSLTwsiaHJP6TASHkmauBavWKuH.jpg"
+        }
+    ],
+    "trailerKey": "osNKslQeTLs"
+},
+    {
     "title": "Ip Man: Kung Fu Legend",
     "year": "2026",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
