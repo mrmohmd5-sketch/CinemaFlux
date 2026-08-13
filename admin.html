@@ -95,6 +95,7 @@
     <script>
         // دالة آمنة لفك تشفير Base64 القادم من GitHub بدون مشاكل الترميز أو الأسطر الجديدة
         function decodeGitHubBase64(base64Str) {
+            if (!base64Str) return "";
             const cleanB64 = base64Str.replace(/\s/g, '');
             const binaryString = atob(cleanB64);
             const bytes = new Uint8Array(binaryString.length);
@@ -112,6 +113,30 @@
                 binaryString += String.fromCharCode(bytes[i]);
             }
             return btoa(binaryString);
+        }
+
+        // دالة تحليل مدخلات TMDB بدقة عالية
+        function parseTmdbInput(input) {
+            let type = "movie";
+            let id = input.trim();
+
+            if (input.includes("/tv/") || input.includes("type=tv")) {
+                type = "tv";
+            } else if (input.includes("/movie/") || input.includes("type=movie")) {
+                type = "movie";
+            }
+
+            const match = input.match(/\/(movie|tv)\/(\d+)/);
+            if (match) {
+                type = match[1];
+                id = match[2];
+            } else {
+                const idMatch = input.match(/^(\d+)/);
+                if (idMatch) {
+                    id = idMatch[1];
+                }
+            }
+            return { type, id };
         }
 
         async function checkAccess() {
@@ -215,14 +240,13 @@
             saveSettings(ghUser, ghRepo, ghToken, tmdbKey);
             logStatus("⏳ جاري جلب البيانات وترجمة القصة للعربية مع حفظ الاسم الإنجليزي...");
 
-            let id = tmdbUrl;
-            let type = "movie";
+            const parsedTmdb = parseTmdbInput(tmdbUrl);
+            let type = parsedTmdb.type;
+            let id = parsedTmdb.id;
 
-            if (tmdbUrl.includes("themoviedb.org")) {
-                type = tmdbUrl.includes("/tv/") ? "tv" : "movie";
-                const match = tmdbUrl.match(/\/(movie|tv)\/(\d+)/);
-                if (match && match[2]) id = match[2];
-                else { logStatus("❌ رابط TMDB غير صحيح!", true); return; }
+            if (!id) {
+                logStatus("❌ رابط أو معرف TMDB غير صحيح!", true);
+                return;
             }
 
             const linksArray = mediaUrlRaw.split('\n').map(link => link.trim()).filter(link => link.length > 0);
@@ -230,7 +254,7 @@
             try {
                 // 1. جلب البيانات العربية الأساسية
                 const tmdbArRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${tmdbKey}&language=ar`);
-                if(!tmdbArRes.ok) throw new Error("فشل جلب البيانات العربية من TMDB.");
+                if(!tmdbArRes.ok) throw new Error("فشل جلب البيانات العربية من TMDB. تأكد من الـ ID أو نوع المادة (فيلم/مسلسل).");
                 const dataAr = await tmdbArRes.json();
 
                 // 2. جلب الاسم الإنجليزي
@@ -335,15 +359,34 @@
                 const fileData = await ghGetRes.json();
                 const fileSha = fileData.sha;
                 
-                // قراءة محتوى الملف بأمان بدون تلف النصوص العربية أو تأثير الأسطر الجديدة
-                let currentContentText = decodeGitHubBase64(fileData.content);
+                let rawBase64Content = fileData.content;
+
+                // إذا كان الملف كبيراً (أكبر من 1 ميجابايت)، لن ترجع GitHub خاصية content في API العادي
+                // لذلك نجلب المحتوى كاملاً عبر Blobs API لتفادي مسح البيانات
+                if (!rawBase64Content) {
+                    logStatus("⏳ الملف كبير، جاري جلب المحتوى كاملاً عبر Git Blobs API...");
+                    const blobUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/git/blobs/${fileSha}`;
+                    const blobRes = await fetch(blobUrl, {
+                        headers: { "Authorization": `token ${ghToken}` }
+                    });
+                    if (!blobRes.ok) throw new Error("فشل جلب محتوى الملف الكبير من GitHub Blobs API.");
+                    const blobData = await blobRes.json();
+                    rawBase64Content = blobData.content;
+                }
+
+                if (!rawBase64Content) {
+                    throw new Error("لم يتم العثور على محتوى ملف data.js في GitHub!");
+                }
+
+                // قراءة محتوى الملف بأمان بدون تلف النصوص العربية
+                let currentContentText = decodeGitHubBase64(rawBase64Content);
 
                 logStatus("⏳ جاري دمج وتحديث قاعدة البيانات بأمان دون حذف المواد السابقة...");
 
-                // البحث عن بداية المصفوفة
-                const match = currentContentText.match(/const\s+globalMoviesData\s*=\s*\[/);
+                // البحث عن بداية المصفوفة بشكل مرن جداً
+                const match = currentContentText.match(/(?:const|var|let|window\.)?\s*globalMoviesData\s*=\s*\[/);
                 if (!match) {
-                    throw new Error("لم يتم العثور على مصفوفة const globalMoviesData = [ داخل ملف data.js. تم إلغاء الرفع لحماية بياناتك من المسح!");
+                    throw new Error("لم يتم العثور على مصفوفة globalMoviesData داخل ملف data.js. تم إلغاء الرفع لحماية بياناتك!");
                 }
 
                 const bracketIndex = match.index + match[0].length - 1;
@@ -355,7 +398,7 @@
                     // إذا كانت المصفوفة فارغة
                     updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "\n" + currentContentText.slice(bracketIndex + 1);
                 } else {
-                    // إذا كانت تحتوي على أفلام سابقة: نضيف العمل الجديد في البداية مع فاصلة
+                    // إضافة العمل الجديد في البداية مع فاصلة
                     updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
                 }
 
@@ -368,7 +411,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية ذكية للمادة: ${titleText}`,
+                        message: `إضافة تلقائية للمادة: ${titleText}`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -376,7 +419,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وحفظ جميع الأفلام والمسلسلات السابقة دون أي فقدان.`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وحفظ جميع البيانات السابقة دون أي فقدان.`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
                 document.getElementById('featuredCheck').checked = false;
