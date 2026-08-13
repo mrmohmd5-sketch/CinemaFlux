@@ -93,18 +93,35 @@
     </div>
 
     <script>
-        // التعديل الآمن: استخدام تشفير SHA-256 بدلاً من Base64 المخترق
+        // دالة آمنة لفك تشفير Base64 القادم من GitHub بدون مشاكل الترميز أو الأسطر الجديدة
+        function decodeGitHubBase64(base64Str) {
+            const cleanB64 = base64Str.replace(/\s/g, '');
+            const binaryString = atob(cleanB64);
+            const bytes = new Uint8Array(binaryString.length);
+            for (let i = 0; i < binaryString.length; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            return new TextDecoder("utf-8").decode(bytes);
+        }
+
+        // دالة آمنة لتشفير النصوص العربية إلى Base64 لرفعها على GitHub
+        function encodeGitHubBase64(str) {
+            const bytes = new TextEncoder().encode(str);
+            let binaryString = "";
+            for (let i = 0; i < bytes.length; i++) {
+                binaryString += String.fromCharCode(bytes[i]);
+            }
+            return btoa(binaryString);
+        }
+
         async function checkAccess() {
             const pass = document.getElementById('passInput').value;
             
-            // عملية تحويل الكلمة إلى بيانات مشفرة
             const msgUint8 = new TextEncoder().encode(pass);
             const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
             const hashArray = Array.from(new Uint8Array(hashBuffer));
             const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 
-            // الرمز المكتوب هنا هو نتيجة تشفير كلمة المرور الخاصة بك. 
-            // يستحيل على أي مبرمج رؤية هذا الرمز ومعرفة الكلمة الأصلية
             if (hashHex === "8698f2c83874a9cb32d1307d050945ee775905b4480825dd31be4b9446b8ca2e") { 
                 document.getElementById('authBlock').style.display = 'none';
                 document.getElementById('controlPanel').style.display = 'block';
@@ -134,29 +151,19 @@
             out.style.color = isError ? "#ff3333" : "#00ff00";
         }
 
-        /**
-         * دالة لجلب مفتاح الإعلان من TMDB مع الأولوية للغات: العربية ثم الإنجليزية ثم أي لغة
-         * @param {string} type - 'movie' أو 'tv'
-         * @param {string|number} id - معرف المادة
-         * @param {string} apiKey - مفتاح TMDB API
-         * @returns {Promise<string>} - مفتاح الفيديو أو سلسلة فارغة
-         */
         async function fetchTrailerKeyFromTMDB(type, id, apiKey) {
-            // 1. محاولة جلب الفيديوهات باللغة العربية
             logStatus("⏳ البحث عن إعلان باللغة العربية من TMDB...");
             let url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=ar`;
             let response = await fetch(url);
             let data = await response.json();
             let videos = data.results || [];
 
-            // البحث عن Trailer أو Teaser بالعربية
             let trailer = videos.find(v => v.type === "Trailer" || v.type === "Teaser");
             if (trailer && trailer.key) {
                 logStatus(`✅ تم العثور على إعلان بالعربية: ${trailer.key}`);
                 return trailer.key;
             }
 
-            // 2. محاولة جلب الفيديوهات باللغة الإنجليزية
             logStatus("⏳ لم يتم العثور على إعلان عربي، جاري البحث باللغة الإنجليزية...");
             url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=en`;
             response = await fetch(url);
@@ -169,7 +176,6 @@
                 return trailer.key;
             }
 
-            // 3. محاولة جلب جميع الفيديوهات بدون تحديد لغة (أي لغة)
             logStatus("⏳ لم يتم العثور على إعلان بالعربية أو الإنجليزية، جاري البحث بأي لغة...");
             url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}`;
             response = await fetch(url);
@@ -182,7 +188,6 @@
                 return trailer.key;
             }
 
-            // 4. كحل أخير: البحث عن أي فيديو (مثل Clip, Featurette, إلخ)
             if (videos.length > 0) {
                 const anyVideo = videos[0];
                 logStatus(`⚠️ لم يتم العثور على إعلان، سيتم استخدام أول فيديو متاح: ${anyVideo.key}`);
@@ -220,7 +225,6 @@
                 else { logStatus("❌ رابط TMDB غير صحيح!", true); return; }
             }
 
-            // تقسيم الروابط إلى مصفوفة بناءً على الأسطر
             const linksArray = mediaUrlRaw.split('\n').map(link => link.trim()).filter(link => link.length > 0);
 
             try {
@@ -234,8 +238,8 @@
                 if(!tmdbEnRes.ok) throw new Error("فشل جلب الاسم الإنجليزي من TMDB.");
                 const dataEn = await tmdbEnRes.json();
 
-                // 3. جلب طاقم التمثيل مع اسم الشخصية (character) واسم الممثل (جلب 10 ممثلين)
-                logStatus("⏳ جاري جلب أسماء وصور الممثلين مع شخصياتهم من TMDB (10 ممثلين)...");
+                // 3. جلب طاقم التمثيل
+                logStatus("⏳ جاري جلب أسماء وصور الممثلين مع شخصياتهم من TMDB...");
                 const creditsRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits?api_key=${tmdbKey}`);
                 let castData = [];
                 if(creditsRes.ok) {
@@ -249,7 +253,7 @@
                     });
                 }
 
-                // 4. جلب مفتاح الإعلان من TMDB
+                // 4. جلب مفتاح الإعلان
                 const trailerKey = await fetchTrailerKeyFromTMDB(type, id, tmdbKey);
 
                 // 5. استخراج سنة الإنتاج
@@ -269,7 +273,6 @@
                 const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
-                // إنشاء كائن المحتوى الأساسي مع إضافة السنة ومفتاح الإعلان وخاصية المميز
                 const newMediaObject = {
                     title: titleText,
                     year: year,
@@ -284,12 +287,10 @@
                     trailerKey: trailerKey
                 };
 
-                // إذا تم تحديد خانة "مميز"، نضيف الخاصية
                 if (isFeatured) {
                     newMediaObject.featured = true;
                 }
 
-                // إذا كانت المادة مسلسلاً، نقوم بجلب المواسم والحلقات وتوزيع الروابط بالترتيب
                 if (finalType === "series") {
                     logStatus("⏳ تم كشف مسلسل! جاري سحب وهيكلة المواسم والحلقات تلقائياً وتوزيع الروابط المخصصة...");
                     const seasonsArray = [];
@@ -330,42 +331,35 @@
                     headers: { "Authorization": `token ${ghToken}` }
                 });
 
-                if(!ghGetRes.ok) throw new Error("فشل الاتصال بـ GitHub. تأكد من الروابط والـ Token.");
+                if(!ghGetRes.ok) throw new Error("فشل الاتصال بـ GitHub. تأكد من اسم المستخدم والـ Repository والـ Token.");
                 const fileData = await ghGetRes.json();
                 const fileSha = fileData.sha;
                 
-                let currentContentText = decodeURIComponent(atob(fileData.content).split('').map(function(c) {
-                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-                }).join(''));
+                // قراءة محتوى الملف بأمان بدون تلف النصوص العربية أو تأثير الأسطر الجديدة
+                let currentContentText = decodeGitHubBase64(fileData.content);
 
                 logStatus("⏳ جاري دمج وتحديث قاعدة البيانات بأمان دون حذف المواد السابقة...");
 
-                let updatedContentText = "";
-
-                // === التعديل المحسن للدمج ===
-                // البحث عن بداية المصفوفة بعد const globalMoviesData = [
+                // البحث عن بداية المصفوفة
                 const match = currentContentText.match(/const\s+globalMoviesData\s*=\s*\[/);
-                if (match) {
-                    // موضع [ في النص
-                    const bracketIndex = match.index + match[0].length - 1;
-                    const stringToObject = JSON.stringify(newMediaObject, null, 4);
-
-                    // نأخذ الجزء بعد [ مع إزالة المسافات الزائدة
-                    const afterBracket = currentContentText.slice(bracketIndex + 1).trim();
-
-                    if (afterBracket.startsWith(']')) {
-                        // المصفوفة فارغة: نضيف الكائن بدون فاصلة
-                        updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "\n" + currentContentText.slice(bracketIndex + 1);
-                    } else {
-                        // المصفوفة غير فارغة: نضيف الكائن مع فاصلة بعده (ليكون في البداية)
-                        updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
-                    }
-                } else {
-                    // إذا لم نجد النمط، نعيد بناء الملف كاملاً (حالة نادرة)
-                    updatedContentText = `const globalMoviesData = [\n    ${JSON.stringify(newMediaObject, null, 4)}\n];`;
+                if (!match) {
+                    throw new Error("لم يتم العثور على مصفوفة const globalMoviesData = [ داخل ملف data.js. تم إلغاء الرفع لحماية بياناتك من المسح!");
                 }
 
-                const base64Content = btoa(unescape(encodeURIComponent(updatedContentText)));
+                const bracketIndex = match.index + match[0].length - 1;
+                const stringToObject = JSON.stringify(newMediaObject, null, 4);
+                const afterBracket = currentContentText.slice(bracketIndex + 1).trim();
+
+                let updatedContentText = "";
+                if (afterBracket.startsWith(']')) {
+                    // إذا كانت المصفوفة فارغة
+                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "\n" + currentContentText.slice(bracketIndex + 1);
+                } else {
+                    // إذا كانت تحتوي على أفلام سابقة: نضيف العمل الجديد في البداية مع فاصلة
+                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
+                }
+
+                const base64Content = encodeGitHubBase64(updatedContentText);
 
                 const ghPutRes = await fetch(fileUrl, {
                     method: "PUT",
@@ -374,7 +368,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية ذكية ومباشرة للمادة: ${titleText} مع روابط الحلقات المرتبة وإعلان YouTube من TMDB`,
+                        message: `إضافة تلقائية ذكية للمادة: ${titleText}`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -382,7 +376,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وتوزيع روابط الحلقات الفردية تلقائياً لكل حلقة، مع إعلان YouTube.`);
+                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وحفظ جميع الأفلام والمسلسلات السابقة دون أي فقدان.`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
                 document.getElementById('featuredCheck').checked = false;
