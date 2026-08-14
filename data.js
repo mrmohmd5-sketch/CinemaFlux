@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2026",
     "desc": "في هذه الرواية لقصة حقيقية، تكتشف فتاة كانت تعمل مرافقة خيانة زوجها الثري وتكافح للتأقلم مع الوضع بينما تسمم الخيانة زواجهما.",
     "poster": "https://image.tmdb.org/t/p/w500/612ZyfilK8CVEEFphgPb3GOw0NF.jpg",
-    "hdUrl": "https://streamtape.com/e/JJ6pK9Pbm8fZbD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/YDAL7PWmvOuvWL3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/JJ6pK9Pbm8fZbD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.4",
     "genre": "إثارة جريمة دراما",
