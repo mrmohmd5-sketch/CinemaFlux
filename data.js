@@ -111,43 +111,6 @@ const globalMoviesData = [
                     "url": "https://streamtape.com/e/PwOVgerY4bcGKR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
                 }
             ]
-        },
-        {
-            "season_number": 3,
-            "episodes": [
-                {
-                    "episode_number": 1,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                },
-                {
-                    "episode_number": 2,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                },
-                {
-                    "episode_number": 3,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                },
-                {
-                    "episode_number": 4,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                },
-                {
-                    "episode_number": 5,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                },
-                {
-                    "episode_number": 6,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                },
-                {
-                    "episode_number": 7,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                },
-                {
-                    "episode_number": 8,
-                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                }
-            ]
         }
     ]
 },
