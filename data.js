@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Wonderland",
+    "year": "2024",
+    "desc": "في عالم المستقبل، أصبحت خدمة 'بلاد العجائب' - التي تستخدم الذكاء الاصطناعي لمحاكاة الأشخاص الذين ماتوا - واسعة الانتشار. تشترك بيلي في بلاد العجائب من أجل إخفاء وفاتها الوشيكة عن ابنتها الصغيرة. بعد وقوع حادث يترك صديقها تاي جو في غيبوبة، تقضي جونغ إن أيامها في الدردشة مع نسخة من تاي جو أعيد إحياؤها بواسطة الذكاء الاصطناعي والتي أصبحت رائدة فضاء في الفضاء. بهذه الطريقة، من الممكن للناس اختيار حياة خالية من الشوق والحزن.",
+    "poster": "https://image.tmdb.org/t/p/w500/7AfZDB9X8iTF6VaacJIj5Lcb1bG.jpg",
+    "hdUrl": "https://streamtape.com/e/8Ge2pqkYe2slKB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/8Ge2pqkYe2slKB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.1",
+    "genre": "خيال علمي دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tang Wei",
+            "character": "Bai Li",
+            "image": "https://image.tmdb.org/t/p/w185/5HwPMAATexQc8uiPAmW3XKYt9bO.jpg"
+        },
+        {
+            "name": "Suzy",
+            "character": "Koo Jeong-in",
+            "image": "https://image.tmdb.org/t/p/w185/39x6Dc4ELZxHbxCuOM0ddbwKh3F.jpg"
+        },
+        {
+            "name": "Park Bo-gum",
+            "character": "Park Tae-ju",
+            "image": "https://image.tmdb.org/t/p/w185/iQHhzpJnxPAeZetNLJPr3gTs1rE.jpg"
+        },
+        {
+            "name": "Jung Yu-mi",
+            "character": "Seo Hae-ri",
+            "image": "https://image.tmdb.org/t/p/w185/4MGol78RZ9yakZdBAwnLUVgwO6F.jpg"
+        },
+        {
+            "name": "Choi Woo-shik",
+            "character": "Kim Hyun-soo",
+            "image": "https://image.tmdb.org/t/p/w185/hRDiuKWwe156zRjEu826eci7H3r.jpg"
+        },
+        {
+            "name": "Gong Yoo",
+            "character": "Sung-jun",
+            "image": "https://image.tmdb.org/t/p/w185/ocGoFb6TrK3uWGXt4WnuibUG1vD.jpg"
+        },
+        {
+            "name": "Tang Joon-sang",
+            "character": "Choi Jin-gu",
+            "image": "https://image.tmdb.org/t/p/w185/oEP7orwukWSKoZwyzzXyJf7CYXw.jpg"
+        },
+        {
+            "name": "Seong Byeong-suk",
+            "character": "Song Jeong-ran",
+            "image": "https://image.tmdb.org/t/p/w185/cFVOqICCoXVgdBTip1ZwgGlXqw2.jpg"
+        },
+        {
+            "name": "Choi Mu-sung",
+            "character": "Lee Yong-sik",
+            "image": "https://image.tmdb.org/t/p/w185/gMhYRcJ9HMVcGUWwOGRTAcbDo9y.jpg"
+        },
+        {
+            "name": "Lee Eol",
+            "character": "Hae-ri's Father",
+            "image": "https://image.tmdb.org/t/p/w185/aNevJZy1JU2D5Wo6BuLVN1GAjnD.jpg"
+        }
+    ],
+    "trailerKey": "NFIRWIGxWl8"
+},
+    {
     "title": "Young Washington",
     "year": "2026",
     "desc": "تدور أحداث الفيلم حول بدايات جورج واشنطن في شبابه خلال سنوات تكوينه الأولى، حيث يخوض تجارب عسكرية مبكرة وصراعات سياسية وشخصية حاسمة في البرية الأمريكية تسهم في صقل شخصيته القيادية وتضعه على طريق قيادة الثورة وبناء الأمة في إطار درامي تاريخي ملحمي. .",
