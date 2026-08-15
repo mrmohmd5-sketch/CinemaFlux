@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Carter",
+    "year": "2022",
+    "desc": "عقب شهرين من انتشار جائحة مميتة نشأت في منطقة منزوعة السلاح واجتاحت الولايات المتحدة وكوريا الشمالية، يستيقظ 'كارتر' دون أن يتذكّر ماضيه. وقد تمّ زرع جهاز غامض في رأسه ويسمع صوتًا غريبًا في أذنيه يعطيه الأوامر. وفي فمه قنبلة فتّاكة قد تنفجر في أي وقت، ما لم ينقذ الفتاة التي تعتبر الترياق الوحيد ضدّ الفيروس. وليس هذا فحسب، فوكالة الاستخبارات المركزية وجماعة انقلابية من كوريا الشمالية تطاردانه باستماتة.  لا بدّ أن ينجح 'كارتر' في مهمّته ويتوجّه شمالًا للبحث عن الفتاة.  تتكشّف رحلة كفاحه للنجاة بحياته في فيلم حركة يتكوّن من مشهد متسلسل واحد!",
+    "poster": "https://image.tmdb.org/t/p/w500/aGKln9LeFkP30MAiwFiuaMmNvzG.jpg",
+    "hdUrl": "https://streamtape.com/e/eKKqbpqvzWT9jP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/eKKqbpqvzWT9jP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.0",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Joo Won",
+            "character": "Carter Lee",
+            "image": "https://image.tmdb.org/t/p/w185/wENUuZX03IgMNjONdpSRRVF5nKn.jpg"
+        },
+        {
+            "name": "Lee Sung-jae",
+            "character": "Kim Jong-hyeok",
+            "image": "https://image.tmdb.org/t/p/w185/nJRkgbl8rN4hQ1wrTy0RFRjNe8K.jpg"
+        },
+        {
+            "name": "Jeong So-ri",
+            "character": "Han Jung-hee",
+            "image": "https://image.tmdb.org/t/p/w185/lrp9i6fc52FWLOlLe5AD73ZSI8u.jpg"
+        },
+        {
+            "name": "Do Yeong-seo",
+            "character": "Ha-na",
+            "image": "https://image.tmdb.org/t/p/w185/iwSQb4DOlePmbp7OUyw5gaTEwo4.jpg"
+        },
+        {
+            "name": "Camilla Belle",
+            "character": "Agnes",
+            "image": "https://image.tmdb.org/t/p/w185/43mFAphuwUBLJZtXXk2eOtk3nDM.jpg"
+        },
+        {
+            "name": "Mike Colter",
+            "character": "Smith",
+            "image": "https://image.tmdb.org/t/p/w185/9LG9AzoY2ak6M2kwhKlGkLOUUot.jpg"
+        },
+        {
+            "name": "Jung Jae-young",
+            "character": "Dr. Jung Byeong-ho",
+            "image": "https://image.tmdb.org/t/p/w185/xeiFPl5GOHemLGGMpvzeiK0Nlpm.jpg"
+        },
+        {
+            "name": "Jung Hae-kyun",
+            "character": "Director Kim Dong-gyu",
+            "image": "https://image.tmdb.org/t/p/w185/7aQvZovyPuVGVrvc694ThJVYeMK.jpg"
+        },
+        {
+            "name": "Yeo Dae-hyun",
+            "character": "Ri Cheol-ju",
+            "image": "https://image.tmdb.org/t/p/w185/hcxh5Zlk9uoHM5rfEijJBBb9Yav.jpg"
+        },
+        {
+            "name": "Gina Theresa Williamson",
+            "character": "CNN Reporter",
+            "image": "https://image.tmdb.org/t/p/w185/s6HlFUBi1lTgMSAh4j0gKHwENGo.jpg"
+        }
+    ],
+    "trailerKey": "ulPHag30btQ"
+},
+    {
     "title": "Wonderland",
     "year": "2024",
     "desc": "في عالم المستقبل، أصبحت خدمة 'بلاد العجائب' - التي تستخدم الذكاء الاصطناعي لمحاكاة الأشخاص الذين ماتوا - واسعة الانتشار. تشترك بيلي في بلاد العجائب من أجل إخفاء وفاتها الوشيكة عن ابنتها الصغيرة. بعد وقوع حادث يترك صديقها تاي جو في غيبوبة، تقضي جونغ إن أيامها في الدردشة مع نسخة من تاي جو أعيد إحياؤها بواسطة الذكاء الاصطناعي والتي أصبحت رائدة فضاء في الفضاء. بهذه الطريقة، من الممكن للناس اختيار حياة خالية من الشوق والحزن.",
