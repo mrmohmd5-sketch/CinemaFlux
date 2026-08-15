@@ -2,9 +2,9 @@ const globalMoviesData = [
     {
     "title": "Black Box",
     "year": "2026",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول محقق خبير يُكلف بفك شفرة الصندوق الأسود بعد وقوع حادث تحطم طائرة غامض، ليكتشف أثناء تحليل التسجيلات الصوتية مؤامرة معقدة وحقائق مظلمة تضع حياته في خطر وتجعله يشكك في كل ما حوله، في إطار من الغموض والإثارة والتشويق النفسي .",
     "poster": "https://image.tmdb.org/t/p/w500/O7vJPEWsnLrKqPYHIHKG8zlEK1.jpg",
-    "hdUrl": "https://streamtape.com/e/v24MKbKWKMU49Yj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/P9bO4v34g0URdr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/v24MKbKWKMU49Yj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.2",
     "genre": "رعب إثارة",
