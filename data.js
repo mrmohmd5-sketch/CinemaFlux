@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2026",
     "desc": "تدور أحداث الفيلم عن رجل يعيش في عزلة فرضها على نفسه في جزيرة نائية وينقذ فتاة صغيرة من عاصفة عنيفة لتبدأ سلسلة من الأحداث تجبره على الخروج من عزلته لحمايتها من أعداء يرتبطون بماضيه.",
     "poster": "https://image.tmdb.org/t/p/w500/wDHhmyIKfq5cZTYmRal4IR4y85e.jpg",
-    "hdUrl": "https://streamtape.com/e/BvPqyRAxWBfygaR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/pYBJWOXrdWhrQbJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/BvPqyRAxWBfygaR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.8",
     "genre": "حركة جريمة إثارة",
