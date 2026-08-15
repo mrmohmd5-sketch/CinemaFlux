@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2025",
     "desc": "تدور احداث الفيلم حين “لي جونغ هوان”، مدرّب حيوانات يعيش مع ابنته المراهقة “سو آه” الشغوفة بالرقص، يجد نفسه في صراع جديد بعدما تُصاب بفيروس الزومبي. يحاول حمايتها بأخذها إلى قريته الساحلية حيث تعيش والدته، ليكتشف أنها ما زالت تستجيب للرقص وحنان جدتها. رافضًا الاستسلام، يستخدم خبرته في تدريب النمور ليبدأ رحلة صعبة ومؤثرة في ترويض ابنته الزومبي، في مزيج من الرعب والدفء والكوميديا.",
     "poster": "https://image.tmdb.org/t/p/w500/7uQs2iK2JBLqdbgtusllZ6TKEy.jpg",
-    "hdUrl": "https://streamtape.com/e/Vok2d1V2WBtP3Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/VW2ZXy2RxdUKmAb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/Vok2d1V2WBtP3Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.2",
     "genre": "كوميديا دراما",
