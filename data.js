@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "No One Killed Jessica",
+    "year": "2011",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/oIFJXzzfG2sRxCn1T03WVN0gl9v.jpg",
+    "hdUrl": "https://streamtape.com/e/7w0qpVwQBAfAgbR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7w0qpVwQBAfAgbR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.8",
+    "genre": "جريمة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Rani Mukerji",
+            "character": "Meera Gaity",
+            "image": "https://image.tmdb.org/t/p/w185/6bm1lhrEgGFpOLBjvcOi3aoQmtg.jpg"
+        },
+        {
+            "name": "Vidya Balan",
+            "character": "Sabrina Lal",
+            "image": "https://image.tmdb.org/t/p/w185/m4bnX5VQs2DfvQsLmfbKbBxUkC9.jpg"
+        },
+        {
+            "name": "Myra Karn",
+            "character": "Jessica Lall",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Neil Bhoopalam",
+            "character": "Vikram Jai Singh",
+            "image": "https://image.tmdb.org/t/p/w185/zBSBeppHSFjuO5EmsUq5G2MdvMQ.jpg"
+        },
+        {
+            "name": "Mohammed Zeeshan Ayyub",
+            "character": "Manish \"Monu\" P. Bharadwaj",
+            "image": "https://image.tmdb.org/t/p/w185/cF1j8Vt9YPlOBjy3lfmhuF11dmD.jpg"
+        },
+        {
+            "name": "Satyadeep Misra",
+            "character": "Gaurav Kapoor (Meera's Boss)",
+            "image": "https://image.tmdb.org/t/p/w185/413i5i1XUaRcoNzxCsJQIN0PhQ8.jpg"
+        },
+        {
+            "name": "Yogendra Tiku",
+            "character": "Sanjit Lal",
+            "image": "https://image.tmdb.org/t/p/w185/pKhYLJ7gTXcOPrrUugBxwjiYGFT.jpg"
+        },
+        {
+            "name": "Purnendu Bhattacharya",
+            "character": "Nigam",
+            "image": "https://image.tmdb.org/t/p/w185/kBm4pTQS0na0LggDODaYZomFC9Q.jpg"
+        },
+        {
+            "name": "Rajesh Sharma",
+            "character": "Inspector N. K.",
+            "image": "https://image.tmdb.org/t/p/w185/cBmZY1EICMD1q16Fx7GqpHkc6A1.jpg"
+        },
+        {
+            "name": "Manoj Bakshi",
+            "character": "Judge",
+            "image": "https://image.tmdb.org/t/p/w185/9ieo5XUm9Z173NwphJfSSTs2s7S.jpg"
+        }
+    ],
+    "trailerKey": "-sk2lUJr0SE"
+},
+    {
     "title": "Safe House",
     "year": "2012",
     "desc": "يظهر مرتد خطير من وكالة المخابرات المركزية على السطح بعد عقد من الهروب. عندما يهاجم المرتزقة المنزل الآمن الذي تم احتجازه فيه ، يهرب معه عميل مبتدئ. الآن ، يجب على الحلفاء غير المتوقعين البقاء على قيد الحياة لفترة كافية لكشف من يريد موتهم.",
