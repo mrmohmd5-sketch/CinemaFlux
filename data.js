@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2023",
     "desc": "يعود المقدام البارع 'تايلر ريك' بعد نجاته من فم الموت، ويقع على عاتقه الآن تنفيذ مهمة أخرى محفوفة بالمخاطر... وهي إنقاذ عائلة رجل عصابات قاسٍ من السجن.",
     "poster": "https://image.tmdb.org/t/p/w500/ghlJt2Fl6r766aFtz8rsSrwzRIb.jpg",
-    "hdUrl": "https://streamtape.com/e/LQWVXAAgjyHv6g/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/9bL223B4dPFal7D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/LQWVXAAgjyHv6g/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.4",
     "genre": "حركة إثارة جريمة",
