@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2025",
     "desc": "تغرق سيول في الفوضى مع ظهور شبكة إجرامية عبدة للشيطان. في نداء يائس للخلاص، تضطر الشرطة إلى تجنيد 'هولي نايت'، وهم ثلاثة من صائدي الشياطين المسلحين بقوى خارقة للطبيعة. فهل سيتمكن 'هولي نايت' من قهر حكم الشيطان وإعادة النظام إلى المدينة؟",
     "poster": "https://image.tmdb.org/t/p/w500/aBy64vAaCgx5uc6t6QT8IOwHfsE.jpg",
-    "hdUrl": "https://streamtape.com/e/rlGZwLOxwZIbRg2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/Y7qAbyLz3ZUvMqd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/rlGZwLOxwZIbRg2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.9",
     "genre": "حركة فانتازيا رعب إثارة",
