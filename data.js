@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2025",
     "desc": "حين تخرج سرقة مخدرات عن نطاق السيطرة بشكل مميت، يشقّ شرطي منهك طريقه عبر عالم الإجرام في مدينة فاسدة لإنقاذ ابن رجل سياسي.",
     "poster": "https://image.tmdb.org/t/p/w500/iyHcZBliPWkhsn8TAHgGSrAJJwj.jpg",
-    "hdUrl": "https://streamtape.com/e/L328MdKRwbu6PJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/4DRAo014p8CK4Za/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/L328MdKRwbu6PJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.4",
     "genre": "حركة جريمة إثارة دراما",
