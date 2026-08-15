@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Black Box",
+    "year": "2026",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/O7vJPEWsnLrKqPYHIHKG8zlEK1.jpg",
+    "hdUrl": "https://streamtape.com/e/v24MKbKWKMU49Yj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/v24MKbKWKMU49Yj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Brittney",
+            "character": "Jeremey",
+            "image": "https://image.tmdb.org/t/p/w185/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg"
+        },
+        {
+            "name": "Holly White",
+            "character": "Emma",
+            "image": "https://image.tmdb.org/t/p/w185/lkQmGKoC996jgcJ6lBbbRayjl5J.jpg"
+        },
+        {
+            "name": "Betsy Blue-English",
+            "character": "Rachel",
+            "image": "https://image.tmdb.org/t/p/w185/bmsIruL18XXxkFqlK5BKt6WllKz.jpg"
+        },
+        {
+            "name": "Dane Whyte O'Hara",
+            "character": "Brad",
+            "image": "https://image.tmdb.org/t/p/w185/yNmVq7CaixCk4N9eOpb3BCQ5XAH.jpg"
+        },
+        {
+            "name": "Kaja Chan",
+            "character": "Chen",
+            "image": "https://image.tmdb.org/t/p/w185/uOfFVTPkkaNvCgBoDFuzlFoAyhm.jpg"
+        },
+        {
+            "name": "Georgina Leonidas",
+            "character": "Yasmin",
+            "image": "https://image.tmdb.org/t/p/w185/1xjHlxkxxAh7qltWhz6Ko03Nkd8.jpg"
+        },
+        {
+            "name": "Hanneke Talbot",
+            "character": "Paula",
+            "image": "https://image.tmdb.org/t/p/w185/cPvaCSaPbFCqc86FHLFGscjRLuz.jpg"
+        },
+        {
+            "name": "Anton Trendafilov",
+            "character": "Sickly Old Man",
+            "image": "https://image.tmdb.org/t/p/w185/fjuJLlvq7cSAAHpgvXgpoYtJaMv.jpg"
+        },
+        {
+            "name": "Asa Ali",
+            "character": "Taylor",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Boadicea Ricketts",
+            "character": "Lauren",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "y-nf8hUFd98"
+},
+    {
     "title": "23 000 Lives",
     "year": "2026",
     "desc": "تُبحر مجموعة من الشباب في اتجاه البحر المتوسط لإنقاذ أرواح اللاجئين... وهي مهمة تختبر مفاهيمهم الشخصية عن القانون والعدالة.",
