@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2022",
     "desc": "يحتفل مجموعة من الشباب في العشرينات من العمر بإقامة حفل في منزل عائلي بعيد، وسرعان ما تنقلب الأمور حينما يتعرض أحدهم للقتل ويتسلل الشك لقلوب الجميع.",
     "poster": "https://image.tmdb.org/t/p/w500/4hgp9RDCFKTnlEX9UcqhU5cIAEM.jpg",
-    "hdUrl": "https://streamtape.com/e/yj27WPbkboh1Gqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/RBOW6Y9yvKuB1b/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/yj27WPbkboh1Gqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.1",
     "genre": "كوميديا غموض رعب",
