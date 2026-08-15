@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2024",
     "desc": "استكشفوا رحلة الصعود غير المرتقبة لملك أرض العزة المحبوب.  موفاسا، الشبل الضائع وحيدًا، يلتقي بأسد متعاطف يُدعى تاكا، وريث السلالة الملكية. يُطلق هذا اللقاء الصدفي رحلةً طويلةً لمجموعة من المنبوذين يبحثون عن مصيرهم.",
     "poster": "https://image.tmdb.org/t/p/w500/eheaWJVqU5DiElOm5Nfbu0eKqoj.jpg",
-    "hdUrl": "https://streamtape.com/e/mYmgAKgxVefbbWB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/XkgOqpj8LXtDej7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/mYmgAKgxVefbbWB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.3",
     "genre": "مغامرة عائلي رسوم متحركة",
