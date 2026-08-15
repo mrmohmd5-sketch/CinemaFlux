@@ -2,9 +2,9 @@ const globalMoviesData = [
     {
     "title": "Striking Rescue",
     "year": "2024",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول خبير أمني ومقاتل سابق يجد نفسه في مهمة خطيرة لإنقاذ رهائن أبرياء بعد تعرضهم للخطف على يد منظمة إجرامية مسلحة، فيخوض مواجهات شرسة وقتالاً عنيفاً لإنقاذهم وكشف المؤامرة في إطار من الحركة والإثارة والتشويق .",
     "poster": "https://image.tmdb.org/t/p/w500/npLvwol2oZGLc0VeYYxJ72KXYwY.jpg",
-    "hdUrl": "https://streamtape.com/e/7kD1aoYYaKi4dp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/qvRMqagLQAuzq6m/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/7kD1aoYYaKi4dp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.5",
     "genre": "حركة جريمة إثارة دراما",
@@ -67,7 +67,7 @@ const globalMoviesData = [
     {
     "title": "The Truthers",
     "year": "2026",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول مجموعة من الباحثين ومتبني نظريات المؤامرة يغوصون في أسرار واقعة غامضة ومعقدة، ليكتشفوا خيوط مؤامرة كبرى تضعهم في مواجهة مباشرة مع جهات نافذة تحاول إسكاتهم، وتتوالى الأحداث في إطار مشوق يجمع بين الغموض والإثارة وصراع كشف الحقيقة .",
     "poster": "https://image.tmdb.org/t/p/w500/pUvs1iFFMDy3sNp5dNmkRak1oxD.jpg",
     "hdUrl": "https://streamtape.com/e/D9AW8AD3RwuLoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/D9AW8AD3RwuLoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
