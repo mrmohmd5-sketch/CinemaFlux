@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Descendants: Wicked Wonderland",
+    "year": "2026",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/s7XeWOhaI1DK5Zxtc6xOf2T71Gc.jpg",
+    "hdUrl": "https://streamtape.com/e/q9lbAbj902HzdoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/q9lbAbj902HzdoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "فيلم تلفازي عائلي فانتازيا مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kylie Cantrall",
+            "character": "Red",
+            "image": "https://image.tmdb.org/t/p/w185/A2onyG1HcYgcmKrxZKSX80g9eY0.jpg"
+        },
+        {
+            "name": "Malia Baker",
+            "character": "Chloe",
+            "image": "https://image.tmdb.org/t/p/w185/sHaoKRA4VGmmd8b4fTEwrBr9x3m.jpg"
+        },
+        {
+            "name": "Liamani Segura",
+            "character": "Pink",
+            "image": "https://image.tmdb.org/t/p/w185/jqjmZQwrYQNj9QModC9HoEfF3N2.jpg"
+        },
+        {
+            "name": "Rita Ora",
+            "character": "Queen of Hearts",
+            "image": "https://image.tmdb.org/t/p/w185/tti3t4tDPt0LgSfY2vBsR5rofn0.jpg"
+        },
+        {
+            "name": "Brandy Norwood",
+            "character": "Cinderella",
+            "image": "https://image.tmdb.org/t/p/w185/ie1IH8LQI3aGzke4FoYRbcdHv88.jpg"
+        },
+        {
+            "name": "Leonardo Nam",
+            "character": "Maddox Hatter",
+            "image": "https://image.tmdb.org/t/p/w185/yKL70EoAdjJV2JI2CN1Dr5qzAlJ.jpg"
+        },
+        {
+            "name": "Alexandro Byrd",
+            "character": "Luis Madrigal",
+            "image": "https://image.tmdb.org/t/p/w185/aUsMXqVtRqlYibOJqol6LOrneI0.jpg"
+        },
+        {
+            "name": "Brendon Tremblay",
+            "character": "Max Hatter",
+            "image": "https://image.tmdb.org/t/p/w185/kxp4g2ZxzlCjJkzTMOd3TUGhZqU.jpg"
+        },
+        {
+            "name": "Kiara Romero",
+            "character": "Hazel Hook",
+            "image": "https://image.tmdb.org/t/p/w185/p9LGO09tpl6aqy0z4BEPWaztFJ6.jpg"
+        },
+        {
+            "name": "Melanie Paxson",
+            "character": "Fairy Godmother",
+            "image": "https://image.tmdb.org/t/p/w185/bCrs1WqTEFY1muwuCfKqrCyPhu7.jpg"
+        }
+    ],
+    "trailerKey": "0Gg7x3xBqBU",
+    "featured": true
+},
+    {
     "title": "Train to Busan",
     "year": "2016",
     "desc": "قصة (سوك وو) وابنته (سوو آن) اللذان يصعدان إلى القطار الكوري السريع الذي سيقلهم من (سول) إلى (بوسان)، لكن في لحظة مغادرتهم، تمتلئ محطة القطار بالموتى الأحياء.",
