@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Havoc",
+    "year": "2025",
+    "desc": "حين تخرج سرقة مخدرات عن نطاق السيطرة بشكل مميت، يشقّ شرطي منهك طريقه عبر عالم الإجرام في مدينة فاسدة لإنقاذ ابن رجل سياسي.",
+    "poster": "https://image.tmdb.org/t/p/w500/iyHcZBliPWkhsn8TAHgGSrAJJwj.jpg",
+    "hdUrl": "https://streamtape.com/e/L328MdKRwbu6PJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/L328MdKRwbu6PJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "حركة جريمة إثارة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tom Hardy",
+            "character": "Walker",
+            "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+        },
+        {
+            "name": "Jessie Mei Li",
+            "character": "Ellie",
+            "image": "https://image.tmdb.org/t/p/w185/3OREEt5tcqkVNMuaino7qA6hSWG.jpg"
+        },
+        {
+            "name": "Timothy Olyphant",
+            "character": "Vincent",
+            "image": "https://image.tmdb.org/t/p/w185/7pHmRHE2wBNC9cBgNIRCBqFLoyZ.jpg"
+        },
+        {
+            "name": "Forest Whitaker",
+            "character": "Lawrence Beaumont",
+            "image": "https://image.tmdb.org/t/p/w185/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg"
+        },
+        {
+            "name": "Justin Cornwell",
+            "character": "Charlie",
+            "image": "https://image.tmdb.org/t/p/w185/xFmMBP5qtAiLDpbrziXOYdAkK7.jpg"
+        },
+        {
+            "name": "Quelin Sepulveda",
+            "character": "Mia",
+            "image": "https://image.tmdb.org/t/p/w185/oNXfeaVbilHgKafs2ovn9XffG3g.jpg"
+        },
+        {
+            "name": "Luis Guzmán",
+            "character": "Raul",
+            "image": "https://image.tmdb.org/t/p/w185/kSdxUckOJj9R5VKrLUnRy14YhNV.jpg"
+        },
+        {
+            "name": "Sunny Pang",
+            "character": "Ching",
+            "image": "https://image.tmdb.org/t/p/w185/tEhFEmOLwnoHcX0PJhzSLWr0Dw2.jpg"
+        },
+        {
+            "name": "Yeo Yann Yann",
+            "character": "Tsui's Mother",
+            "image": "https://image.tmdb.org/t/p/w185/ncOxEFlrrR35kVZW5MgA1uGTUMx.jpg"
+        },
+        {
+            "name": "Michelle Waterson-Gomez",
+            "character": "Assassin",
+            "image": "https://image.tmdb.org/t/p/w185/5zPZYIIGXUmeS0QwmAuCQBSGIGV.jpg"
+        }
+    ],
+    "trailerKey": "qnxUIWnJYXk"
+},
+    {
     "title": "Bodies Bodies Bodies",
     "year": "2022",
     "desc": "يحتفل مجموعة من الشباب في العشرينات من العمر بإقامة حفل في منزل عائلي بعيد، وسرعان ما تنقلب الأمور حينما يتعرض أحدهم للقتل ويتسلل الشك لقلوب الجميع.",
