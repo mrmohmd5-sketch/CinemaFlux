@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2026",
     "desc": "تُبحر مجموعة من الشباب في اتجاه البحر المتوسط لإنقاذ أرواح اللاجئين... وهي مهمة تختبر مفاهيمهم الشخصية عن القانون والعدالة.",
     "poster": "https://image.tmdb.org/t/p/w500/fl84ocsxe3Lib5BGUhO0lFjDbDK.jpg",
-    "hdUrl": "https://streamtape.com/e/3OmPZpG70eIdkVA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/xXoPWxq88DIlko/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/3OmPZpG70eIdkVA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "5.9",
     "genre": "دراما",
@@ -66,7 +66,7 @@ const globalMoviesData = [
     {
     "title": "No One Killed Jessica",
     "year": "2011",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول مقتل عارضة أزياء شابة برصاص ابن سياسي نافذ لرفضها تقديم مشروب له، وبعد تبرئة القاتل بسبب نفوذ عائلته وفساد النظام، تتحد شقيقة الضحية مع صحفية تلفزيونية جريئة لإشعال الرأي العام والمطالبة بالعدالة في إطار درامي تشويقي مقتبس من قصة حقيقية .",
     "poster": "https://image.tmdb.org/t/p/w500/oIFJXzzfG2sRxCn1T03WVN0gl9v.jpg",
     "hdUrl": "https://streamtape.com/e/7w0qpVwQBAfAgbR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/7w0qpVwQBAfAgbR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
