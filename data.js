@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Spectacular Now",
+    "year": "2013",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/obDS8pTWVWZiNAaTyfIFWYZbRsZ.jpg",
+    "hdUrl": "https://streamtape.com/e/BOAwJqdwdeumAm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BOAwJqdwdeumAm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "كوميديا دراما رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Miles Teller",
+            "character": "Sutter Keely",
+            "image": "https://image.tmdb.org/t/p/w185/kDf3sW3USjEBDQ3Ua7lbwOfwty6.jpg"
+        },
+        {
+            "name": "Shailene Woodley",
+            "character": "Aimee Finecky",
+            "image": "https://image.tmdb.org/t/p/w185/tqNlTcDxDFQOQi0GpEtx0lqQyWt.jpg"
+        },
+        {
+            "name": "Masam Holden",
+            "character": "Ricky Mehlinger",
+            "image": "https://image.tmdb.org/t/p/w185/9PUntIsbx4YxEbQx9o7VadHEOWs.jpg"
+        },
+        {
+            "name": "Kaitlyn Dever",
+            "character": "Krystal Krittenbrink",
+            "image": "https://image.tmdb.org/t/p/w185/np5rBCFRdeS1sXePL8uY09ktoC4.jpg"
+        },
+        {
+            "name": "Brie Larson",
+            "character": "Cassidy Roy",
+            "image": "https://image.tmdb.org/t/p/w185/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+        },
+        {
+            "name": "Kyle Chandler",
+            "character": "Tommy Keely",
+            "image": "https://image.tmdb.org/t/p/w185/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
+        },
+        {
+            "name": "Jennifer Jason Leigh",
+            "character": "Sara Keely",
+            "image": "https://image.tmdb.org/t/p/w185/7DbG2AO3nygHAkNC866HLPKkxv9.jpg"
+        },
+        {
+            "name": "Mary Elizabeth Winstead",
+            "character": "Holly Keely",
+            "image": "https://image.tmdb.org/t/p/w185/vQn6IGsClpyhV6KTba9EDqSK7e2.jpg"
+        },
+        {
+            "name": "Karen Strassman",
+            "character": "Additional Voices (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/6fLPatm6IhYu3dtje3zRPXXgRfs.jpg"
+        },
+        {
+            "name": "Andre Royo",
+            "character": "Mr. Aster",
+            "image": "https://image.tmdb.org/t/p/w185/tJzftaUtVvZs2RkFt2iQlQ5QWEh.jpg"
+        }
+    ],
+    "trailerKey": "jG9-Qtuga30"
+},
+    {
     "title": "Disclosure Day",
     "year": "2026",
     "desc": "يصبح خبير في الأمن السيبراني مُبلغ عن المخالفات بعد اكتشافه أسرارًا عن كائنات فضائية، فتطاردُه إحدى الشركات. وفي نفس الوقت، تتعاون معه خبيرة أرصاد جوية تواجه ظواهر غريبة ليثبتا وجود حياة تتجاوز فهمنا.",
