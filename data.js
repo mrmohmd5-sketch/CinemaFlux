@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Train to Busan",
+    "year": "2016",
+    "desc": "قصة (سوك وو) وابنته (سوو آن) اللذان يصعدان إلى القطار الكوري السريع الذي سيقلهم من (سول) إلى (بوسان)، لكن في لحظة مغادرتهم، تمتلئ محطة القطار بالموتى الأحياء.",
+    "poster": "https://image.tmdb.org/t/p/w500/otaOgK1RQVRAU7hwsbBMQhNCQ0F.jpg",
+    "hdUrl": "https://streamtape.com/e/ZrRyKlojRMIqXdg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ZrRyKlojRMIqXdg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "حركة رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Gong Yoo",
+            "character": "Seok-woo",
+            "image": "https://image.tmdb.org/t/p/w185/ocGoFb6TrK3uWGXt4WnuibUG1vD.jpg"
+        },
+        {
+            "name": "Kim Su-an",
+            "character": "Soo-ahn",
+            "image": "https://image.tmdb.org/t/p/w185/hmPZhhoeUY89Rys6LrsjpTMeoEN.jpg"
+        },
+        {
+            "name": "Jung Yu-mi",
+            "character": "Sung-gyeong",
+            "image": "https://image.tmdb.org/t/p/w185/4MGol78RZ9yakZdBAwnLUVgwO6F.jpg"
+        },
+        {
+            "name": "Don Lee",
+            "character": "Sang-hwa",
+            "image": "https://image.tmdb.org/t/p/w185/ckxoXz3l4mCcHEIRaqUc7oGoIFg.jpg"
+        },
+        {
+            "name": "Choi Woo-shik",
+            "character": "Yeong-gook",
+            "image": "https://image.tmdb.org/t/p/w185/hRDiuKWwe156zRjEu826eci7H3r.jpg"
+        },
+        {
+            "name": "An So-hee",
+            "character": "Jin-hee",
+            "image": "https://image.tmdb.org/t/p/w185/phQLXdKnWggfiqlvUKj86Kq0T1q.jpg"
+        },
+        {
+            "name": "Kim Eui-sung",
+            "character": "Yong-suk",
+            "image": "https://image.tmdb.org/t/p/w185/y7T2LJyorTK2NDk10yeTINWKrWR.jpg"
+        },
+        {
+            "name": "Ye Su-jeong",
+            "character": "In-gil",
+            "image": "https://image.tmdb.org/t/p/w185/rwGPhu8Ge36eMkrOlzfdKKFargw.jpg"
+        },
+        {
+            "name": "Park Myung-shin",
+            "character": "Jong-gil",
+            "image": "https://image.tmdb.org/t/p/w185/4VXJXafwdzVMugBeTtTHf6RtDKS.jpg"
+        },
+        {
+            "name": "Choi Gwi-hwa",
+            "character": "Homeless Man",
+            "image": "https://image.tmdb.org/t/p/w185/aYiS6jQNNmOSfzcobDs12pLOOjj.jpg"
+        }
+    ],
+    "trailerKey": "tEKv5tCDV1o",
+    "featured": true
+},
+    {
     "title": "The Other Boleyn Girl",
     "year": "2008",
     "desc": "قصة فخمة وحسية عن المؤامرات والرومانسية والخيانة تدور أحداثها على خلفية لحظة حاسمة في التاريخ الأوروبي: أختان جميلتان ، آن وماري بولين ، مدفوعان بطموح عائلتهما الأعمى ، يتنافسان على حب الملك الوسيم والعاطفي هنري ثامنا.",
