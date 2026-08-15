@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Ninja Assassin",
+    "year": "2009",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/ipJ4mgqse6uoTRsDyU3TXmva1rt.jpg",
+    "hdUrl": "https://streamtape.com/e/g3d8BPzJakS44Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/g3d8BPzJakS44Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "حركة مغامرة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Rain",
+            "character": "Raizo",
+            "image": "https://image.tmdb.org/t/p/w185/aXOjIBUxu7fmBOxTJcgYmtTKD1D.jpg"
+        },
+        {
+            "name": "Naomie Harris",
+            "character": "Mika",
+            "image": "https://image.tmdb.org/t/p/w185/41TVAcYqKKF7PGf3x7QfaLvkLSW.jpg"
+        },
+        {
+            "name": "Ben Miles",
+            "character": "Maslow",
+            "image": "https://image.tmdb.org/t/p/w185/mT3BqoFUkyktXLvefQA6VxaGHJz.jpg"
+        },
+        {
+            "name": "Rick Yune",
+            "character": "Takeshi",
+            "image": "https://image.tmdb.org/t/p/w185/iC6qDOLaL7osc4eCZlm9AT9Ffxi.jpg"
+        },
+        {
+            "name": "Sho Kosugi",
+            "character": "Ozunu",
+            "image": "https://image.tmdb.org/t/p/w185/cdoP2qnJILJlWT4xvYDxg2doaf6.jpg"
+        },
+        {
+            "name": "Randall Duk Kim",
+            "character": "Tattoo Master",
+            "image": "https://image.tmdb.org/t/p/w185/31T1gSUP67F2qPI3x6uLJn3Sat7.jpg"
+        },
+        {
+            "name": "Sung Kang",
+            "character": "Hollywood",
+            "image": "https://image.tmdb.org/t/p/w185/ox4ti0WmpJoN19n3iYJ2T2vHP5f.jpg"
+        },
+        {
+            "name": "Lee Joon",
+            "character": "Teenage Raizo",
+            "image": "https://image.tmdb.org/t/p/w185/bF3Zg2vzl4wUnFgcPhcS1J3Csxe.jpg"
+        },
+        {
+            "name": "Anna Sawai",
+            "character": "Teenage Kiriko",
+            "image": "https://image.tmdb.org/t/p/w185/6uFaCOupDTPRnTiedveTUvjOikC.jpg"
+        },
+        {
+            "name": "Kai Fung Rieck",
+            "character": "Teenage Takeshi",
+            "image": "https://image.tmdb.org/t/p/w185/mqS7nagL7Dp1QK1152eyfT1RjOI.jpg"
+        }
+    ],
+    "trailerKey": "H6tg0YwLJQQ"
+},
+    {
     "title": "My Daughter Is a Zombie",
     "year": "2025",
     "desc": "تدور احداث الفيلم حين “لي جونغ هوان”، مدرّب حيوانات يعيش مع ابنته المراهقة “سو آه” الشغوفة بالرقص، يجد نفسه في صراع جديد بعدما تُصاب بفيروس الزومبي. يحاول حمايتها بأخذها إلى قريته الساحلية حيث تعيش والدته، ليكتشف أنها ما زالت تستجيب للرقص وحنان جدتها. رافضًا الاستسلام، يستخدم خبرته في تدريب النمور ليبدأ رحلة صعبة ومؤثرة في ترويض ابنته الزومبي، في مزيج من الرعب والدفء والكوميديا.",
