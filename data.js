@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Eye for an Eye",
+    "year": "2022",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/vtiu0UtizC0l91s5fVwZrOfoDnZ.jpg",
+    "hdUrl": "https://streamtape.com/e/AwJPbrgXqvcXpoz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/AwJPbrgXqvcXpoz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "حركة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Xie Miao",
+            "character": "Cheng Xiazi",
+            "image": "https://image.tmdb.org/t/p/w185/xdXmp28jBrv0r9FwLEKYTC36dnM.jpg"
+        },
+        {
+            "name": "Gao Weiman",
+            "character": "Ni Yan",
+            "image": "https://image.tmdb.org/t/p/w185/4n8XToC5mCFiEryIfy2qr2gEfEj.jpg"
+        },
+        {
+            "name": "Xiang Hao",
+            "character": "Yuwen Ying",
+            "image": "https://image.tmdb.org/t/p/w185/jK2ZdT9jkbH0nTjh0UqEAWSlmln.jpg"
+        },
+        {
+            "name": "Liu Ben",
+            "character": "He Qufeng",
+            "image": "https://image.tmdb.org/t/p/w185/v32cIOWmaTZCZAudnspC1eSOvIz.jpg"
+        },
+        {
+            "name": "Zhang Di",
+            "character": "Qin Niang",
+            "image": "https://image.tmdb.org/t/p/w185/h3xpbfvPCUMrrITE881qSIkE0ft.jpg"
+        },
+        {
+            "name": "Gao Yi",
+            "character": "Gao Fei",
+            "image": "https://image.tmdb.org/t/p/w185/8OGi0ZcWbVLhT1Dh3CSdBOvv8P6.jpg"
+        },
+        {
+            "name": "Zhang Haosen",
+            "character": "Ni Jun",
+            "image": "https://image.tmdb.org/t/p/w185/pluJ4QzWSMtcvFfGDEtyjbF50YG.jpg"
+        },
+        {
+            "name": "Kang Xuan",
+            "character": "Hei Jiao",
+            "image": "https://image.tmdb.org/t/p/w185/5BN7NY1wlZAWcd7kW3GxjLzNhU1.jpg"
+        },
+        {
+            "name": "Hou Junjie",
+            "character": "Brother Hua",
+            "image": "https://image.tmdb.org/t/p/w185/yDmTVl2m4z7EHvHzKlNYkK5INfk.jpg"
+        },
+        {
+            "name": "Yin Jian",
+            "character": "Pan San",
+            "image": "https://image.tmdb.org/t/p/w185/agYEqIc83Ejfyjha4hKsIeVuEmc.jpg"
+        }
+    ],
+    "trailerKey": "z5CnlQoRctk"
+},
+    {
     "title": "Killers",
     "year": "2010",
     "desc": "عندما يتزوج قاتل من النخبة من أزيز كمبيوتر جميل بعد قصة حب عاصفة ، يتخلى عن البندقية ويستقر مع عروسه الجديدة. أي حتى يعلم أن شخصًا ما من ماضيه قد وضع عقدًا على حياته.",
