@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Killers",
+    "year": "2010",
+    "desc": "عندما يتزوج قاتل من النخبة من أزيز كمبيوتر جميل بعد قصة حب عاصفة ، يتخلى عن البندقية ويستقر مع عروسه الجديدة. أي حتى يعلم أن شخصًا ما من ماضيه قد وضع عقدًا على حياته.",
+    "poster": "https://image.tmdb.org/t/p/w500/9VB8vGV4Aznf6GUc9C7a1EzGHLz.jpg",
+    "hdUrl": "https://streamtape.com/e/Kyo214GQB0hDMA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Kyo214GQB0hDMA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.0",
+    "genre": "حركة كوميديا إثارة رومنسية",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ashton Kutcher",
+            "character": "Spencer Aimes",
+            "image": "https://image.tmdb.org/t/p/w185/qJlM29jTncF9GpmE0PPVwbp5iPB.jpg"
+        },
+        {
+            "name": "Katherine Heigl",
+            "character": "Jen Kornfeldt",
+            "image": "https://image.tmdb.org/t/p/w185/1yYJI5qtkeJMZo9JU4KMVuO2Hy9.jpg"
+        },
+        {
+            "name": "Tom Selleck",
+            "character": "Mr. Kornfeldt",
+            "image": "https://image.tmdb.org/t/p/w185/uhrK7HBzIVPFTNgp08KHuihadMS.jpg"
+        },
+        {
+            "name": "Catherine O'Hara",
+            "character": "Mrs. Kornfeldt",
+            "image": "https://image.tmdb.org/t/p/w185/gI2RyymLJ9ZrhEyJSD5EqSvFpCX.jpg"
+        },
+        {
+            "name": "Katheryn Winnick",
+            "character": "Vivian",
+            "image": "https://image.tmdb.org/t/p/w185/vQSqH3ybDWZHZIqX4NZKhOCXAhQ.jpg"
+        },
+        {
+            "name": "Kevin Sussman",
+            "character": "Mac Bailey",
+            "image": "https://image.tmdb.org/t/p/w185/tLqrE9uz6GKoeoDC7LU7cE6oF2Q.jpg"
+        },
+        {
+            "name": "Lisa Ann Walter",
+            "character": "Olivia",
+            "image": "https://image.tmdb.org/t/p/w185/56vu6e7zmXLVwDG7eVa9phEe4gA.jpg"
+        },
+        {
+            "name": "Casey Wilson",
+            "character": "Kristen",
+            "image": "https://image.tmdb.org/t/p/w185/byeNihBQQUSWtEUpQMFnnQ0aEOV.jpg"
+        },
+        {
+            "name": "Rob Riggle",
+            "character": "Henry",
+            "image": "https://image.tmdb.org/t/p/w185/hQgOp8vWxl6KPZbqzKSSL4k6G1j.jpg"
+        },
+        {
+            "name": "Martin Mull",
+            "character": "Holbrook",
+            "image": "https://image.tmdb.org/t/p/w185/wthyliVHLrgvKUIRI1WXfEw9pjL.jpg"
+        }
+    ],
+    "trailerKey": "8e4QMUmnXEA"
+},
+    {
     "title": "Soulm8te",
     "year": "2026",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
