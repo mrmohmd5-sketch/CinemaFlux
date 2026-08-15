@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Young Washington",
+    "year": "2026",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+    "hdUrl": "https://streamtape.com/e/8vKr3jXOajC4G0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/8vKr3jXOajC4G0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "تاريخ حرب دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "William Franklyn-Miller",
+            "character": "George Washington",
+            "image": "https://image.tmdb.org/t/p/w185/zRTfdQgLk6yy9m6DQjX72qJ0MRs.jpg"
+        },
+        {
+            "name": "Ben Kingsley",
+            "character": "Robert Dinwiddie",
+            "image": "https://image.tmdb.org/t/p/w185/k3Dmu49B2akwDvgqy52MOxznI59.jpg"
+        },
+        {
+            "name": "Mary-Louise Parker",
+            "character": "Mary Washington",
+            "image": "https://image.tmdb.org/t/p/w185/ljaNmBF31BbOvrrawms7vCsIqBP.jpg"
+        },
+        {
+            "name": "Leo Hanna",
+            "character": "Christopher Gist",
+            "image": "https://image.tmdb.org/t/p/w185/td9z5ch8GqtGBLRexvNMNCaNyVx.jpg"
+        },
+        {
+            "name": "Mia Rodgers",
+            "character": "Sally Cary",
+            "image": "https://image.tmdb.org/t/p/w185/6KtudVDOmmwAO4TtPjq0TYyy91O.jpg"
+        },
+        {
+            "name": "Joel Smallbone",
+            "character": "William Fairfax",
+            "image": "https://image.tmdb.org/t/p/w185/jgmSh04jRbSxGlBTMJ9Wo4CFDMB.jpg"
+        },
+        {
+            "name": "Kelsey Grammer",
+            "character": "Lord Fairfax",
+            "image": "https://image.tmdb.org/t/p/w185/5zik4VJim6YTSWDjC7tkp13wxUp.jpg"
+        },
+        {
+            "name": "Andy Serkis",
+            "character": "General Edward Braddock",
+            "image": "https://image.tmdb.org/t/p/w185/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg"
+        },
+        {
+            "name": "Michael Benz",
+            "character": "Thomas Gage",
+            "image": "https://image.tmdb.org/t/p/w185/qb3oEBOpc11maO2CeM7SgbfWQEq.jpg"
+        },
+        {
+            "name": "Jonno Davies",
+            "character": "James Mackay",
+            "image": "https://image.tmdb.org/t/p/w185/oI68xvcPqZjRIfteTbtT3jAVUV1.jpg"
+        }
+    ],
+    "trailerKey": "7ZdiadB5vpc",
+    "featured": true
+},
+    {
     "title": "Dune: Part Two",
     "year": "2024",
     "desc": "تابع الرحلة الأسطورية لبول أتريدس وهو يتحد مع تشاني وفريمن أثناء وجوده في طريق حربي للانتقام من المتآمرين الذين دمروا عائلته. في مواجهة الاختيار بين حب حياته ومصير الكون المعروف ، يسعى بولس إلى منع مستقبل رهيب لا يستطيع التنبؤ به سواه.",
