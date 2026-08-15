@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Other Boleyn Girl",
+    "year": "2008",
+    "desc": "قصة فخمة وحسية عن المؤامرات والرومانسية والخيانة تدور أحداثها على خلفية لحظة حاسمة في التاريخ الأوروبي: أختان جميلتان ، آن وماري بولين ، مدفوعان بطموح عائلتهما الأعمى ، يتنافسان على حب الملك الوسيم والعاطفي هنري ثامنا.",
+    "poster": "https://image.tmdb.org/t/p/w500/q2lgC8mmAltWTkbqPM8n5EYF4XL.jpg",
+    "hdUrl": "https://streamtape.com/e/KerjYW9vzlh0G06/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/KerjYW9vzlh0G06/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "دراما رومنسية تاريخ",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Natalie Portman",
+            "character": "Anne Boleyn",
+            "image": "https://image.tmdb.org/t/p/w185/edPU5HxncLWa1YkgRPNkSd68ONG.jpg"
+        },
+        {
+            "name": "Scarlett Johansson",
+            "character": "Mary Boleyn",
+            "image": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+            "name": "Eric Bana",
+            "character": "Henry Tudor",
+            "image": "https://image.tmdb.org/t/p/w185/l9yoDgw3YFC2gMD1HTo5djGOwSY.jpg"
+        },
+        {
+            "name": "Jim Sturgess",
+            "character": "George Boleyn",
+            "image": "https://image.tmdb.org/t/p/w185/acDJi0yEAMy82wmngFrJ0KjVRm2.jpg"
+        },
+        {
+            "name": "Mark Rylance",
+            "character": "Sir Thomas Boleyn",
+            "image": "https://image.tmdb.org/t/p/w185/bztEZRyXrvW3Pg1fexNASXlZrq7.jpg"
+        },
+        {
+            "name": "Kristin Scott Thomas",
+            "character": "Lady Elizabeth Boleyn",
+            "image": "https://image.tmdb.org/t/p/w185/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg"
+        },
+        {
+            "name": "David Morrissey",
+            "character": "Thomas Howard - Duke of Norfolk",
+            "image": "https://image.tmdb.org/t/p/w185/gj7ENB9pBobXA3wMfw6uKcWr2GM.jpg"
+        },
+        {
+            "name": "Benedict Cumberbatch",
+            "character": "William Carey",
+            "image": "https://image.tmdb.org/t/p/w185/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+        },
+        {
+            "name": "Oliver Coleman",
+            "character": "Henry Percy",
+            "image": "https://image.tmdb.org/t/p/w185/uU7Jb9bJSbck9Is7negHAhtL5c2.jpg"
+        },
+        {
+            "name": "Ana Torrent",
+            "character": "Katherine of Aragon",
+            "image": "https://image.tmdb.org/t/p/w185/ozgJiY7MswNsvmGkKtYt9qZJUuu.jpg"
+        }
+    ],
+    "trailerKey": "2YoiWr-yvws"
+},
+    {
     "title": "The Dink",
     "year": "2026",
     "desc": "'داستي بويد'، المطرق'، محترف التنس الفاشل، في حاجة ماسّة إلى الفوز. سعياً منه إلى إنقاذ ناد ريفيّ متعثّر ونيل احترام أبيه، يحنث 'داستي' نذراً مقدّساً ويفعل ما لا يمكن تصوّره: يلعب البيكلبول.",
