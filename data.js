@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Minions & Monsters",
+    "year": "2026",
+    "desc": "هذه هي القصة الصاخبة والمضحكة والحقيقية تمامًا عن كيفية غزو المينيونز لهوليوود، وكيف أصبحوا نجومًا سينمائيين، وخسروا كل شيء، وأطلقوا العنان للوحوش على العالم، ثم تكاتفوا معًا لمحاولة إنقاذ الكوكب من الفوضى التي أحدثوها للتو",
+    "poster": "https://image.tmdb.org/t/p/w500/uYs4IJdDQvnrNvVtYBNmjiHqbmF.jpg",
+    "hdUrl": "https://streamtape.com/e/BkZVQGgvZBIyepk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BkZVQGgvZBIyepk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "مغامرة رسوم متحركة كوميديا عائلي فانتازيا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Pierre Coffin",
+            "character": "James / Henry / Ed / Dick / The Minions (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/eAA9uWRqHlm1LT3nZfXb7UuPfVb.jpg"
+        },
+        {
+            "name": "Trey Parker",
+            "character": "Goomi (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/3tJe8t90lrcQzXj9cRcpW9wmj2c.jpg"
+        },
+        {
+            "name": "Christoph Waltz",
+            "character": "Max (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/jMvLGCVXLaBqjRLf5olyvEucZob.jpg"
+        },
+        {
+            "name": "Allison Janney",
+            "character": "Olivia (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
+        },
+        {
+            "name": "Jesse Eisenberg",
+            "character": "Dort (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/yYhwWRcxDHTn63gSEF1vnDAD7cD.jpg"
+        },
+        {
+            "name": "Jeff Bridges",
+            "character": "Frank / Elwood (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
+        },
+        {
+            "name": "Zoey Deutch",
+            "character": "Debbie (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/csmSAm3vpJj9lB5vb5fTbRqOw9C.jpg"
+        },
+        {
+            "name": "Bobby Moynihan",
+            "character": "Phillips (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/gOvwNz5joi5yWJ7dAhuF8WA2aas.jpg"
+        },
+        {
+            "name": "Phil LaMarr",
+            "character": "Howard (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/xP2kNlsmXtzXq0geutflO4K9mSE.jpg"
+        },
+        {
+            "name": "George Lucas",
+            "character": "George Lucas (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/mDLDvsx8PaZoEThkBdyaG1JxPdf.jpg"
+        }
+    ],
+    "trailerKey": "SpqNF6nrL58",
+    "featured": true
+},
+    {
     "title": "EXIT",
     "year": "2019",
     "desc": "تدور أحداث العمل في إطار من الحركة والكوميديا، حيث يحاول متسلق جبال محترف إنقاذ الأمور في منطقة سيول بكوريا الجنوبية، حينما تحاصر المدينة بغاز أبيض غامض.",
