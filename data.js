@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Striking Rescue",
+    "year": "2024",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/npLvwol2oZGLc0VeYYxJ72KXYwY.jpg",
+    "hdUrl": "https://streamtape.com/e/7kD1aoYYaKi4dp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/7kD1aoYYaKi4dp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.5",
+    "genre": "حركة جريمة إثارة دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Tony Jaa",
+            "character": "Bai An",
+            "image": "https://image.tmdb.org/t/p/w185/wsGEaIscm7y0nvJK39rR6SnkuLr.jpg"
+        },
+        {
+            "name": "Eason Hung Chun-Ga",
+            "character": "Wu Zheng",
+            "image": "https://image.tmdb.org/t/p/w185/tAuACGpzSJcBcK4F4u0ZYLW3uSz.jpg"
+        },
+        {
+            "name": "Xing Yu",
+            "character": "Long Tai",
+            "image": "https://image.tmdb.org/t/p/w185/tsbmvldckYiFPeDfFSvgzNrJsUK.jpg"
+        },
+        {
+            "name": "Philip Keung Ho-Man",
+            "character": "He Yinghao",
+            "image": "https://image.tmdb.org/t/p/w185/sy07oaWguC4Q4c45dRkFuRTYld0.jpg"
+        },
+        {
+            "name": "Chen Duoyi",
+            "character": "He Ting",
+            "image": "https://image.tmdb.org/t/p/w185/9gSyALp7D3Rxvlk9HbPbqZ545uN.jpg"
+        },
+        {
+            "name": "Peng Bo",
+            "character": "Lu Ping",
+            "image": "https://image.tmdb.org/t/p/w185/iC4jHUEFIvfn8lBR7pamBTYQkdg.jpg"
+        },
+        {
+            "name": "Yu Bolin",
+            "character": "Sang Kang",
+            "image": "https://image.tmdb.org/t/p/w185/hHGBPgc5K134wuxgp9R0Zt2v0qb.jpg"
+        },
+        {
+            "name": "Mao Fan",
+            "character": "Clay",
+            "image": "https://image.tmdb.org/t/p/w185/mM07Oh9XREBoGBrPoB2PLGQrphT.jpg"
+        },
+        {
+            "name": "Ge Shuai",
+            "character": "Jiu Shu",
+            "image": "https://image.tmdb.org/t/p/w185/4OiuNELA9Ae1UOSVoZynnAJlDv3.jpg"
+        },
+        {
+            "name": "Zhao Leiqi",
+            "character": "Veterinary",
+            "image": "https://image.tmdb.org/t/p/w185/tTU0bvfi2aG5xQwweMn4k3JKte5.jpg"
+        }
+    ],
+    "trailerKey": "uXfzJb-IUrk",
+    "featured": true
+},
+    {
     "title": "The Truthers",
     "year": "2026",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
