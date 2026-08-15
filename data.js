@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Safe",
+    "year": "2012",
+    "desc": "يجد (رايت) نفسه مسئولًا عن الفتاة (ماي) البالغة من العمر اثنتى عشر عامًا، ويبحث عنها لصوص صينيون ومجموعة من الروس بسبب حيازتها معلومات سرية غاية في الأهمية ممثلة في كود رقمي لا يقدر بثمن، ووسط المطاردات التي تلاحقه يقرر إنقاذها مهما كلفه الأمر.",
+    "poster": "https://image.tmdb.org/t/p/w500/kOCpkoMUVae9UIf85gO71SyjLbW.jpg",
+    "hdUrl": "https://streamtape.com/e/W93Bl16aYQsAol/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/W93Bl16aYQsAol/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Statham",
+            "character": "Luke Wright",
+            "image": "https://image.tmdb.org/t/p/w185/pXGSq2UpcDE2NMF8LR56QZf5U1q.jpg"
+        },
+        {
+            "name": "Chris Sarandon",
+            "character": "Mayor Tremello",
+            "image": "https://image.tmdb.org/t/p/w185/jP92Lq3JHl8mbdxzcZ6PyCQDwa5.jpg"
+        },
+        {
+            "name": "James Hong",
+            "character": "Han Jiao",
+            "image": "https://image.tmdb.org/t/p/w185/v3lfw5aHOy0paOCx6WHiSnwzbH0.jpg"
+        },
+        {
+            "name": "Catherine Chan",
+            "character": "Mei",
+            "image": "https://image.tmdb.org/t/p/w185/e7Rt4fxC9U54RSmjpgwWoR6zXfc.jpg"
+        },
+        {
+            "name": "Robert John Burke",
+            "character": "Captain Wolf",
+            "image": "https://image.tmdb.org/t/p/w185/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg"
+        },
+        {
+            "name": "Anson Mount",
+            "character": "Alex Rosen",
+            "image": "https://image.tmdb.org/t/p/w185/A4YBdwnzJKRcZXfodjT4UalHOK9.jpg"
+        },
+        {
+            "name": "Reggie Lee",
+            "character": "Quan Chang",
+            "image": "https://image.tmdb.org/t/p/w185/93my9HnsFT5DFq9oY1nCJ8Ttv22.jpg"
+        },
+        {
+            "name": "Joseph Sikora",
+            "character": "Vassily Docheski",
+            "image": "https://image.tmdb.org/t/p/w185/lCsWDvqKYz1UFGRYN5chg5izZAu.jpg"
+        },
+        {
+            "name": "Igor Jijikine",
+            "character": "Chemyakin",
+            "image": "https://image.tmdb.org/t/p/w185/o0NBkPe5maLsQYCkU0zYedEXIoe.jpg"
+        },
+        {
+            "name": "Elissa Middleton",
+            "character": "Eve",
+            "image": "https://image.tmdb.org/t/p/w185/rUTYfbqDAkq7sqkNzdKTztW0xc3.jpg"
+        }
+    ],
+    "trailerKey": "s3kTkk4k_5Q"
+},
+    {
     "title": "No One Will Save You",
     "year": "2023",
     "desc": "تجد امرأة شابة منعزلة عن مجتمعها نفسها في مواجهة مجموعة من الكائنات الفضائية التي تهدد مستقبلها بينما تجبرها على التعامل مع ماضيها.",
