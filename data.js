@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "No One Will Save You",
+    "year": "2023",
+    "desc": "تجد امرأة شابة منعزلة عن مجتمعها نفسها في مواجهة مجموعة من الكائنات الفضائية التي تهدد مستقبلها بينما تجبرها على التعامل مع ماضيها.",
+    "poster": "https://image.tmdb.org/t/p/w500/ehGIDAMaYy6Eg0o8ga0oqflDjqW.jpg",
+    "hdUrl": "https://streamtape.com/e/gjvJrovp7PHGoM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/gjvJrovp7PHGoM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "رعب خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Kaitlyn Dever",
+            "character": "Brynn",
+            "image": "https://image.tmdb.org/t/p/w185/np5rBCFRdeS1sXePL8uY09ktoC4.jpg"
+        },
+        {
+            "name": "Elizabeth Kaluev",
+            "character": "Young Brynn",
+            "image": "https://image.tmdb.org/t/p/w185/8Gc97La1HoxUdcQn0v4PunDK51M.jpg"
+        },
+        {
+            "name": "Zack Duhame",
+            "character": "Mailman",
+            "image": "https://image.tmdb.org/t/p/w185/mI6sdZQaeHDi3jXinS4g1jizywk.jpg"
+        },
+        {
+            "name": "Lauren L. Murray",
+            "character": "Brynn's Mother",
+            "image": "https://image.tmdb.org/t/p/w185/2sfB6AgTC19FzruwS63MilwUk2a.jpg"
+        },
+        {
+            "name": "Geraldine Singer",
+            "character": "Mrs. Collins",
+            "image": "https://image.tmdb.org/t/p/w185/qqm2mlRUx7tHdc6DumugSscDALN.jpg"
+        },
+        {
+            "name": "Dane Rhodes",
+            "character": "Police Chief Collins",
+            "image": "https://image.tmdb.org/t/p/w185/dJ1DLOEKcFmZyAV3bg4Q1lbhtgE.jpg"
+        },
+        {
+            "name": "Evangeline Rose",
+            "character": "Young Maude",
+            "image": "https://image.tmdb.org/t/p/w185/1YBv1gtSpABcKDMRUtlcmnEjzAN.jpg"
+        },
+        {
+            "name": "Dari Lynn Griffin",
+            "character": "Maude",
+            "image": "https://image.tmdb.org/t/p/w185/BkJ4nt0xqRljEb0ybFVeFKEOZp.jpg"
+        },
+        {
+            "name": "Emani White",
+            "character": "Teenage Cashier",
+            "image": "https://image.tmdb.org/t/p/w185/7YSFiLwiH9W6tBcOhr8S3C8sECO.jpg"
+        },
+        {
+            "name": "Tenaj L. Jackson",
+            "character": "Woman at the Swings",
+            "image": "https://image.tmdb.org/t/p/w185/2iWCAuesQnofu3idnQGziJzW9Jq.jpg"
+        }
+    ],
+    "trailerKey": "IcA02w6rm44"
+},
+    {
     "title": "Holy Night: Demon Hunters",
     "year": "2025",
     "desc": "تغرق سيول في الفوضى مع ظهور شبكة إجرامية عبدة للشيطان. في نداء يائس للخلاص، تضطر الشرطة إلى تجنيد 'هولي نايت'، وهم ثلاثة من صائدي الشياطين المسلحين بقوى خارقة للطبيعة. فهل سيتمكن 'هولي نايت' من قهر حكم الشيطان وإعادة النظام إلى المدينة؟",
