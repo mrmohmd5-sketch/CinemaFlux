@@ -2,9 +2,9 @@ const globalMoviesData = [
     {
     "title": "Young Washington",
     "year": "2026",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول بدايات جورج واشنطن في شبابه خلال سنوات تكوينه الأولى، حيث يخوض تجارب عسكرية مبكرة وصراعات سياسية وشخصية حاسمة في البرية الأمريكية تسهم في صقل شخصيته القيادية وتضعه على طريق قيادة الثورة وبناء الأمة في إطار درامي تاريخي ملحمي. .",
     "poster": "https://image.tmdb.org/t/p/w500/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
-    "hdUrl": "https://streamtape.com/e/8vKr3jXOajC4G0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/mqBgv9WBrVSbxo4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/8vKr3jXOajC4G0/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.8",
     "genre": "تاريخ حرب دراما",
