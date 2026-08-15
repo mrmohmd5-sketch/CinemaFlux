@@ -1,5 +1,59 @@
 const globalMoviesData = [
     {
+    "title": "Murderer Report",
+    "year": "2025",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/iKhwQwfCwnqbi6C7wAojowaCEu0.jpg",
+    "hdUrl": "https://streamtape.com/e/VGlvPGwkRWcKlqj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/VGlvPGwkRWcKlqj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "دراما إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Cho Yeo-jeong",
+            "character": "Baek Sun-ju",
+            "image": "https://image.tmdb.org/t/p/w185/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg"
+        },
+        {
+            "name": "Jung Sung-il",
+            "character": "Young-hoon",
+            "image": "https://image.tmdb.org/t/p/w185/3VyIhJniatsImjmBJlkclPZJsEE.jpg"
+        },
+        {
+            "name": "Hwang Ji-ah",
+            "character": "Ye Rin",
+            "image": "https://image.tmdb.org/t/p/w185/U2fktGabDOTbEk7h1O9N4Qknqu.jpg"
+        },
+        {
+            "name": "Kim Tae-han",
+            "character": "Han Sang-woo",
+            "image": "https://image.tmdb.org/t/p/w185/fA4dcsmYY170jOFiRKF6Wuzsjcv.jpg"
+        },
+        {
+            "name": "Choi Su-im",
+            "character": "Young-hoon's wife",
+            "image": "https://image.tmdb.org/t/p/w185/3uC6hbbu7aE9jwCFau3hov01oT3.jpg"
+        },
+        {
+            "name": "Choi Gwang-il",
+            "character": "Detective Cho",
+            "image": "https://image.tmdb.org/t/p/w185/6vkA8s4XDPwZBRzNhN9xSLzb3II.jpg"
+        },
+        {
+            "name": "Kwon Oh-joong",
+            "character": "Gang leader",
+            "image": "https://image.tmdb.org/t/p/w185/yfjSEnVQMorX0iH1E8gvsJPSPf6.jpg"
+        },
+        {
+            "name": "Park Joo-young",
+            "character": "Woman",
+            "image": "https://image.tmdb.org/t/p/w185/rtNjueRvDwDlzoUdekM4MezSvxT.jpg"
+        }
+    ],
+    "trailerKey": "K7ScXpLhh6Y"
+},
+    {
     "title": "Minions & Monsters",
     "year": "2026",
     "desc": "هذه هي القصة الصاخبة والمضحكة والحقيقية تمامًا عن كيفية غزو المينيونز لهوليوود، وكيف أصبحوا نجومًا سينمائيين، وخسروا كل شيء، وأطلقوا العنان للوحوش على العالم، ثم تكاتفوا معًا لمحاولة إنقاذ الكوكب من الفوضى التي أحدثوها للتو",
