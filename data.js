@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Safe House",
+    "year": "2012",
+    "desc": "يظهر مرتد خطير من وكالة المخابرات المركزية على السطح بعد عقد من الهروب. عندما يهاجم المرتزقة المنزل الآمن الذي تم احتجازه فيه ، يهرب معه عميل مبتدئ. الآن ، يجب على الحلفاء غير المتوقعين البقاء على قيد الحياة لفترة كافية لكشف من يريد موتهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/7SYBPjv5ywF6cI4BSFFtlDyChT2.jpg",
+    "hdUrl": "https://streamtape.com/e/qM3D0P7xXQsz2o1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/qM3D0P7xXQsz2o1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Denzel Washington",
+            "character": "Tobin Frost",
+            "image": "https://image.tmdb.org/t/p/w185/jj2Gcobpopokal0YstuCQW0ldJ4.jpg"
+        },
+        {
+            "name": "Ryan Reynolds",
+            "character": "Matt Weston",
+            "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+        },
+        {
+            "name": "Vera Farmiga",
+            "character": "Catherine Linklater",
+            "image": "https://image.tmdb.org/t/p/w185/5Vs7huBmTKftwlsc2BPAntyaQYj.jpg"
+        },
+        {
+            "name": "Brendan Gleeson",
+            "character": "David Barlow",
+            "image": "https://image.tmdb.org/t/p/w185/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg"
+        },
+        {
+            "name": "Sam Shepard",
+            "character": "Harlan Whitford",
+            "image": "https://image.tmdb.org/t/p/w185/mVR3Le1rSGIbQmld3Ve42RVFcyI.jpg"
+        },
+        {
+            "name": "Rubén Blades",
+            "character": "Carlos Villar",
+            "image": "https://image.tmdb.org/t/p/w185/kOgVo3qDJ9jXgIZJRJI3I1bm6sA.jpg"
+        },
+        {
+            "name": "Nora Arnezeder",
+            "character": "Ana Moreau",
+            "image": "https://image.tmdb.org/t/p/w185/hRjatqhtiGjIabRvvX57doO36Sx.jpg"
+        },
+        {
+            "name": "Robert Patrick",
+            "character": "Daniel Kiefe",
+            "image": "https://image.tmdb.org/t/p/w185/qRv2Es9rZoloullTbzss3I5j1Mp.jpg"
+        },
+        {
+            "name": "Liam Cunningham",
+            "character": "Alec Wade",
+            "image": "https://image.tmdb.org/t/p/w185/y27shwpEYGq4vhdEajcmqucuq9x.jpg"
+        },
+        {
+            "name": "Joel Kinnaman",
+            "character": "Keller",
+            "image": "https://image.tmdb.org/t/p/w185/cVfYzTyQdJ4xtxKPZe7IcW3BJN4.jpg"
+        }
+    ],
+    "trailerKey": "oWzTOoOpFa8"
+},
+    {
     "title": "Safe",
     "year": "2012",
     "desc": "يجد (رايت) نفسه مسئولًا عن الفتاة (ماي) البالغة من العمر اثنتى عشر عامًا، ويبحث عنها لصوص صينيون ومجموعة من الروس بسبب حيازتها معلومات سرية غاية في الأهمية ممثلة في كود رقمي لا يقدر بثمن، ووسط المطاردات التي تلاحقه يقرر إنقاذها مهما كلفه الأمر.",
