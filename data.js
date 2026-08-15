@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Extreme Job",
+    "year": "2019",
+    "desc": "تدور أحداث الفيلم حول مجموعة من المحققين يتنكرون على شكل موظفين في مطعم للدجاج في محاولة منهم لإسقاط منظمة إجرامية لكن الأمور تأخذ منحنى آخر غير متوقع في ذلك المطعم.\r (أكثر فيلم كوميدي مشاهدة وتحقيقا للإيرادات بتاريخ السينما الكورية.)",
+    "poster": "https://image.tmdb.org/t/p/w500/lzzb384pgYyr0GQvu3K2ZW62CEE.jpg",
+    "hdUrl": "https://streamtape.com/e/27ax7WprWpFZgOr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/27ax7WprWpFZgOr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "حركة كوميديا جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Ryu Seung-ryong",
+            "character": "Squad Chief Go",
+            "image": "https://image.tmdb.org/t/p/w185/p0LjCRqVqgTyvlZScMmsVFCnTIt.jpg"
+        },
+        {
+            "name": "Lee Hanee",
+            "character": "Detective Jang",
+            "image": "https://image.tmdb.org/t/p/w185/yayAwtzM4ucEzakcVL0MGchesoc.jpg"
+        },
+        {
+            "name": "Jin Sun-kyu",
+            "character": "Detective Ma",
+            "image": "https://image.tmdb.org/t/p/w185/toFCyPac5rSpN58p0fsZ7lbogYc.jpg"
+        },
+        {
+            "name": "Lee Dong-hwi",
+            "character": "Detective Young-ho",
+            "image": "https://image.tmdb.org/t/p/w185/dqGCVaJ5yuGgKTPUEqCJNk8Nzbs.jpg"
+        },
+        {
+            "name": "Gong Myoung",
+            "character": "Detective Jae-hoon",
+            "image": "https://image.tmdb.org/t/p/w185/4c4eiMCgzw6gr4TDzOiODmmTRmG.jpg"
+        },
+        {
+            "name": "Shin Ha-kyun",
+            "character": "Lee Moo-bae",
+            "image": "https://image.tmdb.org/t/p/w185/4UF7bfqwWUt8gZPH8t7fWuoGQVX.jpg"
+        },
+        {
+            "name": "Oh Jung-se",
+            "character": "Ted Chang",
+            "image": "https://image.tmdb.org/t/p/w185/oIqRAdI5e777odhOJl6e4Jc9ADj.jpg"
+        },
+        {
+            "name": "Kim Eui-sung",
+            "character": "Police Superintendent",
+            "image": "https://image.tmdb.org/t/p/w185/y7T2LJyorTK2NDk10yeTINWKrWR.jpg"
+        },
+        {
+            "name": "Song Young-gyu",
+            "character": "Detective Squad Chief Choi",
+            "image": "https://image.tmdb.org/t/p/w185/cLoLrM1RtrqZdpqOWaxaTkc01Yr.jpg"
+        },
+        {
+            "name": "Heo Joon-seok",
+            "character": "General Manager Jung",
+            "image": "https://image.tmdb.org/t/p/w185/7UFyGXrKPDeAICdUUcmJaApyy9h.jpg"
+        }
+    ],
+    "trailerKey": "HB2e_6D7SDI"
+},
+    {
     "title": "Eye for an Eye",
     "year": "2022",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
