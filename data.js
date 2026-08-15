@@ -1,5 +1,59 @@
 const globalMoviesData = [
     {
+    "title": "Bodies Bodies Bodies",
+    "year": "2022",
+    "desc": "يحتفل مجموعة من الشباب في العشرينات من العمر بإقامة حفل في منزل عائلي بعيد، وسرعان ما تنقلب الأمور حينما يتعرض أحدهم للقتل ويتسلل الشك لقلوب الجميع.",
+    "poster": "https://image.tmdb.org/t/p/w500/4hgp9RDCFKTnlEX9UcqhU5cIAEM.jpg",
+    "hdUrl": "https://streamtape.com/e/yj27WPbkboh1Gqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yj27WPbkboh1Gqx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.1",
+    "genre": "كوميديا غموض رعب",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Amandla Stenberg",
+            "character": "Sophie",
+            "image": "https://image.tmdb.org/t/p/w185/dGqTcwLVoVOqU6Ckp8igV3wD0CW.jpg"
+        },
+        {
+            "name": "Maria Bakalova",
+            "character": "Bee",
+            "image": "https://image.tmdb.org/t/p/w185/vCz0ycZr1PgJVOAeS29fIiZE8pN.jpg"
+        },
+        {
+            "name": "Myha'la",
+            "character": "Jordan",
+            "image": "https://image.tmdb.org/t/p/w185/hRc3igngt5dkpM08i0a3z7gkYWa.jpg"
+        },
+        {
+            "name": "Rachel Sennott",
+            "character": "Alice",
+            "image": "https://image.tmdb.org/t/p/w185/zvx8lP4p3gvijQLg235e3xjxrFG.jpg"
+        },
+        {
+            "name": "Chase Sui Wonders",
+            "character": "Emma",
+            "image": "https://image.tmdb.org/t/p/w185/7oSUT3Zn1srv0VsGquSaWQ5F8ce.jpg"
+        },
+        {
+            "name": "Pete Davidson",
+            "character": "David",
+            "image": "https://image.tmdb.org/t/p/w185/f3kubnZu3KgMniExcq9nJy8RwjW.jpg"
+        },
+        {
+            "name": "Lee Pace",
+            "character": "Greg",
+            "image": "https://image.tmdb.org/t/p/w185/eeTc0d2AX1vFYVxZ6Qw7qZpg4Tz.jpg"
+        },
+        {
+            "name": "Conner O'Malley",
+            "character": "Max",
+            "image": "https://image.tmdb.org/t/p/w185/fawKUZzyxv7MJRA2kcJ2C8Tp2Hk.jpg"
+        }
+    ],
+    "trailerKey": "cTzGKsZjBOY"
+},
+    {
     "title": "Black Box",
     "year": "2026",
     "desc": "تدور أحداث الفيلم حول محقق خبير يُكلف بفك شفرة الصندوق الأسود بعد وقوع حادث تحطم طائرة غامض، ليكتشف أثناء تحليل التسجيلات الصوتية مؤامرة معقدة وحقائق مظلمة تضع حياته في خطر وتجعله يشكك في كل ما حوله، في إطار من الغموض والإثارة والتشويق النفسي .",
