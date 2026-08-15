@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Love Untangled",
+    "year": "2025",
+    "desc": "تخطط مراهقة، أصابتها سهام الغرام، لكسب ود ساحر القلوب في مدرستها بفرد شعرها المجعّد... إلى أن يغيّر طالب منقول مؤخرًا مجريات الأمور رأسًا على عقب.",
+    "poster": "https://image.tmdb.org/t/p/w500/hOi5K1tx8aAZN239VU1qzvyao87.jpg",
+    "hdUrl": "https://streamtape.com/e/regLeWy7GOIbvwO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/regLeWy7GOIbvwO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.3",
+    "genre": "رومنسية دراما كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Shin Eun-soo",
+            "character": "Park Se-ri",
+            "image": "https://image.tmdb.org/t/p/w185/nZdf2sjN1RL8cr153zgc04SL5Ma.jpg"
+        },
+        {
+            "name": "Gong Myoung",
+            "character": "Han Yun-seok",
+            "image": "https://image.tmdb.org/t/p/w185/4c4eiMCgzw6gr4TDzOiODmmTRmG.jpg"
+        },
+        {
+            "name": "Cha Woo-min",
+            "character": "Kim Hyeon",
+            "image": "https://image.tmdb.org/t/p/w185/z8Lz0Opnl4i7Aj8b7jC4qYP01xJ.jpg"
+        },
+        {
+            "name": "Youn Sang-hyun",
+            "character": "Baek Seong-rae",
+            "image": "https://image.tmdb.org/t/p/w185/imIEHfalj7qKKkHHR2ktmOsZtcn.jpg"
+        },
+        {
+            "name": "Kang Mi-na",
+            "character": "Ko In-jeong",
+            "image": "https://image.tmdb.org/t/p/w185/sIGBlUCXt8pBqZhjesm4PKthEIn.jpg"
+        },
+        {
+            "name": "Choi Gyu-ri",
+            "character": "Ma Sol-ji",
+            "image": "https://image.tmdb.org/t/p/w185/a8rHzs04QqTBGG0Q2BTnPPULpFc.jpg"
+        },
+        {
+            "name": "Lee So-i",
+            "character": "Bang Ha-young",
+            "image": "https://image.tmdb.org/t/p/w185/aadsURwBI3eA8v33qmsmXCch2zU.jpg"
+        },
+        {
+            "name": "Shon Hee-rim",
+            "character": "Jung Da-wool",
+            "image": "https://image.tmdb.org/t/p/w185/tjVMML8KpQgJHLzwdoChSPndhPH.jpg"
+        },
+        {
+            "name": "Ryu Seung-su",
+            "character": "Hong-il",
+            "image": "https://image.tmdb.org/t/p/w185/x9XcfwqcXNpk2hIrP6qeR0DDkOs.jpg"
+        },
+        {
+            "name": "Kim Ji-young",
+            "character": "Bok-hee",
+            "image": "https://image.tmdb.org/t/p/w185/7bEs0Z6klajJZE3PWBAy5gh099D.jpg"
+        }
+    ],
+    "trailerKey": "0HwDE0HXbqc",
+    "featured": true
+},
+    {
     "title": "Peninsula",
     "year": "2020",
     "desc": "تدور الأحداث بعد مرور 4 سنوات على حادثة قطار بوسان، حيث يحارب الجميع من أجل التصدي للكارثة غير المتوقعة والتي دمرت كل شيء على الأرض، حيث يتم تكليف جندي سابق بمهمة العودة لأرض المخاطر لإنقاذ ناجين.",
