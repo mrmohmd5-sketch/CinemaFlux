@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Mantis",
+    "year": "2025",
+    "desc": "حين يغرق المجتمع السريّ للقتلة المأجورين في الفوضى، يُطلَق العنان لسلالة جديدة من القتلة... ومع انهيار القواعد القديمة، مَن يجرؤ على فرض سيطرته على عالم الإجرام؟",
+    "poster": "https://image.tmdb.org/t/p/w500/gRPSu4sG5iVnWyLv9um7t3L0yhH.jpg",
+    "hdUrl": "https://streamtape.com/e/8BgygGDlQYSGvx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/8BgygGDlQYSGvx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Yim Si-wan",
+            "character": "Lee Han-wool / Mantis",
+            "image": "https://image.tmdb.org/t/p/w185/8XbMzvYE3KUNDW1jEHSCjM9t89n.jpg"
+        },
+        {
+            "name": "Park Gyu-young",
+            "character": "Shin Jae-yi",
+            "image": "https://image.tmdb.org/t/p/w185/gnn2As1yZsive7Kxnx24NEN3GfC.jpg"
+        },
+        {
+            "name": "Choi Hyun-wook",
+            "character": "Benjamin Jo",
+            "image": "https://image.tmdb.org/t/p/w185/oHG5nnXAzkNBs0xEQlbwOaIFYPQ.jpg"
+        },
+        {
+            "name": "Bae Gang-hee",
+            "character": "Yang Soo-min",
+            "image": "https://image.tmdb.org/t/p/w185/73sdH810JWmjfEqXeCxpQkPeUEG.jpg"
+        },
+        {
+            "name": "Hwang Seong-bin",
+            "character": "Puma Lee",
+            "image": "https://image.tmdb.org/t/p/w185/xGxo06uY0XaXnqbIZAmBbtImX4f.jpg"
+        },
+        {
+            "name": "Yoo Su-bin",
+            "character": "Kim Dong-yeong",
+            "image": "https://image.tmdb.org/t/p/w185/vulO1ngz0s3jUBXQbW2ADuyK3Fa.jpg"
+        },
+        {
+            "name": "Jeon Bae-soo",
+            "character": "Nam Bae-soo",
+            "image": "https://image.tmdb.org/t/p/w185/7EhOO3xFN5FvEJwl0b0Eudab5bI.jpg"
+        },
+        {
+            "name": "Jo Woo-jin",
+            "character": "Dok-go",
+            "image": "https://image.tmdb.org/t/p/w185/7yoOqi1yV4q9MBLOLMfQDFqbYc7.jpg"
+        },
+        {
+            "name": "Sul Kyung-gu",
+            "character": "Cha Min-gyu",
+            "image": "https://image.tmdb.org/t/p/w185/teD7AMzfNl4qhQO2b6MAWwLtPVn.jpg"
+        },
+        {
+            "name": "Jeon Do-yeon",
+            "character": "Gil Bok-soon",
+            "image": "https://image.tmdb.org/t/p/w185/ev2tT7ZbReE06rZy7SX0Mv8evZ7.jpg"
+        }
+    ],
+    "trailerKey": "PItlVyrf15U"
+},
+    {
     "title": "Loop",
     "year": "2020",
     "desc": "فتاة مصابة بالتوحد، غير قادرة على الكلام، وصبي ثرثار، يتشاركان رحلة تجديف. لإكمال رحلتهما عبر بحيرة حضرية، يجب أن يتعلم كل منهما كيف يرى الآخر العالم.",
