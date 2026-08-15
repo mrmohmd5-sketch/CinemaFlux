@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Little Brother",
+    "year": "2026",
+    "desc": "تنقلب الحياة المثالية التي بناها سمسار عقارات بحذر والتزام رأسًا على عقب عندما يظهر 'الأخ الأصغر' المشاغب والمحبوب فجأة من جديد.",
+    "poster": "https://image.tmdb.org/t/p/w500/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
+    "hdUrl": "https://streamtape.com/e/ZDXm2R0B3miqla6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/ZDXm2R0B3miqla6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "John Cena",
+            "character": "Rudd Landy",
+            "image": "https://image.tmdb.org/t/p/w185/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg"
+        },
+        {
+            "name": "Eric André",
+            "character": "Marcus Pinchel",
+            "image": "https://image.tmdb.org/t/p/w185/e9XlcFnZQiBSQ1vISQVyTOrkIaq.jpg"
+        },
+        {
+            "name": "Michelle Monaghan",
+            "character": "Deirdre Landy",
+            "image": "https://image.tmdb.org/t/p/w185/uK1qhSzKd9gkDh3p1H5e2PWMYyH.jpg"
+        },
+        {
+            "name": "Christopher Meloni",
+            "character": "Josh Landy",
+            "image": "https://image.tmdb.org/t/p/w185/nHlFFbRTh85vkohBBtRQjYnWEtb.jpg"
+        },
+        {
+            "name": "Sherry Cola",
+            "character": "Mia",
+            "image": "https://image.tmdb.org/t/p/w185/fO6t05iJo4gqsTkOgPO1jwF4B4t.jpg"
+        },
+        {
+            "name": "Ego Nwodim",
+            "character": "Lenore",
+            "image": "https://image.tmdb.org/t/p/w185/1vpud1BpXvbJUy0OO3B8Vl24nlp.jpg"
+        },
+        {
+            "name": "Caleb Hearon",
+            "character": "Olly",
+            "image": "https://image.tmdb.org/t/p/w185/wsXM7aLnEQ9W5I9mi4k01hMuw0i.jpg"
+        },
+        {
+            "name": "Bryce Gheisar",
+            "character": "Cory Landy",
+            "image": "https://image.tmdb.org/t/p/w185/r38aqTYTzKOXf5p0nvE0hE5iDQh.jpg"
+        },
+        {
+            "name": "Pilot Bunch",
+            "character": "Shane Landy",
+            "image": "https://image.tmdb.org/t/p/w185/uSoUAVnJtIv214gWJ0FRHySPwKp.jpg"
+        },
+        {
+            "name": "Ben Ahlers",
+            "character": "Kieran Francis",
+            "image": "https://image.tmdb.org/t/p/w185/eI8XNPdtv4ksyjyL8ZVWd5Cmc7.jpg"
+        }
+    ],
+    "trailerKey": "bWtrFcerKE0",
+    "featured": true
+},
+    {
     "title": "Havoc",
     "year": "2025",
     "desc": "حين تخرج سرقة مخدرات عن نطاق السيطرة بشكل مميت، يشقّ شرطي منهك طريقه عبر عالم الإجرام في مدينة فاسدة لإنقاذ ابن رجل سياسي.",
