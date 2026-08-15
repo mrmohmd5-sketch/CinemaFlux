@@ -1678,7 +1678,7 @@
             return [...items].sort((a, b) => getMovieScore(b) - getMovieScore(a));
         }
 
-        // عرض السلايدر العلوي (الأفلام المميزة)
+        // عرض السلايدر العلوي (الأفلام المميزة) - تعديل لعرض آخر 5 أفلام مميزة فقط
         function renderFeaturedSlider() {
             const slider = document.getElementById('featuredSlider');
             if (!slider) return;
@@ -1688,6 +1688,9 @@
             // إذا لم توجد أفلام مميزة، نعرض أفضل 5 أفلام تقيماً
             if (featured.length === 0) {
                 featured = sortByScore(allMoviesData).slice(0, 5);
+            } else {
+                // نأخذ آخر 5 أفلام مميزة فقط (الأحدث)
+                featured = featured.slice(-5);
             }
 
             featured.forEach(item => {
