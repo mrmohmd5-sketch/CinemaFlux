@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Holy Night: Demon Hunters",
+    "year": "2025",
+    "desc": "تغرق سيول في الفوضى مع ظهور شبكة إجرامية عبدة للشيطان. في نداء يائس للخلاص، تضطر الشرطة إلى تجنيد 'هولي نايت'، وهم ثلاثة من صائدي الشياطين المسلحين بقوى خارقة للطبيعة. فهل سيتمكن 'هولي نايت' من قهر حكم الشيطان وإعادة النظام إلى المدينة؟",
+    "poster": "https://image.tmdb.org/t/p/w500/aBy64vAaCgx5uc6t6QT8IOwHfsE.jpg",
+    "hdUrl": "https://streamtape.com/e/rlGZwLOxwZIbRg2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/rlGZwLOxwZIbRg2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.9",
+    "genre": "حركة فانتازيا رعب إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Don Lee",
+            "character": "Ba-woo",
+            "image": "https://image.tmdb.org/t/p/w185/ckxoXz3l4mCcHEIRaqUc7oGoIFg.jpg"
+        },
+        {
+            "name": "Seohyun",
+            "character": "Sharon",
+            "image": "https://image.tmdb.org/t/p/w185/4FeVieGVZEfvwvFuz2lrrFr1529.jpg"
+        },
+        {
+            "name": "David Lee",
+            "character": "Kim Gun",
+            "image": "https://image.tmdb.org/t/p/w185/qWGDFlr47d2AJLtJsOEmfmaC21l.jpg"
+        },
+        {
+            "name": "Kyung Soo-jin",
+            "character": "Jung-won",
+            "image": "https://image.tmdb.org/t/p/w185/5gdThWkpzuNkNyQ6Cw29oOefvXO.jpg"
+        },
+        {
+            "name": "Jung Zi-so",
+            "character": "Eun-seo",
+            "image": "https://image.tmdb.org/t/p/w185/jsUPFmY1HlML92ubVtSE8L8ovz6.jpg"
+        },
+        {
+            "name": "Choi Gwang-il",
+            "character": "Father Marco",
+            "image": "https://image.tmdb.org/t/p/w185/6vkA8s4XDPwZBRzNhN9xSLzb3II.jpg"
+        },
+        {
+            "name": "Song Yo-sep",
+            "character": "Middle-Aged Man",
+            "image": "https://image.tmdb.org/t/p/w185/x3Cq8BGfRVxProIlpgSJniqbfWs.jpg"
+        },
+        {
+            "name": "Park Ock-chool",
+            "character": "Auntie",
+            "image": "https://image.tmdb.org/t/p/w185/cIPNItPt4LpaWScdxHvvG1EtP5d.jpg"
+        },
+        {
+            "name": "Han Gi-joong",
+            "character": "Chief of Police",
+            "image": "https://image.tmdb.org/t/p/w185/v5daHMmm4aRP6nnhbGEEf7fqKPo.jpg"
+        },
+        {
+            "name": "Lee Da-il",
+            "character": "Mysterious Man",
+            "image": "https://image.tmdb.org/t/p/w185/dIMT5h5LIPzwcvCw9WARSXFalLe.jpg"
+        }
+    ],
+    "trailerKey": "tyHZCXoBQcI"
+},
+    {
     "title": "Love Untangled",
     "year": "2025",
     "desc": "تخطط مراهقة، أصابتها سهام الغرام، لكسب ود ساحر القلوب في مدرستها بفرد شعرها المجعّد... إلى أن يغيّر طالب منقول مؤخرًا مجريات الأمور رأسًا على عقب.",
