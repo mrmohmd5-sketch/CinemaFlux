@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Dune",
+    "year": "2021",
+    "desc": "بول أتريدس ، شاب لامع وموهوب ولد لمصير عظيم يفوق إدراكه، وعليه أن يسافر إلى أخطر كوكب في الكون لضمان مستقبل عائلته وشعبه. بينما تنفجر القوى الخبيثة في صراع حول الإمداد الحصري للكوكب بأثمن مورد في الوجود - سلعة قادرة على إطلاق العنان لقدرات البشرية العليا - فقط أولئك الذين يستطيعون التغلب على خوفهم سيبقون على قيد الحياة.",
+    "poster": "https://image.tmdb.org/t/p/w500/pA9WRL9j6eigtwK0majwT0lDh9G.jpg",
+    "hdUrl": "https://streamtape.com/e/yxOeYWvMprF3pZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/yxOeYWvMprF3pZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Timothée Chalamet",
+            "character": "Paul Atreides",
+            "image": "https://image.tmdb.org/t/p/w185/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg"
+        },
+        {
+            "name": "Rebecca Ferguson",
+            "character": "Lady Jessica Atreides",
+            "image": "https://image.tmdb.org/t/p/w185/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
+        },
+        {
+            "name": "Oscar Isaac",
+            "character": "Duke Leto Atreides",
+            "image": "https://image.tmdb.org/t/p/w185/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+        },
+        {
+            "name": "Jason Momoa",
+            "character": "Duncan Idaho",
+            "image": "https://image.tmdb.org/t/p/w185/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+        },
+        {
+            "name": "Stellan Skarsgård",
+            "character": "Baron Vladimir Harkonnen",
+            "image": "https://image.tmdb.org/t/p/w185/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg"
+        },
+        {
+            "name": "Stephen McKinley Henderson",
+            "character": "Thufir Hawat",
+            "image": "https://image.tmdb.org/t/p/w185/z2weSPo4sdMNj47tP5o0me41r2z.jpg"
+        },
+        {
+            "name": "Josh Brolin",
+            "character": "Gurney Halleck",
+            "image": "https://image.tmdb.org/t/p/w185/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+            "name": "Javier Bardem",
+            "character": "Stilgar",
+            "image": "https://image.tmdb.org/t/p/w185/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+        },
+        {
+            "name": "Sharon Duncan-Brewster",
+            "character": "Dr. Liet Kynes",
+            "image": "https://image.tmdb.org/t/p/w185/gp5h6rOrqBrIGgID4AMd58O6Ow6.jpg"
+        },
+        {
+            "name": "Chang Chen",
+            "character": "Dr. Wellington Yueh",
+            "image": "https://image.tmdb.org/t/p/w185/4BOQ5pJXdsArkMHvyVhrV8Ditnr.jpg"
+        }
+    ],
+    "trailerKey": "FabyRquCEtY",
+    "featured": true
+},
+    {
     "title": "Descendants: Wicked Wonderland",
     "year": "2026",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
