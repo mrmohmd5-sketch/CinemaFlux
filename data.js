@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "23 000 Lives",
+    "year": "2026",
+    "desc": "تُبحر مجموعة من الشباب في اتجاه البحر المتوسط لإنقاذ أرواح اللاجئين... وهي مهمة تختبر مفاهيمهم الشخصية عن القانون والعدالة.",
+    "poster": "https://image.tmdb.org/t/p/w500/fl84ocsxe3Lib5BGUhO0lFjDbDK.jpg",
+    "hdUrl": "https://streamtape.com/e/3OmPZpG70eIdkVA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3OmPZpG70eIdkVA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.9",
+    "genre": "دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Louis Hofmann",
+            "character": "Lukas",
+            "image": "https://image.tmdb.org/t/p/w185/m3Mo38afbKmy9EOsfmUagvTFM9q.jpg"
+        },
+        {
+            "name": "Mala Emde",
+            "character": "Kitty",
+            "image": "https://image.tmdb.org/t/p/w185/sSCtWqaQMe8fqYlKPuLfQ3Zepu1.jpg"
+        },
+        {
+            "name": "Katharina Stark",
+            "character": "Nina",
+            "image": "https://image.tmdb.org/t/p/w185/3cwKbMriYdDDhPwSQTXTdMhG6p6.jpg"
+        },
+        {
+            "name": "Frederick Lau",
+            "character": "Sören",
+            "image": "https://image.tmdb.org/t/p/w185/4ukrX8OPPsD06YMFoTL00uZrwa4.jpg"
+        },
+        {
+            "name": "Maria Dragus",
+            "character": "Viola",
+            "image": "https://image.tmdb.org/t/p/w185/4AiU1EdwWlNuxBbYV1qLxc09mv1.jpg"
+        },
+        {
+            "name": "Trevor Magaya",
+            "character": "Lamin",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Kathy Etoa",
+            "character": "Rose",
+            "image": "https://image.tmdb.org/t/p/w185/hIxRBgZbZ4iRTjhVOfvkD8xLB0v.jpg"
+        },
+        {
+            "name": "Saibon Wang",
+            "character": "Su",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Joone Dankou",
+            "character": "Paula",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Merlin Von Garnier",
+            "character": "Maik",
+            "image": "https://image.tmdb.org/t/p/w185/rBkMLk8mZiMdZ45ox36z8hSO8BG.jpg"
+        }
+    ],
+    "trailerKey": "89dugTvBEWw"
+},
+    {
     "title": "No One Killed Jessica",
     "year": "2011",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
