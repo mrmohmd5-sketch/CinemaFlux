@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2026",
     "desc": "تنقلب الحياة المثالية التي بناها سمسار عقارات بحذر والتزام رأسًا على عقب عندما يظهر 'الأخ الأصغر' المشاغب والمحبوب فجأة من جديد.",
     "poster": "https://image.tmdb.org/t/p/w500/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
-    "hdUrl": "https://streamtape.com/e/ZDXm2R0B3miqla6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/BagYzPemX9Cy4vR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/ZDXm2R0B3miqla6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.5",
     "genre": "كوميديا",
