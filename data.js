@@ -1,5 +1,157 @@
 const globalMoviesData = [
     {
+    "title": "Another Self",
+    "year": "2022",
+    "desc": "بعد رحلتهن التي كنّ يأملن فيها بتعافي 'سيفغي'، تواجه 'آدا' و'سيفغي' و'ليلى' تحديات مختلفة في بلدتهن الجديدة. إذ تخطو 'آدا' خطوة جريئة في حياتها المهنية، وتعاني 'ليلى' من ضائقة مالية مع بدء عملها التجاري الجديد، فيما تُخفي 'سيفغي' سرًا كبيرًا عن المقربين منها. ومع بداية حياتهنّ من جديد وتعاملهنّ مع تحدياتها، تعقد الصديقات آمالهن على بعضهن بعضًا.",
+    "poster": "https://image.tmdb.org/t/p/w500/mztsin9EbqAwNkTmmh8N1ss8R8c.jpg",
+    "hdUrl": "",
+    "sdUrl": "",
+    "rating": "8.0",
+    "genre": "دراما",
+    "type": "series",
+    "cast": [
+        {
+            "name": "Tuba Büyüküstün",
+            "character": "Ada",
+            "image": "https://image.tmdb.org/t/p/w185/14QRLZqXAZglMB7Z25uXg6IG3LG.jpg"
+        },
+        {
+            "name": "Boncuk Yilmaz",
+            "character": "Sevgi",
+            "image": "https://image.tmdb.org/t/p/w185/zOBcaBPmWD3bY0zcmJKuLVwyYbC.jpg"
+        },
+        {
+            "name": "Seda Bakan",
+            "character": "Leyla",
+            "image": "https://image.tmdb.org/t/p/w185/xPySVGVlgGmIRtw7oyxa7f7liwG.jpg"
+        },
+        {
+            "name": "Rıza Kocaoğlu",
+            "character": "Fikret",
+            "image": "https://image.tmdb.org/t/p/w185/b0Bp9W1VIaVzCzzUCMwBc7fe005.jpg"
+        },
+        {
+            "name": "Füsun Demirel",
+            "character": "Muko",
+            "image": "https://image.tmdb.org/t/p/w185/11UmdG7SRY5VWQMru3RangDPByx.jpg"
+        }
+    ],
+    "trailerKey": "Pzl33KQP8b4",
+    "seasons": [
+        {
+            "season_number": 1,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/277VpZzOwzTRZb/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/3PGR2VzvdwudojQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/gRY38RoyqRcqewp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/MA29eaqDooTm2e4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/zGdJY871pkhYmzd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/yVWev0qQAzI169z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/wkVOqoW7bYuPkZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        },
+        {
+            "season_number": 2,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/BPaDPzlKzMhypLX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/aoYvJRR6yjsx7AX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/l0Qw8ZRMvrF7G9Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/WPRbX73BXOFbdvJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/9jaO4jdm49UagkD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/gozMqXJKrqsqomo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/r3kDdd209aH8Zy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/PwOVgerY4bcGKR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        },
+        {
+            "season_number": 3,
+            "episodes": [
+                {
+                    "episode_number": 1,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 2,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 3,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 4,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 5,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 6,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 7,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                },
+                {
+                    "episode_number": 8,
+                    "url": "https://streamtape.com/e/wd70Bp3YqRCJby8/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                }
+            ]
+        }
+    ]
+},
+    {
     "title": "Extraction 2",
     "year": "2023",
     "desc": "يعود المقدام البارع 'تايلر ريك' بعد نجاته من فم الموت، ويقع على عاتقه الآن تنفيذ مهمة أخرى محفوفة بالمخاطر... وهي إنقاذ عائلة رجل عصابات قاسٍ من السجن.",
