@@ -4,7 +4,7 @@ const globalMoviesData = [
     "year": "2026",
     "desc": "يصبح خبير في الأمن السيبراني مُبلغ عن المخالفات بعد اكتشافه أسرارًا عن كائنات فضائية، فتطاردُه إحدى الشركات. وفي نفس الوقت، تتعاون معه خبيرة أرصاد جوية تواجه ظواهر غريبة ليثبتا وجود حياة تتجاوز فهمنا.",
     "poster": "https://image.tmdb.org/t/p/w500/pISy0e4JlOqAU0Exa6X0svaTHJk.jpg",
-    "hdUrl": "https://streamtape.com/e/q9G7koKJ94tzXgp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/7kWVMejdKJsAD1w/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/q9G7koKJ94tzXgp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "7.4",
     "genre": "خيال علمي إثارة",
