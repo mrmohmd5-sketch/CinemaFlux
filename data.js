@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Soulm8te",
+    "year": "2026",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
+    "hdUrl": "https://streamtape.com/e/3V0OOdRPq9Fa9o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/3V0OOdRPq9Fa9o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.4",
+    "genre": "رعب خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "David Rysdahl",
+            "character": "David Wasson",
+            "image": "https://image.tmdb.org/t/p/w185/yYTsO3nH4ikZJ3K2XTgQASEOWiU.jpg"
+        },
+        {
+            "name": "Lily Sullivan",
+            "character": "Sara / Lydia",
+            "image": "https://image.tmdb.org/t/p/w185/sLjxpxV2JX8k3k9VWoIPrzqlh5J.jpg"
+        },
+        {
+            "name": "Claudia Doumit",
+            "character": "Aubrey Mansouri",
+            "image": "https://image.tmdb.org/t/p/w185/6iTmyg2krMDgQheiu8FnxtApKh0.jpg"
+        },
+        {
+            "name": "Arty Froushan",
+            "character": "Ben Hoffman",
+            "image": "https://image.tmdb.org/t/p/w185/zYNvzONSgyfnC4efHXh6zcrVj4d.jpg"
+        },
+        {
+            "name": "Elijah Isaiah Cook",
+            "character": "Terrance",
+            "image": "https://image.tmdb.org/t/p/w185/gfDhACaR28m16GV5aM8csVHMzoO.jpg"
+        },
+        {
+            "name": "Mara Huf",
+            "character": "Lizzie",
+            "image": "https://image.tmdb.org/t/p/w185/eZglS0iu7tbIfvslSjIRGjieEIr.jpg"
+        },
+        {
+            "name": "Emma Ramos",
+            "character": "Alma Flores",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Sydney Blackburn",
+            "character": "Ben's Assistant",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Isabelle Bonfrer",
+            "character": "Circe",
+            "image": "https://image.tmdb.org/t/p/w185/zuWMZedKqou0wxOhsRA2av7Q5wo.jpg"
+        },
+        {
+            "name": "Oliver Cooper",
+            "character": "Ultima Robotix Technician",
+            "image": "https://image.tmdb.org/t/p/w185/dZyCpnWaW7gkTWOyhGUgg1xy19y.jpg"
+        }
+    ],
+    "trailerKey": "texuWgrqOxM",
+    "featured": true
+},
+    {
     "title": "Ninja Assassin",
     "year": "2009",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
