@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Mufasa: The Lion King",
+    "year": "2024",
+    "desc": "استكشفوا رحلة الصعود غير المرتقبة لملك أرض العزة المحبوب.  موفاسا، الشبل الضائع وحيدًا، يلتقي بأسد متعاطف يُدعى تاكا، وريث السلالة الملكية. يُطلق هذا اللقاء الصدفي رحلةً طويلةً لمجموعة من المنبوذين يبحثون عن مصيرهم.",
+    "poster": "https://image.tmdb.org/t/p/w500/eheaWJVqU5DiElOm5Nfbu0eKqoj.jpg",
+    "hdUrl": "https://streamtape.com/e/mYmgAKgxVefbbWB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/mYmgAKgxVefbbWB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.3",
+    "genre": "مغامرة عائلي رسوم متحركة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Aaron Pierre",
+            "character": "Mufasa (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/z2cMMZyWzv5ztT6pFdAAjB3u7CQ.jpg"
+        },
+        {
+            "name": "Kelvin Harrison Jr.",
+            "character": "Taka (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
+        },
+        {
+            "name": "Tiffany Boone",
+            "character": "Sarabi (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/9LwqRFdSzxVtnutDUg98YLq0bSz.jpg"
+        },
+        {
+            "name": "Kagiso Lediga",
+            "character": "Young Rafiki (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nfqx3CqFVsAMelk6ry560SuN7Y0.jpg"
+        },
+        {
+            "name": "Preston Nyman",
+            "character": "Zazu (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/eidKvLDCRw68tG3CN6fGhvHUnW.jpg"
+        },
+        {
+            "name": "Blue Ivy Carter",
+            "character": "Kiara (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/mnaFedkdW9TFCkky7fiiT5dfXye.jpg"
+        },
+        {
+            "name": "John Kani",
+            "character": "Rafiki (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/g7tqg3q128a5O2qXMCwVnXsow9I.jpg"
+        },
+        {
+            "name": "Mads Mikkelsen",
+            "character": "Kiros (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/AsX4bdvZ8UCayWTmAf9lAqOA8V7.jpg"
+        },
+        {
+            "name": "Seth Rogen",
+            "character": "Pumbaa (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+        },
+        {
+            "name": "Billy Eichner",
+            "character": "Timon (voice)",
+            "image": "https://image.tmdb.org/t/p/w185/kScO4moqNlDbyCTZuIoBqyaml4l.jpg"
+        }
+    ],
+    "trailerKey": "CpPQ7COZOQw"
+},
+    {
     "title": "Shelter",
     "year": "2026",
     "desc": "تدور أحداث الفيلم عن رجل يعيش في عزلة فرضها على نفسه في جزيرة نائية وينقذ فتاة صغيرة من عاصفة عنيفة لتبدأ سلسلة من الأحداث تجبره على الخروج من عزلته لحمايتها من أعداء يرتبطون بماضيه.",
