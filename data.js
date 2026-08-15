@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Shelter",
+    "year": "2026",
+    "desc": "تدور أحداث الفيلم عن رجل يعيش في عزلة فرضها على نفسه في جزيرة نائية وينقذ فتاة صغيرة من عاصفة عنيفة لتبدأ سلسلة من الأحداث تجبره على الخروج من عزلته لحمايتها من أعداء يرتبطون بماضيه.",
+    "poster": "https://image.tmdb.org/t/p/w500/wDHhmyIKfq5cZTYmRal4IR4y85e.jpg",
+    "hdUrl": "https://streamtape.com/e/BvPqyRAxWBfygaR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BvPqyRAxWBfygaR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.8",
+    "genre": "حركة جريمة إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jason Statham",
+            "character": "Mason",
+            "image": "https://image.tmdb.org/t/p/w185/pXGSq2UpcDE2NMF8LR56QZf5U1q.jpg"
+        },
+        {
+            "name": "Bodhi Rae Breathnach",
+            "character": "Jesse",
+            "image": "https://image.tmdb.org/t/p/w185/v4PXpYOKUQtcUCp85KAW2bIiS51.jpg"
+        },
+        {
+            "name": "Naomi Ackie",
+            "character": "Roberta",
+            "image": "https://image.tmdb.org/t/p/w185/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
+        },
+        {
+            "name": "Daniel Mays",
+            "character": "Booth",
+            "image": "https://image.tmdb.org/t/p/w185/2qmA5mXnhA7Nelu2BTbJTvzq35u.jpg"
+        },
+        {
+            "name": "Harriet Walter",
+            "character": "Prime Minister Fordham",
+            "image": "https://image.tmdb.org/t/p/w185/vH8JrqdHaoFeGos44XeKTNuQMKE.jpg"
+        },
+        {
+            "name": "Bill Nighy",
+            "character": "Manafort",
+            "image": "https://image.tmdb.org/t/p/w185/ixFI2YCGNGJfwlpI8iyhvVZRg8C.jpg"
+        },
+        {
+            "name": "Michael Shaeffer",
+            "character": "Uncle",
+            "image": "https://image.tmdb.org/t/p/w185/5O0UCmRy8NWpYvHeCJDntPKXmti.jpg"
+        },
+        {
+            "name": "Anna Crilly",
+            "character": "Haneron",
+            "image": "https://image.tmdb.org/t/p/w185/wT6e4gDsQwrJjhXlIAj5IhcLICy.jpg"
+        },
+        {
+            "name": "Eugenia Caruso",
+            "character": "Shop Clerk",
+            "image": "https://image.tmdb.org/t/p/w185/ocWaLnqvU58oU7ZAVsVKA1w2Als.jpg"
+        },
+        {
+            "name": "Céline Buckens",
+            "character": "Maddison",
+            "image": "https://image.tmdb.org/t/p/w185/6pGlBFPZ0tErnpr9vi4C8Pe7JJ0.jpg"
+        }
+    ],
+    "trailerKey": "kdcxogb4leQ",
+    "featured": true
+},
+    {
     "title": "Little Brother",
     "year": "2026",
     "desc": "تنقلب الحياة المثالية التي بناها سمسار عقارات بحذر والتزام رأسًا على عقب عندما يظهر 'الأخ الأصغر' المشاغب والمحبوب فجأة من جديد.",
