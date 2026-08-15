@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "My Daughter Is a Zombie",
+    "year": "2025",
+    "desc": "تدور احداث الفيلم حين “لي جونغ هوان”، مدرّب حيوانات يعيش مع ابنته المراهقة “سو آه” الشغوفة بالرقص، يجد نفسه في صراع جديد بعدما تُصاب بفيروس الزومبي. يحاول حمايتها بأخذها إلى قريته الساحلية حيث تعيش والدته، ليكتشف أنها ما زالت تستجيب للرقص وحنان جدتها. رافضًا الاستسلام، يستخدم خبرته في تدريب النمور ليبدأ رحلة صعبة ومؤثرة في ترويض ابنته الزومبي، في مزيج من الرعب والدفء والكوميديا.",
+    "poster": "https://image.tmdb.org/t/p/w500/7uQs2iK2JBLqdbgtusllZ6TKEy.jpg",
+    "hdUrl": "https://streamtape.com/e/Vok2d1V2WBtP3Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/Vok2d1V2WBtP3Y/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.2",
+    "genre": "كوميديا دراما",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Cho Jung-seok",
+            "character": "Lee Jung-hwan",
+            "image": "https://image.tmdb.org/t/p/w185/pVZHsNj31fNMyWixqg26TA9HjU1.jpg"
+        },
+        {
+            "name": "Lee Jung-eun",
+            "character": "Kim Bam-soon",
+            "image": "https://image.tmdb.org/t/p/w185/4r3K47UpSmzZ5t9cyTRRqRl9rdz.jpg"
+        },
+        {
+            "name": "Cho Yeo-jeong",
+            "character": "Shin Yeon-hwa",
+            "image": "https://image.tmdb.org/t/p/w185/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg"
+        },
+        {
+            "name": "Yoon Kyung-ho",
+            "character": "Cho Dong-bae",
+            "image": "https://image.tmdb.org/t/p/w185/217cVZqyvJypi4OR1uvxoaJxvLm.jpg"
+        },
+        {
+            "name": "Choi Yu-ri",
+            "character": "Lee Soo-ah",
+            "image": "https://image.tmdb.org/t/p/w185/dUp7EAnZzKVX6JSMbLQgpeD9r9W.jpg"
+        },
+        {
+            "name": "Geumdong-i",
+            "character": "Meowmeow",
+            "image": "https://image.tmdb.org/t/p/w185/amjD8hZH1h8JyJpEqEa73sbGVUW.jpg"
+        },
+        {
+            "name": "Jeon Su-ji",
+            "character": "Lee Jeong-hye",
+            "image": "https://image.tmdb.org/t/p/w185/rq3IzuuQk0j9FgbHNvbpkrwm9m4.jpg"
+        },
+        {
+            "name": "Kim Beong-choun",
+            "character": "Village Chief",
+            "image": "https://image.tmdb.org/t/p/w185/bxinKyCtIY3RVxhTaxFfxm9dYiu.jpg"
+        },
+        {
+            "name": "Jeong So-jeong",
+            "character": "Min Eun-young",
+            "image": "https://image.tmdb.org/t/p/w185/rL5sOEJb80qHYdNgZ6hRzNHbMjt.jpg"
+        },
+        {
+            "name": "Chae I",
+            "character": "Go Yoon-seo",
+            "image": "https://image.tmdb.org/t/p/w185/eWbFIQeA6kupFddYooFgMeT1zEz.jpg"
+        }
+    ],
+    "trailerKey": "H-grngL19_o",
+    "featured": true
+},
+    {
     "title": "Murderer Report",
     "year": "2025",
     "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
