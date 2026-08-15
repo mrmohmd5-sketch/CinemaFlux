@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Truthers",
+    "year": "2026",
+    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "poster": "https://image.tmdb.org/t/p/w500/pUvs1iFFMDy3sNp5dNmkRak1oxD.jpg",
+    "hdUrl": "https://streamtape.com/e/D9AW8AD3RwuLoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/D9AW8AD3RwuLoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "5.8",
+    "genre": "إثارة دراما غموض",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jose Coronado",
+            "character": "Martín",
+            "image": "https://image.tmdb.org/t/p/w185/9xo68HzH8n78Xv6gMzKK7XnjtHd.jpg"
+        },
+        {
+            "name": "Stéphanie Magnin",
+            "character": "Ruth",
+            "image": "https://image.tmdb.org/t/p/w185/fPDyHTbQMS2hn6LVBNIZjeemCOc.jpg"
+        },
+        {
+            "name": "Fanny Gautier",
+            "character": "Lucía",
+            "image": "https://image.tmdb.org/t/p/w185/2QEVaSaNvJIlWLvZOubtS2d710u.jpg"
+        },
+        {
+            "name": "Alberto Olmo",
+            "character": "Arón",
+            "image": "https://image.tmdb.org/t/p/w185/bYzbEYm5QvxywhUTWXhF7d2fEnm.jpg"
+        },
+        {
+            "name": "Israel Ruiz",
+            "character": "Doctor Velasco",
+            "image": "https://image.tmdb.org/t/p/w185/58kPAUPdmbtAshlBaUQ1uLKRlnH.jpg"
+        },
+        {
+            "name": "Mabel del Pozo",
+            "character": "Berta",
+            "image": "https://image.tmdb.org/t/p/w185/rcl3y06AXmHd3Xwiebdqh8xcbys.jpg"
+        },
+        {
+            "name": "Celine Fortenbacher",
+            "character": "Rose",
+            "image": "https://image.tmdb.org/t/p/w185/bmfMdcWB4XqtJaCUmN21DzmGVqK.jpg"
+        },
+        {
+            "name": "Olaya Lopez",
+            "character": "Recepcionista Cuartel",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Armando Pita",
+            "character": "Pedro (Tío)",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        },
+        {
+            "name": "Ana Casado",
+            "character": "Ruth Niña",
+            "image": "https://via.placeholder.com/185x278?text=No+Image"
+        }
+    ],
+    "trailerKey": "IvL0oT13djs"
+},
+    {
     "title": "Carter",
     "year": "2022",
     "desc": "عقب شهرين من انتشار جائحة مميتة نشأت في منطقة منزوعة السلاح واجتاحت الولايات المتحدة وكوريا الشمالية، يستيقظ 'كارتر' دون أن يتذكّر ماضيه. وقد تمّ زرع جهاز غامض في رأسه ويسمع صوتًا غريبًا في أذنيه يعطيه الأوامر. وفي فمه قنبلة فتّاكة قد تنفجر في أي وقت، ما لم ينقذ الفتاة التي تعتبر الترياق الوحيد ضدّ الفيروس. وليس هذا فحسب، فوكالة الاستخبارات المركزية وجماعة انقلابية من كوريا الشمالية تطاردانه باستماتة.  لا بدّ أن ينجح 'كارتر' في مهمّته ويتوجّه شمالًا للبحث عن الفتاة.  تتكشّف رحلة كفاحه للنجاة بحياته في فيلم حركة يتكوّن من مشهد متسلسل واحد!",
