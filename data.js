@@ -2,9 +2,9 @@ const globalMoviesData = [
     {
     "title": "The Spectacular Now",
     "year": "2013",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول طالب في المرحلة الثانوية يعيش حياته بلا مبالاة وتفكير في المستقبل، لكن نظرته للحياة تتغير عندما يلتقي بفتاة منطوية وذكية تنشأ بينهما علاقة عاطفية غير متوقعة تدفعهما لمواجهة مخاوفهما وصدمات ماضيهما في إطار درامي ورومانسي مؤثر .",
     "poster": "https://image.tmdb.org/t/p/w500/obDS8pTWVWZiNAaTyfIFWYZbRsZ.jpg",
-    "hdUrl": "https://streamtape.com/e/BOAwJqdwdeumAm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "hdUrl": "https://streamtape.com/e/4dJOjLlBv6TGQ7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/BOAwJqdwdeumAm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "6.7",
     "genre": "كوميديا دراما رومنسية",
