@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Warm Bodies",
+    "year": "2013",
+    "desc": "قصة حب قوية تجمع بين (آر) ، و(جولي) بعد أن يدمر المدينة وباء الزومبي ، ويأتى عليها ، أثناء ذلك يحاول (آر) إنقاذ (جولي) من هجوم الزومبي ، فتتعلق بحبه ، وتنشأ بينهما علاقة خاصة ، تساعدهما على البقاء على قيد الحياة وسط هؤلاء الزومبي المتوحشين .",
+    "poster": "https://image.tmdb.org/t/p/w500/ctvOhfaBdaKi4jfiqTvzuT2l8Dz.jpg",
+    "hdUrl": "https://streamtape.com/e/1xVaAWj44dsel27/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1xVaAWj44dsel27/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.5",
+    "genre": "رعب كوميديا رومنسية حركة خيال علمي",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Nicholas Hoult",
+            "character": "R",
+            "image": "https://image.tmdb.org/t/p/w185/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg"
+        },
+        {
+            "name": "Teresa Palmer",
+            "character": "Julie Grigio",
+            "image": "https://image.tmdb.org/t/p/w185/sjSiLSCp9LS1Z0nyGpmquTBuUyr.jpg"
+        },
+        {
+            "name": "Lio Tipton",
+            "character": "Nora Greene",
+            "image": "https://image.tmdb.org/t/p/w185/jwLTUddwx1vGVcrpEGH87vVJsnY.jpg"
+        },
+        {
+            "name": "John Malkovich",
+            "character": "Colonel Grigio",
+            "image": "https://image.tmdb.org/t/p/w185/7GoOdGNc4ra1L0F5nJTkmIB37iu.jpg"
+        },
+        {
+            "name": "Dave Franco",
+            "character": "Perry Kelvin",
+            "image": "https://image.tmdb.org/t/p/w185/d0I1BgNBAVvLJEDSfmyNVjYWPZE.jpg"
+        },
+        {
+            "name": "Rob Corddry",
+            "character": "M / Marcus",
+            "image": "https://image.tmdb.org/t/p/w185/AjCLr5ZjP6iiP8D6SHQVCZ720nA.jpg"
+        },
+        {
+            "name": "Cory Hardrict",
+            "character": "Kevin",
+            "image": "https://image.tmdb.org/t/p/w185/9pSvoahc7yDzTlogKddPglcVI2g.jpg"
+        },
+        {
+            "name": "Vincent Leclerc",
+            "character": "Perry's Dad",
+            "image": "https://image.tmdb.org/t/p/w185/sCNPUiSUQs1kfurlDXm8qgjQ8Mj.jpg"
+        },
+        {
+            "name": "Daniel Rindress-Kay",
+            "character": "Soldier #1",
+            "image": "https://image.tmdb.org/t/p/w185/bnftfIvk8m39BPFdYR53TgpeWPv.jpg"
+        },
+        {
+            "name": "Chris Cavener",
+            "character": "Soldier #2",
+            "image": "https://image.tmdb.org/t/p/w185/bae9mia162fHbZ7sjrSsC9hfXUF.jpg"
+        }
+    ],
+    "trailerKey": "07s-cNFffDM"
+},
+    {
     "title": "The Spectacular Now",
     "year": "2013",
     "desc": "تدور أحداث الفيلم حول طالب في المرحلة الثانوية يعيش حياته بلا مبالاة وتفكير في المستقبل، لكن نظرته للحياة تتغير عندما يلتقي بفتاة منطوية وذكية تنشأ بينهما علاقة عاطفية غير متوقعة تدفعهما لمواجهة مخاوفهما وصدمات ماضيهما في إطار درامي ورومانسي مؤثر .",
