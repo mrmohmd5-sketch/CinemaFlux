@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Dune: Part Two",
+    "year": "2024",
+    "desc": "تابع الرحلة الأسطورية لبول أتريدس وهو يتحد مع تشاني وفريمن أثناء وجوده في طريق حربي للانتقام من المتآمرين الذين دمروا عائلته. في مواجهة الاختيار بين حب حياته ومصير الكون المعروف ، يسعى بولس إلى منع مستقبل رهيب لا يستطيع التنبؤ به سواه.",
+    "poster": "https://image.tmdb.org/t/p/w500/3fZc7kZ09aZB0rtYBVK2hPojZec.jpg",
+    "hdUrl": "https://streamtape.com/e/pLWDDK9Av6IBre/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/pLWDDK9Av6IBre/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "8.1",
+    "genre": "خيال علمي مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Timothée Chalamet",
+            "character": "Paul Atreides",
+            "image": "https://image.tmdb.org/t/p/w185/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg"
+        },
+        {
+            "name": "Zendaya",
+            "character": "Chani",
+            "image": "https://image.tmdb.org/t/p/w185/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+        },
+        {
+            "name": "Rebecca Ferguson",
+            "character": "Jessica",
+            "image": "https://image.tmdb.org/t/p/w185/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
+        },
+        {
+            "name": "Javier Bardem",
+            "character": "Stilgar",
+            "image": "https://image.tmdb.org/t/p/w185/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+        },
+        {
+            "name": "Josh Brolin",
+            "character": "Gurney Halleck",
+            "image": "https://image.tmdb.org/t/p/w185/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+            "name": "Austin Butler",
+            "character": "Feyd-Rautha",
+            "image": "https://image.tmdb.org/t/p/w185/atdAs4pFGjUQ4m2W8kJYly7N6cC.jpg"
+        },
+        {
+            "name": "Florence Pugh",
+            "character": "Princess Irulan",
+            "image": "https://image.tmdb.org/t/p/w185/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+        },
+        {
+            "name": "Dave Bautista",
+            "character": "Beast Rabban",
+            "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        },
+        {
+            "name": "Christopher Walken",
+            "character": "Emperor",
+            "image": "https://image.tmdb.org/t/p/w185/ApgDL7nudR9T2GpjCG4vESgymO2.jpg"
+        },
+        {
+            "name": "Léa Seydoux",
+            "character": "Lady Margot Fenring",
+            "image": "https://image.tmdb.org/t/p/w185/xcYZOScYqziWjPcf3xIfQUMBYlZ.jpg"
+        }
+    ],
+    "trailerKey": "p-4Xgcuwb00",
+    "featured": true
+},
+    {
     "title": "Dune",
     "year": "2021",
     "desc": "بول أتريدس ، شاب لامع وموهوب ولد لمصير عظيم يفوق إدراكه، وعليه أن يسافر إلى أخطر كوكب في الكون لضمان مستقبل عائلته وشعبه. بينما تنفجر القوى الخبيثة في صراع حول الإمداد الحصري للكوكب بأثمن مورد في الوجود - سلعة قادرة على إطلاق العنان لقدرات البشرية العليا - فقط أولئك الذين يستطيعون التغلب على خوفهم سيبقون على قيد الحياة.",
