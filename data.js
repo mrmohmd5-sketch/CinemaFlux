@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "The Dink",
+    "year": "2026",
+    "desc": "'داستي بويد'، المطرق'، محترف التنس الفاشل، في حاجة ماسّة إلى الفوز. سعياً منه إلى إنقاذ ناد ريفيّ متعثّر ونيل احترام أبيه، يحنث 'داستي' نذراً مقدّساً ويفعل ما لا يمكن تصوّره: يلعب البيكلبول.",
+    "poster": "https://image.tmdb.org/t/p/w500/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
+    "hdUrl": "https://streamtape.com/e/1j9y0Aw9zJtegbz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/1j9y0Aw9zJtegbz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.2",
+    "genre": "كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Jake Johnson",
+            "character": "Dustin 'The Hammer' Boyd",
+            "image": "https://image.tmdb.org/t/p/w185/3UNfW2qZgRkW81neNVfQvaRC92K.jpg"
+        },
+        {
+            "name": "Mary Steenburgen",
+            "character": "Candace",
+            "image": "https://image.tmdb.org/t/p/w185/yJhfuqS3yXW7kLSyvRU6n3b35mq.jpg"
+        },
+        {
+            "name": "Chloe Fineman",
+            "character": "Marisa",
+            "image": "https://image.tmdb.org/t/p/w185/pzGIb2jkjeXGhOJryPf2n2w13lI.jpg"
+        },
+        {
+            "name": "Aaron Chen",
+            "character": "PJ",
+            "image": "https://image.tmdb.org/t/p/w185/AbXN2wpfiH97Mj7f7smzXPeZNOG.jpg"
+        },
+        {
+            "name": "Patton Oswalt",
+            "character": "Skip 'Piggy' Pigliani",
+            "image": "https://image.tmdb.org/t/p/w185/ljQvjbPmcIAl205Lb2Mu4CW8WO7.jpg"
+        },
+        {
+            "name": "Andy Roddick",
+            "character": "Andy Roddick",
+            "image": "https://image.tmdb.org/t/p/w185/hsFCpMMnczzI6BvukUQydMxrHZ2.jpg"
+        },
+        {
+            "name": "John McEnroe",
+            "character": "John McEnroe",
+            "image": "https://image.tmdb.org/t/p/w185/g3ZBeufFN7sAuNlMr2SeifRwyjN.jpg"
+        },
+        {
+            "name": "Ben Stiller",
+            "character": "Dr. Stone",
+            "image": "https://image.tmdb.org/t/p/w185/scgpxhI05JpdNXXfmpK6z0rPOWN.jpg"
+        },
+        {
+            "name": "Ed Harris",
+            "character": "Chuck Boyd",
+            "image": "https://image.tmdb.org/t/p/w185/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg"
+        },
+        {
+            "name": "Cleo King",
+            "character": "Gail",
+            "image": "https://image.tmdb.org/t/p/w185/teEPJgvrvPrNEh83FdOroNSLJzO.jpg"
+        }
+    ],
+    "trailerKey": "YyVNFzx5Pl8"
+},
+    {
     "title": "Extreme Job",
     "year": "2019",
     "desc": "تدور أحداث الفيلم حول مجموعة من المحققين يتنكرون على شكل موظفين في مطعم للدجاج في محاولة منهم لإسقاط منظمة إجرامية لكن الأمور تأخذ منحنى آخر غير متوقع في ذلك المطعم.\r (أكثر فيلم كوميدي مشاهدة وتحقيقا للإيرادات بتاريخ السينما الكورية.)",
