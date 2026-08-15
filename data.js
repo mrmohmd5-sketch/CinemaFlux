@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "EXIT",
+    "year": "2019",
+    "desc": "تدور أحداث العمل في إطار من الحركة والكوميديا، حيث يحاول متسلق جبال محترف إنقاذ الأمور في منطقة سيول بكوريا الجنوبية، حينما تحاصر المدينة بغاز أبيض غامض.",
+    "poster": "https://image.tmdb.org/t/p/w500/7GTwjMaEVLbDBkg6McEizHTH1PF.jpg",
+    "hdUrl": "https://streamtape.com/e/d7JgKB8AZLhkqPO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/d7JgKB8AZLhkqPO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.6",
+    "genre": "حركة كوميديا",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Cho Jung-seok",
+            "character": "Yong-nam",
+            "image": "https://image.tmdb.org/t/p/w185/pVZHsNj31fNMyWixqg26TA9HjU1.jpg"
+        },
+        {
+            "name": "Yoona",
+            "character": "Eui-ju",
+            "image": "https://image.tmdb.org/t/p/w185/JzAuAv17bWkLxVtfi9YJvQJhZl.jpg"
+        },
+        {
+            "name": "Goh Doo-shim",
+            "character": "Hyun-ok",
+            "image": "https://image.tmdb.org/t/p/w185/kp93ShpiupK6A9c0eLyQVmFHt2m.jpg"
+        },
+        {
+            "name": "Park In-hwan",
+            "character": "Jang-su",
+            "image": "https://image.tmdb.org/t/p/w185/nQ9gZB2u5SXNnwTU8FLlIVYZBOS.jpg"
+        },
+        {
+            "name": "Kim Ji-young",
+            "character": "Jung-hyun",
+            "image": "https://image.tmdb.org/t/p/w185/7bEs0Z6klajJZE3PWBAy5gh099D.jpg"
+        },
+        {
+            "name": "Kang Ki-young",
+            "character": "Manager Ku",
+            "image": "https://image.tmdb.org/t/p/w185/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
+        },
+        {
+            "name": "Kim Jong-goo",
+            "character": "Second Uncle",
+            "image": "https://image.tmdb.org/t/p/w185/t5CnFB7boQEoNofUmch5wcUn2w3.jpg"
+        },
+        {
+            "name": "Kim Byeong-soon",
+            "character": "Third Uncle",
+            "image": "https://image.tmdb.org/t/p/w185/5LjHpV6rEOZcIpXVF1pRDTSBlCs.jpg"
+        },
+        {
+            "name": "Hwang Hyo-eun",
+            "character": "Second Sister",
+            "image": "https://image.tmdb.org/t/p/w185/7MVODETf4Wjtx4GatlF9JFCtYfv.jpg"
+        },
+        {
+            "name": "Lee Bong-ryeon",
+            "character": "Third Sister",
+            "image": "https://image.tmdb.org/t/p/w185/AkpzrUGpT0JvRY9Zk6qceKm937l.jpg"
+        }
+    ],
+    "trailerKey": "Sp_Uex375YM"
+},
+    {
     "title": "Mantis",
     "year": "2025",
     "desc": "حين يغرق المجتمع السريّ للقتلة المأجورين في الفوضى، يُطلَق العنان لسلالة جديدة من القتلة... ومع انهيار القواعد القديمة، مَن يجرؤ على فرض سيطرته على عالم الإجرام؟",
