@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Disclosure Day",
+    "year": "2026",
+    "desc": "يصبح خبير في الأمن السيبراني مُبلغ عن المخالفات بعد اكتشافه أسرارًا عن كائنات فضائية، فتطاردُه إحدى الشركات. وفي نفس الوقت، تتعاون معه خبيرة أرصاد جوية تواجه ظواهر غريبة ليثبتا وجود حياة تتجاوز فهمنا.",
+    "poster": "https://image.tmdb.org/t/p/w500/pISy0e4JlOqAU0Exa6X0svaTHJk.jpg",
+    "hdUrl": "https://streamtape.com/e/q9G7koKJ94tzXgp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/q9G7koKJ94tzXgp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "خيال علمي إثارة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Emily Blunt",
+            "character": "Margaret Fairchild",
+            "image": "https://image.tmdb.org/t/p/w185/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+        },
+        {
+            "name": "Josh O'Connor",
+            "character": "Dr. Daniel Kellner",
+            "image": "https://image.tmdb.org/t/p/w185/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
+        },
+        {
+            "name": "Colin Firth",
+            "character": "Noah Scanlon",
+            "image": "https://image.tmdb.org/t/p/w185/z6wxnkqSTnzO1tcBui0ss7ehdm9.jpg"
+        },
+        {
+            "name": "Eve Hewson",
+            "character": "Jane Blakenship",
+            "image": "https://image.tmdb.org/t/p/w185/1OlMfQrXEujIPTBUWt3AM0J0hJa.jpg"
+        },
+        {
+            "name": "Colman Domingo",
+            "character": "Hugo Wakefield",
+            "image": "https://image.tmdb.org/t/p/w185/t0cgfvtA7Thxnrtj5baRi656zlc.jpg"
+        },
+        {
+            "name": "Wyatt Russell",
+            "character": "Jackson",
+            "image": "https://image.tmdb.org/t/p/w185/zIldBzXdBWskPZB7x35G2hYEVDo.jpg"
+        },
+        {
+            "name": "Henry Lloyd-Hughes",
+            "character": "Casper Boyd",
+            "image": "https://image.tmdb.org/t/p/w185/m8zSYF7KmQS0x0o7wnWSuWLc0LW.jpg"
+        },
+        {
+            "name": "Elizabeth Marvel",
+            "character": "Sister Maura",
+            "image": "https://image.tmdb.org/t/p/w185/zJaDO2YI0XHeUDB5onVSgAVrvg2.jpg"
+        },
+        {
+            "name": "Hettienne Park",
+            "character": "Serena",
+            "image": "https://image.tmdb.org/t/p/w185/c5fZeiKZ6magmPWbLJkSjKm5oUX.jpg"
+        },
+        {
+            "name": "Tommy Martinez",
+            "character": "Santiago",
+            "image": "https://image.tmdb.org/t/p/w185/hPPWLxCSoehYnDaOrC6O0HxXPjT.jpg"
+        }
+    ],
+    "trailerKey": "4Lkjgpk1ss4",
+    "featured": true
+},
+    {
     "title": "Mufasa: The Lion King",
     "year": "2024",
     "desc": "استكشفوا رحلة الصعود غير المرتقبة لملك أرض العزة المحبوب.  موفاسا، الشبل الضائع وحيدًا، يلتقي بأسد متعاطف يُدعى تاكا، وريث السلالة الملكية. يُطلق هذا اللقاء الصدفي رحلةً طويلةً لمجموعة من المنبوذين يبحثون عن مصيرهم.",
