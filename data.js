@@ -5,7 +5,7 @@ const globalMoviesData = [
     "desc": "تابع الرحلة الأسطورية لبول أتريدس وهو يتحد مع تشاني وفريمن أثناء وجوده في طريق حربي للانتقام من المتآمرين الذين دمروا عائلته. في مواجهة الاختيار بين حب حياته ومصير الكون المعروف ، يسعى بولس إلى منع مستقبل رهيب لا يستطيع التنبؤ به سواه.",
     "poster": "https://image.tmdb.org/t/p/w500/3fZc7kZ09aZB0rtYBVK2hPojZec.jpg",
     "hdUrl": "https://streamtape.com/e/pLWDDK9Av6IBre/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-    "sdUrl": "https://streamtape.com/e/pLWDDK9Av6IBre/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/BePRy1wwXMiypA7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "rating": "8.1",
     "genre": "خيال علمي مغامرة",
     "type": "movie",
@@ -132,7 +132,7 @@ const globalMoviesData = [
     {
     "title": "Descendants: Wicked Wonderland",
     "year": "2026",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول أبناء أشهر شخصيات ديزني الأسطورية حيث يخوضون مغامرة سحرية جديدة تقودهم إلى بلاد العجائب المليئة بالأسرار والمفاجآت لمواجهة قوى مظلمة تهدد استقرار عالمهم في إطار خيالي واستعراضي مشوق .",
     "poster": "https://image.tmdb.org/t/p/w500/s7XeWOhaI1DK5Zxtc6xOf2T71Gc.jpg",
     "hdUrl": "https://streamtape.com/e/q9lbAbj902HzdoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/q9lbAbj902HzdoP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -454,7 +454,7 @@ const globalMoviesData = [
     {
     "title": "Eye for an Eye",
     "year": "2022",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول أب مكلوم يسعى للانتقام من المتسببين في مقتل ابنته فيقرر تطبيق العدالة بطريقته الخاصة وملاحقة المجرمين في إطار من التشويق والإثارة والحركة والصراع النفسي .",
     "poster": "https://image.tmdb.org/t/p/w500/vtiu0UtizC0l91s5fVwZrOfoDnZ.jpg",
     "hdUrl": "https://streamtape.com/e/AwJPbrgXqvcXpoz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/AwJPbrgXqvcXpoz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -582,7 +582,7 @@ const globalMoviesData = [
     {
     "title": "Soulm8te",
     "year": "2026",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول رجل يمر بأزمة نفسية حادة بعد فقدان زوجته فيقرر اقتناء روبوت ذكاء اصطناعي لملء الفراغ العاطفي ومساعدته على تجاوز حزنه لكن البرمجة تتطور بشكل غير متوقع لتتحول العلاقة إلى هوس مميت وصراع مرعب من أجل البقاء .",
     "poster": "https://image.tmdb.org/t/p/w500/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
     "hdUrl": "https://streamtape.com/e/3V0OOdRPq9Fa9o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/3V0OOdRPq9Fa9o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -647,7 +647,7 @@ const globalMoviesData = [
     {
     "title": "Ninja Assassin",
     "year": "2009",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول قاتل نينجا محترف ينقلب على العشيرة السرية القاسية التي دربته منذ طفولته بعد إعدامهم لصديقته، فيتحالف مع عميلة في الشرطة الدولية للانتقام وإسقاط المنظمة في مواجهات دموية ملحمية .",
     "poster": "https://image.tmdb.org/t/p/w500/ipJ4mgqse6uoTRsDyU3TXmva1rt.jpg",
     "hdUrl": "https://streamtape.com/e/g3d8BPzJakS44Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/g3d8BPzJakS44Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -776,7 +776,7 @@ const globalMoviesData = [
     {
     "title": "Murderer Report",
     "year": "2025",
-    "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+    "desc": "تدور أحداث الفيلم حول صحفية تبحث عن سبق صحفي فتتلقى طلباً لإجراء مقابلة حصرية مع طبيب نفسي يعترف بأنه قاتل متسلسل، لتتحول المقابلة إلى لعبة نفسية خطيرة تكشف أسراراً مظلمة وتضع حياتها على المحك في إطار من الغموض والإثارة .",
     "poster": "https://image.tmdb.org/t/p/w500/iKhwQwfCwnqbi6C7wAojowaCEu0.jpg",
     "hdUrl": "https://streamtape.com/e/VGlvPGwkRWcKlqj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
     "sdUrl": "https://streamtape.com/e/VGlvPGwkRWcKlqj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
