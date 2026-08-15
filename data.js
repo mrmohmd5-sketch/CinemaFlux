@@ -1,5 +1,69 @@
 const globalMoviesData = [
     {
+    "title": "Peninsula",
+    "year": "2020",
+    "desc": "تدور الأحداث بعد مرور 4 سنوات على حادثة قطار بوسان، حيث يحارب الجميع من أجل التصدي للكارثة غير المتوقعة والتي دمرت كل شيء على الأرض، حيث يتم تكليف جندي سابق بمهمة العودة لأرض المخاطر لإنقاذ ناجين.",
+    "poster": "https://image.tmdb.org/t/p/w500/ew1lAU8yV66JbivBU1Zh4Wj4pOB.jpg",
+    "hdUrl": "https://streamtape.com/e/gaOqeQL7mZTqRBG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/gaOqeQL7mZTqRBG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "6.7",
+    "genre": "رعب حركة إثارة مغامرة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Gang Dong-won",
+            "character": "Han Jung-seok",
+            "image": "https://image.tmdb.org/t/p/w185/xGPT8rgvWuK8Qh7BKNd7fhKs8Sk.jpg"
+        },
+        {
+            "name": "Lee Jung-hyun",
+            "character": "Min-jung",
+            "image": "https://image.tmdb.org/t/p/w185/rOm1wgpRGDAyc8YvsWW3A99zmbi.jpg"
+        },
+        {
+            "name": "Lee Re",
+            "character": "Joon-yi",
+            "image": "https://image.tmdb.org/t/p/w185/5KU4nUOdQxgcvRoOEOQtAaRFbTY.jpg"
+        },
+        {
+            "name": "Kwon Hae-hyo",
+            "character": "Kim Noh-in",
+            "image": "https://image.tmdb.org/t/p/w185/3sCMSQVdY2mqYYq3jj4u9JWRoTt.jpg"
+        },
+        {
+            "name": "Kim Min-jae",
+            "character": "Sergeant Hwang",
+            "image": "https://image.tmdb.org/t/p/w185/iO6DazwKsFMfUMRbyTFkL70Rhun.jpg"
+        },
+        {
+            "name": "Koo Kyo-hwan",
+            "character": "Captain Seo",
+            "image": "https://image.tmdb.org/t/p/w185/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
+        },
+        {
+            "name": "Kim Do-yoon",
+            "character": "Chul-min",
+            "image": "https://image.tmdb.org/t/p/w185/aj6K7PfdgmZN6SyQBFFvMeewGyf.jpg"
+        },
+        {
+            "name": "Lee Ye-won",
+            "character": "Yu-jin",
+            "image": "https://image.tmdb.org/t/p/w185/65ScuvxnN6BjpGlYbRfE1nq2G6K.jpg"
+        },
+        {
+            "name": "Kim Kyu-baek",
+            "character": "Kim Yi-byung",
+            "image": "https://image.tmdb.org/t/p/w185/lx16EMlOb2XNRZHLDMpWVLjplfY.jpg"
+        },
+        {
+            "name": "Jang So-yeon",
+            "character": "Jung-seok's Sister",
+            "image": "https://image.tmdb.org/t/p/w185/f6P6S8MIVAsoyzuqvT63DF1iahy.jpg"
+        }
+    ],
+    "trailerKey": "cCWdiDPqYcs"
+},
+    {
     "title": "Striking Rescue",
     "year": "2024",
     "desc": "تدور أحداث الفيلم حول خبير أمني ومقاتل سابق يجد نفسه في مهمة خطيرة لإنقاذ رهائن أبرياء بعد تعرضهم للخطف على يد منظمة إجرامية مسلحة، فيخوض مواجهات شرسة وقتالاً عنيفاً لإنقاذهم وكشف المؤامرة في إطار من الحركة والإثارة والتشويق .",
