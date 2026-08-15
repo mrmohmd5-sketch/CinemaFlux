@@ -1,5 +1,70 @@
 const globalMoviesData = [
     {
+    "title": "Extraction 2",
+    "year": "2023",
+    "desc": "يعود المقدام البارع 'تايلر ريك' بعد نجاته من فم الموت، ويقع على عاتقه الآن تنفيذ مهمة أخرى محفوفة بالمخاطر... وهي إنقاذ عائلة رجل عصابات قاسٍ من السجن.",
+    "poster": "https://image.tmdb.org/t/p/w500/ghlJt2Fl6r766aFtz8rsSrwzRIb.jpg",
+    "hdUrl": "https://streamtape.com/e/LQWVXAAgjyHv6g/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "sdUrl": "https://streamtape.com/e/LQWVXAAgjyHv6g/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+    "rating": "7.4",
+    "genre": "حركة إثارة جريمة",
+    "type": "movie",
+    "cast": [
+        {
+            "name": "Chris Hemsworth",
+            "character": "Tyler Rake",
+            "image": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+            "name": "Golshifteh Farahani",
+            "character": "Nik Khan",
+            "image": "https://image.tmdb.org/t/p/w185/lbsd2lAIQq4egOUXDIfjhte12vv.jpg"
+        },
+        {
+            "name": "Adam Bessa",
+            "character": "Yaz Khan",
+            "image": "https://image.tmdb.org/t/p/w185/v8y5C5AA4G9Wr8ZbOZ0zbfNymIW.jpg"
+        },
+        {
+            "name": "Tornike Gogrichiani",
+            "character": "Zurab Radiani / Nikoloz Radiani",
+            "image": "https://image.tmdb.org/t/p/w185/uxricy51fMAFvK2WDsYAiBaoamG.jpg"
+        },
+        {
+            "name": "Tornike Bziava",
+            "character": "David Radiani",
+            "image": "https://image.tmdb.org/t/p/w185/brZSTPCKTfDOCcc7ZsqHbsENpZy.jpg"
+        },
+        {
+            "name": "Tinatin Dalakishvili",
+            "character": "Ketevan Radiani",
+            "image": "https://image.tmdb.org/t/p/w185/ulnFxigewurjUXWEZLLgva47XH8.jpg"
+        },
+        {
+            "name": "Andro Japaridze",
+            "character": "Sandro Radiani",
+            "image": "https://image.tmdb.org/t/p/w185/nz8kZo5jS5cUcazNxYeCDTuo6s6.jpg"
+        },
+        {
+            "name": "Justin Howell",
+            "character": "Gio",
+            "image": "https://image.tmdb.org/t/p/w185/fMo49t3T3AUaUDUAQqJqFbX1DOQ.jpg"
+        },
+        {
+            "name": "Idris Elba",
+            "character": "Alcott",
+            "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        },
+        {
+            "name": "Olga Kurylenko",
+            "character": "Mia",
+            "image": "https://image.tmdb.org/t/p/w185/ei6eYUhQFw2AaV6U5fyPptBaPF0.jpg"
+        }
+    ],
+    "trailerKey": "Y274jZs5s7s",
+    "featured": true
+},
+    {
     "title": "Warm Bodies",
     "year": "2013",
     "desc": "قصة حب قوية تجمع بين (آر) ، و(جولي) بعد أن يدمر المدينة وباء الزومبي ، ويأتى عليها ، أثناء ذلك يحاول (آر) إنقاذ (جولي) من هجوم الزومبي ، فتتعلق بحبه ، وتنشأ بينهما علاقة خاصة ، تساعدهما على البقاء على قيد الحياة وسط هؤلاء الزومبي المتوحشين .",
