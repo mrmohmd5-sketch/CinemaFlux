@@ -33,6 +33,7 @@
         #statusOutput { margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #000; font-family: monospace; font-size: 12px; color: #00ff00; border: 1px solid #1c252d; min-height: 40px; white-space: pre-wrap; }
         #authBlock { text-align: center; }
         .hint { font-size: 11px; color: #e50914; margin-top: 2px; }
+        .warning { color: #ffc107; }
     </style>
 </head>
 <body>
@@ -47,7 +48,7 @@
         </div>
 
         <div id="controlPanel" style="display: none;">
-            <h2>🤖 لوحة التحكم والرفع التلقائي إلى الـ GitHub</h2>
+            <h2>🤖 لوحة التحكم والرفع التلقائي (مع دعم التحديث)</h2>
             
             <h3>1️⃣ إعدادات الربط (تُملأ مرة واحدة فقط)</h3>
             <div class="grid">
@@ -69,20 +70,21 @@
                 </div>
             </div>
 
-            <h3>2️⃣ إضافة محتوى جديد (فيلم أو مسلسل)</h3>
+            <h3>2️⃣ إضافة محتوى جديد أو تحديث مسلسل موجود</h3>
             <div class="grid">
                 <div class="input-group">
                     <label>رابط الفيلم أو المسلسل من موقع TMDB</label>
                     <input type="text" id="tmdbUrlInput" placeholder="https://www.themoviedb.org/movie/xxxxx أو /tv/xxxxx">
+                    <span class="hint">* سيتم البحث عن المسلسل في قاعدة البيانات الحالية باستخدام هذا الرابط. إذا وُجد، سيتم تحديثه (إضافة حلقات جديدة).</span>
                 </div>
                 <div class="input-group checkbox-group">
                     <input type="checkbox" id="featuredCheck">
                     <label for="featuredCheck">هل هذا المحتوى مميز؟ (سيظهر في السلايدر العلوي)</label>
                 </div>
                 <div class="input-group">
-                    <label>روابط تشغيل الفيديو (للفيلم ضع رابط واحد | للمسلسل ضع كل رابط في سطر منفصل بالترتيب)</label>
-                    <textarea id="mogoUrlInput" placeholder="للفيلم: رابط واحد فقط&#10;للمسلسلات:&#10;رابط الحلقة 1&#10;رابط الحلقة 2&#10;رابط الحلقة 3"></textarea>
-                    <span class="hint">* ملحوظة للمسلسلات: يرجى وضع روابط الحلقات مرتبة (كل رابط في سطر)، وسيقوم الأدمن بتوزيعها تلقائياً على أرقام الحلقات المستخرجة من TMDB.</span>
+                    <label>روابط تشغيل الفيديو (للمسلسلات: ضع روابط الحلقات الجديدة فقط بالترتيب، كل رابط في سطر)</label>
+                    <textarea id="mogoUrlInput" placeholder="للفيلم: رابط واحد فقط&#10;للمسلسلات (الحلقات الجديدة فقط):&#10;رابط الحلقة 1 (جديدة)&#10;رابط الحلقة 2 (جديدة)"></textarea>
+                    <span class="hint">* سيتم الاحتفاظ بروابط الحلقات القديمة. الروابط التي تدخلها هنا ستوزع على الحلقات الجديدة التي تم جلبها من TMDB فقط. إذا كان عدد الروابط أقل من عدد الحلقات الجديدة، ستترك الحلقات الباقية بدون رابط ويمكنك إضافتها لاحقاً.</span>
                 </div>
             </div>
 
@@ -93,7 +95,7 @@
     </div>
 
     <script>
-        // دالة آمنة لفك تشفير Base64 القادم من GitHub بدون مشاكل الترميز أو الأسطر الجديدة
+        // ===== دوال الترميز الآمن =====
         function decodeGitHubBase64(base64Str) {
             if (!base64Str) return "";
             const cleanB64 = base64Str.replace(/\s/g, '');
@@ -105,7 +107,6 @@
             return new TextDecoder("utf-8").decode(bytes);
         }
 
-        // دالة آمنة لتشفير النصوص العربية إلى Base64 لرفعها على GitHub
         function encodeGitHubBase64(str) {
             const bytes = new TextEncoder().encode(str);
             let binaryString = "";
@@ -115,7 +116,7 @@
             return btoa(binaryString);
         }
 
-        // دالة تحليل مدخلات TMDB بدقة عالية
+        // ===== تحليل مدخلات TMDB =====
         function parseTmdbInput(input) {
             let type = "movie";
             let id = input.trim();
@@ -139,6 +140,7 @@
             return { type, id };
         }
 
+        // ===== المصادقة =====
         async function checkAccess() {
             const pass = document.getElementById('passInput').value;
             
@@ -176,6 +178,7 @@
             out.style.color = isError ? "#ff3333" : "#00ff00";
         }
 
+        // ===== جلب مفتاح الإعلان =====
         async function fetchTrailerKeyFromTMDB(type, id, apiKey) {
             logStatus("⏳ البحث عن إعلان باللغة العربية من TMDB...");
             let url = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=ar`;
@@ -223,6 +226,86 @@
             return "";
         }
 
+        // ===== دالة البحث عن مسلسل في البيانات الحالية =====
+        function findMovieInData(dataArray, tmdbId, tmdbType, title, year) {
+            if (tmdbId) {
+                const found = dataArray.find(item => item.tmdbId == tmdbId && item.tmdbType === tmdbType);
+                if (found) return found;
+            }
+            if (title && year) {
+                const found = dataArray.find(item => item.title === title && item.year === year);
+                if (found) return found;
+            }
+            return null;
+        }
+
+        // ===== دالة دمج المواسم مع الاحتفاظ بالروابط القديمة وتعيين الروابط الجديدة =====
+        function mergeSeasons(existingSeasons, newSeasonsFromTMDB, newLinksArray) {
+            // بناء خريطة الروابط القديمة: seasonNumber -> episodeNumber -> url
+            const oldLinksMap = {};
+            if (existingSeasons && Array.isArray(existingSeasons)) {
+                existingSeasons.forEach(season => {
+                    const sNum = season.season_number;
+                    if (!oldLinksMap[sNum]) oldLinksMap[sNum] = {};
+                    if (season.episodes && Array.isArray(season.episodes)) {
+                        season.episodes.forEach(ep => {
+                            oldLinksMap[sNum][ep.episode_number] = ep.url || "";
+                        });
+                    }
+                });
+            }
+
+            // قائمة الحلقات التي تحتاج إلى رابط (جديدة أو قديمة فارغة)
+            let episodesNeedingLink = [];
+            // سنقوم ببناء المواسم المدمجة مع وضع روابط مؤقتة فارغة للحلقات التي ستملأ لاحقاً
+            const mergedSeasons = newSeasonsFromTMDB.map(newSeason => {
+                const sNum = newSeason.season_number;
+                const episodes = newSeason.episodes.map(newEp => {
+                    const epNum = newEp.episode_number;
+                    let existingUrl = "";
+                    if (oldLinksMap[sNum] && oldLinksMap[sNum][epNum] !== undefined) {
+                        existingUrl = oldLinksMap[sNum][epNum];
+                    }
+                    // إذا كانت الحلقة موجودة برابط، نستخدمه، وإلا نضعها في قائمة المحتاجة
+                    if (existingUrl) {
+                        return { episode_number: epNum, url: existingUrl };
+                    } else {
+                        episodesNeedingLink.push({ season: sNum, episode: epNum });
+                        return { episode_number: epNum, url: "" }; // فارغ مؤقتاً
+                    }
+                });
+                return { season_number: sNum, episodes: episodes };
+            });
+
+            // توزيع الروابط الجديدة على الحلقات المحتاجة بالترتيب
+            let linkIndex = 0;
+            const totalNeeded = episodesNeedingLink.length;
+            let filledCount = 0;
+
+            // نمر على المواسم ونملأ الروابط الفارغة
+            for (let season of mergedSeasons) {
+                for (let ep of season.episodes) {
+                    if (ep.url === "" && linkIndex < newLinksArray.length) {
+                        ep.url = newLinksArray[linkIndex];
+                        linkIndex++;
+                        filledCount++;
+                    }
+                }
+            }
+
+            // إذا كان هناك روابط زائدة (أكثر من الحلقات المحتاجة) يمكننا تجاهلها أو تخزينها لاستخدام لاحق.
+            // لكننا سنكتفي بتحديث العدد.
+
+            const remaining = totalNeeded - filledCount;
+
+            return {
+                seasons: mergedSeasons,
+                filled: filledCount,
+                remaining: remaining
+            };
+        }
+
+        // ===== الوظيفة الأساسية للجلب والرفع =====
         async function autoFetchAndUpload() {
             const ghUser = document.getElementById('ghUser').value.trim();
             const ghRepo = document.getElementById('ghRepo').value.trim();
@@ -297,7 +380,8 @@
                 const ratingValue = dataAr.vote_average ? dataAr.vote_average.toFixed(1) : "0.0";
                 const finalType = (type === "tv") ? "series" : "movie";
 
-                const newMediaObject = {
+                // بناء كائن الوسائط الجديد (سيتم استخدامه للإضافة أو التحديث)
+                let newMediaObject = {
                     title: titleText,
                     year: year,
                     desc: overviewText.replace(/"/g, "'").replace(/\n/g, " "),
@@ -308,17 +392,20 @@
                     genre: genresArray,
                     type: finalType,
                     cast: castData,
-                    trailerKey: trailerKey
+                    trailerKey: trailerKey,
+                    tmdbId: id,
+                    tmdbType: type
                 };
 
                 if (isFeatured) {
                     newMediaObject.featured = true;
                 }
 
+                // جلب هيكل المواسم إذا كان مسلسلاً
+                let seasonsData = [];
                 if (finalType === "series") {
-                    logStatus("⏳ تم كشف مسلسل! جاري سحب وهيكلة المواسم والحلقات تلقائياً وتوزيع الروابط المخصصة...");
+                    logStatus("⏳ تم كشف مسلسل! جاري سحب المواسم والحلقات من TMDB...");
                     const seasonsArray = [];
-                    let overallEpisodeCounter = 0;
                     
                     if (dataAr.seasons && dataAr.seasons.length > 0) {
                         for (const s of dataAr.seasons) {
@@ -328,14 +415,10 @@
                             if (epRes.ok) {
                                 const epData = await epRes.json();
                                 if (epData && epData.episodes) {
-                                    const episodesList = epData.episodes.map(e => {
-                                        const assignedUrl = linksArray[overallEpisodeCounter] || linksArray[0] || "";
-                                        overallEpisodeCounter++;
-                                        return {
-                                            episode_number: e.episode_number,
-                                            url: assignedUrl
-                                        };
-                                    });
+                                    const episodesList = epData.episodes.map(e => ({
+                                        episode_number: e.episode_number,
+                                        url: "" // سيتم ملؤها لاحقاً
+                                    }));
                                     
                                     seasonsArray.push({
                                         season_number: s.season_number,
@@ -345,7 +428,7 @@
                             }
                         }
                     }
-                    newMediaObject.seasons = seasonsArray;
+                    seasonsData = seasonsArray;
                 }
 
                 logStatus(`⏳ تم هيكلة "${titleText}" بنجاح. جاري الاتصال بـ GitHub لرفع البيانات...`);
@@ -361,8 +444,6 @@
                 
                 let rawBase64Content = fileData.content;
 
-                // إذا كان الملف كبيراً (أكبر من 1 ميجابايت)، لن ترجع GitHub خاصية content في API العادي
-                // لذلك نجلب المحتوى كاملاً عبر Blobs API لتفادي مسح البيانات
                 if (!rawBase64Content) {
                     logStatus("⏳ الملف كبير، جاري جلب المحتوى كاملاً عبر Git Blobs API...");
                     const blobUrl = `https://api.github.com/repos/${ghUser}/${ghRepo}/git/blobs/${fileSha}`;
@@ -378,29 +459,107 @@
                     throw new Error("لم يتم العثور على محتوى ملف data.js في GitHub!");
                 }
 
-                // قراءة محتوى الملف بأمان بدون تلف النصوص العربية
                 let currentContentText = decodeGitHubBase64(rawBase64Content);
 
-                logStatus("⏳ جاري دمج وتحديث قاعدة البيانات بأمان دون حذف المواد السابقة...");
-
-                // البحث عن بداية المصفوفة بشكل مرن جداً
+                // البحث عن بداية المصفوفة
                 const match = currentContentText.match(/(?:const|var|let|window\.)?\s*globalMoviesData\s*=\s*\[/);
                 if (!match) {
                     throw new Error("لم يتم العثور على مصفوفة globalMoviesData داخل ملف data.js. تم إلغاء الرفع لحماية بياناتك!");
                 }
 
-                const bracketIndex = match.index + match[0].length - 1;
-                const stringToObject = JSON.stringify(newMediaObject, null, 4);
-                const afterBracket = currentContentText.slice(bracketIndex + 1).trim();
-
-                let updatedContentText = "";
-                if (afterBracket.startsWith(']')) {
-                    // إذا كانت المصفوفة فارغة
-                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "\n" + currentContentText.slice(bracketIndex + 1);
-                } else {
-                    // إضافة العمل الجديد في البداية مع فاصلة
-                    updatedContentText = currentContentText.slice(0, bracketIndex + 1) + "\n    " + stringToObject + "," + currentContentText.slice(bracketIndex + 1);
+                const startBracket = match.index + match[0].length - 1;
+                let bracketCount = 0;
+                let endBracket = -1;
+                for (let i = startBracket; i < currentContentText.length; i++) {
+                    if (currentContentText[i] === '[') bracketCount++;
+                    else if (currentContentText[i] === ']') {
+                        bracketCount--;
+                        if (bracketCount === 0) {
+                            endBracket = i;
+                            break;
+                        }
+                    }
                 }
+
+                if (endBracket === -1) {
+                    throw new Error("لم يتم العثور على نهاية مصفوفة globalMoviesData بشكل صحيح.");
+                }
+
+                let arrayContent = currentContentText.substring(startBracket + 1, endBracket).trim();
+                let existingData = [];
+                try {
+                    existingData = new Function(`return [${arrayContent}]`)();
+                } catch(e) {
+                    logStatus("❌ فشل تحليل البيانات الحالية. قد يكون هناك خطأ في تنسيق data.js.", true);
+                    throw new Error("لا يمكن تحليل المصفوفة الحالية. تأكد من صحة ملف data.js.");
+                }
+
+                // ===== البحث عن المسلسل في البيانات الحالية =====
+                const existingMovie = findMovieInData(existingData, id, type, titleText, year);
+                let updatedData = [];
+
+                if (existingMovie) {
+                    logStatus(`🔄 تم العثور على "${titleText}" في قاعدة البيانات. جاري تحديثه وإضافة الحلقات الجديدة...`);
+
+                    if (finalType === "series" && seasonsData.length > 0) {
+                        const mergeResult = mergeSeasons(existingMovie.seasons || [], seasonsData, linksArray);
+                        newMediaObject.seasons = mergeResult.seasons;
+                        // عرض معلومات عن الحلقات المتبقية
+                        if (mergeResult.remaining > 0) {
+                            logStatus(`⚠️ تم إضافة ${mergeResult.filled} حلقة جديدة، ولا يزال ${mergeResult.remaining} حلقة بحاجة إلى رابط (يمكنك إضافتها لاحقاً).`, false);
+                        } else {
+                            logStatus(`✅ تم تحديث جميع الحلقات (${mergeResult.filled} حلقة جديدة).`);
+                        }
+                    } else if (finalType === "series") {
+                        newMediaObject.seasons = existingMovie.seasons || [];
+                    }
+
+                    // الحفاظ على بعض الحقول القديمة
+                    if (finalType === "movie") {
+                        newMediaObject.hdUrl = existingMovie.hdUrl || newMediaObject.hdUrl;
+                        newMediaObject.sdUrl = existingMovie.sdUrl || newMediaObject.sdUrl;
+                    }
+
+                    if (existingMovie.featured === true && !isFeatured) {
+                        newMediaObject.featured = true;
+                    }
+
+                    const index = existingData.indexOf(existingMovie);
+                    if (index !== -1) {
+                        existingData[index] = newMediaObject;
+                    }
+                    updatedData = existingData;
+                    logStatus(`✅ تم تحديث "${titleText}" بنجاح.`);
+
+                } else {
+                    logStatus(`➕ لم يتم العثور على "${titleText}". جاري إضافته كعنصر جديد...`);
+
+                    if (finalType === "series" && seasonsData.length > 0) {
+                        // توزيع الروابط على جميع حلقات المسلسل الجديد
+                        let linkIndex = 0;
+                        const finalSeasons = seasonsData.map(season => {
+                            const episodes = season.episodes.map(ep => {
+                                const url = linksArray[linkIndex] || "";
+                                linkIndex++;
+                                return { episode_number: ep.episode_number, url: url };
+                            });
+                            return { season_number: season.season_number, episodes: episodes };
+                        });
+                        newMediaObject.seasons = finalSeasons;
+                    } else if (finalType === "series") {
+                        newMediaObject.seasons = [];
+                    }
+
+                    existingData.unshift(newMediaObject);
+                    updatedData = existingData;
+                    logStatus(`✅ تم إضافة "${titleText}" كعنصر جديد.`);
+                }
+
+                // تحويل المصفوفة المحدثة إلى سلسلة JSON مع تنسيق جميل
+                const newArrayString = JSON.stringify(updatedData, null, 4);
+                const beforeArray = currentContentText.substring(0, startBracket + 1);
+                const afterArray = currentContentText.substring(endBracket);
+                const updatedContentText = beforeArray + "\n    " + newArrayString.substring(1, newArrayString.length - 1) + "\n" + afterArray;
 
                 const base64Content = encodeGitHubBase64(updatedContentText);
 
@@ -411,7 +570,7 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        message: `إضافة تلقائية للمادة: ${titleText}`,
+                        message: `تحديث تلقائي للمادة: ${titleText}`,
                         content: base64Content,
                         sha: fileSha
                     })
@@ -419,7 +578,7 @@
 
                 if(!ghPutRes.ok) throw new Error("فشل تحديث الملف على GitHub.");
 
-                logStatus(`🎉 ممتاز! تم رفع "${titleText}" بنجاح وحفظ جميع البيانات السابقة دون أي فقدان.`);
+                logStatus(`🎉 ممتاز! تم رفع/تحديث "${titleText}" بنجاح وحفظ جميع البيانات السابقة دون أي فقدان.`);
                 document.getElementById('tmdbUrlInput').value = "";
                 document.getElementById('mogoUrlInput').value = "";
                 document.getElementById('featuredCheck').checked = false;
