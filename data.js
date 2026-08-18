@@ -50,15 +50,15 @@ const globalMoviesData = [
                     },
                     {
                         "episode_number": 2,
-                        "url": ""
+                        "url": "https://streamtape.com/e/aoygRmDqmXFx80P/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
                     },
                     {
                         "episode_number": 3,
-                        "url": ""
+                        "url": "https://streamtape.com/e/oL4koK9XzMhvg3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
                     },
                     {
                         "episode_number": 4,
-                        "url": ""
+                        "url": "https://streamtape.com/e/beaQg9ZzzZTP3OV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
                     },
                     {
                         "episode_number": 5,
