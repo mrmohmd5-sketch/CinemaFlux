@@ -67,10 +67,6 @@ const globalMoviesData = [
                     {
                         "episode_number": 6,
                         "url": "https://streamtape.com/e/G9bQB7raBrt1eyY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
-                    },
-                    {
-                        "episode_number": 7,
-                        "url": ""
                     }
                 ]
             }
