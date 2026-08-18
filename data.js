@@ -1,6 +1,82 @@
 const globalMoviesData = [
     
     {
+        "title": "Lucky",
+        "year": "2026",
+        "desc": "عندما تفشل عملية سرقة بملايين الدولارات، تُجبر المحتالة 'لاكي'،، على الفرار. وبين الهرب من الفيدراليين وزعيم جريمة لا يرحم، تقاتل 'لاكي' للنجاة بحياتها ولإيجاد مخرج.",
+        "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+        "hdUrl": "",
+        "sdUrl": "",
+        "rating": "7.3",
+        "genre": "دراما جريمة",
+        "type": "series",
+        "cast": [
+            {
+                "name": "Anya Taylor-Joy",
+                "character": "Luciana 'Lucky' Armstrong",
+                "image": "https://image.tmdb.org/t/p/w185/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+            },
+            {
+                "name": "Annette Bening",
+                "character": "Priscilla Masterson",
+                "image": "https://image.tmdb.org/t/p/w185/kGslMAWcpv8MKzODhDRDkFE0uX7.jpg"
+            },
+            {
+                "name": "Clifton Collins Jr.",
+                "character": "Harris Dutch",
+                "image": "https://image.tmdb.org/t/p/w185/xfD0scqaPvAxKCPHYLo8553Le5g.jpg"
+            },
+            {
+                "name": "Aunjanue Ellis-Taylor",
+                "character": "Agent Billie Rand",
+                "image": "https://image.tmdb.org/t/p/w185/e54DfgDyS67xdtomYODFule6Ofa.jpg"
+            },
+            {
+                "name": "Timothy Olyphant",
+                "character": "John Armstrong",
+                "image": "https://image.tmdb.org/t/p/w185/7pHmRHE2wBNC9cBgNIRCBqFLoyZ.jpg"
+            }
+        ],
+        "trailerKey": "GAbT5qCTXR8",
+        "tmdbId": "278624",
+        "tmdbType": "tv",
+        "seasons": [
+            {
+                "season_number": 1,
+                "episodes": [
+                    {
+                        "episode_number": 1,
+                        "url": "https://streamtape.com/e/Z2bglyz2jzcqa0M/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 2,
+                        "url": ""
+                    },
+                    {
+                        "episode_number": 3,
+                        "url": ""
+                    },
+                    {
+                        "episode_number": 4,
+                        "url": ""
+                    },
+                    {
+                        "episode_number": 5,
+                        "url": ""
+                    },
+                    {
+                        "episode_number": 6,
+                        "url": ""
+                    },
+                    {
+                        "episode_number": 7,
+                        "url": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "title": "All Night Wrong",
         "year": "2026",
         "desc": "تدور أحداث الفيلم حول ليلة يفترض أن تكون بسيطة وعادية لكنها تنقلب إلى سلسلة من الكوارث والمواقف المعقدة والمفارقات الكوميدية الصاخبة، حيث يجد الأبطال أنفسهم في ورطة تلو الأخرى في سباق مع الزمن لتصحيح أخطائهم قبل طلوع الفجر، في إطار من الكوميديا والمغامرة والتشويق .",
