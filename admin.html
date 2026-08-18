@@ -239,9 +239,9 @@
             return null;
         }
 
-        // ===== دالة دمج المواسم مع الاحتفاظ بالروابط القديمة وتعيين الروابط الجديدة =====
+        // ===== دالة دمج المواسم مع الاحتفاظ بالروابط القديمة وتعيين الروابط الجديدة (تجاهل الحلقات الفارغة) =====
         function mergeSeasons(existingSeasons, newSeasonsFromTMDB, newLinksArray) {
-            // بناء خريطة الروابط القديمة: seasonNumber -> episodeNumber -> url
+            // خريطة الروابط القديمة: seasonNumber -> episodeNumber -> url (تجاهل الروابط الفارغة)
             const oldLinksMap = {};
             if (existingSeasons && Array.isArray(existingSeasons)) {
                 existingSeasons.forEach(season => {
@@ -249,58 +249,94 @@
                     if (!oldLinksMap[sNum]) oldLinksMap[sNum] = {};
                     if (season.episodes && Array.isArray(season.episodes)) {
                         season.episodes.forEach(ep => {
-                            oldLinksMap[sNum][ep.episode_number] = ep.url || "";
+                            if (ep.url && ep.url.trim() !== '') {
+                                oldLinksMap[sNum][ep.episode_number] = ep.url;
+                            }
                         });
                     }
                 });
             }
 
-            // قائمة الحلقات التي تحتاج إلى رابط (جديدة أو قديمة فارغة)
-            let episodesNeedingLink = [];
-            // سنقوم ببناء المواسم المدمجة مع وضع روابط مؤقتة فارغة للحلقات التي ستملأ لاحقاً
-            const mergedSeasons = newSeasonsFromTMDB.map(newSeason => {
-                const sNum = newSeason.season_number;
-                const episodes = newSeason.episodes.map(newEp => {
-                    const epNum = newEp.episode_number;
-                    let existingUrl = "";
-                    if (oldLinksMap[sNum] && oldLinksMap[sNum][epNum] !== undefined) {
-                        existingUrl = oldLinksMap[sNum][epNum];
-                    }
-                    // إذا كانت الحلقة موجودة برابط، نستخدمه، وإلا نضعها في قائمة المحتاجة
-                    if (existingUrl) {
-                        return { episode_number: epNum, url: existingUrl };
-                    } else {
-                        episodesNeedingLink.push({ season: sNum, episode: epNum });
-                        return { episode_number: epNum, url: "" }; // فارغ مؤقتاً
-                    }
-                });
-                return { season_number: sNum, episodes: episodes };
+            // جمع جميع الحلقات الجديدة من TMDB (مرتبة حسب الموسم ثم الحلقة)
+            const newEpisodesList = [];
+            newSeasonsFromTMDB.forEach(season => {
+                const sNum = season.season_number;
+                if (season.episodes) {
+                    season.episodes.forEach(ep => {
+                        newEpisodesList.push({
+                            season_number: sNum,
+                            episode_number: ep.episode_number
+                        });
+                    });
+                }
             });
 
-            // توزيع الروابط الجديدة على الحلقات المحتاجة بالترتيب
             let linkIndex = 0;
-            const totalNeeded = episodesNeedingLink.length;
-            let filledCount = 0;
+            const addedEpisodes = [];      // الحلقات الجديدة التي حصلت على رابط
+            const remainingEpisodes = [];  // الحلقات الجديدة بدون رابط (لن تُضاف)
 
-            // نمر على المواسم ونملأ الروابط الفارغة
-            for (let season of mergedSeasons) {
-                for (let ep of season.episodes) {
-                    if (ep.url === "" && linkIndex < newLinksArray.length) {
-                        ep.url = newLinksArray[linkIndex];
+            for (const newEp of newEpisodesList) {
+                const sNum = newEp.season_number;
+                const epNum = newEp.episode_number;
+                // هل الحلقة موجودة قديمًا برابط؟
+                if (oldLinksMap[sNum] && oldLinksMap[sNum][epNum] !== undefined) {
+                    // موجودة -> نتركها للخريطة النهائية (سيتم إضافتها لاحقًا)
+                    continue;
+                } else {
+                    // حلقة جديدة غير موجودة قديمًا
+                    if (linkIndex < newLinksArray.length) {
+                        // لدينا رابط جديد
+                        const newUrl = newLinksArray[linkIndex];
                         linkIndex++;
-                        filledCount++;
+                        addedEpisodes.push({
+                            season_number: sNum,
+                            episode_number: epNum,
+                            url: newUrl
+                        });
+                    } else {
+                        // لا يوجد رابط -> لن تُضاف
+                        remainingEpisodes.push({
+                            season_number: sNum,
+                            episode_number: epNum
+                        });
                     }
                 }
             }
 
-            // إذا كان هناك روابط زائدة (أكثر من الحلقات المحتاجة) يمكننا تجاهلها أو تخزينها لاستخدام لاحق.
-            // لكننا سنكتفي بتحديث العدد.
+            // بناء الخريطة النهائية (القديمة + الجديدة المضافة)
+            const finalMap = {};
+            // إضافة القديمة
+            for (const sNum in oldLinksMap) {
+                if (!finalMap[sNum]) finalMap[sNum] = {};
+                for (const epNum in oldLinksMap[sNum]) {
+                    finalMap[sNum][epNum] = oldLinksMap[sNum][epNum];
+                }
+            }
+            // إضافة الجديدة المضافة
+            addedEpisodes.forEach(ep => {
+                if (!finalMap[ep.season_number]) finalMap[ep.season_number] = {};
+                finalMap[ep.season_number][ep.episode_number] = ep.url;
+            });
 
-            const remaining = totalNeeded - filledCount;
+            // تحويل الخريطة إلى مصفوفة مواسم مرتبة
+            const sortedSeasons = Object.keys(finalMap).sort((a, b) => Number(a) - Number(b)).map(sNum => {
+                const episodesMap = finalMap[sNum];
+                const episodes = Object.keys(episodesMap).sort((a, b) => Number(a) - Number(b)).map(epNum => ({
+                    episode_number: Number(epNum),
+                    url: episodesMap[epNum]
+                }));
+                return {
+                    season_number: Number(sNum),
+                    episodes: episodes
+                };
+            });
+
+            const filled = addedEpisodes.length;
+            const remaining = remainingEpisodes.length;
 
             return {
-                seasons: mergedSeasons,
-                filled: filledCount,
+                seasons: sortedSeasons,
+                filled: filled,
                 remaining: remaining
             };
         }
@@ -535,17 +571,56 @@
                     logStatus(`➕ لم يتم العثور على "${titleText}". جاري إضافته كعنصر جديد...`);
 
                     if (finalType === "series" && seasonsData.length > 0) {
-                        // توزيع الروابط على جميع حلقات المسلسل الجديد
-                        let linkIndex = 0;
-                        const finalSeasons = seasonsData.map(season => {
-                            const episodes = season.episodes.map(ep => {
-                                const url = linksArray[linkIndex] || "";
-                                linkIndex++;
-                                return { episode_number: ep.episode_number, url: url };
-                            });
-                            return { season_number: season.season_number, episodes: episodes };
+                        // جمع جميع الحلقات الجديدة مرتبة
+                        const newEpisodesList = [];
+                        seasonsData.forEach(season => {
+                            const sNum = season.season_number;
+                            if (season.episodes) {
+                                season.episodes.forEach(ep => {
+                                    newEpisodesList.push({
+                                        season_number: sNum,
+                                        episode_number: ep.episode_number
+                                    });
+                                });
+                            }
                         });
-                        newMediaObject.seasons = finalSeasons;
+
+                        // توزيع الروابط على الحلقات الجديدة (فقط الحلقات التي تحصل على رابط)
+                        let linkIndex = 0;
+                        const addedEpisodes = [];
+                        for (const newEp of newEpisodesList) {
+                            if (linkIndex < linksArray.length) {
+                                addedEpisodes.push({
+                                    season_number: newEp.season_number,
+                                    episode_number: newEp.episode_number,
+                                    url: linksArray[linkIndex]
+                                });
+                                linkIndex++;
+                            } else {
+                                break; // لا يوجد روابط إضافية، نتوقف
+                            }
+                        }
+
+                        // بناء المواسم النهائية من الحلقات المضافة فقط
+                        const finalMap = {};
+                        addedEpisodes.forEach(ep => {
+                            if (!finalMap[ep.season_number]) finalMap[ep.season_number] = {};
+                            finalMap[ep.season_number][ep.episode_number] = ep.url;
+                        });
+
+                        const sortedSeasons = Object.keys(finalMap).sort((a, b) => Number(a) - Number(b)).map(sNum => {
+                            const episodesMap = finalMap[sNum];
+                            const episodes = Object.keys(episodesMap).sort((a, b) => Number(a) - Number(b)).map(epNum => ({
+                                episode_number: Number(epNum),
+                                url: episodesMap[epNum]
+                            }));
+                            return {
+                                season_number: Number(sNum),
+                                episodes: episodes
+                            };
+                        });
+
+                        newMediaObject.seasons = sortedSeasons;
                     } else if (finalType === "series") {
                         newMediaObject.seasons = [];
                     }
