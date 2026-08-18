@@ -3,10 +3,10 @@ const globalMoviesData = [
     {
         "title": "All Night Wrong",
         "year": "2026",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم حول ليلة يفترض أن تكون بسيطة وعادية لكنها تنقلب إلى سلسلة من الكوارث والمواقف المعقدة والمفارقات الكوميدية الصاخبة، حيث يجد الأبطال أنفسهم في ورطة تلو الأخرى في سباق مع الزمن لتصحيح أخطائهم قبل طلوع الفجر، في إطار من الكوميديا والمغامرة والتشويق .",
         "poster": "https://image.tmdb.org/t/p/w500/jFN9LcCG4a02wRWm2qfJ6nLY8BO.jpg",
         "hdUrl": "https://streamtape.com/e/Dq94WMzWBPik7bK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "sdUrl": "https://streamtape.com/e/Dq94WMzWBPik7bK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/8zRypZOdm2sovJa/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.8",
         "genre": "كوميديا جريمة إثارة",
         "type": "movie",
