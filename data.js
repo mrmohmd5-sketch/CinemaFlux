@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2015",
         "desc": "الحب ، القتال ، العيش ، الحكم مثل الأسطورة.\r رقيق ، ساحر ومتقلب ، ريجي كراي وشقيقه التوأم غير المستقر روني يبدآن في ترك بصماتهما على عالم الجريمة في لندن في 1960s. باستخدام العنف للحصول على ما يريدون ، ينظم الأشقاء عمليات السطو والقتل أثناء إدارة النوادي الليلية ومضارب الحماية. مع محقق الشرطة ليونارد 'نيبر' قراءة ساخنة على أعقابهم ، يواصل الأخوان صعودهم السريع إلى السلطة وتحقيق سمعة سيئة في التابلويد.",
         "poster": "https://image.tmdb.org/t/p/w500/k1P8B8Jjs7W0IFVGYMIVrsZ9QsH.jpg",
-        "hdUrl": "https://streamtape.com/e/jOB8qKV02miDAY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/179JkLjp9DUeAB3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/jOB8qKV02miDAY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.0",
         "genre": "جريمة إثارة",
