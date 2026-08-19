@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2023",
         "desc": "عندما يتم إطلاق العنان لقوة قديمة ، يجب على أكوامان إقامة تحالف غير مستقر مع حليف غير متوقع لحماية أتلانتس والعالم من الدمار الذي لا رجعة فيه.",
         "poster": "https://image.tmdb.org/t/p/w500/bogXxyid9B3qukICCXkoQKN5lqE.jpg",
-        "hdUrl": "https://streamtape.com/e/VW891OrmZVh3rx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/03ZpXm1yBQhbdVZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/VW891OrmZVh3rx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.5",
         "genre": "حركة مغامرة فانتازيا",
