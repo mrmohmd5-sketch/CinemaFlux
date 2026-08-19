@@ -3,9 +3,9 @@ const globalMoviesData = [
     {
         "title": "Super Troopers 2",
         "year": "2018",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الجزء الثاني حول عودة فرقة الشرطة نفسها بعد طردهم من العمل، حيث يتم استدعاؤهم لتأسيس مركز شرطة جديد في منطقة حدودية متنازع عليها بين الولايات المتحدة وكندا، ليخوضوا صراعات طريفة مع أفراد الشرطة الكندية ويكتشفوا عملية تهريب جديدة في إطار مليء بالمفارقات الكوميدية.",
         "poster": "https://image.tmdb.org/t/p/w500/57SZgdugVClIy22rfnANeBJ5KsN.jpg",
-        "hdUrl": "https://streamtape.com/e/A48GpBgybkhXO0Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/x1ZqOGD6brUkrMq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/A48GpBgybkhXO0Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "5.9",
         "genre": "كوميديا جريمة غموض",
@@ -69,9 +69,9 @@ const globalMoviesData = [
     {
         "title": "Super Troopers",
         "year": "2001",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الجزء الأول حول خمسة من رجال شرطة المرور غريبي الأطوار في ولاية فيرمونت يواجهون خطر إغلاق مركزهم بسبب ضعف الميزانية وصراعهم المستمر مع الشرطة المحلية، فيقررون إثبات كفاءتهم من خلال التوصل لحل قضية تهريب مخدرات كبرى لإنقاذ وظائفهم في إطار كوميدي ساخر.",
         "poster": "https://image.tmdb.org/t/p/w500/yJyxPItcLNVfYr7idOphQTmQ9hK.jpg",
-        "hdUrl": "https://streamtape.com/e/rBgbZ20oVmhbwbz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/bVmJ3XLkoZFPrBx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/rBgbZ20oVmhbwbz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.5",
         "genre": "كوميديا جريمة غموض",
