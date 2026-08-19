@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2019",
         "desc": "بعد 27 عامًا من التغلب على الكيان الخارق الخبيث - بيني وايز -  يتم تجميع الأعضاء السابقين في نادي الخاسرين، الذين كبروا وانتقلوا من منطقة - ديري - من خلال مكالمة هاتفية مدمرة.",
         "poster": "https://image.tmdb.org/t/p/w500/31kiXjK7WW9exelPzoFI1DVRjd1.jpg",
-        "hdUrl": "https://streamtape.com/e/JoRWl3a6xqsjWga/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/VzP4aDzY9rSOxK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/JoRWl3a6xqsjWga/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.8",
         "genre": "رعب إثارة دراما",
