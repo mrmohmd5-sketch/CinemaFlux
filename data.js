@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Top Gun",
+        "year": "1986",
+        "desc": "ينضمّ طيّار متمرّد إلى مدرسة مرموقة للتدريب على القتال المُتقدّم، وهناك يواجه منافسة شديدة وحبًّا مشتعلًا وخطرًا يتربّص به في الأجواء.",
+        "poster": "https://image.tmdb.org/t/p/w500/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+        "hdUrl": "https://streamtape.com/e/VP9DW8eoBoCKlR9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/VP9DW8eoBoCKlR9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.1",
+        "genre": "حركة دراما رومنسية",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Tom Cruise",
+                "character": "Maverick",
+                "image": "https://image.tmdb.org/t/p/w185/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg"
+            },
+            {
+                "name": "Kelly McGillis",
+                "character": "Charlie",
+                "image": "https://image.tmdb.org/t/p/w185/150q3jC4YF1pzSCRe29Kn12W9Ao.jpg"
+            },
+            {
+                "name": "Val Kilmer",
+                "character": "Ice",
+                "image": "https://image.tmdb.org/t/p/w185/sWH9jTD0bC5gWhhceUlzfNiNup0.jpg"
+            },
+            {
+                "name": "Anthony Edwards",
+                "character": "Goose",
+                "image": "https://image.tmdb.org/t/p/w185/rP88gP87pa3je6Viem3081tESIV.jpg"
+            },
+            {
+                "name": "Tom Skerritt",
+                "character": "Viper",
+                "image": "https://image.tmdb.org/t/p/w185/oWFCyBLm1lsbsbT5Nmx3SPMaqFZ.jpg"
+            },
+            {
+                "name": "Michael Ironside",
+                "character": "Jester",
+                "image": "https://image.tmdb.org/t/p/w185/mzHmxtKcMJjDqWxKd67mKQJFW1B.jpg"
+            },
+            {
+                "name": "John Stockwell",
+                "character": "Cougar",
+                "image": "https://image.tmdb.org/t/p/w185/5XmsOQP1fdsELSPmCFuFWUVElfr.jpg"
+            },
+            {
+                "name": "Barry Tubb",
+                "character": "Wolfman",
+                "image": "https://image.tmdb.org/t/p/w185/sKzDWQWecmA5iuCxVCuMrYvn9Wf.jpg"
+            },
+            {
+                "name": "Rick Rossovich",
+                "character": "Slider",
+                "image": "https://image.tmdb.org/t/p/w185/uShNdPWbDHMejpMxuoNsqaaDbuc.jpg"
+            },
+            {
+                "name": "Tim Robbins",
+                "character": "Merlin",
+                "image": "https://image.tmdb.org/t/p/w185/3FfJMIVwXgsIXbAT8ECBSZJAncR.jpg"
+            }
+        ],
+        "trailerKey": "Klc__shdj88",
+        "tmdbId": "744",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Watchers",
         "year": "2024",
         "desc": "تتقطع السبل بفنانة في إحدى غابات غرب أيرلندا، وتصل إلى أحد الملاجئ فتتقابل مع ثلاثة أشخاص غرباء، وبمرور الوقت يتعرض الرباعي لهجوم من مخلوقات غريبة في كل ليلة.",
