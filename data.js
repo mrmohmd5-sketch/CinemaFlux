@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "It Chapter Two",
+        "year": "2019",
+        "desc": "بعد 27 عامًا من التغلب على الكيان الخارق الخبيث - بيني وايز -  يتم تجميع الأعضاء السابقين في نادي الخاسرين، الذين كبروا وانتقلوا من منطقة - ديري - من خلال مكالمة هاتفية مدمرة.",
+        "poster": "https://image.tmdb.org/t/p/w500/31kiXjK7WW9exelPzoFI1DVRjd1.jpg",
+        "hdUrl": "https://streamtape.com/e/JoRWl3a6xqsjWga/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/JoRWl3a6xqsjWga/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.8",
+        "genre": "رعب إثارة دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jessica Chastain",
+                "character": "Beverly Marsh",
+                "image": "https://image.tmdb.org/t/p/w185/eQKnihReJeB9vQEa5gySzAlKfZt.jpg"
+            },
+            {
+                "name": "James McAvoy",
+                "character": "Bill Denbrough",
+                "image": "https://image.tmdb.org/t/p/w185/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg"
+            },
+            {
+                "name": "Bill Hader",
+                "character": "Richie Tozier",
+                "image": "https://image.tmdb.org/t/p/w185/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg"
+            },
+            {
+                "name": "Isaiah Mustafa",
+                "character": "Mike Hanlon",
+                "image": "https://image.tmdb.org/t/p/w185/tnwz9bf0bplixzyaqyu4iAI9lLj.jpg"
+            },
+            {
+                "name": "Jay Ryan",
+                "character": "Ben Hanscom",
+                "image": "https://image.tmdb.org/t/p/w185/oNRYS1mKrAorHJAhOqdW0RYQ9Gu.jpg"
+            },
+            {
+                "name": "James Ransone",
+                "character": "Eddie Kaspbrak",
+                "image": "https://image.tmdb.org/t/p/w185/n1O0RnxKPfxvVJUh13Gr0pPGlvd.jpg"
+            },
+            {
+                "name": "Andy Bean",
+                "character": "Stanley Uris",
+                "image": "https://image.tmdb.org/t/p/w185/4BiltJsO0KO7E9Mgyj8wMekbEBA.jpg"
+            },
+            {
+                "name": "Bill Skarsgård",
+                "character": "Pennywise",
+                "image": "https://image.tmdb.org/t/p/w185/xBXLx1m0uzhXIbY3wN8lmPGeUHl.jpg"
+            },
+            {
+                "name": "Jaeden Martell",
+                "character": "Young Bill Denbrough",
+                "image": "https://image.tmdb.org/t/p/w185/oR7ZJsOHMNFzM1HeugV4a4qCMSF.jpg"
+            },
+            {
+                "name": "Wyatt Oleff",
+                "character": "Young Stanley Uris",
+                "image": "https://image.tmdb.org/t/p/w185/wEka1IzC5OtkKGGhlMmItAfDUqW.jpg"
+            }
+        ],
+        "trailerKey": "Mqa768baFRw",
+        "tmdbId": "474350",
+        "tmdbType": "movie"
+    },
+    {
         "title": "It",
         "year": "2017",
         "desc": "في بلدة صغيرة بولاية (مين)، يواجه سبعة أطفال يُعرفون باسم نادي الخاسرين مشكلات الحياة اليومية، وتنمّر زملائهم، إلى جانب كيان مرعب يتخذ هيئة مهرج يُدعى 'بيني وايز'.",
