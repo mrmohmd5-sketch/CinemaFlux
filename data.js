@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Chennai Express",
+        "year": "2013",
+        "desc": "تدور قصة الفلم حول راهول (شاروخان) الذي يعيش في (مومباي) شمال (الهند) ، ويقوم برحلة إلى (رامبشوارام) في جنوب (الهند) ليحقق آخر أمنية لجده ، وهي أن يكون رماده مغمورا في المياه المقدسة في (رامبشوارام) ، وأثناء رحلته يقع في حب ابنة أحد رجال العصابات الخطيرة ، ويتعرض للعديد من المواقف والمشاكل قبل اكتشافه حقيقة حبيبته .",
+        "poster": "https://image.tmdb.org/t/p/w500/9j7XfhBJKNfidMCa8JsNbqU1waV.jpg",
+        "hdUrl": "https://streamtape.com/e/8w7w61YXRjcoQpB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/8w7w61YXRjcoQpB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.5",
+        "genre": "رومنسية كوميديا حركة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Shah Rukh Khan",
+                "character": "Rahul Mithaiwala",
+                "image": "https://image.tmdb.org/t/p/w185/tCEppfUu0g2Luu0rS5VKMoL4eSw.jpg"
+            },
+            {
+                "name": "Deepika Padukone",
+                "character": "Meenamma Lochini Azhagusundaram",
+                "image": "https://image.tmdb.org/t/p/w185/rzvvBQ0r6oiqDdzcsdTRB7jN4Rx.jpg"
+            },
+            {
+                "name": "Nikitin Dheer",
+                "character": "Tangaballi",
+                "image": "https://image.tmdb.org/t/p/w185/gAHNWVtStTGsqf2uxCegxvn6ILe.jpg"
+            },
+            {
+                "name": "Sathyaraj",
+                "character": "Durgeshwara Azhagusundaram",
+                "image": "https://image.tmdb.org/t/p/w185/lnlBZ7V3K3Z3OIsjCd0zkKx26L3.jpg"
+            },
+            {
+                "name": "Mukesh Tiwari",
+                "character": "Inspector Shamsher",
+                "image": "https://image.tmdb.org/t/p/w185/37GTjltEJHpi1lQmLmHKJYTpxjj.jpg"
+            },
+            {
+                "name": "Kamini Kaushal",
+                "character": "Rahul's grandmother",
+                "image": "https://image.tmdb.org/t/p/w185/9sUKpr1DqGzyfDpaSLOeHMeMos5.jpg"
+            },
+            {
+                "name": "Lekh Tandon",
+                "character": "Rahul's grandfather",
+                "image": "https://image.tmdb.org/t/p/w185/5d5vycLFTHtk58N8O0I3leb6slG.jpg"
+            },
+            {
+                "name": "Rakesh Kukreti",
+                "character": "Rahul's friend",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Priyamani",
+                "character": "Special Appearance in  \"1 2 3 4 Get on the Dance Floor\" Song",
+                "image": "https://image.tmdb.org/t/p/w185/i1sZtQcphZWJij3LoR9M6QY9i4z.jpg"
+            },
+            {
+                "name": "Delhi Ganesh",
+                "character": "Villager",
+                "image": "https://image.tmdb.org/t/p/w185/8oMzQRumoUs5a6iStcK1B3znY1D.jpg"
+            }
+        ],
+        "trailerKey": "rARol7Dk2zo",
+        "tmdbId": "205022",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Lucky",
         "year": "2026",
         "desc": "عندما تفشل عملية سرقة بملايين الدولارات، تُجبر المحتالة 'لاكي'،، على الفرار. وبين الهرب من الفيدراليين وزعيم جريمة لا يرحم، تقاتل 'لاكي' للنجاة بحياتها ولإيجاد مخرج.",
