@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Shazam!",
+        "year": "2019",
+        "desc": "تم إعطاء صبي القدرة على أن يصبح  رجلا خارقًا في أوقات الحاجة، بكلمة سحرية واحدة.",
+        "poster": "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+        "hdUrl": "https://streamtape.com/e/bvV4WRpAA1cPb0O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/bvV4WRpAA1cPb0O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.0",
+        "genre": "حركة كوميديا فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Zachary Levi",
+                "character": "Shazam",
+                "image": "https://image.tmdb.org/t/p/w185/1W8L3kEMMPF9umT3ZGaNIiCYKfZ.jpg"
+            },
+            {
+                "name": "Mark Strong",
+                "character": "Dr. Sivana",
+                "image": "https://image.tmdb.org/t/p/w185/3cNmatYsoifytg7TfQhI1EHow3v.jpg"
+            },
+            {
+                "name": "Asher Angel",
+                "character": "Billy Batson",
+                "image": "https://image.tmdb.org/t/p/w185/lgBt67iggDs0d8QBSyjdk2ytHtK.jpg"
+            },
+            {
+                "name": "Jack Dylan Grazer",
+                "character": "Freddy Freeman",
+                "image": "https://image.tmdb.org/t/p/w185/wkLAOleFx9Pis97g6t3noJRhAwg.jpg"
+            },
+            {
+                "name": "Adam Brody",
+                "character": "Super Hero Freddy",
+                "image": "https://image.tmdb.org/t/p/w185/qKBWrohBYegm6AAaLrtxEqqouIK.jpg"
+            },
+            {
+                "name": "Djimon Hounsou",
+                "character": "Wizard",
+                "image": "https://image.tmdb.org/t/p/w185/tpvtxxvCx2Mb5DV632hmuYlHoiY.jpg"
+            },
+            {
+                "name": "Faithe Herman",
+                "character": "Darla Dudley",
+                "image": "https://image.tmdb.org/t/p/w185/wPyxJjlA8k1AcwvAbczeoaY3Qia.jpg"
+            },
+            {
+                "name": "Meagan Good",
+                "character": "Super Hero Darla",
+                "image": "https://image.tmdb.org/t/p/w185/iwSNBQKKDhEbtNe8I4ROYoYmWqE.jpg"
+            },
+            {
+                "name": "Grace Caroline Currey",
+                "character": "Mary Bromfield",
+                "image": "https://image.tmdb.org/t/p/w185/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
+            },
+            {
+                "name": "Michelle Borth",
+                "character": "Super Hero Mary",
+                "image": "https://image.tmdb.org/t/p/w185/yRbadj0es3dVWnuMcNF4SpMKypJ.jpg"
+            }
+        ],
+        "trailerKey": "uilJZZ_iVwY",
+        "tmdbId": "287947",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Man of Steel",
         "year": "2013",
         "desc": "تدور قصة الفيلم حول سوبرمان أو كلارك كينت (هنري كافيل) وهو شاب في العشرين من عمره يعمل صحافي، يشعر بالغربة نتيجة قوة خارقة تميزه عن غيره. ويتضح أنه نُقل من كوكب 'كريبتون' منذ سنوات إلى الأرض، وتبناه كلا من مارثا (داني لين) وجوناثان كينت (كيفين كوستنر) منذ الصغر، وعندما بلغ أشده، بدأ يساعد العالم عقب أي مأساة أو كارثة.",
