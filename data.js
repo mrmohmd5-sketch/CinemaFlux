@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Man of Steel",
+        "year": "2013",
+        "desc": "تدور قصة الفيلم حول سوبرمان أو كلارك كينت (هنري كافيل) وهو شاب في العشرين من عمره يعمل صحافي، يشعر بالغربة نتيجة قوة خارقة تميزه عن غيره. ويتضح أنه نُقل من كوكب 'كريبتون' منذ سنوات إلى الأرض، وتبناه كلا من مارثا (داني لين) وجوناثان كينت (كيفين كوستنر) منذ الصغر، وعندما بلغ أشده، بدأ يساعد العالم عقب أي مأساة أو كارثة.",
+        "poster": "https://image.tmdb.org/t/p/w500/kKfEMF3UKhZPQCJKNvdDVfbRngk.jpg",
+        "hdUrl": "https://streamtape.com/e/4RddavooZqtKMa2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/4RddavooZqtKMa2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.7",
+        "genre": "حركة مغامرة خيال علمي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Henry Cavill",
+                "character": "Clark Kent / Kal-El",
+                "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+            },
+            {
+                "name": "Amy Adams",
+                "character": "Lois Lane",
+                "image": "https://image.tmdb.org/t/p/w185/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+            },
+            {
+                "name": "Michael Shannon",
+                "character": "General Zod",
+                "image": "https://image.tmdb.org/t/p/w185/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg"
+            },
+            {
+                "name": "Diane Lane",
+                "character": "Martha Kent",
+                "image": "https://image.tmdb.org/t/p/w185/6OfP3vFMuCL51zamFKgb8aS74hs.jpg"
+            },
+            {
+                "name": "Russell Crowe",
+                "character": "Jor-El",
+                "image": "https://image.tmdb.org/t/p/w185/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg"
+            },
+            {
+                "name": "Antje Traue",
+                "character": "Faora-Ul",
+                "image": "https://image.tmdb.org/t/p/w185/enfmTZlaXBoaVL1T5XVNe55WbOp.jpg"
+            },
+            {
+                "name": "Harry Lennix",
+                "character": "General Swanwick",
+                "image": "https://image.tmdb.org/t/p/w185/kNGiizWpetf4pyAkINkjkWacmCL.jpg"
+            },
+            {
+                "name": "Richard Schiff",
+                "character": "Dr. Emil Hamilton",
+                "image": "https://image.tmdb.org/t/p/w185/1kg1X6OWRuMdBBYqZLQ6UqMlEPC.jpg"
+            },
+            {
+                "name": "Christopher Meloni",
+                "character": "Colonel Nathan Hardy",
+                "image": "https://image.tmdb.org/t/p/w185/nHlFFbRTh85vkohBBtRQjYnWEtb.jpg"
+            },
+            {
+                "name": "Kevin Costner",
+                "character": "Jonathan Kent",
+                "image": "https://image.tmdb.org/t/p/w185/608blZipRDZkDpzp8VItB64qMaT.jpg"
+            }
+        ],
+        "trailerKey": "eVomx_ebA9A",
+        "tmdbId": "49521",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Prey",
         "year": "2022",
         "desc": "يصطادون للعيش. يعيش للصيد.\r عندما يهدد الخطر معسكرها ، تنطلق محارب كومانش الشرس والماهر نارو لحماية شعبها. لكن الفريسة التي تطاردها تبين أنها مفترس فضائي متطور للغاية مع ترسانة متقدمة تقنيا.",
