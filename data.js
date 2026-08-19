@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2021",
         "desc": "يجمع بروس واين مجموعة من الأبطال الخارقين من أجل الدفاع عن البشرية ضد داركسايد والحفاظ على تضحيات سوبرمان الراحل، ولكن سرعان ما تقع كوارث مروعة تدفع الفريق إلى فعل المستحيل.",
         "poster": "https://image.tmdb.org/t/p/w500/bhbpXNwE41PhELXQDI6xRrUdDz7.jpg",
-        "hdUrl": "https://streamtape.com/e/VWlK6RldGPf3zO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/xmJwbmwYlAFloz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/VWlK6RldGPf3zO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "8.1",
         "genre": "حركة مغامرة فانتازيا",
