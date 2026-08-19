@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Ice Road: Vengeance",
+        "year": "2025",
+        "desc": "لتحقيق أمنية أخيه الراحل الأخيرة، يسافر سائق الشاحنات الكبيرة على الطرق الجليدية مايك مكان إلى نيبال لنثر رماده على جبل إيفرست. وفي حافلة سياحية مكتظة تجتاز التضاريس الوعرة لطريق السماء الشهير الذي يقع على ارتفاع أكثر من 3 كيلومترات ونصف، يواجه مايك ومرشده الجبلي مجموعة من المرتزقة ويتعين عليهما القتال لإنقاذ نفسيهما وحافلة مكتظة بالمسافرين الأبرياء وموطن القرويين المحليين.",
+        "poster": "https://image.tmdb.org/t/p/w500/qkyj5dhIHcWE2JTa4k0b1JNw8l2.jpg",
+        "hdUrl": "https://streamtape.com/e/pLAOP1JVPlhWkv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/pLAOP1JVPlhWkv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.3",
+        "genre": "حركة إثارة دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Liam Neeson",
+                "character": "Mike McCann",
+                "image": "https://image.tmdb.org/t/p/w185/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+            },
+            {
+                "name": "Fan Bingbing",
+                "character": "Dhani Yangchen",
+                "image": "https://image.tmdb.org/t/p/w185/pV2wYJiiPd6cgHK580PKD0GM4Dc.jpg"
+            },
+            {
+                "name": "Marcus Thomas",
+                "character": "Gurty",
+                "image": "https://image.tmdb.org/t/p/w185/wpsm5roIsSqaOX9ApIJqCxDAqgD.jpg"
+            },
+            {
+                "name": "Grace O'Sullivan",
+                "character": "Starr Myers",
+                "image": "https://image.tmdb.org/t/p/w185/ifgurjdagUpyw9Dyh4yYtN0p3R7.jpg"
+            },
+            {
+                "name": "Saksham Sharma",
+                "character": "Vijay Rai",
+                "image": "https://image.tmdb.org/t/p/w185/vjyz2K6mqfw3T2X8uWv19Xlrqvd.jpg"
+            },
+            {
+                "name": "Bernard Curry",
+                "character": "Professor Myers",
+                "image": "https://image.tmdb.org/t/p/w185/tSZTKbE0TkU0CbZxzgeixqlyoTq.jpg"
+            },
+            {
+                "name": "Geoff Morrell",
+                "character": "Spike",
+                "image": "https://image.tmdb.org/t/p/w185/zdbbOZPOb1VeAXh1idj9fKeHE87.jpg"
+            },
+            {
+                "name": "Mahesh Jadu",
+                "character": "Rudra Yash",
+                "image": "https://image.tmdb.org/t/p/w185/pugsskE62XbyYRruJk8KGk3JVdC.jpg"
+            },
+            {
+                "name": "Amelia Bishop",
+                "character": "Jeet",
+                "image": "https://image.tmdb.org/t/p/w185/9PETfDjcqwfOJEPTuv6xrRVcHQy.jpg"
+            },
+            {
+                "name": "Shapoor Batliwalla",
+                "character": "Ganesh Rai",
+                "image": "https://image.tmdb.org/t/p/w185/s0Bu0S4k3PaPWIZQiAhmyo7KvlC.jpg"
+            }
+        ],
+        "trailerKey": "K6lJh9ADfbQ",
+        "tmdbId": "1119878",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Batman v Superman: Dawn of Justice",
         "year": "2016",
         "desc": "خوفًا من أن تُترك أفعال بطلٍ خارق يمتلك قوة الآلهة بلا رقيب، يواجه حارس مدينة غوثام القاسي والمخيف منقذ ميتروبوليس الأعظم، بينما يتصارع العالم حول نوع البطل الذي يحتاجه حقًا.  ومع اندلاع الحرب بين باتمان وسوبرمان، يظهر تهديد جديد أكثر رعبًا ووحشية، ليضع البشرية أمام خطر يفوق أي شيء واجهته من قبل.",
