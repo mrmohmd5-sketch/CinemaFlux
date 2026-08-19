@@ -1,6 +1,37 @@
 const globalMoviesData = [
     
     {
+        "title": "Together",
+        "year": "2021",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/oeocQg0Bhmy0pqqRy50wEo0iwFB.jpg",
+        "hdUrl": "https://streamtape.com/e/B4lrB7vDjdTyZGP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/B4lrB7vDjdTyZGP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.8",
+        "genre": "دراما كوميديا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "James McAvoy",
+                "character": "He",
+                "image": "https://image.tmdb.org/t/p/w185/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg"
+            },
+            {
+                "name": "Sharon Horgan",
+                "character": "She",
+                "image": "https://image.tmdb.org/t/p/w185/mNTtNGqdL8CzOBjCYCjOLRosOTM.jpg"
+            },
+            {
+                "name": "Samuel Logan",
+                "character": "Artie",
+                "image": "https://image.tmdb.org/t/p/w185/2JbIxuf83wBuHmLGoEqNvHOA30S.jpg"
+            }
+        ],
+        "trailerKey": "h-2I2VQrUqo",
+        "tmdbId": "837548",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Batman",
         "year": "2022",
         "desc": "في سنته الثانية من محاربة الجريمة ، يكشف باتمان عن فساد في مدينة جوثام يتصل بعائلته بينما يواجه قاتلًا متسلسلاً يُعرف باسم ريدلر",
