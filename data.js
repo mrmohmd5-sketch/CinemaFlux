@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2022",
         "desc": "في سنته الثانية من محاربة الجريمة ، يكشف باتمان عن فساد في مدينة جوثام يتصل بعائلته بينما يواجه قاتلًا متسلسلاً يُعرف باسم ريدلر",
         "poster": "https://image.tmdb.org/t/p/w500/nWFGTPx7tcHc7IC6lZF7tuM7Nst.jpg",
-        "hdUrl": "https://streamtape.com/e/ggQKraBXrqU91l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/90GgDL1xVyFa3aQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/ggQKraBXrqU91l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.7",
         "genre": "جريمة غموض إثارة",
