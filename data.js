@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2013",
         "desc": "تدور قصة الفيلم حول سوبرمان أو كلارك كينت (هنري كافيل) وهو شاب في العشرين من عمره يعمل صحافي، يشعر بالغربة نتيجة قوة خارقة تميزه عن غيره. ويتضح أنه نُقل من كوكب 'كريبتون' منذ سنوات إلى الأرض، وتبناه كلا من مارثا (داني لين) وجوناثان كينت (كيفين كوستنر) منذ الصغر، وعندما بلغ أشده، بدأ يساعد العالم عقب أي مأساة أو كارثة.",
         "poster": "https://image.tmdb.org/t/p/w500/kKfEMF3UKhZPQCJKNvdDVfbRngk.jpg",
-        "hdUrl": "https://streamtape.com/e/4RddavooZqtKMa2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/qxKRdGae1dHzl68/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/4RddavooZqtKMa2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.7",
         "genre": "حركة مغامرة خيال علمي",
