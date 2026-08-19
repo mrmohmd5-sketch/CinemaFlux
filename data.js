@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2022",
         "desc": "يتناول العمل قصة شخصية من شخصيات عالم (Shazam)، وهي بلاك آدم، وهو الرجل الذي وقف محايدًا ما بين كونه بطلًا أو شريرًا، كما أنه يتمتع بقدرات سحرية غير عادية.",
         "poster": "https://image.tmdb.org/t/p/w500/i4UIH8Eyjnr9PpkdP6xAyxbfdeq.jpg",
-        "hdUrl": "https://streamtape.com/e/JkJgr1ZrJrujX0x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/el9VbwGJB9hYRvB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/JkJgr1ZrJrujX0x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.8",
         "genre": "حركة مغامرة خيال علمي",
