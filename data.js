@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Legend",
+        "year": "2015",
+        "desc": "الحب ، القتال ، العيش ، الحكم مثل الأسطورة.\r رقيق ، ساحر ومتقلب ، ريجي كراي وشقيقه التوأم غير المستقر روني يبدآن في ترك بصماتهما على عالم الجريمة في لندن في 1960s. باستخدام العنف للحصول على ما يريدون ، ينظم الأشقاء عمليات السطو والقتل أثناء إدارة النوادي الليلية ومضارب الحماية. مع محقق الشرطة ليونارد 'نيبر' قراءة ساخنة على أعقابهم ، يواصل الأخوان صعودهم السريع إلى السلطة وتحقيق سمعة سيئة في التابلويد.",
+        "poster": "https://image.tmdb.org/t/p/w500/k1P8B8Jjs7W0IFVGYMIVrsZ9QsH.jpg",
+        "hdUrl": "https://streamtape.com/e/jOB8qKV02miDAY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/jOB8qKV02miDAY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.0",
+        "genre": "جريمة إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Tom Hardy",
+                "character": "Ronald Kray / Reginald Kray",
+                "image": "https://image.tmdb.org/t/p/w185/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
+            },
+            {
+                "name": "Emily Browning",
+                "character": "Frances Shea",
+                "image": "https://image.tmdb.org/t/p/w185/silK3Pdugbf1YOtIdXev1eZxzvF.jpg"
+            },
+            {
+                "name": "Christopher Eccleston",
+                "character": "Leonard 'Nipper' Read",
+                "image": "https://image.tmdb.org/t/p/w185/v6ezjezzDo6xP2wlONO5ZzBciwl.jpg"
+            },
+            {
+                "name": "David Thewlis",
+                "character": "Leslie Payne",
+                "image": "https://image.tmdb.org/t/p/w185/gJqz8h5AKaVvOLS0hm5Vdvel6JB.jpg"
+            },
+            {
+                "name": "Taron Egerton",
+                "character": "Mad Teddy Smith",
+                "image": "https://image.tmdb.org/t/p/w185/uCaPhyKAQIfEzAWWCYIrO2004CB.jpg"
+            },
+            {
+                "name": "Chazz Palminteri",
+                "character": "Angelo Bruno",
+                "image": "https://image.tmdb.org/t/p/w185/mCbjKVyE5B2tleshbJw44tw3ktZ.jpg"
+            },
+            {
+                "name": "Colin Morgan",
+                "character": "Frank Shea",
+                "image": "https://image.tmdb.org/t/p/w185/jeSLhhfUIZR3UQGGhtYTk0J2I5.jpg"
+            },
+            {
+                "name": "Paul Bettany",
+                "character": "Charlie Richardson",
+                "image": "https://image.tmdb.org/t/p/w185/vcAVrAOZrpqmi37qjFdztRAv1u9.jpg"
+            },
+            {
+                "name": "Tara Fitzgerald",
+                "character": "Elsie Shea",
+                "image": "https://image.tmdb.org/t/p/w185/tMnBeLckuioclUR5KmlqUm49nCz.jpg"
+            },
+            {
+                "name": "Paul Anderson",
+                "character": "Albert Donoghue",
+                "image": "https://image.tmdb.org/t/p/w185/nds5rTBZvJ4rEsP4N6OaoEgQDkW.jpg"
+            }
+        ],
+        "trailerKey": "3pHZpqu8fes",
+        "tmdbId": "276907",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Guns Akimbo",
         "year": "2020",
         "desc": "تدور أحداث الفيلم حول مطور ألعاب فيديو بسيط ينخرط في شجار مع متصيدين عبر الإنترنت على موقع غامض ينقل معارك واقعية مميتة، فيتم اختطافه وتثبيت مسدسين بمسامير في يديه وإجباره على المشاركة في لعبة بقاء وحشية ومواجهة أخطر قاتلة في اللعبة لإنقاذ حبيبته السابقة، في إطار من الأكشن والكوميديا السوداء والإثارة الصاخبة.",
