@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2023",
         "desc": "يسافر الفلاش عبر الزمن لمنع مقتل والدته ، وهو عمل يعطل الوقت بشكل كبير.",
         "poster": "https://image.tmdb.org/t/p/w500/abT8jngvBDk31BsVgMMNrP4OTIY.jpg",
-        "hdUrl": "https://streamtape.com/e/7jWJPV1OG0hAAMq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/YZ217gzQVzsvyJL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/7jWJPV1OG0hAAMq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.6",
         "genre": "حركة خيال علمي مغامرة",
