@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Suicide Squad",
+        "year": "2016",
+        "desc": "تدور احداث الفيلم حول الفرقة الانتحارية وهم مجموعة من الأشخاص المسجونين الأكثر شرا على الأرض حينما يعقدوا معاهدات مع الحكومة الفاسدة من اجل تنفيذ مهام شديدة الخطورة وبمقابل ذلك تحصل الفرقة الانتحارية على الأمان والحماية بالسجن وبعض المزايا الأخرى.",
+        "poster": "https://image.tmdb.org/t/p/w500/2eeRDA8MICo82yYrejoxiNA6Kph.jpg",
+        "hdUrl": "https://streamtape.com/e/AlYYvmyV0LUXMQj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/AlYYvmyV0LUXMQj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.9",
+        "genre": "حركة مغامرة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Will Smith",
+                "character": "Deadshot",
+                "image": "https://image.tmdb.org/t/p/w185/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg"
+            },
+            {
+                "name": "Jared Leto",
+                "character": "The Joker",
+                "image": "https://image.tmdb.org/t/p/w185/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg"
+            },
+            {
+                "name": "Margot Robbie",
+                "character": "Harley Quinn",
+                "image": "https://image.tmdb.org/t/p/w185/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg"
+            },
+            {
+                "name": "Joel Kinnaman",
+                "character": "Rick Flag",
+                "image": "https://image.tmdb.org/t/p/w185/cVfYzTyQdJ4xtxKPZe7IcW3BJN4.jpg"
+            },
+            {
+                "name": "Viola Davis",
+                "character": "Amanda Waller",
+                "image": "https://image.tmdb.org/t/p/w185/xDssw6vpYNRjsybvMPRE30e0dPN.jpg"
+            },
+            {
+                "name": "Jai Courtney",
+                "character": "Boomerang",
+                "image": "https://image.tmdb.org/t/p/w185/6vEaNwbOKov6yzQx15CdtrqfK3L.jpg"
+            },
+            {
+                "name": "Jay Hernandez",
+                "character": "Diablo",
+                "image": "https://image.tmdb.org/t/p/w185/rh4pzTAJvy0i84HYV4xZxCXuXgV.jpg"
+            },
+            {
+                "name": "Adewale Akinnuoye-Agbaje",
+                "character": "Killer Croc",
+                "image": "https://image.tmdb.org/t/p/w185/zdtwVtVmmm7VzYfu8xH7mbuTvrH.jpg"
+            },
+            {
+                "name": "Cara Delevingne",
+                "character": "June Moone / Enchantress",
+                "image": "https://image.tmdb.org/t/p/w185/aFXKZfBv6E0BeEFgkDDpsZIFpIv.jpg"
+            },
+            {
+                "name": "Ike Barinholtz",
+                "character": "Griggs",
+                "image": "https://image.tmdb.org/t/p/w185/pxK1HXsQFfh3zT1KA3t6lEKMiZK.jpg"
+            }
+        ],
+        "trailerKey": "tbgk-C1T4uQ",
+        "tmdbId": "297761",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Shazam! Fury of the Gods",
         "year": "2023",
         "desc": "يضطر بيلي باتسون وإخوته بالتبني ، الذين يتحولون إلى أبطال خارقين بقول 'Shazam!' ، إلى العودة إلى العمل ومحاربة بنات أطلس ، الذين يجب عليهم منعهم من استخدام سلاح يمكن أن يدمر العالم.",
