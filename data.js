@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Frankenstein's Monster's Monster, Frankenstein",
+        "year": "2019",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/aVrXQAk0lIRw123EghPfNlludjU.jpg",
+        "hdUrl": "https://streamtape.com/e/oQwWXgGMmJtJ0GX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/oQwWXgGMmJtJ0GX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.8",
+        "genre": "كوميديا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "David Harbour",
+                "character": "David Harbour III / David Harbour Jr. / Frankenstein",
+                "image": "https://image.tmdb.org/t/p/w185/qMFtMWlYVtFVyBoBhX5IoA5sN5a.jpg"
+            },
+            {
+                "name": "Kate Berlant",
+                "character": "Monica Fulton / Miss Machbeth",
+                "image": "https://image.tmdb.org/t/p/w185/92oeTjtorA37KdfzmHanoTF5HD3.jpg"
+            },
+            {
+                "name": "Alex Ozerov-Meyer",
+                "character": "Joey Vallejo / Sal",
+                "image": "https://image.tmdb.org/t/p/w185/g0DtLoImOAVdEPm8QCtBHBJVZHK.jpg"
+            },
+            {
+                "name": "Alfred Molina",
+                "character": "Aubrey Fields / Captain",
+                "image": "https://image.tmdb.org/t/p/w185/nJo91Czesn6z0d0pkfbDoVZY3sg.jpg"
+            },
+            {
+                "name": "Michael Lerner",
+                "character": "Bobby Fox",
+                "image": "https://image.tmdb.org/t/p/w185/1jRm6TRS5atQrA1VQSef7GoL13g.jpg"
+            },
+            {
+                "name": "Mary Woronov",
+                "character": "Nancy Erlich",
+                "image": "https://image.tmdb.org/t/p/w185/tWKBAw7htrc8QMmv3ftwNkmUrFm.jpg"
+            },
+            {
+                "name": "Marion Van Cuyck",
+                "character": "Niece",
+                "image": "https://image.tmdb.org/t/p/w185/nfB1NG1cwRlEKOyqxsut78NobNi.jpg"
+            },
+            {
+                "name": "Lidia Porto",
+                "character": "Detective Cepeda",
+                "image": "https://image.tmdb.org/t/p/w185/ukInRHpe2XZxv261eYqnav9WjQw.jpg"
+            },
+            {
+                "name": "Randolph Thompson",
+                "character": "Mr. Orlando",
+                "image": "https://image.tmdb.org/t/p/w185/wEvOWrOVe56n9mPkUwaGuMrphB9.jpg"
+            },
+            {
+                "name": "Bridey Elliott",
+                "character": "Reporter",
+                "image": "https://image.tmdb.org/t/p/w185/nqT9bxNGU94wMqkYrg6RJzV0nrQ.jpg"
+            }
+        ],
+        "trailerKey": "uaJcZ6yAejI",
+        "tmdbId": "612701",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Sucker Punch",
         "year": "2011",
         "desc": "تتراجع فتاة شابة يضعها زوج والدتها المسيء في مصحة نفسية إلى واقع بديل كإستراتيجية للتأقلم وتتصور خطة لمساعدتها على الهروب.",
