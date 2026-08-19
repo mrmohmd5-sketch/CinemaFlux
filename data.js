@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Black Adam",
+        "year": "2022",
+        "desc": "يتناول العمل قصة شخصية من شخصيات عالم (Shazam)، وهي بلاك آدم، وهو الرجل الذي وقف محايدًا ما بين كونه بطلًا أو شريرًا، كما أنه يتمتع بقدرات سحرية غير عادية.",
+        "poster": "https://image.tmdb.org/t/p/w500/i4UIH8Eyjnr9PpkdP6xAyxbfdeq.jpg",
+        "hdUrl": "https://streamtape.com/e/JkJgr1ZrJrujX0x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/JkJgr1ZrJrujX0x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.8",
+        "genre": "حركة مغامرة خيال علمي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Dwayne Johnson",
+                "character": "Black Adam / Teth Adam",
+                "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+            },
+            {
+                "name": "Aldis Hodge",
+                "character": "Hawkman / Carter Hall",
+                "image": "https://image.tmdb.org/t/p/w185/enDU0pemco1mFxxdLKUzWakC6sk.jpg"
+            },
+            {
+                "name": "Noah Centineo",
+                "character": "Atom Smasher / Al Rothstein",
+                "image": "https://image.tmdb.org/t/p/w185/p1bcst401RyxfDGykx2iQLI7CV5.jpg"
+            },
+            {
+                "name": "Sarah Shahi",
+                "character": "Adrianna Tomaz",
+                "image": "https://image.tmdb.org/t/p/w185/ySf1nvBBzoiACB5xM5Rj18XisRo.jpg"
+            },
+            {
+                "name": "Quintessa Swindell",
+                "character": "Cyclone / Maxine Hunkel",
+                "image": "https://image.tmdb.org/t/p/w185/3rWuQThPernDgpluR1Q8xDgg3Tu.jpg"
+            },
+            {
+                "name": "Marwan Kenzari",
+                "character": "Ishmael / Sabbac / King Ahk-Ton",
+                "image": "https://image.tmdb.org/t/p/w185/66903sgNtyzHN0Mi3D88UYgbH86.jpg"
+            },
+            {
+                "name": "Mo Amer",
+                "character": "Karim",
+                "image": "https://image.tmdb.org/t/p/w185/vA78SdELZxQCLt7BF3OOHMxlh87.jpg"
+            },
+            {
+                "name": "Bodhi Sabongui",
+                "character": "Amon Tomaz",
+                "image": "https://image.tmdb.org/t/p/w185/jBE8r2dauh7YUjWFu5YODOYejcp.jpg"
+            },
+            {
+                "name": "Pierce Brosnan",
+                "character": "Dr. Fate / Kent Nelson",
+                "image": "https://image.tmdb.org/t/p/w185/dzXVwwJLPwiZeXOnf7YxorqVEEM.jpg"
+            },
+            {
+                "name": "James Cusati-Moyer",
+                "character": "Samir",
+                "image": "https://image.tmdb.org/t/p/w185/hzdNg0B4iyslssXP0FuYXIS3P7I.jpg"
+            }
+        ],
+        "trailerKey": "x6Fj5619tB8",
+        "tmdbId": "436270",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Aquaman and the Lost Kingdom",
         "year": "2023",
         "desc": "عندما يتم إطلاق العنان لقوة قديمة ، يجب على أكوامان إقامة تحالف غير مستقر مع حليف غير متوقع لحماية أتلانتس والعالم من الدمار الذي لا رجعة فيه.",
