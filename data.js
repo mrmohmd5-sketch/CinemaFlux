@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Flash",
+        "year": "2023",
+        "desc": "يسافر الفلاش عبر الزمن لمنع مقتل والدته ، وهو عمل يعطل الوقت بشكل كبير.",
+        "poster": "https://image.tmdb.org/t/p/w500/abT8jngvBDk31BsVgMMNrP4OTIY.jpg",
+        "hdUrl": "https://streamtape.com/e/7jWJPV1OG0hAAMq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/7jWJPV1OG0hAAMq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.6",
+        "genre": "حركة خيال علمي مغامرة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Ezra Miller",
+                "character": "Barry Allen / The Flash",
+                "image": "https://image.tmdb.org/t/p/w185/6wmTpbYpmhthaxzM5ss3377F9IV.jpg"
+            },
+            {
+                "name": "Sasha Calle",
+                "character": "Kara Zor-El / Supergirl",
+                "image": "https://image.tmdb.org/t/p/w185/yLZY25AQOC2xKzsWqteyJTcWPK3.jpg"
+            },
+            {
+                "name": "Michael Keaton",
+                "character": "Bruce Wayne / Batman",
+                "image": "https://image.tmdb.org/t/p/w185/tYSja1KByFnZ4Hkp3stPqkKHnNL.jpg"
+            },
+            {
+                "name": "Michael Shannon",
+                "character": "General Zod",
+                "image": "https://image.tmdb.org/t/p/w185/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg"
+            },
+            {
+                "name": "Ron Livingston",
+                "character": "Henry Allen",
+                "image": "https://image.tmdb.org/t/p/w185/pr5CjWnkaf5WKTIYh8wtNufjmyb.jpg"
+            },
+            {
+                "name": "Maribel Verdú",
+                "character": "Nora Allen",
+                "image": "https://image.tmdb.org/t/p/w185/7hxTsW5CKi2lkz5yGMWShki7DOo.jpg"
+            },
+            {
+                "name": "Kiersey Clemons",
+                "character": "Iris West",
+                "image": "https://image.tmdb.org/t/p/w185/iZD6EzMGnuHFjFgmO8G1wyiLrTy.jpg"
+            },
+            {
+                "name": "Antje Traue",
+                "character": "Faora-Ul",
+                "image": "https://image.tmdb.org/t/p/w185/enfmTZlaXBoaVL1T5XVNe55WbOp.jpg"
+            },
+            {
+                "name": "Saoirse-Monica Jackson",
+                "character": "Patty Spivot",
+                "image": "https://image.tmdb.org/t/p/w185/5CSLLbQS59BlUPOqaxABQKfnnkz.jpg"
+            },
+            {
+                "name": "Rudy Mancuso",
+                "character": "Albert Desmond",
+                "image": "https://image.tmdb.org/t/p/w185/7jP4syZQ4ccpd8H2HvyubRLHQcI.jpg"
+            }
+        ],
+        "trailerKey": "jprhe-cWKGs",
+        "tmdbId": "298618",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Together",
         "year": "2021",
         "desc": "تدور أحداث الفيلم حول زوجين تلاشت مشاعرهما وبات بينهما نفور وكراهية متبادلة، لكنهما يُجبران على البقاء معاً داخل المنزل تحت سقف واحد أثناء فترة الإغلاق التام لجائحة كورونا، ليخوضا مواجهات كلامية ونفسية حادة تعيد تقييم علاقتهما وماضيهما في إطار درامي وكوميدي ساخر ومؤثر .",
