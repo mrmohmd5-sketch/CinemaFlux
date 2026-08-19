@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Frankenstein",
+        "year": "2025",
+        "desc": "يقدّم 'غييرمو ديل تورو'، المُخرج الفائز بجوائز 'أوسكار'، فيلمًا مقتبسًا من حكاية 'ماري شيلي' الكلاسيكية حول العالِم 'فيكتور فرانكنشتاين' والمخلوق الذي يأتي به إلى الحياة الوحشية.",
+        "poster": "https://image.tmdb.org/t/p/w500/iOGVtzRzNdpUK8H0PuzEN8zx192.jpg",
+        "hdUrl": "https://streamtape.com/e/dqVQ39zDvBSkX80/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/dqVQ39zDvBSkX80/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.6",
+        "genre": "دراما فانتازيا رعب",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Oscar Isaac",
+                "character": "Victor Frankenstein",
+                "image": "https://image.tmdb.org/t/p/w185/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+            },
+            {
+                "name": "Jacob Elordi",
+                "character": "The Creature",
+                "image": "https://image.tmdb.org/t/p/w185/9FGS8AGjVNtpWuUeoipYWR23sRZ.jpg"
+            },
+            {
+                "name": "Christoph Waltz",
+                "character": "Harlander",
+                "image": "https://image.tmdb.org/t/p/w185/jMvLGCVXLaBqjRLf5olyvEucZob.jpg"
+            },
+            {
+                "name": "Mia Goth",
+                "character": "Elizabeth / Claire Frankenstein",
+                "image": "https://image.tmdb.org/t/p/w185/rwko7XVaKFcJH1dtAIIsrgLMzHb.jpg"
+            },
+            {
+                "name": "Felix Kammerer",
+                "character": "William Frankenstein",
+                "image": "https://image.tmdb.org/t/p/w185/T12faHW0QXunSZbv6YNmDWG7bC.jpg"
+            },
+            {
+                "name": "Charles Dance",
+                "character": "Leopold Frankenstein",
+                "image": "https://image.tmdb.org/t/p/w185/3xHwq5lchAI6mfW0aGQOEijexv6.jpg"
+            },
+            {
+                "name": "David Bradley",
+                "character": "Blind Man",
+                "image": "https://image.tmdb.org/t/p/w185/znpkwHitb3pcaJbUmgDqG0YenYp.jpg"
+            },
+            {
+                "name": "Lars Mikkelsen",
+                "character": "Captain Anderson",
+                "image": "https://image.tmdb.org/t/p/w185/xw3bJxjf8yT8TS8zigEGWQYSaXH.jpg"
+            },
+            {
+                "name": "Christian Convery",
+                "character": "Young Victor Frankenstein",
+                "image": "https://image.tmdb.org/t/p/w185/tOR2tSrvHPVDltE4jBDEva3GNqY.jpg"
+            },
+            {
+                "name": "Nikolaj Lie Kaas",
+                "character": "Chief Officer Larsen",
+                "image": "https://image.tmdb.org/t/p/w185/aU7YfSyQxxOwiNyXuaW0YRgpYyg.jpg"
+            }
+        ],
+        "trailerKey": "9WZllcEgWrM",
+        "tmdbId": "1062722",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Superman",
         "year": "2025",
         "desc": "سوبرمان، مراسل مبتدئ في مدينة 'ميتروبوليس'، ينطلق في رحلة للتوفيق بين إرثه الكريبتوني وتربيته البشرية كـ'كلارك كينت'.",
