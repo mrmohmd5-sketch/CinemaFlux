@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Super Troopers",
+        "year": "2001",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/yJyxPItcLNVfYr7idOphQTmQ9hK.jpg",
+        "hdUrl": "https://streamtape.com/e/rBgbZ20oVmhbwbz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/rBgbZ20oVmhbwbz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.5",
+        "genre": "كوميديا جريمة غموض",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jay Chandrasekhar",
+                "character": "Thorny",
+                "image": "https://image.tmdb.org/t/p/w185/kPBrBwm6BzUZhYPzdYcRwMPkgPf.jpg"
+            },
+            {
+                "name": "Kevin Heffernan",
+                "character": "Farva",
+                "image": "https://image.tmdb.org/t/p/w185/2FgG3oPF1A7d6W4KaNNZV7kJ83g.jpg"
+            },
+            {
+                "name": "Steve Lemme",
+                "character": "Mac",
+                "image": "https://image.tmdb.org/t/p/w185/iQnIsjeUA34B2w4EuM8mR1TglJZ.jpg"
+            },
+            {
+                "name": "Paul Soter",
+                "character": "Foster",
+                "image": "https://image.tmdb.org/t/p/w185/avsOygcEmFUB5INWGoexgaTJ2u0.jpg"
+            },
+            {
+                "name": "Erik Stolhanske",
+                "character": "Rabbit",
+                "image": "https://image.tmdb.org/t/p/w185/eVMov7majKwNO8eOMcwweaAnBJj.jpg"
+            },
+            {
+                "name": "Brian Cox",
+                "character": "Captain O'Hagen",
+                "image": "https://image.tmdb.org/t/p/w185/scSjbFCTRngXlkJRoKptM5kQGw7.jpg"
+            },
+            {
+                "name": "Daniel von Bargen",
+                "character": "Chief Grady",
+                "image": "https://image.tmdb.org/t/p/w185/2S03pvALrrAkXU8TdDSuYevtdBc.jpg"
+            },
+            {
+                "name": "Marisa Coughlan",
+                "character": "Ursula",
+                "image": "https://image.tmdb.org/t/p/w185/m6bzAs1IRRqWZjlVI01JeBUDL9u.jpg"
+            },
+            {
+                "name": "Lynda Carter",
+                "character": "Governor Jessman",
+                "image": "https://image.tmdb.org/t/p/w185/qZJgjBKEL4ioZywSGzYzxldEAvf.jpg"
+            },
+            {
+                "name": "André Vippolis",
+                "character": "College Boy 1",
+                "image": "https://image.tmdb.org/t/p/w185/roGjh39cdo3NnHGHeeO612MNCz0.jpg"
+            }
+        ],
+        "trailerKey": "KgHziCX4Kjc",
+        "tmdbId": "39939",
+        "tmdbType": "movie"
+    },
+    {
         "title": "It Chapter Two",
         "year": "2019",
         "desc": "بعد 27 عامًا من التغلب على الكيان الخارق الخبيث - بيني وايز -  يتم تجميع الأعضاء السابقين في نادي الخاسرين، الذين كبروا وانتقلوا من منطقة - ديري - من خلال مكالمة هاتفية مدمرة.",
