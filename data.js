@@ -1,6 +1,71 @@
 const globalMoviesData = [
     
     {
+        "title": "Spider-Man: Brand New Day",
+        "year": "2026",
+        "desc": "بينما يواصل 'بيتر باركر' حماية المدينة بصفته 'الرجل العنكبوت' في عالمٍ لم يعد يتذكره أحد، يجد نفسه وحيدًا وهو يشاهد أصدقاءه القدامى يمضون في حياتهم من دونه. ومع تصاعد الضغوط، يبدأ بالتغير بطريقة قد تعجز قواه عن كبحها. لكن هذا التحول قد يكون أمله الوحيد لمواجهة تهديدٍ غامض وخطير يلوح في الأفق، عدو يمتلك قوة مرعبة لا يستطيع أحد حتى رؤيته، ويهدد المدينة وكل من يهتم 'بيتر' لأمرهم.",
+        "poster": "https://image.tmdb.org/t/p/w500/yskgiN1W74nY2DFky4ncuxPbj2J.jpg",
+        "hdUrl": "https://streamtape.com/e/VBqJaYgzWDcKJAy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/7dexVo3V6GhAX3x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.9",
+        "genre": "خيال علمي حركة مغامرة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Tom Holland",
+                "character": "Peter Parker / Spider-Man",
+                "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+            },
+            {
+                "name": "Sadie Sink",
+                "character": "Jean Grey",
+                "image": "https://image.tmdb.org/t/p/w185/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            },
+            {
+                "name": "Tramell Tillman",
+                "character": "William 'Bill' Metzger",
+                "image": "https://image.tmdb.org/t/p/w185/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+            },
+            {
+                "name": "Zendaya",
+                "character": "MJ",
+                "image": "https://image.tmdb.org/t/p/w185/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+            },
+            {
+                "name": "Jon Bernthal",
+                "character": "Frank Castle / Punisher",
+                "image": "https://image.tmdb.org/t/p/w185/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
+            },
+            {
+                "name": "Jacob Batalon",
+                "character": "Ned Leeds",
+                "image": "https://image.tmdb.org/t/p/w185/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
+            },
+            {
+                "name": "Mark Ruffalo",
+                "character": "Bruce Banner / Hulk",
+                "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+            },
+            {
+                "name": "Liza Colón-Zayas",
+                "character": "Detective Jean DeWolff",
+                "image": "https://image.tmdb.org/t/p/w185/qBb5eYEoZAlStrRXvsFlKukKJG8.jpg"
+            },
+            {
+                "name": "Florence Pugh",
+                "character": "Yelena Belova / Black Widow",
+                "image": "https://image.tmdb.org/t/p/w185/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+            },
+            {
+                "name": "Marisa Tomei",
+                "character": "May Parker",
+                "image": "https://image.tmdb.org/t/p/w185/fj6t3XEXFTfA3mxicQAK3uZDdow.jpg"
+            }
+        ],
+        "trailerKey": "TT8MVDxrLaI",
+        "featured": true
+    },
+    {
         "title": "Together",
         "year": "2025",
         "desc": "بينما يختبر الانتقال إلى الريف حدود علاقة زوجين، تؤدي مواجهة خارقة للطبيعة إلى تحول جذري في حبهما وحياتهما وأجسادهما.",
@@ -6778,71 +6843,6 @@ const globalMoviesData = [
             }
         ],
         "trailerKey": "UJZx8MayWxk"
-    },
-    {
-        "title": "Spider-Man: Brand New Day",
-        "year": "2026",
-        "desc": "بينما يواصل 'بيتر باركر' حماية المدينة بصفته 'الرجل العنكبوت' في عالمٍ لم يعد يتذكره أحد، يجد نفسه وحيدًا وهو يشاهد أصدقاءه القدامى يمضون في حياتهم من دونه. ومع تصاعد الضغوط، يبدأ بالتغير بطريقة قد تعجز قواه عن كبحها. لكن هذا التحول قد يكون أمله الوحيد لمواجهة تهديدٍ غامض وخطير يلوح في الأفق، عدو يمتلك قوة مرعبة لا يستطيع أحد حتى رؤيته، ويهدد المدينة وكل من يهتم 'بيتر' لأمرهم.",
-        "poster": "https://image.tmdb.org/t/p/w500/yskgiN1W74nY2DFky4ncuxPbj2J.jpg",
-        "hdUrl": "https://streamtape.com/e/VBqJaYgzWDcKJAy/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "sdUrl": "https://streamtape.com/e/7dexVo3V6GhAX3x/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "rating": "7.9",
-        "genre": "خيال علمي حركة مغامرة",
-        "type": "movie",
-        "cast": [
-            {
-                "name": "Tom Holland",
-                "character": "Peter Parker / Spider-Man",
-                "image": "https://image.tmdb.org/t/p/w185/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
-            },
-            {
-                "name": "Sadie Sink",
-                "character": "Jean Grey",
-                "image": "https://image.tmdb.org/t/p/w185/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
-            },
-            {
-                "name": "Tramell Tillman",
-                "character": "William 'Bill' Metzger",
-                "image": "https://image.tmdb.org/t/p/w185/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
-            },
-            {
-                "name": "Zendaya",
-                "character": "MJ",
-                "image": "https://image.tmdb.org/t/p/w185/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
-            },
-            {
-                "name": "Jon Bernthal",
-                "character": "Frank Castle / Punisher",
-                "image": "https://image.tmdb.org/t/p/w185/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
-            },
-            {
-                "name": "Jacob Batalon",
-                "character": "Ned Leeds",
-                "image": "https://image.tmdb.org/t/p/w185/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
-            },
-            {
-                "name": "Mark Ruffalo",
-                "character": "Bruce Banner / Hulk",
-                "image": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
-            },
-            {
-                "name": "Liza Colón-Zayas",
-                "character": "Detective Jean DeWolff",
-                "image": "https://image.tmdb.org/t/p/w185/qBb5eYEoZAlStrRXvsFlKukKJG8.jpg"
-            },
-            {
-                "name": "Florence Pugh",
-                "character": "Yelena Belova / Black Widow",
-                "image": "https://image.tmdb.org/t/p/w185/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
-            },
-            {
-                "name": "Marisa Tomei",
-                "character": "May Parker",
-                "image": "https://image.tmdb.org/t/p/w185/fj6t3XEXFTfA3mxicQAK3uZDdow.jpg"
-            }
-        ],
-        "trailerKey": "TT8MVDxrLaI",
-        "featured": true
     },
     {
         "title": "Work It",
