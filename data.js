@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Superman",
+        "year": "2025",
+        "desc": "سوبرمان، مراسل مبتدئ في مدينة 'ميتروبوليس'، ينطلق في رحلة للتوفيق بين إرثه الكريبتوني وتربيته البشرية كـ'كلارك كينت'.",
+        "poster": "https://image.tmdb.org/t/p/w500/mpqGo2IkRrP5KzmJrbUWNw0p8jc.jpg",
+        "hdUrl": "https://streamtape.com/e/eky9AK9XdOhYd8D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/eky9AK9XdOhYd8D/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.3",
+        "genre": "خيال علمي مغامرة حركة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "David Corenswet",
+                "character": "Superman",
+                "image": "https://image.tmdb.org/t/p/w185/yoQxpUPt3le9zY4Sab3g2ANy4CE.jpg"
+            },
+            {
+                "name": "Rachel Brosnahan",
+                "character": "Lois Lane",
+                "image": "https://image.tmdb.org/t/p/w185/piB7t3ykZaylYTRoyK46FknyF2p.jpg"
+            },
+            {
+                "name": "Nicholas Hoult",
+                "character": "Lex Luthor",
+                "image": "https://image.tmdb.org/t/p/w185/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg"
+            },
+            {
+                "name": "Edi Gathegi",
+                "character": "Mr. Terrific",
+                "image": "https://image.tmdb.org/t/p/w185/dt8yMyycDlzxkjhmuuJJ4tXDbp4.jpg"
+            },
+            {
+                "name": "Nathan Fillion",
+                "character": "Guy Gardner",
+                "image": "https://image.tmdb.org/t/p/w185/aW6vCxkUZtwb6iH2Wf88Uq0XNVv.jpg"
+            },
+            {
+                "name": "Isabela Merced",
+                "character": "Hawkgirl",
+                "image": "https://image.tmdb.org/t/p/w185/7O5GWIH8IHwU4kGZIhC3JkGDiZr.jpg"
+            },
+            {
+                "name": "María Gabriela de Faría",
+                "character": "The Engineer",
+                "image": "https://image.tmdb.org/t/p/w185/coZ5Y5STiSvAx0aewVxFVTTtWtA.jpg"
+            },
+            {
+                "name": "Skyler Gisondo",
+                "character": "Jimmy Olsen",
+                "image": "https://image.tmdb.org/t/p/w185/vyalCuJUUP7Ht1vMWZQzhOrscXV.jpg"
+            },
+            {
+                "name": "Alan Tudyk",
+                "character": "Gary",
+                "image": "https://image.tmdb.org/t/p/w185/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg"
+            },
+            {
+                "name": "Grace Chan",
+                "character": "Superman Robot #12 (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/vs6aMdkXkR8A0sOCXK6AGIrVeHb.jpg"
+            }
+        ],
+        "trailerKey": "MikgqM0LXr4",
+        "tmdbId": "1061474",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Frankenstein's Monster's Monster, Frankenstein",
         "year": "2019",
         "desc": "تدور أحداث الفيلم القصير حول الممثل ديفيد هاربر الذي يحاول كشف الغموض المحيط بمسيرة والده التمثيلية وتاريخ عائلته الفني، من خلال إعادة تمثيل مشهد من مسرحية درامية وتلفزيونية مقتبسة وغريبة كان قد صورها والده، في إطار وثائقي ساخر وكوميديا عبثية غير تقليدية.",
