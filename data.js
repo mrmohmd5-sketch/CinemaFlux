@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2019",
         "desc": "تم إعطاء صبي القدرة على أن يصبح  رجلا خارقًا في أوقات الحاجة، بكلمة سحرية واحدة.",
         "poster": "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
-        "hdUrl": "https://streamtape.com/e/bvV4WRpAA1cPb0O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/zPVaXoZ7eViYa9K/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/bvV4WRpAA1cPb0O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.0",
         "genre": "حركة كوميديا فانتازيا",
