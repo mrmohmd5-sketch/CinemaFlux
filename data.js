@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Watchers",
+        "year": "2024",
+        "desc": "تتقطع السبل بفنانة في إحدى غابات غرب أيرلندا، وتصل إلى أحد الملاجئ فتتقابل مع ثلاثة أشخاص غرباء، وبمرور الوقت يتعرض الرباعي لهجوم من مخلوقات غريبة في كل ليلة.",
+        "poster": "https://image.tmdb.org/t/p/w500/34KIWVktQx5KFNQJztbSXQc5x1k.jpg",
+        "hdUrl": "https://streamtape.com/e/LDZXLG8D3quRGGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/LDZXLG8D3quRGGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.4",
+        "genre": "فانتازيا رعب غموض",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Dakota Fanning",
+                "character": "Mina / Lucy",
+                "image": "https://image.tmdb.org/t/p/w185/hwcO08SVWkelfvgfIa5HsTMxsK8.jpg"
+            },
+            {
+                "name": "Georgina Campbell",
+                "character": "Ciara",
+                "image": "https://image.tmdb.org/t/p/w185/kgXHKjI728Nv7FLVf38S9QzHU2n.jpg"
+            },
+            {
+                "name": "Olwen Fouéré",
+                "character": "Madeline",
+                "image": "https://image.tmdb.org/t/p/w185/jvBLYkqqEdZGGcg4YVUZhBl6or4.jpg"
+            },
+            {
+                "name": "Oliver Finnegan",
+                "character": "Daniel",
+                "image": "https://image.tmdb.org/t/p/w185/n7MaoeKKfmH8SyXLvKbjXWbDyQO.jpg"
+            },
+            {
+                "name": "Alistair Brammer",
+                "character": "John",
+                "image": "https://image.tmdb.org/t/p/w185/9jYWbSSbpto6eCISIeKO9J1vTWe.jpg"
+            },
+            {
+                "name": "John Lynch",
+                "character": "Kilmartin",
+                "image": "https://image.tmdb.org/t/p/w185/4TG8HYZ5SEFh1Yk5CCG4fXD55j9.jpg"
+            },
+            {
+                "name": "Siobhan Hewlett",
+                "character": "Mina's Mother",
+                "image": "https://image.tmdb.org/t/p/w185/5BCHDFGaA0v9KkaEsDQhMp8bzsh.jpg"
+            },
+            {
+                "name": "Hannah Dargan",
+                "character": "Young Mina",
+                "image": "https://image.tmdb.org/t/p/w185/c5Rgto4V5ne18gm5sCUAuNHgcjF.jpg"
+            },
+            {
+                "name": "Emily Dargan",
+                "character": "Young Lucy",
+                "image": "https://image.tmdb.org/t/p/w185/qyVejSXiREOBICyHMJC8Z1qZq90.jpg"
+            },
+            {
+                "name": "Joel Figueroa",
+                "character": "Darwin (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/63wTWZ0HeI9CpTKxohIP593GpWL.jpg"
+            }
+        ],
+        "trailerKey": "uXQZl4YoSVU",
+        "tmdbId": "1086747",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Super Troopers 2",
         "year": "2018",
         "desc": "تدور أحداث الجزء الثاني حول عودة فرقة الشرطة نفسها بعد طردهم من العمل، حيث يتم استدعاؤهم لتأسيس مركز شرطة جديد في منطقة حدودية متنازع عليها بين الولايات المتحدة وكندا، ليخوضوا صراعات طريفة مع أفراد الشرطة الكندية ويكتشفوا عملية تهريب جديدة في إطار مليء بالمفارقات الكوميدية.",
