@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Zack Snyder's Justice League",
+        "year": "2021",
+        "desc": "يجمع بروس واين مجموعة من الأبطال الخارقين من أجل الدفاع عن البشرية ضد داركسايد والحفاظ على تضحيات سوبرمان الراحل، ولكن سرعان ما تقع كوارث مروعة تدفع الفريق إلى فعل المستحيل.",
+        "poster": "https://image.tmdb.org/t/p/w500/bhbpXNwE41PhELXQDI6xRrUdDz7.jpg",
+        "hdUrl": "https://streamtape.com/e/VWlK6RldGPf3zO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/VWlK6RldGPf3zO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "8.1",
+        "genre": "حركة مغامرة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Ben Affleck",
+                "character": "Batman / Bruce Wayne",
+                "image": "https://image.tmdb.org/t/p/w185/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg"
+            },
+            {
+                "name": "Henry Cavill",
+                "character": "Superman / Clark Kent",
+                "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+            },
+            {
+                "name": "Gal Gadot",
+                "character": "Wonder Woman / Diana Prince",
+                "image": "https://image.tmdb.org/t/p/w185/qCJB1ACi5VjtY4ypXuv3hjAvbSu.jpg"
+            },
+            {
+                "name": "Ray Fisher",
+                "character": "Cyborg / Victor Stone",
+                "image": "https://image.tmdb.org/t/p/w185/310snvA05xDOQZDn2fJSp242GHw.jpg"
+            },
+            {
+                "name": "Jason Momoa",
+                "character": "Aquaman / Arthur Curry",
+                "image": "https://image.tmdb.org/t/p/w185/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+            },
+            {
+                "name": "Ezra Miller",
+                "character": "The Flash / Barry Allen",
+                "image": "https://image.tmdb.org/t/p/w185/6wmTpbYpmhthaxzM5ss3377F9IV.jpg"
+            },
+            {
+                "name": "Ciarán Hinds",
+                "character": "Steppenwolf (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg"
+            },
+            {
+                "name": "Amy Adams",
+                "character": "Lois Lane",
+                "image": "https://image.tmdb.org/t/p/w185/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+            },
+            {
+                "name": "Willem Dafoe",
+                "character": "Vulko",
+                "image": "https://image.tmdb.org/t/p/w185/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg"
+            },
+            {
+                "name": "Jeremy Irons",
+                "character": "Alfred",
+                "image": "https://image.tmdb.org/t/p/w185/w8Ct1q02Ht3sWdOSqfp3B85TzT.jpg"
+            }
+        ],
+        "trailerKey": "ManKeNt0ZgU",
+        "tmdbId": "791373",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Wonder Woman",
         "year": "2017",
         "desc": "قبل أن تصير المرأة الأعجوبة، تدربت (الأميرة ديانا)، أميرة الأمازون لتكون محاربة لا تُقهَر في جزيرة بارادايس واحتمت فيها إلى أن يهبط طيار أمريكي على الجزيرة؛ فتقرر ديانا الرحيل عن موطنها معه لتتعرف على حضارات وأماكن مختلفة ومحاربين، وتشارك في وقف الحروب المُدارة مختبرة قدراتها الحقيقية خلالها.",
