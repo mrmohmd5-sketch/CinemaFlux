@@ -201,7 +201,7 @@ const globalMoviesData = [
         "title": "Frankenstein",
         "year": "2025",
         "desc": "يقدّم 'غييرمو ديل تورو'، المُخرج الفائز بجوائز 'أوسكار'، فيلمًا مقتبسًا من حكاية 'ماري شيلي' الكلاسيكية حول العالِم 'فيكتور فرانكنشتاين' والمخلوق الذي يأتي به إلى الحياة الوحشية.",
-        "poster": "https://image.tmdb.org/t/p/w500/iOGVtzRzNdpUK8H0PuzEN8zx192.jpg",
+        "poster": "https://image.tmdb.org/t/p/original/g4JtvGlQO7DByTI6frUobqvSL3R.jpg",
         "hdUrl": "https://streamtape.com/e/DaVw7Gqyw6ikJKY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/dqVQ39zDvBSkX80/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.6",
