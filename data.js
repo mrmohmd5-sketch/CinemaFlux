@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Batman v Superman: Dawn of Justice",
+        "year": "2016",
+        "desc": "خوفًا من أن تُترك أفعال بطلٍ خارق يمتلك قوة الآلهة بلا رقيب، يواجه حارس مدينة غوثام القاسي والمخيف منقذ ميتروبوليس الأعظم، بينما يتصارع العالم حول نوع البطل الذي يحتاجه حقًا.  ومع اندلاع الحرب بين باتمان وسوبرمان، يظهر تهديد جديد أكثر رعبًا ووحشية، ليضع البشرية أمام خطر يفوق أي شيء واجهته من قبل.",
+        "poster": "https://image.tmdb.org/t/p/w500/qjv78GyXon2ekTzNBuGBp44bJ8c.jpg",
+        "hdUrl": "https://streamtape.com/e/G2xy6oDd8BT1z6A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/G2xy6oDd8BT1z6A/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.0",
+        "genre": "حركة مغامرة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Ben Affleck",
+                "character": "Bruce Wayne / Batman",
+                "image": "https://image.tmdb.org/t/p/w185/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg"
+            },
+            {
+                "name": "Henry Cavill",
+                "character": "Clark Kent / Superman",
+                "image": "https://image.tmdb.org/t/p/w185/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+            },
+            {
+                "name": "Jesse Eisenberg",
+                "character": "Lex Luthor",
+                "image": "https://image.tmdb.org/t/p/w185/yYhwWRcxDHTn63gSEF1vnDAD7cD.jpg"
+            },
+            {
+                "name": "Gal Gadot",
+                "character": "Diana Prince / Wonder Woman",
+                "image": "https://image.tmdb.org/t/p/w185/qCJB1ACi5VjtY4ypXuv3hjAvbSu.jpg"
+            },
+            {
+                "name": "Amy Adams",
+                "character": "Lois",
+                "image": "https://image.tmdb.org/t/p/w185/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+            },
+            {
+                "name": "Diane Lane",
+                "character": "Martha Kent",
+                "image": "https://image.tmdb.org/t/p/w185/6OfP3vFMuCL51zamFKgb8aS74hs.jpg"
+            },
+            {
+                "name": "Laurence Fishburne",
+                "character": "Perry White",
+                "image": "https://image.tmdb.org/t/p/w185/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+            },
+            {
+                "name": "Jeremy Irons",
+                "character": "Alfred",
+                "image": "https://image.tmdb.org/t/p/w185/w8Ct1q02Ht3sWdOSqfp3B85TzT.jpg"
+            },
+            {
+                "name": "Holly Hunter",
+                "character": "Senator Finch",
+                "image": "https://image.tmdb.org/t/p/w185/kC7KX03VAWvogOCuwKbMo4V6TuU.jpg"
+            },
+            {
+                "name": "Scoot McNairy",
+                "character": "Wallace Keefe",
+                "image": "https://image.tmdb.org/t/p/w185/oP2LJEqupxVZ2XdEW1lN5Q5LF3M.jpg"
+            }
+        ],
+        "trailerKey": "LkuW92oxj7A",
+        "tmdbId": "209112",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Blue Beetle",
         "year": "2023",
         "desc": "في إطار من المغامرات والخيال العلمي، يعثر مراهق مكسيكي على خنفساء فضائية تمحنه درعًا يكسبه قدرات خارقة.",
