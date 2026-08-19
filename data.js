@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Joker: Folie à Deux",
+        "year": "2024",
+        "desc": "بينما يكافح آرثر فليك للتعامل مع هويته المزدوجة، لا يعثر فقط على الحب الحقيقي، بل يكتشف أيضًا الموسيقى التي كانت دائمًا بداخله.",
+        "poster": "https://image.tmdb.org/t/p/w500/fYeAoRZ74GttX0Pcb7v8MmXnkAy.jpg",
+        "hdUrl": "https://streamtape.com/e/zXWkB1qjq3sv4W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/zXWkB1qjq3sv4W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.4",
+        "genre": "دراما جريمة إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Joaquin Phoenix",
+                "character": "Arthur Fleck",
+                "image": "https://image.tmdb.org/t/p/w185/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg"
+            },
+            {
+                "name": "Lady Gaga",
+                "character": "Lee Quinzel",
+                "image": "https://image.tmdb.org/t/p/w185/9Y4Pz7AEXhB9qNar2tMsx5EVXML.jpg"
+            },
+            {
+                "name": "Brendan Gleeson",
+                "character": "Jackie Sullivan",
+                "image": "https://image.tmdb.org/t/p/w185/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg"
+            },
+            {
+                "name": "Catherine Keener",
+                "character": "Maryanne Stewart",
+                "image": "https://image.tmdb.org/t/p/w185/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg"
+            },
+            {
+                "name": "Zazie Beetz",
+                "character": "Sophie Dumond",
+                "image": "https://image.tmdb.org/t/p/w185/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg"
+            },
+            {
+                "name": "Steve Coogan",
+                "character": "Paddy Meyers",
+                "image": "https://image.tmdb.org/t/p/w185/tT7OXc2qA6hlREHXdwGLp0XihzA.jpg"
+            },
+            {
+                "name": "Harry Lawtey",
+                "character": "Harvey Dent",
+                "image": "https://image.tmdb.org/t/p/w185/l2qFs3TntkZD0G3zFEd1o2DXSWX.jpg"
+            },
+            {
+                "name": "Leigh Gill",
+                "character": "Gary Puddles",
+                "image": "https://image.tmdb.org/t/p/w185/stbbWD89FQWa34TNVyxVj5xBVIm.jpg"
+            },
+            {
+                "name": "Ken Leung",
+                "character": "Dr. Victor Liu",
+                "image": "https://image.tmdb.org/t/p/w185/hpatUP6u74gkpDRmn9voNY9V43O.jpg"
+            },
+            {
+                "name": "Jacob Lofland",
+                "character": "Ricky Meline",
+                "image": "https://image.tmdb.org/t/p/w185/jU1eW9oOTC4ILfLNFeNUC7Fa5ya.jpg"
+            }
+        ],
+        "trailerKey": "-LEROjrL4Is",
+        "tmdbId": "889737",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Ice Road: Vengeance",
         "year": "2025",
         "desc": "لتحقيق أمنية أخيه الراحل الأخيرة، يسافر سائق الشاحنات الكبيرة على الطرق الجليدية مايك مكان إلى نيبال لنثر رماده على جبل إيفرست. وفي حافلة سياحية مكتظة تجتاز التضاريس الوعرة لطريق السماء الشهير الذي يقع على ارتفاع أكثر من 3 كيلومترات ونصف، يواجه مايك ومرشده الجبلي مجموعة من المرتزقة ويتعين عليهما القتال لإنقاذ نفسيهما وحافلة مكتظة بالمسافرين الأبرياء وموطن القرويين المحليين.",
