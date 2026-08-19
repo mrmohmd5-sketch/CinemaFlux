@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Titanic",
+        "year": "1997",
+        "desc": "تروي روز ديويت بوكاتر البالغة من العمر 101 عامًا قصة حياتها على متن تيتانيك ، بعد 84 عامًا. روز شابة تصعد على متن السفينة مع والدتها وخطيبها. في هذه الأثناء ، فاز جاك داوسون وفابريزيو دي روسي بتذاكر درجة ثالثة على متن السفينة. تروي روز القصة الكاملة من رحيل تيتانيك حتى وفاتها - في رحلتها الأولى والأخيرة - في 15 أبريل 1912.",
+        "poster": "https://image.tmdb.org/t/p/w500/2QqGsNCuWyznjKht4hKTmRW1aEn.jpg",
+        "hdUrl": "https://streamtape.com/e/zxa7WYrPjRFgqY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/zxa7WYrPjRFgqY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.9",
+        "genre": "دراما رومنسية",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Leonardo DiCaprio",
+                "character": "Jack Dawson",
+                "image": "https://image.tmdb.org/t/p/w185/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
+            },
+            {
+                "name": "Kate Winslet",
+                "character": "Rose DeWitt Bukater",
+                "image": "https://image.tmdb.org/t/p/w185/6qNnMsKtKz9si5rabpUEG85UfHp.jpg"
+            },
+            {
+                "name": "Billy Zane",
+                "character": "Cal Hockley",
+                "image": "https://image.tmdb.org/t/p/w185/wr4fuwLzQvW1G0MS7cmQ3ObFjvL.jpg"
+            },
+            {
+                "name": "Kathy Bates",
+                "character": "Molly Brown",
+                "image": "https://image.tmdb.org/t/p/w185/qZRTzTjV4OC1Ii9a0n8QBS9zMOd.jpg"
+            },
+            {
+                "name": "Frances Fisher",
+                "character": "Ruth DeWitt Bukater",
+                "image": "https://image.tmdb.org/t/p/w185/3iNDgd54IIj8g8hGqhhUjM6TeWd.jpg"
+            },
+            {
+                "name": "Gloria Stuart",
+                "character": "Old Rose",
+                "image": "https://image.tmdb.org/t/p/w185/9aG7UUX3PWIGGf1KRY5TsBSoNz9.jpg"
+            },
+            {
+                "name": "Bill Paxton",
+                "character": "Brock Lovett",
+                "image": "https://image.tmdb.org/t/p/w185/aLdNe6mt1cSi2zWlUYRregzfis5.jpg"
+            },
+            {
+                "name": "Bernard Hill",
+                "character": "Captain Smith",
+                "image": "https://image.tmdb.org/t/p/w185/5i8bj2nsTrFU2ddSynleOjapxor.jpg"
+            },
+            {
+                "name": "David Warner",
+                "character": "Spicer Lovejoy",
+                "image": "https://image.tmdb.org/t/p/w185/AlsZcAY2c4chfOxMW69gHQzH1B2.jpg"
+            },
+            {
+                "name": "Victor Garber",
+                "character": "Thomas Andrews",
+                "image": "https://image.tmdb.org/t/p/w185/FdhXl8qxsKgj22Ip99SRM9jUx1.jpg"
+            }
+        ],
+        "trailerKey": "uHb_dj5SwlA",
+        "tmdbId": "597",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Flash",
         "year": "2023",
         "desc": "يسافر الفلاش عبر الزمن لمنع مقتل والدته ، وهو عمل يعطل الوقت بشكل كبير.",
