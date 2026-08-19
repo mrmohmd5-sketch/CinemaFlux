@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Top Gun: Maverick",
+        "year": "2022",
+        "desc": "بعد أكثر من ثلاثين عامًا من الخدمة كأحد أبرز طياري البحرية، وبعد تجنّبه الترقية في الرتب التي كانت ستُبقيه على الأرض، يجد 'بيت 'مافريك' ميتشل' نفسه يدرب مجموعة من خريجي 'توب غان' على مهمة خاصة من نوع لم يسبق لأي طيار حي أن خاضها.",
+        "poster": "https://image.tmdb.org/t/p/w500/AnxpYFkCarHnT6yrgVW8WmJ5SMk.jpg",
+        "hdUrl": "https://streamtape.com/e/0z4LyK4ARXIbGOd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/0z4LyK4ARXIbGOd/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "8.2",
+        "genre": "حركة دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Tom Cruise",
+                "character": "Capt. Pete 'Maverick' Mitchell",
+                "image": "https://image.tmdb.org/t/p/w185/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg"
+            },
+            {
+                "name": "Miles Teller",
+                "character": "Lt. Bradley 'Rooster' Bradshaw",
+                "image": "https://image.tmdb.org/t/p/w185/kDf3sW3USjEBDQ3Ua7lbwOfwty6.jpg"
+            },
+            {
+                "name": "Jennifer Connelly",
+                "character": "Penny Benjamin",
+                "image": "https://image.tmdb.org/t/p/w185/wdmcJagSRJ65AuJ4IUCzuHAdvgy.jpg"
+            },
+            {
+                "name": "Bashir Salahuddin",
+                "character": "Wo-1. Bernie 'Hondo' Coleman",
+                "image": "https://image.tmdb.org/t/p/w185/ZL5MRzjd6kWkvQXqh5mgPY1CKP.jpg"
+            },
+            {
+                "name": "Jon Hamm",
+                "character": "Adm. Beau 'Cyclone' Simpson",
+                "image": "https://image.tmdb.org/t/p/w185/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg"
+            },
+            {
+                "name": "Charles Parnell",
+                "character": "Adm. Solomon 'Warlock' Bates",
+                "image": "https://image.tmdb.org/t/p/w185/wLywO5xtR97YKtkYb57hXEFpL7j.jpg"
+            },
+            {
+                "name": "Monica Barbaro",
+                "character": "Lt. Natasha 'Phoenix' Trace",
+                "image": "https://image.tmdb.org/t/p/w185/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+            },
+            {
+                "name": "Lewis Pullman",
+                "character": "Lt. Robert 'Bob' Floyd",
+                "image": "https://image.tmdb.org/t/p/w185/i2wJQ2eaVuTPaA84jzxNtxs54mO.jpg"
+            },
+            {
+                "name": "Jay Ellis",
+                "character": "Lt. Reuben 'Payback' Fitch",
+                "image": "https://image.tmdb.org/t/p/w185/78JH7CfMrWrI3Vx2XLbx0GW4c2X.jpg"
+            },
+            {
+                "name": "Danny Ramirez",
+                "character": "Lt. Mickey 'Fanboy' Garcia",
+                "image": "https://image.tmdb.org/t/p/w185/7ZvcfWA5O5ULiupbHZtGGEPwnpI.jpg"
+            }
+        ],
+        "trailerKey": "Klc__shdj88",
+        "tmdbId": "361743",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Top Gun",
         "year": "1986",
         "desc": "ينضمّ طيّار متمرّد إلى مدرسة مرموقة للتدريب على القتال المُتقدّم، وهناك يواجه منافسة شديدة وحبًّا مشتعلًا وخطرًا يتربّص به في الأجواء.",
