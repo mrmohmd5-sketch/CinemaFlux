@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Hot Bot",
+        "year": "2016",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/fHUxi5HjpVjSpw5JKgGgiriVbGO.jpg",
+        "hdUrl": "https://streamtape.com/e/bpeDL37QblcJ0W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/bpeDL37QblcJ0W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "4.3",
+        "genre": "كوميديا خيال علمي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Cynthia Kirchner",
+                "character": "Bardot",
+                "image": "https://image.tmdb.org/t/p/w185/ohcRRdCnJd7NVhAvRzFOF9djcbK.jpg"
+            },
+            {
+                "name": "Doug Haley",
+                "character": "Limus \"Huffy\" Huffington",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Zack Pearlman",
+                "character": "Leonard \"Nard\" Stupenski",
+                "image": "https://image.tmdb.org/t/p/w185/ez93T66xMaCycaw5aoh61o6FO2H.jpg"
+            },
+            {
+                "name": "Larry Miller",
+                "character": "Senator Biter",
+                "image": "https://image.tmdb.org/t/p/w185/ajnXlXG20LJwAwxne8G94ucVj0v.jpg"
+            },
+            {
+                "name": "Danny Masterson",
+                "character": "Agent Koontz",
+                "image": "https://image.tmdb.org/t/p/w185/AeYYtZhDCqJqDmaFcA0eJV0bGSx.jpg"
+            },
+            {
+                "name": "Anthony Anderson",
+                "character": "Agent Frazier",
+                "image": "https://image.tmdb.org/t/p/w185/reO1OjwFdtXmiO4LMDaBj6eatzK.jpg"
+            },
+            {
+                "name": "David Shackelford",
+                "character": "Benny",
+                "image": "https://image.tmdb.org/t/p/w185/INcN4Mn945EaIBGCXZbKa1C6Me.jpg"
+            },
+            {
+                "name": "Donald Faison",
+                "character": "Delaware Huffington",
+                "image": "https://image.tmdb.org/t/p/w185/gNwWP1CHob9Y8fjY69w7EwGxMoz.jpg"
+            },
+            {
+                "name": "Angela Kinsey",
+                "character": "Candy Huffington",
+                "image": "https://image.tmdb.org/t/p/w185/qHFidnMcFqUWdMFyjmXufBlYckd.jpg"
+            },
+            {
+                "name": "Kirby Bliss Blanton",
+                "character": "Kassidy",
+                "image": "https://image.tmdb.org/t/p/w185/ocjvHecG7af2WxqUbZhWg6o4ZC9.jpg"
+            }
+        ],
+        "trailerKey": "4AFUW-svw2k",
+        "tmdbId": "385317",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Peanut Butter Falcon",
         "year": "2019",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
