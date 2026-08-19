@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Prey",
+        "year": "2022",
+        "desc": "يصطادون للعيش. يعيش للصيد.\r عندما يهدد الخطر معسكرها ، تنطلق محارب كومانش الشرس والماهر نارو لحماية شعبها. لكن الفريسة التي تطاردها تبين أنها مفترس فضائي متطور للغاية مع ترسانة متقدمة تقنيا.",
+        "poster": "https://image.tmdb.org/t/p/w500/pY4Znp5DN1SRK17PFPkMihXCumn.jpg",
+        "hdUrl": "https://streamtape.com/e/Dzz408xGzksDKg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/Dzz408xGzksDKg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.7",
+        "genre": "إثارة حركة خيال علمي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Amber Midthunder",
+                "character": "Naru",
+                "image": "https://image.tmdb.org/t/p/w185/f8VWGyaIS38NkDIzQ2hapXKt0N5.jpg"
+            },
+            {
+                "name": "Dakota Beavers",
+                "character": "Taabe",
+                "image": "https://image.tmdb.org/t/p/w185/1lIkcUUeTdGxGM0JOGw48VXA0WW.jpg"
+            },
+            {
+                "name": "Michelle Thrush",
+                "character": "Aruka",
+                "image": "https://image.tmdb.org/t/p/w185/32rSHv8HfSAMWWmGyyHZeIEhuvp.jpg"
+            },
+            {
+                "name": "Stormee Kipp",
+                "character": "Wasape",
+                "image": "https://image.tmdb.org/t/p/w185/fW6B1HS5ixuziEGsWzSlz7MyLh7.jpg"
+            },
+            {
+                "name": "Julian Black Antelope",
+                "character": "Chief Kehetu",
+                "image": "https://image.tmdb.org/t/p/w185/tULt7BBKT7lRQNBbTz7z8zyZAwQ.jpg"
+            },
+            {
+                "name": "Dane DiLiegro",
+                "character": "Predator",
+                "image": "https://image.tmdb.org/t/p/w185/dBaJs1QNTpYL3RIdBz8VN01mmDf.jpg"
+            },
+            {
+                "name": "Stefany Mathias",
+                "character": "Sumu (Chief Wife)",
+                "image": "https://image.tmdb.org/t/p/w185/ziJ5fXAQVJ6X5y6vLpcmze1dyp.jpg"
+            },
+            {
+                "name": "Bennett Taylor",
+                "character": "Raphael",
+                "image": "https://image.tmdb.org/t/p/w185/eYOy0t1Obo7X9J6KsAUmgOfp56o.jpg"
+            },
+            {
+                "name": "Mike Paterson",
+                "character": "Big Beard",
+                "image": "https://image.tmdb.org/t/p/w185/wFTojLov6QWbLNEWIgUVVVloyvz.jpg"
+            },
+            {
+                "name": "Nelson Leis",
+                "character": "Waxed Mustache",
+                "image": "https://image.tmdb.org/t/p/w185/olMl35MmkOmOp17CC3519wG30D7.jpg"
+            }
+        ],
+        "trailerKey": "GiVHPfJMbpQ",
+        "tmdbId": "766507",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Joker: Folie à Deux",
         "year": "2024",
         "desc": "بينما يكافح آرثر فليك للتعامل مع هويته المزدوجة، لا يعثر فقط على الحب الحقيقي، بل يكتشف أيضًا الموسيقى التي كانت دائمًا بداخله.",
