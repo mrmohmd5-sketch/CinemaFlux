@@ -1223,10 +1223,10 @@ const globalMoviesData = [
         "title": "Lucky",
         "year": "2026",
         "desc": "عندما تفشل عملية سرقة بملايين الدولارات، تُجبر المحتالة 'لاكي'،، على الفرار. وبين الهرب من الفيدراليين وزعيم جريمة لا يرحم، تقاتل 'لاكي' للنجاة بحياتها ولإيجاد مخرج.",
-        "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/qdobPy3No4Fi3dCzcIDP9n8AjcO.jpg",
         "hdUrl": "",
         "sdUrl": "",
-        "rating": "7.3",
+        "rating": "7.2",
         "genre": "دراما جريمة",
         "type": "series",
         "cast": [
@@ -1286,6 +1286,10 @@ const globalMoviesData = [
                     {
                         "episode_number": 6,
                         "url": "https://streamtape.com/e/G9bQB7raBrt1eyY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 7,
+                        "url": "https://streamtape.com/e/l2lQK6rKAKCZbw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
                     }
                 ]
             }
