@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Aquaman and the Lost Kingdom",
+        "year": "2023",
+        "desc": "عندما يتم إطلاق العنان لقوة قديمة ، يجب على أكوامان إقامة تحالف غير مستقر مع حليف غير متوقع لحماية أتلانتس والعالم من الدمار الذي لا رجعة فيه.",
+        "poster": "https://image.tmdb.org/t/p/w500/bogXxyid9B3qukICCXkoQKN5lqE.jpg",
+        "hdUrl": "https://streamtape.com/e/VW891OrmZVh3rx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/VW891OrmZVh3rx/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.5",
+        "genre": "حركة مغامرة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jason Momoa",
+                "character": "Arthur",
+                "image": "https://image.tmdb.org/t/p/w185/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+            },
+            {
+                "name": "Patrick Wilson",
+                "character": "Orm",
+                "image": "https://image.tmdb.org/t/p/w185/oym6H2QD9esk4yABjCHaUoNAOa8.jpg"
+            },
+            {
+                "name": "Yahya Abdul-Mateen II",
+                "character": "Black Manta",
+                "image": "https://image.tmdb.org/t/p/w185/79VdVjUoiYGcgjOT9UmE5XIpoZM.jpg"
+            },
+            {
+                "name": "Randall Park",
+                "character": "Dr. Shin",
+                "image": "https://image.tmdb.org/t/p/w185/u1QpbjVIKegk79DJG9HFmg9Ljv4.jpg"
+            },
+            {
+                "name": "Amber Heard",
+                "character": "Mera",
+                "image": "https://image.tmdb.org/t/p/w185/vnDolRlZWiOLBg1N0hsUTz4OH4C.jpg"
+            },
+            {
+                "name": "Nicole Kidman",
+                "character": "Atlanna",
+                "image": "https://image.tmdb.org/t/p/w185/4KSQDodyBtTDMaREYgMdWD1LbH1.jpg"
+            },
+            {
+                "name": "Dolph Lundgren",
+                "character": "King Nereus",
+                "image": "https://image.tmdb.org/t/p/w185/fB1tOws6Gav0xE8LYlELEb82hJt.jpg"
+            },
+            {
+                "name": "Temuera Morrison",
+                "character": "Tom",
+                "image": "https://image.tmdb.org/t/p/w185/AvtSC0f9QW7fMyFFNXEWDeQyfUk.jpg"
+            },
+            {
+                "name": "Indya Moore",
+                "character": "Karshon",
+                "image": "https://image.tmdb.org/t/p/w185/uIRHpgbj9DfjMksigXmi497xRqU.jpg"
+            },
+            {
+                "name": "Pilou Asbæk",
+                "character": "Kordax",
+                "image": "https://image.tmdb.org/t/p/w185/hUJAtjbYG7rqm54aoWtNWeeKjTY.jpg"
+            }
+        ],
+        "trailerKey": "PoF4B_xPVlg",
+        "tmdbId": "572802",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Aquaman",
         "year": "2018",
         "desc": "نصف آدمي ونصف أطلنطي، آرثر كاري في رحلة حياته.  لم تجبره فقط على اكتشاف من هو، بل ليكتشف إن كان يستحق يكون ... ملكاً.",
