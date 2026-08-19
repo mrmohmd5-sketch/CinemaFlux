@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+        "year": "2020",
+        "desc": "بعد الانقسام عن الجوكر، تنضم (هارلي كوين) إلى ثلاثة أبطال خارقين وهم: (بلاك كناري) و(هانتريس)، و(رينيه مونتويا)؛ لإنقاذ حياة الفتاة الصغيرة (كاساندرا كاين) من سيد الجريمة الشرير.",
+        "poster": "https://image.tmdb.org/t/p/w500/vxLVBwpc1rKDOHxbv0aPSZ8SGgf.jpg",
+        "hdUrl": "https://streamtape.com/e/KwYDVVrBzwU03de/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/KwYDVVrBzwU03de/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.9",
+        "genre": "حركة جريمة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Margot Robbie",
+                "character": "Harley Quinn",
+                "image": "https://image.tmdb.org/t/p/w185/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg"
+            },
+            {
+                "name": "Rosie Perez",
+                "character": "Renee Montoya",
+                "image": "https://image.tmdb.org/t/p/w185/g6iJNyIhVDY5NxZU1jbKMjPnNYf.jpg"
+            },
+            {
+                "name": "Mary Elizabeth Winstead",
+                "character": "Helena Bertinelli / Huntress",
+                "image": "https://image.tmdb.org/t/p/w185/vQn6IGsClpyhV6KTba9EDqSK7e2.jpg"
+            },
+            {
+                "name": "Jurnee Smollett",
+                "character": "Dinah Lance / Black Canary",
+                "image": "https://image.tmdb.org/t/p/w185/ohvV70Ar4rlL5I3WzxQGtRjpsgS.jpg"
+            },
+            {
+                "name": "Ewan McGregor",
+                "character": "Roman Sionis",
+                "image": "https://image.tmdb.org/t/p/w185/aEmyadfRXTmmR7UW7OXsm5a6smS.jpg"
+            },
+            {
+                "name": "Ella Jay Basco",
+                "character": "Cassandra Cain",
+                "image": "https://image.tmdb.org/t/p/w185/wgc8wESQiqy7I7v0BfTQb9fcpGd.jpg"
+            },
+            {
+                "name": "Chris Messina",
+                "character": "Victor Zsasz",
+                "image": "https://image.tmdb.org/t/p/w185/l9DbQTK5pI6SOGpmfbADGLhdOYS.jpg"
+            },
+            {
+                "name": "Ali Wong",
+                "character": "Ellen Yee",
+                "image": "https://image.tmdb.org/t/p/w185/vpVDlzPIIzgwdO23MbbwvfmPtXQ.jpg"
+            },
+            {
+                "name": "David Ury",
+                "character": "Sleazy Breeder",
+                "image": "https://image.tmdb.org/t/p/w185/7PxPrnttpomJ9FuX4iSUwapRqR3.jpg"
+            },
+            {
+                "name": "Sara Montez",
+                "character": "Shallow Friend #1 / Kathrine",
+                "image": "https://image.tmdb.org/t/p/w185/9esIG5yFs0i1vu9H7rQsMSJ4kBr.jpg"
+            }
+        ],
+        "trailerKey": "q2u2raiIlm0",
+        "tmdbId": "495764",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Black Adam",
         "year": "2022",
         "desc": "يتناول العمل قصة شخصية من شخصيات عالم (Shazam)، وهي بلاك آدم، وهو الرجل الذي وقف محايدًا ما بين كونه بطلًا أو شريرًا، كما أنه يتمتع بقدرات سحرية غير عادية.",
