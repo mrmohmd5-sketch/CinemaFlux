@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2024",
         "desc": "بينما يكافح آرثر فليك للتعامل مع هويته المزدوجة، لا يعثر فقط على الحب الحقيقي، بل يكتشف أيضًا الموسيقى التي كانت دائمًا بداخله.",
         "poster": "https://image.tmdb.org/t/p/w500/fYeAoRZ74GttX0Pcb7v8MmXnkAy.jpg",
-        "hdUrl": "https://streamtape.com/e/zXWkB1qjq3sv4W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/3JVdWl0pJwURKJ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/zXWkB1qjq3sv4W/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "5.4",
         "genre": "دراما جريمة إثارة",
