@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Aquaman",
+        "year": "2018",
+        "desc": "نصف آدمي ونصف أطلنطي، آرثر كاري في رحلة حياته.  لم تجبره فقط على اكتشاف من هو، بل ليكتشف إن كان يستحق يكون ... ملكاً.",
+        "poster": "https://image.tmdb.org/t/p/w500/w1byH6nWJIEDDrRuOC2XfeaHnTP.jpg",
+        "hdUrl": "https://streamtape.com/e/KWQyPOzG17s0x2v/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/KWQyPOzG17s0x2v/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.9",
+        "genre": "حركة مغامرة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jason Momoa",
+                "character": "Arthur Curry / Aquaman",
+                "image": "https://image.tmdb.org/t/p/w185/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+            },
+            {
+                "name": "Amber Heard",
+                "character": "Mera",
+                "image": "https://image.tmdb.org/t/p/w185/vnDolRlZWiOLBg1N0hsUTz4OH4C.jpg"
+            },
+            {
+                "name": "Willem Dafoe",
+                "character": "Nuidis Vulko",
+                "image": "https://image.tmdb.org/t/p/w185/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg"
+            },
+            {
+                "name": "Patrick Wilson",
+                "character": "King Orm Marius / Ocean Master",
+                "image": "https://image.tmdb.org/t/p/w185/oym6H2QD9esk4yABjCHaUoNAOa8.jpg"
+            },
+            {
+                "name": "Nicole Kidman",
+                "character": "Atlanna",
+                "image": "https://image.tmdb.org/t/p/w185/4KSQDodyBtTDMaREYgMdWD1LbH1.jpg"
+            },
+            {
+                "name": "Dolph Lundgren",
+                "character": "King Nereus",
+                "image": "https://image.tmdb.org/t/p/w185/fB1tOws6Gav0xE8LYlELEb82hJt.jpg"
+            },
+            {
+                "name": "Yahya Abdul-Mateen II",
+                "character": "David Kane / Black Manta",
+                "image": "https://image.tmdb.org/t/p/w185/79VdVjUoiYGcgjOT9UmE5XIpoZM.jpg"
+            },
+            {
+                "name": "Temuera Morrison",
+                "character": "Thomas Curry",
+                "image": "https://image.tmdb.org/t/p/w185/AvtSC0f9QW7fMyFFNXEWDeQyfUk.jpg"
+            },
+            {
+                "name": "Ludi Lin",
+                "character": "Captain Murk",
+                "image": "https://image.tmdb.org/t/p/w185/9Ila4K8POeuVWRO9hzyekFjvCDk.jpg"
+            },
+            {
+                "name": "Michael Beach",
+                "character": "Jesse Kane (Manta's Father)",
+                "image": "https://image.tmdb.org/t/p/w185/7gCBCpK2OSzuUWk5iTZds9NjqkF.jpg"
+            }
+        ],
+        "trailerKey": "2wcj6SrX4zw",
+        "tmdbId": "297802",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Chennai Express",
         "year": "2013",
         "desc": "تدور قصة الفلم حول راهول (شاروخان) الذي يعيش في (مومباي) شمال (الهند) ، ويقوم برحلة إلى (رامبشوارام) في جنوب (الهند) ليحقق آخر أمنية لجده ، وهي أن يكون رماده مغمورا في المياه المقدسة في (رامبشوارام) ، وأثناء رحلته يقع في حب ابنة أحد رجال العصابات الخطيرة ، ويتعرض للعديد من المواقف والمشاكل قبل اكتشافه حقيقة حبيبته .",
