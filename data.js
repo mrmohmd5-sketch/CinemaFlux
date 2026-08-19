@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Batman",
+        "year": "2022",
+        "desc": "في سنته الثانية من محاربة الجريمة ، يكشف باتمان عن فساد في مدينة جوثام يتصل بعائلته بينما يواجه قاتلًا متسلسلاً يُعرف باسم ريدلر",
+        "poster": "https://image.tmdb.org/t/p/w500/nWFGTPx7tcHc7IC6lZF7tuM7Nst.jpg",
+        "hdUrl": "https://streamtape.com/e/ggQKraBXrqU91l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/ggQKraBXrqU91l/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.7",
+        "genre": "جريمة غموض إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Robert Pattinson",
+                "character": "Bruce Wayne / The Batman",
+                "image": "https://image.tmdb.org/t/p/w185/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+            },
+            {
+                "name": "Zoë Kravitz",
+                "character": "Selina Kyle",
+                "image": "https://image.tmdb.org/t/p/w185/n0mhAgmY6eJQmA7kaugsTZEJgHo.jpg"
+            },
+            {
+                "name": "Jeffrey Wright",
+                "character": "Lt. James Gordon",
+                "image": "https://image.tmdb.org/t/p/w185/quunS3w4QtALMDnvA0y81Y2pO9N.jpg"
+            },
+            {
+                "name": "Colin Farrell",
+                "character": "Oz / The Penguin",
+                "image": "https://image.tmdb.org/t/p/w185/5FdalJbrbZ5UCsED5rFrXpvbqJa.jpg"
+            },
+            {
+                "name": "Paul Dano",
+                "character": "The Riddler",
+                "image": "https://image.tmdb.org/t/p/w185/gOD5bO0hKnzzJm7sJeGeEJjfBBw.jpg"
+            },
+            {
+                "name": "John Turturro",
+                "character": "Carmine Falcone",
+                "image": "https://image.tmdb.org/t/p/w185/6O9W9cJW0kCqMzYeLupV9oH0ftn.jpg"
+            },
+            {
+                "name": "Andy Serkis",
+                "character": "Alfred",
+                "image": "https://image.tmdb.org/t/p/w185/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg"
+            },
+            {
+                "name": "Peter Sarsgaard",
+                "character": "District Attorney Gil Colson",
+                "image": "https://image.tmdb.org/t/p/w185/5UANyM4co2nwYPgSEmGeNlZRm7V.jpg"
+            },
+            {
+                "name": "Barry Keoghan",
+                "character": "Unseen Arkham Prisoner",
+                "image": "https://image.tmdb.org/t/p/w185/ngoitknM6hw8fffLywyvjzy6Iti.jpg"
+            },
+            {
+                "name": "Jayme Lawson",
+                "character": "Bella Reál",
+                "image": "https://image.tmdb.org/t/p/w185/1PQmquJ3LRnTnUnut0UZBLZuBuO.jpg"
+            }
+        ],
+        "trailerKey": "y_W1Mw_mayg",
+        "tmdbId": "414906",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Suicide Squad",
         "year": "2021",
         "desc": "يقرر كل من اﻷشرار العتاة هارلي كوين وبلودسبورت وبيسميكر ومعهم مجموعة من المحتالين في سجن بيل ريف أن ينضموا إلى مجموعة مهمات سرية وغامضة في جزيرة بعيدة.",
