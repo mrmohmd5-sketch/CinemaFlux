@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Shazam! Fury of the Gods",
+        "year": "2023",
+        "desc": "يضطر بيلي باتسون وإخوته بالتبني ، الذين يتحولون إلى أبطال خارقين بقول 'Shazam!' ، إلى العودة إلى العمل ومحاربة بنات أطلس ، الذين يجب عليهم منعهم من استخدام سلاح يمكن أن يدمر العالم.",
+        "poster": "https://image.tmdb.org/t/p/w500/2PQRFl4zcJvZROJFJ2Ngr9YbOqp.jpg",
+        "hdUrl": "https://streamtape.com/e/zkQ1Y3jl8QtY1XY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/zkQ1Y3jl8QtY1XY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.4",
+        "genre": "كوميديا حركة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Zachary Levi",
+                "character": "Shazam",
+                "image": "https://image.tmdb.org/t/p/w185/1W8L3kEMMPF9umT3ZGaNIiCYKfZ.jpg"
+            },
+            {
+                "name": "Asher Angel",
+                "character": "Billy Batson",
+                "image": "https://image.tmdb.org/t/p/w185/lgBt67iggDs0d8QBSyjdk2ytHtK.jpg"
+            },
+            {
+                "name": "Jack Dylan Grazer",
+                "character": "Freddy Freeman",
+                "image": "https://image.tmdb.org/t/p/w185/wkLAOleFx9Pis97g6t3noJRhAwg.jpg"
+            },
+            {
+                "name": "Rachel Zegler",
+                "character": "Anthea",
+                "image": "https://image.tmdb.org/t/p/w185/ycseVLFDnnTQ9QubleZjdbrGl4r.jpg"
+            },
+            {
+                "name": "Adam Brody",
+                "character": "Super Hero Freddy",
+                "image": "https://image.tmdb.org/t/p/w185/qKBWrohBYegm6AAaLrtxEqqouIK.jpg"
+            },
+            {
+                "name": "Ross Butler",
+                "character": "Super Hero Eugene",
+                "image": "https://image.tmdb.org/t/p/w185/9ZaZka3bsfMyknWP2t4VkvmfIpq.jpg"
+            },
+            {
+                "name": "D.J. Cotrona",
+                "character": "Super Hero Pedro",
+                "image": "https://image.tmdb.org/t/p/w185/mxm4UVHzHf0Z7YK1oAfzNSC0T35.jpg"
+            },
+            {
+                "name": "Grace Caroline Currey",
+                "character": "Mary Bromfield / Super Hero Mary",
+                "image": "https://image.tmdb.org/t/p/w185/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
+            },
+            {
+                "name": "Meagan Good",
+                "character": "Super Hero Darla",
+                "image": "https://image.tmdb.org/t/p/w185/iwSNBQKKDhEbtNe8I4ROYoYmWqE.jpg"
+            },
+            {
+                "name": "Lucy Liu",
+                "character": "Kalypso",
+                "image": "https://image.tmdb.org/t/p/w185/9nbtjqsx3De7hO2XDtrBQ7M9VCH.jpg"
+            }
+        ],
+        "trailerKey": "4YqsFvQcp0M",
+        "tmdbId": "594767",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Shazam!",
         "year": "2019",
         "desc": "تم إعطاء صبي القدرة على أن يصبح  رجلا خارقًا في أوقات الحاجة، بكلمة سحرية واحدة.",
