@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Sucker Punch",
+        "year": "2011",
+        "desc": "تتراجع فتاة شابة يضعها زوج والدتها المسيء في مصحة نفسية إلى واقع بديل كإستراتيجية للتأقلم وتتصور خطة لمساعدتها على الهروب.",
+        "poster": "https://image.tmdb.org/t/p/w500/jtaUDnvIiHUd2ranDcjB5AbPx6o.jpg",
+        "hdUrl": "https://streamtape.com/e/xZlZb8bYo1fkAWe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/xZlZb8bYo1fkAWe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.2",
+        "genre": "حركة فانتازيا إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Emily Browning",
+                "character": "Babydoll",
+                "image": "https://image.tmdb.org/t/p/w185/silK3Pdugbf1YOtIdXev1eZxzvF.jpg"
+            },
+            {
+                "name": "Abbie Cornish",
+                "character": "Sweet Pea",
+                "image": "https://image.tmdb.org/t/p/w185/AgIA8uPnwySIbqaPjr5jEXwZbS.jpg"
+            },
+            {
+                "name": "Jena Malone",
+                "character": "Rocket",
+                "image": "https://image.tmdb.org/t/p/w185/kGwV9iLmfUxJ6a73ehr0QvAnc8C.jpg"
+            },
+            {
+                "name": "Vanessa Hudgens",
+                "character": "Blondie",
+                "image": "https://image.tmdb.org/t/p/w185/8S8Nn5m5qkiIrEJ3dzPRjltzrkx.jpg"
+            },
+            {
+                "name": "Jamie Chung",
+                "character": "Amber",
+                "image": "https://image.tmdb.org/t/p/w185/5PWv7tbNtCR5PS7R14Geb71X6py.jpg"
+            },
+            {
+                "name": "Carla Gugino",
+                "character": "Dr. Vera Gorski",
+                "image": "https://image.tmdb.org/t/p/w185/dAqGOsHSzlP6RhaUURX2NrwITaq.jpg"
+            },
+            {
+                "name": "Oscar Isaac",
+                "character": "Blue Jones",
+                "image": "https://image.tmdb.org/t/p/w185/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+            },
+            {
+                "name": "Jon Hamm",
+                "character": "High Roller / Doctor",
+                "image": "https://image.tmdb.org/t/p/w185/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg"
+            },
+            {
+                "name": "Scott Glenn",
+                "character": "Wise Man",
+                "image": "https://image.tmdb.org/t/p/w185/8DHORod2l6ZFS9KR0gNAAM3WZfI.jpg"
+            },
+            {
+                "name": "Richard Cetrone",
+                "character": "CJ",
+                "image": "https://image.tmdb.org/t/p/w185/lZQqNU3QUcnIssWhIfatePfU6M7.jpg"
+            }
+        ],
+        "trailerKey": "vJ0xYZ5mVMc",
+        "tmdbId": "23629",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Hot Bot",
         "year": "2016",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
