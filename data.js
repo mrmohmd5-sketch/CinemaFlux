@@ -5658,7 +5658,7 @@ const globalMoviesData = [
         "year": "2020",
         "desc": "تعقد 'كوين'، الشابة الذكية والخرقاء ذات الـ18 عامًا، العزم على أن تلتحق بجامعة 'ديوك' عبر التحوّل إلى راقصة محترفة. بطولة 'سابرينا كاربنتر'.",
         "poster": "https://image.tmdb.org/t/p/w500/b5XfICAvUe8beWExBz97i0Qw4Qh.jpg",
-        "hdUrl": "https://streamtape.com/e/abw62DeG8Wux3xP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/ybMjD1W4PeT144Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/abw62DeG8Wux3xP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.5",
         "genre": "كوميديا موسيقى",
