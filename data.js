@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2024",
         "desc": "تتقطع السبل بفنانة في إحدى غابات غرب أيرلندا، وتصل إلى أحد الملاجئ فتتقابل مع ثلاثة أشخاص غرباء، وبمرور الوقت يتعرض الرباعي لهجوم من مخلوقات غريبة في كل ليلة.",
         "poster": "https://image.tmdb.org/t/p/w500/34KIWVktQx5KFNQJztbSXQc5x1k.jpg",
-        "hdUrl": "https://streamtape.com/e/LDZXLG8D3quRGGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/6xbOwpLaGPh992Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/LDZXLG8D3quRGGr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.4",
         "genre": "فانتازيا رعب غموض",
