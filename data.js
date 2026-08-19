@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Guns Akimbo",
+        "year": "2020",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/2kNnf7BwRCEm4bcFkdiE0T4U25s.jpg",
+        "hdUrl": "https://streamtape.com/e/dKkmpJ22X8CkKVq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/dKkmpJ22X8CkKVq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.4",
+        "genre": "حركة كوميديا إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Daniel Radcliffe",
+                "character": "Miles",
+                "image": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+            },
+            {
+                "name": "Samara Weaving",
+                "character": "Nix",
+                "image": "https://image.tmdb.org/t/p/w185/ngVKl0sxrut5PPMAIDsfXrVjA1R.jpg"
+            },
+            {
+                "name": "Natasha Liu Bordizzo",
+                "character": "Nova",
+                "image": "https://image.tmdb.org/t/p/w185/tROyGLEDMe8zpFQq09Fdbn42pGl.jpg"
+            },
+            {
+                "name": "Ned Dennehy",
+                "character": "Riktor",
+                "image": "https://image.tmdb.org/t/p/w185/gSEtkD9YwYnIPbnagDc797kMVJ2.jpg"
+            },
+            {
+                "name": "Rhys Darby",
+                "character": "Glenjamin",
+                "image": "https://image.tmdb.org/t/p/w185/65Zy72IsUjopCkRt0s55Tk68GIm.jpg"
+            },
+            {
+                "name": "Grant Bowler",
+                "character": "Degraves",
+                "image": "https://image.tmdb.org/t/p/w185/At1MUgggMT4fN6X4cJ0AN1cfDg5.jpg"
+            },
+            {
+                "name": "Edwin Wright",
+                "character": "Stanton",
+                "image": "https://image.tmdb.org/t/p/w185/6EHuweaYVf4Gty25xVizcINgDNJ.jpg"
+            },
+            {
+                "name": "Milo Cawthorne",
+                "character": "Hadley",
+                "image": "https://image.tmdb.org/t/p/w185/4BRryDvdn2evnXtKb7ZWbOyya2y.jpg"
+            },
+            {
+                "name": "Mark Rowley",
+                "character": "Dane",
+                "image": "https://image.tmdb.org/t/p/w185/6Yj5fb9kbkQPeOyxZP3gjGdsnDu.jpg"
+            },
+            {
+                "name": "Racheal Ofori",
+                "character": "Effie",
+                "image": "https://image.tmdb.org/t/p/w185/eSyj6uX3K57ssIBZRnLnEmX3iGN.jpg"
+            }
+        ],
+        "trailerKey": "JggpSpqxS6I",
+        "tmdbId": "457335",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Toy Gun",
         "year": "2018",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
