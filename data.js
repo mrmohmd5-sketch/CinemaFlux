@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Suicide Squad",
+        "year": "2021",
+        "desc": "يقرر كل من اﻷشرار العتاة هارلي كوين وبلودسبورت وبيسميكر ومعهم مجموعة من المحتالين في سجن بيل ريف أن ينضموا إلى مجموعة مهمات سرية وغامضة في جزيرة بعيدة.",
+        "poster": "https://image.tmdb.org/t/p/w500/xayv8vZgN3aoqy8ADWvPz8RJOE8.jpg",
+        "hdUrl": "https://streamtape.com/e/K93w4kpjkqFbee/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/K93w4kpjkqFbee/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.5",
+        "genre": "حركة كوميديا مغامرة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Margot Robbie",
+                "character": "Harley Quinn",
+                "image": "https://image.tmdb.org/t/p/w185/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg"
+            },
+            {
+                "name": "Idris Elba",
+                "character": "Bloodsport",
+                "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+            },
+            {
+                "name": "John Cena",
+                "character": "Peacemaker",
+                "image": "https://image.tmdb.org/t/p/w185/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg"
+            },
+            {
+                "name": "Joel Kinnaman",
+                "character": "Colonel Rick Flag",
+                "image": "https://image.tmdb.org/t/p/w185/cVfYzTyQdJ4xtxKPZe7IcW3BJN4.jpg"
+            },
+            {
+                "name": "Sylvester Stallone",
+                "character": "King Shark (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/gn3pDWthJqR0VDYGViGD3048og7.jpg"
+            },
+            {
+                "name": "Viola Davis",
+                "character": "Amanda Waller",
+                "image": "https://image.tmdb.org/t/p/w185/xDssw6vpYNRjsybvMPRE30e0dPN.jpg"
+            },
+            {
+                "name": "David Dastmalchian",
+                "character": "Polka-Dot Man",
+                "image": "https://image.tmdb.org/t/p/w185/nER1Vzhk51pGHb60KBF1Ja5tEXA.jpg"
+            },
+            {
+                "name": "Daniela Melchior",
+                "character": "Ratcatcher 2",
+                "image": "https://image.tmdb.org/t/p/w185/tjAEB90Sa7DJtyTlDAkzVhPLQin.jpg"
+            },
+            {
+                "name": "Michael Rooker",
+                "character": "Savant",
+                "image": "https://image.tmdb.org/t/p/w185/ngOuHNIAGrKyY1O7F0f9C5Q9ONg.jpg"
+            },
+            {
+                "name": "Jai Courtney",
+                "character": "Captain Boomerang",
+                "image": "https://image.tmdb.org/t/p/w185/6vEaNwbOKov6yzQx15CdtrqfK3L.jpg"
+            }
+        ],
+        "trailerKey": "YmC449_rZDk",
+        "tmdbId": "436969",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Suicide Squad",
         "year": "2016",
         "desc": "تدور احداث الفيلم حول الفرقة الانتحارية وهم مجموعة من الأشخاص المسجونين الأكثر شرا على الأرض حينما يعقدوا معاهدات مع الحكومة الفاسدة من اجل تنفيذ مهام شديدة الخطورة وبمقابل ذلك تحصل الفرقة الانتحارية على الأمان والحماية بالسجن وبعض المزايا الأخرى.",
