@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2025",
         "desc": "لتحقيق أمنية أخيه الراحل الأخيرة، يسافر سائق الشاحنات الكبيرة على الطرق الجليدية مايك مكان إلى نيبال لنثر رماده على جبل إيفرست. وفي حافلة سياحية مكتظة تجتاز التضاريس الوعرة لطريق السماء الشهير الذي يقع على ارتفاع أكثر من 3 كيلومترات ونصف، يواجه مايك ومرشده الجبلي مجموعة من المرتزقة ويتعين عليهما القتال لإنقاذ نفسيهما وحافلة مكتظة بالمسافرين الأبرياء وموطن القرويين المحليين.",
         "poster": "https://image.tmdb.org/t/p/w500/qkyj5dhIHcWE2JTa4k0b1JNw8l2.jpg",
-        "hdUrl": "https://streamtape.com/e/pLAOP1JVPlhWkv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/AKwYB6W2ZrUXldG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/pLAOP1JVPlhWkv/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.3",
         "genre": "حركة إثارة دراما",
