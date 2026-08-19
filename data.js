@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Glass Castle",
+        "year": "2017",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/8NPP7mliHLlVMHce8SjApiRxgzm.jpg",
+        "hdUrl": "https://streamtape.com/e/vP3xXvW8d8s49lq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/vP3xXvW8d8s49lq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.1",
+        "genre": "دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Brie Larson",
+                "character": "Jeannette Walls",
+                "image": "https://image.tmdb.org/t/p/w185/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+            },
+            {
+                "name": "Woody Harrelson",
+                "character": "Rex Walls",
+                "image": "https://image.tmdb.org/t/p/w185/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg"
+            },
+            {
+                "name": "Naomi Watts",
+                "character": "Rose Mary Walls",
+                "image": "https://image.tmdb.org/t/p/w185/7ysvff7ZhW388SIh2YjQ0XIryOn.jpg"
+            },
+            {
+                "name": "Max Greenfield",
+                "character": "David",
+                "image": "https://image.tmdb.org/t/p/w185/79w2mSZT8JwYv5ZwjJMDYQbzptE.jpg"
+            },
+            {
+                "name": "Sarah Snook",
+                "character": "Lori Walls",
+                "image": "https://image.tmdb.org/t/p/w185/w9xv72oaTISLgeT381fU4Jor9GV.jpg"
+            },
+            {
+                "name": "Ella Anderson",
+                "character": "Jeannette Walls (Age 10)",
+                "image": "https://image.tmdb.org/t/p/w185/b6CizosCCz6kpTkBYNkBqcJyPGe.jpg"
+            },
+            {
+                "name": "Sadie Sink",
+                "character": "Lori Walls (Age 12)",
+                "image": "https://image.tmdb.org/t/p/w185/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            },
+            {
+                "name": "Robin Bartlett",
+                "character": "Erma Walls",
+                "image": "https://image.tmdb.org/t/p/w185/94OpCjYBbxIoCtJpFWAlFQornKO.jpg"
+            },
+            {
+                "name": "Chandler Head",
+                "character": "Jeannette Walls (Age 5 and 6)",
+                "image": "https://image.tmdb.org/t/p/w185/efVnjFQONVYncVyE4t3DpXmBX5o.jpg"
+            },
+            {
+                "name": "Iain Armitage",
+                "character": "Brian Walls (Age 5)",
+                "image": "https://image.tmdb.org/t/p/w185/d16P91j8fhw7ngR727M84rCrj4r.jpg"
+            }
+        ],
+        "trailerKey": "pJUuhCMbWyg",
+        "tmdbId": "336000",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Frankenstein",
         "year": "2025",
         "desc": "يقدّم 'غييرمو ديل تورو'، المُخرج الفائز بجوائز 'أوسكار'، فيلمًا مقتبسًا من حكاية 'ماري شيلي' الكلاسيكية حول العالِم 'فيكتور فرانكنشتاين' والمخلوق الذي يأتي به إلى الحياة الوحشية.",
