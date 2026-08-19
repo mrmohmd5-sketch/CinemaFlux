@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Wonder Woman",
+        "year": "2017",
+        "desc": "قبل أن تصير المرأة الأعجوبة، تدربت (الأميرة ديانا)، أميرة الأمازون لتكون محاربة لا تُقهَر في جزيرة بارادايس واحتمت فيها إلى أن يهبط طيار أمريكي على الجزيرة؛ فتقرر ديانا الرحيل عن موطنها معه لتتعرف على حضارات وأماكن مختلفة ومحاربين، وتشارك في وقف الحروب المُدارة مختبرة قدراتها الحقيقية خلالها.",
+        "poster": "https://image.tmdb.org/t/p/w500/c47ADbn3gqf7v4pAZY7MNpRQjCq.jpg",
+        "hdUrl": "https://streamtape.com/e/P3YXY9Yka2ibPr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/P3YXY9Yka2ibPr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.2",
+        "genre": "حركة مغامرة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Gal Gadot",
+                "character": "Diana Prince / Wonder Woman",
+                "image": "https://image.tmdb.org/t/p/w185/qCJB1ACi5VjtY4ypXuv3hjAvbSu.jpg"
+            },
+            {
+                "name": "Chris Pine",
+                "character": "Steve Trevor",
+                "image": "https://image.tmdb.org/t/p/w185/vSe6sIsdtcoqBhuWRXynahFg8Vf.jpg"
+            },
+            {
+                "name": "Connie Nielsen",
+                "character": "Hippolyta",
+                "image": "https://image.tmdb.org/t/p/w185/gSQ3O3PJ6ly6nT63joOtfZyscFP.jpg"
+            },
+            {
+                "name": "Robin Wright",
+                "character": "Antiope",
+                "image": "https://image.tmdb.org/t/p/w185/d3rIv0y2p0jMsQ7ViR7O1606NZa.jpg"
+            },
+            {
+                "name": "Danny Huston",
+                "character": "Ludendorff",
+                "image": "https://image.tmdb.org/t/p/w185/mNz9t7MNANopavbLgcsZMMQBJ0u.jpg"
+            },
+            {
+                "name": "David Thewlis",
+                "character": "Sir Patrick / Ares",
+                "image": "https://image.tmdb.org/t/p/w185/gJqz8h5AKaVvOLS0hm5Vdvel6JB.jpg"
+            },
+            {
+                "name": "Saïd Taghmaoui",
+                "character": "Sameer",
+                "image": "https://image.tmdb.org/t/p/w185/kuxI08YpwQFGweIXK7TELknwexr.jpg"
+            },
+            {
+                "name": "Ewen Bremner",
+                "character": "Charlie",
+                "image": "https://image.tmdb.org/t/p/w185/u80rtfJRqCg4qKcdEPmYv8IkCvu.jpg"
+            },
+            {
+                "name": "Eugene Brave Rock",
+                "character": "The Chief",
+                "image": "https://image.tmdb.org/t/p/w185/27RL3pfNTBTu2zeNvFQTLFvCrJv.jpg"
+            },
+            {
+                "name": "Lucy Davis",
+                "character": "Etta",
+                "image": "https://image.tmdb.org/t/p/w185/A1ymILbxQA5w5TduCNaU0xD9C5a.jpg"
+            }
+        ],
+        "trailerKey": "RmQq_B0kxnk",
+        "tmdbId": "297762",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Wonder Woman 1984",
         "year": "2020",
         "desc": "تتحول عملية سطو فاشلة على متجر إلى بداية معركة عالمية تخوضها 'المرأة الأعجوبة' ضد قوة قديمة غامضة، تضع قواها الخارقة على المحك.",
