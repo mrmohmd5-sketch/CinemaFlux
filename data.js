@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Wonder Woman 1984",
+        "year": "2020",
+        "desc": "تتحول عملية سطو فاشلة على متجر إلى بداية معركة عالمية تخوضها 'المرأة الأعجوبة' ضد قوة قديمة غامضة، تضع قواها الخارقة على المحك.",
+        "poster": "https://image.tmdb.org/t/p/w500/e8mtpAnqT4Qbs1Ncm7hlZwJryA4.jpg",
+        "hdUrl": "https://streamtape.com/e/vLpzLMGawAF4p4p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/vLpzLMGawAF4p4p/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.4",
+        "genre": "حركة مغامرة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Gal Gadot",
+                "character": "Diana Prince",
+                "image": "https://image.tmdb.org/t/p/w185/qCJB1ACi5VjtY4ypXuv3hjAvbSu.jpg"
+            },
+            {
+                "name": "Chris Pine",
+                "character": "Steve Trevor",
+                "image": "https://image.tmdb.org/t/p/w185/vSe6sIsdtcoqBhuWRXynahFg8Vf.jpg"
+            },
+            {
+                "name": "Kristen Wiig",
+                "character": "Barbara Minerva",
+                "image": "https://image.tmdb.org/t/p/w185/6U6UGztBwk7c4lg8n5BS5QOByot.jpg"
+            },
+            {
+                "name": "Pedro Pascal",
+                "character": "Maxwell Lord",
+                "image": "https://image.tmdb.org/t/p/w185/oKcMbVn0NJTNzQt0ClKKvVXkm60.jpg"
+            },
+            {
+                "name": "Robin Wright",
+                "character": "Antiope",
+                "image": "https://image.tmdb.org/t/p/w185/d3rIv0y2p0jMsQ7ViR7O1606NZa.jpg"
+            },
+            {
+                "name": "Connie Nielsen",
+                "character": "Hippolyta",
+                "image": "https://image.tmdb.org/t/p/w185/gSQ3O3PJ6ly6nT63joOtfZyscFP.jpg"
+            },
+            {
+                "name": "Lilly Aspell",
+                "character": "Young Diana",
+                "image": "https://image.tmdb.org/t/p/w185/coQpJMVLXrRhNgi0EKHYzVjQtLi.jpg"
+            },
+            {
+                "name": "Amr Waked",
+                "character": "Emir Said Bin Abydos",
+                "image": "https://image.tmdb.org/t/p/w185/eRcAC2beUP52lQiejmKQA8jiyld.jpg"
+            },
+            {
+                "name": "Kristoffer Polaha",
+                "character": "Handsome Man",
+                "image": "https://image.tmdb.org/t/p/w185/u7SIxQzDwzU1av7tJoHG62NzN1Y.jpg"
+            },
+            {
+                "name": "Natasha Rothwell",
+                "character": "Carol (Co-Worker)",
+                "image": "https://image.tmdb.org/t/p/w185/x5KdL3QoS4YuozVpfuPsu3MLwwf.jpg"
+            }
+        ],
+        "trailerKey": "EMgbWouN4wE",
+        "tmdbId": "464052",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Titanic",
         "year": "1997",
         "desc": "تروي روز ديويت بوكاتر البالغة من العمر 101 عامًا قصة حياتها على متن تيتانيك ، بعد 84 عامًا. روز شابة تصعد على متن السفينة مع والدتها وخطيبها. في هذه الأثناء ، فاز جاك داوسون وفابريزيو دي روسي بتذاكر درجة ثالثة على متن السفينة. تروي روز القصة الكاملة من رحيل تيتانيك حتى وفاتها - في رحلتها الأولى والأخيرة - في 15 أبريل 1912.",
