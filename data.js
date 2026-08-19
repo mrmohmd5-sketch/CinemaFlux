@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2021",
         "desc": "يقرر كل من اﻷشرار العتاة هارلي كوين وبلودسبورت وبيسميكر ومعهم مجموعة من المحتالين في سجن بيل ريف أن ينضموا إلى مجموعة مهمات سرية وغامضة في جزيرة بعيدة.",
         "poster": "https://image.tmdb.org/t/p/w500/xayv8vZgN3aoqy8ADWvPz8RJOE8.jpg",
-        "hdUrl": "https://streamtape.com/e/K93w4kpjkqFbee/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/Xd4QkAvPAxtDQdq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/K93w4kpjkqFbee/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.5",
         "genre": "حركة كوميديا مغامرة",
