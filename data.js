@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Together",
+        "year": "2025",
+        "desc": "بينما يختبر الانتقال إلى الريف حدود علاقة زوجين، تؤدي مواجهة خارقة للطبيعة إلى تحول جذري في حبهما وحياتهما وأجسادهما.",
+        "poster": "https://image.tmdb.org/t/p/w500/69K4wlqNPF3OkVQtl4GkNYlqf2x.jpg",
+        "hdUrl": "https://streamtape.com/e/BGrVxerbe4Tyx79/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/BGrVxerbe4Tyx79/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.9",
+        "genre": "رعب رومنسية",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Dave Franco",
+                "character": "Tim",
+                "image": "https://image.tmdb.org/t/p/w185/d0I1BgNBAVvLJEDSfmyNVjYWPZE.jpg"
+            },
+            {
+                "name": "Alison Brie",
+                "character": "Millie",
+                "image": "https://image.tmdb.org/t/p/w185/smqYVStfIHDYKTu8T1BA2LnhdF9.jpg"
+            },
+            {
+                "name": "Damon Herriman",
+                "character": "Jamie",
+                "image": "https://image.tmdb.org/t/p/w185/hzh9i0BlAEQDAhJxEgkEcBxMlJv.jpg"
+            },
+            {
+                "name": "Mia Morrissey",
+                "character": "Cath",
+                "image": "https://image.tmdb.org/t/p/w185/wAHQYFi1FvvucXacTvbWeaNVqov.jpg"
+            },
+            {
+                "name": "Karl Richmond",
+                "character": "Jordy",
+                "image": "https://image.tmdb.org/t/p/w185/zQ32YJZzMwAQrZ8F1Cjqc6560gh.jpg"
+            },
+            {
+                "name": "Jack Kenny",
+                "character": "Luke",
+                "image": "https://image.tmdb.org/t/p/w185/v3A8RFnCNVloc7GIptPfSuJkhdp.jpg"
+            },
+            {
+                "name": "Francesca Waters",
+                "character": "Carol",
+                "image": "https://image.tmdb.org/t/p/w185/z0zXS5qNuts4sJmf1KFNhmDWMIZ.jpg"
+            },
+            {
+                "name": "Aljin Abella",
+                "character": "Doctor Mendoza",
+                "image": "https://image.tmdb.org/t/p/w185/mAsuTXH9xflaBUBYo3roUuV2bss.jpg"
+            },
+            {
+                "name": "Sarah Lang",
+                "character": "Keri",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Rob Brown",
+                "character": "Chaplin",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            }
+        ],
+        "trailerKey": "PMYbNyLd3AA",
+        "tmdbId": "1242011",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Glass Castle",
         "year": "2017",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
