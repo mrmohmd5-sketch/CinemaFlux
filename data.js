@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Blue Beetle",
+        "year": "2023",
+        "desc": "في إطار من المغامرات والخيال العلمي، يعثر مراهق مكسيكي على خنفساء فضائية تمحنه درعًا يكسبه قدرات خارقة.",
+        "poster": "https://image.tmdb.org/t/p/w500/op3jHoilwXRvnFAqkXyWkpywhfT.jpg",
+        "hdUrl": "https://streamtape.com/e/a7ZyQm3LVRIx6pD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/a7ZyQm3LVRIx6pD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.6",
+        "genre": "حركة خيال علمي مغامرة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Xolo Maridueña",
+                "character": "Jaime Reyes / Blue Beetle",
+                "image": "https://image.tmdb.org/t/p/w185/tJMI7BpjlhHSMpzSz9e1XxygnKd.jpg"
+            },
+            {
+                "name": "Bruna Marquezine",
+                "character": "Jenny Kord",
+                "image": "https://image.tmdb.org/t/p/w185/mGDhenXwsFRaaz1PjbJjDkn2snc.jpg"
+            },
+            {
+                "name": "Susan Sarandon",
+                "character": "Victoria Kord",
+                "image": "https://image.tmdb.org/t/p/w185/jR6l2EfvvGA8qCzZ7MB5FT9ZLkq.jpg"
+            },
+            {
+                "name": "Raoul Max Trujillo",
+                "character": "Carapax",
+                "image": "https://image.tmdb.org/t/p/w185/dIfHIt1pgnYW9oCksc0DdoY5Mt5.jpg"
+            },
+            {
+                "name": "Belissa Escobedo",
+                "character": "Milagros Reyes",
+                "image": "https://image.tmdb.org/t/p/w185/584tOsPVFbzq7GJxET5diOGZ8p0.jpg"
+            },
+            {
+                "name": "Damián Alcázar",
+                "character": "Alberto Reyes",
+                "image": "https://image.tmdb.org/t/p/w185/6IAlrZ2yXubmmVaRsF7fdaP3N7C.jpg"
+            },
+            {
+                "name": "Elpidia Carrillo",
+                "character": "Rocío Reyes",
+                "image": "https://image.tmdb.org/t/p/w185/u8ZEUAUdVjUE8DTddv81rE1Qer7.jpg"
+            },
+            {
+                "name": "George López",
+                "character": "Rudy Reyes",
+                "image": "https://image.tmdb.org/t/p/w185/jeUUeE3ipY9edqdOSNI9v5maAbi.jpg"
+            },
+            {
+                "name": "Adriana Barraza",
+                "character": "Nana Reyes",
+                "image": "https://image.tmdb.org/t/p/w185/kfww4YbO9J2HpCldEqyyhQugwy5.jpg"
+            },
+            {
+                "name": "Becky G",
+                "character": "Khaji-Da (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/yF6UVV10zIdWhDOREouC9c8ZEPV.jpg"
+            }
+        ],
+        "trailerKey": "vsBwcxu8bAQ",
+        "tmdbId": "565770",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
         "year": "2020",
         "desc": "بعد الانقسام عن الجوكر، تنضم (هارلي كوين) إلى ثلاثة أبطال خارقين وهم: (بلاك كناري) و(هانتريس)، و(رينيه مونتويا)؛ لإنقاذ حياة الفتاة الصغيرة (كاساندرا كاين) من سيد الجريمة الشرير.",
