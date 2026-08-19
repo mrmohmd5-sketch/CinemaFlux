@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2023",
         "desc": "يضطر بيلي باتسون وإخوته بالتبني ، الذين يتحولون إلى أبطال خارقين بقول 'Shazam!' ، إلى العودة إلى العمل ومحاربة بنات أطلس ، الذين يجب عليهم منعهم من استخدام سلاح يمكن أن يدمر العالم.",
         "poster": "https://image.tmdb.org/t/p/w500/2PQRFl4zcJvZROJFJ2Ngr9YbOqp.jpg",
-        "hdUrl": "https://streamtape.com/e/zkQ1Y3jl8QtY1XY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/0ebr3qdMDXSbjWp/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/zkQ1Y3jl8QtY1XY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.4",
         "genre": "كوميديا حركة فانتازيا",
