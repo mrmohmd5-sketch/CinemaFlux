@@ -3,9 +3,9 @@ const globalMoviesData = [
     {
         "title": "Guns Akimbo",
         "year": "2020",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم حول مطور ألعاب فيديو بسيط ينخرط في شجار مع متصيدين عبر الإنترنت على موقع غامض ينقل معارك واقعية مميتة، فيتم اختطافه وتثبيت مسدسين بمسامير في يديه وإجباره على المشاركة في لعبة بقاء وحشية ومواجهة أخطر قاتلة في اللعبة لإنقاذ حبيبته السابقة، في إطار من الأكشن والكوميديا السوداء والإثارة الصاخبة.",
         "poster": "https://image.tmdb.org/t/p/w500/2kNnf7BwRCEm4bcFkdiE0T4U25s.jpg",
-        "hdUrl": "https://streamtape.com/e/dKkmpJ22X8CkKVq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/jbQk7m3doYfJXO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/dKkmpJ22X8CkKVq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.4",
         "genre": "حركة كوميديا إثارة",
@@ -69,7 +69,7 @@ const globalMoviesData = [
     {
         "title": "Toy Gun",
         "year": "2018",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم حول شاب ساذج يمر بأزمة عاطفية بعد انفصاله عن زوجته، فيقرر بدافع اليأس سرقة بنك باستخدام مسدس لعبة ليثبت لنفسه ولها قدرته على التمرد، لكن خطته العبثية تنجح بالصدفة ويجد نفسه متورطاً في مطاردات مع الشرطة وعصابات حقيقية وأموال منهوبة، في إطار من الجريمة والكوميديا السوداء.",
         "poster": "https://image.tmdb.org/t/p/w500/z7Cti1ii27TTyKLx5YJPq3inX8S.jpg",
         "hdUrl": "https://streamtape.com/e/GPvZRx62RBs1Dd4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/GPvZRx62RBs1Dd4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
