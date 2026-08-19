@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "It",
+        "year": "2017",
+        "desc": "في بلدة صغيرة بولاية (مين)، يواجه سبعة أطفال يُعرفون باسم نادي الخاسرين مشكلات الحياة اليومية، وتنمّر زملائهم، إلى جانب كيان مرعب يتخذ هيئة مهرج يُدعى 'بيني وايز'.",
+        "poster": "https://image.tmdb.org/t/p/w500/f8Dw77vu4sRJ0rie0UBhOmrhA0L.jpg",
+        "hdUrl": "https://streamtape.com/e/vzbyoaP0owF4qL7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/vzbyoaP0owF4qL7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.2",
+        "genre": "رعب إثارة دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jaeden Martell",
+                "character": "Bill Denbrough",
+                "image": "https://image.tmdb.org/t/p/w185/oR7ZJsOHMNFzM1HeugV4a4qCMSF.jpg"
+            },
+            {
+                "name": "Jeremy Ray Taylor",
+                "character": "Ben Hanscom",
+                "image": "https://image.tmdb.org/t/p/w185/czfmzjsDrGqIvDA3kkq62h9RCA1.jpg"
+            },
+            {
+                "name": "Sophia Lillis",
+                "character": "Beverly Marsh",
+                "image": "https://image.tmdb.org/t/p/w185/AscFyjYymxGtBtIZf1TX98VSgrY.jpg"
+            },
+            {
+                "name": "Finn Wolfhard",
+                "character": "Richie Tozier",
+                "image": "https://image.tmdb.org/t/p/w185/vgjd34eWfVL6GsLHwiwcAsjWLmo.jpg"
+            },
+            {
+                "name": "Chosen Jacobs",
+                "character": "Mike Hanlon",
+                "image": "https://image.tmdb.org/t/p/w185/y7Aho0JOSIyT6SH7nyhheRibPCf.jpg"
+            },
+            {
+                "name": "Jack Dylan Grazer",
+                "character": "Eddie Kaspbrak",
+                "image": "https://image.tmdb.org/t/p/w185/wkLAOleFx9Pis97g6t3noJRhAwg.jpg"
+            },
+            {
+                "name": "Wyatt Oleff",
+                "character": "Stanley Uris",
+                "image": "https://image.tmdb.org/t/p/w185/wEka1IzC5OtkKGGhlMmItAfDUqW.jpg"
+            },
+            {
+                "name": "Bill Skarsgård",
+                "character": "Pennywise",
+                "image": "https://image.tmdb.org/t/p/w185/xBXLx1m0uzhXIbY3wN8lmPGeUHl.jpg"
+            },
+            {
+                "name": "Nicholas Hamilton",
+                "character": "Henry Bowers",
+                "image": "https://image.tmdb.org/t/p/w185/6XB730yU5XKJfEhV5W2zV8B9Fmh.jpg"
+            },
+            {
+                "name": "Jake Sim",
+                "character": "Belch Huggins",
+                "image": "https://image.tmdb.org/t/p/w185/wUxtIWMCAkFvxLHT5idYvpEuhiC.jpg"
+            }
+        ],
+        "trailerKey": "pacNIu1P3-M",
+        "tmdbId": "346364",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Zack Snyder's Justice League",
         "year": "2021",
         "desc": "يجمع بروس واين مجموعة من الأبطال الخارقين من أجل الدفاع عن البشرية ضد داركسايد والحفاظ على تضحيات سوبرمان الراحل، ولكن سرعان ما تقع كوارث مروعة تدفع الفريق إلى فعل المستحيل.",
