@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Peanut Butter Falcon",
+        "year": "2019",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/qyQcRGvdW3VtxHR4fSDgPOePEip.jpg",
+        "hdUrl": "https://streamtape.com/e/ga8WdB6x8WiqW0Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/ga8WdB6x8WiqW0Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.4",
+        "genre": "مغامرة كوميديا دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Shia LaBeouf",
+                "character": "Tyler",
+                "image": "https://image.tmdb.org/t/p/w185/egvlIdeizCkSkuHVoDuuduIThFA.jpg"
+            },
+            {
+                "name": "Zack Gottsagen",
+                "character": "Zak",
+                "image": "https://image.tmdb.org/t/p/w185/8B7Hm9cfZsLBVqMdbBAQRXfxMmw.jpg"
+            },
+            {
+                "name": "Dakota Johnson",
+                "character": "Eleanor",
+                "image": "https://image.tmdb.org/t/p/w185/jI8GITDOV0xatWvkDNHjXYwNkxw.jpg"
+            },
+            {
+                "name": "Thomas Haden Church",
+                "character": "Salt Water Redneck",
+                "image": "https://image.tmdb.org/t/p/w185/74NK9HCYvNafMggSp1PAK5Nwkpe.jpg"
+            },
+            {
+                "name": "John Hawkes",
+                "character": "Duncan",
+                "image": "https://image.tmdb.org/t/p/w185/c0mDB6TApVcJ3LLM1gicjyUeD5A.jpg"
+            },
+            {
+                "name": "Bruce Dern",
+                "character": "Carl",
+                "image": "https://image.tmdb.org/t/p/w185/5RKGcElQiFZh4Mu9gInyUhr9Uu7.jpg"
+            },
+            {
+                "name": "Jon Bernthal",
+                "character": "Mark",
+                "image": "https://image.tmdb.org/t/p/w185/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
+            },
+            {
+                "name": "Yelawolf",
+                "character": "Ratboy",
+                "image": "https://image.tmdb.org/t/p/w185/wVFIuFCCmjWonGHrxvITnHmx9uF.jpg"
+            },
+            {
+                "name": "Wayne Dehart",
+                "character": "Blind Jasper John",
+                "image": "https://image.tmdb.org/t/p/w185/lvSDWQ0TpkhsTmk9obaZLIxU0j2.jpg"
+            },
+            {
+                "name": "Aurelian Smith Jr.",
+                "character": "Sam",
+                "image": "https://image.tmdb.org/t/p/w185/28Pb1wjuxcEZ1chCwf60kbq86It.jpg"
+            }
+        ],
+        "trailerKey": "d3ZBJ1dw3Mg",
+        "tmdbId": "463257",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Legend",
         "year": "2015",
         "desc": "الحب ، القتال ، العيش ، الحكم مثل الأسطورة.\r رقيق ، ساحر ومتقلب ، ريجي كراي وشقيقه التوأم غير المستقر روني يبدآن في ترك بصماتهما على عالم الجريمة في لندن في 1960s. باستخدام العنف للحصول على ما يريدون ، ينظم الأشقاء عمليات السطو والقتل أثناء إدارة النوادي الليلية ومضارب الحماية. مع محقق الشرطة ليونارد 'نيبر' قراءة ساخنة على أعقابهم ، يواصل الأخوان صعودهم السريع إلى السلطة وتحقيق سمعة سيئة في التابلويد.",
