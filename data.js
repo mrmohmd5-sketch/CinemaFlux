@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Super Troopers 2",
+        "year": "2018",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/57SZgdugVClIy22rfnANeBJ5KsN.jpg",
+        "hdUrl": "https://streamtape.com/e/A48GpBgybkhXO0Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/A48GpBgybkhXO0Q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.9",
+        "genre": "كوميديا جريمة غموض",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jay Chandrasekhar",
+                "character": "Thorny",
+                "image": "https://image.tmdb.org/t/p/w185/kPBrBwm6BzUZhYPzdYcRwMPkgPf.jpg"
+            },
+            {
+                "name": "Kevin Heffernan",
+                "character": "Farva",
+                "image": "https://image.tmdb.org/t/p/w185/2FgG3oPF1A7d6W4KaNNZV7kJ83g.jpg"
+            },
+            {
+                "name": "Steve Lemme",
+                "character": "Mac",
+                "image": "https://image.tmdb.org/t/p/w185/iQnIsjeUA34B2w4EuM8mR1TglJZ.jpg"
+            },
+            {
+                "name": "Paul Soter",
+                "character": "Foster",
+                "image": "https://image.tmdb.org/t/p/w185/avsOygcEmFUB5INWGoexgaTJ2u0.jpg"
+            },
+            {
+                "name": "Erik Stolhanske",
+                "character": "Rabbit",
+                "image": "https://image.tmdb.org/t/p/w185/eVMov7majKwNO8eOMcwweaAnBJj.jpg"
+            },
+            {
+                "name": "Lynda Carter",
+                "character": "Governor Jessman",
+                "image": "https://image.tmdb.org/t/p/w185/qZJgjBKEL4ioZywSGzYzxldEAvf.jpg"
+            },
+            {
+                "name": "Emmanuelle Chriqui",
+                "character": "Genevieve Aubois",
+                "image": "https://image.tmdb.org/t/p/w185/5ll30bFOYMlIucGNrqWQ4bAA14U.jpg"
+            },
+            {
+                "name": "Marisa Coughlan",
+                "character": "Ursula",
+                "image": "https://image.tmdb.org/t/p/w185/m6bzAs1IRRqWZjlVI01JeBUDL9u.jpg"
+            },
+            {
+                "name": "Tyler Labine",
+                "character": "Mountie Bellefuille",
+                "image": "https://image.tmdb.org/t/p/w185/uTg5k0mflhBju9Q1tOYmYDzdBu6.jpg"
+            },
+            {
+                "name": "Hayes MacArthur",
+                "character": "Mountie Podien",
+                "image": "https://image.tmdb.org/t/p/w185/h34sUP8iKK2tGo2swK8muHjEsHA.jpg"
+            }
+        ],
+        "trailerKey": "eEed-o8fVpM",
+        "tmdbId": "50022",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Super Troopers",
         "year": "2001",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
