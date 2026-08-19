@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Toy Gun",
+        "year": "2018",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/z7Cti1ii27TTyKLx5YJPq3inX8S.jpg",
+        "hdUrl": "https://streamtape.com/e/GPvZRx62RBs1Dd4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/GPvZRx62RBs1Dd4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "4.2",
+        "genre": "كوميديا حركة جريمة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Federico Castelluccio",
+                "character": "Sante Casoria",
+                "image": "https://image.tmdb.org/t/p/w185/8wmjXWKGJHLvrrLSrIf9431VJDi.jpg"
+            },
+            {
+                "name": "Luke Allen-Gale",
+                "character": "Ruggero Levati",
+                "image": "https://image.tmdb.org/t/p/w185/AfwNVmRBSEeKbiRJv9KLSB1dnG2.jpg"
+            },
+            {
+                "name": "John Hannah",
+                "character": "Elio Sironi",
+                "image": "https://image.tmdb.org/t/p/w185/8GzJhaZrChZpv84SU4vAsvsR3cl.jpg"
+            },
+            {
+                "name": "Claire Johnston",
+                "character": "Mrs. Landoni",
+                "image": "https://image.tmdb.org/t/p/w185/cnznvvZDHVZUf2aVwvxJjE1lnE.jpg"
+            },
+            {
+                "name": "Anthony LaPaglia",
+                "character": "Gaetano Lolli",
+                "image": "https://image.tmdb.org/t/p/w185/31fRY01Dq2ebkx09FjuG5g3QW9G.jpg"
+            },
+            {
+                "name": "Hana Sofia Lopes",
+                "character": "Giulia Levati",
+                "image": "https://image.tmdb.org/t/p/w185/6hgWmniSZs3R7iMRp1l1sRcIj92.jpg"
+            },
+            {
+                "name": "Julian Nest",
+                "character": "Franklin",
+                "image": "https://image.tmdb.org/t/p/w185/5jqAlBFVCP7Qio3RnW9D6eg1Mo8.jpg"
+            },
+            {
+                "name": "Julian Sands",
+                "character": "Officer Jonta",
+                "image": "https://image.tmdb.org/t/p/w185/8TYtEyKZle2B3cUYT7FBM9HJRtZ.jpg"
+            },
+            {
+                "name": "Nassim Rachi",
+                "character": "Giustino",
+                "image": "https://image.tmdb.org/t/p/w185/AhMM12ONI9Ox1gtnYqL3nArvBsE.jpg"
+            },
+            {
+                "name": "Dries Vanhegen",
+                "character": "Mr. Fortis",
+                "image": "https://image.tmdb.org/t/p/w185/3jv4U93WdvJ1HJbL4Jkz4sIKZKj.jpg"
+            }
+        ],
+        "trailerKey": "oj_v_GTWn38",
+        "tmdbId": "514782",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Top Gun: Maverick",
         "year": "2022",
         "desc": "بعد أكثر من ثلاثين عامًا من الخدمة كأحد أبرز طياري البحرية، وبعد تجنّبه الترقية في الرتب التي كانت ستُبقيه على الأرض، يجد 'بيت 'مافريك' ميتشل' نفسه يدرب مجموعة من خريجي 'توب غان' على مهمة خاصة من نوع لم يسبق لأي طيار حي أن خاضها.",
