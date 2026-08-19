@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2023",
         "desc": "في إطار من المغامرات والخيال العلمي، يعثر مراهق مكسيكي على خنفساء فضائية تمحنه درعًا يكسبه قدرات خارقة.",
         "poster": "https://image.tmdb.org/t/p/w500/op3jHoilwXRvnFAqkXyWkpywhfT.jpg",
-        "hdUrl": "https://streamtape.com/e/a7ZyQm3LVRIx6pD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/M9jxvd7jo9FmJxk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/a7ZyQm3LVRIx6pD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.6",
         "genre": "حركة خيال علمي مغامرة",
