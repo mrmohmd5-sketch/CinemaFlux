@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Work It",
+        "year": "2020",
+        "desc": "تعقد 'كوين'، الشابة الذكية والخرقاء ذات الـ18 عامًا، العزم على أن تلتحق بجامعة 'ديوك' عبر التحوّل إلى راقصة محترفة. بطولة 'سابرينا كاربنتر'.",
+        "poster": "https://image.tmdb.org/t/p/w500/b5XfICAvUe8beWExBz97i0Qw4Qh.jpg",
+        "hdUrl": "https://streamtape.com/e/abw62DeG8Wux3xP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/abw62DeG8Wux3xP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.5",
+        "genre": "كوميديا موسيقى",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Sabrina Carpenter",
+                "character": "Quinn Ackerman",
+                "image": "https://image.tmdb.org/t/p/w185/h2JcSqZ220VXDqb6xKBVcRquGGN.jpg"
+            },
+            {
+                "name": "Liza Koshy",
+                "character": "Jasmine Hale",
+                "image": "https://image.tmdb.org/t/p/w185/uXOXVzWHWZAEQBsRB6jaAPBjPLM.jpg"
+            },
+            {
+                "name": "Keiynan Lonsdale",
+                "character": "Isaiah \"Juiliard\"",
+                "image": "https://image.tmdb.org/t/p/w185/lSIKty1Y8JLIE4aqL6VmZYx0JEB.jpg"
+            },
+            {
+                "name": "Michelle Buteau",
+                "character": "Ms. Ramirez",
+                "image": "https://image.tmdb.org/t/p/w185/mgAH1JsATQXsQPwquuNJpqux4TO.jpg"
+            },
+            {
+                "name": "Jordan Fisher",
+                "character": "Jake Taylor",
+                "image": "https://image.tmdb.org/t/p/w185/un93GYC6nqUBhfkisMGsdefj8Oe.jpg"
+            },
+            {
+                "name": "Drew Ray Tanner",
+                "character": "Charlie",
+                "image": "https://image.tmdb.org/t/p/w185/hEDc4uUmrx0pE93bwYoUWE6jvSB.jpg"
+            },
+            {
+                "name": "Jayne Eastwood",
+                "character": "Ruthie (Nursing Home)",
+                "image": "https://image.tmdb.org/t/p/w185/cL75FbJRKDdpvkOJDUgUYPZHKks.jpg"
+            },
+            {
+                "name": "Naomi Snieckus",
+                "character": "Maria",
+                "image": "https://image.tmdb.org/t/p/w185/3rsL3fhmal8ypCS3CQqt9EiF2nj.jpg"
+            },
+            {
+                "name": "Briana Andrade-Gomes",
+                "character": "Trinity",
+                "image": "https://image.tmdb.org/t/p/w185/ez9fsEjUrrAzVJRSUY3tDrU6Nww.jpg"
+            },
+            {
+                "name": "Kalliane Brémault",
+                "character": "Brit Turner",
+                "image": "https://image.tmdb.org/t/p/w185/y9bPJclCSxaCdVghCqMA9HaFHsC.jpg"
+            }
+        ],
+        "trailerKey": "OqcP_wkcl2I",
+        "tmdbId": "612706",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Zack Snyder's Justice League",
         "year": "2021",
         "desc": "يجمع بروس واين مجموعة من الأبطال الخارقين من أجل الدفاع عن البشرية ضد داركسايد والحفاظ على تضحيات سوبرمان الراحل، ولكن سرعان ما تقع كوارث مروعة تدفع الفريق إلى فعل المستحيل.",
