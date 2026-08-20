@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Mutiny",
+        "year": "2026",
+        "desc": "تبدأ القصة عندما يتم توريط كول، عميل سابق في القوات الخاصة وضابط شرطة سابق في مدينة نيويورك، في جريمة قتل رجل أعمال ملياردير، ويُتهم كول بقتل صديقه ورئيسه، تيبو، الذي وظف كول كخبير أمني خاص له ، فيضطر للهرب لإثبات براءته والكشف عن مؤامرة دولية.",
+        "poster": "https://image.tmdb.org/t/p/w500/4zWwbVV31Qss578iJdVECyhMslB.jpg",
+        "hdUrl": "https://streamtape.com/e/aRYKwOVRgRUxGqz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/aRYKwOVRgRUxGqz/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.8",
+        "genre": "حركة إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jason Statham",
+                "character": "Cole Reed",
+                "image": "https://image.tmdb.org/t/p/w185/pXGSq2UpcDE2NMF8LR56QZf5U1q.jpg"
+            },
+            {
+                "name": "Annabelle Wallis",
+                "character": "Angie Ellis",
+                "image": "https://image.tmdb.org/t/p/w185/2ZmO2Zz9TcR0rmSJHOkivcu0heR.jpg"
+            },
+            {
+                "name": "Roland Møller",
+                "character": "Captain Marko Madsen",
+                "image": "https://image.tmdb.org/t/p/w185/bF7wrJ5mrIhSwyi6ylhyQWj9BoN.jpg"
+            },
+            {
+                "name": "Ramon Tikaram",
+                "character": "Tibu Campallo",
+                "image": "https://image.tmdb.org/t/p/w185/wtBLiI8tzeqPLMB9uswkyFhChva.jpg"
+            },
+            {
+                "name": "Arnas Fedaravičius",
+                "character": "Mateo Pineda",
+                "image": "https://image.tmdb.org/t/p/w185/7WfcGugvkuPqEzu0cUJBeJPt1lD.jpg"
+            },
+            {
+                "name": "Jason Wong",
+                "character": "Taran",
+                "image": "https://image.tmdb.org/t/p/w185/tt3D1PAoB8Yf4jPCovnhlP4pvL3.jpg"
+            },
+            {
+                "name": "Adrian Lester",
+                "character": "Captain Adam Spencer",
+                "image": "https://image.tmdb.org/t/p/w185/xyRB9aykTFtI42Ce8xFKZDCsHYd.jpg"
+            },
+            {
+                "name": "Chaneil Kular",
+                "character": "Kameron Campallo",
+                "image": "https://image.tmdb.org/t/p/w185/b6TmM2wcVntDMJGZWQM3ftshhIi.jpg"
+            },
+            {
+                "name": "Simon Kluth",
+                "character": "Jaran Daniles",
+                "image": "https://image.tmdb.org/t/p/w185/tk4Iwjm5z3G4bQRebSOpGopx6f0.jpg"
+            },
+            {
+                "name": "Lee Charles",
+                "character": "Padraig",
+                "image": "https://image.tmdb.org/t/p/w185/hPcEeF8mG9PiOJmnduVjq9yH9jD.jpg"
+            }
+        ],
+        "trailerKey": "nCdqYxKGpv4",
+        "tmdbId": "1288445",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "My Best Friend, His Girlfriend and Me",
         "year": "2026",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
