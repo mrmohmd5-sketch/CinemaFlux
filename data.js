@@ -1,6 +1,58 @@
 const globalMoviesData = [
     
     {
+        "title": "Lanterns",
+        "year": "2026",
+        "desc": "شرطيان من شرطة الفضاء، المجند الجديد 'جون ستيوارت' والأسطورة 'هال جوردان' من فيلق الفوانيس، يجدان نفسيهما متورطين في لغز غامض على الأرض، أثناء تحقيقهما في جريمة قتل وقعت في قلب الولايات المتحدة.",
+        "poster": "https://image.tmdb.org/t/p/w500/mmCFAAwU7VcLyGCbMpMWJOFA3PK.jpg",
+        "hdUrl": "",
+        "sdUrl": "",
+        "rating": "8.1",
+        "genre": "دراما غموض خيال علمي وفانتازيا",
+        "type": "series",
+        "cast": [
+            {
+                "name": "Kyle Chandler",
+                "character": "Hal Jordan",
+                "image": "https://image.tmdb.org/t/p/w185/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
+            },
+            {
+                "name": "Aaron Pierre",
+                "character": "John Stewart",
+                "image": "https://image.tmdb.org/t/p/w185/z2cMMZyWzv5ztT6pFdAAjB3u7CQ.jpg"
+            },
+            {
+                "name": "Kelly Macdonald",
+                "character": "Sheriff Kerry Kane",
+                "image": "https://image.tmdb.org/t/p/w185/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg"
+            },
+            {
+                "name": "Garret Dillahunt",
+                "character": "William 'Will' Macon",
+                "image": "https://image.tmdb.org/t/p/w185/4L9bdqQIdfrtqR7JQdsIhlF3Fjk.jpg"
+            },
+            {
+                "name": "Poorna Jagannathan",
+                "character": "Zoe Macon",
+                "image": "https://image.tmdb.org/t/p/w185/cdfzpja6kif9NsWlN2K91RVn1Xt.jpg"
+            }
+        ],
+        "trailerKey": "7UIBOsuUwc4",
+        "tmdbId": "95350",
+        "tmdbType": "tv",
+        "seasons": [
+            {
+                "season_number": 1,
+                "episodes": [
+                    {
+                        "episode_number": 1,
+                        "url": "https://streamtape.com/e/7XrY40Jg27UAz1d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "title": "Mutiny",
         "year": "2026",
         "desc": "تبدأ القصة عندما يتم توريط كول، عميل سابق في القوات الخاصة وضابط شرطة سابق في مدينة نيويورك، في جريمة قتل رجل أعمال ملياردير، ويُتهم كول بقتل صديقه ورئيسه، تيبو، الذي وظف كول كخبير أمني خاص له ، فيضطر للهرب لإثبات براءته والكشف عن مؤامرة دولية.",
