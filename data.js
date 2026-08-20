@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "My Best Friend, His Girlfriend and Me",
+        "year": "2026",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/sWFzFNvqpas8y0BFSx0o7dURG8H.jpg",
+        "hdUrl": "https://streamtape.com/e/ldXJgbOe0LfOmR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/ldXJgbOe0LfOmR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "3.7",
+        "genre": "كوميديا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Kostja Ullmann",
+                "character": "Olli",
+                "image": "https://image.tmdb.org/t/p/w185/mQguH03eznJhsfwpZJZrnWCs5Su.jpg"
+            },
+            {
+                "name": "Janina Uhse",
+                "character": "Rebecca",
+                "image": "https://image.tmdb.org/t/p/w185/4hNJMls70kcfEH0mU0csLXbO9nk.jpg"
+            },
+            {
+                "name": "David Kross",
+                "character": "Matze",
+                "image": "https://image.tmdb.org/t/p/w185/jRFxrLwiroTbGedG9uyXZghgxlX.jpg"
+            },
+            {
+                "name": "Ferdinand Hofer",
+                "character": "Schmitti",
+                "image": "https://image.tmdb.org/t/p/w185/9v8fMkN8ECTRpFeXJ9OGB9keGus.jpg"
+            },
+            {
+                "name": "Clara Immel",
+                "character": "Hannah",
+                "image": "https://image.tmdb.org/t/p/w185/baVSJjmc0loXFtRPWGtrM6UPZvW.jpg"
+            },
+            {
+                "name": "Mira Huber",
+                "character": "Antje",
+                "image": "https://image.tmdb.org/t/p/w185/ovhU6dEdxs0qZS6hUeEXAxrke5h.jpg"
+            },
+            {
+                "name": "Larissa Sirah Herden",
+                "character": "Pia",
+                "image": "https://image.tmdb.org/t/p/w185/aC4WbnYRTKqeDLWW0ZolXmbMJMv.jpg"
+            },
+            {
+                "name": "Anna Herrmann",
+                "character": "Moni",
+                "image": "https://image.tmdb.org/t/p/w185/8nzbHoIfc7kboIqySz2fEDRmVcm.jpg"
+            },
+            {
+                "name": "Timon Ballenberger",
+                "character": "Hauke",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Thomas Heinze",
+                "character": "Dr. Alonso",
+                "image": "https://image.tmdb.org/t/p/w185/i8j5uOthHZl1DndZClKdRFdhlnJ.jpg"
+            }
+        ],
+        "trailerKey": "",
+        "tmdbId": "1589248",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Spider-Man: Brand New Day",
         "year": "2026",
         "desc": "بينما يواصل 'بيتر باركر' حماية المدينة بصفته 'الرجل العنكبوت' في عالمٍ لم يعد يتذكره أحد، يجد نفسه وحيدًا وهو يشاهد أصدقاءه القدامى يمضون في حياتهم من دونه. ومع تصاعد الضغوط، يبدأ بالتغير بطريقة قد تعجز قواه عن كبحها. لكن هذا التحول قد يكون أمله الوحيد لمواجهة تهديدٍ غامض وخطير يلوح في الأفق، عدو يمتلك قوة مرعبة لا يستطيع أحد حتى رؤيته، ويهدد المدينة وكل من يهتم 'بيتر' لأمرهم.",
