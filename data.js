@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2024",
         "desc": "يتحوّل زواج امرأة شابة من أمير ساحر إلى قتال شرس من أجل البقاء على قيد الحياة، حين تُقدّم أضحية كقُربان بين فكّي تنين ينفث النار.",
         "poster": "https://image.tmdb.org/t/p/w500/AgHbB9DCE9aE57zkHjSmseszh6e.jpg",
-        "hdUrl": "https://streamtape.com/e/4yaM6qep7JTOl1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/lWPDgPe060T7Mxk/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/4yaM6qep7JTOl1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.0",
         "genre": "فانتازيا حركة مغامرة",
