@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "12 Dates of Christmas",
+        "year": "2011",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/26X4Lldt6bwLnrX6kkLfUZTLojw.jpg",
+        "hdUrl": "https://streamtape.com/e/P8bgPjJpyqu04lY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/P8bgPjJpyqu04lY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.1",
+        "genre": "رومنسية كوميديا فانتازيا فيلم تلفازي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Amy Smart",
+                "character": "Kate Stanton",
+                "image": "https://image.tmdb.org/t/p/w185/9GQwkmqd5klfXvhd29YI5OKAx3N.jpg"
+            },
+            {
+                "name": "Mark-Paul Gosselaar",
+                "character": "Miles Dufine",
+                "image": "https://image.tmdb.org/t/p/w185/6TbZu1RXaBu3gvwoPlNWBqFoqxw.jpg"
+            },
+            {
+                "name": "Benjamin Ayres",
+                "character": "Jack Evans",
+                "image": "https://image.tmdb.org/t/p/w185/4VU8As8tHzrmiqF5GYHQuPovd6o.jpg"
+            },
+            {
+                "name": "Peter MacNeill",
+                "character": "Mike Stanton",
+                "image": "https://image.tmdb.org/t/p/w185/9Y2O97Awq5BUH3qfWL3EUveurqI.jpg"
+            },
+            {
+                "name": "Mary Long",
+                "character": "Sally Stanton",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Jayne Eastwood",
+                "character": "Margine Frumkin",
+                "image": "https://image.tmdb.org/t/p/w185/cL75FbJRKDdpvkOJDUgUYPZHKks.jpg"
+            },
+            {
+                "name": "Laura Miyata",
+                "character": "Miyoko",
+                "image": "https://image.tmdb.org/t/p/w185/69VFR2HDBnmaGBEvEFtOATJFlzr.jpg"
+            },
+            {
+                "name": "Cherisse Woonsam",
+                "character": "Leigh",
+                "image": "https://image.tmdb.org/t/p/w185/sZsBm5h9HCrj2WMcIJIaO758tVO.jpg"
+            },
+            {
+                "name": "Joe MacLeod",
+                "character": "Toby Brown",
+                "image": "https://image.tmdb.org/t/p/w185/iDzCeG84IX9mvHdo5tzc0DcofBS.jpg"
+            },
+            {
+                "name": "Richard Fitzpatrick",
+                "character": "Jim",
+                "image": "https://image.tmdb.org/t/p/w185/13X88hBjNjDE0KliGIWmfX1ZjAa.jpg"
+            }
+        ],
+        "trailerKey": "GZdWSTQ3wCE",
+        "tmdbId": "81393",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Damsel",
         "year": "2024",
         "desc": "يتحوّل زواج امرأة شابة من أمير ساحر إلى قتال شرس من أجل البقاء على قيد الحياة، حين تُقدّم أضحية كقُربان بين فكّي تنين ينفث النار.",
