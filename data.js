@@ -3,9 +3,9 @@ const globalMoviesData = [
     {
         "title": "Pinocchio: Unstrung",
         "year": "2026",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم في إطار من الرعب والغموض، حيث تُعاد صياغة الحكاية الكلاسيكية للدمية الخشبية "بينوكيو" بشكل مظلم ودموي، عندما يتحرر من قيوده ويبدأ رحلة انتقامية مرعبة ومروعة بحثاً عن التحول إلى صبي حقيقي مهما كان الثمن، متسبباً في سلسلة من الجرائم والكوابيس لأهل البلدة .",
         "poster": "https://image.tmdb.org/t/p/w500/r0hCOPsYHFc7qok51canND9TVoN.jpg",
-        "hdUrl": "https://streamtape.com/e/Le8O2paVd1CRV8o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/jP0WeOLD0ySzO72/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/Le8O2paVd1CRV8o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.5",
         "genre": "رعب فانتازيا غموض",
