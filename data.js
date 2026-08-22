@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Princess",
+        "year": "2022",
+        "desc": "لا تنحني لأحد.\r ترفض ملكية شابة جميلة وقوية الإرادة الزواج من المعتل الاجتماعي القاسي الذي خطبته ويتم اختطافها وحبسها في برج بعيد في قلعة والدها. مع خاطبها المحتقرة والانتقامية العازمة على الاستيلاء على عرش والدها ، يجب على الأميرة حماية عائلتها وإنقاذ المملكة.",
+        "poster": "https://image.tmdb.org/t/p/w500/9pCoqX24a6rE981fY1O3PmhiwrB.jpg",
+        "hdUrl": "https://streamtape.com/e/er4we7LVAQF8we/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/er4we7LVAQF8we/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.8",
+        "genre": "حركة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Joey King",
+                "character": "The Princess",
+                "image": "https://image.tmdb.org/t/p/w185/94c69mPYSK9jFsAEu0OKB7Qs684.jpg"
+            },
+            {
+                "name": "Dominic Cooper",
+                "character": "Julius",
+                "image": "https://image.tmdb.org/t/p/w185/wFPdARerxpaAaHucYGTSNqViWpn.jpg"
+            },
+            {
+                "name": "Olga Kurylenko",
+                "character": "Moira",
+                "image": "https://image.tmdb.org/t/p/w185/ei6eYUhQFw2AaV6U5fyPptBaPF0.jpg"
+            },
+            {
+                "name": "Veronica Ngô",
+                "character": "Linh",
+                "image": "https://image.tmdb.org/t/p/w185/scpUnMH2Rll9CD9lXQH9TaOOHTO.jpg"
+            },
+            {
+                "name": "Alex Reid",
+                "character": "The Queen",
+                "image": "https://image.tmdb.org/t/p/w185/pH5bQpmiMUBXeX6zNZeNN6ieA6N.jpg"
+            },
+            {
+                "name": "Ed Stoppard",
+                "character": "The King",
+                "image": "https://image.tmdb.org/t/p/w185/jnLSiFipp0K5ROJblLCISC7ezzO.jpg"
+            },
+            {
+                "name": "Antoni Davidov",
+                "character": "Merc Leader",
+                "image": "https://image.tmdb.org/t/p/w185/1hVknrxOizj2CN8Wbup0SdUzdLG.jpg"
+            },
+            {
+                "name": "Radoslav Parvanov",
+                "character": "Merc Brute",
+                "image": "https://image.tmdb.org/t/p/w185/m63uadxrDiY22y46my2pd7IGKXE.jpg"
+            },
+            {
+                "name": "Liudmil Kehaiov",
+                "character": "Merc #3",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Katelyn Rose Downey",
+                "character": "Violet",
+                "image": "https://image.tmdb.org/t/p/w185/50mZMR1gxqFNahFA8nahFnvsWQy.jpg"
+            }
+        ],
+        "trailerKey": "_PND2TRbB_I",
+        "tmdbId": "759175",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Senseless",
         "year": "1998",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
