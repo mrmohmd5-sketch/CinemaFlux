@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Pinocchio: Unstrung",
+        "year": "2026",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/r0hCOPsYHFc7qok51canND9TVoN.jpg",
+        "hdUrl": "https://streamtape.com/e/Le8O2paVd1CRV8o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/Le8O2paVd1CRV8o/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.5",
+        "genre": "رعب فانتازيا غموض",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jude Evan Lloyd",
+                "character": "Pinocchio (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/vBbtBNsGKOZPvmdlyG6lUUkcNwF.jpg"
+            },
+            {
+                "name": "Robert Englund",
+                "character": "Cricket (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/cjGEkiavinHa1dnetDvnEhlD2Wm.jpg"
+            },
+            {
+                "name": "Cameron Bell",
+                "character": "James",
+                "image": "https://image.tmdb.org/t/p/w185/4pHVLu11DmVMJDgGo1X5rZH53Uh.jpg"
+            },
+            {
+                "name": "Jessica Balmer",
+                "character": "Mia",
+                "image": "https://image.tmdb.org/t/p/w185/fhb5Oj719yH7z5f2lYU2r8Lyu46.jpg"
+            },
+            {
+                "name": "Richard Brake",
+                "character": "Geppetto",
+                "image": "https://image.tmdb.org/t/p/w185/JwsiErANShzPSdYsNoiNYdrSg1.jpg"
+            },
+            {
+                "name": "Jack Art Gray",
+                "character": "Dudley",
+                "image": "https://image.tmdb.org/t/p/w185/7C9o6X4g3lj9OsrD24ztL01GxVL.jpg"
+            },
+            {
+                "name": "Scott Chambers",
+                "character": "Christopher Robin",
+                "image": "https://image.tmdb.org/t/p/w185/pANsw8kWaQzSwuVmr1Em5di9u4o.jpg"
+            },
+            {
+                "name": "Kelly Rian Sanson",
+                "character": "Miss Daniels",
+                "image": "https://image.tmdb.org/t/p/w185/bx6qQl6mF5tQB8cL4BMq7nnNnUs.jpg"
+            },
+            {
+                "name": "Peter DeSouza-Feighoney",
+                "character": "Michael Darling",
+                "image": "https://image.tmdb.org/t/p/w185/reYy9iCjdmOEdKpTkhxD4quNNMP.jpg"
+            },
+            {
+                "name": "Emma Tate",
+                "character": "Carving (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/in8SZAA5dG6wW1LBCU10j1J7W8V.jpg"
+            }
+        ],
+        "trailerKey": "_VHIU9dIAWQ",
+        "tmdbId": "1232569",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Family Switch",
         "year": "2023",
         "desc": "تعيش عائلة في حالة من الفوضى قبل أيام من عيد الميلاد المجيد عندما يتسبب حدث كوني نادر في تبادل الأجساد بين الوالدين وولديهما المراهقَين.",
