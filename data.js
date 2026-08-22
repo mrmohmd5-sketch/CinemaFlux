@@ -3,9 +3,9 @@ const globalMoviesData = [
     {
         "title": "12 Dates of Christmas",
         "year": "2011",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم حول امرأة شابة تُفسد موعداً مدبراً ليلة عيد الميلاد على أمل العودة إلى حبيبها السابق، لكنها تجد نفسها عالقة في حلقة زمنية تتكرر باستمرار لتعيش اليوم نفسه 12 مرة، فتسعى لاستغلال هذه الفرصة لتصحيح أخطائها واكتشاف المعنى الحقيقي للحب والحياة في إطار رومانسي كوميدي دافئ .",
         "poster": "https://image.tmdb.org/t/p/w500/26X4Lldt6bwLnrX6kkLfUZTLojw.jpg",
-        "hdUrl": "https://streamtape.com/e/P8bgPjJpyqu04lY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/JqPlZ9zP87fj84X/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/P8bgPjJpyqu04lY/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.1",
         "genre": "رومنسية كوميديا فانتازيا فيلم تلفازي",
