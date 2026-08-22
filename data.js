@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Princess Diaries",
+        "year": "2001",
+        "desc": "(ميا) فتاة في الخامسة عشر من عمرها تهوى الرسم، وينعتها زملاؤها بغريبة الأطوار نظراً لخجلها وارتباكها، تفاجأ بأن جدتها لأبيها تطلبها كي تراها، وتعلم إنها حفيدة ملكة مملكة تدعى (جينوفيا)، تشعر بالرهبة من البروتوكولات الملكية، وتدريبات خطاب التتويج وتقرر التخلي عن اللقب، لكن رسالة من والدها الراحل تغير الأمر برمته.",
+        "poster": "https://image.tmdb.org/t/p/w500/7axhsbEzFan6HQQ1aMOy7w3CFRx.jpg",
+        "hdUrl": "https://streamtape.com/e/Xr7ep4gB4ltD4A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/Xr7ep4gB4ltD4A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.0",
+        "genre": "كوميديا عائلي رومنسية",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Anne Hathaway",
+                "character": "Mia Thermopolis",
+                "image": "https://image.tmdb.org/t/p/w185/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+            },
+            {
+                "name": "Julie Andrews",
+                "character": "Queen Clarisse Renaldi",
+                "image": "https://image.tmdb.org/t/p/w185/yQ0J92DMiLtQYoytLJ6CuBkdeN0.jpg"
+            },
+            {
+                "name": "Heather Matarazzo",
+                "character": "Lilly Moscovitz",
+                "image": "https://image.tmdb.org/t/p/w185/afZhMKmsAHZA9jHq7F9tNUFZci6.jpg"
+            },
+            {
+                "name": "Caroline Goodall",
+                "character": "Helen Thermopolis",
+                "image": "https://image.tmdb.org/t/p/w185/4cagGtMqACvkuw6Llq8Li8UJ1AR.jpg"
+            },
+            {
+                "name": "Héctor Elizondo",
+                "character": "Joe",
+                "image": "https://image.tmdb.org/t/p/w185/7Mfx9xeOFKXtzVpAc1488LiHs0b.jpg"
+            },
+            {
+                "name": "Robert Schwartzman",
+                "character": "Michael Moscovitz",
+                "image": "https://image.tmdb.org/t/p/w185/aA0kVZY28PHOmCfWfDALS4oYZ6u.jpg"
+            },
+            {
+                "name": "Erik von Detten",
+                "character": "Josh Bryant",
+                "image": "https://image.tmdb.org/t/p/w185/v0ruIqUUZqXRWTsuui5irfsHMJe.jpg"
+            },
+            {
+                "name": "Patrick John Flueger",
+                "character": "Jeremiah Hart",
+                "image": "https://image.tmdb.org/t/p/w185/gfUmEGjAUwXJOJs0YekWx8aV2ZP.jpg"
+            },
+            {
+                "name": "Sandra Oh",
+                "character": "Vice Principal Gupta",
+                "image": "https://image.tmdb.org/t/p/w185/zU8vjebHxcP60ESEL5Ok68KWZvj.jpg"
+            },
+            {
+                "name": "Mandy Moore",
+                "character": "Lana Thomas",
+                "image": "https://image.tmdb.org/t/p/w185/2n0rqUGojRNEHrmtPeCEptHREEY.jpg"
+            }
+        ],
+        "trailerKey": "2CkcwPi20ms",
+        "tmdbId": "9880",
+        "tmdbType": "movie"
+    },
+    {
         "title": "12 Dates of Christmas",
         "year": "2011",
         "desc": "تدور أحداث الفيلم حول امرأة شابة تُفسد موعداً مدبراً ليلة عيد الميلاد على أمل العودة إلى حبيبها السابق، لكنها تجد نفسها عالقة في حلقة زمنية تتكرر باستمرار لتعيش اليوم نفسه 12 مرة، فتسعى لاستغلال هذه الفرصة لتصحيح أخطائها واكتشاف المعنى الحقيقي للحب والحياة في إطار رومانسي كوميدي دافئ .",
