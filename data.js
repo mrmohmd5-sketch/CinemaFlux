@@ -8271,7 +8271,7 @@ const globalMoviesData = [
         "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
         "year": "2025",
         "desc": "بينما كان أعضاء فيلق قاتلي الشياطين و'الهشيرا' يخضعون لبرنامج تدريب جماعي يُعرف بتدريب الهشيرا استعدادًا للمعركة الحاسمة ضد الشياطين، يظهر موزان كيبوتسوجي في قصر عائلة أوبوياشيكي. ومع تعرّض قائد الفيلق للخطر، يندفع تانجيرو والهشيرا إلى المقر الرئيسي، لكنهم يجدون أنفسهم يسقطون في أعماق مكان غامض بفعل يدي موزان. الوجهة التي سقط فيها تانجيرو ورفاقه ليست سوى معقل الشياطين – قلعة اللانهاية. وهكذا، تبدأ ساحة المعركة النهائية بين فيلق قاتلي الشياطين وقوى الشر في الاشتعال.",
-        "poster": "https://image.tmdb.org/t/p/w500/4xdWWzKsO4ua6u7qu6O43HjfthR.jpg",
+        "poster": "https://image.tmdb.org/t/p/original/sUsVimPdA1l162FvdBIlmKBlWHx.jpg",
         "hdUrl": "https://streamtape.com/e/LDM70ZkZ1vfRrA4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/LDM70ZkZ1vfRrA4/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "8.7",
