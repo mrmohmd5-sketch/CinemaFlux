@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2001",
         "desc": "(ميا) فتاة في الخامسة عشر من عمرها تهوى الرسم، وينعتها زملاؤها بغريبة الأطوار نظراً لخجلها وارتباكها، تفاجأ بأن جدتها لأبيها تطلبها كي تراها، وتعلم إنها حفيدة ملكة مملكة تدعى (جينوفيا)، تشعر بالرهبة من البروتوكولات الملكية، وتدريبات خطاب التتويج وتقرر التخلي عن اللقب، لكن رسالة من والدها الراحل تغير الأمر برمته.",
         "poster": "https://image.tmdb.org/t/p/w500/7axhsbEzFan6HQQ1aMOy7w3CFRx.jpg",
-        "hdUrl": "https://streamtape.com/e/Xr7ep4gB4ltD4A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/Dz0j8OJz47uAWw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/Xr7ep4gB4ltD4A9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.0",
         "genre": "كوميديا عائلي رومنسية",
