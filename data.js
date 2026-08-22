@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2022",
         "desc": "لا تنحني لأحد.\r ترفض ملكية شابة جميلة وقوية الإرادة الزواج من المعتل الاجتماعي القاسي الذي خطبته ويتم اختطافها وحبسها في برج بعيد في قلعة والدها. مع خاطبها المحتقرة والانتقامية العازمة على الاستيلاء على عرش والدها ، يجب على الأميرة حماية عائلتها وإنقاذ المملكة.",
         "poster": "https://image.tmdb.org/t/p/w500/9pCoqX24a6rE981fY1O3PmhiwrB.jpg",
-        "hdUrl": "https://streamtape.com/e/er4we7LVAQF8we/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/qj9Q0Rvlp6uzgAR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/er4we7LVAQF8we/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.8",
         "genre": "حركة فانتازيا",
@@ -69,7 +69,7 @@ const globalMoviesData = [
     {
         "title": "Senseless",
         "year": "1998",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم حول طالب جامعي طموح يمر بضائقة مالية شديدة، فيوافق على المشاركة في تجربة طبية سرية لتناول عقار تجريبي يمنحه حواس فائقة وقدرات غير عادية تساعده على التفوق الدراسي وجذب انتباه فتاة أحلامه، لكن الأمور تنقلب إلى فوضى عارمة عندما تبدأ الجرعات الزائدة بالتأثير عشوائياً على حواسه وإيقافها في إطار كوميدي ساخر .",
         "poster": "https://image.tmdb.org/t/p/w500/rqy7OFHWy1NMjmgjyI8XYcl0VU5.jpg",
         "hdUrl": "https://streamtape.com/e/MqMVqxPR2xtmZgj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/MqMVqxPR2xtmZgj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
