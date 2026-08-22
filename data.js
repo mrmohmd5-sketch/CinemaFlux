@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Family Switch",
+        "year": "2023",
+        "desc": "تعيش عائلة في حالة من الفوضى قبل أيام من عيد الميلاد المجيد عندما يتسبب حدث كوني نادر في تبادل الأجساد بين الوالدين وولديهما المراهقَين.",
+        "poster": "https://image.tmdb.org/t/p/w500/g8Gwitm4CtZBSYhLeSY4Z3Xwwcg.jpg",
+        "hdUrl": "https://streamtape.com/e/7dw1zZJzboHVxA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/7dw1zZJzboHVxA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.4",
+        "genre": "كوميديا فانتازيا عائلي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jennifer Garner",
+                "character": "Jess Walker",
+                "image": "https://image.tmdb.org/t/p/w185/eiX083VOa0RCGSgwENZgVi5MgDi.jpg"
+            },
+            {
+                "name": "Ed Helms",
+                "character": "Bill Walker",
+                "image": "https://image.tmdb.org/t/p/w185/gPZ8tZaNQGAc3KZRIPp9rgGbEnN.jpg"
+            },
+            {
+                "name": "Emma Myers",
+                "character": "CC Walker",
+                "image": "https://image.tmdb.org/t/p/w185/v1Y8RP39135ZOary9M4MbkrCAdn.jpg"
+            },
+            {
+                "name": "Brady Noon",
+                "character": "Wyatt Walker",
+                "image": "https://image.tmdb.org/t/p/w185/qn7dJS2XxKfSoJdK9BVgFiPEeCJ.jpg"
+            },
+            {
+                "name": "Rita Moreno",
+                "character": "Angelica",
+                "image": "https://image.tmdb.org/t/p/w185/zB0M77jr7tmsmWHEr2bWO2Xq66L.jpg"
+            },
+            {
+                "name": "Matthias Schweighöfer",
+                "character": "Rolf",
+                "image": "https://image.tmdb.org/t/p/w185/i4c5JjvC5EpecZbp4J96mFmtm0Z.jpg"
+            },
+            {
+                "name": "Vanessa Carrasco",
+                "character": "Ariana",
+                "image": "https://image.tmdb.org/t/p/w185/cLq69F4ooHHNgULUQFLTvTtdMf8.jpg"
+            },
+            {
+                "name": "Cyrus Arnold",
+                "character": "Hunter Drew",
+                "image": "https://image.tmdb.org/t/p/w185/eFxlR4IiZJLJsmyxsRsuhbvsJkc.jpg"
+            },
+            {
+                "name": "Ilia Isorelýs Paulino",
+                "character": "Kara",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Xosha Roquemore",
+                "character": "Carrie",
+                "image": "https://image.tmdb.org/t/p/w185/k596seeX26xKN8bZ3Uir9zFJ2gS.jpg"
+            }
+        ],
+        "trailerKey": "SWh4c9EVqGM",
+        "tmdbId": "798021",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Princess",
         "year": "2022",
         "desc": "لا تنحني لأحد.\r ترفض ملكية شابة جميلة وقوية الإرادة الزواج من المعتل الاجتماعي القاسي الذي خطبته ويتم اختطافها وحبسها في برج بعيد في قلعة والدها. مع خاطبها المحتقرة والانتقامية العازمة على الاستيلاء على عرش والدها ، يجب على الأميرة حماية عائلتها وإنقاذ المملكة.",
