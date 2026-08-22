@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Senseless",
+        "year": "1998",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/rqy7OFHWy1NMjmgjyI8XYcl0VU5.jpg",
+        "hdUrl": "https://streamtape.com/e/MqMVqxPR2xtmZgj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/MqMVqxPR2xtmZgj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.2",
+        "genre": "كوميديا رومنسية خيال علمي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Marlon Wayans",
+                "character": "Darryl Witherspoon",
+                "image": "https://image.tmdb.org/t/p/w185/7LYnX3vluHFBs1WCRKUjSIEDEkn.jpg"
+            },
+            {
+                "name": "David Spade",
+                "character": "Scott Thorpe",
+                "image": "https://image.tmdb.org/t/p/w185/jt01hSaSyHgaJtnCTFkfQGHyywV.jpg"
+            },
+            {
+                "name": "Matthew Lillard",
+                "character": "Tim LaFlour",
+                "image": "https://image.tmdb.org/t/p/w185/mIEKAfe0iC41RDXibbTy48LtNOi.jpg"
+            },
+            {
+                "name": "Rip Torn",
+                "character": "Randall Tyson",
+                "image": "https://image.tmdb.org/t/p/w185/jP74MHyQl6R8mH7aZKHrrD2Qjj2.jpg"
+            },
+            {
+                "name": "Tamara Taylor",
+                "character": "Janice Tyson",
+                "image": "https://image.tmdb.org/t/p/w185/6yukmFpeQRQEDM99NeyX3u2inNe.jpg"
+            },
+            {
+                "name": "Brad Dourif",
+                "character": "Dr. Thomas Wheedon",
+                "image": "https://image.tmdb.org/t/p/w185/ex7AmuHM3owhUetYZAyOmN1ehWS.jpg"
+            },
+            {
+                "name": "Esther Scott",
+                "character": "Denise Witherspoon",
+                "image": "https://image.tmdb.org/t/p/w185/wCUWexYXqzrGcGOCeNOA0sw4PMA.jpg"
+            },
+            {
+                "name": "Debra Jo Rupp",
+                "character": "Fertility Clinic Attendant",
+                "image": "https://image.tmdb.org/t/p/w185/fUhZOSPckMspk03Lh1XgoYGqd5k.jpg"
+            },
+            {
+                "name": "Mark Christopher Lawrence",
+                "character": "Wig Shop Owner",
+                "image": "https://image.tmdb.org/t/p/w185/uQgXQbaDS0hoPyqUhs5Z97KIZPA.jpg"
+            },
+            {
+                "name": "John Ingle",
+                "character": "Economics Professor",
+                "image": "https://image.tmdb.org/t/p/w185/cFrwER1BE3WnXwfXdlxAI03meCo.jpg"
+            }
+        ],
+        "trailerKey": "A6pM-4m7xQ0",
+        "tmdbId": "12538",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Princess Diaries",
         "year": "2001",
         "desc": "(ميا) فتاة في الخامسة عشر من عمرها تهوى الرسم، وينعتها زملاؤها بغريبة الأطوار نظراً لخجلها وارتباكها، تفاجأ بأن جدتها لأبيها تطلبها كي تراها، وتعلم إنها حفيدة ملكة مملكة تدعى (جينوفيا)، تشعر بالرهبة من البروتوكولات الملكية، وتدريبات خطاب التتويج وتقرر التخلي عن اللقب، لكن رسالة من والدها الراحل تغير الأمر برمته.",
