@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Damsel",
+        "year": "2024",
+        "desc": "يتحوّل زواج امرأة شابة من أمير ساحر إلى قتال شرس من أجل البقاء على قيد الحياة، حين تُقدّم أضحية كقُربان بين فكّي تنين ينفث النار.",
+        "poster": "https://image.tmdb.org/t/p/w500/AgHbB9DCE9aE57zkHjSmseszh6e.jpg",
+        "hdUrl": "https://streamtape.com/e/4yaM6qep7JTOl1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/4yaM6qep7JTOl1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.0",
+        "genre": "فانتازيا حركة مغامرة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Millie Bobby Brown",
+                "character": "Elodie",
+                "image": "https://image.tmdb.org/t/p/w185/kHO7hdNEVuTnQ0OjjrxP1RcAa0e.jpg"
+            },
+            {
+                "name": "Brooke Carter",
+                "character": "Floria",
+                "image": "https://image.tmdb.org/t/p/w185/tdLdWvLc7hAt6spLaogFuEDnsBZ.jpg"
+            },
+            {
+                "name": "Nick Robinson",
+                "character": "Prince Henry",
+                "image": "https://image.tmdb.org/t/p/w185/vWFoPTd8G7DIDXYmiTiq4oaYG5G.jpg"
+            },
+            {
+                "name": "Robin Wright",
+                "character": "Queen Isabelle",
+                "image": "https://image.tmdb.org/t/p/w185/d3rIv0y2p0jMsQ7ViR7O1606NZa.jpg"
+            },
+            {
+                "name": "Milo Twomey",
+                "character": "King Roderick",
+                "image": "https://image.tmdb.org/t/p/w185/dOWhwnXKIWpumwHKnaV86V86XMS.jpg"
+            },
+            {
+                "name": "Ray Winstone",
+                "character": "Lord Bayford",
+                "image": "https://image.tmdb.org/t/p/w185/eSRgAC98u5hQroeZzDeRf60XE21.jpg"
+            },
+            {
+                "name": "Angela Bassett",
+                "character": "Lady Bayford",
+                "image": "https://image.tmdb.org/t/p/w185/tKnuviliyeKNGlo26IU5gIrJAtd.jpg"
+            },
+            {
+                "name": "Nicole Joseph",
+                "character": "Princess Victoria",
+                "image": "https://image.tmdb.org/t/p/w185/oHnwEAiDtry7hEYX7qvyQFLO9Ax.jpg"
+            },
+            {
+                "name": "Patrice Naiambana",
+                "character": "Chamberlain",
+                "image": "https://image.tmdb.org/t/p/w185/ftbR9VQIwiiFjtwx9FTImWCxXhr.jpg"
+            },
+            {
+                "name": "Ulli Ackermann",
+                "character": "Knight",
+                "image": "https://image.tmdb.org/t/p/w185/nH3l4SM06Xel28UtVyiRfFIZYAr.jpg"
+            }
+        ],
+        "trailerKey": "iM150ZWovZM",
+        "tmdbId": "763215",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Lanterns",
         "year": "2026",
         "desc": "شرطيان من شرطة الفضاء، المجند الجديد 'جون ستيوارت' والأسطورة 'هال جوردان' من فيلق الفوانيس، يجدان نفسيهما متورطين في لغز غامض على الأرض، أثناء تحقيقهما في جريمة قتل وقعت في قلب الولايات المتحدة.",
