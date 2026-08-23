@@ -1,11 +1,11 @@
 const globalMoviesData = [
     
     {
-        "title": "Two Worlds One Wish",
+        "title": "Two Worlds One Wish عالمان امنية واحدة",
         "year": "2025",
         "desc": "بعد واحد وعشرين عاماً من لقاءٍ ساحر في مستشفى للأطفال، تبدأ بيلغا وجان فجأةً في سماع أصوات بعضهما بعضاً عن بُعد. وما يبدو معجزةً، سرعان ما يكشف سراً خفياً، حيث يُخبئ القدر لهما المزيد إذ يجمعهما بعد عقود. مغامرةٌ مثيرة وقصة حب ملحمية في انتظارهما.",
         "poster": "https://image.tmdb.org/t/p/w500/xF5raKXPA2yyUW0Z28hy8w73fXY.jpg",
-        "hdUrl": "https://streamtape.com/e/09WWp6YJB4CD4q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/wO7jl4vom6txmX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/09WWp6YJB4CD4q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.3",
         "genre": "رومنسية دراما",
