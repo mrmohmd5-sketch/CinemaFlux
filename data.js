@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Switch",
+        "year": "2010",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/oJdMT6RGtbvQ26Tk7EHGfG8xZ6.jpg",
+        "hdUrl": "https://streamtape.com/e/PvPAk89mOASxeq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/PvPAk89mOASxeq/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.2",
+        "genre": "كوميديا رومنسية دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jennifer Aniston",
+                "character": "Kassie Larson",
+                "image": "https://image.tmdb.org/t/p/w185/PBSCmHDFdCMBhjx0EbXpTw4Z94.jpg"
+            },
+            {
+                "name": "Jason Bateman",
+                "character": "Wally Mars",
+                "image": "https://image.tmdb.org/t/p/w185/8e6mt0vGjPo6eW52gqRuXy5YnfN.jpg"
+            },
+            {
+                "name": "Patrick Wilson",
+                "character": "Roland",
+                "image": "https://image.tmdb.org/t/p/w185/oym6H2QD9esk4yABjCHaUoNAOa8.jpg"
+            },
+            {
+                "name": "Thomas Robinson",
+                "character": "Sebastian",
+                "image": "https://image.tmdb.org/t/p/w185/1dFBQuO6JPv2hJAuDdA0eYRlp2e.jpg"
+            },
+            {
+                "name": "Jeff Goldblum",
+                "character": "Leonard",
+                "image": "https://image.tmdb.org/t/p/w185/kcyEPgYtBP5Pm6LLeLGfXKjYovL.jpg"
+            },
+            {
+                "name": "Juliette Lewis",
+                "character": "Debbie",
+                "image": "https://image.tmdb.org/t/p/w185/sSGCW01aUsYlVQhuk3XSY7cl6Ww.jpg"
+            },
+            {
+                "name": "Victor Pagan",
+                "character": "Knit Hat Guy",
+                "image": "https://image.tmdb.org/t/p/w185/1VTVqeXmP7IUCciOyoqpBUKj8zk.jpg"
+            },
+            {
+                "name": "Todd Louiso",
+                "character": "Artie",
+                "image": "https://image.tmdb.org/t/p/w185/dkvuAxxXoCqGQrPNYHlELxL75q2.jpg"
+            },
+            {
+                "name": "Scott Elrod",
+                "character": "Declan",
+                "image": "https://image.tmdb.org/t/p/w185/3HakFxicl5jTNB9BPPQdfkQQO1O.jpg"
+            },
+            {
+                "name": "Kelli Barrett",
+                "character": "Roland's Wife Jessica",
+                "image": "https://image.tmdb.org/t/p/w185/oFY6w4H6zEx1FDOXEXmCINnlcap.jpg"
+            }
+        ],
+        "trailerKey": "EEYqgyXyk9A",
+        "tmdbId": "41210",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Princess Switch 3: Romancing the Star",
         "year": "2021",
         "desc": " تدور أحداث الجزء الثالث حول سرقة قطعة أثرية ملكية لا تقدر بثمن قبل الاحتفال بعيد الميلاد فتتحد الملكة مارغريت والأميرة ستيسي مع شبيهتهما المشاكسة فيونا للاستعانة بحبيبها السابق واستعادة النجم المسروق في إطار من الكوميديا والمغامرة الرومانسية .",
