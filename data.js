@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Last Summer",
+        "year": "2021",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/s2OLfim4v1WvgTzP0VjuBCISS2L.jpg",
+        "hdUrl": "https://streamtape.com/e/xv4aQRxadYSql3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/xv4aQRxadYSql3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.9",
+        "genre": "رومنسية دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Ece Çeşmioğlu",
+                "character": "Aslı",
+                "image": "https://image.tmdb.org/t/p/w185/6NVkiKFxXyj8IDhmf503Jg7FTiD.jpg"
+            },
+            {
+                "name": "Fatih Berk Şahin",
+                "character": "Deniz",
+                "image": "https://image.tmdb.org/t/p/w185/nVO0XG5Xm5B65vtzGdJEgDkAJfL.jpg"
+            },
+            {
+                "name": "Halit Özgür Sarı",
+                "character": "Burak",
+                "image": "https://image.tmdb.org/t/p/w185/5bnAgK5n3Edy9GTc0TbYgJ8GMfZ.jpg"
+            },
+            {
+                "name": "Aslıhan Malbora",
+                "character": "Ebru",
+                "image": "https://image.tmdb.org/t/p/w185/lGc6gbYHlgVSn0ksOQjf9XzkIRy.jpg"
+            },
+            {
+                "name": "Süreyya Güzel",
+                "character": "Handan",
+                "image": "https://image.tmdb.org/t/p/w185/2mi27U6wDh761SXAaZIm0bkWzhk.jpg"
+            },
+            {
+                "name": "Kubilay Tunçer",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/tuyK9ewHfnOBuk4tp2VeKnfUXvL.jpg"
+            },
+            {
+                "name": "Denizhan Akbaba",
+                "character": "Ahmet",
+                "image": "https://image.tmdb.org/t/p/w185/lPTBhjaKTrSwoYk3gYCvJH19jVt.jpg"
+            },
+            {
+                "name": "Eray Ertüren",
+                "character": "Kaan",
+                "image": "https://image.tmdb.org/t/p/w185/cBGti3HItuGKyto2PtnIhjkwbLj.jpg"
+            },
+            {
+                "name": "Eren Ören",
+                "character": "Özgür",
+                "image": "https://image.tmdb.org/t/p/w185/vcrb2Ej4U1wdRm8MMrn0b3UHTyK.jpg"
+            },
+            {
+                "name": "Ozan Kaya Oktu",
+                "character": "Reşat",
+                "image": "https://image.tmdb.org/t/p/w185/9Q1o7JZn5GhcqgXm26Jzn1OTCZo.jpg"
+            }
+        ],
+        "trailerKey": "",
+        "tmdbId": "785537",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Switch",
         "year": "2010",
         "desc": " تدور أحداث الفيلم حول امرأة عزباء تقرر إنجاب طفل عبر التلقيح الاصطناعي من متبرع فيقوم صديقها المقرب باستبدال العينة بعينته الخاصة في ليلة طائشة دون أن يتذكر شيئا ليعود بعد سبع سنوات ويكتشف وجود طفل يشبهه تماما في الطباع والتصرفات في إطار درامي رومانسي كوميدي.",
