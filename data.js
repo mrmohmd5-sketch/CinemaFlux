@@ -3,9 +3,9 @@ const globalMoviesData = [
     {
         "title": "Last Summer",
         "year": "2021",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم خلال عطلة صيفية في فترة التسعينيات على شاطئ البحر في تركيا حيث يسعى فتى مراهق في السادسة عشرة من عمره للفوز بقلب فتاة أحلامه التي تعود من المدينة في كل صيف لكنه يجد نفسه عالقاً في مثلث حب معقد ومواقف مؤثرة عن النضج والمشاعر الأولى في إطار درامي ورومانسي دافئ.",
         "poster": "https://image.tmdb.org/t/p/w500/s2OLfim4v1WvgTzP0VjuBCISS2L.jpg",
-        "hdUrl": "https://streamtape.com/e/xv4aQRxadYSql3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/YG9dGOwrZ3F2WV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/xv4aQRxadYSql3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "5.9",
         "genre": "رومنسية دراما",
