@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Art of Love",
+        "year": "2024",
+        "desc": "بعد اكتشاف ضابطة شرطة تعمل لدى 'الإنتربول' أن لص اللوحات الفنية الذي كانت تلاحقه هو نفسه حبيبها السابق، تحوك خطة للقبض عليه متلبسًا.",
+        "poster": "https://image.tmdb.org/t/p/w500/hjYb3zdvuedWmTH4tSD9UU3VjkZ.jpg",
+        "hdUrl": "https://streamtape.com/e/pMQ2y4MoooHreBL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/pMQ2y4MoooHreBL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.4",
+        "genre": "رومنسية حركة دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Birkan Sokullu",
+                "character": "Güney",
+                "image": "https://image.tmdb.org/t/p/w185/55QxG1UURYvy1y2LP9aqLvCH1rj.jpg"
+            },
+            {
+                "name": "Esra Bilgiç",
+                "character": "Alin",
+                "image": "https://image.tmdb.org/t/p/w185/rSXkPT6UfPtN1iLLaXsGWyC8nwZ.jpg"
+            },
+            {
+                "name": "Fırat Tanış",
+                "character": "Faysal",
+                "image": "https://image.tmdb.org/t/p/w185/sUdRJPbSodfUzS8vxGVBnGVCMsP.jpg"
+            },
+            {
+                "name": "Ushan Çakır",
+                "character": "Ozan",
+                "image": "https://image.tmdb.org/t/p/w185/vT9KZvNGeu39NEv4jDnRl8sFRpB.jpg"
+            },
+            {
+                "name": "Hakan Ummak",
+                "character": "Ömer",
+                "image": "https://image.tmdb.org/t/p/w185/8vSg9ejYyvQ2RCJIOCrc2BIr4CY.jpg"
+            },
+            {
+                "name": "Osman Alkaş",
+                "character": "Chief Executive",
+                "image": "https://image.tmdb.org/t/p/w185/erOmgT5tF54qJ6Fx9a6o4dd4c0r.jpg"
+            },
+            {
+                "name": "Nil Keser",
+                "character": "Vera",
+                "image": "https://image.tmdb.org/t/p/w185/8UtukqhdhW3Zk8KJG7t4GgeH2NC.jpg"
+            },
+            {
+                "name": "Macit Tastan",
+                "character": "",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Mükremin Kaan Akkoç",
+                "character": "",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Çigdem Çintuglu",
+                "character": "",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            }
+        ],
+        "trailerKey": "f77agh-CZ-c",
+        "tmdbId": "1248795",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Sleeper",
         "year": "2025",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
