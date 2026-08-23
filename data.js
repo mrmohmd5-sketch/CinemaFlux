@@ -1,72 +1,6 @@
 const globalMoviesData = [
     
     {
-        "title": "Paper Man",
-        "year": "2009",
-        "desc": "تدور أحداث الفيلم حول كاتب روايات فاشل يعاني من أزمة إبداعية ويعتمد كلياً على صديق خيالي بزي بطل خارق يرافقه منذ طفولته، لكن حياته تأخذ مساراً جديداً عندما ينتقل إلى بلدة ساحلية هادئة وتنشأ بينه وبين فتاة مراهقة محلية صداقة غير متوقعة تساعد كليهما على النضج ومواجهة الواقع في إطار درامي كوميدي مؤثر.",
-        "poster": "https://image.tmdb.org/t/p/w500/wneK8G9E26FUqYo4KjPlsD0TIII.jpg",
-        "hdUrl": "https://streamtape.com/e/B4Z4aZqbVJSQKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "sdUrl": "https://streamtape.com/e/B4Z4aZqbVJSQKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "rating": "6.3",
-        "genre": "كوميديا دراما",
-        "type": "movie",
-        "cast": [
-            {
-                "name": "Jeff Daniels",
-                "character": "Richard Dunn",
-                "image": "https://image.tmdb.org/t/p/w185/r0mkZJZnTSJO3HJRsMW5HtszxE8.jpg"
-            },
-            {
-                "name": "Emma Stone",
-                "character": "Abby",
-                "image": "https://image.tmdb.org/t/p/w185/t7EYLBMWQiIDtCoOYZjvqXV84S5.jpg"
-            },
-            {
-                "name": "Ryan Reynolds",
-                "character": "Captain Excellent",
-                "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
-            },
-            {
-                "name": "Lisa Kudrow",
-                "character": "Claire Dunn",
-                "image": "https://image.tmdb.org/t/p/w185/ziatnwJRiBJIcc8jlk6xoClhfOy.jpg"
-            },
-            {
-                "name": "Kieran Culkin",
-                "character": "Christopher",
-                "image": "https://image.tmdb.org/t/p/w185/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
-            },
-            {
-                "name": "Hunter Parrish",
-                "character": "Bryce",
-                "image": "https://image.tmdb.org/t/p/w185/wFJhOeUeyHJrfkU6lUuHuwDuEaf.jpg"
-            },
-            {
-                "name": "Arabella Field",
-                "character": "Lucy",
-                "image": "https://image.tmdb.org/t/p/w185/mKWXvd31RH0MNZqIiXBBHPyrtkF.jpg"
-            },
-            {
-                "name": "Chris Parnell",
-                "character": "Peter",
-                "image": "https://image.tmdb.org/t/p/w185/9Ga03Y9TVIqTZJ4I9rfL740ibgJ.jpg"
-            },
-            {
-                "name": "Eric Gilliland",
-                "character": "UPS Guy",
-                "image": "https://via.placeholder.com/185x278?text=No+Image"
-            },
-            {
-                "name": "Louis Rosario",
-                "character": "Bryce's Posse",
-                "image": "https://via.placeholder.com/185x278?text=No+Image"
-            }
-        ],
-        "trailerKey": "iumOefBwx00",
-        "tmdbId": "39414",
-        "tmdbType": "movie"
-    },
-    {
         "title": "Paper Lives",
         "year": "2021",
         "desc": "تدور أحداث الفيلم في أحد الأحياء الفقيرة بإسطنبول حول شاب مريض يدير مستودعاً لجمع النفايات الورقية ويحظى بحب الجميع، تنقلب حياته رأساً على عقب عندما يعثر على طفل صغير مختبئ في كيس قمامة فيقرر رعايته وحمايته بينما يواجه ذكريات وصدمات طفولته المؤلمة في إطار درامي مؤثر وإنساني عميق.",
@@ -1944,7 +1878,73 @@ const globalMoviesData = [
         "trailerKey": "3pHZpqu8fes",
         "tmdbId": "276907",
         "tmdbType": "movie"
-    },
+    },  
+    {
+        "title": "Paper Man",
+        "year": "2009",
+        "desc": "تدور أحداث الفيلم حول كاتب روايات فاشل يعاني من أزمة إبداعية ويعتمد كلياً على صديق خيالي بزي بطل خارق يرافقه منذ طفولته، لكن حياته تأخذ مساراً جديداً عندما ينتقل إلى بلدة ساحلية هادئة وتنشأ بينه وبين فتاة مراهقة محلية صداقة غير متوقعة تساعد كليهما على النضج ومواجهة الواقع في إطار درامي كوميدي مؤثر.",
+        "poster": "https://image.tmdb.org/t/p/w500/wneK8G9E26FUqYo4KjPlsD0TIII.jpg",
+        "hdUrl": "https://streamtape.com/e/B4Z4aZqbVJSQKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/B4Z4aZqbVJSQKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.3",
+        "genre": "كوميديا دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jeff Daniels",
+                "character": "Richard Dunn",
+                "image": "https://image.tmdb.org/t/p/w185/r0mkZJZnTSJO3HJRsMW5HtszxE8.jpg"
+            },
+            {
+                "name": "Emma Stone",
+                "character": "Abby",
+                "image": "https://image.tmdb.org/t/p/w185/t7EYLBMWQiIDtCoOYZjvqXV84S5.jpg"
+            },
+            {
+                "name": "Ryan Reynolds",
+                "character": "Captain Excellent",
+                "image": "https://image.tmdb.org/t/p/w185/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+            },
+            {
+                "name": "Lisa Kudrow",
+                "character": "Claire Dunn",
+                "image": "https://image.tmdb.org/t/p/w185/ziatnwJRiBJIcc8jlk6xoClhfOy.jpg"
+            },
+            {
+                "name": "Kieran Culkin",
+                "character": "Christopher",
+                "image": "https://image.tmdb.org/t/p/w185/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
+            },
+            {
+                "name": "Hunter Parrish",
+                "character": "Bryce",
+                "image": "https://image.tmdb.org/t/p/w185/wFJhOeUeyHJrfkU6lUuHuwDuEaf.jpg"
+            },
+            {
+                "name": "Arabella Field",
+                "character": "Lucy",
+                "image": "https://image.tmdb.org/t/p/w185/mKWXvd31RH0MNZqIiXBBHPyrtkF.jpg"
+            },
+            {
+                "name": "Chris Parnell",
+                "character": "Peter",
+                "image": "https://image.tmdb.org/t/p/w185/9Ga03Y9TVIqTZJ4I9rfL740ibgJ.jpg"
+            },
+            {
+                "name": "Eric Gilliland",
+                "character": "UPS Guy",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Louis Rosario",
+                "character": "Bryce's Posse",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            }
+        ],
+        "trailerKey": "iumOefBwx00",
+        "tmdbId": "39414",
+        "tmdbType": "movie"
+    },  
     {
         "title": "Guns Akimbo",
         "year": "2020",
