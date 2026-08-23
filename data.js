@@ -3,7 +3,7 @@ const globalMoviesData = [
     {
         "title": "Paper Man",
         "year": "2009",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم حول كاتب روايات فاشل يعاني من أزمة إبداعية ويعتمد كلياً على صديق خيالي بزي بطل خارق يرافقه منذ طفولته، لكن حياته تأخذ مساراً جديداً عندما ينتقل إلى بلدة ساحلية هادئة وتنشأ بينه وبين فتاة مراهقة محلية صداقة غير متوقعة تساعد كليهما على النضج ومواجهة الواقع في إطار درامي كوميدي مؤثر.",
         "poster": "https://image.tmdb.org/t/p/w500/wneK8G9E26FUqYo4KjPlsD0TIII.jpg",
         "hdUrl": "https://streamtape.com/e/B4Z4aZqbVJSQKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/B4Z4aZqbVJSQKG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
@@ -69,9 +69,9 @@ const globalMoviesData = [
     {
         "title": "Paper Lives",
         "year": "2021",
-        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "desc": "تدور أحداث الفيلم في أحد الأحياء الفقيرة بإسطنبول حول شاب مريض يدير مستودعاً لجمع النفايات الورقية ويحظى بحب الجميع، تنقلب حياته رأساً على عقب عندما يعثر على طفل صغير مختبئ في كيس قمامة فيقرر رعايته وحمايته بينما يواجه ذكريات وصدمات طفولته المؤلمة في إطار درامي مؤثر وإنساني عميق.",
         "poster": "https://image.tmdb.org/t/p/w500/22iaAAr3LZucqLZJ5M8w52gwNiR.jpg",
-        "hdUrl": "https://streamtape.com/e/Rm8e0g9o09CdR32/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/k9Y1jz78qJHO7X7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/Rm8e0g9o09CdR32/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "8.0",
         "genre": "دراما",
