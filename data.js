@@ -1,73 +1,6 @@
 const globalMoviesData = [
     
     {
-        "title": "Two Worlds One Wish عالمان امنية واحدة",
-        "year": "2025",
-        "desc": "بعد واحد وعشرين عاماً من لقاءٍ ساحر في مستشفى للأطفال، تبدأ بيلغا وجان فجأةً في سماع أصوات بعضهما بعضاً عن بُعد. وما يبدو معجزةً، سرعان ما يكشف سراً خفياً، حيث يُخبئ القدر لهما المزيد إذ يجمعهما بعد عقود. مغامرةٌ مثيرة وقصة حب ملحمية في انتظارهما.",
-        "poster": "https://image.tmdb.org/t/p/w500/xF5raKXPA2yyUW0Z28hy8w73fXY.jpg",
-        "hdUrl": "https://streamtape.com/e/wO7jl4vom6txmX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "sdUrl": "https://streamtape.com/e/09WWp6YJB4CD4q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "rating": "7.3",
-        "genre": "رومنسية دراما",
-        "type": "movie",
-        "cast": [
-            {
-                "name": "Hande Erçel",
-                "character": "Bilge Tanil",
-                "image": "https://image.tmdb.org/t/p/w185/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg"
-            },
-            {
-                "name": "Metin Akdülger",
-                "character": "Can Tarun",
-                "image": "https://image.tmdb.org/t/p/w185/70DE1rB7nGSECpFE6sQKxPU3mfQ.jpg"
-            },
-            {
-                "name": "Serkan Tınmaz",
-                "character": "Eren",
-                "image": "https://image.tmdb.org/t/p/w185/jhqPoaSzTsjMAf9xCe6NnoXg3eg.jpg"
-            },
-            {
-                "name": "Eylül Su Sapan",
-                "character": "Yasemin",
-                "image": "https://image.tmdb.org/t/p/w185/n2B84Kkv4aSji5qzWKLLqb5AwA5.jpg"
-            },
-            {
-                "name": "Nazlıcan Demir",
-                "character": "Ipek",
-                "image": "https://image.tmdb.org/t/p/w185/9R0Pyz7LfeLcbZGhqS5tLgFJ6CQ.jpg"
-            },
-            {
-                "name": "Hüseyin Avni Danyal",
-                "character": "Harun Tarun",
-                "image": "https://image.tmdb.org/t/p/w185/pbi3qvL9wtFphQe3guH8ZL5b39m.jpg"
-            },
-            {
-                "name": "İdil Fırat",
-                "character": "Leyla Tarun",
-                "image": "https://image.tmdb.org/t/p/w185/xmURud3NK9FlBIkfPukxNRsec6.jpg"
-            },
-            {
-                "name": "Didem İnselel",
-                "character": "Sezen",
-                "image": "https://image.tmdb.org/t/p/w185/o1Su2JOdi0dXnqXW3mUZpUdWDNN.jpg"
-            },
-            {
-                "name": "Mert Ege Ak",
-                "character": "Child Can",
-                "image": "https://image.tmdb.org/t/p/w185/gShfkKRS19YroJedvFoArdigKo.jpg"
-            },
-            {
-                "name": "Deniz Duygu Köse",
-                "character": "Child Bilge",
-                "image": "https://via.placeholder.com/185x278?text=No+Image"
-            }
-        ],
-        "trailerKey": "",
-        "tmdbId": "1522377",
-        "tmdbType": "movie",
-        "featured": true
-    },
-    {
         "title": "The Switch",
         "year": "2010",
         "desc": " تدور أحداث الفيلم حول امرأة عزباء تقرر إنجاب طفل عبر التلقيح الاصطناعي من متبرع فيقوم صديقها المقرب باستبدال العينة بعينته الخاصة في ليلة طائشة دون أن يتذكر شيئا ليعود بعد سبع سنوات ويكتشف وجود طفل يشبهه تماما في الطباع والتصرفات في إطار درامي رومانسي كوميدي.",
@@ -3585,6 +3518,73 @@ const globalMoviesData = [
         "trailerKey": "2wcj6SrX4zw",
         "tmdbId": "297802",
         "tmdbType": "movie"
+    },
+    {
+        "title": "Two Worlds One Wish عالمان امنية واحدة",
+        "year": "2025",
+        "desc": "بعد واحد وعشرين عاماً من لقاءٍ ساحر في مستشفى للأطفال، تبدأ بيلغا وجان فجأةً في سماع أصوات بعضهما بعضاً عن بُعد. وما يبدو معجزةً، سرعان ما يكشف سراً خفياً، حيث يُخبئ القدر لهما المزيد إذ يجمعهما بعد عقود. مغامرةٌ مثيرة وقصة حب ملحمية في انتظارهما.",
+        "poster": "https://image.tmdb.org/t/p/w500/xF5raKXPA2yyUW0Z28hy8w73fXY.jpg",
+        "hdUrl": "https://streamtape.com/e/wO7jl4vom6txmX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/09WWp6YJB4CD4q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.3",
+        "genre": "رومنسية دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Hande Erçel",
+                "character": "Bilge Tanil",
+                "image": "https://image.tmdb.org/t/p/w185/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg"
+            },
+            {
+                "name": "Metin Akdülger",
+                "character": "Can Tarun",
+                "image": "https://image.tmdb.org/t/p/w185/70DE1rB7nGSECpFE6sQKxPU3mfQ.jpg"
+            },
+            {
+                "name": "Serkan Tınmaz",
+                "character": "Eren",
+                "image": "https://image.tmdb.org/t/p/w185/jhqPoaSzTsjMAf9xCe6NnoXg3eg.jpg"
+            },
+            {
+                "name": "Eylül Su Sapan",
+                "character": "Yasemin",
+                "image": "https://image.tmdb.org/t/p/w185/n2B84Kkv4aSji5qzWKLLqb5AwA5.jpg"
+            },
+            {
+                "name": "Nazlıcan Demir",
+                "character": "Ipek",
+                "image": "https://image.tmdb.org/t/p/w185/9R0Pyz7LfeLcbZGhqS5tLgFJ6CQ.jpg"
+            },
+            {
+                "name": "Hüseyin Avni Danyal",
+                "character": "Harun Tarun",
+                "image": "https://image.tmdb.org/t/p/w185/pbi3qvL9wtFphQe3guH8ZL5b39m.jpg"
+            },
+            {
+                "name": "İdil Fırat",
+                "character": "Leyla Tarun",
+                "image": "https://image.tmdb.org/t/p/w185/xmURud3NK9FlBIkfPukxNRsec6.jpg"
+            },
+            {
+                "name": "Didem İnselel",
+                "character": "Sezen",
+                "image": "https://image.tmdb.org/t/p/w185/o1Su2JOdi0dXnqXW3mUZpUdWDNN.jpg"
+            },
+            {
+                "name": "Mert Ege Ak",
+                "character": "Child Can",
+                "image": "https://image.tmdb.org/t/p/w185/gShfkKRS19YroJedvFoArdigKo.jpg"
+            },
+            {
+                "name": "Deniz Duygu Köse",
+                "character": "Child Bilge",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            }
+        ],
+        "trailerKey": "",
+        "tmdbId": "1522377",
+        "tmdbType": "movie",
+        "featured": true
     },
     {
         "title": "Chennai Express",
