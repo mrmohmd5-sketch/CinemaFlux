@@ -1,11 +1,11 @@
 const globalMoviesData = [
     
     {
-        "title": "Blue Cave",
+        "title": "Blue Cave الكهف الازرق",
         "year": "2024",
         "desc": "ينطلق الجندي البحري سيم في رحلة إلى 'الكهف الأزرق' الذي وعد زوجته ألارا بزيارته. وتكشف الرحلة عن تفاصيل علاقتهما، وتؤكد على الحب الدائم بعد الموت",
         "poster": "https://image.tmdb.org/t/p/w500/dFaOOLyDleXg1S7VAJM32uCZtyJ.jpg",
-        "hdUrl": "https://streamtape.com/e/D4BQv62a7Lsk02J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/8vYkOgydgkcoBgo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/D4BQv62a7Lsk02J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.0",
         "genre": "دراما رومنسية",
