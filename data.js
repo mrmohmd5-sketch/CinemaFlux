@@ -1,6 +1,62 @@
 const globalMoviesData = [
     
     {
+        "title": "The Sleeper",
+        "year": "2025",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/xvycfI4PRusKfqvzmkb8xqO0g48.jpg",
+        "hdUrl": "https://streamtape.com/e/YKRAr0jpV8uvyzG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/YKRAr0jpV8uvyzG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.8",
+        "genre": "حركة إثارة دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Çağatay Ulusoy",
+                "character": "Ferman",
+                "image": "https://image.tmdb.org/t/p/w185/6anWOhuVKq64zoL2YCEN043B3SP.jpg"
+            },
+            {
+                "name": "Elçin Sangu",
+                "character": "Saye",
+                "image": "https://image.tmdb.org/t/p/w185/5jGVTT2ykGro046rvKP75y7Mnyi.jpg"
+            },
+            {
+                "name": "Barış Falay",
+                "character": "Kartal",
+                "image": "https://image.tmdb.org/t/p/w185/fh2pvVJJeotuAKpqCTM0665U9CQ.jpg"
+            },
+            {
+                "name": "Ferit Kaya",
+                "character": "Afro",
+                "image": "https://image.tmdb.org/t/p/w185/5ctUbRlRLWRd8yZyfzUSRKq1qbh.jpg"
+            },
+            {
+                "name": "Musa Uzunlar",
+                "character": "Asim",
+                "image": "https://image.tmdb.org/t/p/w185/2HduNZGj1oo1blldSAVLQGs4irt.jpg"
+            },
+            {
+                "name": "Tamer Levent",
+                "character": "Seyh",
+                "image": "https://image.tmdb.org/t/p/w185/bQrGr7zTAdNfeGb18wNgPbXTmle.jpg"
+            },
+            {
+                "name": "Cengiz Bozkurt",
+                "character": "Selim",
+                "image": "https://image.tmdb.org/t/p/w185/fdxk6BXDPIALDUIpvAjqmBg9M6D.jpg"
+            },
+            {
+                "name": "Hüseyin Avni Danyal",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/pbi3qvL9wtFphQe3guH8ZL5b39m.jpg"
+            }
+        ],
+        "trailerKey": "hvHw1VbVQkM",
+        "tmdbId": "1557848",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Blue Cave الكهف الازرق",
         "year": "2024",
         "desc": "ينطلق الجندي البحري سيم في رحلة إلى 'الكهف الأزرق' الذي وعد زوجته ألارا بزيارته. وتكشف الرحلة عن تفاصيل علاقتهما، وتؤكد على الحب الدائم بعد الموت",
