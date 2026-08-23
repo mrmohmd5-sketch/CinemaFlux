@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Princess Switch",
+        "year": "2018",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/A8XgZE8CsHiYN243MEd07GLCep.jpg",
+        "hdUrl": "https://streamtape.com/e/XWQ2AzebkLUDYZV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/XWQ2AzebkLUDYZV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.0",
+        "genre": "رومنسية كوميديا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Vanessa Hudgens",
+                "character": "Stacy De Novo / Margaret Delacourt",
+                "image": "https://image.tmdb.org/t/p/w185/8S8Nn5m5qkiIrEJ3dzPRjltzrkx.jpg"
+            },
+            {
+                "name": "Sam Palladio",
+                "character": "Edward Wyndham",
+                "image": "https://image.tmdb.org/t/p/w185/cSnCEAbpEeLMnlpugqLuxZFMKri.jpg"
+            },
+            {
+                "name": "Nick Sagar",
+                "character": "Kevin Richards",
+                "image": "https://image.tmdb.org/t/p/w185/gGjr1vuxFeTMIRzXVwDCTWMbOrb.jpg"
+            },
+            {
+                "name": "Alexa Adeosun",
+                "character": "Olivia Richards",
+                "image": "https://image.tmdb.org/t/p/w185/16lGMc49oTYTwuuSoZJusonWivR.jpg"
+            },
+            {
+                "name": "Suanne Braun",
+                "character": "Donatelli",
+                "image": "https://image.tmdb.org/t/p/w185/fBK5UT95cBNTC5gMTnPbsfZPxeq.jpg"
+            },
+            {
+                "name": "Mark Fleischmann",
+                "character": "Frank",
+                "image": "https://image.tmdb.org/t/p/w185/4Xki6fvgwjRXVmV9pEinAhqK6XJ.jpg"
+            },
+            {
+                "name": "Sara Stewart",
+                "character": "Caroline Wyndham",
+                "image": "https://image.tmdb.org/t/p/w185/l6OWk9h1nKCuopGviDgkHFKqeEY.jpg"
+            },
+            {
+                "name": "Pavel Douglas",
+                "character": "George Wyndham",
+                "image": "https://image.tmdb.org/t/p/w185/Aw1vYQxn2Ot4y6WjZry33ortpbi.jpg"
+            },
+            {
+                "name": "Amy Griffiths",
+                "character": "Brianna",
+                "image": "https://image.tmdb.org/t/p/w185/qksZF8pilsFX9gtpNb15fXTz3Rx.jpg"
+            },
+            {
+                "name": "Robin Soans",
+                "character": "Kindly Man",
+                "image": "https://image.tmdb.org/t/p/w185/dfeZv8ovjBdbJlNeyk4g9Ovy3BQ.jpg"
+            }
+        ],
+        "trailerKey": "-WBhj57fHeI",
+        "tmdbId": "556803",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Pinocchio Unstrung",
         "year": "2026",
         "desc": "تدور أحداث الفيلم في إطار من الرعب والغموض، حيث تُعاد صياغة الحكاية الكلاسيكية للدمية الخشبية بينوكيو بشكل مظلم ودموي، عندما يتحرر من قيوده ويبدأ رحلة انتقامية مرعبة ومروعة بحثاً عن التحول إلى صبي حقيقي مهما كان الثمن، متسبباً في سلسلة من الجرائم والكوابيس لأهل البلدة .",
