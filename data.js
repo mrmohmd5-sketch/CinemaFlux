@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Princess Switch 3: Romancing the Star",
+        "year": "2021",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/d42eVP0SdHEKUoUnaFpF2eMz4hZ.jpg",
+        "hdUrl": "https://streamtape.com/e/OW4dD1l9AQC6eL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/OW4dD1l9AQC6eL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.7",
+        "genre": "رومنسية كوميديا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Vanessa Hudgens",
+                "character": "Stacy De Novo / Margaret Delacourt / Fiona Pembroke",
+                "image": "https://image.tmdb.org/t/p/w185/8S8Nn5m5qkiIrEJ3dzPRjltzrkx.jpg"
+            },
+            {
+                "name": "Remy Hii",
+                "character": "Peter Maxwell",
+                "image": "https://image.tmdb.org/t/p/w185/nCXWaFzPNgkr5cwoHkmkqIsQsXJ.jpg"
+            },
+            {
+                "name": "Sam Palladio",
+                "character": "Edward Wyndham",
+                "image": "https://image.tmdb.org/t/p/w185/cSnCEAbpEeLMnlpugqLuxZFMKri.jpg"
+            },
+            {
+                "name": "Nick Sagar",
+                "character": "Kevin Richards",
+                "image": "https://image.tmdb.org/t/p/w185/gGjr1vuxFeTMIRzXVwDCTWMbOrb.jpg"
+            },
+            {
+                "name": "Amanda Donohoe",
+                "character": "Bianca Pembroke",
+                "image": "https://image.tmdb.org/t/p/w185/KOMTsWlkmkSCf5YSI9KjDJgCXE.jpg"
+            },
+            {
+                "name": "Florence Hall",
+                "character": "Mindy",
+                "image": "https://image.tmdb.org/t/p/w185/okDxiRHlQ31txCqTpJCtuUQxtE3.jpg"
+            },
+            {
+                "name": "Ricky Norwood",
+                "character": "Reggie",
+                "image": "https://image.tmdb.org/t/p/w185/p6uzRKpi4RMnfALG8svxr4cZmS7.jpg"
+            },
+            {
+                "name": "Suanne Braun",
+                "character": "Donatelli",
+                "image": "https://image.tmdb.org/t/p/w185/fBK5UT95cBNTC5gMTnPbsfZPxeq.jpg"
+            },
+            {
+                "name": "Sian Ejiwunmi-Le Berre",
+                "character": "Moretti",
+                "image": "https://image.tmdb.org/t/p/w185/dzo12E77vSQskHSYYmas6R9Vexq.jpg"
+            },
+            {
+                "name": "Mark Fleischmann",
+                "character": "Frank",
+                "image": "https://image.tmdb.org/t/p/w185/4Xki6fvgwjRXVmV9pEinAhqK6XJ.jpg"
+            }
+        ],
+        "trailerKey": "CfXzd8fgy6Q",
+        "tmdbId": "785533",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Princess Switch: Switched Again",
         "year": "2020",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
