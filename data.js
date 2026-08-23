@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Princess Switch: Switched Again",
+        "year": "2020",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/4vOmeimnVCdojwvc4icyeYUCydJ.jpg",
+        "hdUrl": "https://streamtape.com/e/W3gJbpavmGhbDGP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/W3gJbpavmGhbDGP/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.8",
+        "genre": "عائلي رومنسية كوميديا فيلم تلفازي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Vanessa Hudgens",
+                "character": "Stacy De Novo / Lady Margaret Delacourt / Fiona Pembroke",
+                "image": "https://image.tmdb.org/t/p/w185/8S8Nn5m5qkiIrEJ3dzPRjltzrkx.jpg"
+            },
+            {
+                "name": "Sam Palladio",
+                "character": "Prince Edward",
+                "image": "https://image.tmdb.org/t/p/w185/cSnCEAbpEeLMnlpugqLuxZFMKri.jpg"
+            },
+            {
+                "name": "Nick Sagar",
+                "character": "Kevin Richards",
+                "image": "https://image.tmdb.org/t/p/w185/gGjr1vuxFeTMIRzXVwDCTWMbOrb.jpg"
+            },
+            {
+                "name": "Suanne Braun",
+                "character": "Donatelli",
+                "image": "https://image.tmdb.org/t/p/w185/fBK5UT95cBNTC5gMTnPbsfZPxeq.jpg"
+            },
+            {
+                "name": "Mark Fleischmann",
+                "character": "Frank",
+                "image": "https://image.tmdb.org/t/p/w185/4Xki6fvgwjRXVmV9pEinAhqK6XJ.jpg"
+            },
+            {
+                "name": "Lachlan Nieboer",
+                "character": "Antonio Rossi",
+                "image": "https://image.tmdb.org/t/p/w185/eTlgYhhscbTX0OQ7k9Em7OkOtvD.jpg"
+            },
+            {
+                "name": "Rose McIver",
+                "character": "Amber Moore",
+                "image": "https://image.tmdb.org/t/p/w185/7oswXIUIGAZphpZMBhuXoUgOIJi.jpg"
+            },
+            {
+                "name": "Ben Lamb",
+                "character": "Richard Charlton",
+                "image": "https://image.tmdb.org/t/p/w185/mxbN5DgsT1YMFaEo7FZ4uMAJ14b.jpg"
+            },
+            {
+                "name": "Robin Soans",
+                "character": "Elf Man",
+                "image": "https://image.tmdb.org/t/p/w185/dfeZv8ovjBdbJlNeyk4g9Ovy3BQ.jpg"
+            },
+            {
+                "name": "Juliet Cadzow",
+                "character": "Prime Minister",
+                "image": "https://image.tmdb.org/t/p/w185/nDZg3bg7l3dYaiqO9B5c4EKVphM.jpg"
+            }
+        ],
+        "trailerKey": "f9OVdmIxkso",
+        "tmdbId": "643882",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Princess Switch",
         "year": "2018",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
