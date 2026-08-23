@@ -3713,7 +3713,7 @@ const globalMoviesData = [
                 "image": "https://via.placeholder.com/185x278?text=No+Image"
             }
         ],
-        "trailerKey": "",
+        "trailerKey": "u4Rk3a0sagI",
         "tmdbId": "1522377",
         "tmdbType": "movie",
         "featured": true
