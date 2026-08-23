@@ -1,6 +1,58 @@
 const globalMoviesData = [
     
     {
+        "title": "Paper Lives",
+        "year": "2021",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/22iaAAr3LZucqLZJ5M8w52gwNiR.jpg",
+        "hdUrl": "https://streamtape.com/e/Rm8e0g9o09CdR32/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/Rm8e0g9o09CdR32/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "8.0",
+        "genre": "دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Çağatay Ulusoy",
+                "character": "Mehmet",
+                "image": "https://image.tmdb.org/t/p/w185/6anWOhuVKq64zoL2YCEN043B3SP.jpg"
+            },
+            {
+                "name": "Emir Ali Doğrul",
+                "character": "Ali",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Ersin Arıcı",
+                "character": "Gonzales",
+                "image": "https://image.tmdb.org/t/p/w185/5NOZpOapbhcGHPO3GhwTaQIuYc0.jpg"
+            },
+            {
+                "name": "Turgay Tanülkü",
+                "character": "Tahsin",
+                "image": "https://image.tmdb.org/t/p/w185/8SJXW2utHtBgV2RZZMYfIpNflP0.jpg"
+            },
+            {
+                "name": "Selen Öztürk",
+                "character": "Mom",
+                "image": "https://image.tmdb.org/t/p/w185/xgiTYVwDQA7jYDmnFdJWJS87PmD.jpg"
+            },
+            {
+                "name": "Tomris Çetinel",
+                "character": "Yaşlı Kadın",
+                "image": "https://image.tmdb.org/t/p/w185/n3fVB62ZcVGXCj1J0xcZd5pyZz4.jpg"
+            },
+            {
+                "name": "Enver Aktay",
+                "character": "Enver",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            }
+        ],
+        "trailerKey": "lXdSaVK-vzs",
+        "tmdbId": "785534",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Art of Love",
         "year": "2024",
         "desc": "بعد اكتشاف ضابطة شرطة تعمل لدى 'الإنتربول' أن لص اللوحات الفنية الذي كانت تلاحقه هو نفسه حبيبها السابق، تحوك خطة للقبض عليه متلبسًا.",
