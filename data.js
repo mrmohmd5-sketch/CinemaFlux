@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Blue Cave",
+        "year": "2024",
+        "desc": "ينطلق الجندي البحري سيم في رحلة إلى 'الكهف الأزرق' الذي وعد زوجته ألارا بزيارته. وتكشف الرحلة عن تفاصيل علاقتهما، وتؤكد على الحب الدائم بعد الموت",
+        "poster": "https://image.tmdb.org/t/p/w500/dFaOOLyDleXg1S7VAJM32uCZtyJ.jpg",
+        "hdUrl": "https://streamtape.com/e/D4BQv62a7Lsk02J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/D4BQv62a7Lsk02J/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.0",
+        "genre": "دراما رومنسية",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Kerem Bürsin",
+                "character": "Cem",
+                "image": "https://image.tmdb.org/t/p/w185/aEVh7OLO0R2ggKNhAeuTKhrnhe4.jpg"
+            },
+            {
+                "name": "Devrim Özkan",
+                "character": "Alara",
+                "image": "https://image.tmdb.org/t/p/w185/12rRcA5jxTKyFnFoq26RpOam75a.jpg"
+            },
+            {
+                "name": "Okan Yalabık",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/xWbbpbln5lL2nlaPKDzGrxWe10E.jpg"
+            },
+            {
+                "name": "Yüsra Geyik",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/eT9Uhy61Svh90kn2OdYEUXJKqWq.jpg"
+            },
+            {
+                "name": "İdil Sivritepe",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/572mKMH4d5IwEUDxCxT7oS2feyi.jpg"
+            },
+            {
+                "name": "Taner Birsel",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/zq4uEMEezi9Nwev5KdVyO5juQ9e.jpg"
+            },
+            {
+                "name": "Ece Dizdar",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/pS40WPZV6fo6bdkzmYHFgQ7uOUC.jpg"
+            },
+            {
+                "name": "Sabahattin Yakut",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/oST2pBm4RDBMCgBQFS5Es5KtsOo.jpg"
+            },
+            {
+                "name": "Temmuz Gürkan Karaca",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/JYSIJkFB3irCmhzPw4kR0lUJXB.jpg"
+            },
+            {
+                "name": "Alper Baytekin",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/qLRqSd3wrMkX8zHvCYfa1MNKWim.jpg"
+            }
+        ],
+        "trailerKey": "ByJZauSZrAw",
+        "tmdbId": "1362101",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Last Summer",
         "year": "2021",
         "desc": "تدور أحداث الفيلم خلال عطلة صيفية في فترة التسعينيات على شاطئ البحر في تركيا حيث يسعى فتى مراهق في السادسة عشرة من عمره للفوز بقلب فتاة أحلامه التي تعود من المدينة في كل صيف لكنه يجد نفسه عالقاً في مثلث حب معقد ومواقف مؤثرة عن النضج والمشاعر الأولى في إطار درامي ورومانسي دافئ.",
