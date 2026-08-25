@@ -1,7 +1,74 @@
 const globalMoviesData = [
-    
+
+  {
+        "title": "Your Name اسمك مدبلج",
+        "year": "2016",
+        "desc": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
+        "poster": "https://image.tmdb.org/t/p/original/QbmlcdMunNemD62wiQ94zqeHFl.jpg",
+        "hdUrl": "https://streamtape.com/e/6WjAxPapPBF9jlm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/4RJrvJMBr3cJzr/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "8.5",
+        "genre": "رسوم متحركة رومنسية دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Ryunosuke Kamiki",
+                "character": "Taki Tachibana (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/ut7ewXjdgUmgkhJ1EtbOo9tbc7s.jpg"
+            },
+            {
+                "name": "Mone Kamishiraishi",
+                "character": "Mitsuha Miyamizu (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/cPydoy2sSqFDsbXeBPmzQGPmq0R.jpg"
+            },
+            {
+                "name": "Ryo Narita",
+                "character": "Katsuhiko Teshigawara (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/2EFimbwi4lf9B19cgu2bJaNJiVq.jpg"
+            },
+            {
+                "name": "Aoi Yuuki",
+                "character": "Sayaka Natori (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+            },
+            {
+                "name": "Nobunaga Shimazaki",
+                "character": "Tsukasa Fujii (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/qke5rZusHsjSlvB0NKlJ5dQF5D.jpg"
+            },
+            {
+                "name": "Kaito Ishikawa",
+                "character": "Shinta Takagi (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/fzjIkotjUHHs3wgftM9tqdsG8ph.jpg"
+            },
+            {
+                "name": "Kanon Tani",
+                "character": "Yotsuha Miyamizu (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/udR4Cax2EecH3ZkATE4h6ejiGD9.jpg"
+            },
+            {
+                "name": "Masaki Terasoma",
+                "character": "Toshiki Miyamizu (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/eol7Ul4buAam9SmJDuFIWln0Cd3.jpg"
+            },
+            {
+                "name": "Sayaka Ohara",
+                "character": "Futaha Miyamizu (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/4WQXLzj0gjYqkYFcTTxAkIwedvr.jpg"
+            },
+            {
+                "name": "Kazuhiko Inoue",
+                "character": "Taki's Father (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/3BpYtYRiLAmTNbCm2LXlXnkMRit.jpg"
+            }
+        ],
+        "trailerKey": "RuyHIkXdYf8",
+        "tmdbId": "372058",
+        "tmdbType": "movie",
+        "featured": true
+    },  
     {
-        "title": "Your Name.",
+        "title": "Your Name اسمك",
         "year": "2016",
         "desc": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
         "poster": "https://image.tmdb.org/t/p/w500/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg",
