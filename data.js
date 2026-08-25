@@ -1,7 +1,7 @@
 const globalMoviesData = [
     
     {
-        "title": "Your Name اسمك ",
+        "title": "Your Name.",
         "year": "2016",
         "desc": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
         "poster": "https://image.tmdb.org/t/p/w500/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg",
