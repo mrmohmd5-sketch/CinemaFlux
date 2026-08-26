@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2001",
         "desc": "بينما يقوم (إيفيلين أوكونيل) و(ريك) باكتشاف القطع الأثرية الجديدة، جنبًا إلى جنب مع ابنهما (أليكس) البالغ من العمر ثمان سنوات، يتم شحن جثة (إمحوتب) المٌحنطة إلى متحف في (لندن)، حيث يستيقظ مرة أخرى ويبدأ حملة الغضب والإرهاب على الجميع.",
         "poster": "https://image.tmdb.org/t/p/w500/n1ZX51oq6p9yqMtQLFWQYeHlLFI.jpg",
-        "hdUrl": "https://streamtape.com/e/XkMKjKM8GKIDrOl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/y7wvlrRKr9C3rO/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/XkMKjKM8GKIDrOl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "6.4",
         "genre": "مغامرة حركة فانتازيا",
