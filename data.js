@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Mummy",
+        "year": "2017",
+        "desc": "مرحبا بكم في عالم جديد من الآلهة والوحوش\r على الرغم من دفنها بأمان في سرداب عميق تحت الصحراء التي لا ترحم ، إلا أن ملكة قديمة أخذ مصيرها منها ظلما تستيقظ في يومنا هذا ، حاملة معها حقدها الذي نما على مدى آلاف السنين ، والرعب الذي يتحدى الفهم البشري.",
+        "poster": "https://image.tmdb.org/t/p/w500/xlLUrBiGt7LfcJ5cvafvDEgUpL1.jpg",
+        "hdUrl": "https://streamtape.com/e/KGY8LljGR6IJ6j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/KGY8LljGR6IJ6j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.5",
+        "genre": "فانتازيا إثارة حركة مغامرة رعب",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Tom Cruise",
+                "character": "Nick Morton",
+                "image": "https://image.tmdb.org/t/p/w185/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg"
+            },
+            {
+                "name": "Annabelle Wallis",
+                "character": "Jennifer Halsey",
+                "image": "https://image.tmdb.org/t/p/w185/2ZmO2Zz9TcR0rmSJHOkivcu0heR.jpg"
+            },
+            {
+                "name": "Sofia Boutella",
+                "character": "Ahmanet",
+                "image": "https://image.tmdb.org/t/p/w185/yAbMWBdOaK50pclJhCl65U6qEBK.jpg"
+            },
+            {
+                "name": "Jake Johnson",
+                "character": "Chris Vail",
+                "image": "https://image.tmdb.org/t/p/w185/3UNfW2qZgRkW81neNVfQvaRC92K.jpg"
+            },
+            {
+                "name": "Courtney B. Vance",
+                "character": "Colonel Greenway",
+                "image": "https://image.tmdb.org/t/p/w185/6ci3wf6oecjz875QRwryOsapW0Y.jpg"
+            },
+            {
+                "name": "Russell Crowe",
+                "character": "Henry Jekyll / Edward Hyde",
+                "image": "https://image.tmdb.org/t/p/w185/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg"
+            },
+            {
+                "name": "Marwan Kenzari",
+                "character": "Malik",
+                "image": "https://image.tmdb.org/t/p/w185/66903sgNtyzHN0Mi3D88UYgbH86.jpg"
+            },
+            {
+                "name": "Neil Maskell",
+                "character": "Dr. Whemple",
+                "image": "https://image.tmdb.org/t/p/w185/12dDCWSE8GXrhnzHuaEWxNJFfrN.jpg"
+            },
+            {
+                "name": "Javier Botet",
+                "character": "Set",
+                "image": "https://image.tmdb.org/t/p/w185/nuVbt1oreUUPPR0MhKKL7y6i9Dt.jpg"
+            },
+            {
+                "name": "Andrew Brooke",
+                "character": "Mr. Brooke",
+                "image": "https://image.tmdb.org/t/p/w185/bZL8AxVVROgqUJtdcwCwYqpVgdI.jpg"
+            }
+        ],
+        "trailerKey": "NVHa1RpxZ58",
+        "tmdbId": "282035",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Mummy: Tomb of the Dragon Emperor",
         "year": "2008",
         "desc": "تدور قصة الفيلم حول (ألكس) الذي يكتشف مقبرة أول إمبراطور في تاريخ الصين، ويخبر والديه اللذان يسافرا إلى الصين على الفور بعد استخدام أحد الجنرالات للسحر من أجل إحياء مومياء الإمبراطور والتي لها القدرة على تغيير شكلها. وبالفعل تبدأ المومياء في تجميع جيشها الضخم من أجل غزو العالم، فيحاول ألكس التصدي لهم.",
