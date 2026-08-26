@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Mummy Returns",
+        "year": "2001",
+        "desc": "بينما يقوم (إيفيلين أوكونيل) و(ريك) باكتشاف القطع الأثرية الجديدة، جنبًا إلى جنب مع ابنهما (أليكس) البالغ من العمر ثمان سنوات، يتم شحن جثة (إمحوتب) المٌحنطة إلى متحف في (لندن)، حيث يستيقظ مرة أخرى ويبدأ حملة الغضب والإرهاب على الجميع.",
+        "poster": "https://image.tmdb.org/t/p/w500/n1ZX51oq6p9yqMtQLFWQYeHlLFI.jpg",
+        "hdUrl": "https://streamtape.com/e/XkMKjKM8GKIDrOl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/XkMKjKM8GKIDrOl/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.4",
+        "genre": "مغامرة حركة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Brendan Fraser",
+                "character": "Rick O'Connell",
+                "image": "https://image.tmdb.org/t/p/w185/tFj5PaWWQbb8rHBBhu1EHklznph.jpg"
+            },
+            {
+                "name": "Rachel Weisz",
+                "character": "Evelyn O'Connell / Nefertiri",
+                "image": "https://image.tmdb.org/t/p/w185/9tfHL5tholha1YF6bSKt422ETPM.jpg"
+            },
+            {
+                "name": "John Hannah",
+                "character": "Jonathan Carnahan",
+                "image": "https://image.tmdb.org/t/p/w185/8GzJhaZrChZpv84SU4vAsvsR3cl.jpg"
+            },
+            {
+                "name": "Oded Fehr",
+                "character": "Ardeth Bay",
+                "image": "https://image.tmdb.org/t/p/w185/xt50Z02mO5pLTW0cNLZhIsiequJ.jpg"
+            },
+            {
+                "name": "Arnold Vosloo",
+                "character": "Imhotep",
+                "image": "https://image.tmdb.org/t/p/w185/o23Z1EvWEYR7PArq2w5UpreVipV.jpg"
+            },
+            {
+                "name": "Patricia Velásquez",
+                "character": "Meela / Anck-Su-Namun",
+                "image": "https://image.tmdb.org/t/p/w185/51Ve74pQUnR6tv3faE8LKUFZa9I.jpg"
+            },
+            {
+                "name": "Freddie Boath",
+                "character": "Alex O'Connell",
+                "image": "https://image.tmdb.org/t/p/w185/yR1yJnwALekEG521eddpnL5mApD.jpg"
+            },
+            {
+                "name": "Dwayne Johnson",
+                "character": "Mathayus / The Scorpion King",
+                "image": "https://image.tmdb.org/t/p/w185/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+            },
+            {
+                "name": "Alun Armstrong",
+                "character": "Baltus Hafez",
+                "image": "https://image.tmdb.org/t/p/w185/zSIzT6iM53ZdXbC2bEZCzNgW1h6.jpg"
+            },
+            {
+                "name": "Adewale Akinnuoye-Agbaje",
+                "character": "Lock-Nah",
+                "image": "https://image.tmdb.org/t/p/w185/zdtwVtVmmm7VzYfu8xH7mbuTvrH.jpg"
+            }
+        ],
+        "trailerKey": "BOh3mbolnfA",
+        "tmdbId": "1734",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Mummy",
         "year": "1999",
         "desc": "يتعثر الفيلق المحطم ريك أوكونيل على أنقاض هامونابترا الخفية بينما كان في خضم معركة للمطالبة بالمنطقة في مصر في عشرينيات القرن الماضي. لقد مرت أكثر من ثلاثة آلاف عام منذ أن عانى رئيس الكهنة الأسبق إمحوتب من مصير أسوأ من الموت كعقاب لحب ممنوع - إلى جانب لعنة تضمن الهلاك الأبدي للعالم إذا استيقظ.",
