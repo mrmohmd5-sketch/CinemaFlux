@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2016",
         "desc": "بعد وفاة شقيقه الأكبر ، يضطر لي تشاندلر إلى العودة إلى المنزل لرعاية ابن أخيه البالغ من العمر 16 عاما. هناك يضطر إلى التعامل مع الماضي المأساوي الذي فصله عن عائلته والمجتمع الذي ولد ونشأ فيه.",
         "poster": "https://image.tmdb.org/t/p/w500/7BXGSUthQKoC8lLBhAnFVYvEGbF.jpg",
-        "hdUrl": "https://streamtape.com/e/k3bGylm48YcP7O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/opGepBj6wZiJq3Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/k3bGylm48YcP7O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.6",
         "genre": "دراما",
