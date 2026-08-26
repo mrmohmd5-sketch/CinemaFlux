@@ -67,73 +67,6 @@ const globalMoviesData = [
         "tmdbType": "movie"
     },
     {
-        "title": "Manchester by the Sea",
-        "year": "2016",
-        "desc": "بعد وفاة شقيقه الأكبر ، يضطر لي تشاندلر إلى العودة إلى المنزل لرعاية ابن أخيه البالغ من العمر 16 عاما. هناك يضطر إلى التعامل مع الماضي المأساوي الذي فصله عن عائلته والمجتمع الذي ولد ونشأ فيه.",
-        "poster": "https://image.tmdb.org/t/p/w500/7BXGSUthQKoC8lLBhAnFVYvEGbF.jpg",
-        "hdUrl": "https://streamtape.com/e/opGepBj6wZiJq3Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "sdUrl": "https://streamtape.com/e/k3bGylm48YcP7O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "rating": "7.6",
-        "genre": "دراما",
-        "type": "movie",
-        "cast": [
-            {
-                "name": "Casey Affleck",
-                "character": "Lee Chandler",
-                "image": "https://image.tmdb.org/t/p/w185/304ilSygaCRWykoBWAL67TOw8g9.jpg"
-            },
-            {
-                "name": "Lucas Hedges",
-                "character": "Patrick Chandler",
-                "image": "https://image.tmdb.org/t/p/w185/8WP1uXUwm6Z1vzrMaIiKj89M6kX.jpg"
-            },
-            {
-                "name": "Michelle Williams",
-                "character": "Randi Chandler",
-                "image": "https://image.tmdb.org/t/p/w185/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg"
-            },
-            {
-                "name": "Kyle Chandler",
-                "character": "Joe Chandler",
-                "image": "https://image.tmdb.org/t/p/w185/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
-            },
-            {
-                "name": "C.J. Wilson",
-                "character": "George",
-                "image": "https://image.tmdb.org/t/p/w185/4qoB1VuVQ7m3MtcL3iRIZiXN39H.jpg"
-            },
-            {
-                "name": "Gretchen Mol",
-                "character": "Elise Henderson",
-                "image": "https://image.tmdb.org/t/p/w185/e3C1D1I09gtSGy4Ej1ewW2FFoew.jpg"
-            },
-            {
-                "name": "Matthew Broderick",
-                "character": "Jeffrey Garner",
-                "image": "https://image.tmdb.org/t/p/w185/papqFgpyroZJEqd7WvuNGN8ti2k.jpg"
-            },
-            {
-                "name": "Anna Baryshnikov",
-                "character": "Sandy",
-                "image": "https://image.tmdb.org/t/p/w185/wFMmvPSSciGgRm5Vm1seX0xPjHE.jpg"
-            },
-            {
-                "name": "Heather Burns",
-                "character": "Jill",
-                "image": "https://image.tmdb.org/t/p/w185/bfxBZFw7YbkWIywC2FDk96IwXOG.jpg"
-            },
-            {
-                "name": "Ivy O'Brien",
-                "character": "Young Patrick Chandler",
-                "image": "https://image.tmdb.org/t/p/w185/6nX3kmyZ1r8iifmm8h0u89qEL1D.jpg"
-            }
-        ],
-        "trailerKey": "Je7Qw5kCJbM",
-        "tmdbId": "334541",
-        "tmdbType": "movie",
-        "featured": true
-    },
-    {
         "title": "A Night at the Kindergarten",
         "year": "2022",
         "desc": "يقتحم شابّ تدريب مسرحية مدرسية ليحول دون قيام مجموعة من المعلمين وأولياء الأمور غريبي الأطوار بفصل نجل حبيبته.",
@@ -12425,6 +12358,73 @@ const globalMoviesData = [
         "trailerKey": "SDofO3P2HpE"
     },
     {
+        "title": "Manchester by the Sea",
+        "year": "2016",
+        "desc": "بعد وفاة شقيقه الأكبر ، يضطر لي تشاندلر إلى العودة إلى المنزل لرعاية ابن أخيه البالغ من العمر 16 عاما. هناك يضطر إلى التعامل مع الماضي المأساوي الذي فصله عن عائلته والمجتمع الذي ولد ونشأ فيه.",
+        "poster": "https://image.tmdb.org/t/p/w500/7BXGSUthQKoC8lLBhAnFVYvEGbF.jpg",
+        "hdUrl": "https://streamtape.com/e/opGepBj6wZiJq3Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/k3bGylm48YcP7O/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.6",
+        "genre": "دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Casey Affleck",
+                "character": "Lee Chandler",
+                "image": "https://image.tmdb.org/t/p/w185/304ilSygaCRWykoBWAL67TOw8g9.jpg"
+            },
+            {
+                "name": "Lucas Hedges",
+                "character": "Patrick Chandler",
+                "image": "https://image.tmdb.org/t/p/w185/8WP1uXUwm6Z1vzrMaIiKj89M6kX.jpg"
+            },
+            {
+                "name": "Michelle Williams",
+                "character": "Randi Chandler",
+                "image": "https://image.tmdb.org/t/p/w185/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg"
+            },
+            {
+                "name": "Kyle Chandler",
+                "character": "Joe Chandler",
+                "image": "https://image.tmdb.org/t/p/w185/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
+            },
+            {
+                "name": "C.J. Wilson",
+                "character": "George",
+                "image": "https://image.tmdb.org/t/p/w185/4qoB1VuVQ7m3MtcL3iRIZiXN39H.jpg"
+            },
+            {
+                "name": "Gretchen Mol",
+                "character": "Elise Henderson",
+                "image": "https://image.tmdb.org/t/p/w185/e3C1D1I09gtSGy4Ej1ewW2FFoew.jpg"
+            },
+            {
+                "name": "Matthew Broderick",
+                "character": "Jeffrey Garner",
+                "image": "https://image.tmdb.org/t/p/w185/papqFgpyroZJEqd7WvuNGN8ti2k.jpg"
+            },
+            {
+                "name": "Anna Baryshnikov",
+                "character": "Sandy",
+                "image": "https://image.tmdb.org/t/p/w185/wFMmvPSSciGgRm5Vm1seX0xPjHE.jpg"
+            },
+            {
+                "name": "Heather Burns",
+                "character": "Jill",
+                "image": "https://image.tmdb.org/t/p/w185/bfxBZFw7YbkWIywC2FDk96IwXOG.jpg"
+            },
+            {
+                "name": "Ivy O'Brien",
+                "character": "Young Patrick Chandler",
+                "image": "https://image.tmdb.org/t/p/w185/6nX3kmyZ1r8iifmm8h0u89qEL1D.jpg"
+            }
+        ],
+        "trailerKey": "Je7Qw5kCJbM",
+        "tmdbId": "334541",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Ralph Breaks the Internet",
         "year": "2018",
         "desc": "بعد ست سنوات من أحداث 'رالف المدمر' رالف و فيلنوبي الآن أصدقاء، اكتشفوا جهاز الواي فاي في غرفة الاركيد، يقودهم إلى مغامرة جديدة.",
@@ -13133,7 +13133,7 @@ const globalMoviesData = [
         "year": "2026",
         "desc": "عندما تحصل 'بوني' على جهاز 'ليلي باد' اللوحي كهدية وتنجذب إليه بشكلٍ كبير، يجد 'وودي' و'باز' و'جيسي' وبقية الألعاب أنفسهم أمام تحدٍ غير مسبوق، إذ تصبح مهمتهم في لفت انتباهها أصعب من أي وقت مضى، بينما يواجهون تهديدًا جديدًا يهدد عالم اللعب الذي اعتادوا عليه.",
         "poster": "https://image.tmdb.org/t/p/w500/b9yODva86tl5Em8cOoKSQQzzAy4.jpg",
-        "hdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/ggPq8w9YXocq0O3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/jgAVap870yszZ31/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.4",
         "genre": "رسوم متحركة عائلي كوميديا مغامرة",
