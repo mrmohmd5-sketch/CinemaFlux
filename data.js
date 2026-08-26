@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2008",
         "desc": "تدور قصة الفيلم حول (ألكس) الذي يكتشف مقبرة أول إمبراطور في تاريخ الصين، ويخبر والديه اللذان يسافرا إلى الصين على الفور بعد استخدام أحد الجنرالات للسحر من أجل إحياء مومياء الإمبراطور والتي لها القدرة على تغيير شكلها. وبالفعل تبدأ المومياء في تجميع جيشها الضخم من أجل غزو العالم، فيحاول ألكس التصدي لهم.",
         "poster": "https://image.tmdb.org/t/p/w500/A3acM1lX5PNWQa6r5qeMAJOxbnT.jpg",
-        "hdUrl": "https://streamtape.com/e/G6mPww8m6rF18Dw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/zr6RL81vWbUoQ1/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/G6mPww8m6rF18Dw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "5.5",
         "genre": "مغامرة حركة فانتازيا",
