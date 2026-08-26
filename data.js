@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Mummy: Tomb of the Dragon Emperor",
+        "year": "2008",
+        "desc": "تدور قصة الفيلم حول (ألكس) الذي يكتشف مقبرة أول إمبراطور في تاريخ الصين، ويخبر والديه اللذان يسافرا إلى الصين على الفور بعد استخدام أحد الجنرالات للسحر من أجل إحياء مومياء الإمبراطور والتي لها القدرة على تغيير شكلها. وبالفعل تبدأ المومياء في تجميع جيشها الضخم من أجل غزو العالم، فيحاول ألكس التصدي لهم.",
+        "poster": "https://image.tmdb.org/t/p/w500/A3acM1lX5PNWQa6r5qeMAJOxbnT.jpg",
+        "hdUrl": "https://streamtape.com/e/G6mPww8m6rF18Dw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/G6mPww8m6rF18Dw/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.5",
+        "genre": "مغامرة حركة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Brendan Fraser",
+                "character": "Rick O'Connell",
+                "image": "https://image.tmdb.org/t/p/w185/tFj5PaWWQbb8rHBBhu1EHklznph.jpg"
+            },
+            {
+                "name": "Maria Bello",
+                "character": "Evelyn O'Connell",
+                "image": "https://image.tmdb.org/t/p/w185/it1f5mxiGIWO0DzTBfwtLTjphZb.jpg"
+            },
+            {
+                "name": "John Hannah",
+                "character": "Jonathan Carnahan",
+                "image": "https://image.tmdb.org/t/p/w185/8GzJhaZrChZpv84SU4vAsvsR3cl.jpg"
+            },
+            {
+                "name": "Luke Ford",
+                "character": "Alex O'Connell",
+                "image": "https://image.tmdb.org/t/p/w185/u40f3Q26n44yUrfxN4ZKjm9WGUn.jpg"
+            },
+            {
+                "name": "Isabella Leong Lok-Sze",
+                "character": "Lin",
+                "image": "https://image.tmdb.org/t/p/w185/goc7CVYEW0Fd6cB5hjUjOG8KY9N.jpg"
+            },
+            {
+                "name": "Jet Li",
+                "character": "Han",
+                "image": "https://image.tmdb.org/t/p/w185/c4s8INzU0ZAujCQ1YmphCmcsNzl.jpg"
+            },
+            {
+                "name": "Michelle Yeoh",
+                "character": "Zi Yuan",
+                "image": "https://image.tmdb.org/t/p/w185/i6fHvGt7Rb8oVyjjdQVV6vEHB94.jpg"
+            },
+            {
+                "name": "Anthony Wong",
+                "character": "Yang",
+                "image": "https://image.tmdb.org/t/p/w185/ijV0EFpwgWkRB7VRwKH7BpGkwTQ.jpg"
+            },
+            {
+                "name": "Russell Wong",
+                "character": "Ming Guo",
+                "image": "https://image.tmdb.org/t/p/w185/hRLcczBZCUXFdxU6atf2zKnPuYS.jpg"
+            },
+            {
+                "name": "Liam Cunningham",
+                "character": "\"Mad Dog\" Maguire",
+                "image": "https://image.tmdb.org/t/p/w185/y27shwpEYGq4vhdEajcmqucuq9x.jpg"
+            }
+        ],
+        "trailerKey": "ol-U0ibnVD4",
+        "tmdbId": "1735",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Mummy Returns",
         "year": "2001",
         "desc": "بينما يقوم (إيفيلين أوكونيل) و(ريك) باكتشاف القطع الأثرية الجديدة، جنبًا إلى جنب مع ابنهما (أليكس) البالغ من العمر ثمان سنوات، يتم شحن جثة (إمحوتب) المٌحنطة إلى متحف في (لندن)، حيث يستيقظ مرة أخرى ويبدأ حملة الغضب والإرهاب على الجميع.",
