@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "A Night at the Kindergarten",
+        "year": "2022",
+        "desc": "يقتحم شابّ تدريب مسرحية مدرسية ليحول دون قيام مجموعة من المعلمين وأولياء الأمور غريبي الأطوار بفصل نجل حبيبته.",
+        "poster": "https://image.tmdb.org/t/p/w500/rgxCnkiXx81uobrGouq09cOdxX9.jpg",
+        "hdUrl": "https://streamtape.com/e/jOqxlG0m3DhzAy9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/jOqxlG0m3DhzAy9/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.0",
+        "genre": "كوميديا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Piotr Witkowski",
+                "character": "Eryk",
+                "image": "https://image.tmdb.org/t/p/w185/wOc1zX0nlfuZaZasX0Bb9Lq90IJ.jpg"
+            },
+            {
+                "name": "Lena Góra",
+                "character": "Justyna",
+                "image": "https://image.tmdb.org/t/p/w185/vDHHE8fIUkwmQVF12EkqhpyCiKG.jpg"
+            },
+            {
+                "name": "Zbigniew Zamachowski",
+                "character": "Tadeusz",
+                "image": "https://image.tmdb.org/t/p/w185/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg"
+            },
+            {
+                "name": "Aleksandra Domańska",
+                "character": "Krysia",
+                "image": "https://image.tmdb.org/t/p/w185/pqamKZ8Gsu6qaW8RyUcQ4BrIRuz.jpg"
+            },
+            {
+                "name": "Dobromir Dymecki",
+                "character": "Kazik",
+                "image": "https://image.tmdb.org/t/p/w185/8hNSEpoFZ6ybX2x4ZROEP2FuKCO.jpg"
+            },
+            {
+                "name": "Matylda Damięcka",
+                "character": "Kacha",
+                "image": "https://image.tmdb.org/t/p/w185/dQdMiHBS2tuTUN4mhgAngG2Iviv.jpg"
+            },
+            {
+                "name": "Maciej Nawrocki",
+                "character": "Lesław",
+                "image": "https://image.tmdb.org/t/p/w185/yXLdL3oUP66zRbdEDfHZkaN3rGS.jpg"
+            },
+            {
+                "name": "Sylwia Boroń",
+                "character": "Sandra",
+                "image": "https://image.tmdb.org/t/p/w185/xCOc2dtKwxLnwey8DNhAEuwRNYt.jpg"
+            },
+            {
+                "name": "Piotr Borowski",
+                "character": "Hamza",
+                "image": "https://image.tmdb.org/t/p/w185/teiOpjgO8aq5I1mVBQMreLvaFD1.jpg"
+            },
+            {
+                "name": "Julia Wyszyńska",
+                "character": "Headmistress",
+                "image": "https://image.tmdb.org/t/p/w185/10L2QRI6T1At67tJNcckONedIyM.jpg"
+            }
+        ],
+        "trailerKey": "",
+        "tmdbId": "1065796",
+        "tmdbType": "movie"
+    },
+    {
         "title": "A Night at the Roxbury",
         "year": "1998",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
