@@ -6,7 +6,7 @@ const globalMoviesData = [
         "desc": "مرحبا بكم في عالم جديد من الآلهة والوحوش\r على الرغم من دفنها بأمان في سرداب عميق تحت الصحراء التي لا ترحم ، إلا أن ملكة قديمة أخذ مصيرها منها ظلما تستيقظ في يومنا هذا ، حاملة معها حقدها الذي نما على مدى آلاف السنين ، والرعب الذي يتحدى الفهم البشري.",
         "poster": "https://image.tmdb.org/t/p/w500/xlLUrBiGt7LfcJ5cvafvDEgUpL1.jpg",
         "hdUrl": "https://streamtape.com/e/KGY8LljGR6IJ6j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
-        "sdUrl": "https://streamtape.com/e/KGY8LljGR6IJ6j/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/rkLY0lyYOaTMVX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "5.5",
         "genre": "فانتازيا إثارة حركة مغامرة رعب",
         "type": "movie",
