@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "1999",
         "desc": "يتعثر الفيلق المحطم ريك أوكونيل على أنقاض هامونابترا الخفية بينما كان في خضم معركة للمطالبة بالمنطقة في مصر في عشرينيات القرن الماضي. لقد مرت أكثر من ثلاثة آلاف عام منذ أن عانى رئيس الكهنة الأسبق إمحوتب من مصير أسوأ من الموت كعقاب لحب ممنوع - إلى جانب لعنة تضمن الهلاك الأبدي للعالم إذا استيقظ.",
         "poster": "https://image.tmdb.org/t/p/w500/tRZITXSgsdU8oVEpFxYo5CPFa9X.jpg",
-        "hdUrl": "https://streamtape.com/e/xe32qYe4ArTlr2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/rloqxxMPWjTbvgX/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/xe32qYe4ArTlr2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.0",
         "genre": "مغامرة حركة فانتازيا",
