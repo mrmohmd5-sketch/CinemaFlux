@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "A Night at the Roxbury",
+        "year": "1998",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/7oZ5xE4AL4D5EbeQUaoRxahgzJX.jpg",
+        "hdUrl": "https://streamtape.com/e/OWgp29B1QpIZj0q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/OWgp29B1QpIZj0q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.5",
+        "genre": "كوميديا رومنسية",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Chris Kattan",
+                "character": "Doug Butabi",
+                "image": "https://image.tmdb.org/t/p/w185/oOu6buxGUSakpxDrm1V9WOfbhcP.jpg"
+            },
+            {
+                "name": "Will Ferrell",
+                "character": "Steve Butabi",
+                "image": "https://image.tmdb.org/t/p/w185/yjGbyQzVjpQl8xFkFGa7JxKZWQb.jpg"
+            },
+            {
+                "name": "Dan Hedaya",
+                "character": "Kamehl Butabi",
+                "image": "https://image.tmdb.org/t/p/w185/evL3mV8hNIjZOb1XG3qtgmiTgS5.jpg"
+            },
+            {
+                "name": "Molly Shannon",
+                "character": "Emily Sanderson",
+                "image": "https://image.tmdb.org/t/p/w185/5ZTbNpJtDRU4ZCH24nJvFRxaqAD.jpg"
+            },
+            {
+                "name": "Richard Grieco",
+                "character": "Richard Grieco",
+                "image": "https://image.tmdb.org/t/p/w185/pYImBN56amgiIaR2EMUbcUi9CxC.jpg"
+            },
+            {
+                "name": "Loni Anderson",
+                "character": "Barbara Butabi",
+                "image": "https://image.tmdb.org/t/p/w185/vxygylfk2IVBUoXRyKAPNwPWPsf.jpg"
+            },
+            {
+                "name": "Elisa Donovan",
+                "character": "Cambi",
+                "image": "https://image.tmdb.org/t/p/w185/vThds668uWdcsCtWO9znsgfm7Oa.jpg"
+            },
+            {
+                "name": "Gigi Rice",
+                "character": "Vivica",
+                "image": "https://image.tmdb.org/t/p/w185/5m2kjcp4c0woNQgeEg7uFczookt.jpg"
+            },
+            {
+                "name": "Lochlyn Munro",
+                "character": "Craig",
+                "image": "https://image.tmdb.org/t/p/w185/bOJ03k0oe2R6snRgzV8M4Qtoo4O.jpg"
+            },
+            {
+                "name": "Dwayne Hickman",
+                "character": "Fred Sanderson",
+                "image": "https://image.tmdb.org/t/p/w185/eLG5ewyD7YdrJHL8LhUNreikzGU.jpg"
+            }
+        ],
+        "trailerKey": "Xvl3qJe9L9g",
+        "tmdbId": "9429",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Lee Cronin's The Mummy",
         "year": "2026",
         "desc": "تدور أحداث الفيلم حين تختفي الابنة الصغيرة لصحفي في الصحراء المصرية دون أن تترك أي أثر. وبعد ثماني سنوات، تُفاجأ العائلة المكسورة بعودتها إليهم، لكن ما كان يُفترض أن يكون لقاءً مفعمًا بالفرح يتحول إلى كابوس حي.",
