@@ -5,7 +5,7 @@ const globalMoviesData = [
         "year": "2026",
         "desc": "تدور أحداث الفيلم حين تختفي الابنة الصغيرة لصحفي في الصحراء المصرية دون أن تترك أي أثر. وبعد ثماني سنوات، تُفاجأ العائلة المكسورة بعودتها إليهم، لكن ما كان يُفترض أن يكون لقاءً مفعمًا بالفرح يتحول إلى كابوس حي.",
         "poster": "https://image.tmdb.org/t/p/w500/bYt9KWlaa8dEjnCFu6IMxyWDuBX.jpg",
-        "hdUrl": "https://streamtape.com/e/okbvvYmZwqIJBK7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "hdUrl": "https://streamtape.com/e/bPM7bpYo0dtdzG/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "sdUrl": "https://streamtape.com/e/okbvvYmZwqIJBK7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
         "rating": "7.9",
         "genre": "رعب غموض",
