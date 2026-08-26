@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Last Queen",
+        "year": "2023",
+        "desc": "الجزائر، 1516. القرصان عروج بربروسا يحرر الجزائر من طغيان الإسبان ويستولي على السلطة في المملكة. تقول الشائعات أنه قتل الملك سليم التومي رغم تحالفهما. رغم كل الصعاب، ستواجهه امرأة: الملكة زافيرا. بين التاريخ والأسطورة، تحكي رحلة هذه المرأة عن صراع واضطرابات شخصية وسياسية عاشتها من أجل خير الجزائر.",
+        "poster": "https://image.tmdb.org/t/p/w500/6swVeP1RktnwrtLfDR8b78Pcxyv.jpg",
+        "hdUrl": "https://streamtape.com/e/e3wXvGwBGGCYWDm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/e3wXvGwBGGCYWDm/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.5",
+        "genre": "مغامرة تاريخ دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Adila Bendimerad",
+                "character": "Queen Zaphira",
+                "image": "https://image.tmdb.org/t/p/w185/6ZIecXV7PJyrszqYAQIUrbrWHq6.jpg"
+            },
+            {
+                "name": "Dali Benssalah",
+                "character": "Aruj Barbarossa",
+                "image": "https://image.tmdb.org/t/p/w185/3w7KkWJh6cHovVJ7katPLbfeOB3.jpg"
+            },
+            {
+                "name": "Dimitri Boetto",
+                "character": "Ishak",
+                "image": "https://image.tmdb.org/t/p/w185/7PXoPrSxGcSFBU66xgwwL0MzQip.jpg"
+            },
+            {
+                "name": "Mohamed Tahar Zaoui",
+                "character": "King Salim Toumi",
+                "image": "https://image.tmdb.org/t/p/w185/jowFVlneYCN6QFQx4H6TLV2BNqp.jpg"
+            },
+            {
+                "name": "Imen Noel",
+                "character": "Queen Chegga",
+                "image": "https://image.tmdb.org/t/p/w185/m8EkRNaQJ751nMFCe60AdZU6tgP.jpg"
+            },
+            {
+                "name": "Nadia Tereszkiewicz",
+                "character": "The Scandinavian",
+                "image": "https://image.tmdb.org/t/p/w185/2nGcrALNnvnCfD6GL5HKzNJBtUD.jpg"
+            },
+            {
+                "name": "Yanis Aouine",
+                "character": "Prince Yahia",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Ahmed Zitouni",
+                "character": "The Bosnian",
+                "image": "https://image.tmdb.org/t/p/w185/yLX3FOFoXzk7eQUair81Kl9syvo.jpg"
+            },
+            {
+                "name": "Tarik Bouarrara",
+                "character": "Younès",
+                "image": "https://image.tmdb.org/t/p/w185/zOuIGE7FcWmcsAGRzajoZZLzUyp.jpg"
+            },
+            {
+                "name": "Tenou Khilouli",
+                "character": "Zokha",
+                "image": "https://image.tmdb.org/t/p/w185/bYW9pmp02InoCQofhfsJHI1PRs7.jpg"
+            }
+        ],
+        "trailerKey": "8VvMTkWeKEI",
+        "tmdbId": "958161",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Manchester by the Sea",
         "year": "2016",
         "desc": "بعد وفاة شقيقه الأكبر ، يضطر لي تشاندلر إلى العودة إلى المنزل لرعاية ابن أخيه البالغ من العمر 16 عاما. هناك يضطر إلى التعامل مع الماضي المأساوي الذي فصله عن عائلته والمجتمع الذي ولد ونشأ فيه.",
