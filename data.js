@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Lee Cronin's The Mummy",
+        "year": "2026",
+        "desc": "تدور أحداث الفيلم حين تختفي الابنة الصغيرة لصحفي في الصحراء المصرية دون أن تترك أي أثر. وبعد ثماني سنوات، تُفاجأ العائلة المكسورة بعودتها إليهم، لكن ما كان يُفترض أن يكون لقاءً مفعمًا بالفرح يتحول إلى كابوس حي.",
+        "poster": "https://image.tmdb.org/t/p/w500/bYt9KWlaa8dEjnCFu6IMxyWDuBX.jpg",
+        "hdUrl": "https://streamtape.com/e/okbvvYmZwqIJBK7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/okbvvYmZwqIJBK7/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.9",
+        "genre": "رعب غموض",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Jack Reynor",
+                "character": "Charlie Cannon",
+                "image": "https://image.tmdb.org/t/p/w185/hl0zOfOU9tiBT4znHIB9jpxrJaM.jpg"
+            },
+            {
+                "name": "Laia Costa",
+                "character": "Larissa Cannon",
+                "image": "https://image.tmdb.org/t/p/w185/kSbdpHWLlfzvOfZKJ0dgP0ieVL6.jpg"
+            },
+            {
+                "name": "May Calamawy",
+                "character": "Detective Dalia Zaki",
+                "image": "https://image.tmdb.org/t/p/w185/5S3nNkH5p85xK7k7AaXBZ0ouyOR.jpg"
+            },
+            {
+                "name": "Natalie Grace",
+                "character": "Katie Cannon",
+                "image": "https://image.tmdb.org/t/p/w185/3iV5kqyYX3pH0qY6qztL1Klsd1G.jpg"
+            },
+            {
+                "name": "Shylo Molina",
+                "character": "Sebastián Cannon",
+                "image": "https://image.tmdb.org/t/p/w185/rIhBsRY6c7B4ClLOJbc4qEWter1.jpg"
+            },
+            {
+                "name": "Billie Roy",
+                "character": "Maud Cannon",
+                "image": "https://image.tmdb.org/t/p/w185/criWuHntMq5c6Duv505NApONwUu.jpg"
+            },
+            {
+                "name": "Veronica Falcón",
+                "character": "Carmen Santiago",
+                "image": "https://image.tmdb.org/t/p/w185/8zRSwWfrDnHleSRDtIeHYuAVmFK.jpg"
+            },
+            {
+                "name": "Hayat Kamille",
+                "character": "The Magician",
+                "image": "https://image.tmdb.org/t/p/w185/ftzaSEGIEn5uLHy8U7uQrXC7SZc.jpg"
+            },
+            {
+                "name": "May Elghety",
+                "character": "Layla Khalil",
+                "image": "https://image.tmdb.org/t/p/w185/dFpkIOfCrUVIASpN5wutX1OaYls.jpg"
+            },
+            {
+                "name": "Emily Mitchell",
+                "character": "Young Katie Cannon",
+                "image": "https://image.tmdb.org/t/p/w185/ehxuJhPwCo0M84SdD6k6cYsKFfs.jpg"
+            }
+        ],
+        "trailerKey": "x-W69KDGDRE",
+        "tmdbId": "1304313",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "The Mummy",
         "year": "2017",
         "desc": "مرحبا بكم في عالم جديد من الآلهة والوحوش\r على الرغم من دفنها بأمان في سرداب عميق تحت الصحراء التي لا ترحم ، إلا أن ملكة قديمة أخذ مصيرها منها ظلما تستيقظ في يومنا هذا ، حاملة معها حقدها الذي نما على مدى آلاف السنين ، والرعب الذي يتحدى الفهم البشري.",
