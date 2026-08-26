@@ -1,5 +1,61 @@
 const globalMoviesData = [
-
+    
+    {
+        "title": "The Secret World of Arrietty",
+        "year": "2010",
+        "desc": "تدور أحداث القصة حول عائلة مكونة من أم (هوميلي) وأب (بود) وابنتهما (آريتي) الذين يسكنون خلسة تحت أحد البيوت في الريف ودائمًا ما يقترضون أشياء من البيت وأصحاب البيت أو بالأصح الخادمة فهي المتواجدة بالبيت فقط لاحظت اختفاء بعض الأغراض ولكنها لا تدري من أخذها، وفي أحد الأيام انتقل ابن صاحبة المنزل (شو) إلى هذا البيت ليرتاح فيه قبل أن يخضع لعملية جراحية في قلبه ,لاحظ شو آريتي تتخفى بين الأعشاب ثم ذهبت بسرعة وفي الليل كانت أول رحلة اقتراض لآريتي، وعندما ذهبت مع أبيها كان البيت هادئا والكل نائم فأخذا مكعب سكر ثم ذهبا إلى غرفة شو ليأخذا منديلاً وحينما كانا يحاولان إخراج المنديل من العلبة لاحظت آريتي أن شو ينظر إليها وهو هادئ لا يتكلم فبدأ جسمها بالارتجاف والخوف ثم سقط مكعب السكر على الأرض فهربا بسرعة ولكن الفتى قال لها 'لا تخافي لن أفعل شيئا' ومع ذلك هربت، وفي الصباح الباكر خرجت آريتي لتشم بعض الهواء وفجأة آتى شو ووضع مكعب السكر عند فتحة تصريف المياه ووضع رسالة مكتوب عليها 'لقد نسيتي شيئا' ,فهل ستتعرف آريتي على شو وهل سيُكشف أمر هذه العائلة الصغيرة ,ترى ماذا سيحدث في النهاية...",
+        "poster": "https://image.tmdb.org/t/p/w500/vh4L4qWW9d56Ni0SrYbryy8nWWC.jpg",
+        "hdUrl": "https://streamtape.com/e/JXe9wM3o3oHjXOj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/JXe9wM3o3oHjXOj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.7",
+        "genre": "فانتازيا رسوم متحركة عائلي",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Mirai Shida",
+                "character": "Arrietty (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/wfacZjLuVkaiW32ZNZqdjfLFNxC.jpg"
+            },
+            {
+                "name": "Ryunosuke Kamiki",
+                "character": "Sho (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/ut7ewXjdgUmgkhJ1EtbOo9tbc7s.jpg"
+            },
+            {
+                "name": "Tomokazu Miura",
+                "character": "Pod (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/2tKusMF6dzGOfH7MM73FCsJzRoJ.jpg"
+            },
+            {
+                "name": "Keiko Takeshita",
+                "character": "Sadako Maki (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/jmXWhUM4IhvyMrRkzYnDQamkqjG.jpg"
+            },
+            {
+                "name": "Kirin Kiki",
+                "character": "Haru (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/7ndJHln7nWzrCMlSaBBAz9UjiuB.jpg"
+            },
+            {
+                "name": "Shinobu Otake",
+                "character": "Homily (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/az5hCPy37MFM9EH2f3gn1cTBhA6.jpg"
+            },
+            {
+                "name": "Tatsuya Fujiwara",
+                "character": "Spiller (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/lxPjnmbu3DyoEioVPfuY75fKoQL.jpg"
+            },
+            {
+                "name": "Shin'ichi Hatori",
+                "character": "Postman (voice)",
+                "image": "https://image.tmdb.org/t/p/w185/hU5C3QKuzZH1kTeuPCgjYds6EXk.jpg"
+            }
+        ],
+        "trailerKey": "DskjJGeaRQA",
+        "tmdbId": "51739",
+        "tmdbType": "movie"
+    },
     {
         "title": "Art of Love",
         "year": "2024",
@@ -5410,7 +5466,7 @@ const globalMoviesData = [
         "tmdbId": "372058",
         "tmdbType": "movie",
         "featured": true
-    },  
+    },
     {
         "title": "Your Name اسمك",
         "year": "2016",
