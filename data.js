@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "The Mummy",
+        "year": "1999",
+        "desc": "يتعثر الفيلق المحطم ريك أوكونيل على أنقاض هامونابترا الخفية بينما كان في خضم معركة للمطالبة بالمنطقة في مصر في عشرينيات القرن الماضي. لقد مرت أكثر من ثلاثة آلاف عام منذ أن عانى رئيس الكهنة الأسبق إمحوتب من مصير أسوأ من الموت كعقاب لحب ممنوع - إلى جانب لعنة تضمن الهلاك الأبدي للعالم إذا استيقظ.",
+        "poster": "https://image.tmdb.org/t/p/w500/tRZITXSgsdU8oVEpFxYo5CPFa9X.jpg",
+        "hdUrl": "https://streamtape.com/e/xe32qYe4ArTlr2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/xe32qYe4ArTlr2/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.0",
+        "genre": "مغامرة حركة فانتازيا",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Brendan Fraser",
+                "character": "Rick O'Connell",
+                "image": "https://image.tmdb.org/t/p/w185/tFj5PaWWQbb8rHBBhu1EHklznph.jpg"
+            },
+            {
+                "name": "Rachel Weisz",
+                "character": "Evelyn Carnahan",
+                "image": "https://image.tmdb.org/t/p/w185/9tfHL5tholha1YF6bSKt422ETPM.jpg"
+            },
+            {
+                "name": "John Hannah",
+                "character": "Jonathan Carnahan",
+                "image": "https://image.tmdb.org/t/p/w185/8GzJhaZrChZpv84SU4vAsvsR3cl.jpg"
+            },
+            {
+                "name": "Arnold Vosloo",
+                "character": "Imhotep",
+                "image": "https://image.tmdb.org/t/p/w185/o23Z1EvWEYR7PArq2w5UpreVipV.jpg"
+            },
+            {
+                "name": "Patricia Velásquez",
+                "character": "Anck-Su-Namun",
+                "image": "https://image.tmdb.org/t/p/w185/51Ve74pQUnR6tv3faE8LKUFZa9I.jpg"
+            },
+            {
+                "name": "Oded Fehr",
+                "character": "Ardeth Bay",
+                "image": "https://image.tmdb.org/t/p/w185/xt50Z02mO5pLTW0cNLZhIsiequJ.jpg"
+            },
+            {
+                "name": "Kevin J. O'Connor",
+                "character": "Beni Gabor",
+                "image": "https://image.tmdb.org/t/p/w185/9ZO0QYkxjhThd8IVqSJw7gHyQ68.jpg"
+            },
+            {
+                "name": "Jonathan Hyde",
+                "character": "Allen Chamberlain",
+                "image": "https://image.tmdb.org/t/p/w185/1uhT5uzPkBRCb57RtR6C9MvgteC.jpg"
+            },
+            {
+                "name": "Erick Avari",
+                "character": "Terence Bey",
+                "image": "https://image.tmdb.org/t/p/w185/aO53uKgLUCID9rCI0SRAIEdsIex.jpg"
+            },
+            {
+                "name": "Stephen Dunham",
+                "character": "Isaac Henderson",
+                "image": "https://image.tmdb.org/t/p/w185/6kBBjxl4QzHxHXXjvMi6BVbfLsf.jpg"
+            }
+        ],
+        "trailerKey": "OGOBz4t7OXs",
+        "tmdbId": "564",
+        "tmdbType": "movie"
+    },
+    {
         "title": "The Secret World of Arrietty",
         "year": "2010",
         "desc": "تدور أحداث القصة حول عائلة مكونة من أم (هوميلي) وأب (بود) وابنتهما (آريتي) الذين يسكنون خلسة تحت أحد البيوت في الريف ودائمًا ما يقترضون أشياء من البيت وأصحاب البيت أو بالأصح الخادمة فهي المتواجدة بالبيت فقط لاحظت اختفاء بعض الأغراض ولكنها لا تدري من أخذها، وفي أحد الأيام انتقل ابن صاحبة المنزل (شو) إلى هذا البيت ليرتاح فيه قبل أن يخضع لعملية جراحية في قلبه ,لاحظ شو آريتي تتخفى بين الأعشاب ثم ذهبت بسرعة وفي الليل كانت أول رحلة اقتراض لآريتي، وعندما ذهبت مع أبيها كان البيت هادئا والكل نائم فأخذا مكعب سكر ثم ذهبا إلى غرفة شو ليأخذا منديلاً وحينما كانا يحاولان إخراج المنديل من العلبة لاحظت آريتي أن شو ينظر إليها وهو هادئ لا يتكلم فبدأ جسمها بالارتجاف والخوف ثم سقط مكعب السكر على الأرض فهربا بسرعة ولكن الفتى قال لها 'لا تخافي لن أفعل شيئا' ومع ذلك هربت، وفي الصباح الباكر خرجت آريتي لتشم بعض الهواء وفجأة آتى شو ووضع مكعب السكر عند فتحة تصريف المياه ووضع رسالة مكتوب عليها 'لقد نسيتي شيئا' ,فهل ستتعرف آريتي على شو وهل سيُكشف أمر هذه العائلة الصغيرة ,ترى ماذا سيحدث في النهاية...",
