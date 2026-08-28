@@ -65,7 +65,6 @@ const globalMoviesData = [
         "trailerKey": "0Ra-SCvk0Oo",
         "tmdbId": "202555",
         "tmdbType": "tv",
-        "featured": true,
         "seasons": [
             {
                 "season_number": 1,
