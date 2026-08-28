@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Above & Below",
+        "year": "2026",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/7bOuu1SRALGwsG2fLCTvRkCmQBj.jpg",
+        "hdUrl": "https://streamtape.com/e/2LqOMX7L3yfZDvR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/2LqOMX7L3yfZDvR/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "7.4",
+        "genre": "حركة إثارة رعب جريمة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Laura Marano",
+                "character": "Tatiana",
+                "image": "https://image.tmdb.org/t/p/w185/fpW1Swq6BfAoAw88ZhKf1pssu30.jpg"
+            },
+            {
+                "name": "Christina Ochoa",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/msIxEVC8HljvbigzzHVkJFCwuyA.jpg"
+            },
+            {
+                "name": "Mario Tardón",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/x2tq4GYBlk4e912IBI2mA4u0BhW.jpg"
+            },
+            {
+                "name": "Antonio Banderas",
+                "character": "Burns",
+                "image": "https://image.tmdb.org/t/p/w185/fce7zl6elUzsv7wudHFc7RgFtjD.jpg"
+            },
+            {
+                "name": "Ramiro Alonso",
+                "character": "",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Ryan Bertroche",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/23CRyCVIgpuzMvaoSbybXmRzF8O.jpg"
+            },
+            {
+                "name": "Jess Liaudin",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/9YUopTXfT9HCQsGyXONwmqKFDz1.jpg"
+            },
+            {
+                "name": "Diego Llinás",
+                "character": "",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Louis Mandylor",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/skvNBR83wxjbFj6XuLxWAhCZTmh.jpg"
+            },
+            {
+                "name": "Timothy V. Murphy",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/4WMz4UUMeexgP1ddfC2j7pqf8hU.jpg"
+            }
+        ],
+        "trailerKey": "18wdUGRPUY4",
+        "tmdbId": "1514682",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Daredevil: Born Again",
         "year": "2025",
         "desc": "يتجه المحامي الأعمى 'مات ميردوك' وزعيم المافيا الأسبق 'ويلسون فيسك' نحو صدام حتمي.",
