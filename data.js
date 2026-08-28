@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Motor City",
+        "year": "2026",
+        "desc": "في ديترويت في سبعينيات القرن الماضي، يقع جون ميلر في غرام فتاة أحد زعماء العصابات المحليين، وينتهي به المطاف في السجن بتهمة لم يرتكبها. بعد أن دُمرت حياته، يخطط ميلر للانتقام من الرجل الذي خطف حبيبته منه.",
+        "poster": "https://image.tmdb.org/t/p/w500/xigStPkH5EDW3BmeX3vxPGMB5T4.jpg",
+        "hdUrl": "https://streamtape.com/e/0B2LkDk9X0SK9z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/0B2LkDk9X0SK9z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.7",
+        "genre": "حركة إثارة جريمة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Alan Ritchson",
+                "character": "John Miller",
+                "image": "https://image.tmdb.org/t/p/w185/92YNEEpCyugkTzPprJwZpvVtvuK.jpg"
+            },
+            {
+                "name": "Ben Foster",
+                "character": "Reynolds",
+                "image": "https://image.tmdb.org/t/p/w185/p5FlM9OOStD9I0Nm3GGlhaiAC5r.jpg"
+            },
+            {
+                "name": "Shailene Woodley",
+                "character": "Sophia",
+                "image": "https://image.tmdb.org/t/p/w185/gL2NvHKW9wAH3qkZuJ76ULUiArB.jpg"
+            },
+            {
+                "name": "Lionel Boyce",
+                "character": "Youngblood",
+                "image": "https://image.tmdb.org/t/p/w185/hpIxX5nkfA3pWCW8rYkEUCSBVyS.jpg"
+            },
+            {
+                "name": "Amar Chadha-Patel",
+                "character": "Singh",
+                "image": "https://image.tmdb.org/t/p/w185/6SZXUfn5A2IzwrWhpBDw99gC4uQ.jpg"
+            },
+            {
+                "name": "Pablo Schreiber",
+                "character": "Lieutenant Savick",
+                "image": "https://image.tmdb.org/t/p/w185/trKW3kwhwx4UeCNZg43A1x1h4Uv.jpg"
+            },
+            {
+                "name": "Dominic Bogart",
+                "character": "Porthos",
+                "image": "https://image.tmdb.org/t/p/w185/dUb5kOCWVHIYmoAfMEGR3hunTiD.jpg"
+            },
+            {
+                "name": "Mister Fitzgerald",
+                "character": "Aramis",
+                "image": "https://image.tmdb.org/t/p/w185/nwopnmyVGhJFlkGzl1PHcZdANUE.jpg"
+            },
+            {
+                "name": "Rafael Cebrian",
+                "character": "Athos",
+                "image": "https://image.tmdb.org/t/p/w185/aIvCv51Jh55neKPiGFvXql9CuvA.jpg"
+            },
+            {
+                "name": "Ben McKenzie",
+                "character": "Detective Kent",
+                "image": "https://image.tmdb.org/t/p/w185/2jlwhOXKakL6gk365u4gPkTtHHi.jpg"
+            }
+        ],
+        "trailerKey": "t6RklhKu9os",
+        "tmdbId": "87513",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Above & Below",
         "year": "2026",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
