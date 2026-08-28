@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Furie",
+        "year": "2019",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/otvxdOzeAc9RVMjEZCuExPhHuH2.jpg",
+        "hdUrl": "https://streamtape.com/e/vzgAM6pjP1h4zP6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/vzgAM6pjP1h4zP6/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "6.6",
+        "genre": "حركة دراما إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Veronica Ngô",
+                "character": "Hai Phượng",
+                "image": "https://image.tmdb.org/t/p/w185/scpUnMH2Rll9CD9lXQH9TaOOHTO.jpg"
+            },
+            {
+                "name": "Phan Thanh Nhien",
+                "character": "Lương",
+                "image": "https://image.tmdb.org/t/p/w185/kwdmR7bvOugmILlT6c8qz9TghMw.jpg"
+            },
+            {
+                "name": "Phạm Anh Khoa",
+                "character": "Trực",
+                "image": "https://image.tmdb.org/t/p/w185/bRPH3fLxOE1nfCoLRkyBXypmCa5.jpg"
+            },
+            {
+                "name": "Thanh Hoa",
+                "character": "Thanh Sói",
+                "image": "https://image.tmdb.org/t/p/w185/1YjPc00UC3wmpRVMBxWXRMlmo17.jpg"
+            },
+            {
+                "name": "Mai Cát Vi",
+                "character": "Mai",
+                "image": "https://image.tmdb.org/t/p/w185/xcjRlBAvH8CrGKvdJ5wclJfYimF.jpg"
+            },
+            {
+                "name": "Thanh Hiền",
+                "character": "",
+                "image": "https://image.tmdb.org/t/p/w185/snu4mzhb6EX2JBmgaT9XiDwF1aN.jpg"
+            },
+            {
+                "name": "Pompatama",
+                "character": "Cần",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Lê Trang",
+                "character": "Y Tá Trang",
+                "image": "https://image.tmdb.org/t/p/w185/giU3rVmiWWWBcJp3axVBj0vOyua.jpg"
+            },
+            {
+                "name": "Tuấn Voi",
+                "character": "Gã To Con",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Jack Lee",
+                "character": "Kidnapper #1",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            }
+        ],
+        "trailerKey": "SXiWz0yLLdE",
+        "tmdbId": "567973",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Facing El Chapo",
         "year": "2026",
         "desc": "يجب على ضابطين مكسيكيين النجاة خلال الساعات الأخيرة من نوبتهما، بعدما تورطا في مواجهة زعيم كارتل لا يرحم، في دراما جريمة مستوحاة من أحداث حقيقية.",
