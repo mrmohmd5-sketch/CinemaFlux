@@ -1,6 +1,104 @@
 const globalMoviesData = [
     
     {
+        "title": "Shōgun",
+        "year": "2024",
+        "desc": "في اليابان عام 1600، في فجر حرب أهلية حددت قرنًا من الزمان، يقاتل اللورد يوشي توراناجا من أجل حياته بينما يتحد أعداؤه في مجلس الحكام ضده، عندما يتم العثور على سفينة أوروبية غامضة تقطعت بها السبل في منطقة صيد قريبة. قرية.",
+        "poster": "https://image.tmdb.org/t/p/w500/v1diEpTldoUx9ov67tnPcnEkqmV.jpg",
+        "hdUrl": "",
+        "sdUrl": "",
+        "rating": "8.4",
+        "genre": "دراما حرب وسياسة",
+        "type": "series",
+        "cast": [
+            {
+                "name": "Hiroyuki Sanada",
+                "character": "Yoshii Toranaga",
+                "image": "https://image.tmdb.org/t/p/w185/SOwDxhGnRccP2lAtssQ7TxCzOe.jpg"
+            },
+            {
+                "name": "Cosmo Jarvis",
+                "character": "John Blackthorne",
+                "image": "https://image.tmdb.org/t/p/w185/1kgghZ558CxZCJip5ufO6BAqUGp.jpg"
+            },
+            {
+                "name": "Anna Sawai",
+                "character": "Toda Mariko",
+                "image": "https://image.tmdb.org/t/p/w185/6uFaCOupDTPRnTiedveTUvjOikC.jpg"
+            },
+            {
+                "name": "Tadanobu Asano",
+                "character": "Kashigi Yabushige",
+                "image": "https://image.tmdb.org/t/p/w185/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg"
+            },
+            {
+                "name": "Takehiro Hira",
+                "character": "Ishido Kazunari",
+                "image": "https://image.tmdb.org/t/p/w185/f8UK7xqwkfpIZiECcDgc0AErkj6.jpg"
+            },
+            {
+                "name": "Tommy Bastow",
+                "character": "Father Martin Alvito",
+                "image": "https://image.tmdb.org/t/p/w185/dIQcrDm9dZqc98Ca6Em67x5ivba.jpg"
+            },
+            {
+                "name": "Fumi Nikaido",
+                "character": "Ochiba No Kata / Ruri",
+                "image": "https://image.tmdb.org/t/p/w185/tqxgrZdOpx2FuTJYlhago4fttI3.jpg"
+            }
+        ],
+        "trailerKey": "m191PH7ohuk",
+        "tmdbId": "126308",
+        "tmdbType": "tv",
+        "seasons": [
+            {
+                "season_number": 1,
+                "episodes": [
+                    {
+                        "episode_number": 1,
+                        "url": "https://streamtape.com/e/d8Q7yZjlxgskdpB/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 2,
+                        "url": "https://streamtape.com/e/my4mDD2mpOtb0ow/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 3,
+                        "url": "https://streamtape.com/e/okayRllzMBSJw68/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 4,
+                        "url": "https://streamtape.com/e/0r2R803AApHb8BQ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 5,
+                        "url": "https://streamtape.com/e/KZJe7bPaaDh0Xoo/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 6,
+                        "url": "https://streamtape.com/e/yGZlpvP411f1VMD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 7,
+                        "url": "https://streamtape.com/e/djqBgVQKveskvyM/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 8,
+                        "url": "https://streamtape.com/e/pDjom8oD1RuVwK/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 9,
+                        "url": "https://streamtape.com/e/l7G71RelvvI7QZg/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 10,
+                        "url": "https://streamtape.com/e/WroZLvYKy2t0kA/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "title": "The Last Queen الملكة الاخيرة",
         "year": "2023",
         "desc": "الجزائر، 1516. القرصان عروج بربروسا يحرر الجزائر من طغيان الإسبان ويستولي على السلطة في المملكة. تقول الشائعات أنه قتل الملك سليم التومي رغم تحالفهما. رغم كل الصعاب، ستواجهه امرأة: الملكة زافيرا. بين التاريخ والأسطورة، تحكي رحلة هذه المرأة عن صراع واضطرابات شخصية وسياسية عاشتها من أجل خير الجزائر.",
