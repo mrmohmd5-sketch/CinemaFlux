@@ -1,6 +1,72 @@
 const globalMoviesData = [
     
     {
+        "title": "Jana Nayagan",
+        "year": "2026",
+        "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
+        "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+        "hdUrl": "https://streamtape.com/e/mD0odl7YjpUboov/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/mD0odl7YjpUboov/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "5.4",
+        "genre": "حركة دراما",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Vijay",
+                "character": "Thalapathy Vetri Kondan 'Vetri'",
+                "image": "https://image.tmdb.org/t/p/w185/zbQ1sDRVRHkroWwvrnqYKMerl66.jpg"
+            },
+            {
+                "name": "Pooja Hegde",
+                "character": "Kayal",
+                "image": "https://image.tmdb.org/t/p/w185/t09lf8vem5MRk3KaALcdgehreXg.jpg"
+            },
+            {
+                "name": "Bobby Deol",
+                "character": "John Himler / Amrish Poojari",
+                "image": "https://image.tmdb.org/t/p/w185/2npVa3PduichY8e7qBiE54m9VVP.jpg"
+            },
+            {
+                "name": "Mamitha Baiju",
+                "character": "Vijayalakshmi 'Viji'",
+                "image": "https://image.tmdb.org/t/p/w185/tGEFW7uGdYrvZ2f3FP8JH5Yh5L2.jpg"
+            },
+            {
+                "name": "Priyamani",
+                "character": "Sheela Rani",
+                "image": "https://image.tmdb.org/t/p/w185/i1sZtQcphZWJij3LoR9M6QY9i4z.jpg"
+            },
+            {
+                "name": "Prakash Raj",
+                "character": "Roja Rangasamy",
+                "image": "https://image.tmdb.org/t/p/w185/dJvFZOXmZdkYCOUcKTXQAhBcAoH.jpg"
+            },
+            {
+                "name": "Gautham Vasudev Menon",
+                "character": "Srikanth",
+                "image": "https://image.tmdb.org/t/p/w185/qOFycWPpr3Hi4kVXKWnTTKCAnGk.jpg"
+            },
+            {
+                "name": "Narain",
+                "character": "Kaleel",
+                "image": "https://image.tmdb.org/t/p/w185/d0ApUGeFuGXpBkODIc6eLbBkb7B.jpg"
+            },
+            {
+                "name": "Nassar",
+                "character": "CM Arivudai Nambi",
+                "image": "https://image.tmdb.org/t/p/w185/p3I0tSQY3C5qZW3NzFfbpjKPNL6.jpg"
+            },
+            {
+                "name": "Sunil Varma",
+                "character": "Velu",
+                "image": "https://image.tmdb.org/t/p/w185/ifmUCkLgpEzbfnRjIw62otrADpI.jpg"
+            }
+        ],
+        "trailerKey": "",
+        "tmdbId": "1235877",
+        "tmdbType": "movie"
+    },
+    {
         "title": "Furie",
         "year": "2019",
         "desc": "لا يوجد وصف متاح حالياً باللغة العربية.",
