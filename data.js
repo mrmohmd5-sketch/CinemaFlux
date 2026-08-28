@@ -1,6 +1,116 @@
 const globalMoviesData = [
     
     {
+        "title": "Daredevil: Born Again",
+        "year": "2025",
+        "desc": "يتجه المحامي الأعمى 'مات ميردوك' وزعيم المافيا الأسبق 'ويلسون فيسك' نحو صدام حتمي.",
+        "poster": "https://image.tmdb.org/t/p/w500/gBYwH0psbqxzan8kqplkfrCgdwC.jpg",
+        "hdUrl": "",
+        "sdUrl": "",
+        "rating": "8.2",
+        "genre": "دراما حركة ومغامرة جريمة",
+        "type": "series",
+        "cast": [
+            {
+                "name": "Charlie Cox",
+                "character": "Matt Murdock / Daredevil",
+                "image": "https://image.tmdb.org/t/p/w185/jBHDZ8MA4I7krNQx4IfqdfPfleD.jpg"
+            },
+            {
+                "name": "Vincent D'Onofrio",
+                "character": "Wilson Fisk",
+                "image": "https://image.tmdb.org/t/p/w185/qkyiLolEqYMGH25xD4sFIXAjZQB.jpg"
+            },
+            {
+                "name": "Wilson Bethel",
+                "character": "Benjamin Poindexter / Bullseye",
+                "image": "https://image.tmdb.org/t/p/w185/xHLjGi9onJXwHoZALZ9pLBVnH5x.jpg"
+            },
+            {
+                "name": "Deborah Ann Woll",
+                "character": "Karen Page",
+                "image": "https://image.tmdb.org/t/p/w185/btTnyvRLXOH0pz2SLBwyKbmnFhX.jpg"
+            },
+            {
+                "name": "Margarita Levieva",
+                "character": "Heather Glenn",
+                "image": "https://image.tmdb.org/t/p/w185/7rSf7C5oKuvjgEBfe2GVv064Le.jpg"
+            },
+            {
+                "name": "Matthew Lillard",
+                "character": "Mr. Charles",
+                "image": "https://image.tmdb.org/t/p/w185/mIEKAfe0iC41RDXibbTy48LtNOi.jpg"
+            },
+            {
+                "name": "Lili Taylor",
+                "character": "Gov Marge McCaffrey",
+                "image": "https://image.tmdb.org/t/p/w185/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg"
+            },
+            {
+                "name": "Michael Gandolfini",
+                "character": "Daniel Blake",
+                "image": "https://image.tmdb.org/t/p/w185/949lN8eoD3oXx1TmpjzmPQvt2TI.jpg"
+            },
+            {
+                "name": "Nikki M. James",
+                "character": "Kirsten Mcduffie",
+                "image": "https://image.tmdb.org/t/p/w185/p8QNdGGulI8RPWP5L0V4egWvsXM.jpg"
+            },
+            {
+                "name": "Arty Froushan",
+                "character": "Buck Cashman",
+                "image": "https://image.tmdb.org/t/p/w185/zYNvzONSgyfnC4efHXh6zcrVj4d.jpg"
+            }
+        ],
+        "trailerKey": "0Ra-SCvk0Oo",
+        "tmdbId": "202555",
+        "tmdbType": "tv",
+        "featured": true,
+        "seasons": [
+            {
+                "season_number": 1,
+                "episodes": [
+                    {
+                        "episode_number": 1,
+                        "url": "https://streamtape.com/e/aYJmloBR1msxq0L/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 2,
+                        "url": "https://streamtape.com/e/Y1QRBOqpwkfvldZ/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 3,
+                        "url": "https://streamtape.com/e/dKr3KXamyzfkkk3/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 4,
+                        "url": "https://streamtape.com/e/P39K2mpXaet0V1M/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 5,
+                        "url": "https://streamtape.com/e/W8Myj8DZ48Fb9vL/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 6,
+                        "url": "https://streamtape.com/e/2kW6RlMVOMtZwZV/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 7,
+                        "url": "https://streamtape.com/e/YOyzlALVMPTvmxD/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 8,
+                        "url": "https://streamtape.com/e/vPaelp1YM9t4kZe/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 9,
+                        "url": "https://streamtape.com/e/Jb0B1m16BZij3Yj/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "title": "Shōgun",
         "year": "2024",
         "desc": "في اليابان عام 1600، في فجر حرب أهلية حددت قرنًا من الزمان، يقاتل اللورد يوشي توراناجا من أجل حياته بينما يتحد أعداؤه في مجلس الحكام ضده، عندما يتم العثور على سفينة أوروبية غامضة تقطعت بها السبل في منطقة صيد قريبة. قرية.",
