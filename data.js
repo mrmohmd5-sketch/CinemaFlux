@@ -1502,11 +1502,11 @@ const globalMoviesData = [
     {
         "title": "Lanterns",
         "year": "2026",
-        "desc": "شرطيان من شرطة الفضاء، المجند الجديد 'جون ستيوارت' والأسطورة 'هال جوردان' من فيلق الفوانيس، يجدان نفسيهما متورطين في لغز غامض على الأرض، أثناء تحقيقهما في جريمة قتل وقعت في قلب الولايات المتحدة.",
+        "desc": "يتبع العمل قصة المجند الجديد (جون ستيوارت) وأسطورة اللانترنز (هال جوردان)، وهما شرطيان يجدان نفسيهما منخرطين في لغز مظلم على كوكب الأرض، أثناء تحقيقهما في جريمة قتل وقعت في قلب الولايات المتحدة.",
         "poster": "https://image.tmdb.org/t/p/w500/mmCFAAwU7VcLyGCbMpMWJOFA3PK.jpg",
         "hdUrl": "",
         "sdUrl": "",
-        "rating": "8.1",
+        "rating": "8.2",
         "genre": "دراما غموض خيال علمي وفانتازيا",
         "type": "series",
         "cast": [
@@ -1533,7 +1533,7 @@ const globalMoviesData = [
             {
                 "name": "Poorna Jagannathan",
                 "character": "Zoe Macon",
-                "image": "https://image.tmdb.org/t/p/w185/cdfzpja6kif9NsWlN2K91RVn1Xt.jpg"
+                "image": "https://image.tmdb.org/t/p/w185/o2BQX1tAgo47GGvpBy1k4LQLRs6.jpg"
             }
         ],
         "trailerKey": "7UIBOsuUwc4",
@@ -1546,6 +1546,10 @@ const globalMoviesData = [
                     {
                         "episode_number": 1,
                         "url": "https://streamtape.com/e/7XrY40Jg27UAz1d/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
+                    },
+                    {
+                        "episode_number": 2,
+                        "url": "https://streamtape.com/e/MaW1z3p2QlUmW7q/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>"
                     }
                 ]
             }
