@@ -1,6 +1,73 @@
 const globalMoviesData = [
     
     {
+        "title": "Facing El Chapo",
+        "year": "2026",
+        "desc": "يجب على ضابطين مكسيكيين النجاة خلال الساعات الأخيرة من نوبتهما، بعدما تورطا في مواجهة زعيم كارتل لا يرحم، في دراما جريمة مستوحاة من أحداث حقيقية.",
+        "poster": "https://image.tmdb.org/t/p/w500/iwCeOpuBtuTP1kLosqgniey5OvX.jpg",
+        "hdUrl": "https://streamtape.com/e/7Dd6M1OYglSA08Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "sdUrl": "https://streamtape.com/e/7Dd6M1OYglSA08Z/\" width=\"800\" height=\"600\" allowfullscreen allowtransparency allow=\"autoplay\" scrolling=\"no\" frameborder=\"0\"></iframe>",
+        "rating": "8.8",
+        "genre": "جريمة حركة إثارة",
+        "type": "movie",
+        "cast": [
+            {
+                "name": "Alfonso Herrera",
+                "character": "Carmona",
+                "image": "https://image.tmdb.org/t/p/w185/54KLFvt8iMDFmam2tsb5wk3AIcv.jpg"
+            },
+            {
+                "name": "Noé Hernández",
+                "character": "Rosales",
+                "image": "https://image.tmdb.org/t/p/w185/l3NXUy1x5buKHawSw4xye5JW8pl.jpg"
+            },
+            {
+                "name": "Hector Kotsifakis",
+                "character": "El Chapo Guzmán",
+                "image": "https://image.tmdb.org/t/p/w185/IE5KgMI1bE0LcloTHNVsk3kldk.jpg"
+            },
+            {
+                "name": "Juan Pablo Cruz García",
+                "character": "Cholo Iván",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Paola Fernández",
+                "character": "Isaura",
+                "image": "https://image.tmdb.org/t/p/w185/kRfjEVZULgJNf8XC5PJETkoc7bx.jpg"
+            },
+            {
+                "name": "Antonio Fortier",
+                "character": "Barraza",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Allan Durell",
+                "character": "Ortega",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Gerardo Trejoluna",
+                "character": "Valladares",
+                "image": "https://image.tmdb.org/t/p/w185/fJzcjj3JrARh3iQEx5lMbCEfRKq.jpg"
+            },
+            {
+                "name": "Isaac Bravo",
+                "character": "Foco",
+                "image": "https://via.placeholder.com/185x278?text=No+Image"
+            },
+            {
+                "name": "Fernando Cuautle",
+                "character": "Lagarto",
+                "image": "https://image.tmdb.org/t/p/w185/yxGoMBPVvieHrSkA2A0LACWcr68.jpg"
+            }
+        ],
+        "trailerKey": "Rk0efhpa-5Y",
+        "tmdbId": "1621552",
+        "tmdbType": "movie",
+        "featured": true
+    },
+    {
         "title": "Motor City",
         "year": "2026",
         "desc": "في ديترويت في سبعينيات القرن الماضي، يقع جون ميلر في غرام فتاة أحد زعماء العصابات المحليين، وينتهي به المطاف في السجن بتهمة لم يرتكبها. بعد أن دُمرت حياته، يخطط ميلر للانتقام من الرجل الذي خطف حبيبته منه.",
